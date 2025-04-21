@@ -8,7 +8,7 @@
 !HereBeDragons.json
 
 # whitelist everything in ./config/
-!config/
-!kubejs/
-!mods/
-!resourcepacks/
+!config/**/*
+!kubejs/**/*
+!mods/**/*
+!resourcepacks/**/*

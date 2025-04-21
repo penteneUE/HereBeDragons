@@ -1,0 +1,17 @@
+{
+  "placement": {
+    "type": "minecraft:concentric_rings",
+    "salt": 7824162,
+	"frequency": 0,
+	"count":1,
+	"spread":1,
+	"distance": 1000,
+	"preferred_biomes": "minecraft:the_void"
+  },
+  "structures": [
+    {
+      "structure": "iceandfire:lightning_dragon_roost",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "54D2F7918CB21461"
+	group: ""
+	id: "54D2F7918CB21461"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["755A36D1D7404B2B"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
+			id: "616FEA8BA81A4AF1"
+			tasks: [{
+				id: "6AEA76D166CE2ABB"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["616FEA8BA81A4AF1"]
+			hide_until_deps_complete: false
+			id: "427E539B8D939D7B"
+			tasks: [
+				{
+					id: "6B112BF62F54A8BE"
+					item: { count: 1, id: "dragonsurvival:iron_dragon_treasure" }
+					type: "item"
+				}
+				{
+					id: "416D337FDD06D6DB"
+					item: { count: 1, id: "dragonsurvival:gold_dragon_treasure" }
+					type: "item"
+				}
+				{
+					id: "2E8D32737F487420"
+					item: { count: 1, id: "dragonsurvival:copper_dragon_treasure" }
+					type: "item"
+				}
+				{
+					id: "6B10AA351668D921"
+					item: { count: 1, id: "dragonsurvival:emerald_dragon_treasure" }
+					type: "item"
+				}
+				{
+					id: "4124014B2A0DD743"
+					item: { count: 1, id: "dragonsurvival:diamond_dragon_treasure" }
+					type: "item"
+				}
+				{
+					id: "621705B07C1DCB0F"
+					item: { count: 1, id: "dragonsurvival:debris_dragon_treasure" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["616FEA8BA81A4AF1"]
+			hide_until_deps_complete: false
+			id: "5297FBC92A1D485C"
+			tasks: [{
+				id: "29277345E14276F7"
+				structure: "#minecraft:village"
+				type: "structure"
+			}]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["616FEA8BA81A4AF1"]
+			hide_until_deps_complete: false
+			id: "50EC8FDECD2FA1CC"
+			tasks: [{
+				id: "79D67BD548D2720C"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["616FEA8BA81A4AF1"]
+			hide_until_deps_complete: false
+			id: "73ECD42ABA5788CF"
+			tasks: [{
+				id: "05A74F1AE1A08254"
+				structure: "valarian_conquest:bohemiancastle"
+				type: "structure"
+			}]
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["616FEA8BA81A4AF1"]
+			hide_until_deps_complete: false
+			id: "0F5FD18B75AAD973"
+			tasks: [{
+				id: "731FB22A972C1332"
+				structure: "dragonsurvival:dragon_hunters_castle"
+				type: "structure"
+			}]
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["616FEA8BA81A4AF1"]
+			hide_until_deps_complete: false
+			id: "5BBEC08E7893B0EF"
+			tasks: [{
+				advancement: "dragonsurvival:dark/affected_by_hunter_omen"
+				criterion: ""
+				id: "2BC94C21F567A0BF"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["616FEA8BA81A4AF1"]
+			hide_until_deps_complete: false
+			id: "7B74DE20C5427F26"
+			tasks: [{
+				id: "7CDC94B5C300DD3B"
+				structure: "valarian_conquest:caladrian_castle"
+				type: "structure"
+			}]
+			x: 5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["616FEA8BA81A4AF1"]
+			hide_until_deps_complete: false
+			id: "2AFD6008FB0FC8C6"
+			tasks: [{
+				id: "59C3546496BADDBD"
+				structure: "valarian_conquest:galiciancastle"
+				type: "structure"
+			}]
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["616FEA8BA81A4AF1"]
+			hide_until_deps_complete: false
+			id: "2D775AC69171CD4A"
+			tasks: [{
+				id: "3250ADEB2379E85A"
+				structure: "valarian_conquest:gardoniancastle"
+				type: "structure"
+			}]
+			x: 7.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["616FEA8BA81A4AF1"]
+			hide_until_deps_complete: false
+			id: "246036B7A8467D34"
+			tasks: [{
+				id: "2DA6206DE99528E0"
+				structure: "valarian_conquest:lancastiancastle"
+				type: "structure"
+			}]
+			x: 8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["616FEA8BA81A4AF1"]
+			hide_until_deps_complete: false
+			id: "03CC9BF96BE34E46"
+			tasks: [{
+				id: "5B05984F6E6DFBB4"
+				structure: "valarian_conquest:numeriancastle"
+				type: "structure"
+			}]
+			x: 9.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["616FEA8BA81A4AF1"]
+			hide_until_deps_complete: false
+			id: "1484F081836E5255"
+			tasks: [{
+				id: "5C31B26D1BBC2D92"
+				structure: "valarian_conquest:valariancastle"
+				type: "structure"
+			}]
+			x: 10.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["616FEA8BA81A4AF1"]
+			hide_until_deps_complete: false
+			id: "07EE0741032F5E41"
+			tasks: [{
+				id: "47E901211A7D4F28"
+				structure: "valarian_conquest:visgothiancastle"
+				type: "structure"
+			}]
+			x: 11.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5BBEC08E7893B0EF"]
+			hide_until_deps_complete: false
+			id: "32EBCEE0701806C1"
+			tasks: [{
+				advancement: "dragonsurvival:dark/steal_from_villager"
+				criterion: ""
+				id: "71B9B6CA53007C57"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["616FEA8BA81A4AF1"]
+			hide_until_deps_complete: false
+			id: "528B36DB7C91235F"
+			tasks: [{
+				id: "7CB6541AF7D4CDC7"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 2.0d
+		}
+	]
+}

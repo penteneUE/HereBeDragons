@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "640F3009EE40B4BE"
+	group: ""
+	hide_quest_details_until_startable: true
+	id: "640F3009EE40B4BE"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+}

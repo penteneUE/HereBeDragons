@@ -1,0 +1,115 @@
+{
+	chapter.14C8D60A6884E47E.title: "初生"
+	chapter.1E283E445F4D2ED1.title: "2：在边狱下"
+	chapter.329D78102C6D9E0E.title: "难度选项"
+	chapter.48A57AF2FDDDF708.title: "3：冰山之底"
+	chapter.527A94CE659B846F.title: "识之图录"
+	chapter.54D2F7918CB21461.title: "龙之宝库"
+	chapter.5F32B23A5FDD7059.title: "1：表象"
+	chapter.640F3009EE40B4BE.title: "整合包介绍"
+	quest.03CC9BF96BE34E46.title: "奴莫里安城堡"
+	quest.05546B1D86F62F95.quest_desc: [
+		"本整合包中默认会保留饰品栏以及龙爪槽中物品。剩余的会存放在坟墓里。"
+		"（才不是不会做）"
+	]
+	quest.07EE0741032F5E41.title: "维哥德安城堡"
+	quest.0F5FD18B75AAD973.title: "猎龙人之堡"
+	quest.1484F081836E5255.title: "瓦拉利安城堡"
+	quest.1D43F77FD948BD09.quest_desc: [
+		"你自纸壳中苏醒……思绪一片空白。"
+		"外面不知过去了多久，一切都是如此陌生。"
+		""
+		"你持有的，只有这像是纸扎一般的罗盘。"
+		"转动它……试图找到，&d龙&r的存在……？"
+	]
+	quest.209A1F902BE74FC3.quest_desc: [
+		"你如何拨弄罗盘，都无法探测到一丝&d龙&r的踪迹。"
+		""
+		"你不得不承认，这个世界有着除&d龙&r之外的所有魔法生物，唯独没有龙。"
+		"……哪怕是一颗&d龙蛋&r也好？"
+		""
+		"那可能得寻找很长时间了。你决定以此为目标。"
+	]
+	quest.209A1F902BE74FC3.quest_subtitle: "龙曾在此。"
+	quest.209A1F902BE74FC3.title: "宛在"
+	quest.246036B7A8467D34.title: "蓝卡斯第安城堡"
+	quest.2A53602F5DD6482A.quest_desc: ["痴愚"]
+	quest.2AFD6008FB0FC8C6.title: "加利西安城堡"
+	quest.2D775AC69171CD4A.title: "加多尼安城堡"
+	quest.32EBCEE0701806C1.quest_desc: ["在拥有恶名后，可以右键向村民索取贡品。"]
+	quest.3A18D1CA4A2260B2.quest_desc: [
+		"在探索的过程中，你偶然发现了一些散落的手稿。放眼望去，全都是有关魔法生物的。"
+		""
+		"用手稿撰写桌把它们收集起来，或许是寻找龙蛋踪迹的好方法。"
+	]
+	quest.427E539B8D939D7B.title: "龙的财宝堆"
+	quest.482E83E9FB669B98.quest_desc: [
+		"若是出生在了不适宜的环境，可以在此重新选择。"
+		""
+		""
+		"仅限一次。"
+	]
+	quest.482E83E9FB669B98.quest_subtitle: "……出师不利？"
+	quest.4AF56908F7A20C1C.quest_desc: ["先人的手记中言之凿凿地说明了龙的存在，并说有火龙、冰龙、电龙三种。你一种都没看见。因此你决定另开新篇，自己实地观察并记录下这些魔法生物。"]
+	quest.4FDE40DA03D8CE4B.quest_desc: [
+		"世上的&d龙&r可以分为三种："
+		"&c洞龙种&r：吃燃料，弱点是水，沾水会受伤。"
+		"&a森龙种&r：吃肉和浆果，弱点是黑暗，在黑暗里它们无法完成光合作用。"
+		"&b海龙种&r：吃鱼，弱点是干燥，离水过久会受伤。"
+		""
+		"弱点的影响可以通过被动技能的掌握来逐渐削弱。"
+		" &o海龙种竟同时掌握着水、电、冰三种元素……它们说不定会分家？这个世界从来是跨越天穹的陆地上点缀着湖泊般的海洋，灭绝了也说不定。谁知道呢。&r"
+	]
+	quest.4FDE40DA03D8CE4B.quest_subtitle: "[日期与作者均不可辨别]"
+	quest.4FDE40DA03D8CE4B.title: "笔记：龙种的分别"
+	quest.528B36DB7C91235F.title: "WIP：插上旗子占领村庄"
+	quest.5297FBC92A1D485C.title: "村庄"
+	quest.5405512A263C9DDC.title: "翼蚺"
+	quest.5BBEC08E7893B0EF.quest_desc: ["WIP: 有了这个猎杀标记村民和村民护卫也有仇恨"]
+	quest.616FEA8BA81A4AF1.quest_desc: [
+		"你曾听说过一条名为&0[已编辑]&r的黑龙，凭一龙之力就毁掉了一个古代王国。"
+		""
+		"现在你也隐隐有了这种躁动的冲动。"
+	]
+	quest.616FEA8BA81A4AF1.quest_subtitle: "传说中的……"
+	quest.6B2D21F0295F993B.quest_desc: [
+		"整合包中给龙添加了更多可食的食物兼容。包括但不限于新生魔艺的四种浆果及其菜肴。"
+		""
+		"&c洞穴龙&r：爆裂石榴及其制品。"
+		"&a森林龙&r：门多山竹及其制品，部分魔源浆果制品。生荒野猎手与奇美拉肉。"
+		"&b海洋龙&r：霜木瓜及其制品。"
+	]
+	quest.6B2D21F0295F993B.quest_subtitle: "挑食是个坏习惯"
+	quest.73ECD42ABA5788CF.title: "波西米亚城堡"
+	quest.755A36D1D7404B2B.quest_desc: [
+		"不对！——你逐渐从混沌中恢复，发现自己身体上一些……异常之处。"
+		""
+		"……至少&d龙&r还没完全灭绝，不算太坏。算是吧？"
+		""
+		"你寻找&c现世同类&r的想法更强烈了。"
+	]
+	quest.755A36D1D7404B2B.title: "自我"
+	quest.7B74DE20C5427F26.title: "卡拉狄安城堡"
+	reward.192792F0996186F3.title: "不保留经验"
+	reward.4005FB15027A26C2.title: "死亡地点传送"
+	reward.443C624B5907E06E.title: "开启"
+	reward.505BA78C826D04CC.title: "关闭"
+	reward.7B0C5D724443AA6D.title: "保留经验"
+	reward_table.2728DA0106E2BEFF.title: "保留经验"
+	reward_table.312005F8628AF8D4.title: "死亡地点传送"
+	task.0741D2CC2C85660E.title: "龙种的分别"
+	task.0C88B4341C81B301.title: "异种共生"
+	task.0F4406652E6AD348.title: "食性的兼容"
+	task.15834E2B7F280132.title: "苏醒"
+	task.176774A86A7260FF.title: "表象"
+	task.22DAA5D2FF109832.title: "哥布林商人"
+	task.2CFB640AF692D8A7.title: "引言"
+	task.2D5F1E4E7A256624.title: "重新选择"
+	task.3BE6DAE8BD2E8C65.title: "属性的耦合"
+	task.3DF94A1DF8C9F62B.title: "死亡地点传送？"
+	task.417C6101F274068A.title: "龙曾在此"
+	task.603F5014859431C5.title: "龙与魔法"
+	task.6AEA76D166CE2ABB.title: "引言"
+	task.76F26CEE5902DE59.title: "保留经验？"
+	task.79D67BD548D2720C.title: "WIP：添加更多守军和攻城奖励"
+}

@@ -1,0 +1,102 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "527A94CE659B846F"
+	group: ""
+	id: "527A94CE659B846F"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4AF56908F7A20C1C"]
+			id: "037F76767B7B7B50"
+			tasks: [{
+				entity: "iceandfire:gorgon"
+				id: "570EA9057B590558"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4AF56908F7A20C1C"]
+			id: "667220165003BC3B"
+			tasks: [{
+				entity: "iceandfire:hydra"
+				id: "39A917A237878934"
+				type: "kill"
+				value: 1L
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4AF56908F7A20C1C"]
+			id: "4FAA9CB828891F8A"
+			tasks: [{
+				entity: "iceandfire:cyclops"
+				id: "198238BB768C1F8A"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4AF56908F7A20C1C"]
+			id: "24C35FEEDB08DF0E"
+			tasks: [{
+				entity: "iceandfire:stymphalian_bird"
+				id: "5C37F6040F0D353F"
+				type: "kill"
+				value: 1L
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4AF56908F7A20C1C"]
+			id: "5405512A263C9DDC"
+			tasks: [
+				{
+					advancement: "iceandfire:iceandfire/tame_amphithere"
+					criterion: ""
+					id: "1FF763E766CBAE85"
+					optional_task: true
+					type: "advancement"
+				}
+				{
+					entity: "iceandfire:amphithere"
+					id: "0B1266153D3B6353"
+					optional_task: true
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4AF56908F7A20C1C"]
+			id: "7396BFF63787B5CF"
+			tasks: [{
+				id: "22DAA5D2FF109832"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3A18D1CA4A2260B2"]
+			hide_until_deps_complete: true
+			id: "4AF56908F7A20C1C"
+			tasks: [{
+				id: "2CFB640AF692D8A7"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+	]
+}

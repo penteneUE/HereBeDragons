@@ -1,0 +1,34 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "329D78102C6D9E0E"
+	group: ""
+	hide_quest_until_deps_complete: true
+	id: "329D78102C6D9E0E"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		can_repeat: true
+		dependencies: ["209A1F902BE74FC3"]
+		icon: {
+			id: "minecraft:experience_bottle"
+		}
+		id: "05546B1D86F62F95"
+		rewards: [{
+			auto: "disabled"
+			exclude_from_claim_all: true
+			id: "4401F69CBD2806D5"
+			table_id: 2821744864492961535L
+			team_reward: false
+			type: "choice"
+		}]
+		tasks: [{
+			disable_toast: true
+			id: "76F26CEE5902DE59"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+}

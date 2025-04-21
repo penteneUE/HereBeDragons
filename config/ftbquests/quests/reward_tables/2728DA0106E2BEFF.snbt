@@ -1,0 +1,32 @@
+{
+	id: "2728DA0106E2BEFF"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{
+			auto: "disabled"
+			command: "/whredragonswent keepexp @p true"
+			exclude_from_claim_all: true
+			feedback_message: "报酬金保险已生效！"
+			icon: {
+				id: "minecraft:experience_bottle"
+			}
+			id: "7B0C5D724443AA6D"
+			team_reward: false
+			type: "command"
+		}
+		{
+			auto: "disabled"
+			command: "/whredragonswent keepexp @p false"
+			exclude_from_claim_all: true
+			feedback_message: "报酬金保险已取消！"
+			icon: {
+				id: "minecraft:glass_bottle"
+			}
+			id: "192792F0996186F3"
+			team_reward: false
+			type: "command"
+		}
+	]
+	use_title: true
+}

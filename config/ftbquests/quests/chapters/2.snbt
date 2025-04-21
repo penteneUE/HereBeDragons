@@ -1,0 +1,21 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2"
+	group: ""
+	id: "1E283E445F4D2ED1"
+	order_index: 4
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["716C0EC962DF0E89"]
+		id: "081B6DF3189F7E6E"
+		tasks: [{
+			advancement: "minecraft:nether/obtain_blaze_rod"
+			criterion: ""
+			id: "14923110969572DB"
+			type: "advancement"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+}

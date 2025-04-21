@@ -1,0 +1,136 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "14C8D60A6884E47E"
+	group: ""
+	icon: {
+		id: "iceandfire:dragon_skull_fire"
+	}
+	id: "14C8D60A6884E47E"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "minecraft:cobweb"
+			}
+			id: "1D43F77FD948BD09"
+			rewards: [{
+				id: "1736C2A26CCA2BB3"
+				item: {
+					components: {
+						"explorerscompass:compass_state": 3
+						"explorerscompass:samples": 128
+						"explorerscompass:search_radius": 21750
+						"explorerscompass:structure_id": "iceandfire:ice_dragon_roost"
+					}
+					count: 1
+					id: "explorerscompass:explorerscompass"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "15834E2B7F280132"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1D43F77FD948BD09"]
+			icon: {
+				id: "iceandfire:dragon_skull_fire"
+			}
+			id: "209A1F902BE74FC3"
+			rewards: [{
+				id: "4C995E9CF624F799"
+				type: "xp"
+				xp: 2
+			}]
+			tasks: [{
+				id: "417C6101F274068A"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["209A1F902BE74FC3"]
+			hide_until_deps_complete: true
+			id: "755A36D1D7404B2B"
+			rewards: [{
+				id: "473D4B4B13838894"
+				type: "xp"
+				xp: 2
+			}]
+			tasks: [
+				{
+					advancement: "dragonsurvival:cave/be_dragon"
+					criterion: ""
+					id: "2D1AFBBB018E0821"
+					optional_task: true
+					type: "advancement"
+				}
+				{
+					advancement: "dragonsurvival:sea/be_dragon"
+					criterion: ""
+					id: "1EDAFB9BDFDF1353"
+					optional_task: true
+					type: "advancement"
+				}
+				{
+					advancement: "dragonsurvival:forest/be_dragon"
+					criterion: ""
+					id: "7734AB04EBA3A5E8"
+					optional_task: true
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"1EDAFB9BDFDF1353"
+				"2D1AFBBB018E0821"
+				"7734AB04EBA3A5E8"
+			]
+			dependency_requirement: "one_completed"
+			disable_toast: true
+			hide_until_deps_complete: true
+			icon: {
+				id: "iceandfire:manuscript"
+			}
+			id: "4FDE40DA03D8CE4B"
+			shape: "diamond"
+			tasks: [{
+				id: "0741D2CC2C85660E"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			can_repeat: false
+			dependencies: ["209A1F902BE74FC3"]
+			hide_dependency_lines: true
+			id: "482E83E9FB669B98"
+			rewards: [{
+				auto: "disabled"
+				command: "/dragon-altar"
+				icon: {
+					id: "dragonsurvival:stone_dragon_altar"
+				}
+				id: "4AAB5E4ED34EA19A"
+				team_reward: false
+				type: "command"
+			}]
+			tasks: [{
+				id: "2D5F1E4E7A256624"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+	]
+}
