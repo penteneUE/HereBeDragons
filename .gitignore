@@ -4,6 +4,7 @@
 # track this file
 !.gitignore
 !README.md
+!LICENSE
 !HereBeDragons.jar
 !HereBeDragons.json
 
