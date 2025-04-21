@@ -6,16 +6,77 @@
 	id: "1E283E445F4D2ED1"
 	order_index: 4
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["716C0EC962DF0E89"]
-		id: "081B6DF3189F7E6E"
-		tasks: [{
-			advancement: "minecraft:nether/obtain_blaze_rod"
-			criterion: ""
-			id: "14923110969572DB"
-			type: "advancement"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["3DCEA15CB8E9D815"]
+			id: "12CA7C92D23CF9A4"
+			tasks: [{
+				id: "7519ED2CAF4B9CEC"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "23AF0BA2CFF8572C"
+			tasks: [{
+				advancement: "minecraft:story/enter_the_end"
+				criterion: ""
+				id: "73232A772E1B2D71"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			id: "31DC355F5D46AE7F"
+			invisible: true
+			tasks: [{
+				icon: {
+					id: "irons_spellbooks:dragonskin"
+				}
+				id: "2219B15B63FB50BA"
+				observe_type: 5
+				timer: 0L
+				to_observe: "minecraft:ender_dragon"
+				type: "observation"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["31DC355F5D46AE7F"]
+			hide_until_deps_visible: true
+			id: "255FDC0FA11B8262"
+			tasks: [
+				{
+					advancement: "minecraft:end/kill_dragon"
+					criterion: ""
+					id: "26105DDE39B92C55"
+					optional_task: true
+					type: "advancement"
+				}
+				{
+					entity: "minecraft:ender_dragon"
+					id: "2496809ECC494EAF"
+					optional_task: true
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			id: "5D9019A625D83B8C"
+			tasks: [{
+				advancement: "dragonsurvival:find_end_structures"
+				criterion: ""
+				id: "4B41712B0D58E7FE"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: -4.0d
+		}
+	]
 }

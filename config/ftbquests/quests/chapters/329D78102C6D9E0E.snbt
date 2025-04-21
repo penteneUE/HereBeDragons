@@ -6,6 +6,14 @@
 	group: ""
 	hide_quest_until_deps_complete: true
 	id: "329D78102C6D9E0E"
+	images: [{
+		height: 12.0d
+		image: "kubejs:textures/task/zoh_shia.png"
+		rotation: 0.0d
+		width: 12.0d
+		x: 0.25d
+		y: 0.0d
+	}]
 	order_index: 2
 	quest_links: [ ]
 	quests: [{

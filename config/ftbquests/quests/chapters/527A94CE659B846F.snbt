@@ -81,8 +81,11 @@
 			dependencies: ["4AF56908F7A20C1C"]
 			id: "7396BFF63787B5CF"
 			tasks: [{
-				id: "22DAA5D2FF109832"
-				type: "checkmark"
+				id: "7F00FF727BBBF0F7"
+				observe_type: 5
+				timer: 0L
+				to_observe: "goblintraders:goblin_trader"
+				type: "observation"
 			}]
 			x: 1.5d
 			y: 0.0d

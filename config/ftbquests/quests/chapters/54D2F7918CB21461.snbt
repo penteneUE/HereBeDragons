@@ -21,7 +21,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["616FEA8BA81A4AF1"]
+			dependencies: ["4E6ED770D83C4AFF"]
 			hide_until_deps_complete: false
 			id: "427E539B8D939D7B"
 			tasks: [
@@ -56,11 +56,11 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
+			x: 3.0d
 			y: -1.0d
 		}
 		{
-			dependencies: ["616FEA8BA81A4AF1"]
+			dependencies: ["282D6DA8CBDD27E1"]
 			hide_until_deps_complete: false
 			id: "5297FBC92A1D485C"
 			tasks: [{
@@ -68,22 +68,22 @@
 				structure: "#minecraft:village"
 				type: "structure"
 			}]
-			x: 1.5d
+			x: 3.0d
 			y: 0.5d
 		}
 		{
-			dependencies: ["616FEA8BA81A4AF1"]
+			dependencies: ["282D6DA8CBDD27E1"]
 			hide_until_deps_complete: false
 			id: "50EC8FDECD2FA1CC"
 			tasks: [{
 				id: "79D67BD548D2720C"
 				type: "checkmark"
 			}]
-			x: 1.5d
+			x: 3.0d
 			y: 2.0d
 		}
 		{
-			dependencies: ["616FEA8BA81A4AF1"]
+			dependencies: ["282D6DA8CBDD27E1"]
 			hide_until_deps_complete: false
 			id: "73ECD42ABA5788CF"
 			tasks: [{
@@ -91,11 +91,11 @@
 				structure: "valarian_conquest:bohemiancastle"
 				type: "structure"
 			}]
-			x: 4.5d
+			x: 6.0d
 			y: 0.5d
 		}
 		{
-			dependencies: ["616FEA8BA81A4AF1"]
+			dependencies: ["282D6DA8CBDD27E1"]
 			hide_until_deps_complete: false
 			id: "0F5FD18B75AAD973"
 			tasks: [{
@@ -103,7 +103,7 @@
 				structure: "dragonsurvival:dragon_hunters_castle"
 				type: "structure"
 			}]
-			x: 2.5d
+			x: 4.0d
 			y: 0.5d
 		}
 		{
@@ -120,7 +120,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["616FEA8BA81A4AF1"]
+			dependencies: ["282D6DA8CBDD27E1"]
 			hide_until_deps_complete: false
 			id: "7B74DE20C5427F26"
 			tasks: [{
@@ -128,23 +128,11 @@
 				structure: "valarian_conquest:caladrian_castle"
 				type: "structure"
 			}]
-			x: 5.5d
+			x: 7.0d
 			y: 0.5d
 		}
 		{
-			dependencies: ["616FEA8BA81A4AF1"]
-			hide_until_deps_complete: false
-			id: "2AFD6008FB0FC8C6"
-			tasks: [{
-				id: "59C3546496BADDBD"
-				structure: "valarian_conquest:galiciancastle"
-				type: "structure"
-			}]
-			x: 6.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["616FEA8BA81A4AF1"]
+			dependencies: ["282D6DA8CBDD27E1"]
 			hide_until_deps_complete: false
 			id: "2D775AC69171CD4A"
 			tasks: [{
@@ -152,11 +140,11 @@
 				structure: "valarian_conquest:gardoniancastle"
 				type: "structure"
 			}]
-			x: 7.5d
+			x: 9.0d
 			y: 0.5d
 		}
 		{
-			dependencies: ["616FEA8BA81A4AF1"]
+			dependencies: ["282D6DA8CBDD27E1"]
 			hide_until_deps_complete: false
 			id: "246036B7A8467D34"
 			tasks: [{
@@ -164,11 +152,11 @@
 				structure: "valarian_conquest:lancastiancastle"
 				type: "structure"
 			}]
-			x: 8.5d
+			x: 10.0d
 			y: 0.5d
 		}
 		{
-			dependencies: ["616FEA8BA81A4AF1"]
+			dependencies: ["282D6DA8CBDD27E1"]
 			hide_until_deps_complete: false
 			id: "03CC9BF96BE34E46"
 			tasks: [{
@@ -176,11 +164,11 @@
 				structure: "valarian_conquest:numeriancastle"
 				type: "structure"
 			}]
-			x: 9.5d
+			x: 11.0d
 			y: 0.5d
 		}
 		{
-			dependencies: ["616FEA8BA81A4AF1"]
+			dependencies: ["282D6DA8CBDD27E1"]
 			hide_until_deps_complete: false
 			id: "1484F081836E5255"
 			tasks: [{
@@ -188,11 +176,11 @@
 				structure: "valarian_conquest:valariancastle"
 				type: "structure"
 			}]
-			x: 10.5d
+			x: 12.0d
 			y: 0.5d
 		}
 		{
-			dependencies: ["616FEA8BA81A4AF1"]
+			dependencies: ["282D6DA8CBDD27E1"]
 			hide_until_deps_complete: false
 			id: "07EE0741032F5E41"
 			tasks: [{
@@ -200,7 +188,7 @@
 				structure: "valarian_conquest:visgothiancastle"
 				type: "structure"
 			}]
-			x: 11.5d
+			x: 13.0d
 			y: 0.5d
 		}
 		{
@@ -217,15 +205,101 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["616FEA8BA81A4AF1"]
+			dependencies: ["282D6DA8CBDD27E1"]
 			hide_until_deps_complete: false
 			id: "528B36DB7C91235F"
 			tasks: [{
 				id: "7CB6541AF7D4CDC7"
 				type: "checkmark"
 			}]
-			x: 2.5d
+			x: 4.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["616FEA8BA81A4AF1"]
+			id: "282D6DA8CBDD27E1"
+			tasks: [{
+				id: "0305E78F44F10954"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["616FEA8BA81A4AF1"]
+			id: "4E6ED770D83C4AFF"
+			tasks: [{
+				id: "56DAD45D20F6947D"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["282D6DA8CBDD27E1"]
+			hide_until_deps_complete: false
+			id: "37989AC78B2DB0F5"
+			tasks: [{
+				id: "1BA1D4D509925533"
+				structure: "valarian_conquest:galiciancastle"
+				type: "structure"
+			}]
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			id: "0AD37F450B1069DA"
+			tasks: [{
+				id: "7E60BDB3EA3660FC"
+				item: { count: 1, id: "supplementaries:jar" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			id: "015FCCE81D57405E"
+			tasks: [{
+				id: "1E6ACA977D08BDE6"
+				item: { components: { "sophisticatedcore:accent_color": -15295332, "sophisticatedcore:main_color": -15295332 }, count: 1, id: "sophisticatedstorage:diamond_barrel" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["427E539B8D939D7B"]
+			id: "7181E0EE4CF3A23D"
+			tasks: [{
+				advancement: "dragonsurvival:sleep_on_treasure"
+				criterion: ""
+				id: "08BEA1848FB27DB9"
+				type: "advancement"
+			}]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7181E0EE4CF3A23D"]
+			id: "3D0D9910B3A720E4"
+			tasks: [{
+				advancement: "dragonsurvival:sleep_on_hoard"
+				criterion: ""
+				id: "5CF2F8708375E0E8"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			id: "73415DB10129A282"
+			tasks: [{
+				id: "3B3D3958CB36B871"
+				item: { count: 1, id: "dragonsurvival:smelly_meat_porridge" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.0d
 		}
 	]
 }

@@ -4,8 +4,54 @@
 	filename: "640F3009EE40B4BE"
 	group: ""
 	hide_quest_details_until_startable: true
+	icon: {
+		id: "dragonsurvival:star_heart"
+	}
 	id: "640F3009EE40B4BE"
+	images: [{
+		height: 12.0d
+		image: "kubejs:textures/task/here_were_dragons.png"
+		rotation: 0.0d
+		width: 12.0d
+		x: 0.0d
+		y: -2.0d
+	}]
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["209A1F902BE74FC3"]
+			hide_until_deps_complete: true
+			id: "0E0A7316F2302130"
+			tasks: [{
+				id: "23FC7E58ED23B6A6"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"209A1F902BE74FC3"
+				"0E0A7316F2302130"
+			]
+			id: "4E2F120762511B25"
+			tasks: [{
+				id: "2C56F358AECA93D8"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4E2F120762511B25"]
+			id: "61D03B762B3D7DB3"
+			tasks: [{
+				id: "2DA64836A75052CD"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+	]
 }

@@ -133,18 +133,18 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"minecraft:zombie": true
-			"minecraft:tropical_fish": false
-			"minecraft:spider": true
-			"minecraft:drowned": true
-			"minecraft:pufferfish": false
 			"minecraft:enderman": true
-			"minecraft:glow_squid": true
-			"minecraft:witch": true
 			"minecraft:bat": true
-			"minecraft:skeleton": true
+			"minecraft:tropical_fish": false
+			"minecraft:drowned": true
 			"minecraft:creeper": true
+			"minecraft:pufferfish": false
+			"minecraft:witch": true
 			"minecraft:squid": true
+			"minecraft:glow_squid": true
+			"minecraft:spider": true
+			"minecraft:skeleton": true
+			"minecraft:zombie": true
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)

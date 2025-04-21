@@ -4,9 +4,17 @@
 	filename: "14C8D60A6884E47E"
 	group: ""
 	icon: {
-		id: "iceandfire:dragon_skull_fire"
+		id: "dragonsurvival:star_bone"
 	}
 	id: "14C8D60A6884E47E"
+	images: [{
+		height: 12.0d
+		image: "kubejs:textures/task/intro.png"
+		rotation: 0.0d
+		width: 12.0d
+		x: 0.0d
+		y: -1.5d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -16,6 +24,7 @@
 			}
 			id: "1D43F77FD948BD09"
 			rewards: [{
+				auto: "enabled"
 				id: "1736C2A26CCA2BB3"
 				item: {
 					components: {
@@ -38,14 +47,20 @@
 		}
 		{
 			dependencies: ["1D43F77FD948BD09"]
+			hide_details_until_startable: true
 			icon: {
 				id: "iceandfire:dragon_skull_fire"
 			}
 			id: "209A1F902BE74FC3"
 			rewards: [{
-				id: "4C995E9CF624F799"
-				type: "xp"
-				xp: 2
+				auto: "enabled"
+				exclude_from_claim_all: true
+				icon: {
+					id: "minecraft:milk_bucket"
+				}
+				id: "70A9E5E1821F2270"
+				table_id: 9161091763629966930L
+				type: "all_table"
 			}]
 			tasks: [{
 				id: "417C6101F274068A"
@@ -98,9 +113,6 @@
 			dependency_requirement: "one_completed"
 			disable_toast: true
 			hide_until_deps_complete: true
-			icon: {
-				id: "iceandfire:manuscript"
-			}
 			id: "4FDE40DA03D8CE4B"
 			shape: "diamond"
 			tasks: [{
@@ -114,14 +126,17 @@
 			can_repeat: false
 			dependencies: ["209A1F902BE74FC3"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "482E83E9FB669B98"
+			optional: true
 			rewards: [{
-				auto: "disabled"
+				auto: "enabled"
 				command: "/dragon-altar"
 				icon: {
 					id: "dragonsurvival:stone_dragon_altar"
 				}
 				id: "4AAB5E4ED34EA19A"
+				permission_level: 4
 				team_reward: false
 				type: "command"
 			}]
