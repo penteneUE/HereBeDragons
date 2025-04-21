@@ -3,6 +3,9 @@
 
 # track this file
 !.gitignore
+!README.md
+!HereBeDragons.jar
+!HereBeDragons.json
 
 # whitelist everything in ./config/
 !config/
