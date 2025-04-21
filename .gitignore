@@ -1,0 +1,11 @@
+*
+!*/
+
+# track this file
+!.gitignore
+
+# whitelist everything in ./config/
+!config/
+!kubejs/
+!mods/
+!resourcepacks/
