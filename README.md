@@ -3,6 +3,7 @@
 ![HereWereDragons](kubejs/assets/kubejs/textures/task/here_were_dragons.png)
 
 > *（1.21 龙之生存+冰与火整合包）*
+> 在一个没有龙的世界当恶龙，会是什么体验？
 
 你从纸壳中醒来，身上只有一个罗盘。
 自己依稀记得，要去寻找*龙*的踪迹。

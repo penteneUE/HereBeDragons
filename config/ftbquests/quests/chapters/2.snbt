@@ -4,6 +4,14 @@
 	filename: "2"
 	group: ""
 	id: "1E283E445F4D2ED1"
+	images: [{
+		height: 12.0d
+		image: "kubejs:textures/task/chapter2.png"
+		rotation: 0.0d
+		width: 12.0d
+		x: 0.0d
+		y: -3.5d
+	}]
 	order_index: 4
 	quest_links: [ ]
 	quests: [

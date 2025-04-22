@@ -7,7 +7,7 @@ EntityEvents.death("minecraft:player", event => {
     //     if (item.id == "kubejs:felyne_recall") item.setCount(0);
     //  })
     
-    if (!player.stages.has("keepexp_true")) return;
+    if (!player.stages.has("keepexp")) return;
     xpTable[uuid] = player.xp
     player.xp = 0
     
@@ -18,7 +18,7 @@ PlayerEvents.respawned(event => {
     
     // if (player.stages.has("felynerecall_true")) player.inventory.add(1, Item.of("kubejs:felyne_recall"))
 
-    if (!player.stages.has("keepexp_true")) return;
+    if (!player.stages.has("keepexp")) return;
     player.xp = xpTable[uuid]
     xpTable[uuid] = undefined
 

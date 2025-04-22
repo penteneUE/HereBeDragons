@@ -1,1 +1,1 @@
-Platform.mods.kubejs.name = 'Here be Dragons'
+Platform.mods.kubejs.name = 'Here Were Dragons'

@@ -17,12 +17,12 @@
 	}
 	id: "5F32B23A5FDD7059"
 	images: [{
-		height: 16.0d
+		height: 20.0d
 		image: "kubejs:textures/task/chapter1.png"
 		rotation: 0.0d
-		width: 16.0d
-		x: -0.25d
-		y: -4.25d
+		width: 20.0d
+		x: -0.3d
+		y: -4.4d
 	}]
 	order_index: 3
 	quest_links: [ ]
@@ -45,7 +45,7 @@
 				type: "checkmark"
 			}]
 			x: 0.0d
-			y: 1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["681EBB7384D4F881"]
@@ -61,16 +61,15 @@
 				item: { components: { "ftbfiltersystem:filter": "item_tag(c:ingots/iron)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: -2.5d
+			x: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["681EBB7384D4F881"]
 			id: "3A18D1CA4A2260B2"
 			rewards: [{
-				id: "7E6E289E630C2F7F"
-				type: "xp"
-				xp: 2
+				id: "24CE4E2204753DBF"
+				type: "custom"
 			}]
 			tasks: [{
 				id: "5B9F35C1298E79D0"
@@ -79,7 +78,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3DCEA15CB8E9D815"]
@@ -124,7 +123,7 @@
 				}
 			]
 			x: 3.0d
-			y: 1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["681EBB7384D4F881"]
@@ -140,8 +139,8 @@
 				item: { count: 1, id: "naturescompass:naturescompass" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: 1.0d
+			x: -3.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["681EBB7384D4F881"]
@@ -160,7 +159,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["681EBB7384D4F881"]
@@ -176,8 +175,8 @@
 				item: { count: 1, id: "sereneseasons:calendar" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: 0.0d
+			x: -3.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -196,7 +195,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: -0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["3DCEA15CB8E9D815"]
@@ -223,8 +222,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: -3.5d
+			x: 2.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["681EBB7384D4F881"]
@@ -240,8 +239,8 @@
 				item: { count: 1, id: "dragonsurvival:elder_dragon_dust" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: -1.5d
+			x: -5.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["681EBB7384D4F881"]
@@ -257,8 +256,8 @@
 				item: { count: 1, id: "waystones:waystone" }
 				type: "item"
 			}]
-			x: -3.5d
-			y: 1.0d
+			x: -4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["681EBB7384D4F881"]
@@ -274,7 +273,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["20807B9CA5CDB81A"]
@@ -284,8 +283,8 @@
 				id: "6E2DEDD7DD141BD6"
 				type: "checkmark"
 			}]
-			x: 5.5d
-			y: -3.5d
+			x: 3.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["681EBB7384D4F881"]
@@ -300,8 +299,8 @@
 				item: { components: { "ftbfiltersystem:filter": "item_tag(c:cobblestones/normal)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: -1.5d
+			x: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["681EBB7384D4F881"]
@@ -340,8 +339,8 @@
 					type: "item"
 				}
 			]
-			x: -1.0d
-			y: 0.5d
+			x: -1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["681EBB7384D4F881"]
@@ -383,8 +382,8 @@
 					type: "item"
 				}
 			]
-			x: -1.0d
-			y: -0.5d
+			x: -1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["681EBB7384D4F881"]
@@ -429,8 +428,8 @@
 					type: "item"
 				}
 			]
-			x: -1.0d
-			y: -1.5d
+			x: -1.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["20807B9CA5CDB81A"]
@@ -532,54 +531,6 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["143D839B0506D562"]
-			id: "47DAEEA0CCEE81B0"
-			tasks: [{
-				advancement: "minecraft:nether/obtain_blaze_rod"
-				criterion: ""
-				id: "1F39A03AFE66FCCD"
-				type: "advancement"
-			}]
-			x: -4.5d
-			y: -8.5d
-		}
-		{
-			dependencies: ["716C0EC962DF0E89"]
-			hide_dependency_lines: true
-			id: "1E5256E79CD6C8AB"
-			tasks: [
-				{
-					id: "589AFCD1E101E8EC"
-					item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 8, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:gold_spell_book" }
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "506CC2AF709AAC4B"
-					item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 10, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:diamond_spell_book" }
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: -4.0d
-			y: -3.5d
-		}
-		{
-			dependencies: ["716C0EC962DF0E89"]
-			hide_dependency_lines: true
-			icon: {
-				id: "minecraft:netherite_helmet"
-			}
-			id: "1ECDF8081A242C8C"
-			tasks: [{
-				id: "6937090D76F4A531"
-				structure: "irons_spellbooks:ancient_battleground"
-				type: "structure"
-			}]
-			x: -5.0d
-			y: -3.5d
-		}
-		{
 			dependencies: ["54C6AA8E0348FCC8"]
 			id: "7235CE73FA25A2B6"
 			rewards: [{
@@ -595,20 +546,83 @@
 				item: { components: { "ftbfiltersystem:filter": "item_tag(dragonsurvival:dragon_altars)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 5.5d
-			y: -1.5d
+			x: -5.0d
+			y: -0.5d
 		}
 		{
-			dependencies: ["716C0EC962DF0E89"]
-			id: "143D839B0506D562"
+			dependencies: ["1A1EEED3B3FB70E6"]
+			id: "7F1FD96CDF8CD2B8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4CD0ABFF3F937CA7"
+					table_id: 742066937128095523L
+					type: "choice"
+				}
+				{
+					id: "6ED035171AF72DE7"
+					type: "custom"
+				}
+			]
 			tasks: [{
-				advancement: "minecraft:nether/find_fortress"
-				criterion: ""
-				id: "78872860D8809792"
-				type: "advancement"
+				id: "5896CA37A502EE32"
+				item: { count: 1, id: "kubejs:dragon_flag" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7F1FD96CDF8CD2B8"]
+			id: "27D23F919BAA1EB4"
+			rewards: [{
+				id: "5739A9BF555F87A9"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "6FA4F3B7BA7B75B1"
+				structure: "skyvillages:skyvillage"
+				type: "structure"
 			}]
 			x: -4.0d
-			y: -5.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7F1FD96CDF8CD2B8"]
+			hide_until_deps_complete: false
+			id: "5BBEC08E7893B0EF"
+			rewards: [{
+				id: "640AA21370147C0C"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				advancement: "dragonsurvival:dark/affected_by_hunter_omen"
+				criterion: ""
+				id: "2BC94C21F567A0BF"
+				type: "advancement"
+			}]
+			x: -5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5BBEC08E7893B0EF"]
+			hide_until_deps_complete: false
+			id: "32EBCEE0701806C1"
+			rewards: [{
+				id: "538347AFBFDF19A0"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				advancement: "dragonsurvival:dark/steal_from_villager"
+				criterion: ""
+				id: "71B9B6CA53007C57"
+				type: "advancement"
+			}]
+			x: -5.5d
+			y: -3.5d
 		}
 	]
 }

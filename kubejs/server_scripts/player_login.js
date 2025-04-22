@@ -7,6 +7,7 @@ PlayerEvents.loggedIn(event => {
 
             player.give(Item.of('ftbquests:book'))
 
+
             const plrname = player.name.getString()
             event.server.runCommandSilent(`/effect give ${plrname} minecraft:slowness infinite 255 true`)
             event.server.runCommandSilent(`/effect give ${plrname} minecraft:blindness infinite 255 true`)

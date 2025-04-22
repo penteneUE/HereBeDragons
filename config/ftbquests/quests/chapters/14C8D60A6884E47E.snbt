@@ -9,11 +9,11 @@
 	id: "14C8D60A6884E47E"
 	images: [{
 		height: 12.0d
-		image: "kubejs:textures/task/intro.png"
+		image: "kubejs:textures/task/prelogue.png"
 		rotation: 0.0d
 		width: 12.0d
 		x: 0.0d
-		y: -1.5d
+		y: -2.0d
 	}]
 	order_index: 0
 	quest_links: [ ]

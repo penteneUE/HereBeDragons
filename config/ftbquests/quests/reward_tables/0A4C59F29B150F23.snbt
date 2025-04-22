@@ -1,0 +1,23 @@
+{
+	id: "0A4C59F29B150F23"
+	loot_size: 1
+	order_index: 3
+	rewards: [
+		{ id: "4654BC9504A56138", item: { count: 1, id: "minecraft:white_banner" } }
+		{ id: "0CF890E1E32ABD5C", item: { count: 1, id: "minecraft:light_gray_banner" } }
+		{ id: "119EA0A6623BCB06", item: { count: 1, id: "minecraft:gray_banner" } }
+		{ id: "112626104189E12D", item: { count: 1, id: "minecraft:black_banner" } }
+		{ id: "572983E1B4F16FC0", item: { count: 1, id: "minecraft:brown_banner" } }
+		{ id: "08B2C1CD315E1387", item: { count: 1, id: "minecraft:red_banner" } }
+		{ id: "7CD1D4AA65623324", item: { count: 1, id: "minecraft:orange_banner" } }
+		{ id: "787321E3FBAE379D", item: { count: 1, id: "minecraft:yellow_banner" } }
+		{ id: "49319A168135DFC8", item: { count: 1, id: "minecraft:lime_banner" } }
+		{ id: "58B3001CC7FC383A", item: { count: 1, id: "minecraft:green_banner" } }
+		{ id: "3BFCA8A8DA1978FF", item: { count: 1, id: "minecraft:cyan_banner" } }
+		{ id: "6C31238D6805273B", item: { count: 1, id: "minecraft:light_blue_banner" } }
+		{ id: "75DB270A3080B4BE", item: { count: 1, id: "minecraft:blue_banner" } }
+		{ id: "0E785AECB133C335", item: { count: 1, id: "minecraft:purple_banner" } }
+		{ id: "7AEBEEC16C6F24B6", item: { count: 1, id: "minecraft:magenta_banner" } }
+		{ id: "7AEF2C7E29DBFE05", item: { count: 1, id: "minecraft:pink_banner" } }
+	]
+}

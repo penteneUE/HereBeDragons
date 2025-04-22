@@ -15,14 +15,20 @@ const NATURE_SPELL_RESIST = "irons_spellbooks:nature_magic_resist"
 const LIGHTNING_SPELL_POWER = "irons_spellbooks:lightning_spell_power"
 const LIGHTNING_SPELL_RESIST = "irons_spellbooks:lightning_magic_resist"
 
+const DRAGONS = ['dragonsurvival:cave_dragon', 'dragonsurvival:sea_dragon', 'dragonsurvival:forest_dragon'];
+ 
 PlayerEvents.tick(e => {
     const { player } = e;
     let handler = $DragonStateProvider.getData(player);
-    
 
-    const attrTable = new Map([
-        [LIGHTNING_SPELL_POWER, 0],
-    ]);
+    if (player.stages.has("disablehuman")) {
+        if (handler instanceof $DragonStateHandler && !handler.isDragon()) {
+            let random_dragon = DRAGONS[Math.floor(Math.random() * DRAGONS.length)];
+            e.server.runCommandSilent(`/execute as ${player.name.getString()} run dragon ${random_dragon}`)
+        }
+    }
+
+    const attrTable = new Map();
 
     if (handler instanceof $DragonStateHandler && handler.isDragon()) {
         switch (handler.speciesId()) {
