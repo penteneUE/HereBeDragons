@@ -21,8 +21,8 @@
 		image: "kubejs:textures/task/chapter1.png"
 		rotation: 0.0d
 		width: 20.0d
-		x: -0.3d
-		y: -4.4d
+		x: -0.05d
+		y: -3.95d
 	}]
 	order_index: 3
 	quest_links: [ ]
@@ -139,7 +139,7 @@
 				item: { count: 1, id: "naturescompass:naturescompass" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: -3.5d
 			y: 2.0d
 		}
 		{
@@ -175,7 +175,7 @@
 				item: { count: 1, id: "sereneseasons:calendar" }
 				type: "item"
 			}]
-			x: -3.5d
+			x: -4.0d
 			y: 1.0d
 		}
 		{
@@ -239,8 +239,8 @@
 				item: { count: 1, id: "dragonsurvival:elder_dragon_dust" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: 0.5d
+			x: -3.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["681EBB7384D4F881"]
@@ -256,7 +256,7 @@
 				item: { count: 1, id: "waystones:waystone" }
 				type: "item"
 			}]
-			x: -4.0d
+			x: -4.5d
 			y: 2.0d
 		}
 		{
@@ -339,7 +339,7 @@
 					type: "item"
 				}
 			]
-			x: -1.5d
+			x: -2.0d
 			y: 1.5d
 		}
 		{
@@ -382,7 +382,7 @@
 					type: "item"
 				}
 			]
-			x: -1.5d
+			x: -2.0d
 			y: 0.5d
 		}
 		{
@@ -407,11 +407,11 @@
 					type: "item"
 				}
 				{
-					count: 5
-					id: "08E395EEC2B9CA66"
+					count: 4
+					id: "1A27DC8E89AC529E"
 					item: {
 						count: 1
-						id: "minecraft:pufferfish"
+						id: "dragonsurvival:seasoned_fish"
 					}
 					type: "item"
 				}
@@ -427,8 +427,13 @@
 					item: { components: { "ftbfiltersystem:filter": "item_tag(c:foods/raw_fish)not(item(minecraft:pufferfish))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 					type: "item"
 				}
+				{
+					id: "7C90D639416D0F4A"
+					item: { count: 1, id: "dragonsurvival:seasoned_fish" }
+					type: "item"
+				}
 			]
-			x: -1.5d
+			x: -2.0d
 			y: -0.5d
 		}
 		{
@@ -546,7 +551,7 @@
 				item: { components: { "ftbfiltersystem:filter": "item_tag(dragonsurvival:dragon_altars)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -5.0d
+			x: -4.5d
 			y: -0.5d
 		}
 		{
@@ -576,9 +581,12 @@
 			dependencies: ["7F1FD96CDF8CD2B8"]
 			id: "27D23F919BAA1EB4"
 			rewards: [{
-				id: "5739A9BF555F87A9"
-				type: "xp"
-				xp: 5
+				id: "3C01C056E6B0734E"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
 			}]
 			tasks: [{
 				id: "6FA4F3B7BA7B75B1"
@@ -590,8 +598,10 @@
 		}
 		{
 			dependencies: ["7F1FD96CDF8CD2B8"]
+			hide_dependency_lines: true
 			hide_until_deps_complete: false
 			id: "5BBEC08E7893B0EF"
+			invisible: true
 			rewards: [{
 				id: "640AA21370147C0C"
 				type: "xp"
@@ -603,7 +613,7 @@
 				id: "2BC94C21F567A0BF"
 				type: "advancement"
 			}]
-			x: -5.5d
+			x: -7.0d
 			y: -2.5d
 		}
 		{
@@ -620,6 +630,69 @@
 				criterion: ""
 				id: "71B9B6CA53007C57"
 				type: "advancement"
+			}]
+			x: -7.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["27D23F919BAA1EB4"]
+			id: "2129326F3111C29B"
+			rewards: [{
+				id: "2B937AAD235BB273"
+				item: {
+					count: 1
+					id: "kubejs:tax_collector"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6BBDC08C1FF5313C"
+				item: { components: { "minecraft:custom_data": { structure_id: "skyvillages:sky_village" } }, count: 1, id: "kubejs:dragon_conquest_trophy" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7F1FD96CDF8CD2B8"]
+			hide_dependency_lines: true
+			id: "2EF159E57EAAA0B9"
+			invisible: true
+			rewards: [{
+				id: "60FC2B53CD19E8BB"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6E629705DA4201AF"
+				item: { count: 1, id: "kubejs:tax_collector" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7F1FD96CDF8CD2B8"]
+			id: "27654A3A89C4E334"
+			tasks: [{
+				id: "49536C43BBB09C55"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["27654A3A89C4E334"]
+			hide_until_deps_complete: true
+			id: "4218B7B59B0F0F74"
+			tasks: [{
+				id: "6AD65B0ADB6CB6B3"
+				item: { count: 1, id: "kubejs:tax_collector" }
+				type: "item"
 			}]
 			x: -5.5d
 			y: -3.5d

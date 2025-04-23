@@ -16,9 +16,9 @@ const LIGHTNING_SPELL_POWER = "irons_spellbooks:lightning_spell_power"
 const LIGHTNING_SPELL_RESIST = "irons_spellbooks:lightning_magic_resist"
 
 const DRAGONS = ['dragonsurvival:cave_dragon', 'dragonsurvival:sea_dragon', 'dragonsurvival:forest_dragon'];
- 
-PlayerEvents.tick(e => {
-    const { player } = e;
+
+function handleDragonStateStuff(/**@type {$SimplePlayerKubeEvent_}*/event) {
+    const { player } = event;
     let handler = $DragonStateProvider.getData(player);
 
     if (player.stages.has("disablehuman")) {
@@ -62,32 +62,4 @@ PlayerEvents.tick(e => {
             power
             ,"add_value") //Operation
     })
-    
- })
-
-// PlayerEvents.tick(e => {
-//     const { player } = e;
-
-//     // Reset logic if effect is not active
-//     if (!player.potionEffects.isActive('minecraft:slowness')) {
-//         player.modifyAttribute("minecraft:generic.max_health", //Select max_health attribute
-//             "bf435515-2a7b-4790-a937-bfbd843db62b", //Identifier (UUID)
-//             0 //reset
-//             ,"add_value") //Operation
-
-//         //Update player health
-//         player.setHealth(player.getHealth())
-//         return;
-//     }
-//     else{
-
-//         player.modifyAttribute("minecraft:generic.max_health", //Select max_health attribute
-//             "bf435515-2a7b-4790-a937-bfbd843db62b", //Identifier (UUID)
-//             -1 //Modify attribute to be at least 1 hp
-//             ,"add_value") //Operation
-    
-//         //Update player health
-//         player.setHealth(Math.min(player.getHealth(),player.getMaxHealth()))
-//     }
-
-// });
+}

@@ -7,6 +7,14 @@
 	chapter.54D2F7918CB21461.title: "征服：龙之宝库"
 	chapter.5F32B23A5FDD7059.title: "1：表象"
 	chapter.640F3009EE40B4BE.title: "介绍 \\& 新手教程"
+	chapter.7920A08C436F0663.title: "调试选项"
+	quest.0144FE00B19FCBC7.quest_desc: [
+		"由于整合包仍是&c开发中版本&r，可能会遭遇恶性bug！（卡死一种玩法的那种，真的特别恶性！）"
+		""
+		"如果你知道自己在干什么，那就解锁调试选项吧。"
+		""
+		"记得把bug反馈给开发者！感激不尽！"
+	]
 	quest.015FCCE81D57405E.quest_subtitle: "金灿灿的桶子堆成山"
 	quest.015FCCE81D57405E.title: "精妙存储"
 	quest.05546B1D86F62F95.quest_desc: [
@@ -17,11 +25,19 @@
 	quest.0E0A7316F2302130.quest_desc: [
 		"如标题所示，这是一款以龙生存为主题的整合包。"
 		"龙癌作者找不到好玩的龙整合包，索性自己动手做了一个。"
+		""
+		"&e整合包仍是开发中版本，独自开发真的很困难，不求各位技术大佬帮我攻克难题，只求能把bug反馈出来，就已经是帮大忙了！&r"
 	]
 	quest.0E0A7316F2302130.quest_subtitle: "在一个没有龙的世界当恶龙，会是什么体验？"
 	quest.0E0A7316F2302130.title: "整合包介绍"
 	quest.0F5FD18B75AAD973.title: "猎龙人之堡"
 	quest.12CA7C92D23CF9A4.title: "搜寻强大的敌人"
+	quest.147154AD758AD0C4.quest_desc: [
+		"小心——若是被&o&5黑色紫色&r的龙杀死，会染上它的诅咒！"
+		""
+		"&o传说中，有一种██龙，自出生就会向██山迁移。它们并非有意作恶，而是因为它们没有双眼，散播出的病毒就是它们用来感知世界的唯一方式，但在客观上造成了自然灾害。后来更发现，这种生物是█████的幼体。&r[剩余部分已编辑]"
+	]
+	quest.147154AD758AD0C4.quest_subtitle: "<日期与作者均不可辨别>"
 	quest.1A1EEED3B3FB70E6.title: "材料 - 木材"
 	quest.1D43F77FD948BD09.quest_desc: [
 		"你自纸壳中苏醒……思绪一片空白。"
@@ -42,19 +58,38 @@
 	]
 	quest.209A1F902BE74FC3.quest_subtitle: "龙曾在此。"
 	quest.209A1F902BE74FC3.title: "宛在"
+	quest.2129326F3111C29B.quest_desc: [
+		"你做到了！现在你有了第一块领地。"
+		""
+		"龙旗玩法可以得到大量经验和物资，用罗盘定位目的地，尽情去干吧！"
+		""
+		"另外，在这个村庄里，你发现了一个闪闪发亮的瓶子……"
+	]
+	quest.2129326F3111C29B.title: "第一块领地"
 	quest.23AF0BA2CFF8572C.title: "新的维度"
 	quest.249E652D8444575D.title: "四季"
 	quest.255FDC0FA11B8262.title: "龙之归宿"
+	quest.27654A3A89C4E334.quest_desc: ["没关系，整合包除了村庄，还提供了其它结构可供占领。如海底神殿等。"]
+	quest.27654A3A89C4E334.quest_subtitle: "跳过这个任务"
 	quest.27D23F919BAA1EB4.quest_desc: [
-		"浮空村庄由于其浮空的特性，再加上防守相对薄弱，是新生恶龙绝佳的领地备选。"
+		"浮空村庄由于其浮空的特性，再加上防守相对薄弱，是新生恶龙绝佳的第一块领地。"
 		""
 		"在村庄上放置龙旗基座，插上旗帜激活龙旗吧。"
 	]
 	quest.27D23F919BAA1EB4.title: "定位一处浮空村庄"
 	quest.282D6DA8CBDD27E1.title: "聚落的征服"
 	quest.2A53602F5DD6482A.quest_desc: ["痴愚"]
-	quest.31DC355F5D46AE7F.title: "龙……？"
-	quest.32EBCEE0701806C1.quest_desc: ["在拥有恶名后，可以右键向村民索取贡品。"]
+	quest.2EF159E57EAAA0B9.quest_desc: [
+		"有了领地之后，收税是必不可少的。"
+		"{@pagebreak}"
+		"&o老人说这是个驼背的老爷爷，少年说这是个慈祥的老奶奶，疯子说这根本就不是个&0方的&r&o。依我看，你最好期待祂跟你是一个维度的。&r"
+	]
+	quest.2EF159E57EAAA0B9.quest_subtitle: "你看不见它，但知道它在"
+	quest.31DC355F5D46AE7F.quest_desc: ["这个家伙像是完全没有理智……而且它的状态很不对劲！"]
+	quest.31DC355F5D46AE7F.quest_subtitle: "你看见了——在那个浮岛上，有一条飞龙！"
+	quest.31DC355F5D46AE7F.title: "迫近的黑影"
+	quest.32EBCEE0701806C1.quest_desc: [""]
+	quest.32EBCEE0701806C1.quest_subtitle: "被通缉后，可以右键向村民索取贡品"
 	quest.360ED3ED5B00CC20.title: "法术卷轴"
 	quest.3A18D1CA4A2260B2.quest_desc: [
 		"在探索的过程中，你偶然发现了一些散落的手稿。放眼望去，全都是有关魔法生物的。"
@@ -71,6 +106,7 @@
 	quest.3C35CC09D48EA10D.quest_subtitle: "炉火焱焱"
 	quest.3C35CC09D48EA10D.title: "食物 - 洞穴龙"
 	quest.3DCEA15CB8E9D815.title: "材料 - 钢铁"
+	quest.4218B7B59B0F0F74.title: "合成瓶中税收官"
 	quest.427E539B8D939D7B.title: "龙的财宝堆"
 	quest.482E83E9FB669B98.quest_desc: [
 		"若是出生在了不适宜的环境，可以在此重新选择。"
@@ -108,8 +144,7 @@
 		"弱点的影响可以通过被动技能的掌握来逐渐削弱。"
 		"查看“整合包介绍\\&新手教程”章节了解更多关于龙的生存经验。"
 		""
-		"{@pagebreak}"
-		" &o海龙种竟同时掌握着水、电、冰三种元素……它们说不定会分家？这个世界从来是跨越天穹的陆地上点缀着湖泊般的海洋，灭绝了也说不定。谁知道呢。&r"
+		"{@pagebreak} &o我觉得海龙种会灭绝。尽管同时掌管着水、电、冰三种元素，但这个世界从来是跨越天穹的陆地上点缀着湖泊般的海洋。谁知道呢。&r"
 	]
 	quest.4FDE40DA03D8CE4B.quest_subtitle: "<日期与作者均不可辨别>"
 	quest.4FDE40DA03D8CE4B.title: "笔记：龙种的分别"
@@ -124,7 +159,12 @@
 	quest.54C6AA8E0348FCC8.quest_subtitle: "同类相食……？"
 	quest.54C6AA8E0348FCC8.title: "龙尘与龙心碎片"
 	quest.54E3D369788106E6.title: "背包的升级"
-	quest.5BBEC08E7893B0EF.quest_desc: [""]
+	quest.5BBEC08E7893B0EF.quest_desc: [
+		"不用担心。只要你成功占领一个地点，通缉状态就会立刻解除。"
+		""
+		"之后，如果你没有通缉状态，攻击自己领地中的村民和护卫也不会被通缉。"
+	]
+	quest.5BBEC08E7893B0EF.quest_subtitle: "成王败寇"
 	quest.5BBEC08E7893B0EF.title: "被通缉了！"
 	quest.616FEA8BA81A4AF1.quest_desc: [
 		"你曾听说过一条名为&0[已编辑]&r的黑龙，凭一龙之力就毁掉了一个古代王国。"
@@ -168,7 +208,7 @@
 	quest.716C0EC962DF0E89.quest_subtitle: "欢迎来到地狱"
 	quest.716C0EC962DF0E89.title: "前往下界"
 	quest.7235CE73FA25A2B6.quest_desc: [
-		"右击以改变种族，默认有30秒的冷却。"
+		"右击以改变种族，默认有30秒的冷却。且会丢失进度。"
 		"不知为何，你暂时无法变回人类。"
 	]
 	quest.7235CE73FA25A2B6.quest_subtitle: "改换种族"
@@ -214,27 +254,32 @@
 	task.0741D2CC2C85660E.title: "龙种的分别"
 	task.0C88B4341C81B301.title: "异种共生"
 	task.0F4406652E6AD348.title: "食性的兼容"
+	task.111434795FEA746A.title: "中断当前的占领状态"
 	task.15834E2B7F280132.title: "苏醒"
 	task.172E32CF4795659A.title: "生肉"
 	task.176774A86A7260FF.title: "启程"
 	task.199401EA6963724C.title: "铁锭"
 	task.2123AE028011AFF2.title: "WIP：把公主王子加回来！"
-	task.2219B15B63FB50BA.title: "“黑龙”"
+	task.2219B15B63FB50BA.title: "“黑█龙”"
 	task.23FC7E58ED23B6A6.title: "龙曾在此"
 	task.28AD36F01C754BC0.title: "浆果"
+	task.291A150DF26B46E0.title: "笔记：狂龙病毒"
 	task.2C56F358AECA93D8.title: "龙的背包"
 	task.2CFB640AF692D8A7.title: "引言"
 	task.2D5F1E4E7A256624.title: "重新选择"
 	task.2DA64836A75052CD.title: "WIP：龙的技能"
 	task.307998BBA6E21031.title: "木材"
 	task.35DEAD714FD1D813.title: "龙曾在此"
+	task.38298B7AF0996BA1.title: "调试选项"
 	task.3BE42A84B83BD558.title: "焦炭食物"
 	task.3BE6DAE8BD2E8C65.title: "属性的耦合"
 	task.3DF94A1DF8C9F62B.title: "死亡地点传送？"
 	task.417C6101F274068A.title: "龙曾在此"
 	task.422BB0D0FE11BBD4.title: "圆石"
+	task.49536C43BBB09C55.title: "但是，不想当恶龙怎么办？"
 	task.50D341C769A7D0FC.title: "任意法术卷轴"
 	task.56DAD45D20F6947D.title: "巢穴的建造"
+	task.598BF8CA11E630E8.title: "解锁调试选项……"
 	task.603F5014859431C5.title: "龙与魔法"
 	task.6A653AA27FDFEF6A.title: "任意龙祭坛"
 	task.6AEA76D166CE2ABB.title: "引言"

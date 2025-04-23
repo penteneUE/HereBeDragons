@@ -80,13 +80,18 @@ ServerEvents.commandRegistry(event => {
                             //console.log(111)
                             let player = ctx.source.server.getPlayer(Arguments.PLAYER.getResult(ctx, 'player'))
 
-                            const structure_id = player.persistentData.getString("dragonConquerCurrentId")
+                            //const structure_id = player.persistentData.getString("dragonConquerCurrentId")
                             finishDragonConquest(player)
                             clearDragonConquerCurrent(player)
 
                             if (player.stages.has("dragon_conquest_challenger")) {
                                 player.stages.remove("dragon_conquest_challenger")
 
+                            }
+
+                            //ctx.source.server.runCommand(`/effect clear ${player.name.toString()} dragonsurvival:hunter_omen`)
+                            if (player.hasEffect("dragonsurvival:hunter_omen")) {
+                                player.removeEffect("dragonsurvival:hunter_omen")
                             }
                             
                             ctx.source.server.runCommandSilent(`/playsound minecraft:entity.player.levelup player ${player.name.toString()} ${player.x} ${player.y} ${player.z}`)
@@ -113,7 +118,20 @@ ServerEvents.commandRegistry(event => {
                     
                     )
                 )
+        ).then(Commands.literal('trigger-day-pass')
+            .then(Commands.argument('player', Arguments.PLAYER.create(event))
+                .executes(ctx => {
+                    //addDragonConquerRecord(player, bbox.minX(), bbox.maxX(), bbox.minY(), bbox.maxY(), bbox.minZ(), bbox.maxZ(), structure_id)
+                    //console.log(111)
+                    let player = ctx.source.server.getPlayer(Arguments.PLAYER.getResult(ctx, 'player'))
+                    
+                    player.persistentData.putInt("lastDay", -1)
+                    return 1
+                })
+            
             )
+        )
+            
             
     )
 })

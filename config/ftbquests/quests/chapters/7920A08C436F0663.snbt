@@ -1,0 +1,52 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7920A08C436F0663"
+	group: ""
+	id: "7920A08C436F0663"
+	images: [{
+		height: 12.0d
+		image: "kubejs:textures/task/uhrwerk.png"
+		rotation: 0.0d
+		width: 12.0d
+		x: 0.0d
+		y: 0.0d
+	}]
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0144FE00B19FCBC7"]
+			hide_until_deps_complete: true
+			id: "0B3291EA305685A9"
+			tasks: [{
+				id: "38298B7AF0996BA1"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0B3291EA305685A9"]
+			disable_recipe_mod: true
+			id: "4B2FE0B5C54CD2FF"
+			optional: true
+			rewards: [{
+				auto: "enabled"
+				command: "/whredragonswent conquest failure @p"
+				exclude_from_claim_all: true
+				id: "02E3890CAEF5EDE9"
+				permission_level: 2
+				team_reward: false
+				type: "command"
+			}]
+			tasks: [{
+				id: "111434795FEA746A"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: -0.5d
+		}
+	]
+}

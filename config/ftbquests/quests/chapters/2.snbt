@@ -86,5 +86,16 @@
 			x: 1.5d
 			y: -4.0d
 		}
+		{
+			dependencies: ["31DC355F5D46AE7F"]
+			id: "147154AD758AD0C4"
+			shape: "diamond"
+			tasks: [{
+				id: "291A150DF26B46E0"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -4.5d
+		}
 	]
 }

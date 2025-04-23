@@ -53,5 +53,18 @@
 			x: 0.0d
 			y: 3.0d
 		}
+		{
+			dependencies: ["0E0A7316F2302130"]
+			hide_dependency_lines: true
+			id: "0144FE00B19FCBC7"
+			optional: true
+			shape: "gear"
+			tasks: [{
+				id: "598BF8CA11E630E8"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
 	]
 }

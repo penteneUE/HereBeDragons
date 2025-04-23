@@ -1,19 +1,6 @@
-let $BoundingBox = Java.loadClass("net.minecraft.world.level.levelgen.structure.BoundingBox")
 let $OrderedCompoundTag = Java.loadClass("dev.latvian.mods.kubejs.util.OrderedCompoundTag")
-let $BlockContainerJS = Java.loadClass("dev.latvian.mods.kubejs.level.BlockContainerJS")
 let $ChunkPos = Java.loadClass("net.minecraft.world.level.ChunkPos")
 let $ListTag = Java.loadClass("net.minecraft.nbt.ListTag")
-
-const structureData = new Map([
-    ["skyvillages:skyvillage", {
-        gateway: "kubejs:village/sky_village"
-    }]
-])
-const placedAgainstMap = {}
-
-BlockEvents.rightClicked(event => {
-    placedAgainstMap[event.player.uuid] = {block: event.block, facing: event.facing}
-})
 
 function clearDragonConquerRecord(player) {
     player.persistentData.dragonConquerRecords = new $OrderedCompoundTag()
@@ -45,6 +32,8 @@ function addDragonConquerRecord_withConquerStatus(player, conquerStatus, structu
     const { dragonConquerRecords } = player.persistentData;
 
     //let recordsOfSameTypeStructure = dragonConquerRecords.get(structure_id)
+
+    if (!dragonConquerRecords) clearDragonConquerRecord(player)
         
     if (dragonConquerRecords[structure_id] == undefined) {
             dragonConquerRecords[structure_id] = []
@@ -52,25 +41,31 @@ function addDragonConquerRecord_withConquerStatus(player, conquerStatus, structu
     dragonConquerRecords[structure_id].push(conquerStatus)
 }
 
+function matchDragonConquerRecord_withBbox(player, bbox, structure_id) {
+    return matchDragonConquerRecord(player, bbox.minX(), bbox.maxX(), bbox.minY(), bbox.maxY(), bbox.minZ(), bbox.maxZ(), structure_id)
+}
+
 function matchDragonConquerRecord(player, minX, maxX, minY, maxY, minZ, maxZ, structure_id) {
     const { dragonConquerRecords } = player.persistentData;
     let result = false;
 
+    if (!structure_id) return;
+
     if (dragonConquerRecords == undefined) {
-        clearDragonConquerRecord(player)
+        return;
+        //clearDragonConquerRecord(player)
     } else {
         if (dragonConquerRecords[structure_id] == undefined) {
-            dragonConquerRecords[structure_id] = []
+            //dragonConquerRecords[structure_id] = []
+            return;
         }
         dragonConquerRecords[structure_id].forEach(record => {
-            console.log(minX == record.getInt("minX"))
             if (minX == record.getInt("minX")
                 && maxX == record.getInt("maxX")
                 && minY == record.getInt("minY")
                 && maxY == record.getInt("maxY")
                 && minZ == record.getInt("minZ")
                 && maxZ == record.getInt("maxZ")) {
-                console.log(1441)
                 result = true;
             }
             
@@ -109,22 +104,72 @@ function finishDragonConquest(player) {
 //     //server.runCommand(`/give ${player.name.toString()} kubejs:dragon_conquest_trophy[minecraft:custom_data={structure_id:${structure_id}}]`)
     
 // }
+
+function whichStructureAmI(blockPosition, level) {
+    let structure;
+    let structure_id = "";
+    level.structureManager().startsForStructure($ChunkPos(blockPosition), ()=>true).stream().forEach(ss => {
+        if (ss.getBoundingBox().isInside(blockPosition)) {
+            structure_id = Registry.of("worldgen/structure").getKey(ss.getStructure()).location()
+            structure = ss;
+            return;
+        }
+    })
+    return {structure: structure, structure_id: structure_id}
+}
+
+/** 
+ * @type {$Map_<$UUID_, {block: $BlockContainerJS_, facing: $Direction_}>}
+ */
+const placedAgainstMap = Utils.newMap()
+
+BlockEvents.rightClicked(event => {
+    placedAgainstMap[event.player.uuid] = {block: event.block, facing: event.facing}
+})
  
 BlockEvents.placed(event => {
+    const { STRUCTURE_DATA } = global
+    
     if (event.block.id == "kubejs:dragon_flag") {
         // 放置龙旗基座时的提示
-        let level = event.getLevel()
+        //let level = event.getLevel()
         let player = event.player
 
-        let currentStructure;
-        let structure_id = "";
-        level.structureManager().startsForStructure($ChunkPos(player.blockPosition()), ()=>true).stream().forEach(ss => {
-            if (ss.getBoundingBox().isInside(player.blockPosition())) {
-                structure_id = Registry.of("worldgen/structure").getKey(ss.getStructure()).location()
-                currentStructure = ss;
-                return;
-            }
-        })
+        const { structure, structure_id } = whichStructureAmI(player.blockPosition(), event.getLevel())
+
+        if (structure_id == "") {
+            //没有结构
+            player.tell(Text.translate("kubejs.conquest.no_structure").color(0xd77a61))
+            return;
+        }
+        
+        let targetGateway = STRUCTURE_DATA[structure_id];
+
+        if (!targetGateway) {
+            player.tell(Text.translate("kubejs.conquest.structure_not_available").color(0xd77a61))
+            return;
+        }
+
+        //检测当前占领
+
+        if (event.player.persistentData.dragonConquerCurrent != undefined) {
+            player.tell(Text.translate("kubejs.conquest.has_current_conquest").color(0xd77a61))
+            return;
+        }
+        
+        //dragonConquerRecords = new $OrderedCompoundTag()
+        
+        let bbox = structure.getBoundingBox();
+        // 检测已占领
+        if (matchDragonConquerRecord(player, bbox.minX(), bbox.maxX(), bbox.minY(), bbox.maxY(), bbox.minZ(), bbox.maxZ(), structure_id)) {
+            //block.set("kubejs:dragon_flag_active")
+            player.tell(Text.translate("kubejs.conquest.conquest_already_completed").color(0xd77a61))
+            return;
+        }
+
+        player.tell(Text.translatable("kubejs.conquest.info.structure", [Text.translate(STRUCTURE_DATA[structure_id].name).gold()]).color(0xd77a61))
+        player.tell(Text.translate(STRUCTURE_DATA[structure_id].description).color(0xd77a61))
+        player.tell(Text.translate("kubejs.conquest.info.ask").color(0xd77a61))
 
         return;
     }
@@ -132,39 +177,46 @@ BlockEvents.placed(event => {
     if (!event.block.hasTag("minecraft:banners")) return;
 
     let player = event.player
-    let { block } = placedAgainstMap[player.uuid]
-    if (!(block instanceof $BlockContainerJS)) return;
+    const { block } = placedAgainstMap[player.uuid]
+    //if (!(block instanceof $BlockContainerJS)) return;
     if (block.id != "kubejs:dragon_flag") return;
 
     // 龙旗激活
-    let level = event.getLevel()
+    //let level = event.getLevel()
 
-    let currentStructure;
-    let structure_id = "";
-    level.structureManager().startsForStructure($ChunkPos(player.blockPosition()), ()=>true).stream().forEach(ss => {
-        if (ss.getBoundingBox().isInside(player.blockPosition())) {
-            structure_id = Registry.of("worldgen/structure").getKey(ss.getStructure()).location()
-            currentStructure = ss;
-            return;
-        }
-    })
+    // let currentStructure;
+    // let structure_id = "";
+    // level.structureManager().startsForStructure($ChunkPos(player.blockPosition()), ()=>true).stream().forEach(ss => {
+    //     if (ss.getBoundingBox().isInside(player.blockPosition())) {
+    //         structure_id = Registry.of("worldgen/structure").getKey(ss.getStructure()).location()
+    //         currentStructure = ss;
+    //         return;
+    //     }
+    // })
+    const { structure, structure_id } = whichStructureAmI(player.blockPosition(), event.getLevel())
 
-    let targetGateway = "";
-
-    structureData.forEach((data, structure) => {
-        if (structure_id == structure) {
-            targetGateway = data.gateway;
-            return;
-        }
-        
-    })
+    if (structure_id == "") {
+        //没有结构
+        player.tell(Text.translate("kubejs.conquest.no_structure").color(0xd77a61))
+        return;
+    }
     
+    let targetGateway = STRUCTURE_DATA[structure_id].gateway;
+
     if (!targetGateway) {
-        //找不到对应的传送门
-        player.tell(Text.translate("kubejs.conquest.failed_to_init").color(0xd77a61))
+        player.tell(Text.translate("kubejs.conquest.structure_not_available").color(0xd77a61))
         return;
     }
 
+    // STRUCTURE_DATA.forEach((data, structure) => {
+    //     if (structure_id == structure) {
+    //         targetGateway = data.gateway;
+    //         return;
+    //     }
+        
+    // })
+    
+    
     //检测当前占领
 
     if (event.player.persistentData.dragonConquerCurrent != undefined) {
@@ -174,7 +226,7 @@ BlockEvents.placed(event => {
     
     //dragonConquerRecords = new $OrderedCompoundTag()
     
-    let bbox = currentStructure.getBoundingBox();
+    let bbox = structure.getBoundingBox();
     // 检测已占领
     if (matchDragonConquerRecord(player, bbox.minX(), bbox.maxX(), bbox.minY(), bbox.maxY(), bbox.minZ(), bbox.maxZ(), structure_id)) {
         //block.set("kubejs:dragon_flag_active")
@@ -189,6 +241,6 @@ BlockEvents.placed(event => {
 
     // console.log(event.player.persistentData.dragonConquerCurrent)
 
-    event.server.runCommand(`/open_gateway ${block.getX()} ${block.getY()} ${block.getZ()} ${targetGateway}`)
+    event.server.runCommandSilent(`/open_gateway ${event.block.getX()} ${event.block.getY()} ${event.block.getZ()} ${targetGateway}`)
     
  })
