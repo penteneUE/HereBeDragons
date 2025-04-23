@@ -17,7 +17,7 @@ const LIGHTNING_SPELL_RESIST = "irons_spellbooks:lightning_magic_resist"
 
 const DRAGONS = ['dragonsurvival:cave_dragon', 'dragonsurvival:sea_dragon', 'dragonsurvival:forest_dragon'];
 
-function handleDragonStateStuff(/**@type {$SimplePlayerKubeEvent_}*/event) {
+function playerTick_DragonState(/**@type {$SimplePlayerKubeEvent_}*/event) {
     const { player } = event;
     let handler = $DragonStateProvider.getData(player);
 

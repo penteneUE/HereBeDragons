@@ -1,13 +1,4 @@
-// BlockEvents.placed(event => {
-// })
-// PlayerEvents.tick(e => {
-//     const { player } = e;
-
-//     if (player.tickCount % 20 != 0) return;
-
-//     console.log(Utils.getStat("minecraft:play_time"))
-// })
-
+let $CompoundTag = Java.loadClass("net.minecraft.nbt.CompoundTag");
 /**
  * 
  * @param {$Player_} player 
@@ -72,7 +63,12 @@ function sendItemsToPlayer(items, player) {
     })
 }
 
-function handleTaxCollectingStuff(/**@type {$SimplePlayerKubeEvent_}*/event) {
+/**
+ * 
+ * @param {$SimplePlayerKubeEvent_} event 
+ * @returns 
+ */
+function playerTick_TaxCollect(event) {
     const { player } = event;
 
     const { lastDay } = player.persistentData;
@@ -99,4 +95,53 @@ function handleTaxCollectingStuff(/**@type {$SimplePlayerKubeEvent_}*/event) {
 
     sendItemsToPlayer(items, player)
     //collectTax(event);
+}
+
+/**
+ * 
+ * @param {$BlockPlacedKubeEvent_} event 
+ * @returns 
+ */
+function blockPlaced_TaxCollect(event) {
+    const { block, player } = event;
+    if (!player) return;
+    if (block.id != "kubejs:tax_collector") return;
+
+    let data = new $CompoundTag();
+    data.putString("dimension", event.getLevel().getDimension().toString())
+    data.putInt("x", block.getX())
+    data.putInt("y", block.getY())
+    data.putInt("z", block.getZ())
+
+    player.persistentData.put("activeTaxCollector", data)
+
+    //activeTaxCollector = data;
+
+    // if (!taxCollectorData) {
+    //     player.persistentData.taxCollectorData = new $CompoundTag()
+    // }
+
+    // let data = new $CompoundTag()
+    // data.putUUID("owner", player)
+    
+
+    // block.setEntityData(data)
+}
+
+/**
+ * 
+ * @param {$BlockBrokenKubeEvent_} event 
+ * @returns 
+ */
+function blockBroken_TaxCollect(event) {
+    const { block, server } = event;
+    if (block.id != "kubejs:tax_collector") return;
+
+    let blockOwner = server.getPlayer(block.getEntityData().getString("ownerID"))
+
+    if (!blockOwner) return;
+    blockOwner.tell(Text.translate("kubejs.taxcollector.broken").color(0xd77a61))
+
+    blockOwner.persistentData.remove("activeTaxCollector");
+    
 }

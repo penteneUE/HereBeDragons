@@ -1,8 +1,10 @@
 ItemEvents.modifyTooltips(event => {
     // Add tooltip to all of these items
   event.add("kubejs:dragon_flag", [Text.gray({ "translate": "kubejs.tooltips.dragon_flag.1" })])
-  event.add("kubejs:tax_collector", [Text.gray({ "translate": "kubejs.tooltips.tax_collector.1" }),
+  event.add("kubejs:tax_collector", [
+    Text.gray({ "translate": "kubejs.tooltips.tax_collector.1" }),
     Text.gray({ "translate": "kubejs.tooltips.tax_collector.2" }),
+    Text.gray({ "translate": "kubejs.tooltips.tax_collector.3" }),
   Text.darkGray({ "translate": "kubejs.tooltips.tax_collector.comment" })])
     // event.
     // event.modify('kubejs:dragon_conquest_trophy', tooltip => {

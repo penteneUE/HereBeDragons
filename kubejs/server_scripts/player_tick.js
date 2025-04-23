@@ -3,7 +3,7 @@ PlayerEvents.tick(event => {
 
     if (player.tickCount % 20 != 0) return
 
-    handleDragonStateStuff(event)
-    handleTaxCollectingStuff(event)
+    playerTick_DragonState(event)
+    playerTick_TaxCollect(event)
     
  })

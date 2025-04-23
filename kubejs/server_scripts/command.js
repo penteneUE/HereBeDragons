@@ -59,13 +59,15 @@ ServerEvents.commandRegistry(event => {
                             //console.log(111)
                             let player = ctx.source.server.getPlayer(Arguments.PLAYER.getResult(ctx, 'player'))
                             if (ctx.source.isPlayer()) {
-                                ctx.source.getPlayer().tell(player.persistentData.dragonConquerRecords)
-                                ctx.source.getPlayer().tell(player.persistentData.dragonConquerCurrent)
-                                ctx.source.getPlayer().tell(player.persistentData.dragonConquerCurrentId)
+                                ctx.source.getPlayer().tell(player.persistentData)
+                                // ctx.source.getPlayer().tell(player.persistentData.dragonConquerRecords)
+                                // ctx.source.getPlayer().tell(player.persistentData.dragonConquerCurrent)
+                                // ctx.source.getPlayer().tell(player.persistentData.dragonConquerCurrentId)
                             } else {
-                                console.log(player.persistentData.dragonConquerRecords)
-                                console.log(player.persistentData.dragonConquerCurrent)
-                                console.log(player.persistentData.dragonConquerCurrentId)
+                                console.log(player.persistentData)
+                                // console.log(player.persistentData.dragonConquerRecords)
+                                // console.log(player.persistentData.dragonConquerCurrent)
+                                // console.log(player.persistentData.dragonConquerCurrentId)
                             }
                             
                             

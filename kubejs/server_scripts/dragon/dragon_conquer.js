@@ -118,22 +118,21 @@ function whichStructureAmI(blockPosition, level) {
     return {structure: structure, structure_id: structure_id}
 }
 
-/** 
- * @type {$Map_<$UUID_, {block: $BlockContainerJS_, facing: $Direction_}>}
+/**
+ * 
+ * @param {$BlockPlacedKubeEvent_} event 
+ * @returns 
  */
-const placedAgainstMap = Utils.newMap()
-
-BlockEvents.rightClicked(event => {
-    placedAgainstMap[event.player.uuid] = {block: event.block, facing: event.facing}
-})
- 
-BlockEvents.placed(event => {
+function blockPlaced_DragonConquer(event) {
+    const { player } = event.player
+    
+    if (!player) return;
+    
     const { STRUCTURE_DATA } = global
     
     if (event.block.id == "kubejs:dragon_flag") {
         // 放置龙旗基座时的提示
         //let level = event.getLevel()
-        let player = event.player
 
         const { structure, structure_id } = whichStructureAmI(player.blockPosition(), event.getLevel())
 
@@ -176,7 +175,6 @@ BlockEvents.placed(event => {
 
     if (!event.block.hasTag("minecraft:banners")) return;
 
-    let player = event.player
     const { block } = placedAgainstMap[player.uuid]
     //if (!(block instanceof $BlockContainerJS)) return;
     if (block.id != "kubejs:dragon_flag") return;
@@ -243,4 +241,4 @@ BlockEvents.placed(event => {
 
     event.server.runCommandSilent(`/open_gateway ${event.block.getX()} ${event.block.getY()} ${event.block.getZ()} ${targetGateway}`)
     
- })
+}

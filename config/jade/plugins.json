@@ -91,5 +91,8 @@
   },
   "balm": {
     "jade": true
+  },
+  "custommachinery": {
+    "machine_component_provider": true
   }
 }

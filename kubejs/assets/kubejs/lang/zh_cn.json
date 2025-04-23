@@ -4,12 +4,15 @@
 
     "block.kubejs.dragon_flag": "龙旗基座",
     "block.kubejs.dragon_flag_active": "生效的龙旗基座",
+
     "block.kubejs.tax_collector": "瓶中税收官",
+    "machine.kubejs.tax_collector.name": "瓶中税收官",
 
     "kubejs.tooltips.dragon_flag.1": "放置后在顶部插上旗帜即可激活龙旗。",
     "kubejs.tooltips.tax_collector.comment": "“圆榫不入方卯。”",
     "kubejs.tooltips.tax_collector.1": "每日为你的领地收税。如果放在储物容器上，将把物资存入其中，否则发送至物品栏。",
-    "kubejs.tooltips.tax_collector.2": "放置后右键点击可开关收税结算的提示。",
+    "kubejs.tooltips.tax_collector.2": "税收官在征税时会优先寻找瓶里放入的物品，提升其出现的概率。",
+    "kubejs.tooltips.tax_collector.3": "若是放入任意方块，则会关闭其收税结算的消息。",
     "kubejs.tooltips.dragon_conquest_trophy.1": "用于提交任务或收藏用途。",
     "kubejs.tooltips.dragon_conquest_trophy.structure": "结构：%s",
 
@@ -31,5 +34,6 @@
     "kubejs.conquest.success": "你成功占领了这里！",
 
     "kubejs.taxcollector.daypass": "新的一天到了。你的领地已为你献上如下物品：",
-    "kubejs.taxcollector.daypass.much": "新的一天到了。领地的大量产出已经送达。"
+    "kubejs.taxcollector.daypass.much": "新的一天到了。领地的大量产出已经送达。",
+    "kubejs.taxcollector.broken": "你的税收瓶被破坏了！"
 }
