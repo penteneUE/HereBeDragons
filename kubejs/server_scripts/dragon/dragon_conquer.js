@@ -84,7 +84,7 @@ function finishDragonConquest(player) {
     if (player.persistentData.getString("dragonConquerCurrentId") == undefined) return;
 
     addDragonConquerRecord_withConquerStatus(player, dragonConquerCurrent, player.persistentData.getString("dragonConquerCurrentId"))
-    player.tell(Text.translate("kubejs.conquest.success").color(0xd77a61))
+    player.tell(Text.translate("kubejs.conquest.success").color(textColor))
 
     // const trophy = Item.of("kubejs:dragon_conquest_trophy")
     // trophy.setCustomData("structure_id", structure_id)
@@ -138,21 +138,21 @@ function blockPlaced_DragonConquer(event) {
 
         if (structure_id == "") {
             //没有结构
-            player.tell(Text.translate("kubejs.conquest.no_structure").color(0xd77a61))
+            player.tell(Text.translate("kubejs.conquest.no_structure").color(textColor))
             return;
         }
         
         let targetGateway = STRUCTURE_DATA[structure_id];
 
         if (!targetGateway) {
-            player.tell(Text.translate("kubejs.conquest.structure_not_available").color(0xd77a61))
+            player.tell(Text.translate("kubejs.conquest.structure_not_available").color(textColor))
             return;
         }
 
         //检测当前占领
 
         if (event.player.persistentData.dragonConquerCurrent != undefined) {
-            player.tell(Text.translate("kubejs.conquest.has_current_conquest").color(0xd77a61))
+            player.tell(Text.translate("kubejs.conquest.has_current_conquest").color(textColor))
             return;
         }
         
@@ -162,13 +162,13 @@ function blockPlaced_DragonConquer(event) {
         // 检测已占领
         if (matchDragonConquerRecord(player, bbox.minX(), bbox.maxX(), bbox.minY(), bbox.maxY(), bbox.minZ(), bbox.maxZ(), structure_id)) {
             //block.set("kubejs:dragon_flag_active")
-            player.tell(Text.translate("kubejs.conquest.conquest_already_completed").color(0xd77a61))
+            player.tell(Text.translate("kubejs.conquest.conquest_already_completed").color(textColor))
             return;
         }
 
-        player.tell(Text.translatable("kubejs.conquest.info.structure", [Text.translate(STRUCTURE_DATA[structure_id].name).gold()]).color(0xd77a61))
-        player.tell(Text.translate(STRUCTURE_DATA[structure_id].description).color(0xd77a61))
-        player.tell(Text.translate("kubejs.conquest.info.ask").color(0xd77a61))
+        player.tell(Text.translatable("kubejs.conquest.info.structure", [Text.translate(STRUCTURE_DATA[structure_id].name).gold()]).color(textColor))
+        player.tell(Text.translate(STRUCTURE_DATA[structure_id].description).color(textColor))
+        player.tell(Text.translate("kubejs.conquest.info.ask").color(textColor))
 
         return;
     }
@@ -195,14 +195,14 @@ function blockPlaced_DragonConquer(event) {
 
     if (structure_id == "") {
         //没有结构
-        player.tell(Text.translate("kubejs.conquest.no_structure").color(0xd77a61))
+        player.tell(Text.translate("kubejs.conquest.no_structure").color(textColor))
         return;
     }
     
     let targetGateway = STRUCTURE_DATA[structure_id].gateway;
 
     if (!targetGateway) {
-        player.tell(Text.translate("kubejs.conquest.structure_not_available").color(0xd77a61))
+        player.tell(Text.translate("kubejs.conquest.structure_not_available").color(textColor))
         return;
     }
 
@@ -218,7 +218,7 @@ function blockPlaced_DragonConquer(event) {
     //检测当前占领
 
     if (event.player.persistentData.dragonConquerCurrent != undefined) {
-        player.tell(Text.translate("kubejs.conquest.has_current_conquest").color(0xd77a61))
+        player.tell(Text.translate("kubejs.conquest.has_current_conquest").color(textColor))
         return;
     }
     
@@ -228,7 +228,7 @@ function blockPlaced_DragonConquer(event) {
     // 检测已占领
     if (matchDragonConquerRecord(player, bbox.minX(), bbox.maxX(), bbox.minY(), bbox.maxY(), bbox.minZ(), bbox.maxZ(), structure_id)) {
         //block.set("kubejs:dragon_flag_active")
-        player.tell(Text.translate("kubejs.conquest.conquest_already_completed").color(0xd77a61))
+        player.tell(Text.translate("kubejs.conquest.conquest_already_completed").color(textColor))
         return;
     }
 

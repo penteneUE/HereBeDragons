@@ -1,0 +1,1 @@
+const textColor = 0xd77a61;

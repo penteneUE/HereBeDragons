@@ -35,5 +35,7 @@
 
     "kubejs.taxcollector.daypass": "新的一天到了。你的领地已为你献上如下物品：",
     "kubejs.taxcollector.daypass.much": "新的一天到了。领地的大量产出已经送达。",
+    "kubejs.taxcollector.bind": "将为你的如下领地收税：",
+    "kubejs.taxcollector.bind.much": "将为你的大量领地收税。",
     "kubejs.taxcollector.broken": "你的税收瓶被破坏了！"
 }

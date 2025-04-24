@@ -38,16 +38,40 @@ function rollRewardItems(/**@type {$Player_}*/player) {
  * @param {$Map_<string, number>} items
  * @returns {$MutableComponent_}
  */
-function weaveMessage(items) {
+function weaveMessage_Items(items) {
     let text = Text.empty()
     items.forEach((item, count) => {
         if (!text.isEmpty()) {
             text.append(Text.gray(", "))
         }
         let translationKey = Item.of(item).item.descriptionId;
-        text.append(Text.translate(translationKey).color(0xd77a61)).append(Text.of(`x${count}`).gold())
+        text.append(Text.translate(translationKey).color(textColor)).append(Text.of(`x${count}`).gold())
     })
     return text
+}
+
+/**
+ * @param {$CompoundTag_} dragonConquerRecords
+ * @returns {$MutableComponent_}
+ */
+function weaveMessage_Records(dragonConquerRecords) {
+    const {STRUCTURE_DATA} = global
+    let text = Text.empty()
+    if (!dragonConquerRecords) return;
+    dragonConquerRecords.getAllKeys().forEach((structure_type) => {
+        if (!text.isEmpty()) {
+            text.append(Text.gray(", "))
+        }
+        let translationKey = STRUCTURE_DATA[structure_type].name
+
+        dragonConquerRecords[structure_type].forEach((record) => {
+            console.log(record)
+            console.log(translationKey)
+            text.append(Text.translate(translationKey).color(textColor)).append(Text.of(` (x:${record.getInt("minX")} y:${record.getInt("minY")} z:${record.getInt("minZ")})`).gold())
+        })
+    })
+
+    return text;
 }
 
 /**
@@ -83,15 +107,15 @@ function playerTick_TaxCollect(event) {
 
     let items = rollRewardItems(player);
     
-    let rewardText = weaveMessage(items)
+    let rewardText = weaveMessage_Items(items)
 
-    if (rewardText.getString().length > 60) {
-        player.tell(Text.translate("kubejs.taxcollector.daypass.much").color(0xd77a61))
+    if (rewardText.getString().length > 100) {
+        player.tell(Text.translate("kubejs.taxcollector.daypass.much").color(textColor))
     } else {
-        player.tell(Text.translate("kubejs.taxcollector.daypass").color(0xd77a61))
+        player.tell(Text.translate("kubejs.taxcollector.daypass").color(textColor))
+        player.tell(rewardText)
     }
-
-    player.tell(rewardText)
+    
 
     sendItemsToPlayer(items, player)
     //collectTax(event);
@@ -114,6 +138,18 @@ function blockPlaced_TaxCollect(event) {
     data.putInt("z", block.getZ())
 
     player.persistentData.put("activeTaxCollector", data)
+
+    //player.tell(Text.translate("kubejs.taxcollector.placed").color(textColor))
+
+    let recordText = weaveMessage_Records(player.persistentData.dragonConquerRecords)
+    player.tell(recordText)
+
+    if (recordText.getString().length > 100) {
+        player.tell(Text.translate("kubejs.taxcollector.bind.much").color(textColor))
+    } else {
+        player.tell(Text.translate("kubejs.taxcollector.bind").color(textColor))
+        player.tell(recordText)
+    }
 
     //activeTaxCollector = data;
 
@@ -140,7 +176,18 @@ function blockBroken_TaxCollect(event) {
     let blockOwner = server.getPlayer(block.getEntityData().getString("ownerID"))
 
     if (!blockOwner) return;
-    blockOwner.tell(Text.translate("kubejs.taxcollector.broken").color(0xd77a61))
+    const { activeTaxCollector } = blockOwner.persistentData;
+    if (!activeTaxCollector) return;
+    if (activeTaxCollector.getString("dimension") != block.getDimension().toString()) return;
+    //console.log(block.getDimension().toString())
+    if (activeTaxCollector.getInt("x") != block.getX()) return;
+    //console.log(block.getX())
+    if (activeTaxCollector.getInt("y") != block.getY()) return;
+    //console.log(block.getY())
+    if (activeTaxCollector.getInt("z") != block.getZ()) return;
+    //console.log(block.getZ())
+
+    blockOwner.tell(Text.translate("kubejs.taxcollector.broken").color(textColor))
 
     blockOwner.persistentData.remove("activeTaxCollector");
     
