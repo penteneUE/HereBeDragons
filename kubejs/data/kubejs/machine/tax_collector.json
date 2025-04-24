@@ -32,7 +32,8 @@
         "BACK": "INPUT",
         "LEFT": "INPUT"
       },
-      "id": "preferred_item"
+      "id": "preferred_item",
+      "capacity": 1
     }
   ],
   "gui": [

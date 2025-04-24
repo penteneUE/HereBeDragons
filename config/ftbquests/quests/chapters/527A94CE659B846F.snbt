@@ -91,7 +91,11 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["3A18D1CA4A2260B2"]
+			dependencies: [
+				"3A18D1CA4A2260B2"
+				"20807B9CA5CDB81A"
+			]
+			dependency_requirement: "one_completed"
 			hide_until_deps_complete: true
 			id: "4AF56908F7A20C1C"
 			tasks: [{
@@ -99,6 +103,15 @@
 				type: "checkmark"
 			}]
 			x: 0.0d
+			y: 1.0d
+		}
+		{
+			id: "09D6B3CFB0117A34"
+			tasks: [{
+				id: "67D66FD32C5BD4BD"
+				type: "checkmark"
+			}]
+			x: 2.0d
 			y: 1.0d
 		}
 	]

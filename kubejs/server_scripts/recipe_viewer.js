@@ -1,37 +1,39 @@
-RecipeViewerEvents.addInformation('item', event => {
+RecipeViewerEvents.addInformation("item", (event) => {
     /** @type {$Map_<string, {gateway: string, name: string, description: string, product: {item: $Map_<string, number>, count: number}}}>} */
-    const { STRUCTURE_DATA } = global
+    const { STRUCTURE_DATA } = global;
 
-    const itemsToStructureGateways = new Map()
+    const itemsToStructureGateways = Utils.newMap();
+
+    console.log(STRUCTURE_DATA);
 
     STRUCTURE_DATA.forEach((structure, data) => {
-        const { product, product: { item } } = data
-        
+        const {
+            product,
+            product: { item },
+        } = data;
+
         if (!product) return;
         if (!item) return;
         item.items.forEach((weight, thing) => {
-            if (!itemsToStructureGateways.has(thing)) {
-                itemsToStructureGateways.set(thing, [data.name])
+            if (!itemsToStructureGateways.containsKey(thing)) {
+                itemsToStructureGateways[thing] = [data.name];
                 return;
             }
-            itemsToStructureGateways[thing].push(data.name)
-        })
+            console.log(STRUCTURE_DATA);
+            itemsToStructureGateways[thing].push(data.name);
+        });
     });
-    
+
     // event.add('minecraft:apple', [
-	// 	'An apple a day keeps the doctor away.'
+    // 	'An apple a day keeps the doctor away.'
     // ]);
-    
-    itemsToStructureGateways.forEach((structures, thing) => { //这牛魔的连环嵌套真是令人作呕看见就想死
-        let texts = [
-            Text.translate("kubejs.recipeinfo.conquest").gold()
-        ]
+
+    itemsToStructureGateways.forEach((thing, structures) => {
+        //这牛魔的连环嵌套真是令人作呕看见就想死
+        let texts = [Text.translate("kubejs.recipeinfo.conquest").gold()];
         structures.forEach((value) => {
-            texts.push(Text.translate(value).darkAqua())
-        })
+            texts.push(Text.translate(value).darkAqua());
+        });
         event.add(thing, texts);
-    })
-})
-        
-
-
+    });
+});

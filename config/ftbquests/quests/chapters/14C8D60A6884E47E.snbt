@@ -60,6 +60,7 @@
 				}
 				id: "70A9E5E1821F2270"
 				table_id: 9161091763629966930L
+				team_reward: false
 				type: "all_table"
 			}]
 			tasks: [{

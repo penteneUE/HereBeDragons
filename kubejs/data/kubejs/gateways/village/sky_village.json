@@ -9,7 +9,7 @@
         },
         {
             "type": "gateways:experience",
-            "experience": 100,
+            "experience": 50,
             "orb_size": 25
         },
         {
@@ -19,7 +19,7 @@
                 "count": 1,
                 "components": {
                     "minecraft:custom_data": {
-                        "structure_id": "skyvillages:sky_village"
+                        "gateway": "village/sky_village"
                     }
                 }
             }

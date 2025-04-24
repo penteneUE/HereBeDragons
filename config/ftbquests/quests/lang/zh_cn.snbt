@@ -3,7 +3,7 @@
 	chapter.1E283E445F4D2ED1.title: "2：在边狱下"
 	chapter.329D78102C6D9E0E.title: "难度选项"
 	chapter.48A57AF2FDDDF708.title: "3：冰山之底"
-	chapter.527A94CE659B846F.title: "图鉴：识之图录"
+	chapter.527A94CE659B846F.title: "收集：识之图录"
 	chapter.54D2F7918CB21461.title: "征服：龙之宝库"
 	chapter.5F32B23A5FDD7059.title: "1：表象"
 	chapter.640F3009EE40B4BE.title: "介绍 \\& 新手教程"
@@ -15,16 +15,19 @@
 		""
 		"记得把bug反馈给开发者！感激不尽！"
 	]
+	quest.015FCCE81D57405E.quest_desc: ["在精妙存储的世界中，可以将箱子与桶子升级以存放更多的物品。"]
 	quest.015FCCE81D57405E.quest_subtitle: "金灿灿的桶子堆成山"
 	quest.015FCCE81D57405E.title: "精妙存储"
+	quest.03573C57D4ECA6A9.title: "占领：大型村庄"
 	quest.05546B1D86F62F95.quest_desc: [
 		"本整合包中默认会保留饰品栏以及龙爪槽中物品。剩余的会存放在坟墓里。"
 		"（才不是不会做）"
 	]
-	quest.0AD37F450B1069DA.title: "锦致装饰"
+	quest.07A61974F4ED437D.quest_desc: ["陆上的海洋龙会&c因身体逐渐干燥而受到伤害&r。为保障在陆地的体验，这里提供了一些海绵来打湿自己，在空中也能用！"]
+	quest.09D6B3CFB0117A34.quest_desc: ["言灵：无相杀机"]
 	quest.0E0A7316F2302130.quest_desc: [
 		"如标题所示，这是一款以龙生存为主题的整合包。"
-		"龙癌作者找不到好玩的龙整合包，索性自己动手做了一个。"
+		"龙癌作者找不到好玩的龙整合包，索性自己动手做一个。"
 		""
 		"&e整合包仍是开发中版本，独自开发真的很困难，不求各位技术大佬帮我攻克难题，只求能把bug反馈出来，就已经是帮大忙了！&r"
 	]
@@ -39,6 +42,12 @@
 	]
 	quest.147154AD758AD0C4.quest_subtitle: "<日期与作者均不可辨别>"
 	quest.1A1EEED3B3FB70E6.title: "材料 - 木材"
+	quest.1AA85C2AA6E44858.quest_desc: [
+		"整合包计划添加一些原创的魔法，但还没想到该怎么做。"
+		""
+		"言灵：无相杀机 - 选中一个目标，让一个半径中的所有生物攻击它"
+		"（不会修改仇恨，搁置了）"
+	]
 	quest.1D43F77FD948BD09.quest_desc: [
 		"你自纸壳中苏醒……思绪一片空白。"
 		"外面不知过去了多久，一切都是如此陌生。"
@@ -46,6 +55,11 @@
 		"你持有的，只有这像是纸扎一般的罗盘。"
 		"转动它……试图找到，&d龙&r的存在……？"
 	]
+	quest.1DCBEE9D1F41A334.quest_subtitle: "海龙食物刷新点"
+	quest.1DCBEE9D1F41A334.title: "占领：沉船"
+	quest.1F2854EDFE5FA100.quest_desc: [""]
+	quest.1F2854EDFE5FA100.quest_subtitle: "恶龙的新手村"
+	quest.1F2854EDFE5FA100.title: "占领：浮空村庄"
 	quest.20807B9CA5CDB81A.quest_subtitle: "书中的黄金屋"
 	quest.20807B9CA5CDB81A.title: "法术入门"
 	quest.209A1F902BE74FC3.quest_desc: [
@@ -69,7 +83,14 @@
 	quest.23AF0BA2CFF8572C.title: "新的维度"
 	quest.249E652D8444575D.title: "四季"
 	quest.255FDC0FA11B8262.title: "龙之归宿"
-	quest.27654A3A89C4E334.quest_desc: ["没关系，整合包除了村庄，还提供了其它结构可供占领。如海底神殿等。"]
+	quest.25AF565CBB467648.quest_desc: [
+		"恭喜！你已经学会了占领建筑与收税！"
+		""
+		"关于可占领的建筑与介绍，详见章节“&e征服：龙之宝库&r”。"
+		""
+		"建设你的龙窝吧！"
+	]
+	quest.27654A3A89C4E334.quest_desc: ["没关系，整合包除了村庄，还提供了其它结构可供占领。尽情去杀坏人吧！"]
 	quest.27654A3A89C4E334.quest_subtitle: "跳过这个任务"
 	quest.27D23F919BAA1EB4.quest_desc: [
 		"浮空村庄由于其浮空的特性，再加上防守相对薄弱，是新生恶龙绝佳的第一块领地。"
@@ -77,20 +98,40 @@
 		"在村庄上放置龙旗基座，插上旗帜激活龙旗吧。"
 	]
 	quest.27D23F919BAA1EB4.title: "定位一处浮空村庄"
-	quest.282D6DA8CBDD27E1.title: "聚落的征服"
-	quest.2A53602F5DD6482A.quest_desc: ["痴愚"]
-	quest.2EF159E57EAAA0B9.quest_desc: [
-		"有了领地之后，收税是必不可少的。"
-		"{@pagebreak}"
-		"&o老人说这是个驼背的老爷爷，少年说这是个慈祥的老奶奶，疯子说这根本就不是个&0方的&r&o。依我看，你最好期待祂跟你是一个维度的。&r"
+	quest.282D6DA8CBDD27E1.quest_desc: [
+		"你曾听说过一条名为&0[已编辑]&r的黑龙，凭一龙之力就毁掉了一个古代王国。"
+		""
+		"自己能不能达到那种程度呢？当然，不提毁灭，只提占领。"
 	]
-	quest.2EF159E57EAAA0B9.quest_subtitle: "你看不见它，但知道它在"
+	quest.282D6DA8CBDD27E1.quest_subtitle: "传说中的……"
+	quest.282D6DA8CBDD27E1.title: "聚落的征服"
+	quest.28ED1E8BF3D0BE69.quest_desc: ["整合包中添加了更多旗帜图案，用它们装点你的龙旗吧！"]
+	quest.28ED1E8BF3D0BE69.title: "旗帜图案：龙"
+	quest.2A2B27F05BF4FC4F.title: "占领：中型村庄"
+	quest.2A53602F5DD6482A.quest_desc: ["痴愚"]
+	quest.2EF159E57EAAA0B9.quest_desc: ["有了领地之后，收税是必不可少的。瓶中的东西刚好可以胜任这份工作。"]
+	quest.2EF159E57EAAA0B9.quest_subtitle: "待我成为国王，我将制订新的税法"
 	quest.31DC355F5D46AE7F.quest_desc: ["这个家伙像是完全没有理智……而且它的状态很不对劲！"]
 	quest.31DC355F5D46AE7F.quest_subtitle: "你看见了——在那个浮岛上，有一条飞龙！"
 	quest.31DC355F5D46AE7F.title: "迫近的黑影"
+	quest.32A7BD9E6E01440B.quest_subtitle: "丛林龙横扫神庙？！"
+	quest.32A7BD9E6E01440B.title: "占领：丛林神庙"
 	quest.32EBCEE0701806C1.quest_desc: [""]
 	quest.32EBCEE0701806C1.quest_subtitle: "被通缉后，可以右键向村民索取贡品"
+	quest.333278E685C411C5.quest_subtitle: "温泉……？"
+	quest.333278E685C411C5.title: "魔源"
+	quest.33E9CCB7EB00D0BA.title: "占领：林地府邸"
 	quest.360ED3ED5B00CC20.title: "法术卷轴"
+	quest.36478C9680EBEFD6.quest_desc: [
+		"龙旗玩法是整合包原创的玩法。玩家可以在建筑上插上龙旗，触发攻城战。成功占领后，即成为玩家的领地，获得大量资源。"
+		""
+		"要激活龙旗，在龙旗基座上插上旗帜即可。占领成功后，奖杯会自关闭的传送门中掉落。"
+		""
+		"目前没有做玩家与NPC/他人争夺领地的内容，也就是说，一个建筑可以被多个玩家占领并收取物资。（才不是因为没有朋友帮作者测试）"
+	]
+	quest.36478C9680EBEFD6.quest_subtitle: "我将带来征服"
+	quest.368253F34658F72A.quest_subtitle: "改换法老"
+	quest.368253F34658F72A.title: "占领：沙漠神殿"
 	quest.3A18D1CA4A2260B2.quest_desc: [
 		"在探索的过程中，你偶然发现了一些散落的手稿。放眼望去，全都是有关魔法生物的。"
 		""
@@ -105,9 +146,13 @@
 	]
 	quest.3C35CC09D48EA10D.quest_subtitle: "炉火焱焱"
 	quest.3C35CC09D48EA10D.title: "食物 - 洞穴龙"
+	quest.3D0D9910B3A720E4.quest_subtitle: "在一百份以上的藏宝堆里睡觉"
 	quest.3DCEA15CB8E9D815.title: "材料 - 钢铁"
 	quest.4218B7B59B0F0F74.title: "合成瓶中税收官"
+	quest.427E539B8D939D7B.quest_desc: ["财宝堆相当于龙的休息处，睡在上面，可以提供生命恢复。"]
+	quest.427E539B8D939D7B.quest_subtitle: "一条龙怎么能没有财宝堆？"
 	quest.427E539B8D939D7B.title: "龙的财宝堆"
+	quest.479A6676D227A404.title: "占领：掠夺者前哨站"
 	quest.482E83E9FB669B98.quest_desc: [
 		"若是出生在了不适宜的环境，可以在此重新选择。"
 		""
@@ -116,6 +161,7 @@
 	]
 	quest.482E83E9FB669B98.quest_subtitle: "……出师不利？"
 	quest.4AF56908F7A20C1C.quest_desc: ["先人的手记中言之凿凿地说明了龙的存在，并说有火龙、冰龙、电龙三种。你一种都没看见。因此你决定另开新篇，自己实地观察并记录下这些魔法生物。"]
+	quest.4BA87BE14387EE62.title: "装饰你的箱子"
 	quest.4CA95FF688990836.quest_desc: [
 		"&a森林龙&r嗜食生肉、浆果和蘑菇。腐肉也是可食之餐。"
 		""
@@ -135,6 +181,8 @@
 		"5：切换原版背包（用于穿脱饰品及外观装备等）、配置、整理"
 		"6：副手栏。"
 	]
+	quest.4E6ED770D83C4AFF.quest_desc: ["是时候该给自己建造一个窝了。华丽的装点也好，精致的内饰也罢。总归要有一个地方，放置你在冒险中收集的，满满的宝物。"]
+	quest.4E6ED770D83C4AFF.quest_subtitle: "聚宝的本能"
 	quest.4FDE40DA03D8CE4B.quest_desc: [
 		"世上的&d龙&r可以分为三种："
 		"&c洞穴龙&r：吃燃料，弱点是水，沾水会受伤。"
@@ -148,17 +196,24 @@
 	]
 	quest.4FDE40DA03D8CE4B.quest_subtitle: "<日期与作者均不可辨别>"
 	quest.4FDE40DA03D8CE4B.title: "笔记：龙种的分别"
-	quest.528B36DB7C91235F.title: "WIP：插上旗子占领村庄"
-	quest.5297FBC92A1D485C.title: "村庄"
+	quest.5297FBC92A1D485C.quest_desc: [""]
+	quest.5297FBC92A1D485C.title: "占领：小型村庄"
 	quest.5405512A263C9DDC.title: "翼蚺"
 	quest.54C6AA8E0348FCC8.quest_desc: [
 		"在矿物与宝藏掉落中，时不时就会得到一些这样的尘埃。"
 		""
-		"用于合成龙相关的配方。"
+		"用于合成龙相关的配方。例如可加速成长的龙心碎片等。"
+		""
+		"&c注意——成长为青年龙后，龙心碎片将会不起作用，以此类推。&r"
 	]
 	quest.54C6AA8E0348FCC8.quest_subtitle: "同类相食……？"
 	quest.54C6AA8E0348FCC8.title: "龙尘与龙心碎片"
 	quest.54E3D369788106E6.title: "背包的升级"
+	quest.5B0C82AB156F2992.quest_desc: [
+		"村庄分为大中小三个等级，对应三种难度与奖励。浮空村庄作为新手村，不算在内。"
+		""
+		"原版村庄被归类于小型村庄。"
+	]
 	quest.5BBEC08E7893B0EF.quest_desc: [
 		"不用担心。只要你成功占领一个地点，通缉状态就会立刻解除。"
 		""
@@ -166,12 +221,8 @@
 	]
 	quest.5BBEC08E7893B0EF.quest_subtitle: "成王败寇"
 	quest.5BBEC08E7893B0EF.title: "被通缉了！"
-	quest.616FEA8BA81A4AF1.quest_desc: [
-		"你曾听说过一条名为&0[已编辑]&r的黑龙，凭一龙之力就毁掉了一个古代王国。"
-		""
-		"自己能不能达到那种程度呢？"
-	]
-	quest.616FEA8BA81A4AF1.quest_subtitle: "传说中的……"
+	quest.616FEA8BA81A4AF1.quest_desc: [""]
+	quest.616FEA8BA81A4AF1.quest_subtitle: "在没有龙的世界里当恶龙，会是什么体验？"
 	quest.6175DF4BFDCFC5EA.quest_desc: [
 		"铁魔法中共添加了八种法术学派。"
 		"炽焰、寒冰、雷霆、自然、神圣、猩红、末影、唤魔。"
@@ -193,6 +244,12 @@
 	]
 	quest.6175DF4BFDCFC5EA.quest_subtitle: "<日期与作者均不可辨别>"
 	quest.62998C38713A4E68.title: "材料 - 石材"
+	quest.6611F94E730FD20C.quest_desc: [
+		"成年龙在食用大量、大量、极大量远古龙心加快成长后，会变为远古龙。"
+		"&c当心，此阶段会碾碎方块（可能包括自己的家）！&r"
+		"{@pagebreak}"
+		"&o古龙对生态的影响不可估量……走到哪里，哪里就会成为新的生态。简直就是移动的灾祸。就没有什么东西制止它们吗？&r"
+	]
 	quest.681EBB7384D4F881.quest_desc: ["在茫茫世界中寻找龙蛋可不是个简单的事情。得一步一步来。"]
 	quest.681EBB7384D4F881.quest_subtitle: "寻找龙蛋前的准备"
 	quest.681EBB7384D4F881.title: "启程"
@@ -207,13 +264,27 @@
 	quest.71666C947F590F11.quest_desc: ["沟槽的blackaures高版本把公主王子删了结果wiki还保留信息RRR我要用铁链子狠狠栓住公主王子口牙"]
 	quest.716C0EC962DF0E89.quest_subtitle: "欢迎来到地狱"
 	quest.716C0EC962DF0E89.title: "前往下界"
+	quest.7181E0EE4CF3A23D.quest_subtitle: "在十份以上的财宝堆里睡觉"
+	quest.7219D2B812F4F537.quest_desc: [
+		"瓶中税收官每日为你的领地收税，并把物资送进物品栏。如果收税瓶被放在储物容器上，会把物资放进容器里。"
+		""
+		"&e瓶里可以放入物品。&r税收官会优先寻找与瓶中物品相同的物品，提升其出现的概率。但如果你的领地没有产出该种物品的能力，&c则不会起到效果。&r"
+		""
+		"若是放入任意方块（例如：泥土、木材），则会将其禁言，关闭每日物资结算的提示。"
+		"{@pagebreak}"
+		"如果放置多个收税瓶，只有最新放置的那个会生效。"
+		""
+		"如果收税瓶被放置在容器上，而容器已满，溢出的物品会从容器上掉落。"
+		""
+		"&o老人说这是个驼背的老爷爷，少年说这是个慈祥的老奶奶，疯子说这根本就不是个&0方的&r&o。依我看，你最好期待祂跟你是一个维度的。&r"
+	]
+	quest.7219D2B812F4F537.quest_subtitle: "你看不见它，但知道它在……"
 	quest.7235CE73FA25A2B6.quest_desc: [
 		"右击以改变种族，默认有30秒的冷却。且会丢失进度。"
 		"不知为何，你暂时无法变回人类。"
 	]
 	quest.7235CE73FA25A2B6.quest_subtitle: "改换种族"
 	quest.7235CE73FA25A2B6.title: "龙祭坛"
-	quest.73415DB10129A282.title: "WIP: 盛宴"
 	quest.755A36D1D7404B2B.quest_desc: [
 		"不对。你逐渐从混沌中恢复，发现自己身体上的一些……异常之处。"
 		""
@@ -222,6 +293,12 @@
 	]
 	quest.755A36D1D7404B2B.quest_subtitle: "——恶龙竟是我自己。"
 	quest.755A36D1D7404B2B.title: "自我"
+	quest.7A0E48F86D8941E4.quest_desc: ["手持物品右键控制器，如果连接的容器里有同类物品，即将物品存入容器中。"]
+	quest.7A0E48F86D8941E4.quest_subtitle: "怎么有些鸡肋呢？"
+	quest.7A0E48F86D8941E4.title: "多方块存储"
+	quest.7A57CC44CDC9CE8F.quest_desc: ["你有预感，自己的身体最终会长到两格以上的高度。届时，普通的门就无法让你通过了。"]
+	quest.7A57CC44CDC9CE8F.quest_subtitle: "毛多弱火，身高弱门"
+	quest.7A57CC44CDC9CE8F.title: "龙之门"
 	quest.7B7E7AAC1B004988.quest_desc: [
 		"&b海洋龙&r吃鱼为生。海洋龙的雷电吐息带有连锁攻击的效果，很适合攻击鱼群。"
 		""
@@ -232,7 +309,7 @@
 	quest.7EAD63371F1F66D6.quest_desc: ["身为一条龙，寻找适合自身的环境是一件重要的事。洞穴龙会被雨雪伤到，海洋龙无法离水太久。"]
 	quest.7EAD63371F1F66D6.quest_subtitle: "罗盘的另一形式"
 	quest.7F1FD96CDF8CD2B8.quest_desc: [
-		"这个世界的居民似乎已很久没有见过龙了，见到自己，居然不会上贡。你觉得有必要让他们重新认识认识。"
+		"这个世界的居民似乎已很久没有见过龙了。你觉得有必要让他们重新认识认识。"
 		""
 		"用原木和龙尘合成龙旗基座吧。"
 	]
@@ -251,6 +328,7 @@
 	reward_table.2728DA0106E2BEFF.title: "保留经验"
 	reward_table.312005F8628AF8D4.title: "死亡地点传送"
 	reward_table.7F22BC6BE5EBC652.title: "复明+变龙"
+	task.0019B05811BD85A4.title: "笔记：远古龙"
 	task.0741D2CC2C85660E.title: "龙种的分别"
 	task.0C88B4341C81B301.title: "异种共生"
 	task.0F4406652E6AD348.title: "食性的兼容"
@@ -261,11 +339,13 @@
 	task.199401EA6963724C.title: "铁锭"
 	task.2123AE028011AFF2.title: "WIP：把公主王子加回来！"
 	task.2219B15B63FB50BA.title: "“黑█龙”"
+	task.23289A0AA6E7C02D.title: "沙漠神殿"
+	task.236C214EA9DD8114.title: "笔记：瓶中税收官"
 	task.23FC7E58ED23B6A6.title: "龙曾在此"
-	task.28AD36F01C754BC0.title: "浆果"
 	task.291A150DF26B46E0.title: "笔记：狂龙病毒"
 	task.2C56F358AECA93D8.title: "龙的背包"
 	task.2CFB640AF692D8A7.title: "引言"
+	task.2D4D7ADEEA90E71F.title: "龙食产出点"
 	task.2D5F1E4E7A256624.title: "重新选择"
 	task.2DA64836A75052CD.title: "WIP：龙的技能"
 	task.307998BBA6E21031.title: "木材"
@@ -274,16 +354,25 @@
 	task.3BE42A84B83BD558.title: "焦炭食物"
 	task.3BE6DAE8BD2E8C65.title: "属性的耦合"
 	task.3DF94A1DF8C9F62B.title: "死亡地点传送？"
+	task.3F7CDCB946929F7D.title: "龙旗：自由探索"
 	task.417C6101F274068A.title: "龙曾在此"
 	task.422BB0D0FE11BBD4.title: "圆石"
+	task.4284B0A0F1EE600A.title: "缺水的海龙"
 	task.49536C43BBB09C55.title: "但是，不想当恶龙怎么办？"
+	task.4A6415B4D424BCF4.title: "沉船"
+	task.4ECE5592CF67640A.title: "笔记：龙旗"
+	task.504561E76F97CC7D.title: "丛林神庙"
 	task.50D341C769A7D0FC.title: "任意法术卷轴"
+	task.5467971C7B220C64.title: "任意龙之门"
 	task.56DAD45D20F6947D.title: "巢穴的建造"
 	task.598BF8CA11E630E8.title: "解锁调试选项……"
 	task.603F5014859431C5.title: "龙与魔法"
+	task.622691708BF35089.title: "村庄"
+	task.67D66FD32C5BD4BD.title: "WIP：龙的言灵术"
 	task.6A653AA27FDFEF6A.title: "任意龙祭坛"
 	task.6AEA76D166CE2ABB.title: "引言"
 	task.6E2DEDD7DD141BD6.title: "笔记：龙与魔法学派"
+	task.7046D4359B2C80F7.title: "WIP：龙的言灵术"
 	task.7519ED2CAF4B9CEC.title: "边狱"
 	task.76F26CEE5902DE59.title: "保留经验？"
 	task.79D67BD548D2720C.title: "WIP：添加更多守军和攻城奖励"

@@ -1,27 +1,25 @@
 {
     "item.kubejs.felyne_recall": "猫车",
+
     "item.kubejs.dragon_conquest_trophy": "占领奖杯",
+    "kubejs.tooltips.dragon_conquest_trophy.1": "用于提交任务或收藏用途。",
+    "kubejs.tooltips.dragon_conquest_trophy.structure": "建筑：%s",
+
+    "item.kubejs.wet_sponge": "饱浸的吸水海绵",
+    "kubejs.tooltips.wet_sponge.1": "右键拧干以挤出一格流动的水，适用于海洋龙的保湿工作。",
+
+    "item.kubejs.dry_sponge": "吸水海绵",
+    "kubejs.tooltips.dry_sponge.1": "身体完全浸入水中，或将其与水桶合成以重新浸湿。",
 
     "block.kubejs.dragon_flag": "龙旗基座",
-    "block.kubejs.dragon_flag_active": "生效的龙旗基座",
+    "kubejs.tooltips.dragon_flag.1": "放置后在顶部插上旗帜即可激活龙旗。",
 
     "block.kubejs.tax_collector": "瓶中税收官",
     "machine.kubejs.tax_collector.name": "瓶中税收官",
-
-    "kubejs.tooltips.dragon_flag.1": "放置后在顶部插上旗帜即可激活龙旗。",
     "kubejs.tooltips.tax_collector.comment": "“圆榫不入方卯。”",
     "kubejs.tooltips.tax_collector.1": "每日为你的领地收税。如果放在储物容器上，将把物资存入其中，否则发送至物品栏。",
     "kubejs.tooltips.tax_collector.2": "税收官在征税时会优先寻找瓶里放入的物品，提升其出现的概率。",
     "kubejs.tooltips.tax_collector.3": "若是放入任意方块，则会关闭其收税结算的消息。",
-    "kubejs.tooltips.dragon_conquest_trophy.1": "用于提交任务或收藏用途。",
-    "kubejs.tooltips.dragon_conquest_trophy.structure": "结构：%s",
-
-    "kubejs.village/sky_village": "浮空村庄",
-
-    "kubejs.recipeinfo.conquest": "可出现在以下结构的收税结算：",
-
-    "kubejs.recipeinfo.conquest.sky_village": "浮空村庄",
-    "kubejs.recipeinfo.conquest.sky_village.description": "资源：绿宝石、金锭、铁锭、龙尘。威胁：少量村民护卫。",
     
     "kubejs.conquest.no_structure": "没有可占领的结构。",
     "kubejs.conquest.structure_not_available": "此结构无法占领。",
@@ -33,9 +31,40 @@
 
     "kubejs.conquest.success": "你成功占领了这里！",
 
-    "kubejs.taxcollector.daypass": "新的一天到了。你的领地已为你献上如下物品：",
-    "kubejs.taxcollector.daypass.much": "新的一天到了。领地的大量产出已经送达。",
+    "kubejs.taxcollector.daypass": "新的一天到了。你的领地为你献上如下物品：",
+    "kubejs.taxcollector.daypass.much": "新的一天到了。领地的大量产出已然送达。",
+    "kubejs.taxcollector.daypass.withstorage": "这些物品已被放入储物容器。",
     "kubejs.taxcollector.bind": "将为你的如下领地收税：",
     "kubejs.taxcollector.bind.much": "将为你的大量领地收税。",
-    "kubejs.taxcollector.broken": "你的税收瓶被破坏了！"
+    "kubejs.taxcollector.broken": "你的税收瓶被破坏了！",
+
+    "kubejs.recipeinfo.conquest": "可出现在以下建筑的税收中：",
+
+    "kubejs.village/sky_village": "浮空村庄",
+    "kubejs.recipeinfo.conquest.sky_village": "浮空村庄",
+    "kubejs.recipeinfo.conquest.sky_village.description": "资源：绿宝石、金锭、铁锭、龙尘。威胁：少量村民护卫。",
+
+    "kubejs.village/small_village": "小型村庄",
+    "kubejs.recipeinfo.conquest.small_village": "小型村庄",
+    "kubejs.recipeinfo.conquest.small_village.description": "资源：绿宝石、金锭、铁锭、钻石、龙尘。威胁：少量村民护卫，单个铁傀儡。",
+
+    "kubejs.village/medium_village": "中型村庄",
+    "kubejs.recipeinfo.conquest.medium_village": "中型村庄",
+    "kubejs.recipeinfo.conquest.medium_village.description": "资源：绿宝石、金锭、铁锭、钻石、龙尘、附魔书。威胁：中量村民护卫，复数个铁傀儡。",
+
+    "kubejs.village/large_village": "大型村庄",
+    "kubejs.recipeinfo.conquest.large_village": "大型村庄",
+    "kubejs.recipeinfo.conquest.large_village.description": "资源：绿宝石、金锭、铁锭、钻石、龙尘、附魔书。威胁：大量村民护卫，复数个铁傀儡。",
+
+    "kubejs.misc/shipwreck": "沉船",
+    "kubejs.recipeinfo.conquest.shipwreck": "沉船",
+    "kubejs.recipeinfo.conquest.shipwreck.description": "资源：生鱼、河豚、海带、墨囊。威胁：少量溺尸，单个三叉戟溺尸。",
+
+    "kubejs.misc/desert_pyramid": "沙漠神殿",
+    "kubejs.recipeinfo.conquest.desert_pyramid": "沙漠神殿",
+    "kubejs.recipeinfo.conquest.desert_pyramid.description": "资源：骨头、焦炭食物、煤炭、充能煤。威胁：少量僵尸、尸壳、骷髅。",
+
+    "kubejs.misc/jungle_pyramid": "丛林神庙",
+    "kubejs.recipeinfo.conquest.jungle_pyramid": "丛林神庙",
+    "kubejs.recipeinfo.conquest.jungle_pyramid.description": "资源：发光浆果、蘑菇、腐肉、骨头。威胁：少量僵尸、骷髅。"
 }

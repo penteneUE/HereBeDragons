@@ -3,13 +3,16 @@
 	default_quest_shape: ""
 	filename: "54D2F7918CB21461"
 	group: ""
+	icon: {
+		id: "dragonsurvival:elder_dragon_bone"
+	}
 	id: "54D2F7918CB21461"
 	images: [{
-		height: 12.0d
+		height: 20.0d
 		image: "kubejs:textures/task/miraboreas.png"
 		rotation: 0.0d
-		width: 12.0d
-		x: 5.0d
+		width: 20.0d
+		x: 7.0d
 		y: -1.0d
 	}]
 	order_index: 7
@@ -17,10 +20,13 @@
 	quests: [
 		{
 			dependencies: ["7F1FD96CDF8CD2B8"]
-			hide_dependency_lines: true
-			hide_dependent_lines: true
 			hide_until_deps_complete: true
 			id: "616FEA8BA81A4AF1"
+			rewards: [{
+				id: "001310EB0ADD6BBB"
+				type: "xp"
+				xp: 2
+			}]
 			tasks: [{
 				id: "6AEA76D166CE2ABB"
 				type: "checkmark"
@@ -30,68 +36,35 @@
 		}
 		{
 			dependencies: ["4E6ED770D83C4AFF"]
+			dependency_requirement: "one_completed"
 			hide_until_deps_complete: false
+			icon: {
+				id: "minecraft:diamond"
+			}
 			id: "427E539B8D939D7B"
-			tasks: [
-				{
-					id: "6B112BF62F54A8BE"
-					item: { count: 1, id: "dragonsurvival:iron_dragon_treasure" }
-					type: "item"
-				}
-				{
-					id: "416D337FDD06D6DB"
-					item: { count: 1, id: "dragonsurvival:gold_dragon_treasure" }
-					type: "item"
-				}
-				{
-					id: "2E8D32737F487420"
-					item: { count: 1, id: "dragonsurvival:copper_dragon_treasure" }
-					type: "item"
-				}
-				{
-					id: "6B10AA351668D921"
-					item: { count: 1, id: "dragonsurvival:emerald_dragon_treasure" }
-					type: "item"
-				}
-				{
-					id: "4124014B2A0DD743"
-					item: { count: 1, id: "dragonsurvival:diamond_dragon_treasure" }
-					type: "item"
-				}
-				{
-					id: "621705B07C1DCB0F"
-					item: { count: 1, id: "dragonsurvival:debris_dragon_treasure" }
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "374A46B7971D7851"
+				type: "xp"
+				xp: 2
+			}]
+			tasks: [{
+				id: "13A892CCB0D5C8DF"
+				type: "checkmark"
+			}]
 			x: 3.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["282D6DA8CBDD27E1"]
+			hide_dependency_lines: true
 			hide_until_deps_complete: false
 			id: "5297FBC92A1D485C"
-			tasks: [{
-				id: "29277345E14276F7"
-				structure: "#minecraft:village"
-				type: "structure"
-			}]
-			x: 3.0d
-			y: 0.5d
+			x: 5.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["282D6DA8CBDD27E1"]
-			hide_until_deps_complete: false
-			id: "50EC8FDECD2FA1CC"
-			tasks: [{
-				id: "79D67BD548D2720C"
-				type: "checkmark"
-			}]
-			x: 3.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["282D6DA8CBDD27E1"]
+			hide_dependency_lines: true
 			hide_until_deps_complete: false
 			id: "0F5FD18B75AAD973"
 			tasks: [{
@@ -99,19 +72,8 @@
 				structure: "dragonsurvival:dragon_hunters_castle"
 				type: "structure"
 			}]
-			x: 4.0d
-			y: 0.5d
-		}
-		{
-			dependencies: ["282D6DA8CBDD27E1"]
-			hide_until_deps_complete: false
-			id: "528B36DB7C91235F"
-			tasks: [{
-				id: "7CB6541AF7D4CDC7"
-				type: "checkmark"
-			}]
-			x: 4.0d
-			y: 3.0d
+			x: 9.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -119,17 +81,26 @@
 				"1A1EEED3B3FB70E6"
 			]
 			id: "282D6DA8CBDD27E1"
+			rewards: [{
+				id: "123AFFCD4B873CC5"
+				type: "xp"
+				xp: 2
+			}]
 			tasks: [{
-				id: "6130D30627BEF6BE"
-				item: { count: 1, id: "kubejs:dragon_flag" }
-				type: "item"
+				id: "70B46487A9042986"
+				type: "checkmark"
 			}]
 			x: 1.5d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["616FEA8BA81A4AF1"]
 			id: "4E6ED770D83C4AFF"
+			rewards: [{
+				id: "29A37130612F7ED2"
+				type: "xp"
+				xp: 2
+			}]
 			tasks: [{
 				id: "56DAD45D20F6947D"
 				type: "checkmark"
@@ -138,28 +109,40 @@
 			y: -1.0d
 		}
 		{
-			id: "0AD37F450B1069DA"
-			tasks: [{
-				id: "7E60BDB3EA3660FC"
-				item: { count: 1, id: "supplementaries:jar" }
-				type: "item"
-			}]
-			x: 3.0d
-			y: -2.0d
-		}
-		{
+			dependencies: ["4E6ED770D83C4AFF"]
+			hide_dependent_lines: true
+			icon: {
+				components: {
+					"sophisticatedcore:accent_color": -75715
+					"sophisticatedcore:main_color": -75715
+				}
+				id: "sophisticatedstorage:gold_barrel"
+			}
 			id: "015FCCE81D57405E"
+			rewards: [{
+				id: "7B0453D095F303D8"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
-				id: "1E6ACA977D08BDE6"
-				item: { components: { "sophisticatedcore:accent_color": -15295332, "sophisticatedcore:main_color": -15295332 }, count: 1, id: "sophisticatedstorage:diamond_barrel" }
+				id: "6AB5C0758622388F"
+				item: { count: 1, id: "sophisticatedstorage:basic_tier_upgrade" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: -3.0d
+			x: 6.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["427E539B8D939D7B"]
 			id: "7181E0EE4CF3A23D"
+			rewards: [{
+				id: "22126E140CF8D7BE"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				advancement: "dragonsurvival:sleep_on_treasure"
 				criterion: ""
@@ -167,39 +150,46 @@
 				type: "advancement"
 			}]
 			x: 4.5d
-			y: -1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["7181E0EE4CF3A23D"]
 			id: "3D0D9910B3A720E4"
+			rewards: [{
+				id: "19470E2D0F1CA71D"
+				item: {
+					count: 1
+					id: "dragonsurvival:weak_dragon_heart"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				advancement: "dragonsurvival:sleep_on_hoard"
 				criterion: ""
 				id: "5CF2F8708375E0E8"
 				type: "advancement"
 			}]
-			x: 6.0d
-			y: -1.0d
-		}
-		{
-			id: "73415DB10129A282"
-			tasks: [{
-				id: "3B3D3958CB36B871"
-				item: { count: 1, id: "dragonsurvival:smelly_meat_porridge" }
-				type: "item"
-			}]
-			x: 4.5d
-			y: -2.0d
-		}
-		{
-			id: "7A57CC44CDC9CE8F"
-			tasks: [{
-				id: "1B2CBA7D0467ACBC"
-				item: { count: 1, id: "dragonsurvival:spruce_dragon_door" }
-				type: "item"
-			}]
 			x: 4.5d
 			y: -3.0d
+		}
+		{
+			dependencies: ["4E6ED770D83C4AFF"]
+			id: "7A57CC44CDC9CE8F"
+			rewards: [{
+				id: "5011E1B4B19C5D9E"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5467971C7B220C64"
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(dragonsurvival:wooden_dragon_doors)item(dragonsurvival:legacy_dragon_door)item(dragonsurvival:iron_dragon_door)item(dragonsurvival:gothic_dragon_door)item(dragonsurvival:skyrim_dragon_door)item(dragonsurvival:stone_dragon_door)item(dragonsurvival:cave_dragon_door)item(dragonsurvival:sea_dragon_door))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["616FEA8BA81A4AF1"]
@@ -212,7 +202,7 @@
 				type: "advancement"
 			}]
 			x: 0.0d
-			y: -1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5611D9A492180B3D"]
@@ -224,7 +214,7 @@
 				type: "advancement"
 			}]
 			x: 0.0d
-			y: -2.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["616FEA8BA81A4AF1"]
@@ -233,8 +223,354 @@
 				id: "2123AE028011AFF2"
 				type: "checkmark"
 			}]
-			x: -1.0d
+			x: 0.0d
 			y: 1.5d
+		}
+		{
+			hide_dependency_lines: true
+			id: "1F2854EDFE5FA100"
+			rewards: [
+				{
+					id: "5EC1F1E09A677032"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "5165306D012CFA32"
+					item: {
+						count: 1
+						id: "dragonsurvival:heart_element"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "01BE4FC6D059D479"
+				item: { components: { "minecraft:custom_data": { structure_id: "village/sky_village" } }, count: 1, id: "kubejs:dragon_conquest_trophy" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["427E539B8D939D7B"]
+			hide_dependency_lines: true
+			id: "467F9ED01DCE7A0A"
+			rewards: [{
+				id: "79E25DA9BEE4B0D3"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "4E062251FBAA7221"
+				item: { count: 1, id: "dragonsurvival:gold_dragon_treasure" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["427E539B8D939D7B"]
+			hide_dependency_lines: true
+			id: "1DE909ED91FAB666"
+			rewards: [{
+				id: "0E2D88117690D837"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "1C1C846037566835"
+				item: { count: 1, id: "dragonsurvival:copper_dragon_treasure" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["427E539B8D939D7B"]
+			hide_dependency_lines: true
+			id: "676C97087DB186FD"
+			rewards: [{
+				id: "253266BD5362541D"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7ABCE716ADCBA347"
+				item: { count: 1, id: "dragonsurvival:iron_dragon_treasure" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["427E539B8D939D7B"]
+			hide_dependency_lines: true
+			id: "4415606F4FD857FB"
+			rewards: [{
+				id: "368015F739F672A3"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "00A70DFF2AF44E88"
+				item: { count: 1, id: "dragonsurvival:emerald_dragon_treasure" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["427E539B8D939D7B"]
+			hide_dependency_lines: true
+			id: "46A32121975ADB71"
+			rewards: [
+				{
+					id: "15437398C92E09AA"
+					item: {
+						count: 1
+						id: "dragonsurvival:heart_element"
+					}
+					type: "item"
+				}
+				{
+					id: "15CD93E9D3CC4C8F"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "6BBA984FB756211D"
+				item: { count: 1, id: "dragonsurvival:diamond_dragon_treasure" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["427E539B8D939D7B"]
+			hide_dependency_lines: true
+			id: "42A2CE5BA18E6A94"
+			rewards: [
+				{
+					id: "175B514067E44055"
+					item: {
+						count: 1
+						id: "dragonsurvival:weak_dragon_heart"
+					}
+					type: "item"
+				}
+				{
+					id: "54560CF99992457A"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [{
+				id: "251B414A1B60605C"
+				item: { count: 1, id: "dragonsurvival:debris_dragon_treasure" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["015FCCE81D57405E"]
+			id: "7A0E48F86D8941E4"
+			rewards: [{
+				id: "3396F6C1631AF0B7"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5DDA8E93903CE445"
+					item: { count: 1, id: "sophisticatedstorage:controller" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "20B14864A18C08C9"
+					item: { count: 1, id: "sophisticatedstorage:storage_tool" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["015FCCE81D57405E"]
+			id: "4BA87BE14387EE62"
+			rewards: [{
+				id: "0B2EAB4250C13456"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "19678C5FDCDDB12B"
+					item: { count: 1, id: "sophisticatedstorage:decoration_table" }
+					type: "item"
+				}
+				{
+					id: "686B268E3E2B7937"
+					item: { count: 1, id: "sophisticatedstorage:paintbrush" }
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["015FCCE81D57405E"]
+			id: "2C93A8284D19DA93"
+			tasks: [{
+				id: "17661892792D4DC6"
+				item: { count: 1, id: "sophisticatedstorage:upgrade_base" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3AAEADB2CD2BA908"]
+			id: "6611F94E730FD20C"
+			shape: "diamond"
+			tasks: [{
+				id: "0019B05811BD85A4"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4E6ED770D83C4AFF"]
+			id: "333278E685C411C5"
+			rewards: [{
+				id: "04A97F111D7344A6"
+				item: {
+					count: 1
+					id: "dragonsurvival:elder_dragon_heart"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7F672CB5B9A9FF4F"
+					item: { count: 1, id: "dragonsurvival:cave_source_of_magic" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5939372189712B41"
+					item: { count: 1, id: "dragonsurvival:forest_source_of_magic" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "665DDF54F0BE86E8"
+					item: { count: 1, id: "dragonsurvival:sea_source_of_magic" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["282D6DA8CBDD27E1"]
+			hide_dependency_lines: true
+			id: "1DCBEE9D1F41A334"
+			tasks: [{
+				id: "4A6415B4D424BCF4"
+				structure: "#minecraft:shipwreck"
+				type: "structure"
+			}]
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["282D6DA8CBDD27E1"]
+			hide_dependency_lines: true
+			id: "368253F34658F72A"
+			tasks: [{
+				id: "23289A0AA6E7C02D"
+				structure: "minecraft:desert_pyramid"
+				type: "structure"
+			}]
+			x: 6.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["282D6DA8CBDD27E1"]
+			hide_dependency_lines: true
+			id: "32A7BD9E6E01440B"
+			tasks: [{
+				id: "504561E76F97CC7D"
+				structure: "minecraft:jungle_pyramid"
+				type: "structure"
+			}]
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["282D6DA8CBDD27E1"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			id: "2A2B27F05BF4FC4F"
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["282D6DA8CBDD27E1"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			id: "03573C57D4ECA6A9"
+			x: 7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["282D6DA8CBDD27E1"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			id: "479A6676D227A404"
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["282D6DA8CBDD27E1"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			id: "33E9CCB7EB00D0BA"
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["282D6DA8CBDD27E1"]
+			id: "5B0C82AB156F2992"
+			tasks: [{
+				id: "622691708BF35089"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["282D6DA8CBDD27E1"]
+			id: "3CF598CC4E061D0E"
+			tasks: [{
+				id: "2D4D7ADEEA90E71F"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 2.5d
 		}
 	]
 }

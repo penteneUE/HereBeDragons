@@ -5,5 +5,5 @@ PlayerEvents.tick(event => {
 
     playerTick_DragonState(event)
     playerTick_TaxCollect(event)
-    
+    playerTick_Sponge(event)
  })
