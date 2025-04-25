@@ -9,7 +9,7 @@
         },
         {
             "type": "gateways:experience",
-            "experience": 200,
+            "experience": 50,
             "orb_size": 25
         },
         {
@@ -19,8 +19,18 @@
                 "count": 1,
                 "components": {
                     "minecraft:custom_data": {
-                        "gateway": "village/large_village"
+                        "gateway": "iceandfire/myrmex_hive_desert"
                     }
+                }
+            }
+        },
+        {
+            "type": "gateways:stack",
+            "stack": {
+                "id": "iceandfire:myrmex_desert_egg",
+                "count": 1,
+                "components": {
+                    "iceandfire:int": 4
                 }
             }
         }
@@ -38,8 +48,9 @@
             "entities": [
                 {
                     "type": "gateways:standard",
-                    "count": 4,
-                    "entity": "guardvillagers:guard"
+                    "count": 2,
+                    "entity": "iceandfire:myrmex_sentinel",
+                    "nbt": {"GrowthTicks": 1, "Variant": 0, "GrowthStage": 2}
                 }
             ],
             "max_wave_time": 800,
@@ -50,30 +61,15 @@
             "entities": [
                 {
                     "type": "gateways:standard",
-                    "count": 4,
-                    "entity": "guardvillagers:guard"
+                    "count": 2,
+                    "entity": "iceandfire:myrmex_soldier",
+                    "nbt": {"GrowthTicks": 1, "Variant": 0, "GrowthStage": 2}
                 },
                 {
                     "type": "gateways:standard",
                     "count": 1,
-                    "entity": "minecraft:iron_golem"
-                }
-            ],
-            "max_wave_time": 800,
-            "rewards": [],
-            "setup_time": 100
-        },
-        {
-            "entities": [
-                {
-                    "type": "gateways:standard",
-                    "count": 4,
-                    "entity": "guardvillagers:guard"
-                },
-                {
-                    "type": "gateways:standard",
-                    "count": 2,
-                    "entity": "minecraft:iron_golem"
+                    "entity": "iceandfire:myrmex_queen",
+                    "nbt": {"GrowthTicks": 1, "Variant": 0, "GrowthStage": 2}
                 }
             ],
             "max_wave_time": 800,

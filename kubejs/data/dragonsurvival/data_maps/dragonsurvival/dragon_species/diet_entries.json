@@ -4,60 +4,10 @@
 			"replace": false,
 			"value": [
 				{
-					"items": "ars_nouveau:bombegranate_pod",
+					"items": "iceandfire:ambrosia",
 					"properties": {
-						"eat_seconds": 1,
-						"nutrition": 4,
-						"saturation": 5.0
-					}
-				},
-				{
-					"items": "arsdelight:bombegrante_pie_slice",
-					"properties": {
-						"nutrition": 3,
-						"saturation": 1.0
-					}
-				},
-				{
-					"items": "arsdelight:bombegrante_hornbeer",
-					"properties": {
-						"nutrition": 0,
-						"saturation": 0
-					}
-				},
-				{
-					"items": "arsdelight:bombegrante_steak",
-					"properties": {
-						"nutrition": 16,
-						"saturation": 26
-					}
-				},
-				{
-					"items": "arsdelight:unstable_cocktail",
-					"properties": {
-						"nutrition": 0,
-						"saturation": 0
-					}
-				},
-				{
-					"items": "arsdelight:bombegrante_tea",
-					"properties": {
-						"nutrition": 0,
-						"saturation": 0
-					}
-				},
-				{
-					"items": "arsdelight:neutralized_bombegrante_jam",
-					"properties": {
-						"nutrition": 0,
-						"saturation": 0
-					}
-				},
-				{
-					"items": "arsdelight:bombegrante_jelly",
-					"properties": {
-						"nutrition": 4,
-						"saturation": 5
+						"nutrition": 2,
+						"saturation": 4.0
 					}
 				}
 			]
@@ -66,88 +16,10 @@
 			"replace": false,
 			"value": [
 				{
-					"items": "ars_nouveau:mendosteen_pod",
+					"items": "iceandfire:ambrosia",
 					"properties": {
-						"eat_seconds": 1,
-						"nutrition": 4,
-						"saturation": 5.0
-					}
-				},
-				{
-					"items": "#arsdelight:raw_wilden_meat",
-					"properties": {
-						"nutrition": 6,
-						"saturation": 5
-					}
-				},
-				{
-					"items": "#arsdelight:raw_chimera",
-					"properties": {
-						"nutrition": 12,
-						"saturation": 9
-					}
-				},
-				{
-					"items": "arsdelight:mendosteen_pie_slice",
-					"properties": {
-						"nutrition": 3,
-						"saturation": 1.0
-					}
-				},
-				{
-					"items": "arsdelight:mendosteen_hornbeer",
-					"properties": {
-						"nutrition": 0,
-						"saturation": 0
-					}
-				},
-				{
-					"items": "arsdelight:source_berry_hornbeer",
-					"properties": {
-						"nutrition": 0,
-						"saturation": 0
-					}
-				},
-				{
-					"items": "arsdelight:mendosteen_chicken",
-					"properties": {
-						"nutrition": 10,
-						"saturation": 16
-					}
-				},
-				{
-					"items": "arsdelight:mendosteen_tea",
-					"properties": {
-						"nutrition": 0,
-						"saturation": 0
-					}
-				},
-				{
-					"items": "arsdelight:source_berry_tea",
-					"properties": {
-						"nutrition": 0,
-						"saturation": 0
-					}
-				},
-				{
-					"items": "arsdelight:activated_mendosteen_jam",
-					"properties": {
-						"nutrition": 0,
-						"saturation": 0
-					}
-				},
-				{
-					"items": "arsdelight:mendosteen_jelly",
-					"properties": {
-						"nutrition": 4,
-						"saturation": 5
-					}
-				},
-				{
-					"items": "arsdelight:source_berry_jelly",
-					"properties": {
-						"nutrition": 4,
-						"saturation": 5
+						"nutrition": 2,
+						"saturation": 4.0
 					}
 				}
 			]
@@ -156,54 +28,10 @@
 			"replace": false,
 			"value": [
 				{
-					"items": "ars_nouveau:frostaya_pod",
+					"items": "iceandfire:ambrosia",
 					"properties": {
-						"eat_seconds": 1,
-						"nutrition": 4,
-						"saturation": 5.0
-					}
-				},
-				{
-					"items": "arsdelight:frostaya_pie_slice",
-					"properties": {
-						"eat_seconds": 1,
-						"nutrition": 3,
-						"saturation": 1.0
-					}
-				},
-				{
-					"items": "arsdelight:frostaya_hornbeer",
-					"properties": {
-						"nutrition": 0,
-						"saturation": 0
-					}
-				},
-				{
-					"items": "arsdelight:frostaya_mutton",
-					"properties": {
-						"nutrition": 16,
-						"saturation": 26
-					}
-				},
-				{
-					"items": "arsdelight:frostaya_tea",
-					"properties": {
-						"nutrition": 0,
-						"saturation": 0
-					}
-				},
-				{
-					"items": "arsdelight:neutralized_frostaya_jam",
-					"properties": {
-						"nutrition": 0,
-						"saturation": 0
-					}
-				},
-				{
-					"items": "arsdelight:frostaya_jelly",
-					"properties": {
-						"nutrition": 4,
-						"saturation": 5
+						"nutrition": 2,
+						"saturation": 4.0
 					}
 				}
 			]

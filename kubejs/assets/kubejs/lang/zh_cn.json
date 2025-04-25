@@ -42,29 +42,49 @@
 
     "kubejs.village/sky_village": "浮空村庄",
     "kubejs.recipeinfo.conquest.sky_village": "浮空村庄",
-    "kubejs.recipeinfo.conquest.sky_village.description": "资源：绿宝石、金锭、铁锭、龙尘。威胁：少量村民护卫。",
+    "kubejs.recipeinfo.conquest.sky_village.description": "资源：绿宝石、金锭、铁锭、龙尘。守备：少量村民护卫。",
 
     "kubejs.village/small_village": "小型村庄",
     "kubejs.recipeinfo.conquest.small_village": "小型村庄",
-    "kubejs.recipeinfo.conquest.small_village.description": "资源：绿宝石、金锭、铁锭、钻石、龙尘。威胁：少量村民护卫，单个铁傀儡。",
+    "kubejs.recipeinfo.conquest.small_village.description": "资源：绿宝石、金锭、铁锭、钻石、龙尘。守备：少量村民护卫，单个铁傀儡。",
 
     "kubejs.village/medium_village": "中型村庄",
     "kubejs.recipeinfo.conquest.medium_village": "中型村庄",
-    "kubejs.recipeinfo.conquest.medium_village.description": "资源：绿宝石、金锭、铁锭、钻石、龙尘、附魔书。威胁：中量村民护卫，复数个铁傀儡。",
+    "kubejs.recipeinfo.conquest.medium_village.description": "资源：绿宝石、金锭、铁锭、钻石、远古龙骨、附魔书。守备：中量村民护卫，复数个铁傀儡。",
 
     "kubejs.village/large_village": "大型村庄",
     "kubejs.recipeinfo.conquest.large_village": "大型村庄",
-    "kubejs.recipeinfo.conquest.large_village.description": "资源：绿宝石、金锭、铁锭、钻石、龙尘、附魔书。威胁：大量村民护卫，复数个铁傀儡。",
+    "kubejs.recipeinfo.conquest.large_village.description": "资源：绿宝石、金锭、铁锭、钻石、远古龙骨、附魔书。守备：大量村民护卫，复数个铁傀儡。",
 
     "kubejs.misc/shipwreck": "沉船",
     "kubejs.recipeinfo.conquest.shipwreck": "沉船",
-    "kubejs.recipeinfo.conquest.shipwreck.description": "资源：生鱼、河豚、海带、墨囊。威胁：少量溺尸，单个三叉戟溺尸。",
+    "kubejs.recipeinfo.conquest.shipwreck.description": "资源：生鱼、河豚、海带、墨囊。守备：少量溺尸，单个三叉戟溺尸。",
 
     "kubejs.misc/desert_pyramid": "沙漠神殿",
     "kubejs.recipeinfo.conquest.desert_pyramid": "沙漠神殿",
-    "kubejs.recipeinfo.conquest.desert_pyramid.description": "资源：骨头、焦炭食物、煤炭、充能煤。威胁：少量僵尸、尸壳、骷髅。",
+    "kubejs.recipeinfo.conquest.desert_pyramid.description": "资源：骨头、焦炭食物、煤炭、充能煤。守备：少量僵尸、尸壳、骷髅。",
 
     "kubejs.misc/jungle_pyramid": "丛林神庙",
     "kubejs.recipeinfo.conquest.jungle_pyramid": "丛林神庙",
-    "kubejs.recipeinfo.conquest.jungle_pyramid.description": "资源：发光浆果、蘑菇、腐肉、骨头。威胁：少量僵尸、骷髅。"
+    "kubejs.recipeinfo.conquest.jungle_pyramid.description": "资源：发光浆果、蘑菇、腐肉、骨头。守备：少量僵尸、骷髅。",
+
+    "kubejs.pillage/pillager_outpost": "掠夺者前哨站",
+    "kubejs.recipeinfo.conquest.pillager_outpost": "掠夺者前哨站",
+    "kubejs.recipeinfo.conquest.pillager_outpost.description": "资源：绿宝石、金锭、钻石、附魔之瓶、远古龙骨。守备：掠夺者、女巫、劫掠兽。",
+
+    "kubejs.pillage/evoker_fort": "唤魔者堡垒",
+    "kubejs.recipeinfo.conquest.evoker_fort": "唤魔者堡垒",
+    "kubejs.recipeinfo.conquest.evoker_fort.description": "资源：绿宝石、奥术源质、魔法墨水、附魔之瓶、虚龙之心。守备：掠夺者、卫道士、唤魔者、高位唤魔者。",
+
+    "kubejs.pillage/mansion": "林地府邸",
+    "kubejs.recipeinfo.conquest.mansion": "林地府邸",
+    "kubejs.recipeinfo.conquest.mansion.description": "资源：绿宝石、金锭、钻石、附魔之瓶、不死图腾、虚龙之心。守备：掠夺者、卫道士、女巫、唤魔者、幻术师、劫掠兽骑士。",
+
+    "kubejs.iceandfire/myrmex_hive_desert": "沙漠恐蚁巢穴",
+    "kubejs.recipeinfo.conquest.myrmex_hive_desert": "沙漠恐蚁巢穴",
+    "kubejs.recipeinfo.conquest.myrmex_hive_desert.description": "资源：蚁脂。守备：恐蚁。",
+
+    "kubejs.iceandfire/myrmex_hive_jungle": "丛林恐蚁巢穴",
+    "kubejs.recipeinfo.conquest.myrmex_hive_jungle": "丛林恐蚁巢穴",
+    "kubejs.recipeinfo.conquest.myrmex_hive_jungle.description": "资源：蚁脂。守备：恐蚁。"
 }

@@ -1,5 +1,52 @@
-//不会根本不会555555
+// let $Player = Java.loadClass("net.minecraft.world.entity.player.Player");
+// //不会根本不会555555
+// const $NearestAttackableTargetGoal = Java.loadClass(
+//     "net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal"
+// );
+// function modifyAggro() {
+//     const { STRUCTURE_DATA } = global;
 
+//     const mobsToStructure = Utils.newMap();
+
+//     STRUCTURE_DATA.forEach((structure, data) => {
+//         const { mobs } = data;
+
+//         if (!mobs) return;
+//         mobs.forEach((thing) => {
+//             if (!mobsToStructure.containsKey(thing)) {
+//                 mobsToStructure[thing] = [structure];
+//                 return;
+//             }
+//             console.log(STRUCTURE_DATA);
+//             mobsToStructure[thing].push(structure);
+//         });
+//     });
+
+//     console.log(mobsToStructure);
+//     mobsToStructure.forEach((mobId) => {
+//         EntityJSEvents.addGoals(mobId, (event) => {
+//             if (event.)
+//             event.removeGoal($NearestAttackableTargetGoal);
+//             event.arbitraryTargetGoal(
+//                 2,
+//                 /**@param {Internal.PathfinderMob} mob */ (mob) =>
+//                     new $NearestAttackableTargetGoal(
+//                         mob,
+//                         $Player,
+//                         true,
+//                         /**@param {Internal.Player} target */ (target) => {
+//                             if (!target.isPlayer()) return true;
+
+//                         }
+//                     )
+//             );
+//         });
+//     });
+
+//     mobsToStructure.clear();
+// }
+
+// modifyAggro();
 // let $Player = Java.loadClass("net.minecraft.world.entity.player.Player");
 
 // const NearestAttackableTargetGoal = Java.loadClass(

@@ -4,8 +4,6 @@ RecipeViewerEvents.addInformation("item", (event) => {
 
     const itemsToStructureGateways = Utils.newMap();
 
-    console.log(STRUCTURE_DATA);
-
     STRUCTURE_DATA.forEach((structure, data) => {
         const {
             product,
@@ -36,4 +34,6 @@ RecipeViewerEvents.addInformation("item", (event) => {
         });
         event.add(thing, texts);
     });
+
+    itemsToStructureGateways.clear();
 });

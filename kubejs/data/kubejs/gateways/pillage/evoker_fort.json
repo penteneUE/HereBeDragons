@@ -19,7 +19,7 @@
                 "count": 1,
                 "components": {
                     "minecraft:custom_data": {
-                        "gateway": "village/large_village"
+                        "gateway": "pillage/evoker_fort"
                     }
                 }
             }
@@ -39,47 +39,51 @@
                 {
                     "type": "gateways:standard",
                     "count": 4,
-                    "entity": "guardvillagers:guard"
-                }
-            ],
-            "max_wave_time": 800,
-            "rewards": [],
-            "setup_time": 100
-        },
-        {
-            "entities": [
-                {
-                    "type": "gateways:standard",
-                    "count": 4,
-                    "entity": "guardvillagers:guard"
-                },
-                {
-                    "type": "gateways:standard",
-                    "count": 1,
-                    "entity": "minecraft:iron_golem"
-                }
-            ],
-            "max_wave_time": 800,
-            "rewards": [],
-            "setup_time": 100
-        },
-        {
-            "entities": [
-                {
-                    "type": "gateways:standard",
-                    "count": 4,
-                    "entity": "guardvillagers:guard"
+                    "entity": "minecraft:pillager"
                 },
                 {
                     "type": "gateways:standard",
                     "count": 2,
-                    "entity": "minecraft:iron_golem"
+                    "entity": "minecraft:vindicator"
                 }
             ],
             "max_wave_time": 800,
-            "modifiers": [],
             "rewards": [],
-            "setup_time": 150
+            "setup_time": 100
+        },
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 4,
+                    "entity": "minecraft:pillager"
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 2,
+                    "entity": "minecraft:evoker"
+                }
+            ],
+            "max_wave_time": 800,
+            "rewards": [],
+            "setup_time": 100
+        },
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 4,
+                    "entity": "minecraft:vindicator"
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 1,
+                    "entity": "irons_spellbooks:archevoker"
+                }
+            ],
+            "max_wave_time": 800,
+            "rewards": [],
+            "setup_time": 100
         }
     ],
     "spawn_algorithm": "gateways:inward_spiral",

@@ -9,7 +9,7 @@
         },
         {
             "type": "gateways:experience",
-            "experience": 200,
+            "experience": 100,
             "orb_size": 25
         },
         {
@@ -19,7 +19,7 @@
                 "count": 1,
                 "components": {
                     "minecraft:custom_data": {
-                        "gateway": "village/large_village"
+                        "gateway": "pillage/pillager_outpost"
                     }
                 }
             }
@@ -38,8 +38,8 @@
             "entities": [
                 {
                     "type": "gateways:standard",
-                    "count": 4,
-                    "entity": "guardvillagers:guard"
+                    "count": 3,
+                    "entity": "minecraft:pillager"
                 }
             ],
             "max_wave_time": 800,
@@ -50,30 +50,30 @@
             "entities": [
                 {
                     "type": "gateways:standard",
-                    "count": 4,
-                    "entity": "guardvillagers:guard"
-                },
-                {
-                    "type": "gateways:standard",
-                    "count": 1,
-                    "entity": "minecraft:iron_golem"
-                }
-            ],
-            "max_wave_time": 800,
-            "rewards": [],
-            "setup_time": 100
-        },
-        {
-            "entities": [
-                {
-                    "type": "gateways:standard",
-                    "count": 4,
-                    "entity": "guardvillagers:guard"
+                    "count": 2,
+                    "entity": "minecraft:pillager"
                 },
                 {
                     "type": "gateways:standard",
                     "count": 2,
-                    "entity": "minecraft:iron_golem"
+                    "entity": "minecraft:witch"
+                }
+            ],
+            "max_wave_time": 800,
+            "rewards": [],
+            "setup_time": 100
+        },
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 2,
+                    "entity": "minecraft:pillager"
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 1,
+                    "entity": "minecraft:ravager"
                 }
             ],
             "max_wave_time": 800,

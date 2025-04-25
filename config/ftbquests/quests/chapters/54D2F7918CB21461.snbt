@@ -59,21 +59,29 @@
 			hide_dependency_lines: true
 			hide_until_deps_complete: false
 			id: "5297FBC92A1D485C"
-			x: 5.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["282D6DA8CBDD27E1"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: false
-			id: "0F5FD18B75AAD973"
+			rewards: [
+				{
+					id: "4A0DFD382D084236"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "37C6B1AB67DBC763"
+					item: {
+						count: 1
+						id: "dragonsurvival:heart_element"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
-				id: "731FB22A972C1332"
-				structure: "dragonsurvival:dragon_hunters_castle"
-				type: "structure"
+				id: "26453DE608F3402B"
+				item: { components: { "minecraft:custom_data": { gateway: "village/small_village" } }, count: 1, id: "kubejs:dragon_conquest_trophy" }
+				match_components: "fuzzy"
+				type: "item"
 			}]
-			x: 9.5d
-			y: 1.0d
+			x: 5.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -91,7 +99,7 @@
 				type: "checkmark"
 			}]
 			x: 1.5d
-			y: 1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["616FEA8BA81A4AF1"]
@@ -176,12 +184,9 @@
 			dependencies: ["4E6ED770D83C4AFF"]
 			id: "7A57CC44CDC9CE8F"
 			rewards: [{
-				id: "5011E1B4B19C5D9E"
-				item: {
-					count: 1
-					id: "dragonsurvival:heart_element"
-				}
-				type: "item"
+				id: "55E045B04419DF64"
+				type: "xp"
+				xp: 10
 			}]
 			tasks: [{
 				id: "5467971C7B220C64"
@@ -224,7 +229,7 @@
 				type: "checkmark"
 			}]
 			x: 0.0d
-			y: 1.5d
+			y: 2.5d
 		}
 		{
 			hide_dependency_lines: true
@@ -250,8 +255,8 @@
 				match_components: "fuzzy"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 1.0d
+			x: 4.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["427E539B8D939D7B"]
@@ -431,6 +436,14 @@
 		{
 			dependencies: ["015FCCE81D57405E"]
 			id: "2C93A8284D19DA93"
+			rewards: [{
+				id: "3F48AA915DCA959C"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "17661892792D4DC6"
 				item: { count: 1, id: "sophisticatedstorage:upgrade_base" }
@@ -488,36 +501,84 @@
 			dependencies: ["282D6DA8CBDD27E1"]
 			hide_dependency_lines: true
 			id: "1DCBEE9D1F41A334"
+			rewards: [
+				{
+					id: "0FDD71133C582ED0"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "107CE88BA551D91B"
+					item: {
+						count: 1
+						id: "dragonsurvival:heart_element"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
-				id: "4A6415B4D424BCF4"
-				structure: "#minecraft:shipwreck"
-				type: "structure"
+				id: "758F4295EA180E7B"
+				item: { components: { "minecraft:custom_data": { gateway: "misc/shipwreck" } }, count: 1, id: "kubejs:dragon_conquest_trophy" }
+				match_components: "fuzzy"
+				type: "item"
 			}]
-			x: 4.5d
+			x: 4.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["282D6DA8CBDD27E1"]
 			hide_dependency_lines: true
 			id: "368253F34658F72A"
+			rewards: [
+				{
+					id: "15BE38149EAE3AAC"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "42B380507A4914CC"
+					item: {
+						count: 1
+						id: "dragonsurvival:heart_element"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
-				id: "23289A0AA6E7C02D"
-				structure: "minecraft:desert_pyramid"
-				type: "structure"
+				id: "52BA1451344D83B3"
+				item: { components: { "minecraft:custom_data": { gateway: "misc/desert_pyramid" } }, count: 1, id: "kubejs:dragon_conquest_trophy" }
+				match_components: "fuzzy"
+				type: "item"
 			}]
-			x: 6.5d
+			x: 6.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["282D6DA8CBDD27E1"]
 			hide_dependency_lines: true
 			id: "32A7BD9E6E01440B"
+			rewards: [
+				{
+					id: "1BF39269FE92DFDC"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "0A0C48B198E0415D"
+					item: {
+						count: 1
+						id: "dragonsurvival:heart_element"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
-				id: "504561E76F97CC7D"
-				structure: "minecraft:jungle_pyramid"
-				type: "structure"
+				id: "13B9634B6EB76AB4"
+				item: { components: { "minecraft:custom_data": { gateway: "misc/jungle_pyramid" } }, count: 1, id: "kubejs:dragon_conquest_trophy" }
+				match_components: "fuzzy"
+				type: "item"
 			}]
-			x: 5.5d
+			x: 5.0d
 			y: 2.5d
 		}
 		{
@@ -525,23 +586,86 @@
 			hide_dependency_lines: true
 			hide_until_deps_complete: false
 			id: "2A2B27F05BF4FC4F"
-			x: 6.5d
-			y: 1.0d
+			rewards: [
+				{
+					id: "59DFBB0DB2682135"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "4B46252FB95A237A"
+					item: {
+						count: 1
+						id: "dragonsurvival:heart_element"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5F2655A7E6C8D8C0"
+				item: { components: { "minecraft:custom_data": { gateway: "village/medium_village" } }, count: 1, id: "kubejs:dragon_conquest_trophy" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["282D6DA8CBDD27E1"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: false
 			id: "03573C57D4ECA6A9"
-			x: 7.5d
-			y: 1.0d
+			rewards: [
+				{
+					id: "1A19E5B16159F2EA"
+					type: "xp"
+					xp: 20
+				}
+				{
+					id: "4473D1D462FBDD23"
+					item: {
+						count: 1
+						id: "dragonsurvival:weak_dragon_heart"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "16D8B326A31171EF"
+				item: { components: { "minecraft:custom_data": { gateway: "village/large_village" } }, count: 1, id: "kubejs:dragon_conquest_trophy" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["282D6DA8CBDD27E1"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: false
 			id: "479A6676D227A404"
-			x: -3.0d
+			rewards: [
+				{
+					id: "45FE5576506F3D32"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "705B131EDC1BDAFE"
+					item: {
+						count: 1
+						id: "dragonsurvival:heart_element"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "278BB8EA13F1AF56"
+				item: { components: { "minecraft:custom_data": { gateway: "pillage/pillager_outpost" } }, count: 1, id: "kubejs:dragon_conquest_trophy" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: 5.0d
 			y: 1.5d
 		}
 		{
@@ -549,8 +673,29 @@
 			hide_dependency_lines: true
 			hide_until_deps_complete: false
 			id: "33E9CCB7EB00D0BA"
-			x: -3.0d
-			y: 2.5d
+			rewards: [
+				{
+					id: "6D05B8C59EB7A68F"
+					type: "xp"
+					xp: 20
+				}
+				{
+					id: "6A849AF60F1E4055"
+					item: {
+						count: 1
+						id: "dragonsurvival:weak_dragon_heart"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5D64E04FCEF1DFF6"
+				item: { components: { "minecraft:custom_data": { gateway: "pillage/mansion" } }, count: 1, id: "kubejs:dragon_conquest_trophy" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["282D6DA8CBDD27E1"]
@@ -559,8 +704,8 @@
 				id: "622691708BF35089"
 				type: "checkmark"
 			}]
-			x: 3.5d
-			y: 1.0d
+			x: 3.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["282D6DA8CBDD27E1"]
@@ -569,8 +714,172 @@
 				id: "2D4D7ADEEA90E71F"
 				type: "checkmark"
 			}]
-			x: 3.5d
+			x: 3.0d
 			y: 2.5d
+		}
+		{
+			dependencies: ["282D6DA8CBDD27E1"]
+			id: "4111BB6653AFE691"
+			tasks: [{
+				id: "56ECDCEA429A59B3"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["282D6DA8CBDD27E1"]
+			hide_dependency_lines: true
+			id: "7B2FD76FCC974FC0"
+			rewards: [
+				{
+					id: "0740332C427261E3"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "3BFEBD148C56CD5B"
+					item: {
+						count: 1
+						id: "dragonsurvival:heart_element"
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["282D6DA8CBDD27E1"]
+			hide_dependency_lines: true
+			id: "7D5CFE6DB014B46C"
+			rewards: [
+				{
+					id: "024CFDBB6302981B"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "418F4F3BD6A9E567"
+					item: {
+						count: 1
+						id: "dragonsurvival:heart_element"
+					}
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["282D6DA8CBDD27E1"]
+			hide_dependency_lines: true
+			id: "7A7262861AF0ACB3"
+			rewards: [
+				{
+					id: "3042003B9D64A137"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "69979B2A69882415"
+					item: {
+						count: 1
+						id: "dragonsurvival:heart_element"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["282D6DA8CBDD27E1"]
+			hide_dependency_lines: true
+			id: "49189A639C5973BB"
+			rewards: [
+				{
+					id: "3EC92E96A9997177"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "01674D44F40417BD"
+					item: {
+						count: 1
+						id: "dragonsurvival:weak_dragon_heart"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1613394A4D899E17"
+				item: { components: { "minecraft:custom_data": { gateway: "pillage/evoker_fort" } }, count: 1, id: "kubejs:dragon_conquest_trophy" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["282D6DA8CBDD27E1"]
+			hide_dependency_lines: true
+			id: "19F305E43043E0BC"
+			rewards: [
+				{
+					id: "0C6ABF31A3EA11D3"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "6D6B49A9EA90EA9E"
+					item: {
+						count: 1
+						id: "dragonsurvival:heart_element"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["282D6DA8CBDD27E1"]
+			hide_dependency_lines: true
+			id: "11AA79B86FA1BF15"
+			rewards: [
+				{
+					id: "440B1486048D29D8"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "3480C5E468D6B64C"
+					item: {
+						count: 1
+						id: "dragonsurvival:heart_element"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "1169F842C04CE47E"
+					item: { components: { "minecraft:custom_data": { gateway: "iceandfire/myrmex_hive_desert" } }, count: 1, id: "kubejs:dragon_conquest_trophy" }
+					match_components: "fuzzy"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "54667A0A4B8761CD"
+					item: { components: { "minecraft:custom_data": { gateway: "iceandfire/myrmex_hive_jungle" } }, count: 1, id: "kubejs:dragon_conquest_trophy" }
+					match_components: "fuzzy"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 4.0d
 		}
 	]
 }

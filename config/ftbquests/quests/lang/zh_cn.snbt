@@ -18,10 +18,11 @@
 	quest.015FCCE81D57405E.quest_desc: ["在精妙存储的世界中，可以将箱子与桶子升级以存放更多的物品。"]
 	quest.015FCCE81D57405E.quest_subtitle: "金灿灿的桶子堆成山"
 	quest.015FCCE81D57405E.title: "精妙存储"
+	quest.03573C57D4ECA6A9.quest_desc: ["大型村庄相比中型村庄，将有机会掉落虚龙之心，附魔书的质量也有所提升。"]
 	quest.03573C57D4ECA6A9.title: "占领：大型村庄"
 	quest.05546B1D86F62F95.quest_desc: [
 		"本整合包中默认会保留饰品栏以及龙爪槽中物品。剩余的会存放在坟墓里。"
-		"（才不是不会做）"
+		"（不会做保留物品栏，55555）"
 	]
 	quest.07A61974F4ED437D.quest_desc: ["陆上的海洋龙会&c因身体逐渐干燥而受到伤害&r。为保障在陆地的体验，这里提供了一些海绵来打湿自己，在空中也能用！"]
 	quest.09D6B3CFB0117A34.quest_desc: ["言灵：无相杀机"]
@@ -33,14 +34,25 @@
 	]
 	quest.0E0A7316F2302130.quest_subtitle: "在一个没有龙的世界当恶龙，会是什么体验？"
 	quest.0E0A7316F2302130.title: "整合包介绍"
-	quest.0F5FD18B75AAD973.title: "猎龙人之堡"
+	quest.11AA79B86FA1BF15.quest_desc: [""]
+	quest.11AA79B86FA1BF15.quest_subtitle: "连蚂蚁窝都不放过？！"
+	quest.11AA79B86FA1BF15.title: "占领：恐蚁巢穴"
 	quest.12CA7C92D23CF9A4.title: "搜寻强大的敌人"
 	quest.147154AD758AD0C4.quest_desc: [
 		"小心——若是被&o&5黑色紫色&r的龙杀死，会染上它的诅咒！"
 		""
-		"&o传说中，有一种██龙，自出生就会向██山迁移。它们并非有意作恶，而是因为它们没有双眼，散播出的病毒就是它们用来感知世界的唯一方式，但在客观上造成了自然灾害。后来更发现，这种生物是█████的幼体。&r[剩余部分已编辑]"
+		"&o传说中，有一种██龙，自出生就会向██山迁移。它们没有双眼，散播出的病毒就是它们的感官，在无心中造成了自然灾害。后来更是发现，这种生物是█████的幼体。&r[剩余部分已编辑]"
 	]
 	quest.147154AD758AD0C4.quest_subtitle: "<日期与作者均不可辨别>"
+	quest.19F305E43043E0BC.quest_desc: [
+		"小精灵是一种很讨厌的生物，会偷走你的东西。"
+		""
+		"把她们的家给拆光吧。"
+		""
+		"精灵尘可以合成神肴，一种提供多种增益的食物。但要当心——神肴中富含的妖精元素会对龙造成伤害！"
+	]
+	quest.19F305E43043E0BC.quest_subtitle: "众所周知，妖精克龙"
+	quest.19F305E43043E0BC.title: "占领：仙灵村庄"
 	quest.1A1EEED3B3FB70E6.title: "材料 - 木材"
 	quest.1AA85C2AA6E44858.quest_desc: [
 		"整合包计划添加一些原创的魔法，但还没想到该怎么做。"
@@ -55,7 +67,8 @@
 		"你持有的，只有这像是纸扎一般的罗盘。"
 		"转动它……试图找到，&d龙&r的存在……？"
 	]
-	quest.1DCBEE9D1F41A334.quest_subtitle: "海龙食物刷新点"
+	quest.1DCBEE9D1F41A334.quest_desc: ["海中的沉船里不缺鱼与海带。"]
+	quest.1DCBEE9D1F41A334.quest_subtitle: "永不空军"
 	quest.1DCBEE9D1F41A334.title: "占领：沉船"
 	quest.1F2854EDFE5FA100.quest_desc: [""]
 	quest.1F2854EDFE5FA100.quest_subtitle: "恶龙的新手村"
@@ -90,7 +103,7 @@
 		""
 		"建设你的龙窝吧！"
 	]
-	quest.27654A3A89C4E334.quest_desc: ["没关系，整合包除了村庄，还提供了其它结构可供占领。尽情去杀坏人吧！"]
+	quest.27654A3A89C4E334.quest_desc: ["没关系，整合包除了村庄，还提供了其它结构（如掠夺者前哨站）可供占领。尽情去杀坏人吧！"]
 	quest.27654A3A89C4E334.quest_subtitle: "跳过这个任务"
 	quest.27D23F919BAA1EB4.quest_desc: [
 		"浮空村庄由于其浮空的特性，再加上防守相对薄弱，是新生恶龙绝佳的第一块领地。"
@@ -107,6 +120,7 @@
 	quest.282D6DA8CBDD27E1.title: "聚落的征服"
 	quest.28ED1E8BF3D0BE69.quest_desc: ["整合包中添加了更多旗帜图案，用它们装点你的龙旗吧！"]
 	quest.28ED1E8BF3D0BE69.title: "旗帜图案：龙"
+	quest.2A2B27F05BF4FC4F.quest_desc: ["中型村庄相比小型村庄，将有机会掉落龙心碎片与附魔书。（经验修补，耐久，锋利，效率）"]
 	quest.2A2B27F05BF4FC4F.title: "占领：中型村庄"
 	quest.2A53602F5DD6482A.quest_desc: ["痴愚"]
 	quest.2EF159E57EAAA0B9.quest_desc: ["有了领地之后，收税是必不可少的。瓶中的东西刚好可以胜任这份工作。"]
@@ -114,12 +128,14 @@
 	quest.31DC355F5D46AE7F.quest_desc: ["这个家伙像是完全没有理智……而且它的状态很不对劲！"]
 	quest.31DC355F5D46AE7F.quest_subtitle: "你看见了——在那个浮岛上，有一条飞龙！"
 	quest.31DC355F5D46AE7F.title: "迫近的黑影"
-	quest.32A7BD9E6E01440B.quest_subtitle: "丛林龙横扫神庙？！"
+	quest.32A7BD9E6E01440B.quest_desc: ["丛林的环境让大量植物与真菌得以孳生。"]
+	quest.32A7BD9E6E01440B.quest_subtitle: "蜥蜴人曾在此"
 	quest.32A7BD9E6E01440B.title: "占领：丛林神庙"
 	quest.32EBCEE0701806C1.quest_desc: [""]
 	quest.32EBCEE0701806C1.quest_subtitle: "被通缉后，可以右键向村民索取贡品"
 	quest.333278E685C411C5.quest_subtitle: "温泉……？"
 	quest.333278E685C411C5.title: "魔源"
+	quest.33E9CCB7EB00D0BA.quest_desc: ["林地府邸除了掠夺者前哨站有的东西，还有概率掉落虚龙之心和不死图腾。"]
 	quest.33E9CCB7EB00D0BA.title: "占领：林地府邸"
 	quest.360ED3ED5B00CC20.title: "法术卷轴"
 	quest.36478C9680EBEFD6.quest_desc: [
@@ -130,6 +146,7 @@
 		"目前没有做玩家与NPC/他人争夺领地的内容，也就是说，一个建筑可以被多个玩家占领并收取物资。（才不是因为没有朋友帮作者测试）"
 	]
 	quest.36478C9680EBEFD6.quest_subtitle: "我将带来征服"
+	quest.368253F34658F72A.quest_desc: ["沙漠神殿的选址处，化石与煤炭资源从来不会少。"]
 	quest.368253F34658F72A.quest_subtitle: "改换法老"
 	quest.368253F34658F72A.title: "占领：沙漠神殿"
 	quest.3A18D1CA4A2260B2.quest_desc: [
@@ -146,12 +163,16 @@
 	]
 	quest.3C35CC09D48EA10D.quest_subtitle: "炉火焱焱"
 	quest.3C35CC09D48EA10D.title: "食物 - 洞穴龙"
+	quest.3CF598CC4E061D0E.quest_desc: ["三种建筑可以产出三种龙所需的食物，再也不为食物发愁。"]
+	quest.3CF598CC4E061D0E.quest_subtitle: "饿龙的牙祭"
 	quest.3D0D9910B3A720E4.quest_subtitle: "在一百份以上的藏宝堆里睡觉"
 	quest.3DCEA15CB8E9D815.title: "材料 - 钢铁"
+	quest.4111BB6653AFE691.quest_subtitle: "尽情去杀坏人吧"
 	quest.4218B7B59B0F0F74.title: "合成瓶中税收官"
 	quest.427E539B8D939D7B.quest_desc: ["财宝堆相当于龙的休息处，睡在上面，可以提供生命恢复。"]
 	quest.427E539B8D939D7B.quest_subtitle: "一条龙怎么能没有财宝堆？"
 	quest.427E539B8D939D7B.title: "龙的财宝堆"
+	quest.479A6676D227A404.quest_desc: ["掠夺者前哨站掉落绿宝石，金锭，钻石，经验瓶与龙骨。"]
 	quest.479A6676D227A404.title: "占领：掠夺者前哨站"
 	quest.482E83E9FB669B98.quest_desc: [
 		"若是出生在了不适宜的环境，可以在此重新选择。"
@@ -160,6 +181,13 @@
 		"仅限一次。"
 	]
 	quest.482E83E9FB669B98.quest_subtitle: "……出师不利？"
+	quest.49189A639C5973BB.quest_desc: [
+		"作为高位唤魔者——一个法师——的城堡，唤魔者堡垒会额外产出奥术源质与墨水。"
+		""
+		"&e将唤魔者堡垒中的笔记交给被囚禁的流浪商人翻译，再交予牧法师（平原村庄/针叶林村庄可刷新牧法师的法师塔），可以得到一本村民圣经。&r"
+	]
+	quest.49189A639C5973BB.quest_subtitle: "你的公主在别的城堡里"
+	quest.49189A639C5973BB.title: "占领：唤魔者堡垒"
 	quest.4AF56908F7A20C1C.quest_desc: ["先人的手记中言之凿凿地说明了龙的存在，并说有火龙、冰龙、电龙三种。你一种都没看见。因此你决定另开新篇，自己实地观察并记录下这些魔法生物。"]
 	quest.4BA87BE14387EE62.title: "装饰你的箱子"
 	quest.4CA95FF688990836.quest_desc: [
@@ -196,7 +224,7 @@
 	]
 	quest.4FDE40DA03D8CE4B.quest_subtitle: "<日期与作者均不可辨别>"
 	quest.4FDE40DA03D8CE4B.title: "笔记：龙种的分别"
-	quest.5297FBC92A1D485C.quest_desc: [""]
+	quest.5297FBC92A1D485C.quest_desc: ["小型村庄相比于浮空村庄，会开始掉落钻石与远古龙骨。"]
 	quest.5297FBC92A1D485C.title: "占领：小型村庄"
 	quest.5405512A263C9DDC.title: "翼蚺"
 	quest.54C6AA8E0348FCC8.quest_desc: [
@@ -214,10 +242,13 @@
 		""
 		"原版村庄被归类于小型村庄。"
 	]
+	quest.5B0C82AB156F2992.quest_subtitle: "尽情当条恶龙吧"
 	quest.5BBEC08E7893B0EF.quest_desc: [
 		"不用担心。只要你成功占领一个地点，通缉状态就会立刻解除。"
 		""
 		"之后，如果你没有通缉状态，攻击自己领地中的村民和护卫也不会被通缉。"
+		""
+		"（本来想做领地里居民，什么僵尸骷髅卫道士全部变为友善的，但是不会修改仇恨，搁置了）"
 	]
 	quest.5BBEC08E7893B0EF.quest_subtitle: "成王败寇"
 	quest.5BBEC08E7893B0EF.title: "被通缉了！"
@@ -261,7 +292,7 @@
 		"&b海洋龙&r：霜木瓜及其制品。"
 	]
 	quest.6B2D21F0295F993B.quest_subtitle: "挑食是个坏习惯"
-	quest.71666C947F590F11.quest_desc: ["沟槽的blackaures高版本把公主王子删了结果wiki还保留信息RRR我要用铁链子狠狠栓住公主王子口牙"]
+	quest.71666C947F590F11.quest_desc: ["可恶的blackaures，把公主王子删了，结果wiki还保留信息，好想抢公主啊"]
 	quest.716C0EC962DF0E89.quest_subtitle: "欢迎来到地狱"
 	quest.716C0EC962DF0E89.title: "前往下界"
 	quest.7181E0EE4CF3A23D.quest_subtitle: "在十份以上的财宝堆里睡觉"
@@ -296,9 +327,17 @@
 	quest.7A0E48F86D8941E4.quest_desc: ["手持物品右键控制器，如果连接的容器里有同类物品，即将物品存入容器中。"]
 	quest.7A0E48F86D8941E4.quest_subtitle: "怎么有些鸡肋呢？"
 	quest.7A0E48F86D8941E4.title: "多方块存储"
-	quest.7A57CC44CDC9CE8F.quest_desc: ["你有预感，自己的身体最终会长到两格以上的高度。届时，普通的门就无法让你通过了。"]
+	quest.7A57CC44CDC9CE8F.quest_desc: [
+		"你有预感，自己的身体最终会长到两格以上的高度。届时，普通的门就无法让你通过了。"
+		""
+		"当然，如果你是北方龙种，以上全部作废。"
+	]
 	quest.7A57CC44CDC9CE8F.quest_subtitle: "毛多弱火，身高弱门"
 	quest.7A57CC44CDC9CE8F.title: "龙之门"
+	quest.7A7262861AF0ACB3.quest_subtitle: "放心，这里没有武士刀和大剑"
+	quest.7A7262861AF0ACB3.title: "占领：猎龙人之堡"
+	quest.7B2FD76FCC974FC0.quest_subtitle: "勇龙斗恶（监守）者"
+	quest.7B2FD76FCC974FC0.title: "占领：深暗古城"
 	quest.7B7E7AAC1B004988.quest_desc: [
 		"&b海洋龙&r吃鱼为生。海洋龙的雷电吐息带有连锁攻击的效果，很适合攻击鱼群。"
 		""
@@ -306,6 +345,8 @@
 	]
 	quest.7B7E7AAC1B004988.quest_subtitle: "盲目吃鱼"
 	quest.7B7E7AAC1B004988.title: "食物 - 海洋龙"
+	quest.7D5CFE6DB014B46C.quest_subtitle: "是谁住在深海下的大菠萝里？"
+	quest.7D5CFE6DB014B46C.title: "占领：海底神殿"
 	quest.7EAD63371F1F66D6.quest_desc: ["身为一条龙，寻找适合自身的环境是一件重要的事。洞穴龙会被雨雪伤到，海洋龙无法离水太久。"]
 	quest.7EAD63371F1F66D6.quest_subtitle: "罗盘的另一形式"
 	quest.7F1FD96CDF8CD2B8.quest_desc: [
@@ -337,9 +378,8 @@
 	task.172E32CF4795659A.title: "生肉"
 	task.176774A86A7260FF.title: "启程"
 	task.199401EA6963724C.title: "铁锭"
-	task.2123AE028011AFF2.title: "WIP：把公主王子加回来！"
-	task.2219B15B63FB50BA.title: "“黑█龙”"
-	task.23289A0AA6E7C02D.title: "沙漠神殿"
+	task.2123AE028011AFF2.title: "WIP：添加可抓走的公主\\&王子"
+	task.2219B15B63FB50BA.title: "迫近的黑影"
 	task.236C214EA9DD8114.title: "笔记：瓶中税收官"
 	task.23FC7E58ED23B6A6.title: "龙曾在此"
 	task.291A150DF26B46E0.title: "笔记：狂龙病毒"
@@ -359,12 +399,11 @@
 	task.422BB0D0FE11BBD4.title: "圆石"
 	task.4284B0A0F1EE600A.title: "缺水的海龙"
 	task.49536C43BBB09C55.title: "但是，不想当恶龙怎么办？"
-	task.4A6415B4D424BCF4.title: "沉船"
 	task.4ECE5592CF67640A.title: "笔记：龙旗"
-	task.504561E76F97CC7D.title: "丛林神庙"
 	task.50D341C769A7D0FC.title: "任意法术卷轴"
 	task.5467971C7B220C64.title: "任意龙之门"
 	task.56DAD45D20F6947D.title: "巢穴的建造"
+	task.56ECDCEA429A59B3.title: "刌庄"
 	task.598BF8CA11E630E8.title: "解锁调试选项……"
 	task.603F5014859431C5.title: "龙与魔法"
 	task.622691708BF35089.title: "村庄"

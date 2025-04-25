@@ -19,7 +19,7 @@
                 "count": 1,
                 "components": {
                     "minecraft:custom_data": {
-                        "gateway": "village/large_village"
+                        "gateway": "pillage/mansion"
                     }
                 }
             }
@@ -39,41 +39,81 @@
                 {
                     "type": "gateways:standard",
                     "count": 4,
-                    "entity": "guardvillagers:guard"
-                }
-            ],
-            "max_wave_time": 800,
-            "rewards": [],
-            "setup_time": 100
-        },
-        {
-            "entities": [
-                {
-                    "type": "gateways:standard",
-                    "count": 4,
-                    "entity": "guardvillagers:guard"
-                },
-                {
-                    "type": "gateways:standard",
-                    "count": 1,
-                    "entity": "minecraft:iron_golem"
-                }
-            ],
-            "max_wave_time": 800,
-            "rewards": [],
-            "setup_time": 100
-        },
-        {
-            "entities": [
-                {
-                    "type": "gateways:standard",
-                    "count": 4,
-                    "entity": "guardvillagers:guard"
+                    "entity": "minecraft:pillager"
                 },
                 {
                     "type": "gateways:standard",
                     "count": 2,
-                    "entity": "minecraft:iron_golem"
+                    "entity": "minecraft:vindicator"
+                }
+            ],
+            "max_wave_time": 800,
+            "rewards": [],
+            "setup_time": 100
+        },
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 4,
+                    "entity": "minecraft:pillager"
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 2,
+                    "entity": "minecraft:witch"
+                }
+            ],
+            "max_wave_time": 800,
+            "rewards": [],
+            "setup_time": 100
+        },
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 4,
+                    "entity": "minecraft:pillager"
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 1,
+                    "entity": "minecraft:evoker"
+                }
+            ],
+            "max_wave_time": 800,
+            "rewards": [],
+            "setup_time": 100
+        },
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 4,
+                    "entity": "minecraft:pillager"
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 1,
+                    "entity": "minecraft:illusioner"
+                }
+            ],
+            "max_wave_time": 800,
+            "rewards": [],
+            "setup_time": 100
+        },
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 2,
+                    "entity": "minecraft:vindicator"
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 2,
+                    "entity": "minecraft:ravager",
+                    "nbt": {"Passengers":[{"id":"minecraft:pillager"}]}
                 }
             ],
             "max_wave_time": 800,

@@ -196,6 +196,7 @@
 		}
 		{
 			dependencies: ["3DCEA15CB8E9D815"]
+			hide_dependent_lines: true
 			id: "20807B9CA5CDB81A"
 			rewards: [{
 				id: "69CEDFE6247A4AFE"
@@ -439,8 +440,8 @@
 				item: { count: 1, id: "irons_spellbooks:inscription_table" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: -6.0d
+			x: 2.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["20807B9CA5CDB81A"]
@@ -458,7 +459,7 @@
 				item: { count: 1, id: "irons_spellbooks:scroll_forge" }
 				type: "item"
 			}]
-			x: 6.0d
+			x: 4.0d
 			y: -6.0d
 		}
 		{
@@ -479,18 +480,18 @@
 				id: "7A1912FB23042672"
 				type: "advancement"
 			}]
-			x: 6.0d
-			y: -7.5d
+			x: 4.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["20807B9CA5CDB81A"]
 			hide_dependency_lines: true
 			id: "5C46CFB75D408995"
 			rewards: [{
-				id: "79B5387BEDCF0978"
+				id: "154B262C12586655"
 				item: {
 					count: 1
-					id: "dragonsurvival:heart_element"
+					id: "dragonsurvival:weak_dragon_heart"
 				}
 				type: "item"
 			}]
@@ -500,8 +501,8 @@
 				id: "7B47B555AC9EBA7F"
 				type: "advancement"
 			}]
-			x: 6.0d
-			y: -8.5d
+			x: 4.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["20807B9CA5CDB81A"]
@@ -519,8 +520,8 @@
 				item: { components: { "ftbfiltersystem:filter": "item(irons_spellbooks:scroll)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: -6.0d
+			x: 4.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["54C6AA8E0348FCC8"]
@@ -782,13 +783,25 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["360ED3ED5B00CC20"]
 			id: "1AA85C2AA6E44858"
 			tasks: [{
 				id: "7046D4359B2C80F7"
 				type: "checkmark"
 			}]
-			x: 2.5d
-			y: -6.5d
+			x: 5.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["20807B9CA5CDB81A"]
+			id: "13ADEABE197E2013"
+			tasks: [{
+				id: "4F0AFD40AE50DE8F"
+				item: { count: 1, id: "irons_spellbooks:arcane_essence" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -4.5d
 		}
 	]
 }
