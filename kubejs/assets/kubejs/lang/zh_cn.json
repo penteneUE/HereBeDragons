@@ -1,14 +1,41 @@
 {
+    "effect.kubejs.reproduction_frenzy": "繁衍狂热",
+    "effect.kubejs.reproduction_frenzy.desc": "等等，什么？！",
+    "kubejs.tooltips.dragon_reproduction_item.1": "未成年龙不可食用。",
+
+    "school.kubejs.dragon": "言灵",
+
+    "spell.kubejs.taotie_fabel": "饕餮寓言",
+    "spell.kubejs.taotie_fabel.guide": "将半径内臣服的生物吞入腹中。潜行时施法，会吐出腹中储存的生物。",
+    "kubejs.spell.taotie_fabel.uniqueinfo.1": "半径：%s",
+    "kubejs.spell.taotie_fabel.uniqueinfo.2": "可吞入的总空间：%s （成长乘数：%s）",
+    "kubejs.spell.taotie_fabel.status.in": "吞入了 %s 个实体，",
+    "kubejs.spell.taotie_fabel.status.out": "吐出了 %s 个实体",
+    "kubejs.spell.taotie_fabel.status.max": "空间已满",
+    "kubejs.spell.taotie_fabel.status.free_space": "空间：%s/%s",
+
+    "spell.kubejs.ananta_remanta": "阿难陀蛇",
+    "spell.kubejs.ananta_remanta.guide": "强行将选定的生物变为自己的奉龙者。",
+    "kubejs.spell.ananta_remanta.uniqueinfo.1": "最高剩余生命值：%s （成长加成：%s）",
+    "kubejs.spell.ananta_remanta.uniqueinfo.2": "失败率：%s （成长扣除：%s）",
+
+    "kubejs.entity.minion": "%s的奉龙者",
+
+    "kubejs.dimensiontravel.failed.dread_land": "这是一个世界的破洞，你若是进去这里，会造成不可估量的后果……（MOD本身这个维度还没做完）",
+    "kubejs.dimensiontravel.failed.the_end": "在没有彻底占领这里之前，就这么进去的话，你总觉得不放心。毕竟，那很可能是个有去无回的地方。",
+
+    "kubejs.tooltips.ambrosia.1": "当心——神肴中富含的妖精元素会对食用的龙造成伤害！",
+
     "item.kubejs.felyne_recall": "猫车",
 
     "item.kubejs.dragon_conquest_trophy": "占领奖杯",
     "kubejs.tooltips.dragon_conquest_trophy.1": "用于提交任务或收藏用途。",
     "kubejs.tooltips.dragon_conquest_trophy.structure": "建筑：%s",
 
-    "item.kubejs.wet_sponge": "饱浸的吸水海绵",
+    "item.kubejs.wet_sponge": "饱浸的魔法海绵",
     "kubejs.tooltips.wet_sponge.1": "右键拧干以挤出一格流动的水，适用于海洋龙的保湿工作。",
 
-    "item.kubejs.dry_sponge": "吸水海绵",
+    "item.kubejs.dry_sponge": "魔法海绵",
     "kubejs.tooltips.dry_sponge.1": "身体完全浸入水中，或将其与水桶合成以重新浸湿。",
 
     "block.kubejs.dragon_flag": "龙旗基座",
@@ -86,5 +113,34 @@
 
     "kubejs.iceandfire/myrmex_hive_jungle": "丛林恐蚁巢穴",
     "kubejs.recipeinfo.conquest.myrmex_hive_jungle": "丛林恐蚁巢穴",
-    "kubejs.recipeinfo.conquest.myrmex_hive_jungle.description": "资源：蚁脂。守备：恐蚁。"
+    "kubejs.recipeinfo.conquest.myrmex_hive_jungle.description": "资源：蚁脂。守备：恐蚁。",
+
+    "kubejs.iceandfire/pixie_village": "小精灵聚落",
+    "kubejs.recipeinfo.conquest.pixie_village": "小精灵聚落",
+    "kubejs.recipeinfo.conquest.pixie_village.description": "资源：精灵尘。守备：小精灵。",
+
+    "kubejs.misc/monument": "海底神殿",
+    "kubejs.recipeinfo.conquest.monument": "海底神殿",
+    "kubejs.recipeinfo.conquest.monument.description": "资源：海晶碎片、海晶沙砾、河豚、海绵、海龟蛋、龙骨。守备：守卫者、远古守卫者。",
+
+    "kubejs.misc/dragon_hunters_castle": "猎龙人之堡",
+    "kubejs.recipeinfo.conquest.dragon_hunters_castle": "猎龙人之堡",
+    "kubejs.recipeinfo.conquest.dragon_hunters_castle.description": "资源：矿物、古龙尘、古龙骨、古龙心。守备：专业猎龙团队。",
+
+    "kubejs.misc/ancient_city": "深暗古城",
+    "kubejs.recipeinfo.conquest.ancient_city": "深暗古城",
+    "kubejs.recipeinfo.conquest.ancient_city.description": "资源：幽匿块、经验瓶、奥术源质、墨水、回响碎片、紫水晶碎片、古龙心。守备：强化的监守者。",
+
+    "kubejs.nether/bastion_remnant": "堡垒遗迹",
+    "kubejs.recipeinfo.conquest.bastion_remnant": "堡垒遗迹",
+    "kubejs.recipeinfo.conquest.bastion_remnant.description": "资源：金锭、金块、钻石、下界合金碎片、古龙心。守备：猪灵蛮兵、穿盔甲的猪灵蛮兵。",
+
+    "kubejs.nether/fortress": "下界要塞",
+    "kubejs.recipeinfo.conquest.fortress": "下界要塞",
+    "kubejs.recipeinfo.conquest.fortress.description": "资源：金锭、下界合金碎片、烈焰棒、凋零骷髅头、古龙心。守备：僵尸猪灵、强化的烈焰人、凋零骷髅。",
+
+    "kubejs.nether/ancient_battleground": "古战场",
+    "kubejs.recipeinfo.conquest.ancient_battleground": "古战场",
+    "kubejs.recipeinfo.conquest.ancient_battleground.description": "资源：下界石英、下界合金碎片、奥术源质、灰烬源质、墨水、古龙心。守备：大量远古骑士。"
+
 }

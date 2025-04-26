@@ -1195,3 +1195,25 @@
 		SpellPowerMultiplier = 1.0
 		CooldownInSeconds = 40.0
 		AllowCrafting = true
+
+	[Spells."kubejs:taotie_fabel"]
+		Enabled = true
+		School = "kubejs:dragon"
+		MaxLevel = 10
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "COMMON"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 10.0
+		AllowCrafting = true
+
+	[Spells."kubejs:ananta_remanta"]
+		Enabled = true
+		School = "kubejs:dragon"
+		MaxLevel = 10
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "EPIC"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 60.0
+		AllowCrafting = true

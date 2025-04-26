@@ -8,6 +8,10 @@ function clearDragonConquerRecord(player) {
     player.persistentData.dragonConquerRecords = new $OrderedCompoundTag();
 }
 
+function clearDragonConquerStructure(player, structure_id) {
+    player.persistentData.dragonConquerRecords.remove(structure_id);
+}
+
 function clearDragonConquerCurrent(player) {
     player.persistentData.remove("dragonConquerCurrent");
     player.persistentData.remove("dragonConquerCurrentId");
@@ -122,7 +126,7 @@ function matchDragonConquerRecord(
  */
 function finishDragonConquest(player) {
     const { dragonConquerCurrent } = player.persistentData;
-    const { STRUCTURE_DATA } = global;
+    //const { STRUCTURE_DATA } = global;
 
     if (dragonConquerCurrent == undefined) return;
 
@@ -165,6 +169,41 @@ function finishDragonConquest(player) {
 
 // }
 
+// /**
+//  *
+//  * @param {Internal.Entity} entity
+//  * @param {String} structure
+//  * @returns
+//  */
+// function isInStructure(entity, structure) {
+//     let pos = entity.block.pos
+//     let dimension = entity.getLevel().dimensionKey;
+//     let sw = entity.server["getLevel(net.minecraft.resources.ResourceKey)"](dimension)
+//     if (sw instanceof ServerLevel) {
+//         let chunk = sw.getChunk(pos.x >> 4, pos.z >> 4, ChunkStatus.STRUCTURE_REFERENCES, false);
+//         if (chunk == null) {
+//             return false;
+//         }
+//         let references = chunk.getAllReferences();
+//         for (references of references.entrySet()) {
+//             let e = references
+//             let longs = e.getValue();
+//             if (!longs.isEmpty()) {
+//                 let struct = e.getKey();
+//                 let key = sw.registryAccess().registryOrThrow(Registries.STRUCTURE).getKey(struct);
+
+//                 if (key.toString() == structure) {
+//                     return true;
+//                 } else {
+//                     return false;
+//                 }
+//             }
+//         }
+//     }
+//     return false;
+
+// }
+
 /**
  *
  * @param {$BlockPos_} blockPosition
@@ -188,8 +227,13 @@ function whichStructureAmI(blockPosition, level) {
                 return;
             }
         });
+    // if (structure_id == "minecraft:mansion") {
+    //     console.log(blockPosition);
+    // }
     return { structure: structure, structure_id: structure_id };
 }
+
+global.UTILS.whichStructureAmI = whichStructureAmI;
 
 /**
  *

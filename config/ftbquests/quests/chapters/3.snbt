@@ -6,13 +6,33 @@
 	id: "48A57AF2FDDDF708"
 	order_index: 5
 	quest_links: [ ]
-	quests: [{
-		id: "2A53602F5DD6482A"
-		tasks: [{
-			id: "0C88B4341C81B301"
-			type: "checkmark"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			id: "2A53602F5DD6482A"
+			tasks: [{
+				id: "0C88B4341C81B301"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "49F49837CBAF8ACE"
+			tasks: [{
+				id: "4CD6A26B5F472A41"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			id: "05F9D9DD6B1919D6"
+			tasks: [{
+				id: "2822EAC9B59C30DF"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+	]
 }

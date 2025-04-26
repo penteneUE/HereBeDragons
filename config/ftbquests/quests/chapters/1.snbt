@@ -67,10 +67,6 @@
 		{
 			dependencies: ["681EBB7384D4F881"]
 			id: "3A18D1CA4A2260B2"
-			rewards: [{
-				id: "24CE4E2204753DBF"
-				type: "custom"
-			}]
 			tasks: [{
 				id: "5B9F35C1298E79D0"
 				item: { count: 1, id: "iceandfire:manuscript" }
@@ -86,14 +82,20 @@
 			hide_dependent_lines: true
 			hide_until_deps_complete: false
 			id: "716C0EC962DF0E89"
-			rewards: [{
-				id: "5ED3EEF920351784"
-				item: {
-					count: 1
-					id: "dragonsurvival:weak_dragon_heart"
+			rewards: [
+				{
+					id: "5ED3EEF920351784"
+					item: {
+						count: 1
+						id: "dragonsurvival:weak_dragon_heart"
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "607F7D40A5D8C297"
+					type: "custom"
+				}
+			]
 			tasks: [{
 				dimension: "minecraft:the_nether"
 				id: "5375C59E3B280B99"
@@ -139,7 +141,7 @@
 				item: { count: 1, id: "naturescompass:naturescompass" }
 				type: "item"
 			}]
-			x: -3.5d
+			x: -5.0d
 			y: 2.0d
 		}
 		{
@@ -175,7 +177,7 @@
 				item: { count: 1, id: "sereneseasons:calendar" }
 				type: "item"
 			}]
-			x: -4.0d
+			x: -4.5d
 			y: 1.0d
 		}
 		{
@@ -196,16 +198,21 @@
 		}
 		{
 			dependencies: ["3DCEA15CB8E9D815"]
-			hide_dependent_lines: true
 			id: "20807B9CA5CDB81A"
-			rewards: [{
-				id: "69CEDFE6247A4AFE"
-				item: {
-					count: 1
-					id: "dragonsurvival:heart_element"
+			rewards: [
+				{
+					id: "69CEDFE6247A4AFE"
+					item: {
+						count: 1
+						id: "dragonsurvival:heart_element"
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "45F82CD87CE7EA6A"
+					type: "custom"
+				}
+			]
 			tasks: [
 				{
 					id: "74F3F4C1488D9903"
@@ -254,7 +261,7 @@
 				item: { count: 1, id: "waystones:waystone" }
 				type: "item"
 			}]
-			x: -4.5d
+			x: -4.0d
 			y: 2.0d
 		}
 		{
@@ -281,8 +288,8 @@
 				id: "6E2DEDD7DD141BD6"
 				type: "checkmark"
 			}]
-			x: 3.5d
-			y: -2.5d
+			x: 2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["681EBB7384D4F881"]
@@ -428,23 +435,20 @@
 			dependencies: ["20807B9CA5CDB81A"]
 			id: "6E24DAAE54A4354F"
 			rewards: [{
-				id: "59BFCDED5BDBF82E"
-				item: {
-					count: 1
-					id: "dragonsurvival:heart_element"
-				}
-				type: "item"
+				id: "35DA27BB644B892C"
+				type: "xp"
+				xp: 10
 			}]
 			tasks: [{
 				id: "7BC6DCDAAE521C34"
 				item: { count: 1, id: "irons_spellbooks:inscription_table" }
 				type: "item"
 			}]
-			x: 2.5d
+			x: 4.0d
 			y: -4.5d
 		}
 		{
-			dependencies: ["20807B9CA5CDB81A"]
+			dependencies: ["360ED3ED5B00CC20"]
 			id: "52DC397C5ADB7DCC"
 			rewards: [{
 				id: "0482927A1498E67D"
@@ -459,11 +463,14 @@
 				item: { count: 1, id: "irons_spellbooks:scroll_forge" }
 				type: "item"
 			}]
-			x: 4.0d
+			x: 2.5d
 			y: -6.0d
 		}
 		{
-			dependencies: ["20807B9CA5CDB81A"]
+			dependencies: [
+				"20807B9CA5CDB81A"
+				"52DC397C5ADB7DCC"
+			]
 			hide_dependency_lines: true
 			id: "08182F6ED08841B0"
 			rewards: [{
@@ -480,11 +487,14 @@
 				id: "7A1912FB23042672"
 				type: "advancement"
 			}]
-			x: 4.0d
+			x: 2.5d
 			y: -7.0d
 		}
 		{
-			dependencies: ["20807B9CA5CDB81A"]
+			dependencies: [
+				"20807B9CA5CDB81A"
+				"52DC397C5ADB7DCC"
+			]
 			hide_dependency_lines: true
 			id: "5C46CFB75D408995"
 			rewards: [{
@@ -501,7 +511,7 @@
 				id: "7B47B555AC9EBA7F"
 				type: "advancement"
 			}]
-			x: 4.0d
+			x: 2.5d
 			y: -8.0d
 		}
 		{
@@ -520,19 +530,16 @@
 				item: { components: { "ftbfiltersystem:filter": "item(irons_spellbooks:scroll)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 4.0d
+			x: 2.5d
 			y: -4.5d
 		}
 		{
 			dependencies: ["54C6AA8E0348FCC8"]
 			id: "7235CE73FA25A2B6"
 			rewards: [{
-				id: "6E2129BD6FF882F3"
-				item: {
-					count: 1
-					id: "dragonsurvival:heart_element"
-				}
-				type: "item"
+				id: "7436CFC19B9CE7C1"
+				type: "xp"
+				xp: 10
 			}]
 			tasks: [{
 				id: "6A653AA27FDFEF6A"
@@ -555,14 +562,6 @@
 				{
 					id: "6ED035171AF72DE7"
 					type: "custom"
-				}
-				{
-					id: "081050E75B2FD15D"
-					item: {
-						count: 1
-						id: "minecraft:loom"
-					}
-					type: "item"
 				}
 			]
 			tasks: [{
@@ -636,12 +635,9 @@
 			id: "2EF159E57EAAA0B9"
 			invisible: true
 			rewards: [{
-				id: "60FC2B53CD19E8BB"
-				item: {
-					count: 1
-					id: "dragonsurvival:heart_element"
-				}
-				type: "item"
+				id: "7B41A67713E3FECD"
+				type: "xp"
+				xp: 10
 			}]
 			tasks: [{
 				id: "6E629705DA4201AF"
@@ -654,6 +650,7 @@
 		{
 			dependencies: ["7F1FD96CDF8CD2B8"]
 			id: "27654A3A89C4E334"
+			optional: true
 			tasks: [{
 				id: "49536C43BBB09C55"
 				type: "checkmark"
@@ -665,6 +662,7 @@
 			dependencies: ["27654A3A89C4E334"]
 			hide_until_deps_complete: true
 			id: "4218B7B59B0F0F74"
+			optional: true
 			tasks: [{
 				id: "6AD65B0ADB6CB6B3"
 				item: { count: 1, id: "kubejs:tax_collector" }
@@ -700,12 +698,9 @@
 			hide_dependency_lines: true
 			id: "28ED1E8BF3D0BE69"
 			rewards: [{
-				id: "0514F827B9D8B619"
-				item: {
-					count: 1
-					id: "dragonsurvival:heart_element"
-				}
-				type: "item"
+				id: "0E7A244C78135F77"
+				type: "xp"
+				xp: 10
 			}]
 			tasks: [{
 				id: "4AE2C22A15B2A8EE"
@@ -747,10 +742,10 @@
 					xp: 10
 				}
 				{
-					id: "6D2A1CA29551F2FD"
+					id: "1C7073C397A3F61B"
 					item: {
 						count: 1
-						id: "dragonsurvival:weak_dragon_heart"
+						id: "dragonsurvival:heart_element"
 					}
 					type: "item"
 				}
@@ -783,25 +778,279 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["360ED3ED5B00CC20"]
-			id: "1AA85C2AA6E44858"
-			tasks: [{
-				id: "7046D4359B2C80F7"
-				type: "checkmark"
-			}]
-			x: 5.0d
-			y: -4.5d
-		}
-		{
 			dependencies: ["20807B9CA5CDB81A"]
+			hide_dependency_lines: true
 			id: "13ADEABE197E2013"
+			rewards: [{
+				id: "22EEA0A641585B30"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "4F0AFD40AE50DE8F"
 				item: { count: 1, id: "irons_spellbooks:arcane_essence" }
 				type: "item"
 			}]
+			x: 5.5d
+			y: -4.5d
+		}
+		{
+			id: "2D2C98446CE4035C"
+			rewards: [{
+				id: "46C2BEEB8AF7FE62"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3D88D2940BD227A2"
+				item: { count: 1, id: "irons_spellbooks:arcane_anvil" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["13ADEABE197E2013"]
+			id: "65C982C48AA8B003"
+			rewards: [{
+				id: "097224B5F3896B86"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7732FBA2E689039F"
+				item: { count: 1, id: "irons_spellbooks:magic_cloth" }
+				type: "item"
+			}]
 			x: 6.5d
 			y: -4.5d
+		}
+		{
+			dependencies: ["20807B9CA5CDB81A"]
+			hide_dependency_lines: true
+			id: "75E7855E13406190"
+			rewards: [{
+				id: "607440A38D82ED3D"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "73C14BBE1273222D"
+				item: { count: 1, id: "irons_spellbooks:blank_rune" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"2D2C98446CE4035C"
+				"6E24DAAE54A4354F"
+			]
+			id: "6E57F7CF05BF6FBC"
+			rewards: [
+				{
+					id: "1B99FF4CF1797987"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "14D81DB82A742986"
+					item: {
+						count: 1
+						id: "dragonsurvival:heart_element"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2FF2B40CD3492F3D"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["2129326F3111C29B"]
+			id: "32C6FE7AA5BBDB4B"
+			shape: "diamond"
+			tasks: [{
+				id: "0D28446AF7523EC4"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"2129326F3111C29B"
+				"52DC397C5ADB7DCC"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "3BD438085B5F7C2B"
+			rewards: [{
+				id: "5CF6598351DF94F7"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7B545A627225A8E4"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["3BD438085B5F7C2B"]
+			id: "453877F6BFEAC469"
+			rewards: [{
+				id: "5994B345A7121C7F"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7D4B0D6AB1970D4A"
+				item: { components: { "ftbfiltersystem:filter": "item(irons_spellbooks:scroll)or(component(fuzzy:{\"irons_spellbooks:spell_container\":{data:[{id:\"kubejs:taotie_fabel\",index:0,level:1,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}})component(fuzzy:{\"irons_spellbooks:spell_container\":{data:[{id:\"kubejs:taotie_fabel\",index:0,level:2,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}})component(fuzzy:{\"irons_spellbooks:spell_container\":{data:[{id:\"kubejs:taotie_fabel\",index:0,level:3,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}})component(fuzzy:{\"irons_spellbooks:spell_container\":{data:[{id:\"kubejs:taotie_fabel\",index:0,level:4,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}})component(fuzzy:{\"irons_spellbooks:spell_container\":{data:[{id:\"kubejs:taotie_fabel\",index:0,level:5,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}})component(fuzzy:{\"irons_spellbooks:spell_container\":{data:[{id:\"kubejs:taotie_fabel\",index:0,level:6,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}})component(fuzzy:{\"irons_spellbooks:spell_container\":{data:[{id:\"kubejs:taotie_fabel\",index:0,level:7,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}})component(fuzzy:{\"irons_spellbooks:spell_container\":{data:[{id:\"kubejs:taotie_fabel\",index:0,level:8,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}})component(fuzzy:{\"irons_spellbooks:spell_container\":{data:[{id:\"kubejs:taotie_fabel\",index:0,level:9,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}})component(fuzzy:{\"irons_spellbooks:spell_container\":{data:[{id:\"kubejs:taotie_fabel\",index:0,level:10,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}}))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["681EBB7384D4F881"]
+			hide_dependency_lines: true
+			id: "34E73949085FF4D7"
+			rewards: [
+				{
+					id: "419F7A56D668603F"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "622439643F37EE5D"
+					item: {
+						count: 1
+						id: "dragonsurvival:heart_element"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2F167F9996B5CA3B"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(minecraft:trim_templates)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["681EBB7384D4F881"]
+			hide_dependency_lines: true
+			id: "667C340CF868A4BA"
+			rewards: [{
+				id: "4FD5C278DB4A6F8A"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "76B28B59E3A5C413"
+				item: { count: 1, id: "minecraft:brush" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3A18D1CA4A2260B2"]
+			id: "3C2422EE5831C05E"
+			rewards: [{
+				id: "649D8FA98100AC68"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "57F96AC276CE4DCA"
+				item: { components: { "ftbfiltersystem:filter": "or(item(iceandfire:lightning_lily)item(iceandfire:frost_lily)item(iceandfire:fire_lily))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["54E3D369788106E6"]
+			id: "211D17C4B64A1C3A"
+			rewards: [
+				{
+					id: "51A2CBD6AF306FB5"
+					type: "xp"
+					xp: 5
+				}
+				{
+					id: "5ED179710B8C311C"
+					item: {
+						count: 1
+						id: "dragonsurvival:heart_element"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3CD6D577FE238C37"
+				item: { count: 1, id: "sophisticatedbackpacks:diamond_backpack" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3C2422EE5831C05E"]
+			id: "2F94C6E3FCCB38FD"
+			invisible: true
+			rewards: [{
+				id: "472804FFE5A3123E"
+				item: {
+					count: 1
+					id: "dragonsurvival:elder_dragon_heart"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				icon: {
+					id: "iceandfire:fire_stew"
+				}
+				id: "4280C86E6C876B8F"
+				stage: "quest/wait_what"
+				type: "gamestage"
+			}]
+			x: 5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["681EBB7384D4F881"]
+			hide_dependency_lines: true
+			id: "13E1BB906F96CCE8"
+			rewards: [{
+				id: "227BD350678B1458"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "561A644968128942"
+				item: { count: 1, id: "aquaculture:tackle_box" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.0d
 		}
 	]
 }

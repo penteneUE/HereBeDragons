@@ -1,0 +1,86 @@
+{
+    "type": "gateways:normal",
+    "color": "#167a62",
+    "rewards": [
+        {
+            "type": "gateways:command",
+            "command": "/whredragonswent conquest finish @p[tag=dragon_conquest_challenger]",
+            "desc": "占领成功"
+        },
+        {
+            "type": "gateways:experience",
+            "experience": 300,
+            "orb_size": 25
+        },
+        {
+            "type": "gateways:stack",
+            "stack": {
+                "id": "kubejs:ancient_city",
+                "count": 1,
+                "components": {
+                    "minecraft:custom_data": {
+                        "gateway": "misc/ancient_city"
+                    }
+                }
+            }
+        }
+    ],
+    "failures": [
+        {
+            "type": "gateways:command",
+            "command": "/whredragonswent conquest failure @p[tag=dragon_conquest_challenger]",
+            "desc": "占领失败"
+        }
+    ],
+    "size": "small",
+    "waves": [
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 1,
+                    "entity": "minecraft:warden"
+                }
+            ],
+            "max_wave_time": 1600,
+            "rewards": [],
+            "setup_time": 100,
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.2
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 2.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.15
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.knockback_resistance",
+                    "operation": "add_value",
+                    "value": 0.05
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": 0.05
+                }
+            ]
+        }
+    ],
+    "spawn_algorithm": "gateways:inward_spiral",
+    "rules":{
+        "fail_on_out_of_bounds": false
+    }
+}

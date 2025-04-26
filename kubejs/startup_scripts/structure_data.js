@@ -1,5 +1,8 @@
 function weightedRandom() {
     let builder = {
+        /**
+         * @type {Map<any, number>}
+         */
         items: new Map(),
         /**
          * @param {any} item
@@ -9,18 +12,22 @@ function weightedRandom() {
             builder.items.set(item, weight);
             return builder;
         },
+        sum: function () {
+            const items = Array.from(this.items.values());
+            let total = 0.0;
+            items.forEach((value) => {
+                total += value;
+            });
+            return total;
+        },
         getItem: function () {
             const items = Array.from(this.items);
             //var pmf = [0.8, 0.1, 0.1];
             //var pmf = Array.from(items.values())
             //var cdf = pmf.map((sum => value => sum += value)(0));
-            let total = 0.0;
-            items.forEach((record) => {
-                total += record[1];
-            });
 
             let max = items[0][1];
-            let random = Math.random() * total;
+            let random = Math.random() * this.sum();
 
             for (let index = 0; index < items.length; index++) {
                 if (random < max) {
@@ -37,18 +44,42 @@ function weightedRandom() {
 
     return builder;
 }
-
-global.UTILS = {
-    weightedRandom: weightedRandom,
-};
+global.UTILS.weightedRandom = weightedRandom;
 
 const structureData = Utils.newMap();
 
-const villageMobs = [
-    "minecraft:villager",
-    "minecraft:iron_golem",
-    "guardvillagers:guard",
-];
+const villageMobs = Utils.newList();
+villageMobs.addAll(["guardvillagers:guard", "minecraft:iron_golem"]);
+
+const pillageMobs = Utils.newList();
+pillageMobs.addAll(["minecraft:pillager", "minecraft:vindicator"]);
+
+const commonMonsters = Utils.newList();
+commonMonsters.addAll([
+    "minecraft:zombie",
+    "minecraft:skeleton",
+    "minecraft:husk",
+    "minecraft:stray",
+    "minecraft:drowned",
+    "minecraft:spider",
+]);
+
+const mansionMobs = Utils.newList();
+mansionMobs.addAll(pillageMobs);
+mansionMobs.addAll(commonMonsters);
+
+const monumentMobs = Utils.newList();
+monumentMobs.addAll(commonMonsters);
+monumentMobs.add("minecraft:guardian");
+
+const netherMonsters = Utils.newList();
+netherMonsters.addAll([
+    "minecraft:piglin",
+    "minecraft:piglin_brute",
+    "minecraft:blaze",
+    "minecraft:wither_skeleton",
+    "minecraft:zombified_piglin",
+]);
 
 structureData.put("skyvillages:skyvillage", {
     gateway: "kubejs:village/sky_village",
@@ -269,7 +300,7 @@ const shipwreckData = {
     gateway: "kubejs:misc/shipwreck",
     name: "kubejs.recipeinfo.conquest.shipwreck",
     description: "kubejs.recipeinfo.conquest.shipwreck.description",
-    mobs: [],
+    mobs: commonMonsters,
     product: {
         //每日结算
         item: weightedRandom()
@@ -292,7 +323,7 @@ structureData.put("minecraft:desert_pyramid", {
     gateway: "kubejs:misc/desert_pyramid",
     name: "kubejs.recipeinfo.conquest.desert_pyramid",
     description: "kubejs.recipeinfo.conquest.desert_pyramid.description",
-    mobs: [],
+    mobs: commonMonsters,
     product: {
         //每日结算
         item: weightedRandom()
@@ -312,7 +343,7 @@ structureData.put("minecraft:jungle_pyramid", {
     gateway: "kubejs:misc/jungle_pyramid",
     name: "kubejs.recipeinfo.conquest.jungle_pyramid",
     description: "kubejs.recipeinfo.conquest.jungle_pyramid.description",
-    mobs: [],
+    mobs: commonMonsters,
     product: {
         //每日结算
         item: weightedRandom()
@@ -330,7 +361,7 @@ const pillagerOutpostData = {
     gateway: "kubejs:pillage/pillager_outpost",
     name: "kubejs.recipeinfo.conquest.pillager_outpost",
     description: "kubejs.recipeinfo.conquest.pillager_outpost.description",
-    mobs: [],
+    mobs: pillageMobs,
     product: {
         //每日结算
         item: weightedRandom()
@@ -367,7 +398,7 @@ structureData.put("irons_spellbooks:evoker_fort", {
     gateway: "kubejs:pillage/evoker_fort",
     name: "kubejs.recipeinfo.conquest.evoker_fort",
     description: "kubejs.recipeinfo.conquest.evoker_fort.description",
-    mobs: [],
+    mobs: pillageMobs,
     product: {
         //每日结算
         item: weightedRandom()
@@ -388,7 +419,7 @@ structureData.put("minecraft:mansion", {
     gateway: "kubejs:pillage/mansion",
     name: "kubejs.recipeinfo.conquest.mansion",
     description: "kubejs.recipeinfo.conquest.mansion.description",
-    mobs: [],
+    mobs: mansionMobs,
     product: {
         //每日结算
         item: weightedRandom()
@@ -408,7 +439,6 @@ structureData.put("iceandfire:myrmex_hive_desert", {
     gateway: "kubejs:iceandfire/myrmex_hive_desert",
     name: "kubejs.recipeinfo.conquest.myrmex_hive_desert",
     description: "kubejs.recipeinfo.conquest.myrmex_hive_desert.description",
-    mobs: [],
     product: {
         //每日结算
         item: weightedRandom().add("iceandfire:myrmex_desert_resin", 1),
@@ -420,7 +450,6 @@ structureData.put("iceandfire:myrmex_hive_jungle", {
     gateway: "kubejs:iceandfire/myrmex_hive_jungle",
     name: "kubejs.recipeinfo.conquest.myrmex_hive_jungle",
     description: "kubejs.recipeinfo.conquest.myrmex_hive_jungle.description",
-    mobs: [],
     product: {
         //每日结算
         item: weightedRandom().add("iceandfire:myrmex_jungle_resin", 1),
@@ -432,13 +461,143 @@ structureData.put("iceandfire:pixie_village", {
     gateway: "kubejs:iceandfire/pixie_village",
     name: "kubejs.recipeinfo.conquest.pixie_village",
     description: "kubejs.recipeinfo.conquest.pixie_village.description",
-    mobs: [],
     product: {
         //每日结算
         item: weightedRandom().add("iceandfire:pixie_dust", 1),
         count: 3,
     },
 });
+
+structureData.put("minecraft:monument", {
+    gateway: "kubejs:misc/monument",
+    name: "kubejs.recipeinfo.conquest.monument",
+    description: "kubejs.recipeinfo.conquest.monument.description",
+    mobs: monumentMobs,
+    product: {
+        //每日结算
+        item: weightedRandom()
+            .add("minecraft:prismarine_shard", 3)
+            .add("minecraft:cod", 3)
+            .add("minecraft:pufferfish", 2)
+            .add("minecraft:prismarine_crystals", 2)
+            .add("minecraft:turtle_egg", 1)
+            .add("minecraft:sponge", 0.2)
+            .add("dragonsurvival:elder_dragon_bone", 0.5)
+            .add("dragonsurvival:heart_element", 0.2),
+        count: 12,
+    },
+});
+
+structureData.put("dragonsurvival:dragon_hunters_castle", {
+    gateway: "kubejs:misc/dragon_hunters_castle",
+    name: "kubejs.recipeinfo.conquest.dragon_hunters_castle",
+    description: "kubejs.recipeinfo.conquest.dragon_hunters_castle.description",
+    product: {
+        //每日结算
+        item: weightedRandom()
+            .add("minecraft:iron_ingot", 1)
+            .add("minecraft:diamond", 1)
+            .add("dragonsurvival:elder_dragon_dust", 1)
+            .add("dragonsurvival:elder_dragon_bone", 0.5)
+            .add("dragonsurvival:heart_element", 0.2)
+            .add("dragonsurvival:weak_dragon_heart", 0.1)
+            .add("dragonsurvival:elder_dragon_heart", 0.1),
+        count: 12,
+    },
+});
+
+structureData.put("minecraft:ancient_city", {
+    gateway: "kubejs:misc/ancient_city",
+    name: "kubejs.recipeinfo.conquest.ancient_city",
+    description: "kubejs.recipeinfo.conquest.ancient_city.description",
+    mobs: commonMonsters,
+    product: {
+        //每日结算
+        item: weightedRandom()
+            .add("minecraft:sculk", 6)
+            .add("minecraft:experience_bottle", 2)
+            .add("minecraft:echo_shard", 2)
+            .add("minecraft:amethyst_shard", 2)
+            .add("irons_spellbooks:arcane_essence", 2)
+            .add("irons_spellbooks:common_ink", 0.5)
+            .add("irons_spellbooks:uncommon_ink", 0.3)
+            .add("irons_spellbooks:rare_ink", 0.2)
+            .add("dragonsurvival:elder_dragon_bone", 0.5)
+            .add("dragonsurvival:heart_element", 0.2)
+            .add("dragonsurvival:weak_dragon_heart", 0.1)
+            .add("dragonsurvival:elder_dragon_heart", 0.1),
+        count: 24,
+    },
+});
+
+structureData.put("minecraft:bastion_remnant", {
+    gateway: "kubejs:nether/bastion_remnant",
+    name: "kubejs.recipeinfo.conquest.bastion_remnant",
+    description: "kubejs.recipeinfo.conquest.bastion_remnant.description",
+    mobs: netherMonsters,
+    product: {
+        //每日结算
+        item: weightedRandom()
+            .add("minecraft:gold_ingot", 3)
+            .add("minecraft:gold_block", 1)
+            .add("minecraft:diamond", 3)
+            .add("minecraft:netherite_scrap", 2)
+            .add("dragonsurvival:elder_dragon_bone", 0.5)
+            .add("dragonsurvival:heart_element", 0.2)
+            .add("dragonsurvival:weak_dragon_heart", 0.1)
+            .add("dragonsurvival:elder_dragon_heart", 0.1),
+        count: 16,
+    },
+});
+
+structureData.put("minecraft:fortress", {
+    gateway: "kubejs:nether/fortress",
+    name: "kubejs.recipeinfo.conquest.fortress",
+    description: "kubejs.recipeinfo.conquest.fortress.description",
+    mobs: netherMonsters,
+    product: {
+        //每日结算
+        item: weightedRandom()
+            .add("minecraft:gold_ingot", 4)
+            .add("minecraft:blaze_rod", 2)
+            .add("minecraft:coal", 2)
+            .add("minecraft:netherite_scrap", 1)
+            .add("minecraft:wither_skeleton_skull", 0.1)
+            .add("dragonsurvival:elder_dragon_bone", 0.5)
+            .add("dragonsurvival:heart_element", 0.2)
+            .add("dragonsurvival:weak_dragon_heart", 0.1)
+            .add("dragonsurvival:elder_dragon_heart", 0.1),
+        count: 16,
+    },
+});
+
+structureData.put("irons_spellbooks:ancient_battleground", {
+    gateway: "kubejs:nether/ancient_battleground",
+    name: "kubejs.recipeinfo.conquest.ancient_battleground",
+    description: "kubejs.recipeinfo.conquest.ancient_battleground.description",
+    mobs: netherMonsters,
+    product: {
+        //每日结算
+        item: weightedRandom()
+            .add("minecraft:quartz", 4)
+            .add("minecraft:netherite_scrap", 2)
+            .add("irons_spellbooks:arcane_essence", 2)
+            .add("irons_spellbooks:cinder_essence", 1)
+            .add("irons_spellbooks:common_ink", 0.5)
+            .add("irons_spellbooks:uncommon_ink", 0.2)
+            .add("irons_spellbooks:rare_ink", 0.1)
+            .add("dragonsurvival:elder_dragon_bone", 0.5)
+            .add("dragonsurvival:heart_element", 0.2)
+            .add("dragonsurvival:weak_dragon_heart", 0.1)
+            .add("dragonsurvival:elder_dragon_heart", 0.1),
+        count: 16,
+    },
+});
+
+global.STRUCTURE_DATA = structureData;
+
+//initStructureData();
+
 // weightedRandom()
 //             .add("minecraft:emerald", 2).items.keys()
 
@@ -459,6 +618,4 @@ structureData.put("iceandfire:pixie_village", {
 //         }
 //     }]
 // ])
-
-global.STRUCTURE_DATA = structureData;
 //.get().product.item.items.

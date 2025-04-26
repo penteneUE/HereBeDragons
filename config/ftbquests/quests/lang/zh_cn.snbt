@@ -20,59 +20,93 @@
 	quest.015FCCE81D57405E.title: "精妙存储"
 	quest.03573C57D4ECA6A9.quest_desc: ["大型村庄相比中型村庄，将有机会掉落虚龙之心，附魔书的质量也有所提升。"]
 	quest.03573C57D4ECA6A9.title: "占领：大型村庄"
+	quest.037F76767B7B7B50.quest_desc: ["不知是幸运还是不幸，据你的观察，这头家伙的行为和先人手记上的描述分毫不差。"]
+	quest.037F76767B7B7B50.title: "蛇发女妖"
 	quest.05546B1D86F62F95.quest_desc: [
 		"本整合包中默认会保留饰品栏以及龙爪槽中物品。剩余的会存放在坟墓里。"
-		"（不会做保留物品栏，55555）"
+		""
+		"（不会做保留物品栏，55555，要保留的话还是古法开keepInventory吧）"
 	]
-	quest.07A61974F4ED437D.quest_desc: ["陆上的海洋龙会&c因身体逐渐干燥而受到伤害&r。为保障在陆地的体验，这里提供了一些海绵来打湿自己，在空中也能用！"]
-	quest.09D6B3CFB0117A34.quest_desc: ["言灵：无相杀机"]
+	quest.06398A1A4B38AEB3.quest_desc: ["这里时常会出现那些黑瘦的、看一眼就会尖叫着冲过来的家伙。不过，按它们来无影、去无踪的样子，同时出现在主世界和这里，似乎也很正常。"]
+	quest.06398A1A4B38AEB3.title: "诡异森林"
+	quest.063BF9E1684BB19B.quest_desc: ["不知是幸运还是不幸，据你的观察，这头家伙的行为和先人手记上的描述分毫不差。"]
+	quest.063BF9E1684BB19B.title: "食人妖"
+	quest.07A61974F4ED437D.quest_desc: ["陆上的海洋龙会&c因身体逐渐干燥而受到伤害&r。为保障在陆地的体验，这里提供了一些海绵来打湿自己。在飞行中也能用！"]
+	quest.0ACD08382118A6CE.quest_subtitle: "幽灵黑工"
+	quest.0ACD08382118A6CE.title: "占领：古战场"
+	quest.0C526E83701415D6.title: "凋灵"
+	quest.0C67D7B61346ADCF.quest_desc: ["不知是幸运还是不幸，据你的观察，这些动物的行为和先人手记上的描述分毫不差。"]
+	quest.0C67D7B61346ADCF.quest_subtitle: "流洪之海的放逐者"
+	quest.0C67D7B61346ADCF.title: "海蟒"
+	quest.0C8926538B998AEC.quest_desc: ["在深暗古城的箱子中出现。"]
+	quest.0CDDBEB62F67D00F.title: "死者之王"
+	quest.0D607F2703E44ADB.quest_desc: [
+		"你只觉得，这里不是你该来的地方，可以探索，但切勿唤醒它的主人。"
+		""
+		"不是现在的你能打得过的。"
+	]
+	quest.0D607F2703E44ADB.quest_subtitle: "当心，不要惊动了它的主人……"
+	quest.0D607F2703E44ADB.title: "缠魂幽堡"
+	quest.0D7987699A0F2C47.title: "战斗法师套装"
+	quest.0D91CAE028F0F87C.title: "炽焰学派"
 	quest.0E0A7316F2302130.quest_desc: [
 		"如标题所示，这是一款以龙生存为主题的整合包。"
-		"龙癌作者找不到好玩的龙整合包，索性自己动手做一个。"
+		"龙癌作者找不到好玩的龙整合包，索性自己动手做一个。（希望它好玩）"
 		""
 		"&e整合包仍是开发中版本，独自开发真的很困难，不求各位技术大佬帮我攻克难题，只求能把bug反馈出来，就已经是帮大忙了！&r"
 	]
 	quest.0E0A7316F2302130.quest_subtitle: "在一个没有龙的世界当恶龙，会是什么体验？"
 	quest.0E0A7316F2302130.title: "整合包介绍"
-	quest.11AA79B86FA1BF15.quest_desc: [""]
+	quest.110CB24495E83671.title: "监守者"
+	quest.11AA79B86FA1BF15.quest_desc: ["（传送门召唤出来的恐蚁女王有bug，会把地形搞得一团糟……因此删掉了。）"]
 	quest.11AA79B86FA1BF15.quest_subtitle: "连蚂蚁窝都不放过？！"
 	quest.11AA79B86FA1BF15.title: "占领：恐蚁巢穴"
-	quest.12CA7C92D23CF9A4.title: "搜寻强大的敌人"
+	quest.13ADEABE197E2013.quest_desc: ["用于多种法师配方。"]
+	quest.13ADEABE197E2013.quest_subtitle: "做一套法师的服装吧！"
+	quest.13E1BB906F96CCE8.quest_desc: ["制作钓具盒，以存放与穿脱钓鱼装备。"]
+	quest.13E1BB906F96CCE8.quest_subtitle: "龙也会钓鱼？"
 	quest.147154AD758AD0C4.quest_desc: [
 		"小心——若是被&o&5黑色紫色&r的龙杀死，会染上它的诅咒！"
 		""
-		"&o传说中，有一种██龙，自出生就会向██山迁移。它们没有双眼，散播出的病毒就是它们的感官，在无心中造成了自然灾害。后来更是发现，这种生物是█████的幼体。&r[剩余部分已编辑]"
+		"&o传说中，有一种██龙，自出生就会向██山迁移。它们没有双眼，散播出的病毒就是它们的感官，在无心中就会造成灾害。后来更是发现，这种生物是█████的幼体。&r[剩余部分已编辑]"
 	]
 	quest.147154AD758AD0C4.quest_subtitle: "<日期与作者均不可辨别>"
+	quest.17283D37B8C277E9.quest_desc: ["让一位村民绑定这个工坊，其就能掌握进入耀光宝库的方案。"]
+	quest.181CA7A87320229C.title: "耀光套装"
 	quest.19F305E43043E0BC.quest_desc: [
-		"小精灵是一种很讨厌的生物，会偷走你的东西。"
+		"小精灵是一种很讨厌的生物，会偷走你的东西，放进家里。请把她们的家给拆光吧。"
 		""
-		"把她们的家给拆光吧。"
-		""
-		"精灵尘可以合成神肴，一种提供多种增益的食物。但要当心——神肴中富含的妖精元素会对龙造成伤害！"
+		"精灵尘可以合成神肴，一种提供多种增益的食物。&e但要当心——神肴中富含的妖精元素会对食用的龙造成伤害！&r"
 	]
 	quest.19F305E43043E0BC.quest_subtitle: "众所周知，妖精克龙"
-	quest.19F305E43043E0BC.title: "占领：仙灵村庄"
+	quest.19F305E43043E0BC.title: "占领：小精灵聚落"
 	quest.1A1EEED3B3FB70E6.title: "材料 - 木材"
-	quest.1AA85C2AA6E44858.quest_desc: [
-		"整合包计划添加一些原创的魔法，但还没想到该怎么做。"
-		""
-		"言灵：无相杀机 - 选中一个目标，让一个半径中的所有生物攻击它"
-		"（不会修改仇恨，搁置了）"
-	]
+	quest.1C16CBEB46D46117.title: "末影学派"
 	quest.1D43F77FD948BD09.quest_desc: [
 		"你自纸壳中苏醒……思绪一片空白。"
 		"外面不知过去了多久，一切都是如此陌生。"
 		""
 		"你持有的，只有这像是纸扎一般的罗盘。"
 		"转动它……试图找到，&d龙&r的存在……？"
+		"{@pagebreak}"
+		"{image:kubejs:textures/task/tutorial_compass.png width:120 height:60 align:center fit:true}"
+		""
+		"使用罗盘时，部分结构会是英文，请留意。"
 	]
 	quest.1DCBEE9D1F41A334.quest_desc: ["海中的沉船里不缺鱼与海带。"]
 	quest.1DCBEE9D1F41A334.quest_subtitle: "永不空军"
 	quest.1DCBEE9D1F41A334.title: "占领：沉船"
+	quest.1EDD652A5A099001.quest_desc: ["目之所视，全都是散落的下界合金盔甲。你本想挖走一块下来给自己穿，可它们却活了过来！"]
+	quest.1EDD652A5A099001.quest_subtitle: "遍地的残甲"
+	quest.1EDD652A5A099001.title: "古战场"
 	quest.1F2854EDFE5FA100.quest_desc: [""]
 	quest.1F2854EDFE5FA100.quest_subtitle: "恶龙的新手村"
 	quest.1F2854EDFE5FA100.title: "占领：浮空村庄"
+	quest.20807B9CA5CDB81A.quest_desc: [
+		"随着冒险的进行，龙族天赋的法术已经不能满足你的胃口了。光凭这种会消耗自己经验的法术，在寻找龙蛋之路上注定走不长远。"
+		""
+		"幸运的是，你通过阅览书籍，得知了法术书的制作方案。"
+	]
 	quest.20807B9CA5CDB81A.quest_subtitle: "书中的黄金屋"
 	quest.20807B9CA5CDB81A.title: "法术入门"
 	quest.209A1F902BE74FC3.quest_desc: [
@@ -82,6 +116,10 @@
 		"……哪怕是一颗&d龙蛋&r也好？"
 		""
 		"那可能得寻找很长时间了。你决定以此为目标。"
+		"{@pagebreak}"
+		"{image:kubejs:textures/task/tutorial_compass_2.png width:74 height:70 align:center}"
+		""
+		"注意 - 如果找到了，请将其视为BUG报告给开发者！"
 	]
 	quest.209A1F902BE74FC3.quest_subtitle: "龙曾在此。"
 	quest.209A1F902BE74FC3.title: "宛在"
@@ -93,8 +131,21 @@
 		"另外，在这个村庄里，你发现了一个闪闪发亮的瓶子……"
 	]
 	quest.2129326F3111C29B.title: "第一块领地"
+	quest.229E5BE2265ED680.quest_desc: [
+		"你犯了难。手记中的条目是如此的详细而精准，在除龙之外的生物也得到了验证。"
+		""
+		"那些龙就像是……生生地从世界中被挖走了一样。"
+	]
+	quest.229E5BE2265ED680.quest_subtitle: "究竟存不存在？"
+	quest.229E5BE2265ED680.title: "火龙、冰龙、电龙"
+	quest.234C49E792EC075C.quest_desc: ["不知是幸运还是不幸，据你的观察，这些动物的行为和先人手记上的描述分毫不差。"]
+	quest.234C49E792EC075C.quest_subtitle: "荒漠的灾虫"
+	quest.234C49E792EC075C.title: "死亡蠕虫"
 	quest.23AF0BA2CFF8572C.title: "新的维度"
 	quest.249E652D8444575D.title: "四季"
+	quest.24C35FEEDB08DF0E.quest_desc: ["不知是幸运还是不幸，据你的观察，这些动物的行为和先人手记上的描述分毫不差。"]
+	quest.24C35FEEDB08DF0E.title: "铜羽泽鹗"
+	quest.255FDC0FA11B8262.quest_subtitle: "因为龙就在那里。"
 	quest.255FDC0FA11B8262.title: "龙之归宿"
 	quest.25AF565CBB467648.quest_desc: [
 		"恭喜！你已经学会了占领建筑与收税！"
@@ -103,6 +154,17 @@
 		""
 		"建设你的龙窝吧！"
 	]
+	quest.268FC270E45A1BCA.quest_desc: ["不知是幸运还是不幸，据你的观察，这些家伙的行为和先人手记上的描述分毫不差。"]
+	quest.268FC270E45A1BCA.title: "塞壬"
+	quest.26DAC736FC87EFA1.quest_desc: ["先人的手记没有记载这个橙橙的小东西，但你觉得把它记录在这里是可行的。"]
+	quest.26DAC736FC87EFA1.title: "矿脉哥布林商人"
+	quest.2719E15494771733.quest_desc: [
+		"于是，你在旅途中得到了一个小道消息。那些黑瘦的家伙，很可能来自于主世界与下界之外，一个崭新的维度。末影学派的法术，借用的就是来自域外的力量。"
+		""
+		"这张地图是你在一头猪灵手上得来的，其称上面就记载着前往那里的线索。"
+	]
+	quest.2719E15494771733.quest_subtitle: "域外地图"
+	quest.272E28D0A27D81DB.quest_desc: ["随机出现在建筑的箱子里。"]
 	quest.27654A3A89C4E334.quest_desc: ["没关系，整合包除了村庄，还提供了其它结构（如掠夺者前哨站）可供占领。尽情去杀坏人吧！"]
 	quest.27654A3A89C4E334.quest_subtitle: "跳过这个任务"
 	quest.27D23F919BAA1EB4.quest_desc: [
@@ -123,20 +185,71 @@
 	quest.2A2B27F05BF4FC4F.quest_desc: ["中型村庄相比小型村庄，将有机会掉落龙心碎片与附魔书。（经验修补，耐久，锋利，效率）"]
 	quest.2A2B27F05BF4FC4F.title: "占领：中型村庄"
 	quest.2A53602F5DD6482A.quest_desc: ["痴愚"]
+	quest.2BAB54C68CA03FC4.quest_desc: ["在下界击杀疣猪兽获得，用于合成更高级的法术书。"]
+	quest.2D2C98446CE4035C.quest_desc: ["它可以升级卷轴，强化法师装备，甚至把魔法附在你的武器上！"]
+	quest.2D2C98446CE4035C.quest_subtitle: "铸造之法则"
+	quest.2E90710BAC475BEA.title: "冰霜学派"
 	quest.2EF159E57EAAA0B9.quest_desc: ["有了领地之后，收税是必不可少的。瓶中的东西刚好可以胜任这份工作。"]
 	quest.2EF159E57EAAA0B9.quest_subtitle: "待我成为国王，我将制订新的税法"
+	quest.2F94C6E3FCCB38FD.quest_desc: ["好吧，这并不能让你生产龙蛋。因为这些植物的属性跟你的属性似乎有些不合，像是为那些只存在于手记中的三种龙食用的。"]
+	quest.2F94C6E3FCCB38FD.quest_subtitle: "？？？？？"
+	quest.2F94C6E3FCCB38FD.title: "等等，什么？！"
 	quest.31DC355F5D46AE7F.quest_desc: ["这个家伙像是完全没有理智……而且它的状态很不对劲！"]
 	quest.31DC355F5D46AE7F.quest_subtitle: "你看见了——在那个浮岛上，有一条飞龙！"
 	quest.31DC355F5D46AE7F.title: "迫近的黑影"
+	quest.31F11ABB49A4EB1A.quest_desc: [
+		"将唤魔者堡垒中的笔记交给被囚禁的流浪商人翻译，再交予牧法师（平原村庄/针叶林村庄可刷新牧法师的法师塔），可以得到一本村民圣经。"
+		""
+		"另见“&e占领：唤魔者堡垒&r”。"
+	]
+	quest.32116FCA1FA75F6B.quest_desc: [
+		"对不起作者不会画龙铠甲模型，若是遇到什么加载不出的装备，整合包有幻化MOD，用它们挡一挡吧。"
+		""
+		"希望有贴图大神能帮帮我。"
+	]
 	quest.32A7BD9E6E01440B.quest_desc: ["丛林的环境让大量植物与真菌得以孳生。"]
 	quest.32A7BD9E6E01440B.quest_subtitle: "蜥蜴人曾在此"
 	quest.32A7BD9E6E01440B.title: "占领：丛林神庙"
+	quest.32B7A7CD7B4A8D9F.quest_desc: [
+		"破碎的盔甲中扬升出丝丝滚烫的余烬，永远保持在将燃尽而未燃尽的状态。"
+		""
+		"看见这种状态，你想起了某个东西，可惜忘了具体是什么。"
+	]
+	quest.32B7A7CD7B4A8D9F.title: "余烬"
+	quest.32C6FE7AA5BBDB4B.quest_desc: [
+		"被占领的结构中会刷新奉龙者生物，虽然比起跟随玩家，它们更愿意待在结构中，但它们会为玩家而战。"
+		""
+		"多多巡视领地吧！"
+		""
+		"&c警告：整合包中生物多种多样，会有生物AI不兼容的情况，目前测试中表现正常的有：僵尸、骷髅、蜘蛛、卫道士、和部分近战生物。求求八方神仙们，给我点这方面的技术支持吧！&r"
+	]
+	quest.32C6FE7AA5BBDB4B.quest_subtitle: "虔信"
 	quest.32EBCEE0701806C1.quest_desc: [""]
 	quest.32EBCEE0701806C1.quest_subtitle: "被通缉后，可以右键向村民索取贡品"
+	quest.331B495AF21543AA.quest_desc: [
+		"猪灵是一种拜金的生物……只要穿着金制装备，它们就不会来找你的麻烦。"
+		""
+		"可这个堡垒里的部分猪灵除外。看来这里对它们很重要啊。"
+	]
+	quest.331B495AF21543AA.quest_subtitle: "破败的城堡"
+	quest.331B495AF21543AA.title: "堡垒遗迹"
 	quest.333278E685C411C5.quest_subtitle: "温泉……？"
 	quest.333278E685C411C5.title: "魔源"
+	quest.33C52E568A4B08BE.quest_subtitle: "瞪谁谁就死"
 	quest.33E9CCB7EB00D0BA.quest_desc: ["林地府邸除了掠夺者前哨站有的东西，还有概率掉落虚龙之心和不死图腾。"]
 	quest.33E9CCB7EB00D0BA.title: "占领：林地府邸"
+	quest.34E73949085FF4D7.quest_subtitle: "装点自己的龙铠吧！"
+	quest.34E73949085FF4D7.title: "锻造模板"
+	quest.359A9A3913E17DCA.quest_desc: [
+		"对刃枪兵使用，将其晋升为公会首领。"
+		""
+		"公会宝库的钥匙就在其手上。"
+	]
+	quest.360ED3ED5B00CC20.quest_desc: [
+		"孤掌难鸣，空有法术书而没有记载法术的卷轴，也无法发挥效果。"
+		""
+		"去寻找一些卷轴吧。"
+	]
 	quest.360ED3ED5B00CC20.title: "法术卷轴"
 	quest.36478C9680EBEFD6.quest_desc: [
 		"龙旗玩法是整合包原创的玩法。玩家可以在建筑上插上龙旗，触发攻城战。成功占领后，即成为玩家的领地，获得大量资源。"
@@ -149,12 +262,27 @@
 	quest.368253F34658F72A.quest_desc: ["沙漠神殿的选址处，化石与煤炭资源从来不会少。"]
 	quest.368253F34658F72A.quest_subtitle: "改换法老"
 	quest.368253F34658F72A.title: "占领：沙漠神殿"
+	quest.36FF8729940963B3.title: "唤魔学派"
+	quest.38FA1D29507FECC7.quest_desc: [
+		"遗憾的是，罗盘显示下界完全没有龙的存在——至少主世界的指针仍模糊地提示龙曾在此。"
+		""
+		"但，来都来了。就探索一下，带点下界的特产回去吧。"
+	]
+	quest.38FA1D29507FECC7.quest_subtitle: "龙不在此。"
+	quest.38FA1D29507FECC7.title: "欢迎来到地狱"
+	quest.3975481C9BEF1E29.quest_desc: ["掉落自死者之王。"]
+	quest.3975481C9BEF1E29.quest_subtitle: "七印"
 	quest.3A18D1CA4A2260B2.quest_desc: [
 		"在探索的过程中，你偶然发现了一些散落的手稿。放眼望去，全都是有关魔法生物的。"
 		""
 		"把它们收集起来，或许是寻找&d龙蛋&r踪迹的好方法。"
 	]
 	quest.3A18D1CA4A2260B2.quest_subtitle: "昔人已乘黄鹤去"
+	quest.3AAEADB2CD2BA908.quest_subtitle: "成年龙"
+	quest.3BD438085B5F7C2B.quest_desc: ["为什么不将龙天生的能力与法术相结合呢？这确实是一种可行的方案——这种魔法叫言灵术，把一颗龙心放进卷轴撰写台试试吧。"]
+	quest.3BD438085B5F7C2B.quest_subtitle: "你萌生了一种想法"
+	quest.3C2422EE5831C05E.quest_subtitle: "你敢吃吗？我不敢。"
+	quest.3C2422EE5831C05E.title: "神秘的致幻植物"
 	quest.3C35CC09D48EA10D.quest_desc: [
 		"&c洞穴种&r食用燃料以维持自身的体温。"
 		""
@@ -166,12 +294,33 @@
 	quest.3CF598CC4E061D0E.quest_desc: ["三种建筑可以产出三种龙所需的食物，再也不为食物发愁。"]
 	quest.3CF598CC4E061D0E.quest_subtitle: "饿龙的牙祭"
 	quest.3D0D9910B3A720E4.quest_subtitle: "在一百份以上的藏宝堆里睡觉"
+	quest.3D444EFF0DCDF382.quest_subtitle: "？？？"
+	quest.3D444EFF0DCDF382.title: "第九学派"
+	quest.3D9B95AB81245013.title: "黯影套装"
 	quest.3DCEA15CB8E9D815.title: "材料 - 钢铁"
+	quest.3EA80CB5C49D2C0D.quest_subtitle: "占领了高位唤魔者城堡的你，已是名正言顺的领主了"
+	quest.3EA80CB5C49D2C0D.title: "高位唤魔者套装"
+	quest.406250F12A758B76.quest_subtitle: "龙王肚里能撑船"
 	quest.4111BB6653AFE691.quest_subtitle: "尽情去杀坏人吧"
+	quest.41A41BD24597BEC0.title: "幽灵"
 	quest.4218B7B59B0F0F74.title: "合成瓶中税收官"
+	quest.427D8294D27C7B4B.title: "远古城市"
 	quest.427E539B8D939D7B.quest_desc: ["财宝堆相当于龙的休息处，睡在上面，可以提供生命恢复。"]
 	quest.427E539B8D939D7B.quest_subtitle: "一条龙怎么能没有财宝堆？"
 	quest.427E539B8D939D7B.title: "龙的财宝堆"
+	quest.42DB3CD67CF3ACDD.quest_desc: ["不知是幸运还是不幸，据你的观察，这些家伙的行为和先人手记上的描述分毫不差。"]
+	quest.42DB3CD67CF3ACDD.title: "小精灵"
+	quest.42EE16FFAECD0B69.quest_desc: ["现在，你可以整备一番。是前往地图上的地点？还是去寻找强大的敌人，或三种龙之宝库？一切由你决定。"]
+	quest.42EE16FFAECD0B69.title: "自由探索"
+	quest.453877F6BFEAC469.quest_desc: [
+		"饕餮寓言可以把领地中刷新的奉龙者生物吞入，并在需要的时候吐出以对敌。"
+		""
+		"吞入的半径取决于法术卷轴的等级。最大可吞入的空间取决于法术卷轴的等级与龙的成长进度。"
+	]
+	quest.453877F6BFEAC469.quest_subtitle: "巨龙肚里能撑船"
+	quest.453877F6BFEAC469.title: "言灵·饕餮寓言"
+	quest.45EF64AC40E8819F.quest_subtitle: "DARK ARTS"
+	quest.45EF64AC40E8819F.title: "暗影行者套装"
 	quest.479A6676D227A404.quest_desc: ["掠夺者前哨站掉落绿宝石，金锭，钻石，经验瓶与龙骨。"]
 	quest.479A6676D227A404.title: "占领：掠夺者前哨站"
 	quest.482E83E9FB669B98.quest_desc: [
@@ -188,8 +337,28 @@
 	]
 	quest.49189A639C5973BB.quest_subtitle: "你的公主在别的城堡里"
 	quest.49189A639C5973BB.title: "占领：唤魔者堡垒"
-	quest.4AF56908F7A20C1C.quest_desc: ["先人的手记中言之凿凿地说明了龙的存在，并说有火龙、冰龙、电龙三种。你一种都没看见。因此你决定另开新篇，自己实地观察并记录下这些魔法生物。"]
+	quest.49AB9C5400682AA6.quest_subtitle: "不要把它放进岩浆！"
+	quest.49AB9C5400682AA6.title: "诅咒巫毒娃娃"
+	quest.49F49837CBAF8ACE.quest_desc: [
+		"击败末影龙 阅读终末之诗后发觉世界的腐败 世界已经死了 而最后一条的死亡让世界开始崩解 潜移默化的异常"
+		"第一阶段：收集蜂蜜时收到一瓶伤害药水"
+		"第二阶段：手里的水桶倒不出水（参考下界水蒸发）"
+		"第三阶段：熔炼物品时得到一个人头"
+		"不能再这么下去了！人的死亡是地水火风 地水火都经历过了 世界离彻底终结已不远了"
+		"击败凋零 复原龙蛋 让龙充满世界让这个死掉的世界不至于崩溃"
+		""
+		"做个资源包把终末之诗替换成龙曾在此"
+	]
+	quest.4AD4A8B95FFE0E2E.quest_subtitle: "方便来往于领地之间"
+	quest.4AF56908F7A20C1C.quest_desc: [""]
+	quest.4AF56908F7A20C1C.title: "引言"
+	quest.4B25854E1B58F6D2.quest_subtitle: "兴许这要塞也算是古代王国的一部分？"
+	quest.4B25854E1B58F6D2.title: "占领：下界要塞"
 	quest.4BA87BE14387EE62.title: "装饰你的箱子"
+	quest.4BF0F72FA3E16483.quest_subtitle: "拯救一切迷途羔羊"
+	quest.4BF0F72FA3E16483.title: "牧师套装"
+	quest.4C758A8E88A6F894.quest_subtitle: "冰封的囚笼"
+	quest.4C758A8E88A6F894.title: "冰霜术士套装"
 	quest.4CA95FF688990836.quest_desc: [
 		"&a森林龙&r嗜食生肉、浆果和蘑菇。腐肉也是可食之餐。"
 		""
@@ -209,8 +378,12 @@
 		"5：切换原版背包（用于穿脱饰品及外观装备等）、配置、整理"
 		"6：副手栏。"
 	]
+	quest.4E3DD58B4F778C34.quest_subtitle: "猪灵公主"
+	quest.4E3DD58B4F778C34.title: "占领：堡垒遗迹"
 	quest.4E6ED770D83C4AFF.quest_desc: ["是时候该给自己建造一个窝了。华丽的装点也好，精致的内饰也罢。总归要有一个地方，放置你在冒险中收集的，满满的宝物。"]
 	quest.4E6ED770D83C4AFF.quest_subtitle: "聚宝的本能"
+	quest.4FAA9CB828891F8A.quest_desc: ["不知是幸运还是不幸，据你的观察，这条家伙的行为和先人手记上的描述分毫不差。"]
+	quest.4FAA9CB828891F8A.title: "独眼巨人"
 	quest.4FDE40DA03D8CE4B.quest_desc: [
 		"世上的&d龙&r可以分为三种："
 		"&c洞穴龙&r：吃燃料，弱点是水，沾水会受伤。"
@@ -220,23 +393,43 @@
 		"弱点的影响可以通过被动技能的掌握来逐渐削弱。"
 		"查看“整合包介绍\\&新手教程”章节了解更多关于龙的生存经验。"
 		""
-		"{@pagebreak} &o我觉得海龙种会灭绝。尽管同时掌管着水、电、冰三种元素，但这个世界从来是跨越天穹的陆地上点缀着湖泊般的海洋。谁知道呢。&r"
+		"{@pagebreak}"
+		" &o我觉得海龙种会灭绝。尽管同时掌管着水、电、冰三种元素，但这个世界从来是跨越天穹的陆地上点缀着湖泊般的海洋。谁知道呢。&r"
 	]
 	quest.4FDE40DA03D8CE4B.quest_subtitle: "<日期与作者均不可辨别>"
 	quest.4FDE40DA03D8CE4B.title: "笔记：龙种的分别"
 	quest.5297FBC92A1D485C.quest_desc: ["小型村庄相比于浮空村庄，会开始掉落钻石与远古龙骨。"]
 	quest.5297FBC92A1D485C.title: "占领：小型村庄"
+	quest.52DC397C5ADB7DCC.quest_desc: [
+		"掠夺得来的法术卷轴时常不是自己想要的。你决定自己制作一些卷轴。"
+		""
+		"制作卷轴需要纸、学派物件、墨水。学派物件决定了卷轴的学派，墨水决定了卷轴的品质。"
+		""
+		"高级的魔法卷轴只能以高级的墨水写成。"
+	]
+	quest.5405512A263C9DDC.quest_desc: ["不知是幸运还是不幸，据你的观察，这些动物的行为和先人手记上的描述分毫不差。"]
 	quest.5405512A263C9DDC.title: "翼蚺"
 	quest.54C6AA8E0348FCC8.quest_desc: [
 		"在矿物与宝藏掉落中，时不时就会得到一些这样的尘埃。"
 		""
 		"用于合成龙相关的配方。例如可加速成长的龙心碎片等。"
 		""
+		"击杀高血量的怪物，也有几率掉落龙心。"
+		""
 		"&c注意——成长为青年龙后，龙心碎片将会不起作用，以此类推。&r"
 	]
 	quest.54C6AA8E0348FCC8.quest_subtitle: "同类相食……？"
 	quest.54C6AA8E0348FCC8.title: "龙尘与龙心碎片"
 	quest.54E3D369788106E6.title: "背包的升级"
+	quest.5611D9A492180B3D.quest_subtitle: "青年龙"
+	quest.585D1B2950AA4607.quest_desc: ["猎杀公会骑士掉落。"]
+	quest.59880F400A213994.quest_desc: [
+		"想要成为一个强大的法师，装备是必不可少的。其中又包含魔法书、防具、法杖、饰品等。"
+		""
+		"善用JEI进行查找吧！"
+	]
+	quest.5A815B9B714CDA2B.quest_desc: ["把这根滚烫的家伙拿在手上，你惊奇地发现——它飘零的粉末，与末影学派的物件有一种耦合性。"]
+	quest.5A815B9B714CDA2B.title: "烈焰"
 	quest.5B0C82AB156F2992.quest_desc: [
 		"村庄分为大中小三个等级，对应三种难度与奖励。浮空村庄作为新手村，不算在内。"
 		""
@@ -252,38 +445,77 @@
 	]
 	quest.5BBEC08E7893B0EF.quest_subtitle: "成王败寇"
 	quest.5BBEC08E7893B0EF.title: "被通缉了！"
+	quest.5C84AADD309AED26.quest_desc: ["不知是幸运还是不幸，据你的观察，这些动物的行为和先人手记上的描述分毫不差。"]
+	quest.5C84AADD309AED26.title: "骏鹰"
+	quest.5CC6A2D274ED22D0.quest_desc: ["小概率由烈焰人掉落。"]
+	quest.5FD18095CAFF58C1.title: "亡灵古墓"
+	quest.6126A9CE79357F84.quest_desc: ["不知是幸运还是不幸，据你的观察，这些动物的行为和先人手记上的描述分毫不差。"]
+	quest.6126A9CE79357F84.title: "鸡蛇"
 	quest.616FEA8BA81A4AF1.quest_desc: [""]
-	quest.616FEA8BA81A4AF1.quest_subtitle: "在没有龙的世界里当恶龙，会是什么体验？"
+	quest.616FEA8BA81A4AF1.quest_subtitle: "在没有龙的世界里当恶龙"
 	quest.6175DF4BFDCFC5EA.quest_desc: [
 		"铁魔法中共添加了八种法术学派。"
-		"炽焰、寒冰、雷霆、自然、神圣、猩红、末影、唤魔。"
 		"巨龙作为掌控元素的生物，自会有一些法术学派上的倾向。"
 		""
 		"使用方（法术强度）："
-		"&c洞穴龙&r：炽焰&6+50%&r，寒冰&3-50%&r"
-		"&a森林龙&r：自然&6+50%&r，炽焰&b-25%&r，寒冰&b-25%&r"
-		"&b海洋龙&r：寒冰&e+25%&r，雷霆&e+25%&r，炽焰&3-50%&r"
+		"&c洞穴龙&r：炽焰&6+80%&r，寒冰&3-80%&r"
+		"&a森林龙&r：自然&6+80%&r，炽焰&b-40%&r，寒冰&b-40%&r"
+		"&b海洋龙&r：寒冰&e+40%&r，雷霆&e+40%&r，炽焰&3-80%&r"
 		""
 		"抵抗方（法术抵抗）："
-		"&c洞穴龙&r：炽焰&6+80%&r"
-		"&a森林龙&r：自然&6+80%&r"
-		"&b海洋龙&r：寒冰&e+40%&r，雷霆&e+40%&r"
+		"&c洞穴龙&r：炽焰&6+90%&r"
+		"&a森林龙&r：自然&6+90%&r"
+		"&b海洋龙&r：寒冰&e+45%&r，雷霆&e+45%&r"
 		"{@pagebreak}"
+		"随着龙的成长，&e魔力上限也会随之提高&r。"
+		""
 		"&o不得不承认，巨龙们十分契合以好奇心驱动的法术，它们的财宝堆里也有很多可用的卷轴。但它们大多懒又暴躁，认为自己天生就会喷吐龙息，为何要花费时间从入门开始学魔法。&r"
 		""
 		"&o唉……我的理论迟迟找不到能证明的对象呢。&r"
 	]
 	quest.6175DF4BFDCFC5EA.quest_subtitle: "<日期与作者均不可辨别>"
+	quest.61A7E0594C10D4CA.quest_desc: ["掉落自唤魔者和高位唤魔者。"]
+	quest.622866C257178852.quest_subtitle: "龙用龙皮书，太恐怖了……"
+	quest.626951C87CA6FF5C.quest_desc: [
+		"来自下界的、更强悍的材料。但需要一点锻造工艺，才能将它们安在你的爪牙上。"
+		""
+		"据说&c洞穴龙&r的身体就是此种金属构成的……谁知道呢？"
+	]
+	quest.626951C87CA6FF5C.quest_subtitle: "久闻下界合金的大名"
 	quest.62998C38713A4E68.title: "材料 - 石材"
+	quest.63762FEF1984CADD.quest_subtitle: "编织风暴吧！"
+	quest.649A5301AF7976AA.quest_desc: [""]
+	quest.649A5301AF7976AA.quest_subtitle: "……其教徒实施仪式食人、人祭、肉体强化、奇术、以及……"
+	quest.649A5301AF7976AA.title: "猩红教徒套装"
+	quest.6594B36E75D501E0.quest_desc: [
+		"手记中关于悚怖亡灵的内容也没能得到验证。"
+		""
+		"（只是因为没做好罢了，它有个悚怖维度，进去就会提示没有做好）"
+	]
+	quest.6594B36E75D501E0.quest_subtitle: "似乎也一并消失了"
+	quest.6594B36E75D501E0.title: "悚怖之物"
+	quest.65C982C48AA8B003.quest_subtitle: "法师的织物"
 	quest.6611F94E730FD20C.quest_desc: [
 		"成年龙在食用大量、大量、极大量远古龙心加快成长后，会变为远古龙。"
 		"&c当心，此阶段会碾碎方块（可能包括自己的家）！&r"
 		"{@pagebreak}"
 		"&o古龙对生态的影响不可估量……走到哪里，哪里就会成为新的生态。简直就是移动的灾祸。就没有什么东西制止它们吗？&r"
 	]
+	quest.667220165003BC3B.quest_desc: ["不知是幸运还是不幸，据你的观察，这条家伙的行为和先人手记上的描述分毫不差。"]
+	quest.667220165003BC3B.title: "九头蛇"
+	quest.667C340CF868A4BA.title: "考古"
 	quest.681EBB7384D4F881.quest_desc: ["在茫茫世界中寻找龙蛋可不是个简单的事情。得一步一步来。"]
 	quest.681EBB7384D4F881.quest_subtitle: "寻找龙蛋前的准备"
 	quest.681EBB7384D4F881.title: "启程"
+	quest.6916566DB8E87641.title: "神圣学派"
+	quest.69400AAE99778064.quest_desc: [
+		"这就是锻造下界合金必要的材料……一切的工艺都蕴含在这片小小的石板中。"
+		""
+		"此等宝物记得要留下一个，这样以后才能复制更多。"
+	]
+	quest.69400AAE99778064.title: "合金"
+	quest.6B14C91E12B2D9A1.quest_desc: ["在雷暴天气中手持充能核心右键被放下的避雷针以取得。"]
+	quest.6B14C91E12B2D9A1.quest_subtitle: "大号引雷针"
 	quest.6B2D21F0295F993B.quest_desc: [
 		"整合包中给龙添加了更多可食的食物兼容。包括但不限于新生魔艺的四种浆果及其菜肴。"
 		""
@@ -292,8 +524,33 @@
 		"&b海洋龙&r：霜木瓜及其制品。"
 	]
 	quest.6B2D21F0295F993B.quest_subtitle: "挑食是个坏习惯"
-	quest.71666C947F590F11.quest_desc: ["可恶的blackaures，把公主王子删了，结果wiki还保留信息，好想抢公主啊"]
-	quest.716C0EC962DF0E89.quest_subtitle: "欢迎来到地狱"
+	quest.6C75FC1A4E012D5F.quest_desc: ["不知是幸运还是不幸，据你的观察，这些动物的行为和先人手记上的描述分毫不差。"]
+	quest.6C75FC1A4E012D5F.title: "海马"
+	quest.6C9B638743583835.title: "自然学派"
+	quest.6E24DAAE54A4354F.quest_desc: ["有了法术书和卷轴，下一步就是将它们联系起来，把卷轴放进书里。你也不想自己珍贵的卷轴使用一下就消失，对吧？"]
+	quest.6E57F7CF05BF6FBC.quest_desc: [
+		"恭喜！你学会了使用与管理法术！"
+		""
+		"关于详尽的法术学派与魔法装备获取，详见章节“&e收集：识之图录&r”。"
+		""
+		"精进你的法术吧！"
+	]
+	quest.6F9B4AA268975B8D.quest_desc: [
+		"可以用来酿造强力的高等药水，以及墨水。"
+		""
+		"用JEI查询所有配方吧！"
+	]
+	quest.702C933A24B5AFBD.quest_subtitle: "令说服术精进一步"
+	quest.702C933A24B5AFBD.title: "炽焰术士套装"
+	quest.7075A8D529E3F074.title: "鲜血学派"
+	quest.714192565B0351CF.quest_subtitle: "火之高兴"
+	quest.71666C947F590F11.quest_desc: ["可恶的布莱克奥瑞斯把公主王子删了，结果wiki还保留信息，好想抢公主啊"]
+	quest.716C0EC962DF0E89.quest_desc: [
+		"在冒险中，你听闻了一个叫下界的维度——熔岩肆虐，火焰滔天，正是&c洞穴龙&r理想的生存环境。"
+		""
+		"用黑曜石搭成框架，点燃火焰，进去看看？"
+	]
+	quest.716C0EC962DF0E89.quest_subtitle: "龙会不会藏在下界？"
 	quest.716C0EC962DF0E89.title: "前往下界"
 	quest.7181E0EE4CF3A23D.quest_subtitle: "在十份以上的财宝堆里睡觉"
 	quest.7219D2B812F4F537.quest_desc: [
@@ -316,6 +573,21 @@
 	]
 	quest.7235CE73FA25A2B6.quest_subtitle: "改换种族"
 	quest.7235CE73FA25A2B6.title: "龙祭坛"
+	quest.723B1D23AE2C2203.quest_desc: ["这里是烈焰人和凋零骷髅的老窝。烈焰人的烈焰棒是炽焰学派的重要之物，那凋零骷髅呢？"]
+	quest.723B1D23AE2C2203.quest_subtitle: "阴森的架桥"
+	quest.723B1D23AE2C2203.title: "下界要塞"
+	quest.7365EF3A1CAED952.quest_desc: ["不知是幸运还是不幸，据你的观察，这些家伙的行为和先人手记上的描述分毫不差。"]
+	quest.7365EF3A1CAED952.title: "恐蚁"
+	quest.7396BFF63787B5CF.quest_desc: ["先人的手记没有记载这个绿绿的小东西，但你觉得把它记录在这里是可行的。"]
+	quest.7396BFF63787B5CF.title: "哥布林商人"
+	quest.73BBF0E51641A8EB.quest_desc: [
+		"先人的手记中言之凿凿地说明了龙的存在，并说有&c火龙&r、&b冰龙&r、&d电龙&r三种。"
+		""
+		"这三种龙，你一种都没看见，而它们的描述也跟你自己现在的状态不符。因此你决定另开新篇，自己实地观察并记录下其余的魔法生物。"
+		""
+		"它们掉下的材料可以合成各种装备。"
+	]
+	quest.751E91442F995F00.quest_subtitle: "霜之哀伤"
 	quest.755A36D1D7404B2B.quest_desc: [
 		"不对。你逐渐从混沌中恢复，发现自己身体上的一些……异常之处。"
 		""
@@ -324,6 +596,7 @@
 	]
 	quest.755A36D1D7404B2B.quest_subtitle: "——恶龙竟是我自己。"
 	quest.755A36D1D7404B2B.title: "自我"
+	quest.75E7855E13406190.quest_desc: [""]
 	quest.7A0E48F86D8941E4.quest_desc: ["手持物品右键控制器，如果连接的容器里有同类物品，即将物品存入容器中。"]
 	quest.7A0E48F86D8941E4.quest_subtitle: "怎么有些鸡肋呢？"
 	quest.7A0E48F86D8941E4.title: "多方块存储"
@@ -345,49 +618,66 @@
 	]
 	quest.7B7E7AAC1B004988.quest_subtitle: "盲目吃鱼"
 	quest.7B7E7AAC1B004988.title: "食物 - 海洋龙"
-	quest.7D5CFE6DB014B46C.quest_subtitle: "是谁住在深海下的大菠萝里？"
+	quest.7B9F4B7957E5BABA.title: "试炼密室"
+	quest.7C33BAEA5E7B816E.title: "雷电学派"
+	quest.7D5CFE6DB014B46C.quest_subtitle: "是谁住在深海的大菠萝里？"
 	quest.7D5CFE6DB014B46C.title: "占领：海底神殿"
 	quest.7EAD63371F1F66D6.quest_desc: ["身为一条龙，寻找适合自身的环境是一件重要的事。洞穴龙会被雨雪伤到，海洋龙无法离水太久。"]
 	quest.7EAD63371F1F66D6.quest_subtitle: "罗盘的另一形式"
 	quest.7F1FD96CDF8CD2B8.quest_desc: [
 		"这个世界的居民似乎已很久没有见过龙了。你觉得有必要让他们重新认识认识。"
 		""
-		"用原木和龙尘合成龙旗基座吧。"
+		"用原木和龙尘合成龙旗基座。"
 	]
 	quest.7F1FD96CDF8CD2B8.quest_subtitle: "征服之道"
 	quest.7F1FD96CDF8CD2B8.title: "龙旗介绍"
 	reward.192792F0996186F3.title: "不保留经验"
-	reward.24CE4E2204753DBF.title: "解锁章节“识之图录”"
 	reward.4005FB15027A26C2.title: "死亡地点传送"
 	reward.443C624B5907E06E.title: "开启"
+	reward.45F82CD87CE7EA6A.title: "解锁章节“识之图录”"
 	reward.4AAB5E4ED34EA19A.title: "重新选择"
 	reward.505BA78C826D04CC.title: "关闭"
+	reward.607F7D40A5D8C297.title: "解锁章节“在边狱下”"
 	reward.6ED035171AF72DE7.title: "解锁章节“龙之宝库”"
 	reward.70A9E5E1821F2270.title: "复明"
 	reward.7B0C5D724443AA6D.title: "保留经验"
+	reward.7EF37D22D7DD9F4D.title: "这恐怕得是个未解之谜了。"
 	reward_table.0A4C59F29B150F23.title: "16色旗帜"
 	reward_table.2728DA0106E2BEFF.title: "保留经验"
 	reward_table.312005F8628AF8D4.title: "死亡地点传送"
 	reward_table.7F22BC6BE5EBC652.title: "复明+变龙"
 	task.0019B05811BD85A4.title: "笔记：远古龙"
+	task.03957DFB722086BF.title: "冰龙？"
 	task.0741D2CC2C85660E.title: "龙种的分别"
+	task.0C5D7ACA2643B662.title: "WIP：言灵：饕餮寓言"
 	task.0C88B4341C81B301.title: "异种共生"
+	task.0CFE2752F709E5B0.title: "键位"
+	task.0D28446AF7523EC4.title: "笔记：奉龙者"
+	task.0DD3E5FE7390ECDF.title: "魔法生物"
 	task.0F4406652E6AD348.title: "食性的兼容"
 	task.111434795FEA746A.title: "中断当前的占领状态"
 	task.15834E2B7F280132.title: "苏醒"
 	task.172E32CF4795659A.title: "生肉"
 	task.176774A86A7260FF.title: "启程"
 	task.199401EA6963724C.title: "铁锭"
+	task.1BADB32C84B71823.title: "WIP：龙的护甲外观"
+	task.1C31D71C2E7F973F.title: "JEI检索"
+	task.1DF5CFFB5E7B50BE.title: "魔法装备"
+	task.1E24DA4EE79C6222.title: "火龙？"
 	task.2123AE028011AFF2.title: "WIP：添加可抓走的公主\\&王子"
 	task.2219B15B63FB50BA.title: "迫近的黑影"
+	task.2267D61C4668E8DD.title: "三种龙之宝库"
 	task.236C214EA9DD8114.title: "笔记：瓶中税收官"
 	task.23FC7E58ED23B6A6.title: "龙曾在此"
+	task.2822EAC9B59C30DF.title: "异种杂交"
 	task.291A150DF26B46E0.title: "笔记：狂龙病毒"
+	task.2BCE21315E8D2BBB.title: "电龙？"
 	task.2C56F358AECA93D8.title: "龙的背包"
 	task.2CFB640AF692D8A7.title: "引言"
 	task.2D4D7ADEEA90E71F.title: "龙食产出点"
 	task.2D5F1E4E7A256624.title: "重新选择"
 	task.2DA64836A75052CD.title: "WIP：龙的技能"
+	task.2FF2B40CD3492F3D.title: "法术：自由探索"
 	task.307998BBA6E21031.title: "木材"
 	task.35DEAD714FD1D813.title: "龙曾在此"
 	task.38298B7AF0996BA1.title: "调试选项"
@@ -397,8 +687,10 @@
 	task.3F7CDCB946929F7D.title: "龙旗：自由探索"
 	task.417C6101F274068A.title: "龙曾在此"
 	task.422BB0D0FE11BBD4.title: "圆石"
+	task.4280C86E6C876B8F.title: "身为成年龙吃下迷幻植物"
 	task.4284B0A0F1EE600A.title: "缺水的海龙"
 	task.49536C43BBB09C55.title: "但是，不想当恶龙怎么办？"
+	task.4CD6A26B5F472A41.title: "111"
 	task.4ECE5592CF67640A.title: "笔记：龙旗"
 	task.50D341C769A7D0FC.title: "任意法术卷轴"
 	task.5467971C7B220C64.title: "任意龙之门"
@@ -410,10 +702,14 @@
 	task.67D66FD32C5BD4BD.title: "WIP：龙的言灵术"
 	task.6A653AA27FDFEF6A.title: "任意龙祭坛"
 	task.6AEA76D166CE2ABB.title: "引言"
+	task.6D35F0D45F1C7708.title: "通用"
 	task.6E2DEDD7DD141BD6.title: "笔记：龙与魔法学派"
 	task.7046D4359B2C80F7.title: "WIP：龙的言灵术"
 	task.7519ED2CAF4B9CEC.title: "边狱"
 	task.76F26CEE5902DE59.title: "保留经验？"
+	task.770C77948080C013.title: "寻找强力的敌人"
 	task.79D67BD548D2720C.title: "WIP：添加更多守军和攻城奖励"
 	task.79F6CA6974D8BA26.title: "蘑菇"
+	task.7B545A627225A8E4.title: "龙的言灵术"
+	task.7F2A6D0DBA026AB8.title: "CC-BY-SA协议"
 }

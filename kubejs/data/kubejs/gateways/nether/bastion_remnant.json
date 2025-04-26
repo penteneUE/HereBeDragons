@@ -1,0 +1,171 @@
+{
+    "color": "#b04343",
+    "failures": [
+        {
+            "command": "/whredragonswent conquest failure @p[tag=dragon_conquest_challenger]",
+            "desc": "占领失败",
+            "type": "gateways:command"
+        }
+    ],
+    "rewards": [
+        {
+            "command": "/whredragonswent conquest finish @p[tag=dragon_conquest_challenger]",
+            "desc": "占领成功",
+            "type": "gateways:command"
+        },
+        {
+            "experience": 200,
+            "orb_size": 25,
+            "type": "gateways:experience"
+        },
+        {
+            "stack": {
+                "components": {
+                    "minecraft:custom_data": {
+                        "gateway": "nether/bastion_remnant"
+                    }
+                },
+                "count": 1,
+                "id": "kubejs:dragon_conquest_trophy"
+            },
+            "type": "gateways:stack"
+        }
+    ],
+    "rules": {
+        "fail_on_out_of_bounds": false
+    },
+    "size": "small",
+    "spawn_algorithm": "gateways:inward_spiral",
+    "type": "gateways:normal",
+    "waves": [
+        {
+            "entities": [
+                {
+                    "count": 4,
+                    "entity": "minecraft:piglin_brute",
+                    "nbt": {
+                        "HandItems": [
+                            {
+                                "Count": 1,
+                                "id": "minecraft:golden_axe"
+                            }
+                        ]
+                    },
+                    "type": "gateways:standard"
+                },
+                {
+                    "count": 2,
+                    "entity": "minecraft:piglin",
+                    "nbt": {
+                        "HandItems": [
+                            {
+                                "Count": 1,
+                                "id": "minecraft:crossbow"
+                            }
+                        ]
+                    },
+                    "type": "gateways:standard"
+                }
+            ],
+            "max_wave_time": 800,
+            "rewards": [],
+            "setup_time": 100
+        },
+        {
+            "entities": [
+                {
+                    "count": 3,
+                    "entity": "minecraft:piglin_brute",
+                    "nbt": {
+                        "equipment": {
+                            "chest": {
+                                "id": "golden_chestplate"
+                            },
+                            "feet": {
+                                "id": "golden_boots"
+                            },
+                            "head": {
+                                "id": "golden_helmet"
+                            },
+                            "legs": {
+                                "id": "golden_leggings"
+                            }
+                        },
+                        "HandItems": [
+                            {
+                                "Count": 1,
+                                "id": "minecraft:golden_axe"
+                            }
+                        ]
+                    },
+                    "type": "gateways:standard"
+                },
+                {
+                    "count": 3,
+                    "entity": "minecraft:piglin_brute",
+                    "nbt": {
+                        "equipment": {
+                            "chest": {
+                                "id": "golden_chestplate"
+                            },
+                            "feet": {
+                                "id": "golden_boots"
+                            },
+                            "head": {
+                                "id": "golden_helmet"
+                            },
+                            "legs": {
+                                "id": "golden_leggings"
+                            }
+                        },
+                        "HandItems": [
+                            {
+                                "Count": 1,
+                                "id": "minecraft:crossbow"
+                            }
+                        ]
+                    },
+                    "type": "gateways:standard"
+                }
+            ],
+            "max_wave_time": 800,
+            "rewards": [],
+            "setup_time": 100
+        },
+        {
+            "entities": [
+                {
+                    "count": 3,
+                    "entity": "minecraft:piglin_brute",
+                    "nbt": {
+                        "equipment": {
+                            "chest": {
+                                "id": "netherite_chestplate"
+                            },
+                            "feet": {
+                                "id": "netherite_boots"
+                            },
+                            "head": {
+                                "id": "netherite_helmet"
+                            },
+                            "legs": {
+                                "id": "netherite_leggings"
+                            }
+                        },
+                        "HandItems": [
+                            {
+                                "Count": 1,
+                                "id": "minecraft:netherite_axe"
+                            }
+                        ]
+                    },
+                    "type": "gateways:standard"
+                }
+            ],
+            "max_wave_time": 800,
+            "modifiers": [],
+            "rewards": [],
+            "setup_time": 150
+        }
+    ]
+}

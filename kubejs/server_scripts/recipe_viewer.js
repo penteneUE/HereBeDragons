@@ -12,13 +12,21 @@ RecipeViewerEvents.addInformation("item", (event) => {
 
         if (!product) return;
         if (!item) return;
+
+        let totalWeight = item.sum();
+
         item.items.forEach((weight, thing) => {
+            // let object = {
+            //     structure: data.name,
+            //     chance: weight / totalWeight,
+            // };
             if (!itemsToStructureGateways.containsKey(thing)) {
-                itemsToStructureGateways[thing] = [data.name];
-                return;
+                itemsToStructureGateways[thing] = Utils.newMap();
             }
-            console.log(STRUCTURE_DATA);
-            itemsToStructureGateways[thing].push(data.name);
+            if (itemsToStructureGateways[thing].containsKey(data.name)) return;
+            //console.log(STRUCTURE_DATA);
+            itemsToStructureGateways[thing][data.name] =
+                (weight / totalWeight) * 100;
         });
     });
 
@@ -29,8 +37,12 @@ RecipeViewerEvents.addInformation("item", (event) => {
     itemsToStructureGateways.forEach((thing, structures) => {
         //这牛魔的连环嵌套真是令人作呕看见就想死
         let texts = [Text.translate("kubejs.recipeinfo.conquest").gold()];
-        structures.forEach((value) => {
-            texts.push(Text.translate(value).darkAqua());
+        structures.forEach((key, value) => {
+            texts.push(
+                Text.translate(key)
+                    .darkAqua()
+                    .append(Text.gold(` (${value.toFixed(2)}%)`))
+            );
         });
         event.add(thing, texts);
     });

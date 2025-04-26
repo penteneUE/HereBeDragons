@@ -1,6 +1,6 @@
 {
     "type": "gateways:normal",
-    "color": "#33AE53",
+    "color": "#39414a",
     "rewards": [
         {
             "type": "gateways:command",

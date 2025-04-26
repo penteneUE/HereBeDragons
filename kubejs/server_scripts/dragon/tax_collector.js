@@ -1,55 +1,63 @@
 let $BlockPos = Java.loadClass("net.minecraft.core.BlockPos");
 let $CompoundTag = Java.loadClass("net.minecraft.nbt.CompoundTag");
 
-const tagCountAsBlock = ["c:storage_blocks", "minecraft:mineable/pickaxe", "minecraft:mineable/axe", "minecraft:mineable/shovel"]
+const tagCountAsBlock = [
+    "c:storage_blocks",
+    "minecraft:mineable/pickaxe",
+    "minecraft:mineable/axe",
+    "minecraft:mineable/shovel",
+];
 
 /**
- * 
- * @param {$Player_} player 
+ *
+ * @param {$Player_} player
  * @param {$ItemStack} preferredItem
  * @returns {$Map_<string, number>}
  */
-function rollRewardItems(/**@type {$Player_}*/player, preferredItem) {
+function rollRewardItems(/**@type {$Player_}*/ player, preferredItem) {
+    const { dragonConquerRecords } = player.persistentData;
 
-    const { dragonConquerRecords } = player.persistentData
+    const { STRUCTURE_DATA } = global;
 
-    const { STRUCTURE_DATA } = global
-    
-    
     if (!dragonConquerRecords) {
         return;
     }
 
-    const result = Utils.newMap()
+    const result = Utils.newMap();
 
     let rewardsContainsPreferredItem = false;
-    let preferredItemId = ""
+    let preferredItemId = "";
     if (preferredItem) {
-        preferredItemId = preferredItem.toStringJS().replace("'", '')
+        preferredItemId = preferredItem.toStringJS().replace("'", "");
         //preferredItemId = preferredItem.item.toString()
     }
 
     let totalItemCount = 0;
-    let weightedRandom = global.UTILS.weightedRandom()
+    let weightedRandom = global.UTILS.weightedRandom();
 
     dragonConquerRecords.getAllKeys().forEach((structure_type) => {
+        let count =
+            dragonConquerRecords[structure_type].size() *
+            STRUCTURE_DATA[structure_type].product.count;
 
-        let count = dragonConquerRecords[structure_type].size() * STRUCTURE_DATA[structure_type].product.count
-        
-        for (let _ = 0; _ < count; _++){
+        for (let _ = 0; _ < count; _++) {
             if (preferredItemId && !rewardsContainsPreferredItem) {
-                if (Array.from(STRUCTURE_DATA[structure_type].product.item.items.keys()).findIndex((itemId) => itemId == preferredItemId) != -1) {
-                    rewardsContainsPreferredItem = true
+                if (
+                    Array.from(
+                        STRUCTURE_DATA[structure_type].product.item.items.keys()
+                    ).findIndex((itemId) => itemId == preferredItemId) != -1
+                ) {
+                    rewardsContainsPreferredItem = true;
                 }
                 //let testMap = new Map([["uhrwerk", 1], ["macbeth", 2], ["nerv", 3]])
                 //console.log(Array.from(testMap.keys()).join(","))
                 //console.log([...testMap.keys()])
             }
-            let item = STRUCTURE_DATA[structure_type].product.item.getItem()
-            
+            let item = STRUCTURE_DATA[structure_type].product.item.getItem();
+
             if (!result.containsKey(item)) {
                 result[item] = 1;
-                weightedRandom.add(item, 1)
+                weightedRandom.add(item, 1);
             } else {
                 result[item]++;
                 weightedRandom.items[item]++;
@@ -57,22 +65,21 @@ function rollRewardItems(/**@type {$Player_}*/player, preferredItem) {
 
             totalItemCount++;
         }
-        
-    })
+    });
 
     //console.log(rewardsContainsPreferredItem)
     if (rewardsContainsPreferredItem) {
-        let replaceCount = Math.ceil(Math.random() * (totalItemCount / 6))
-        
+        let replaceCount = Math.floor(Math.random() * (totalItemCount / 6));
+
         // let weightedRandom = global.UTILS.weightedRandom()
 
         // result.keySet().toArray().forEach((value, index) => {
         //     weightedRandom.add()
         // })
-        for (let _ = 0; _ < replaceCount; _++){
+        for (let _ = 0; _ < replaceCount; _++) {
             let itemToRemove = weightedRandom.getItem();
             if (result[itemToRemove] <= 1) {
-                result.remove(itemToRemove)
+                result.remove(itemToRemove);
             } else {
                 result[itemToRemove]--;
             }
@@ -83,7 +90,6 @@ function rollRewardItems(/**@type {$Player_}*/player, preferredItem) {
         } else {
             result[preferredItemId] += replaceCount;
         }
-        
     }
 
     //console.log(result)
@@ -96,15 +102,17 @@ function rollRewardItems(/**@type {$Player_}*/player, preferredItem) {
  * @returns {$MutableComponent_}
  */
 function weaveMessage_Items(items) {
-    let text = Text.empty()
+    let text = Text.empty();
     items.forEach((item, count) => {
         if (!text.isEmpty()) {
-            text.append(Text.gray(", "))
+            text.append(Text.gray(", "));
         }
         let translationKey = Item.of(item).item.descriptionId;
-        text.append(Text.translate(translationKey).color(textColor)).append(Text.of(`x${count}`).gold())
-    })
-    return text
+        text.append(Text.translate(translationKey).color(textColor)).append(
+            Text.of(`x${count}`).gold()
+        );
+    });
+    return text;
 }
 
 /**
@@ -112,21 +120,27 @@ function weaveMessage_Items(items) {
  * @returns {$MutableComponent_}
  */
 function weaveMessage_Records(dragonConquerRecords) {
-    const {STRUCTURE_DATA} = global
-    let text = Text.empty()
+    const { STRUCTURE_DATA } = global;
+    let text = Text.empty();
     if (!dragonConquerRecords) return;
     dragonConquerRecords.getAllKeys().forEach((structure_type) => {
         if (!text.isEmpty()) {
-            text.append(Text.gray(", "))
+            text.append(Text.gray(", "));
         }
-        let translationKey = STRUCTURE_DATA[structure_type].name
+        let translationKey = STRUCTURE_DATA[structure_type].name;
 
         dragonConquerRecords[structure_type].forEach((record) => {
             //console.log(record)
             //console.log(translationKey)
-            text.append(Text.translate(translationKey).color(textColor)).append(Text.of(` (x:${record.getInt("minX")} y:${record.getInt("minY")} z:${record.getInt("minZ")})`).gold())
-        })
-    })
+            text.append(Text.translate(translationKey).color(textColor)).append(
+                Text.of(
+                    ` (x:${record.getInt("minX")} y:${record.getInt(
+                        "minY"
+                    )} z:${record.getInt("minZ")})`
+                ).gold()
+            );
+        });
+    });
 
     return text;
 }
@@ -138,10 +152,10 @@ function weaveMessage_Records(dragonConquerRecords) {
  */
 function sendItemsToPlayer(items, player) {
     items.forEach((item, count) => {
-        let itemStack = Item.of(item)
-        itemStack.setCount(count)
-        player.give(itemStack)
-    })
+        let itemStack = Item.of(item);
+        itemStack.setCount(count);
+        player.give(itemStack);
+    });
 }
 
 /**
@@ -150,10 +164,10 @@ function sendItemsToPlayer(items, player) {
  * @returns
  */
 function sendItemsToBlockInventory(items, block) {
-    const {inventory} = block
+    const { inventory } = block;
     items.forEach((item, count) => {
-        let itemStack = Item.of(item)
-        itemStack.setCount(count)
+        let itemStack = Item.of(item);
+        itemStack.setCount(count);
 
         // let existingItem = inventory.find(item)
 
@@ -167,11 +181,11 @@ function sendItemsToBlockInventory(items, block) {
         //     block.popItemFromFace(itemStack, Direction.UP)
         //     return;
         // }
-        
+
         for (var i = 0; i < inventory.getSlots(); i++) {
             if (itemStack.isEmpty()) break;
 
-            itemStack = inventory.insertItem(i, itemStack, false)
+            itemStack = inventory.insertItem(i, itemStack, false);
             // let thingInSlot = inventory.getStackInSlot(i)
             // if (!thingInSlot.isEmpty() && itemStack.asIngredient().test(thingInSlot)) {
             //     itemStack = inventory.insertItem(i, itemStack, false)
@@ -180,15 +194,15 @@ function sendItemsToBlockInventory(items, block) {
             //inventory.setStackInSlot(i, itemStack)
         }
 
-        if (!itemStack.isEmpty()) block.popItemFromFace(itemStack, Direction.UP)
-        
-    })
+        if (!itemStack.isEmpty())
+            block.popItemFromFace(itemStack, Direction.UP);
+    });
 }
 
 /**
- * 
- * @param {$SimplePlayerKubeEvent_} event 
- * @returns 
+ *
+ * @param {$SimplePlayerKubeEvent_} event
+ * @returns
  */
 function playerTick_TaxCollect(event) {
     const { player } = event;
@@ -196,32 +210,39 @@ function playerTick_TaxCollect(event) {
     const { lastDay } = player.persistentData;
 
     if (!lastDay) {
-        player.persistentData.putInt("lastDay", -1)
+        player.persistentData.putInt("lastDay", -1);
     }
 
-    let currentDay = Math.floor(player.stats.playTime / 24000)
+    let currentDay = Math.floor(player.stats.playTime / 24000);
     if (currentDay == lastDay) return;
-    player.persistentData.putInt("lastDay", currentDay)
+    player.persistentData.putInt("lastDay", currentDay);
 
-    const { activeTaxCollector } = player.persistentData
-    
+    const { activeTaxCollector } = player.persistentData;
+
     if (!activeTaxCollector) return;
 
-    let taxCollectorBlock = event.server.getLevel(activeTaxCollector.getString("dimension")).getBlock(
-        activeTaxCollector.getInt("x"),
-        activeTaxCollector.getInt("y"),
-        activeTaxCollector.getInt("z"))
+    let taxCollectorBlock = event.server
+        .getLevel(activeTaxCollector.getString("dimension"))
+        .getBlock(
+            activeTaxCollector.getInt("x"),
+            activeTaxCollector.getInt("y"),
+            activeTaxCollector.getInt("z")
+        );
     if (taxCollectorBlock.id != "kubejs:tax_collector") return;
 
-    if (taxCollectorBlock.getEntityData().getString("ownerID") != player.getUuid().toString()) return;
+    if (
+        taxCollectorBlock.getEntityData().getString("ownerID") !=
+        player.getUuid().toString()
+    )
+        return;
 
     let muted = false;
-    let items = Utils.emptyMap()
+    let items = Utils.emptyMap();
 
     if (!taxCollectorBlock.getInventory().isEmpty()) {
-        let preferredItem = taxCollectorBlock.getInventory().allItems.first
+        let preferredItem = taxCollectorBlock.getInventory().allItems.first;
         //圆榫不入方卯
-        
+
         let isBlock = false;
 
         //console.log(preferredItem.tags)
@@ -230,56 +251,62 @@ function playerTick_TaxCollect(event) {
             if (preferredItem.hasTag(tag)) {
                 isBlock = true;
             }
-        })
+        });
 
         if (isBlock) {
-            muted = true
+            muted = true;
             items = rollRewardItems(player);
         } else {
             items = rollRewardItems(player, preferredItem);
-            
+
             //console.log(preferredItem.toStringJS())
             //true console.log(preferredItem.toStringJS().replace("'", '') == 'minecraft:enchanted_book[stored_enchantments={levels:{"minecraft:mending":1}}]')
         }
     } else {
         items = rollRewardItems(player);
-    
     }
-    
-    let rewardText = weaveMessage_Items(items)
+
+    let rewardText = weaveMessage_Items(items);
 
     //送货上门
-    let blockBelow = taxCollectorBlock.down
+    let blockBelow = taxCollectorBlock.down;
 
     if (blockBelow.getInventory()) {
-        sendItemsToBlockInventory(items, blockBelow)
+        sendItemsToBlockInventory(items, blockBelow);
     } else {
-        sendItemsToPlayer(items, player)
+        console.log(items);
+        sendItemsToPlayer(items, player);
     }
 
     if (muted) return;
     // 发送消息
 
     if (rewardText.getString().length > 100) {
-        player.tell(Text.translate("kubejs.taxcollector.daypass.much").color(textColor))
+        player.tell(
+            Text.translate("kubejs.taxcollector.daypass.much").color(textColor)
+        );
     } else {
-        player.tell(Text.translate("kubejs.taxcollector.daypass").color(textColor))
-        player.tell(rewardText)
+        player.tell(
+            Text.translate("kubejs.taxcollector.daypass").color(textColor)
+        );
+        player.tell(rewardText);
     }
 
     if (blockBelow.getInventory()) {
-        player.tell(Text.translate("kubejs.taxcollector.daypass.withstorage").color(textColor))
+        player.tell(
+            Text.translate("kubejs.taxcollector.daypass.withstorage").color(
+                textColor
+            )
+        );
     }
-    
 
-    
     //collectTax(event);
 }
 
 /**
- * 
- * @param {$BlockPlacedKubeEvent_} event 
- * @returns 
+ *
+ * @param {$BlockPlacedKubeEvent_} event
+ * @returns
  */
 function blockPlaced_TaxCollect(event) {
     const { block, player } = event;
@@ -287,23 +314,29 @@ function blockPlaced_TaxCollect(event) {
     if (block.id != "kubejs:tax_collector") return;
 
     let data = new $CompoundTag();
-    data.putString("dimension", event.getLevel().getDimension().toString())
-    data.putInt("x", block.getX())
-    data.putInt("y", block.getY())
-    data.putInt("z", block.getZ())
+    data.putString("dimension", event.getLevel().getDimension().toString());
+    data.putInt("x", block.getX());
+    data.putInt("y", block.getY());
+    data.putInt("z", block.getZ());
 
-    player.persistentData.put("activeTaxCollector", data)
+    player.persistentData.put("activeTaxCollector", data);
 
     //player.tell(Text.translate("kubejs.taxcollector.placed").color(textColor))
 
-    let recordText = weaveMessage_Records(player.persistentData.dragonConquerRecords)
+    let recordText = weaveMessage_Records(
+        player.persistentData.dragonConquerRecords
+    );
     //player.tell(recordText)
 
     if (recordText.getString().length > 100) {
-        player.tell(Text.translate("kubejs.taxcollector.bind.much").color(textColor))
+        player.tell(
+            Text.translate("kubejs.taxcollector.bind.much").color(textColor)
+        );
     } else {
-        player.tell(Text.translate("kubejs.taxcollector.bind").color(textColor))
-        player.tell(recordText)
+        player.tell(
+            Text.translate("kubejs.taxcollector.bind").color(textColor)
+        );
+        player.tell(recordText);
     }
 
     //activeTaxCollector = data;
@@ -314,26 +347,31 @@ function blockPlaced_TaxCollect(event) {
 
     // let data = new $CompoundTag()
     // data.putUUID("owner", player)
-    
 
     // block.setEntityData(data)
 }
 
 /**
- * 
- * @param {$BlockBrokenKubeEvent_} event 
- * @returns 
+ *
+ * @param {$BlockBrokenKubeEvent_} event
+ * @returns
  */
 function blockBroken_TaxCollect(event) {
     const { block, server } = event;
     if (block.id != "kubejs:tax_collector") return;
 
-    let blockOwner = server.getPlayer(block.getEntityData().getString("ownerID"))
+    let blockOwner = server.getPlayer(
+        block.getEntityData().getString("ownerID")
+    );
 
     if (!blockOwner) return;
     const { activeTaxCollector } = blockOwner.persistentData;
     if (!activeTaxCollector) return;
-    if (activeTaxCollector.getString("dimension") != block.getDimension().toString()) return;
+    if (
+        activeTaxCollector.getString("dimension") !=
+        block.getDimension().toString()
+    )
+        return;
     //console.log(block.getDimension().toString())
     if (activeTaxCollector.getInt("x") != block.getX()) return;
     //console.log(block.getX())
@@ -342,8 +380,9 @@ function blockBroken_TaxCollect(event) {
     if (activeTaxCollector.getInt("z") != block.getZ()) return;
     //console.log(block.getZ())
 
-    blockOwner.tell(Text.translate("kubejs.taxcollector.broken").color(textColor))
+    blockOwner.tell(
+        Text.translate("kubejs.taxcollector.broken").color(textColor)
+    );
 
     blockOwner.persistentData.remove("activeTaxCollector");
-    
 }

@@ -3,61 +3,106 @@
 	default_quest_shape: ""
 	filename: "527A94CE659B846F"
 	group: ""
+	hide_quest_details_until_startable: true
+	icon: {
+		id: "minecraft:writable_book"
+	}
 	id: "527A94CE659B846F"
+	images: [{
+		height: 20.0d
+		image: "kubejs:textures/task/bookwyrm.png"
+		rotation: 0.0d
+		width: 20.0d
+		x: 5.0d
+		y: 1.0d
+	}]
 	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["4AF56908F7A20C1C"]
+			dependencies: ["73BBF0E51641A8EB"]
+			hide_text_until_complete: true
 			id: "037F76767B7B7B50"
+			rewards: [{
+				id: "222935BA8A5BF7CF"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				entity: "iceandfire:gorgon"
 				id: "570EA9057B590558"
 				type: "kill"
 				value: 1L
 			}]
-			x: 0.5d
-			y: 0.0d
+			x: 10.0d
+			y: 2.5d
 		}
 		{
-			dependencies: ["4AF56908F7A20C1C"]
+			dependencies: ["73BBF0E51641A8EB"]
+			hide_text_until_complete: true
 			id: "667220165003BC3B"
+			rewards: [{
+				id: "601EDBE10202127B"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				entity: "iceandfire:hydra"
 				id: "39A917A237878934"
 				type: "kill"
 				value: 1L
 			}]
-			x: -0.5d
-			y: 0.0d
+			x: 11.0d
+			y: 2.5d
 		}
 		{
-			dependencies: ["4AF56908F7A20C1C"]
+			dependencies: ["73BBF0E51641A8EB"]
+			hide_text_until_complete: true
 			id: "4FAA9CB828891F8A"
+			rewards: [{
+				id: "0FDD0AD7D9950E4A"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				entity: "iceandfire:cyclops"
 				id: "198238BB768C1F8A"
 				type: "kill"
 				value: 1L
 			}]
-			x: -1.5d
-			y: 0.0d
+			x: 12.0d
+			y: 2.5d
 		}
 		{
-			dependencies: ["4AF56908F7A20C1C"]
+			dependencies: ["73BBF0E51641A8EB"]
+			hide_text_until_complete: true
 			id: "24C35FEEDB08DF0E"
+			rewards: [{
+				id: "34431018B380F584"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				entity: "iceandfire:stymphalian_bird"
 				id: "5C37F6040F0D353F"
 				type: "kill"
 				value: 1L
 			}]
-			x: -2.5d
-			y: 0.0d
+			x: 7.0d
+			y: 2.5d
 		}
 		{
-			dependencies: ["4AF56908F7A20C1C"]
+			dependencies: ["73BBF0E51641A8EB"]
+			hide_text_until_complete: true
+			icon: {
+				id: "iceandfire:spawn_egg_amphithere"
+			}
 			id: "5405512A263C9DDC"
+			rewards: [{
+				id: "5EF39E8E1A4CAB18"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [
 				{
 					advancement: "iceandfire:iceandfire/tame_amphithere"
@@ -74,12 +119,21 @@
 					value: 1L
 				}
 			]
-			x: -3.5d
-			y: 0.0d
+			x: 5.0d
+			y: 2.5d
 		}
 		{
-			dependencies: ["4AF56908F7A20C1C"]
+			dependencies: ["73BBF0E51641A8EB"]
+			hide_text_until_complete: true
+			icon: {
+				id: "goblintraders:goblin_trader_spawn_egg"
+			}
 			id: "7396BFF63787B5CF"
+			rewards: [{
+				id: "79510DC7D650CBCF"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "7F00FF727BBBF0F7"
 				observe_type: 5
@@ -87,8 +141,8 @@
 				to_observe: "goblintraders:goblin_trader"
 				type: "observation"
 			}]
-			x: 1.5d
-			y: 0.0d
+			x: 3.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -102,17 +156,1370 @@
 				id: "2CFB640AF692D8A7"
 				type: "checkmark"
 			}]
-			x: 0.0d
+			x: -1.0d
 			y: 1.0d
 		}
 		{
-			id: "09D6B3CFB0117A34"
+			dependencies: ["4AF56908F7A20C1C"]
+			hide_dependent_lines: true
+			icon: {
+				id: "iceandfire:bestiary"
+			}
+			id: "73BBF0E51641A8EB"
 			tasks: [{
-				id: "67D66FD32C5BD4BD"
+				id: "0DD3E5FE7390ECDF"
 				type: "checkmark"
 			}]
-			x: 2.0d
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["73BBF0E51641A8EB"]
+			hide_text_until_complete: true
+			id: "0C67D7B61346ADCF"
+			rewards: [{
+				id: "73B81F25661F5315"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				entity: "iceandfire:sea_serpent"
+				id: "1A4BB80B479EE820"
+				type: "kill"
+				value: 1L
+			}]
+			x: 8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["73BBF0E51641A8EB"]
+			hide_text_until_complete: true
+			icon: {
+				id: "iceandfire:spawn_egg_myrmex_queen"
+			}
+			id: "7365EF3A1CAED952"
+			rewards: [{
+				id: "5587B4D09AF6CD20"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					id: "18A65D8999D32273"
+					item: { count: 1, id: "iceandfire:myrmex_desert_resin" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3EC594E1E7194E5C"
+					item: { count: 1, id: "iceandfire:myrmex_jungle_resin" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["73BBF0E51641A8EB"]
+			hide_text_until_complete: true
+			id: "234C49E792EC075C"
+			rewards: [{
+				id: "39F2AE58770C0454"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				entity: "iceandfire:deathworm"
+				id: "414D15D90218B9C5"
+				type: "kill"
+				value: 1L
+			}]
+			x: 9.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["73BBF0E51641A8EB"]
+			hide_text_until_complete: true
+			icon: {
+				id: "iceandfire:spawn_egg_pixie"
+			}
+			id: "42DB3CD67CF3ACDD"
+			rewards: [{
+				id: "7E6B44E3856BD814"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "0E030A63B193786B"
+				observe_type: 5
+				timer: 0L
+				to_observe: "iceandfire:pixie"
+				type: "observation"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4AF56908F7A20C1C"]
+			hide_dependent_lines: true
+			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 6
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
+				id: "irons_spellbooks:iron_spell_book"
+			}
+			id: "59880F400A213994"
+			tasks: [{
+				id: "1DF5CFFB5E7B50BE"
+				type: "checkmark"
+			}]
+			x: 0.5d
 			y: 1.0d
+		}
+		{
+			dependencies: ["4AF56908F7A20C1C"]
+			hide_dependency_lines: true
+			id: "0D91CAE028F0F87C"
+			rewards: [{
+				id: "745995E7816B85A1"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "58E97CA90379DE0A"
+				item: { count: 1, id: "minecraft:blaze_rod" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4AF56908F7A20C1C"]
+			hide_dependency_lines: true
+			id: "2E90710BAC475BEA"
+			rewards: [{
+				id: "50961D2882AABD18"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "3D78519FDA37446D"
+				item: { count: 1, id: "irons_spellbooks:frozen_bone" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4AF56908F7A20C1C"]
+			hide_dependency_lines: true
+			id: "6916566DB8E87641"
+			rewards: [{
+				id: "11E766CD3FE37F80"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "277C409969B8BBAC"
+				item: { count: 1, id: "irons_spellbooks:divine_pearl" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4AF56908F7A20C1C"]
+			hide_dependency_lines: true
+			id: "1C16CBEB46D46117"
+			rewards: [{
+				id: "21C45C8D037785CD"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "24C41D9ABCFF290D"
+				item: { count: 1, id: "minecraft:ender_pearl" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4AF56908F7A20C1C"]
+			hide_dependency_lines: true
+			id: "7075A8D529E3F074"
+			rewards: [{
+				id: "4A0FEDF2B19A67B6"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "41E1FF18ABA5F398"
+				item: { count: 1, id: "irons_spellbooks:blood_vial" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4AF56908F7A20C1C"]
+			hide_dependency_lines: true
+			id: "36FF8729940963B3"
+			rewards: [{
+				id: "3C9B18A986EBABA1"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "1EC1733B4367D481"
+				item: { count: 1, id: "minecraft:emerald" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4AF56908F7A20C1C"]
+			hide_dependency_lines: true
+			id: "6C9B638743583835"
+			rewards: [{
+				id: "7A67429C67D1597C"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "4A6EAA54A8C996C8"
+				item: { count: 1, id: "minecraft:poisonous_potato" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4AF56908F7A20C1C"]
+			hide_dependency_lines: true
+			id: "7C33BAEA5E7B816E"
+			rewards: [{
+				id: "591756F45767D6E7"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "55AD91D4F4F7B0F4"
+				item: { count: 1, id: "irons_spellbooks:lightning_bottle" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["59880F400A213994"]
+			id: "3D444EFF0DCDF382"
+			rewards: [{
+				id: "34270E68AC9F7C7F"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "040BA1F81845817D"
+				item: { count: 1, id: "irons_spellbooks:ancient_knowledge_fragment" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0D91CAE028F0F87C"]
+			id: "702C933A24B5AFBD"
+			rewards: [{
+				id: "589559A613E14B8A"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0E2A78AE9150EFD9"
+					item: { count: 1, id: "irons_spellbooks:pyromancer_helmet" }
+					type: "item"
+				}
+				{
+					id: "05D44B27D68FD0A3"
+					item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:pyromancer_chestplate" }
+					type: "item"
+				}
+				{
+					id: "2BD27801191E327F"
+					item: { count: 1, id: "irons_spellbooks:pyromancer_leggings" }
+					type: "item"
+				}
+				{
+					id: "582C00B019F34AB1"
+					item: { count: 1, id: "irons_spellbooks:pyromancer_boots" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7C33BAEA5E7B816E"]
+			id: "63762FEF1984CADD"
+			rewards: [{
+				id: "52BEDBBB4D5650F4"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "27CBF732830FF05E"
+					item: { count: 1, id: "irons_spellbooks:electromancer_helmet" }
+					type: "item"
+				}
+				{
+					id: "27276D49E5075D0A"
+					item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:electromancer_chestplate" }
+					type: "item"
+				}
+				{
+					id: "05ED19959980FA05"
+					item: { count: 1, id: "irons_spellbooks:electromancer_leggings" }
+					type: "item"
+				}
+				{
+					id: "574ADD08C97AB603"
+					item: { count: 1, id: "irons_spellbooks:electromancer_boots" }
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D91CAE028F0F87C"]
+			id: "5CC6A2D274ED22D0"
+			rewards: [{
+				id: "51D3B8DEB8323B6E"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "026E809138DCCD8A"
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 10, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:blaze_spell_book" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6C9B638743583835"]
+			id: "3B9A5ABC60BD2980"
+			rewards: [{
+				id: "0415F88BBA15B20A"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0E33CD4E039D840B"
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 10, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:druidic_spell_book" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["36FF8729940963B3"]
+			id: "61A7E0594C10D4CA"
+			rewards: [{
+				id: "3A549CF514653316"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7D6E38166FBA8419"
+				item: { components: { "irons_spellbooks:spell_container": { data: [ { id: "irons_spellbooks:fang_strike", index: 0, level: 6, locked: 1b }, { id: "irons_spellbooks:fang_ward", index: 1, level: 4, locked: 1b }, { id: "irons_spellbooks:summon_vex", index: 2, level: 4, locked: 1b } ], maxSpells: 10, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:evoker_spell_book" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7075A8D529E3F074"]
+			id: "49AB9C5400682AA6"
+			rewards: [{
+				id: "104F2D385755CEBD"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "402138F279BB813E"
+				item: { components: { "irons_spellbooks:affinity_data": { bonuses: { "irons_spellbooks:acupuncture": 1, "irons_spellbooks:blood_needles": 1 } }, "irons_spellbooks:spell_container": { data: [ ], maxSpells: 10, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:cursed_doll_spell_book" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6916566DB8E87641"]
+			id: "31F11ABB49A4EB1A"
+			rewards: [{
+				id: "0CEED866979CA76D"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7EF7D536FCCA09C8"
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 10, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:villager_spell_book" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["36FF8729940963B3"]
+			id: "3EA80CB5C49D2C0D"
+			rewards: [{
+				id: "11FAB1CDEB7298CE"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "057C63D9E5018870"
+					item: { count: 1, id: "irons_spellbooks:archevoker_helmet" }
+					type: "item"
+				}
+				{
+					id: "46FDAEE8A9CB82F4"
+					item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:archevoker_chestplate" }
+					type: "item"
+				}
+				{
+					id: "441DDF0D6676B1DA"
+					item: { count: 1, id: "irons_spellbooks:archevoker_leggings" }
+					type: "item"
+				}
+				{
+					id: "1E8B193655BB68BA"
+					item: { count: 1, id: "irons_spellbooks:archevoker_boots" }
+					type: "item"
+				}
+			]
+			x: 11.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7075A8D529E3F074"]
+			id: "649A5301AF7976AA"
+			rewards: [{
+				id: "1A5FED2FE4E00E46"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "77FE2FD53D9E0C9A"
+					item: { count: 1, id: "irons_spellbooks:cultist_helmet" }
+					type: "item"
+				}
+				{
+					id: "658B270606107ABF"
+					item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:cultist_chestplate" }
+					type: "item"
+				}
+				{
+					id: "2D66ABB103A88EF2"
+					item: { count: 1, id: "irons_spellbooks:cultist_leggings" }
+					type: "item"
+				}
+				{
+					id: "00E5A4761A2A643F"
+					item: { count: 1, id: "irons_spellbooks:cultist_boots" }
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4AF56908F7A20C1C"]
+			id: "32116FCA1FA75F6B"
+			tasks: [{
+				id: "1BADB32C84B71823"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2E90710BAC475BEA"]
+			id: "4C758A8E88A6F894"
+			rewards: [{
+				id: "1C7E09D14EBC8C79"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7C19195217F918E6"
+					item: { count: 1, id: "irons_spellbooks:cryomancer_helmet" }
+					type: "item"
+				}
+				{
+					id: "47B8BEF1DEE02C79"
+					item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:cryomancer_chestplate" }
+					type: "item"
+				}
+				{
+					id: "436222BC902DE318"
+					item: { count: 1, id: "irons_spellbooks:cryomancer_leggings" }
+					type: "item"
+				}
+				{
+					id: "7DB4E09AD44F5E40"
+					item: { count: 1, id: "irons_spellbooks:cryomancer_boots" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C16CBEB46D46117"]
+			id: "45EF64AC40E8819F"
+			rewards: [{
+				id: "5B7BA2087F85DBA6"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "425D21D064855625"
+					item: { count: 1, id: "irons_spellbooks:shadowwalker_helmet" }
+					type: "item"
+				}
+				{
+					id: "705B8D958DDE3FF2"
+					item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:shadowwalker_chestplate" }
+					type: "item"
+				}
+				{
+					id: "66D02C67A3E4F062"
+					item: { count: 1, id: "irons_spellbooks:shadowwalker_leggings" }
+					type: "item"
+				}
+				{
+					id: "21CC5B6F5C987AF9"
+					item: { count: 1, id: "irons_spellbooks:shadowwalker_boots" }
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6916566DB8E87641"]
+			id: "4BF0F72FA3E16483"
+			rewards: [{
+				id: "23122A8511AB80D8"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "65FCD2ECF251CDE8"
+					item: { count: 1, id: "irons_spellbooks:priest_helmet" }
+					type: "item"
+				}
+				{
+					id: "2EA1EDA275126DA2"
+					item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:priest_chestplate" }
+					type: "item"
+				}
+				{
+					id: "2F031468D89E6DE8"
+					item: { count: 1, id: "irons_spellbooks:priest_leggings" }
+					type: "item"
+				}
+				{
+					id: "517D79D71D0B1CC2"
+					item: { count: 1, id: "irons_spellbooks:priest_boots" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C9B638743583835"]
+			id: "33C52E568A4B08BE"
+			rewards: [{
+				id: "73F14B4E61914392"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "23520C0670E4958B"
+					item: { count: 1, id: "irons_spellbooks:plagued_helmet" }
+					type: "item"
+				}
+				{
+					id: "4B49B6C7707FF563"
+					item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:plagued_chestplate" }
+					type: "item"
+				}
+				{
+					id: "312F2B6E563FCE03"
+					item: { count: 1, id: "irons_spellbooks:plagued_leggings" }
+					type: "item"
+				}
+				{
+					id: "158A39D5C9C667BA"
+					item: { count: 1, id: "irons_spellbooks:plagued_boots" }
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D91CAE028F0F87C"]
+			id: "714192565B0351CF"
+			rewards: [{
+				id: "5186221533FC74C1"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "34760F3659ADBF2A"
+				item: { count: 1, id: "irons_spellbooks:pyrium_staff" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2E90710BAC475BEA"]
+			id: "751E91442F995F00"
+			rewards: [{
+				id: "394D687FCBAE9145"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0406D8F4929AE06F"
+				item: { count: 1, id: "irons_spellbooks:ice_staff" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7C33BAEA5E7B816E"]
+			id: "6B14C91E12B2D9A1"
+			rewards: [{
+				id: "6AD498F43BD79BE6"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0CF0AB311827CE41"
+				item: { count: 1, id: "irons_spellbooks:lightning_rod" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7075A8D529E3F074"]
+			id: "3975481C9BEF1E29"
+			rewards: [
+				{
+					id: "49138AB49206D156"
+					item: {
+						count: 1
+						id: "dragonsurvival:heart_element"
+					}
+					type: "item"
+				}
+				{
+					id: "273F26C9EAE52CA7"
+					type: "xp"
+					xp: 7
+				}
+			]
+			tasks: [{
+				id: "0180D0506D578D75"
+				item: { count: 1, id: "irons_spellbooks:blood_staff" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["59880F400A213994"]
+			id: "272E28D0A27D81DB"
+			rewards: [{
+				id: "7061894A08DAFFC2"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "67FB6F6B0B936DE6"
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 8, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:rotten_spell_book" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["59880F400A213994"]
+			id: "74A5C0EA6F09A364"
+			rewards: [{
+				id: "11B28ED47C8D0779"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "43568E52FDB06242"
+				item: { count: 1, id: "irons_spellbooks:graybeard_staff" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["59880F400A213994"]
+			id: "27C1D45178FBD0CB"
+			rewards: [{
+				id: "73959D66C5CE0BD0"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "001C656DB53F77DE"
+				item: { count: 1, id: "irons_spellbooks:artificer_cane" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2BAB54C68CA03FC4"]
+			id: "02AF4CB5FD884344"
+			rewards: [{
+				id: "1F9431420348518E"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0E38DA2FAA6CA0B3"
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 8, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:gold_spell_book" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2BAB54C68CA03FC4"]
+			id: "6CE81F1229A56DE8"
+			rewards: [{
+				id: "4E5B0ECBAAF19257"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6B959FEF4750F769"
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 10, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:diamond_spell_book" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3D444EFF0DCDF382"]
+			hide_until_deps_complete: true
+			id: "0194B5EB60BD16F0"
+			rewards: [{
+				id: "64D64E248E3C569D"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "53404461959C9C8C"
+				item: { count: 1, id: "irons_spellbooks:eldritch_manuscript" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D444EFF0DCDF382"]
+			hide_until_deps_complete: true
+			id: "0C8926538B998AEC"
+			rewards: [{
+				id: "159944A109082B38"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6AFE80108C6AA234"
+				item: { count: 1, id: "irons_spellbooks:ruined_book" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0C8926538B998AEC"]
+			id: "404B0373072E8279"
+			rewards: [{
+				id: "5C56FD90B4CE75A4"
+				item: {
+					count: 1
+					id: "dragonsurvival:weak_dragon_heart"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6E5B516E2D2D49CE"
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 12, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:netherite_spell_book" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"0C8926538B998AEC"
+				"255FDC0FA11B8262"
+			]
+			hide_until_deps_complete: true
+			id: "622866C257178852"
+			rewards: [{
+				id: "506063DF9394CD3A"
+				item: {
+					count: 1
+					id: "dragonsurvival:elder_dragon_heart"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4A4F5077F911DF8F"
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 12, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:dragonskin_spell_book" }
+				type: "item"
+			}]
+			x: 14.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["59880F400A213994"]
+			id: "0D7987699A0F2C47"
+			rewards: [{
+				id: "6AF2C4B8919C0282"
+				item: {
+					count: 1
+					id: "dragonsurvival:weak_dragon_heart"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "31C03E230DCC2946"
+					item: { count: 1, id: "irons_spellbooks:netherite_mage_helmet" }
+					type: "item"
+				}
+				{
+					id: "0F141038B62F9690"
+					item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:netherite_mage_chestplate" }
+					type: "item"
+				}
+				{
+					id: "77CE66DE7ACB5043"
+					item: { count: 1, id: "irons_spellbooks:netherite_mage_leggings" }
+					type: "item"
+				}
+				{
+					id: "0E7162F7694FFDCC"
+					item: { count: 1, id: "irons_spellbooks:netherite_mage_boots" }
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2BAB54C68CA03FC4"]
+			id: "04ADC1D9D22CB85C"
+			tasks: [{
+				id: "6E1E48556F83922E"
+				item: { count: 1, id: "irons_spellbooks:lesser_spell_slot_upgrade" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["73BBF0E51641A8EB"]
+			hide_text_until_complete: true
+			icon: {
+				id: "goblintraders:vein_goblin_trader_spawn_egg"
+			}
+			id: "26DAC736FC87EFA1"
+			rewards: [{
+				id: "5695858833557FD5"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2BAE6B8DE17F593A"
+				observe_type: 5
+				timer: 0L
+				to_observe: "goblintraders:vein_goblin_trader"
+				type: "observation"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"41A41BD24597BEC0"
+				"037F76767B7B7B50"
+				"42DB3CD67CF3ACDD"
+				"7365EF3A1CAED952"
+				"5C84AADD309AED26"
+				"063BF9E1684BB19B"
+				"24C35FEEDB08DF0E"
+				"5405512A263C9DDC"
+				"268FC270E45A1BCA"
+				"6C75FC1A4E012D5F"
+				"4FAA9CB828891F8A"
+				"0C67D7B61346ADCF"
+				"6126A9CE79357F84"
+				"234C49E792EC075C"
+				"667220165003BC3B"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "229E5BE2265ED680"
+			rewards: [
+				{
+					auto: "enabled"
+					id: "7EF37D22D7DD9F4D"
+					type: "custom"
+				}
+				{
+					id: "57A583ECD884EB1F"
+					item: {
+						count: 1
+						id: "dragonsurvival:weak_dragon_heart"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					icon: {
+						id: "iceandfire:dragon_skull_fire"
+					}
+					id: "1E24DA4EE79C6222"
+					observe_type: 5
+					optional_task: true
+					timer: 0L
+					to_observe: "iceandfire:fire_dragon"
+					type: "observation"
+				}
+				{
+					icon: {
+						id: "iceandfire:dragon_skull_ice"
+					}
+					id: "03957DFB722086BF"
+					observe_type: 5
+					optional_task: true
+					timer: 0L
+					to_observe: "iceandfire:ice_dragon"
+					type: "observation"
+				}
+				{
+					icon: {
+						id: "iceandfire:dragon_skull_lightning"
+					}
+					id: "2BCE21315E8D2BBB"
+					observe_type: 5
+					optional_task: true
+					timer: 0L
+					to_observe: "iceandfire:lightning_dragon"
+					type: "observation"
+				}
+			]
+			x: 5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["73BBF0E51641A8EB"]
+			id: "41A41BD24597BEC0"
+			rewards: [{
+				id: "3BDE16D29ECB1D57"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				entity: "iceandfire:ghost"
+				id: "49392D57C4789575"
+				type: "kill"
+				value: 1L
+			}]
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["73BBF0E51641A8EB"]
+			hide_text_until_complete: true
+			icon: {
+				id: "iceandfire:spawn_egg_hippogryph"
+			}
+			id: "5C84AADD309AED26"
+			rewards: [{
+				id: "0F0012C1067FA459"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				entity: "iceandfire:hippogryph"
+				id: "6CC852382F3C2033"
+				optional_task: true
+				type: "kill"
+				value: 1L
+			}]
+			x: 12.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["73BBF0E51641A8EB"]
+			hide_text_until_complete: true
+			id: "268FC270E45A1BCA"
+			rewards: [{
+				id: "071ABE8FF8C96984"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				entity: "iceandfire:siren"
+				id: "2D1AA56CA4552149"
+				type: "kill"
+				value: 1L
+			}]
+			x: 11.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["73BBF0E51641A8EB"]
+			hide_text_until_complete: true
+			icon: {
+				id: "iceandfire:spawn_egg_cockatrice"
+			}
+			id: "6126A9CE79357F84"
+			rewards: [{
+				id: "4095D03E5857BC31"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					advancement: "iceandfire:iceandfire/tame_cockatrice"
+					criterion: ""
+					id: "33BAF2E3DF435095"
+					optional_task: true
+					type: "advancement"
+				}
+				{
+					entity: "iceandfire:cockatrice"
+					id: "4346BE7B0166D19D"
+					optional_task: true
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 10.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["73BBF0E51641A8EB"]
+			hide_text_until_complete: true
+			icon: {
+				id: "iceandfire:spawn_egg_hippocampus"
+			}
+			id: "6C75FC1A4E012D5F"
+			rewards: [{
+				id: "4DE8643C6CADD02E"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					id: "11310529A08FB6F0"
+					observe_type: 5
+					optional_task: true
+					timer: 0L
+					to_observe: "iceandfire:hippocampus"
+					type: "observation"
+				}
+				{
+					entity: "iceandfire:hippocampus"
+					id: "0F38135AAC8A2945"
+					optional_task: true
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 9.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["73BBF0E51641A8EB"]
+			icon: {
+				id: "iceandfire:spawn_egg_troll"
+			}
+			id: "063BF9E1684BB19B"
+			rewards: [{
+				id: "2CF7DB43852BED81"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					entity: "iceandfire:troll"
+					id: "141C70C84C05492C"
+					optional_task: true
+					type: "kill"
+					value: 1L
+				}
+				{
+					advancement: "iceandfire:iceandfire/kill_troll"
+					criterion: ""
+					id: "3CE1EC744417A71A"
+					optional_task: true
+					type: "advancement"
+				}
+			]
+			x: 8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"41A41BD24597BEC0"
+				"037F76767B7B7B50"
+				"42DB3CD67CF3ACDD"
+				"7365EF3A1CAED952"
+				"5C84AADD309AED26"
+				"063BF9E1684BB19B"
+				"24C35FEEDB08DF0E"
+				"5405512A263C9DDC"
+				"268FC270E45A1BCA"
+				"6C75FC1A4E012D5F"
+				"4FAA9CB828891F8A"
+				"0C67D7B61346ADCF"
+				"6126A9CE79357F84"
+				"234C49E792EC075C"
+				"667220165003BC3B"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				id: "iceandfire:dread_shard"
+			}
+			id: "6594B36E75D501E0"
+			rewards: [
+				{
+					auto: "enabled"
+					id: "4AEACD6587DD6F9C"
+					type: "custom"
+				}
+				{
+					id: "5DB808C38BC9C6CE"
+					item: {
+						count: 1
+						id: "dragonsurvival:weak_dragon_heart"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2C27EFD151B86A17"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["585D1B2950AA4607"]
+			id: "3D9B95AB81245013"
+			rewards: [{
+				id: "4477754972006D97"
+				item: {
+					count: 1
+					id: "dragonsurvival:elder_dragon_heart"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "54AABE283A98D4B8"
+					item: { count: 1, id: "dragonsurvival:dark_dragon_helmet" }
+					type: "item"
+				}
+				{
+					id: "21ECB9F6B3C8316E"
+					item: { count: 1, id: "dragonsurvival:dark_dragon_chestplate" }
+					type: "item"
+				}
+				{
+					id: "1C109D98608A1BA1"
+					item: { count: 1, id: "dragonsurvival:dark_dragon_leggings" }
+					type: "item"
+				}
+				{
+					id: "24B9CF34A010DFC8"
+					item: { count: 1, id: "dragonsurvival:dark_dragon_boots" }
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["12B81D7580B98AE9"]
+			id: "181CA7A87320229C"
+			rewards: [{
+				id: "5B6D25AC52C11F1A"
+				item: {
+					count: 1
+					id: "dragonsurvival:elder_dragon_heart"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7241CC4BC80AEA91"
+					item: { count: 1, id: "dragonsurvival:light_dragon_helmet" }
+					type: "item"
+				}
+				{
+					id: "3A549D128EDDCC3F"
+					item: { count: 1, id: "dragonsurvival:light_dragon_chestplate" }
+					type: "item"
+				}
+				{
+					id: "6FDAC939FAB3A739"
+					item: { count: 1, id: "dragonsurvival:light_dragon_leggings" }
+					type: "item"
+				}
+				{
+					id: "1300B43E31C7A6A6"
+					item: { count: 1, id: "dragonsurvival:light_dragon_boots" }
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"32B7A7CD7B4A8D9F"
+				"59880F400A213994"
+			]
+			id: "7A0F0D5AD879E1A7"
+			rewards: [{
+				id: "081580F323EBED3E"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "307E093282D9FAA1"
+				item: { count: 1, id: "irons_spellbooks:upgrade_orb" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4AF56908F7A20C1C"]
+			id: "406250F12A758B76"
+			tasks: [{
+				id: "0C5D7ACA2643B662"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 2.5d
 		}
 	]
 }

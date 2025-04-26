@@ -1,1 +1,0 @@
-Platform.mods.kubejs.name = 'Here Were Dragons'

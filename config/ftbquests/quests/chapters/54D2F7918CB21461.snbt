@@ -73,6 +73,14 @@
 					}
 					type: "item"
 				}
+				{
+					id: "13481B720950F022"
+					item: {
+						count: 1
+						id: "waystones:waystone"
+					}
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "26453DE608F3402B"
@@ -200,6 +208,11 @@
 			dependencies: ["616FEA8BA81A4AF1"]
 			hide_until_deps_complete: false
 			id: "5611D9A492180B3D"
+			rewards: [{
+				id: "65ECDA04F8CAA86D"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				advancement: "dragonsurvival:be_young_dragon"
 				criterion: ""
@@ -212,6 +225,11 @@
 		{
 			dependencies: ["5611D9A492180B3D"]
 			id: "3AAEADB2CD2BA908"
+			rewards: [{
+				id: "6C6AE38A5E3DDD78"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				advancement: "dragonsurvival:be_adult_dragon"
 				criterion: ""
@@ -219,7 +237,7 @@
 				type: "advancement"
 			}]
 			x: 0.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["616FEA8BA81A4AF1"]
@@ -245,6 +263,14 @@
 					item: {
 						count: 1
 						id: "dragonsurvival:heart_element"
+					}
+					type: "item"
+				}
+				{
+					id: "2D4852C773B1F0C1"
+					item: {
+						count: 1
+						id: "waystones:waystone"
 					}
 					type: "item"
 				}
@@ -461,7 +487,7 @@
 				type: "checkmark"
 			}]
 			x: 0.0d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["4E6ED770D83C4AFF"]
@@ -494,7 +520,7 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
+			x: 9.0d
 			y: -1.0d
 		}
 		{
@@ -512,6 +538,14 @@
 					item: {
 						count: 1
 						id: "dragonsurvival:heart_element"
+					}
+					type: "item"
+				}
+				{
+					id: "39B81D071ACF7609"
+					item: {
+						count: 1
+						id: "waystones:waystone"
 					}
 					type: "item"
 				}
@@ -543,6 +577,14 @@
 					}
 					type: "item"
 				}
+				{
+					id: "21D77E3AAF63BCA7"
+					item: {
+						count: 1
+						id: "waystones:sandy_waystone"
+					}
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "52BA1451344D83B3"
@@ -568,6 +610,14 @@
 					item: {
 						count: 1
 						id: "dragonsurvival:heart_element"
+					}
+					type: "item"
+				}
+				{
+					id: "55DA92028D4A7A41"
+					item: {
+						count: 1
+						id: "waystones:mossy_waystone"
 					}
 					type: "item"
 				}
@@ -600,6 +650,14 @@
 					}
 					type: "item"
 				}
+				{
+					id: "135F5AA55D9F5034"
+					item: {
+						count: 1
+						id: "waystones:waystone"
+					}
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "5F2655A7E6C8D8C0"
@@ -626,6 +684,14 @@
 					item: {
 						count: 1
 						id: "dragonsurvival:weak_dragon_heart"
+					}
+					type: "item"
+				}
+				{
+					id: "53C69EE930D0232C"
+					item: {
+						count: 1
+						id: "waystones:waystone"
 					}
 					type: "item"
 				}
@@ -658,6 +724,14 @@
 					}
 					type: "item"
 				}
+				{
+					id: "5BE40B73391509B6"
+					item: {
+						count: 1
+						id: "waystones:waystone"
+					}
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "278BB8EA13F1AF56"
@@ -687,6 +761,14 @@
 					}
 					type: "item"
 				}
+				{
+					id: "0E8ED88592D65561"
+					item: {
+						count: 1
+						id: "waystones:waystone"
+					}
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "5D64E04FCEF1DFF6"
@@ -700,6 +782,11 @@
 		{
 			dependencies: ["282D6DA8CBDD27E1"]
 			id: "5B0C82AB156F2992"
+			rewards: [{
+				id: "5D144DEDA9D98F43"
+				type: "xp"
+				xp: 2
+			}]
 			tasks: [{
 				id: "622691708BF35089"
 				type: "checkmark"
@@ -710,6 +797,11 @@
 		{
 			dependencies: ["282D6DA8CBDD27E1"]
 			id: "3CF598CC4E061D0E"
+			rewards: [{
+				id: "1EE27F54D2FBD850"
+				type: "xp"
+				xp: 2
+			}]
 			tasks: [{
 				id: "2D4D7ADEEA90E71F"
 				type: "checkmark"
@@ -720,6 +812,11 @@
 		{
 			dependencies: ["282D6DA8CBDD27E1"]
 			id: "4111BB6653AFE691"
+			rewards: [{
+				id: "735D7C70F368F55D"
+				type: "xp"
+				xp: 2
+			}]
 			tasks: [{
 				id: "56ECDCEA429A59B3"
 				type: "checkmark"
@@ -738,14 +835,28 @@
 					xp: 10
 				}
 				{
-					id: "3BFEBD148C56CD5B"
+					id: "043CF5DCB4B628F6"
 					item: {
 						count: 1
-						id: "dragonsurvival:heart_element"
+						id: "dragonsurvival:elder_dragon_heart"
+					}
+					type: "item"
+				}
+				{
+					id: "4DDB2438CF31E63D"
+					item: {
+						count: 1
+						id: "waystones:deepslate_waystone"
 					}
 					type: "item"
 				}
 			]
+			tasks: [{
+				id: "34116729194A652C"
+				item: { components: { "minecraft:custom_data": { gateway: "misc/ancient_city" } }, count: 1, id: "kubejs:dragon_conquest_trophy" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
 			x: 7.0d
 			y: 4.0d
 		}
@@ -767,8 +878,22 @@
 					}
 					type: "item"
 				}
+				{
+					id: "23B0258709878BA1"
+					item: {
+						count: 1
+						id: "waystones:waystone"
+					}
+					type: "item"
+				}
 			]
-			x: 5.0d
+			tasks: [{
+				id: "54C261FE42CCB7F6"
+				item: { components: { "minecraft:custom_data": { gateway: "misc/monument" } }, count: 1, id: "kubejs:dragon_conquest_trophy" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: 4.5d
 			y: 4.0d
 		}
 		{
@@ -782,14 +907,28 @@
 					xp: 10
 				}
 				{
-					id: "69979B2A69882415"
+					id: "2971840B307FFCA6"
 					item: {
 						count: 1
-						id: "dragonsurvival:heart_element"
+						id: "dragonsurvival:weak_dragon_heart"
+					}
+					type: "item"
+				}
+				{
+					id: "4CB13F0A8479D406"
+					item: {
+						count: 1
+						id: "waystones:waystone"
 					}
 					type: "item"
 				}
 			]
+			tasks: [{
+				id: "2F2CD01496BA09D9"
+				item: { components: { "minecraft:custom_data": { gateway: "misc/dragon_hunters_castle" } }, count: 1, id: "kubejs:dragon_conquest_trophy" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
 			x: 6.0d
 			y: 4.0d
 		}
@@ -808,6 +947,14 @@
 					item: {
 						count: 1
 						id: "dragonsurvival:weak_dragon_heart"
+					}
+					type: "item"
+				}
+				{
+					id: "3737280140BAA548"
+					item: {
+						count: 1
+						id: "waystones:waystone"
 					}
 					type: "item"
 				}
@@ -839,8 +986,22 @@
 					}
 					type: "item"
 				}
+				{
+					id: "3F2885CF8BC9F0F3"
+					item: {
+						count: 1
+						id: "waystones:waystone"
+					}
+					type: "item"
+				}
 			]
-			x: 4.0d
+			tasks: [{
+				id: "152125249E63CAD7"
+				item: { components: { "minecraft:custom_data": { gateway: "iceandfire/pixie_village" } }, count: 1, id: "kubejs:dragon_conquest_trophy" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: 3.5d
 			y: 4.0d
 		}
 		{
@@ -861,6 +1022,14 @@
 					}
 					type: "item"
 				}
+				{
+					id: "155AA866E0284F33"
+					item: {
+						count: 1
+						id: "waystones:mossy_waystone"
+					}
+					type: "item"
+				}
 			]
 			tasks: [
 				{
@@ -878,8 +1047,116 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
+			x: 2.5d
 			y: 4.0d
+		}
+		{
+			dependencies: [
+				"282D6DA8CBDD27E1"
+				"38FA1D29507FECC7"
+			]
+			hide_dependency_lines: true
+			id: "4B25854E1B58F6D2"
+			rewards: [
+				{
+					id: "363987F276B33AB7"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "2C96181FA2CE4818"
+					item: {
+						count: 1
+						id: "dragonsurvival:weak_dragon_heart"
+					}
+					type: "item"
+				}
+				{
+					id: "1A557440C7839342"
+					item: {
+						count: 1
+						id: "waystones:blackstone_waystone"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "091EAFB6728FAD7C"
+				item: { components: { "minecraft:custom_data": { gateway: "nether/fortress" } }, count: 1, id: "kubejs:dragon_conquest_trophy" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["282D6DA8CBDD27E1"]
+			hide_dependency_lines: true
+			id: "4E3DD58B4F778C34"
+			rewards: [
+				{
+					id: "10A5ACE74A7C33F2"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "40C685F0EA380434"
+					item: {
+						count: 1
+						id: "dragonsurvival:weak_dragon_heart"
+					}
+					type: "item"
+				}
+				{
+					id: "4730401492FB322C"
+					item: {
+						count: 1
+						id: "waystones:blackstone_waystone"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "73C0BC080963A566"
+				item: { components: { "minecraft:custom_data": { gateway: "nether/bastion_remnant" } }, count: 1, id: "kubejs:dragon_conquest_trophy" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["282D6DA8CBDD27E1"]
+			hide_dependency_lines: true
+			id: "0ACD08382118A6CE"
+			rewards: [
+				{
+					id: "4F2F48BA1C882DBD"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "73121D76EC846E2A"
+					item: {
+						count: 1
+						id: "dragonsurvival:weak_dragon_heart"
+					}
+					type: "item"
+				}
+				{
+					id: "77D1932660B34397"
+					item: {
+						count: 1
+						id: "waystones:blackstone_waystone"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "7A9F8B74CE9D29B0"
+				item: { components: { "minecraft:custom_data": { gateway: "nether/ancient_battleground" } }, count: 1, id: "kubejs:dragon_conquest_trophy" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 2.5d
 		}
 	]
 }

@@ -3,12 +3,13 @@
 	default_quest_shape: ""
 	filename: "2"
 	group: ""
+	hide_quest_details_until_startable: true
 	id: "1E283E445F4D2ED1"
 	images: [{
-		height: 12.0d
+		height: 20.0d
 		image: "kubejs:textures/task/chapter2.png"
 		rotation: 0.0d
-		width: 12.0d
+		width: 20.0d
 		x: 0.0d
 		y: -3.5d
 	}]
@@ -16,17 +17,8 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["3DCEA15CB8E9D815"]
-			id: "12CA7C92D23CF9A4"
-			tasks: [{
-				id: "7519ED2CAF4B9CEC"
-				type: "checkmark"
-			}]
-			x: 0.0d
-			y: 0.0d
-		}
-		{
 			id: "23AF0BA2CFF8572C"
+			invisible: true
 			tasks: [{
 				advancement: "minecraft:story/enter_the_end"
 				criterion: ""
@@ -34,7 +26,7 @@
 				type: "advancement"
 			}]
 			x: 0.0d
-			y: -3.0d
+			y: -5.5d
 		}
 		{
 			id: "31DC355F5D46AE7F"
@@ -50,7 +42,7 @@
 				type: "observation"
 			}]
 			x: 0.0d
-			y: -4.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["31DC355F5D46AE7F"]
@@ -73,9 +65,10 @@
 				}
 			]
 			x: 0.0d
-			y: -5.5d
+			y: -8.0d
 		}
 		{
+			dependencies: ["23AF0BA2CFF8572C"]
 			id: "5D9019A625D83B8C"
 			tasks: [{
 				advancement: "dragonsurvival:find_end_structures"
@@ -84,7 +77,7 @@
 				type: "advancement"
 			}]
 			x: 1.5d
-			y: -4.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["31DC355F5D46AE7F"]
@@ -95,7 +88,629 @@
 				type: "checkmark"
 			}]
 			x: -1.0d
-			y: -4.5d
+			y: -7.0d
+		}
+		{
+			hide_until_deps_complete: true
+			id: "38FA1D29507FECC7"
+			rewards: [{
+				id: "0FAE952EB0EDFBC3"
+				type: "xp"
+				xp: 2
+			}]
+			tasks: [{
+				advancement: "minecraft:story/enter_the_nether"
+				criterion: ""
+				id: "3BABC68E4480D8F5"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["38FA1D29507FECC7"]
+			id: "723B1D23AE2C2203"
+			rewards: [{
+				id: "67523F9D7213EB16"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				advancement: "minecraft:nether/find_fortress"
+				criterion: ""
+				id: "4D3257F3078BD9C9"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"69400AAE99778064"
+				"5A815B9B714CDA2B"
+				"32B7A7CD7B4A8D9F"
+			]
+			hide_until_deps_complete: true
+			id: "2719E15494771733"
+			rewards: [{
+				id: "5679A725FA9BE8FA"
+				item: {
+					components: {
+						"irons_spellbooks:furled_map_data": {
+							descriptionOverride: {
+								translate: "item.irons_spellbooks.citadel_map"
+							}
+							destination: "minecraft:stronghold"
+							dimension: "minecraft:overworld"
+						}
+						"minecraft:lore": ["{\"color\":\"gray\",\"translate\":\"item.irons_spellbooks.furled_map_descriptor_framing\",\"with\":[{\"translate\":\"item.irons_spellbooks.citadel_map\"}]}"]
+					}
+					count: 1
+					id: "irons_spellbooks:furled_map_ancient"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5456A20ED379BCB6"
+				item: { count: 1, id: "minecraft:ender_eye" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["38FA1D29507FECC7"]
+			id: "331B495AF21543AA"
+			rewards: [{
+				id: "5C3D56BB97047146"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				advancement: "minecraft:nether/find_bastion"
+				criterion: ""
+				id: "68130749A3492C8B"
+				type: "advancement"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["38FA1D29507FECC7"]
+			icon: {
+				id: "minecraft:netherite_helmet"
+			}
+			id: "1EDD652A5A099001"
+			rewards: [{
+				id: "085AA9F3F555CCE8"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "3A5CFD5DDC6E68EB"
+				structure: "irons_spellbooks:ancient_battleground"
+				type: "structure"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["38FA1D29507FECC7"]
+			hide_dependency_lines: true
+			icon: {
+				id: "irons_spellbooks:cinderous_soulcaller"
+			}
+			id: "0D607F2703E44ADB"
+			rewards: [
+				{
+					id: "0416FE6158BF30B5"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "6AE0D36EAD7BF335"
+					item: {
+						count: 1
+						id: "dragonsurvival:heart_element"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "31E100B60833B54E"
+				structure: "irons_spellbooks:citadel"
+				type: "structure"
+			}]
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["723B1D23AE2C2203"]
+			hide_text_until_complete: true
+			hide_until_deps_complete: true
+			id: "5A815B9B714CDA2B"
+			rewards: [{
+				id: "0007D8584E48DE85"
+				item: {
+					count: 1
+					id: "dragonsurvival:weak_dragon_heart"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "minecraft:nether/obtain_blaze_rod"
+				criterion: ""
+				id: "4E1094E9767828B6"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1EDD652A5A099001"]
+			hide_text_until_complete: true
+			hide_until_deps_complete: true
+			id: "32B7A7CD7B4A8D9F"
+			rewards: [{
+				id: "22E62527C113EFAE"
+				item: {
+					count: 1
+					id: "dragonsurvival:weak_dragon_heart"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "728FAED4910B5C45"
+				item: { count: 1, id: "irons_spellbooks:cinder_essence" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["331B495AF21543AA"]
+			hide_text_until_complete: true
+			hide_until_deps_complete: true
+			id: "69400AAE99778064"
+			rewards: [{
+				id: "0B5F5B5B41D54D5C"
+				item: {
+					count: 1
+					id: "dragonsurvival:weak_dragon_heart"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "525918A14DD3A512"
+				item: { count: 1, id: "minecraft:netherite_upgrade_smithing_template" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["38FA1D29507FECC7"]
+			hide_dependency_lines: true
+			id: "626951C87CA6FF5C"
+			rewards: [
+				{
+					id: "5F9973393ABD2838"
+					item: {
+						count: 1
+						id: "dragonsurvival:heart_element"
+					}
+					type: "item"
+				}
+				{
+					id: "41F25B0799D71033"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "4D57264EE45240CF"
+					item: { count: 1, id: "minecraft:ancient_debris" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "168651EC67469CF0"
+					item: { count: 1, id: "minecraft:netherite_scrap" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "77A31C7842161287"
+					item: { count: 1, id: "minecraft:netherite_ingot" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["38FA1D29507FECC7"]
+			hide_dependency_lines: true
+			id: "2BAB54C68CA03FC4"
+			rewards: [
+				{
+					id: "397E4E69E960D423"
+					item: {
+						count: 1
+						id: "dragonsurvival:heart_element"
+					}
+					type: "item"
+				}
+				{
+					id: "25D2E290433CDEBF"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "37FE4BD22E9C6364"
+				item: { count: 1, id: "irons_spellbooks:hogskin" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["38FA1D29507FECC7"]
+			hide_dependency_lines: true
+			id: "06398A1A4B38AEB3"
+			rewards: [
+				{
+					id: "417EBF5A00CF66C1"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "545E5C1901BA9379"
+					item: {
+						count: 1
+						id: "dragonsurvival:heart_element"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				biome: "minecraft:warped_forest"
+				icon: {
+					id: "minecraft:warped_nylium"
+				}
+				id: "2DA41B9088DB00F8"
+				type: "biome"
+			}]
+			x: -3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2719E15494771733"]
+			id: "5FD18095CAFF58C1"
+			rewards: [{
+				id: "2C64845361908096"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				icon: {
+					id: "irons_spellbooks:wayward_compass"
+				}
+				id: "3AEE2351E4974023"
+				structure: "irons_spellbooks:catacombs"
+				type: "structure"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2719E15494771733"]
+			id: "22A8EB2E464D3E8F"
+			rewards: [{
+				id: "7E7F2A8B0E426903"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "minecraft:nether/get_wither_skull"
+				criterion: ""
+				id: "6AF8120151FCC2FB"
+				type: "advancement"
+			}]
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2719E15494771733"]
+			id: "26ABF38D15542AA7"
+			invisible: true
+			tasks: [{
+				advancement: "minecraft:story/follow_ender_eye"
+				criterion: ""
+				id: "7D4ED6DA99FC3B81"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2719E15494771733"]
+			id: "17283D37B8C277E9"
+			rewards: [{
+				id: "00EE5437714B73DD"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "661BB655E2A57941"
+				item: { count: 1, id: "dragonsurvival:dragon_rider_workbench" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["17283D37B8C277E9"]
+			id: "12B81D7580B98AE9"
+			rewards: [{
+				id: "5EEFE1F66F1E6B30"
+				item: {
+					count: 1
+					id: "dragonsurvival:weak_dragon_heart"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "623387763504D98A"
+				item: { count: 1, id: "dragonsurvival:light_key" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2719E15494771733"]
+			id: "585D1B2950AA4607"
+			rewards: [{
+				id: "216A34C2D7856735"
+				item: {
+					count: 1
+					id: "dragonsurvival:weak_dragon_heart"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5B5E73B066896988"
+				item: { count: 1, id: "dragonsurvival:dark_key" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["359A9A3913E17DCA"]
+			id: "60830ED5AECF3D46"
+			rewards: [{
+				id: "38D4488FBB916E7A"
+				item: {
+					count: 1
+					id: "dragonsurvival:weak_dragon_heart"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3FBC324BBB86A89D"
+				item: { count: 1, id: "dragonsurvival:hunter_key" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2719E15494771733"]
+			id: "359A9A3913E17DCA"
+			rewards: [{
+				id: "58EBCD7934F0FDD0"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "23597BA35419CCAE"
+				item: { count: 1, id: "dragonsurvival:spearman_promotion" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5FD18095CAFF58C1"]
+			hide_until_deps_complete: true
+			id: "0CDDBEB62F67D00F"
+			rewards: [
+				{
+					id: "5010760FDB87B84A"
+					item: {
+						count: 1
+						id: "dragonsurvival:elder_dragon_heart"
+					}
+					type: "item"
+				}
+				{
+					id: "1ABBABE1E1C16290"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				entity: "irons_spellbooks:dead_king"
+				icon: {
+					id: "irons_spellbooks:dead_king_corpse_spawn_egg"
+				}
+				id: "3AD4B7F1592292C3"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2719E15494771733"]
+			id: "42EE16FFAECD0B69"
+			rewards: [{
+				id: "71446AFF1F520D34"
+				type: "xp"
+				xp: 2
+			}]
+			tasks: [{
+				id: "2267D61C4668E8DD"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2719E15494771733"]
+			icon: {
+				id: "minecraft:sculk"
+			}
+			id: "427D8294D27C7B4B"
+			rewards: [{
+				id: "48732CF5D819DEB4"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "598C2E2C7C6EDE4A"
+				structure: "minecraft:ancient_city"
+				type: "structure"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2719E15494771733"]
+			icon: {
+				id: "minecraft:cut_copper"
+			}
+			id: "7B9F4B7957E5BABA"
+			rewards: [
+				{
+					id: "5AF73C8CCC3CB897"
+					item: {
+						count: 1
+						id: "dragonsurvival:weak_dragon_heart"
+					}
+					type: "item"
+				}
+				{
+					id: "4088F045B56563C1"
+					item: {
+						count: 1
+						id: "dragonsurvival:heart_element"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "42B5FE2C54BD497B"
+				structure: "minecraft:trial_chambers"
+				type: "structure"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["32B7A7CD7B4A8D9F"]
+			id: "6F9B4AA268975B8D"
+			rewards: [{
+				id: "42A05F57BE2528C4"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4A1D614AED76070F"
+				item: { count: 1, id: "irons_spellbooks:alchemist_cauldron" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["22A8EB2E464D3E8F"]
+			hide_until_deps_complete: true
+			id: "0C526E83701415D6"
+			rewards: [
+				{
+					id: "3C09BC0F58CCC00F"
+					item: {
+						count: 1
+						id: "dragonsurvival:elder_dragon_heart"
+					}
+					type: "item"
+				}
+				{
+					id: "627A534895E87211"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				entity: "minecraft:wither"
+				id: "5583149628CD2CAB"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["427D8294D27C7B4B"]
+			hide_until_deps_complete: true
+			id: "110CB24495E83671"
+			rewards: [
+				{
+					id: "051D33919DFC524A"
+					item: {
+						count: 1
+						id: "dragonsurvival:elder_dragon_heart"
+					}
+					type: "item"
+				}
+				{
+					id: "40FA6DF485A67AAB"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				entity: "minecraft:warden"
+				id: "2F3198521E4D5CAD"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.0d
+			y: -2.5d
 		}
 	]
 }

@@ -133,35 +133,43 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"minecraft:squid": true
-			"minecraft:pufferfish": false
-			"minecraft:enderman": true
-			"aquaculture:brown_trout": false
-			"minecraft:witch": true
-			"minecraft:phantom": true
-			"aquaculture:perch": false
-			"minecraft:bat": true
-			"minecraft:rabbit": true
+			"aquaculture:carp": false
+			"irons_spellbooks:cursed_armor_stand": true
 			"aquaculture:smallmouth_bass": false
+			"aquaculture:bluegill": false
+			"minecraft:piglin": true
+			"aquaculture:brown_trout": false
+			"minecraft:spider": true
+			"minecraft:ghast": true
+			"minecraft:witch": true
+			"aquaculture:gar": false
+			"minecraft:phantom": true
+			"minecraft:zombified_piglin": true
+			"minecraft:enderman": true
+			"minecraft:glow_squid": true
+			"minecraft:cow": true
+			"minecraft:skeleton": true
+			"minecraft:drowned": true
+			"minecraft:trader_llama": true
+			"minecraft:rabbit": true
+			"minecraft:zombie": true
+			"minecraft:villager": true
+			"minecraft:pig": true
+			"aquaculture:minnow": false
+			"minecraft:zombie_villager": true
+			"minecraft:pufferfish": false
+			"irons_spellbooks:necromancer": true
+			"minecraft:squid": true
+			"minecraft:sheep": true
+			"minecraft:wandering_trader": true
+			"minecraft:bat": true
+			"minecraft:chicken": true
+			"aquaculture:perch": false
 			"minecraft:tropical_fish": false
 			"minecraft:creeper": true
-			"minecraft:villager": true
-			"aquaculture:carp": false
-			"minecraft:sheep": true
-			"minecraft:zombie": true
-			"minecraft:spider": true
-			"minecraft:pig": true
-			"minecraft:glow_squid": true
 			"minecraft:iron_golem": true
-			"aquaculture:bluegill": false
-			"minecraft:drowned": true
 			"aquaculture:muskellunge": false
-			"aquaculture:minnow": false
-			"minecraft:chicken": true
-			"minecraft:cow": true
-			"irons_spellbooks:necromancer": true
-			"minecraft:skeleton": true
-			"aquaculture:gar": false
+			"minecraft:strider": true
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)

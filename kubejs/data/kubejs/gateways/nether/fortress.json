@@ -1,0 +1,121 @@
+{
+    "color": "#b04343",
+    "failures": [
+        {
+            "command": "/whredragonswent conquest failure @p[tag=dragon_conquest_challenger]",
+            "desc": "占领失败",
+            "type": "gateways:command"
+        }
+    ],
+    "rewards": [
+        {
+            "command": "/whredragonswent conquest finish @p[tag=dragon_conquest_challenger]",
+            "desc": "占领成功",
+            "type": "gateways:command"
+        },
+        {
+            "experience": 200,
+            "orb_size": 25,
+            "type": "gateways:experience"
+        },
+        {
+            "stack": {
+                "components": {
+                    "minecraft:custom_data": {
+                        "gateway": "nether/fortress"
+                    }
+                },
+                "count": 1,
+                "id": "kubejs:dragon_conquest_trophy"
+            },
+            "type": "gateways:stack"
+        }
+    ],
+    "rules": {
+        "fail_on_out_of_bounds": false
+    },
+    "size": "small",
+    "spawn_algorithm": "gateways:inward_spiral",
+    "type": "gateways:normal",
+    "waves": [
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 4,
+                    "entity": "minecraft:wither_skeleton"
+                }
+            ],
+            "max_wave_time": 800,
+            "rewards": [],
+            "setup_time": 100
+        },
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 4,
+                    "entity": "minecraft:blaze"
+                }
+            ],
+            "max_wave_time": 800,
+            "rewards": [],
+            "setup_time": 100
+        },
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 3,
+                    "entity": "minecraft:blaze"
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 3,
+                    "entity": "minecraft:wither_skeleton"
+                }
+            ],
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.15
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 2.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.15
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:projectile_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.15
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.knockback_resistance",
+                    "operation": "add_value",
+                    "value": 0.05
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": 0.05
+                }
+            ],
+            "max_wave_time": 800,
+            "rewards": [],
+            "setup_time": 100
+        }
+    ]
+}

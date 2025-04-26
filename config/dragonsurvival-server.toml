@@ -312,7 +312,7 @@
 	#Determines the chance (in %) of elder dragon hearts dropping from entities with a maximum health above 50
 	# Default: 0.01
 	# Range: 0.0 ~ 1.0
-	elder_dragon_heart_chance = 0.01
+	elder_dragon_heart_chance = 0.005
 
 	[drops.ore]
 		#Determines the chance (in %) of bones dropping when a dragon harvests an ore block

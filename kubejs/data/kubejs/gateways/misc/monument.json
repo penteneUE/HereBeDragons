@@ -1,0 +1,84 @@
+{
+    "type": "gateways:normal",
+    "color": "#33AE53",
+    "rewards": [
+        {
+            "type": "gateways:command",
+            "command": "/whredragonswent conquest finish @p[tag=dragon_conquest_challenger]",
+            "desc": "占领成功"
+        },
+        {
+            "type": "gateways:experience",
+            "experience": 200,
+            "orb_size": 25
+        },
+        {
+            "type": "gateways:stack",
+            "stack": {
+                "id": "kubejs:dragon_conquest_trophy",
+                "count": 1,
+                "components": {
+                    "minecraft:custom_data": {
+                        "gateway": "misc/monument"
+                    }
+                }
+            }
+        }
+    ],
+    "failures": [
+        {
+            "type": "gateways:command",
+            "command": "/whredragonswent conquest failure @p[tag=dragon_conquest_challenger]",
+            "desc": "占领失败"
+        }
+    ],
+    "size": "small",
+    "waves": [
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 4,
+                    "entity": "minecraft:guardian"
+                }
+            ],
+            "max_wave_time": 800,
+            "rewards": [],
+            "setup_time": 100
+        },
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 4,
+                    "entity": "minecraft:guardian"
+                }
+            ],
+            "max_wave_time": 800,
+            "rewards": [],
+            "setup_time": 100
+        },
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 3,
+                    "entity": "minecraft:guardian"
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 1,
+                    "entity": "minecraft:elder_guardian"
+                }
+            ],
+            "max_wave_time": 800,
+            "modifiers": [],
+            "rewards": [],
+            "setup_time": 150
+        }
+    ],
+    "spawn_algorithm": "gateways:inward_spiral",
+    "rules":{
+        "fail_on_out_of_bounds": false
+    }
+}

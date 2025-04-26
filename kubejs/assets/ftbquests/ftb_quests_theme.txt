@@ -26,5 +26,8 @@ edit_icon:            ftblibrary:icons/settings
 move_up_icon:         ftblibrary:icons/up
 move_down_icon:       ftblibrary:icons/down
 
+quest_spacing:                      1.0
+pinned_quest_size:                  0.75
+
 checkmark_task_active:   ftblibrary:icons/accept
 checkmark_task_inactive: ftblibrary:icons/accept_gray

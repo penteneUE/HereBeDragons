@@ -23,16 +23,6 @@
                     }
                 }
             }
-        },
-        {
-            "type": "gateways:stack",
-            "stack": {
-                "id": "iceandfire:myrmex_jungle_egg",
-                "count": 1,
-                "components": {
-                    "iceandfire:int": 4
-                }
-            }
         }
     ],
     "failures": [
@@ -68,7 +58,7 @@
                 {
                     "type": "gateways:standard",
                     "count": 1,
-                    "entity": "iceandfire:myrmex_queen",
+                    "entity": "iceandfire:myrmex_sentinel",
                     "nbt": {"GrowthTicks": 1, "Variant": 1, "GrowthStage": 2}
                 }
             ],

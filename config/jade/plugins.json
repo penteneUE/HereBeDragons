@@ -38,7 +38,7 @@
     "player_head": true,
     "lectern": true,
     "entity_armor": true,
-    "harvest_tool.creative": false,
+    "harvest_tool.creative": true,
     "horse_stats": true,
     "item_tooltip": true,
     "entity_health": true,
@@ -64,10 +64,6 @@
   },
   "jadeaddons.lootr": {
     "info": true
-  },
-  "toms_storage": {
-    "inventory_config": true,
-    "inventory_connector": true
   },
   "supplementaries": {
     "hat_stand": true

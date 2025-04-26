@@ -1,4 +1,12 @@
 ItemEvents.modifyTooltips((event) => {
+    event.add("iceandfire:ambrosia", [
+        Text.gray({ translate: "kubejs.tooltips.ambrosia.1" }),
+    ]);
+
+    event.add("#kubejs:dragon_reproduction_item", [
+        Text.gray({ translate: "kubejs.tooltips.dragon_reproduction_item.1" }),
+    ]);
+
     // Add tooltip to all of these items
     event.add("kubejs:dragon_flag", [
         Text.gray({ translate: "kubejs.tooltips.dragon_flag.1" }),
@@ -32,7 +40,9 @@ ItemEvents.dynamicTooltips("kubejs:dragon_conquest_trophy", (event) => {
     );
     event.add(
         Text.translate("kubejs.tooltips.dragon_conquest_trophy.structure", [
-            `${item.getCustomData().getString("gateway")}`,
+            Text.translate(
+                `kubejs.${item.getCustomData().getString("gateway")}`
+            ),
         ]).darkAqua()
     );
 });
