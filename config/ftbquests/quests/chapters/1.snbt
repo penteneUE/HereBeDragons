@@ -853,6 +853,7 @@
 				"2D2C98446CE4035C"
 				"6E24DAAE54A4354F"
 			]
+			hide_until_deps_complete: true
 			id: "6E57F7CF05BF6FBC"
 			rewards: [
 				{
@@ -910,20 +911,27 @@
 		{
 			dependencies: ["3BD438085B5F7C2B"]
 			id: "453877F6BFEAC469"
-			rewards: [{
-				id: "5994B345A7121C7F"
-				item: {
-					count: 1
-					id: "dragonsurvival:heart_element"
+			rewards: [
+				{
+					id: "71D6B82E4C5256EB"
+					item: {
+						count: 1
+						id: "dragonsurvival:weak_dragon_heart"
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "3DF7A5221B9E7729"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "7D4B0D6AB1970D4A"
 				item: { components: { "ftbfiltersystem:filter": "item(irons_spellbooks:scroll)or(component(fuzzy:{\"irons_spellbooks:spell_container\":{data:[{id:\"kubejs:taotie_fabel\",index:0,level:1,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}})component(fuzzy:{\"irons_spellbooks:spell_container\":{data:[{id:\"kubejs:taotie_fabel\",index:0,level:2,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}})component(fuzzy:{\"irons_spellbooks:spell_container\":{data:[{id:\"kubejs:taotie_fabel\",index:0,level:3,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}})component(fuzzy:{\"irons_spellbooks:spell_container\":{data:[{id:\"kubejs:taotie_fabel\",index:0,level:4,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}})component(fuzzy:{\"irons_spellbooks:spell_container\":{data:[{id:\"kubejs:taotie_fabel\",index:0,level:5,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}})component(fuzzy:{\"irons_spellbooks:spell_container\":{data:[{id:\"kubejs:taotie_fabel\",index:0,level:6,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}})component(fuzzy:{\"irons_spellbooks:spell_container\":{data:[{id:\"kubejs:taotie_fabel\",index:0,level:7,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}})component(fuzzy:{\"irons_spellbooks:spell_container\":{data:[{id:\"kubejs:taotie_fabel\",index:0,level:8,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}})component(fuzzy:{\"irons_spellbooks:spell_container\":{data:[{id:\"kubejs:taotie_fabel\",index:0,level:9,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}})component(fuzzy:{\"irons_spellbooks:spell_container\":{data:[{id:\"kubejs:taotie_fabel\",index:0,level:10,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}}))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.0d
 			y: -9.0d
 		}
 		{
@@ -1051,6 +1059,32 @@
 			}]
 			x: -5.0d
 			y: -1.0d
+		}
+		{
+			dependencies: ["3BD438085B5F7C2B"]
+			id: "36B2630E0DED3483"
+			rewards: [
+				{
+					id: "0D4AA4C92BA9D19F"
+					item: {
+						count: 1
+						id: "dragonsurvival:weak_dragon_heart"
+					}
+					type: "item"
+				}
+				{
+					id: "7E9F4A61728889E3"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "51D59C77C6425435"
+				item: { components: { "ftbfiltersystem:filter": "item(irons_spellbooks:scroll)or(component(fuzzy:{\"irons_spellbooks:spell_container\":{data:[{id:\"kubejs:ananta_remanta\",index:0,level:1,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}})component(fuzzy:{\"irons_spellbooks:spell_container\":{data:[{id:\"kubejs:ananta_remanta\",index:0,level:2,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}})component(fuzzy:{\"irons_spellbooks:spell_container\":{data:[{id:\"kubejs:ananta_remanta\",index:0,level:3,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}})component(fuzzy:{\"irons_spellbooks:spell_container\":{data:[{id:\"kubejs:ananta_remanta\",index:0,level:4,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}})component(fuzzy:{\"irons_spellbooks:spell_container\":{data:[{id:\"kubejs:ananta_remanta\",index:0,level:5,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}})component(fuzzy:{\"irons_spellbooks:spell_container\":{data:[{id:\"kubejs:ananta_remanta\",index:0,level:6,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}}))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -9.0d
 		}
 	]
 }

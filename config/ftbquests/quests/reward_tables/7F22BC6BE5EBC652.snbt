@@ -17,12 +17,5 @@
 			team_reward: false
 			type: "command"
 		}
-		{
-			command: "/whredragonswent onlydragon @p true"
-			id: "413115F9649563A3"
-			permission_level: 4
-			team_reward: false
-			type: "command"
-		}
 	]
 }

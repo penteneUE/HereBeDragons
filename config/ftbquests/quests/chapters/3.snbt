@@ -3,36 +3,347 @@
 	default_quest_shape: ""
 	filename: "3"
 	group: ""
+	icon: {
+		components: {
+			"irons_spellbooks:affinity_data": {
+				bonuses: {
+					"irons_spellbooks:raise_dead": 2
+				}
+			}
+			"irons_spellbooks:spell_container": {
+				data: [
+					{
+						id: "irons_spellbooks:blood_slash"
+						index: 0
+						level: 5
+						locked: 1b
+					}
+					{
+						id: "irons_spellbooks:blood_step"
+						index: 1
+						level: 5
+						locked: 1b
+					}
+					{
+						id: "irons_spellbooks:ray_of_siphoning"
+						index: 2
+						level: 5
+						locked: 1b
+					}
+					{
+						id: "irons_spellbooks:blaze_storm"
+						index: 3
+						level: 5
+						locked: 1b
+					}
+				]
+				maxSpells: 10
+				mustEquip: 1b
+				spellWheel: 1b
+			}
+		}
+		id: "irons_spellbooks:necronomicon_spell_book"
+	}
 	id: "48A57AF2FDDDF708"
+	images: [
+		{
+			dependency: "11E2340A98F4A0BE"
+			height: 6.0d
+			image: "kubejs:textures/task/chapter3_1.png"
+			rotation: 0.0d
+			width: 6.0d
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependency: "2BE232CDDBA5862A"
+			height: 6.0d
+			image: "kubejs:textures/task/chapter3_2.png"
+			rotation: 0.0d
+			width: 6.0d
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependency: "4CC5FEDA384F4FB5"
+			height: 6.0d
+			image: "kubejs:textures/task/chapter3_3.png"
+			rotation: 0.0d
+			width: 6.0d
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependency: "6D8BE1493A9030C1"
+			height: 6.6d
+			image: "kubejs:textures/task/chapter3_4.png"
+			rotation: 0.0d
+			width: 6.6d
+			x: 0.0d
+			y: -9.5d
+		}
+	]
 	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["79C4B032A9B1F772"]
+			hide_dependency_lines: true
 			id: "2A53602F5DD6482A"
+			rewards: [{
+				id: "7AEFEB77882D9FD9"
+				type: "custom"
+			}]
 			tasks: [{
 				id: "0C88B4341C81B301"
 				type: "checkmark"
 			}]
 			x: 0.0d
-			y: 0.0d
+			y: -16.5d
 		}
 		{
-			id: "49F49837CBAF8ACE"
-			tasks: [{
-				id: "4CD6A26B5F472A41"
-				type: "checkmark"
-			}]
-			x: -2.0d
-			y: 0.0d
-		}
-		{
+			dependencies: [
+				"79C4B032A9B1F772"
+				"3C2422EE5831C05E"
+			]
 			id: "05F9D9DD6B1919D6"
+			shape: "diamond"
 			tasks: [{
 				id: "2822EAC9B59C30DF"
 				type: "checkmark"
 			}]
-			x: 1.5d
-			y: 0.0d
+			x: -1.0d
+			y: -15.0d
+		}
+		{
+			hide_text_until_complete: true
+			icon: {
+				id: "minecraft:grass_block"
+			}
+			id: "6749719575273054"
+			rewards: [{
+				id: "56FFD333F2F51A87"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "69C1EC6E477AFEF8"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6749719575273054"]
+			hide_until_deps_complete: true
+			id: "11E2340A98F4A0BE"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "3DFE110BB5247C9A"
+					ignore_reward_blocking: true
+					stage: "quest/world_ender_stage_0"
+					type: "gamestage"
+				}
+				{
+					id: "30E92623A0A45F3B"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "46E67806377DF8B0"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["11E2340A98F4A0BE"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:mycelium"
+			}
+			id: "2BE232CDDBA5862A"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "51941A307BD1C427"
+					ignore_reward_blocking: true
+					stage: "quest/world_ender_stage_2"
+					type: "gamestage"
+				}
+				{
+					id: "2EBE1F2F55AC3C4D"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				icon: {
+					id: "minecraft:honey_bottle"
+				}
+				id: "4B8DD99677F68AA8"
+				stage: "quest/world_ender_stage_1"
+				type: "gamestage"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2BE232CDDBA5862A"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:dripstone_block"
+			}
+			id: "4CC5FEDA384F4FB5"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "4CB0E64D5F6C783B"
+					ignore_reward_blocking: true
+					stage: "quest/world_ender_stage_4"
+					type: "gamestage"
+				}
+				{
+					id: "15E0B73813779DC0"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				icon: {
+					id: "minecraft:water_bucket"
+				}
+				id: "446F6CA204F67F1D"
+				stage: "quest/world_ender_stage_3"
+				type: "gamestage"
+			}]
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["4CC5FEDA384F4FB5"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:dead_fire_coral_block"
+			}
+			id: "6D8BE1493A9030C1"
+			rewards: [{
+				id: "1AB7C88CA3EBDAC0"
+				item: {
+					count: 1
+					id: "dragonsurvival:elder_dragon_heart"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				icon: {
+					id: "minecraft:campfire"
+				}
+				id: "3F305F1A7732BE81"
+				stage: "quest/world_ender_stage_completed"
+				type: "gamestage"
+			}]
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["6D8BE1493A9030C1"]
+			hide_until_deps_complete: true
+			id: "57A21C4ECAA059D4"
+			shape: "diamond"
+			tasks: [{
+				id: "0579C0FC39DF6F2C"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["6749719575273054"]
+			hide_dependency_lines: true
+			id: "5F84B310BEC46BE3"
+			invisible: true
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/whredragonswent onlydragon @p false"
+					feedback_message: "可以变回人类了！"
+					icon: {
+						id: "dragonsurvival:wing_grant"
+					}
+					id: "0D6D3ABA77C4840A"
+					type: "command"
+				}
+				{
+					id: "4E3616E7312CE057"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "3FB1DB5C4A8CDAF2"
+				item: { count: 1, id: "kubejs:paper_dragon_fragment" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["5F84B310BEC46BE3"]
+			id: "6A2D99CF2DF2A360"
+			rewards: [{
+				id: "2096F7B5D9B0D55B"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "28D4F89F6AA9A60F"
+				item: { count: 1, id: "kubejs:paper_dragon_egg" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -13.5d
+		}
+		{
+			dependencies: ["5F84B310BEC46BE3"]
+			id: "65D5340683B3C513"
+			shape: "diamond"
+			tasks: [{
+				id: "15D0A15E24885187"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["6A2D99CF2DF2A360"]
+			id: "79C4B032A9B1F772"
+			rewards: [
+				{
+					id: "0944708408A45F9C"
+					item: {
+						count: 1
+						id: "iceandfire:dragon_stick"
+					}
+					type: "item"
+				}
+				{
+					id: "258FC117779EFE48"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				advancement: "iceandfire:iceandfire/dragon_egg"
+				criterion: ""
+				id: "1CC1E24BB45D3E87"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: -15.0d
 		}
 	]
 }

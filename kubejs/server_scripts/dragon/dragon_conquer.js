@@ -52,7 +52,7 @@ function addDragonConquerRecord_withConquerStatus(
     conquerStatus,
     structure_id
 ) {
-    const { dragonConquerRecords } = player.persistentData;
+    let { dragonConquerRecords } = player.persistentData;
 
     //let recordsOfSameTypeStructure = dragonConquerRecords.get(structure_id)
 
@@ -87,7 +87,7 @@ function matchDragonConquerRecord(
     maxZ,
     structure_id
 ) {
-    const { dragonConquerRecords } = player.persistentData;
+    let { dragonConquerRecords } = player.persistentData;
     let result = false;
 
     if (!structure_id) return;
@@ -125,7 +125,7 @@ function matchDragonConquerRecord(
  * @returns
  */
 function finishDragonConquest(player) {
-    const { dragonConquerCurrent } = player.persistentData;
+    let { dragonConquerCurrent } = player.persistentData;
     //const { STRUCTURE_DATA } = global;
 
     if (dragonConquerCurrent == undefined) return;
@@ -240,8 +240,8 @@ global.UTILS.whichStructureAmI = whichStructureAmI;
  * @param {$BlockPlacedKubeEvent_} event
  * @returns
  */
-function blockPlaced_DragonConquer(event) {
-    const { player } = event;
+function blockPlaced_dragonConquer(event) {
+    let { player } = event;
 
     if (!player) return;
 
@@ -251,7 +251,7 @@ function blockPlaced_DragonConquer(event) {
         // 放置龙旗基座时的提示
         //let level = event.getLevel()
 
-        const { structure, structure_id } = whichStructureAmI(
+        let { structure, structure_id } = whichStructureAmI(
             player.blockPosition(),
             event.getLevel()
         );
@@ -330,7 +330,7 @@ function blockPlaced_DragonConquer(event) {
 
     if (!event.block.hasTag("minecraft:banners")) return;
 
-    const { block } = placedAgainstMap[player.uuid];
+    let { block } = placedAgainstMap[player.uuid];
     //if (!(block instanceof $BlockContainerJS)) return;
     if (block.id != "kubejs:dragon_flag") return;
 
@@ -346,7 +346,7 @@ function blockPlaced_DragonConquer(event) {
     //         return;
     //     }
     // })
-    const { structure, structure_id } = whichStructureAmI(
+    let { structure, structure_id } = whichStructureAmI(
         player.blockPosition(),
         event.getLevel()
     );
@@ -435,6 +435,6 @@ function blockPlaced_DragonConquer(event) {
     // console.log(event.player.persistentData.dragonConquerCurrent)
 
     event.server.runCommandSilent(
-        `/open_gateway ${event.block.getX()} ${event.block.getY()} ${event.block.getZ()} ${targetGateway}`
+        `/open_gateway ${block.getX()} ${block.getY()} ${block.getZ()} ${targetGateway}`
     );
 }

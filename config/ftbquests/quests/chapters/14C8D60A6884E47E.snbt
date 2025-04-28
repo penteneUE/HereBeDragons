@@ -53,17 +53,33 @@
 				id: "iceandfire:dragon_skull_fire"
 			}
 			id: "209A1F902BE74FC3"
-			rewards: [{
-				auto: "enabled"
-				exclude_from_claim_all: true
-				icon: {
-					id: "minecraft:milk_bucket"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "2AC2EF34264BDD47"
+					ignore_reward_blocking: true
+					stage: "disablehuman"
+					type: "gamestage"
 				}
-				id: "70A9E5E1821F2270"
-				table_id: 9161091763629966930L
-				team_reward: false
-				type: "all_table"
-			}]
+				{
+					auto: "enabled"
+					command: "/effect clear @p"
+					icon: {
+						id: "minecraft:milk_bucket"
+					}
+					id: "224D81A702B661BB"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/dragon-altar"
+					id: "016E00CB828F2EA0"
+					permission_level: 2
+					type: "command"
+				}
+			]
 			tasks: [{
 				id: "417C6101F274068A"
 				type: "checkmark"

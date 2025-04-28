@@ -14,10 +14,17 @@
     "kubejs.spell.taotie_fabel.status.max": "空间已满",
     "kubejs.spell.taotie_fabel.status.free_space": "空间：%s/%s",
 
-    "spell.kubejs.ananta_remanta": "阿难陀蛇",
+    "spell.kubejs.ananta_remanta": "缢王颂",
     "spell.kubejs.ananta_remanta.guide": "强行将选定的生物变为自己的奉龙者。",
-    "kubejs.spell.ananta_remanta.uniqueinfo.1": "最高剩余生命值：%s （成长加成：%s）",
-    "kubejs.spell.ananta_remanta.uniqueinfo.2": "失败率：%s （成长扣除：%s）",
+    "kubejs.spell.ananta_remanta.uniqueinfo.1": "最高剩余生命值：%s%% （成长加成：%s）",
+    "kubejs.spell.ananta_remanta.uniqueinfo.2": "失败率：%s%% （成长扣除：%s）",
+    "kubejs.spell.ananta_remanta.status.notarget": "没有选中目标",
+    "kubejs.spell.ananta_remanta.status.targeted": "选中目标：%s，成功率：%s%%",
+    "kubejs.spell.ananta_remanta.status.isminion": "%s已经是你的随从了",
+    "kubejs.spell.ananta_remanta.status.cantcatch": "无法对此物使用",
+    "kubejs.spell.ananta_remanta.status.toohealthy": "目标过于健康，请保持在至多%s颗心",
+    "kubejs.spell.ananta_remanta.status.fail": "失败……",
+    "kubejs.spell.ananta_remanta.status.success": "成功！",
 
     "kubejs.entity.minion": "%s的奉龙者",
 
@@ -27,6 +34,11 @@
     "kubejs.tooltips.ambrosia.1": "当心——神肴中富含的妖精元素会对食用的龙造成伤害！",
 
     "item.kubejs.felyne_recall": "猫车",
+
+    "item.kubejs.paper_dragon_fragment": "失活的纸龙",
+    "kubejs.tooltips.paper_dragon_fragment.1": "它再也不会动了……",
+    "item.kubejs.paper_dragon_egg": "纸扎的龙蛋",
+    "kubejs.tooltips.paper_dragon_egg.1": "充满了魔力的纸壳。手持时，如果周围有被自己召唤的无尽挑战传送门，将交换到一颗真正的龙蛋。",
 
     "item.kubejs.dragon_conquest_trophy": "占领奖杯",
     "kubejs.tooltips.dragon_conquest_trophy.1": "用于提交任务或收藏用途。",
@@ -40,6 +52,18 @@
 
     "block.kubejs.dragon_flag": "龙旗基座",
     "kubejs.tooltips.dragon_flag.1": "放置后在顶部插上旗帜即可激活龙旗。",
+
+    "block.kubejs.endless_undead_flag": "亡灵基座",
+    "kubejs.tooltips.endless_undead_flag.1": "放置后在顶部插上旗帜即可触发无尽亡灵挑战。",
+
+    "block.kubejs.endless_myth_flag": "幻象基座",
+    "kubejs.tooltips.endless_myth_flag.1": "放置后在顶部插上旗帜即可触发无尽幻象挑战。",
+
+    "block.kubejs.endless_titan_flag": "巨人基座",
+    "kubejs.tooltips.endless_titan_flag.1": "放置后在顶部插上旗帜即可触发无尽巨人挑战。",
+
+    "block.kubejs.endless_dragon_flag": "无尽龙基座",
+    "kubejs.tooltips.endless_dragon_flag.1": "放置后在顶部插上旗帜即可触发无尽龙挑战。",
 
     "block.kubejs.tax_collector": "瓶中税收官",
     "machine.kubejs.tax_collector.name": "瓶中税收官",
@@ -141,6 +165,38 @@
 
     "kubejs.nether/ancient_battleground": "古战场",
     "kubejs.recipeinfo.conquest.ancient_battleground": "古战场",
-    "kubejs.recipeinfo.conquest.ancient_battleground.description": "资源：下界石英、下界合金碎片、奥术源质、灰烬源质、墨水、古龙心。守备：大量远古骑士。"
+    "kubejs.recipeinfo.conquest.ancient_battleground.description": "资源：下界石英、下界合金碎片、奥术源质、灰烬源质、魔法墨水、古龙心。守备：大量远古骑士。",
+
+    "kubejs.misc/catacombs": "亡灵古墓",
+    "kubejs.recipeinfo.conquest.catacombs": "亡灵古墓",
+    "kubejs.recipeinfo.conquest.catacombs.description": "资源：腐肉、骨头、矿物、宝石、奥术源质、魔法墨水、古龙心。守备：大量强化的僵尸与骷髅。",
+
+    "kubejs.misc/stronghold": "要塞",
+    "kubejs.recipeinfo.conquest.stronghold": "要塞",
+    "kubejs.recipeinfo.conquest.stronghold.description": "资源：末影珍珠、矿物、经验瓶、古龙心。守备：蠹虫、僵尸、骷髅、女巫、末影人。",
+
+    "kubejs.challenge/paper_myth": "折纸幻象",
+    "kubejs.challenge/paper_myth.name.siren": "怀孕的",
+    "kubejs.challenge/paper_myth.name.cockatrice": "夭折的",
+
+    "kubejs.challenge/paper_myth.name.deathworm": "憎恨的",
+    "kubejs.challenge/paper_myth.name.sea_serpent": "欢喜的",
+    
+    "kubejs.challenge/paper_myth.name.cyclops": "统治的",
+    "kubejs.challenge/paper_myth.name.ghost": "创造的",
+
+    "kubejs.challenge/paper_myth.name.hydra": "忽视的",
+    "kubejs.challenge/paper_myth.name.lightning_dragon": "遗忘的",
+    
+    "kubejs.endless/undead_challenge": "无尽的亡灵挑战",
+    "kubejs.endless/myth_challenge": "无尽的幻象挑战",
+    "kubejs.endless/titan_challenge": "无尽的巨人挑战",
+    "kubejs.endless/dragon_challenge": "无尽的龙挑战",
+
+    "kubejs.challenge.has_current_challenge": "请先完成当前的挑战！",
+
+    "item.kubejs.magic_disc": "魔法唱片",
+    "jukebox_song.kubejs.music.scrybe_of_magicks": "Scrybe of the Magicks - INSCRYPTION",
+    "sound.kubejs.music.scrybe_of_magicks": "魔法的音乐"
 
 }

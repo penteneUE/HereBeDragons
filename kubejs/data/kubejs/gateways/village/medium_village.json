@@ -71,7 +71,7 @@
                     "entity": "minecraft:iron_golem"
                 }
             ],
-            "max_wave_time": 800,
+            "max_wave_time": 1200,
             "modifiers": [],
             "rewards": [],
             "setup_time": 150
@@ -79,6 +79,7 @@
     ],
     "spawn_algorithm": "gateways:inward_spiral",
     "rules":{
-        "fail_on_out_of_bounds": false
+        "fail_on_out_of_bounds": false,
+        "remove_mobs_on_failure": false
     }
 }

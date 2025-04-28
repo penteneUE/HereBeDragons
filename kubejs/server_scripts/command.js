@@ -58,6 +58,37 @@ ServerEvents.commandRegistry((event) => {
                 )
             )
             .then(
+                Commands.literal("clear-world-ender").then(
+                    Commands.argument(
+                        "player",
+                        Arguments.PLAYER.create(event)
+                    ).executes((ctx) => {
+                        let player = ctx.source.server.getPlayer(
+                            Arguments.PLAYER.getResult(ctx, "player")
+                        );
+                        clearWorldEnder(player);
+                        return 1;
+                    })
+                )
+            )
+            .then(
+                Commands.literal("clear-challenger").then(
+                    Commands.argument(
+                        "player",
+                        Arguments.PLAYER.create(event)
+                    ).executes((ctx) => {
+                        let player = ctx.source.server.getPlayer(
+                            Arguments.PLAYER.getResult(ctx, "player")
+                        );
+                        if (player.stages.has("paper_myth_challenger"))
+                            player.stages.remove("paper_myth_challenger");
+                        if (player.stages.has("endless_challenger"))
+                            player.stages.remove("endless_challenger");
+                        return 1;
+                    })
+                )
+            )
+            .then(
                 Commands.literal("conquest")
                     .then(
                         Commands.literal("clear-records").then(
@@ -185,12 +216,12 @@ ServerEvents.commandRegistry((event) => {
                                 }
 
                                 ctx.source.server.runCommandSilent(
-                                    `/playsound minecraft:entity.player.levelup player ${player.name.toString()} ${
+                                    `/playsound minecraft:entity.player.levelup player ${player.username.toString()} ${
                                         player.x
                                     } ${player.y} ${player.z}`
                                 );
                                 ctx.source.server.runCommandSilent(
-                                    `/playsound minecraft:entity.firework_rocket.launch ${player.name.toString()} ${
+                                    `/playsound minecraft:entity.firework_rocket.launch ${player.username.toString()} ${
                                         player.x
                                     } ${player.y} ${player.z}`
                                 );

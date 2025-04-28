@@ -1,0 +1,228 @@
+{
+    "type": "gateways:normal",
+    "color": "#167a62",
+    "rewards": [
+        {
+            "type": "gateways:command",
+            "command": "/whredragonswent conquest finish @p[tag=dragon_conquest_challenger]",
+            "desc": "占领成功"
+        },
+        {
+            "type": "gateways:experience",
+            "experience": 300,
+            "orb_size": 25
+        },
+        {
+            "type": "gateways:stack",
+            "stack": {
+                "id": "kubejs:dragon_conquest_trophy",
+                "count": 1,
+                "components": {
+                    "minecraft:custom_data": {
+                        "gateway": "misc/catacombs"
+                    }
+                }
+            }
+        }
+    ],
+    "failures": [
+        {
+            "type": "gateways:command",
+            "command": "/whredragonswent conquest failure @p[tag=dragon_conquest_challenger]",
+            "desc": "占领失败"
+        }
+    ],
+    "size": "small",
+    "waves": [
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 10,
+                    "entity": "minecraft:zombie"
+                }
+            ],
+            "max_wave_time": 1600,
+            "rewards": [],
+            "setup_time": 100,
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.2
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 2.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.15
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.knockback_resistance",
+                    "operation": "add_value",
+                    "value": 0.05
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": 0.05
+                }
+            ]
+        },
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 10,
+                    "entity": "minecraft:zombie"
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 5,
+                    "entity": "minecraft:skeleton"
+                }
+            ],
+            "max_wave_time": 1600,
+            "rewards": [],
+            "setup_time": 100,
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.2
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 2.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.15
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.knockback_resistance",
+                    "operation": "add_value",
+                    "value": 0.05
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": 0.05
+                }
+            ]
+        },
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 10,
+                    "entity": "minecraft:zombie",
+                    "nbt": {
+                        "equipment": {
+                            "chest": {
+                                "id": "leather_chestplate"
+                            },
+                            "feet": {
+                                "id": "leather_boots"
+                            },
+                            "head": {
+                                "id": "leather_helmet"
+                            },
+                            "legs": {
+                                "id": "leather_leggings"
+                            }
+                        },
+                        "HandItems": [
+                            {
+                                "Count": 1,
+                                "id": "minecraft:iron_shovel"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 10,
+                    "entity": "minecraft:zombie",
+                    "nbt": {
+                        "equipment": {
+                            "chest": {
+                                "id": "leather_chestplate"
+                            },
+                            "feet": {
+                                "id": "leather_boots"
+                            },
+                            "head": {
+                                "id": "leather_helmet"
+                            },
+                            "legs": {
+                                "id": "leather_leggings"
+                            }
+                        },
+                        "HandItems": [
+                            {
+                                "Count": 1,
+                                "id": "minecraft:iron_hoe"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "max_wave_time": 1600,
+            "rewards": [],
+            "setup_time": 100,
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.2
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 2.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.15
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.knockback_resistance",
+                    "operation": "add_value",
+                    "value": 0.05
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": 0.05
+                }
+            ]
+        }
+    ],
+    "spawn_algorithm": "gateways:inward_spiral",
+    "rules":{
+        "fail_on_out_of_bounds": false
+    }
+}

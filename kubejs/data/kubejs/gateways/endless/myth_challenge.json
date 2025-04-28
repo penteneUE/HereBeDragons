@@ -1,0 +1,139 @@
+{
+    "base_wave": {
+        "entities": [
+            {
+                "count": 8,
+                "entity": "iceandfire:ghost",
+                "type": "gateways:standard"
+            }
+        ],
+        "max_wave_time": 1200,
+        "rewards": [
+            {
+                "experience": 15,
+                "orb_size": 25,
+                "type": "gateways:experience"
+            },
+            {
+                "stack": {
+                    "count": 1,
+                    "id": "dragonsurvival:weak_dragon_heart"
+                },
+                "type": "gateways:stack"
+            }
+        ],
+        "setup_time": 100
+    },
+    "color": "#33AE53",
+    "failures": [
+        {
+            "command": "/kubejs stages add @p[tag=endless_challenger] \"quest/endless_myth_completed\"",
+            "desc": "已完成",
+            "type": "gateways:command"
+        },
+        {
+            "command": "/kubejs stages remove @p[tag=endless_challenger] endless_challenger",
+            "desc": "还能再挑战",
+            "type": "gateways:command"
+        }
+    ],
+    "modifiers": [
+        {
+            "application_mode": {
+                "max": 100,
+                "type": "gateways:after_every_n_waves",
+                "waves": 1
+            },
+            "entities": [
+                {
+                    "count": 1,
+                    "entity": "iceandfire:ghost"
+                },
+                {
+                    "count": 1,
+                    "entity": "iceandfire:siren"
+                }
+            ],
+            "modifiers": [
+                {
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "type": "gateways:attribute",
+                    "value": 0.2
+                },
+                {
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_multiplied_total",
+                    "type": "gateways:attribute",
+                    "value": 0.15
+                },
+                {
+                    "attribute": "apothic_attributes:projectile_damage",
+                    "operation": "add_multiplied_total",
+                    "type": "gateways:attribute",
+                    "value": 0.15
+                }
+            ]
+        },
+        {
+            "application_mode": {
+                "max": 100,
+                "type": "gateways:after_every_n_waves",
+                "waves": 3
+            },
+            "entities": [
+                {
+                    "count": 1,
+                    "entity": "iceandfire:deathworm",
+                    "nbt": {
+                        "Scale": 2,
+                        "Variant": 1,
+                        "WormAge": 10
+                    }
+                }
+            ],
+            "rewards": [
+                {
+                    "experience": 50,
+                    "orb_size": 25,
+                    "type": "gateways:experience"
+                },
+                {
+                    "stack": {
+                        "count": 1,
+                        "id": "dragonsurvival:weak_dragon_heart"
+                    },
+                    "type": "gateways:stack"
+                }
+            ]
+        },
+        {
+            "application_mode": {
+                "max": 100,
+                "type": "gateways:after_every_n_waves",
+                "waves": 5
+            },
+            "entities": [
+                {
+                    "count": 1,
+                    "entity": "iceandfire:sea_serpent"
+                }
+            ],
+            "rewards": [
+                {
+                    "stack": {
+                        "count": 1,
+                        "id": "kubejs:paper_dragon_fragment"
+                    },
+                    "type": "gateways:stack"
+                }
+            ]
+        }
+    ],
+    "rules": {
+        "fail_on_out_of_bounds": false
+    },
+    "size": "medium",
+    "spawn_algorithm": "gateways:inward_spiral",
+    "type": "gateways:endless"
+}

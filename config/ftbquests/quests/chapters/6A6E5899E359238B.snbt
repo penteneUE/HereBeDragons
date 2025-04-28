@@ -1,0 +1,26 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6A6E5899E359238B"
+	group: ""
+	id: "6A6E5899E359238B"
+	order_index: 6
+	quest_links: [ ]
+	quests: [{
+		id: "6DE4F13231CC69B6"
+		rewards: [{
+			id: "164356E7BA996488"
+			item: {
+				count: 1
+				id: "kubejs:magic_disc"
+			}
+			type: "item"
+		}]
+		tasks: [{
+			id: "3A5D0235D619652F"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+}

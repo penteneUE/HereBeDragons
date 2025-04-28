@@ -7,4 +7,5 @@ PlayerEvents.tick((event) => {
     playerTick_TaxCollect(event);
     playerTick_Sponge(event);
     playerTick_RepFrenzy(event);
+    playerTick_PaperDragonEgg(event);
 });

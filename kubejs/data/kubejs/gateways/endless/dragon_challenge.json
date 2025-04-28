@@ -1,0 +1,195 @@
+{
+    "base_wave": 
+        {
+            "entities": [
+                {
+                    "count": 1,
+                    "entity": "minecraft:chicken",
+                    "type": "gateways:standard"
+                }
+            ],
+            "max_wave_time": 2400,
+            "rewards": [
+                {
+                    "experience": 100,
+                    "orb_size": 25,
+                    "type": "gateways:experience"
+                },
+                {
+                    "stack": {
+                        "count": 1,
+                        "id": "dragonsurvival:elder_dragon_heart"
+                    },
+                    "type": "gateways:stack"
+                }
+            ],
+            "setup_time": 100
+        },
+    
+    "color": "#33AE53",
+    "failures": [
+        {
+            "command": "/kubejs stages add @p[tag=endless_challenger] \"quest/endless_dragon_completed\"",
+            "desc": "已完成",
+            "type": "gateways:command"
+        },
+        {
+            "command": "/kubejs stages remove @p[tag=endless_challenger] endless_challenger",
+            "desc": "还能再挑战",
+            "type": "gateways:command"
+        }
+    ],
+    "modifiers": [
+        {
+            "application_mode": {
+                "type": "gateways:only_on_wave",
+                "waves": 1
+            },
+            "entities": [
+                {
+                    "count": 1,
+                    "entity": "iceandfire:fire_dragon",
+                    "nbt": {
+                        "AgeTicks": 1000000,
+                        "AgingDisabled": true
+                    }
+                }
+            ]
+        },
+        {
+            "application_mode": {
+                "type": "gateways:only_on_wave",
+                "waves": 2
+            },
+            "entities": [
+                {
+                    "count": 1,
+                    "entity": "iceandfire:ice_dragon",
+                    "nbt": {
+                        "AgeTicks": 1200000,
+                        "AgingDisabled": true
+                    }
+                }
+            ]
+        },
+        {
+            "application_mode": {
+                "type": "gateways:only_on_wave",
+                "waves": 3
+            },
+            "entities": [
+                {
+                    "count": 1,
+                    "entity": "iceandfire:lightning_dragon",
+                    "nbt": {
+                        "AgeTicks": 1600000,
+                        "AgingDisabled": true
+                    }
+                }
+            ]
+        },
+        {
+            "application_mode": {
+                "type": "gateways:only_on_wave",
+                "waves": 4
+            },
+            "entities": [
+                {
+                    "count": 1,
+                    "entity": "iceandfire:fire_dragon",
+                    "nbt": {
+                        "AgeTicks": 1800000,
+                        "AgingDisabled": true
+                    }
+                }
+            ]
+        },
+        {
+            "application_mode": {
+                "type": "gateways:only_on_wave",
+                "waves": 5
+            },
+            "entities": [
+                {
+                    "count": 1,
+                    "entity": "iceandfire:ice_dragon",
+                    "nbt": {
+                        "AgeTicks": 2000000,
+                        "AgingDisabled": true
+                    }
+                }
+            ]
+        },
+        {
+            "application_mode": {
+                "type": "gateways:only_on_wave",
+                "waves": 6
+            },
+            "entities": [
+                {
+                    "count": 1,
+                    "entity": "iceandfire:lightning_dragon",
+                    "nbt": {
+                        "AgeTicks": 2400000,
+                        "AgingDisabled": true
+                    }
+                }
+            ]
+        },
+        {
+            "application_mode": {
+                "type": "gateways:after_wave",
+                "waves": 7
+            },
+            "entities": [
+                {
+                    "count": 1,
+                    "entity": "iceandfire:lightning_dragon",
+                    "nbt": {
+                        "AgeTicks": 3000000,
+                        "AgingDisabled": true
+                    }
+                }
+            ]
+        },
+        {
+            "application_mode": {
+                "type": "gateways:after_every_n_waves",
+                "waves": 1,
+                "max": 100
+            },
+            "modifiers": [
+                {
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "type": "gateways:attribute",
+                    "value": 0.2
+                },
+                {
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "type": "gateways:attribute",
+                    "value": 2.0
+                },
+                {
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_multiplied_total",
+                    "type": "gateways:attribute",
+                    "value": 0.15
+                },
+                {
+                    "attribute": "apothic_attributes:projectile_damage",
+                    "operation": "add_multiplied_total",
+                    "type": "gateways:attribute",
+                    "value": 0.15
+                }
+            ]
+        }
+    ],
+    "rules": {
+        "fail_on_out_of_bounds": false
+    },
+    "size": "large",
+    "spawn_algorithm": "gateways:inward_spiral",
+    "type": "gateways:endless"
+}

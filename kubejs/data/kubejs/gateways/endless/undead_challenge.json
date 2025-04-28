@@ -1,0 +1,160 @@
+{
+    "type": "gateways:endless",
+    "color": "#33AE53",
+    "failures": [
+        
+        {
+            "type": "gateways:command",
+            "command": "/kubejs stages add @p[tag=endless_challenger] \"quest/endless_undead_completed\"",
+            "desc": "已完成"
+        },
+        {
+            "type": "gateways:command",
+            "command": "/kubejs stages remove @p[tag=endless_challenger] endless_challenger",
+            "desc": "还能再挑战"
+        }
+    ],
+    "size": "medium",
+    "base_wave": 
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 12,
+                    "nbt": {
+                        "equipment": {
+                            "head": {
+                                "id": "netherite_helmet"
+                            }
+                        },
+                        "HandItems": [
+                            {
+                                "Count": 1,
+                                "id": "minecraft:iron_shovel"
+                            }
+                        ]
+                    },
+                    "entity": "minecraft:zombie"
+                }
+            ],
+            "max_wave_time": 1200,
+            "rewards": [{
+                "type": "gateways:experience",
+                "experience": 25,
+                "orb_size": 25
+            }],
+            "setup_time": 100
+        },
+    
+    "modifiers": [
+        {
+            "application_mode": {
+                "type": "gateways:after_every_n_waves",
+                "waves": 1,
+                "max": 100
+            },
+            "entities": [{
+                "entity": "minecraft:zombie",
+                "count": 1,
+                "nbt": {
+                        "equipment": {
+                            "head": {
+                                "id": "netherite_helmet"
+                            }
+                        },
+                        "HandItems": [
+                            {
+                                "Count": 1,
+                                "id": "minecraft:iron_shovel"
+                            }
+                        ]
+                    }
+            }],
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.1
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.15
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:projectile_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.15
+                }
+            ]
+        },
+        {
+            "application_mode": {
+                "type": "gateways:after_every_n_waves",
+                "waves": 3,
+                "max": 100
+            },
+            "entities": [{
+                "entity": "minecraft:skeleton",
+                "count": 3,
+                "max": 100,
+                "nbt": {
+                        "equipment": {
+                            "head": {
+                                "id": "netherite_helmet"
+                            }
+                        },
+                        "HandItems": [
+                            {
+                                "Count": 1,
+                                "id": "minecraft:iron_shovel"
+                            }
+                        ]
+                    }
+            }],
+            "rewards": [{
+                "type": "gateways:experience",
+                "experience": 100,
+                "orb_size": 25
+            }]
+        },
+        {
+            "application_mode": {
+                "type": "gateways:after_every_n_waves",
+                "waves": 5,
+                "max": 100
+            },
+            "entities": [{
+                "entity": "minecraft:skeleton",
+                "count": 5,
+                "nbt": {
+                        "equipment": {
+                            "head": {
+                                "id": "netherite_helmet"
+                            }
+                        },
+                        "HandItems": [
+                            {
+                                "Count": 1,
+                                "id": "minecraft:iron_shovel"
+                            }
+                        ]
+                    }
+            }],
+            "rewards": [{
+            "type": "gateways:stack",
+                "stack": {
+                    "id": "kubejs:paper_dragon_fragment",
+                    "count": 1
+                }
+            }]
+        }
+    ],
+    "spawn_algorithm": "gateways:inward_spiral",
+    "rules":{
+        "fail_on_out_of_bounds": false
+    }
+}

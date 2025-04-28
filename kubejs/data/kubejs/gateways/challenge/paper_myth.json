@@ -1,0 +1,189 @@
+{
+    "type": "gateways:normal",
+    "color": "#967CA6",
+    "rewards": [
+        {
+            "type": "gateways:experience",
+            "experience": 300,
+            "orb_size": 25
+        },
+        {
+            "type": "gateways:stack",
+            "stack": {
+                "id": "kubejs:paper_dragon_fragment",
+                "count": 4
+            }
+        },
+        {
+            "type": "gateways:command",
+            "command": "/whredragonswent clear-world-ender @p[tag=paper_myth_challenger]",
+            "desc": "只能打一次"
+        },
+        {
+            "type": "gateways:command",
+            "command": "/kubejs stages remove @p[tag=paper_myth_challenger] paper_myth_challenger",
+            "desc": "五五五五五"
+        }
+    ],
+    "failures": [
+        {
+            "type": "gateways:command",
+            "command": "/kubejs stages remove @p[tag=paper_myth_challenger] paper_myth_challenger",
+            "desc": "还能再挑战"
+        }
+    ],
+    "size": "large",
+    "waves": [
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 7,
+                    "entity": "iceandfire:siren",
+                    "nbt": {
+                        "CustomName": "{\"translate\":\"kubejs.challenge/paper_myth.name.siren\",\"color\":\"red\"}"
+                    }
+                }
+            ],
+            "max_wave_time": 1600,
+            "rewards": [],
+            "setup_time": 100
+        },
+        
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 6,
+                    "entity": "iceandfire:ghost",
+                    "nbt": {
+                        "CustomName": "{\"translate\":\"kubejs.challenge/paper_myth.name.ghost\",\"color\":\"red\"}"
+                    }
+                }
+            ],
+            "max_wave_time": 1600,
+            "rewards": [],
+            "setup_time": 100
+        },
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 4,
+                    "entity": "iceandfire:cockatrice",
+                    "nbt": {
+                        "CustomName": "{\"translate\":\"kubejs.challenge/paper_myth.name.cockatrice\",\"color\":\"red\"}"
+                    }
+                }
+            ],
+            "max_wave_time": 1600,
+            "rewards": [],
+            "setup_time": 100
+        },
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 3,
+                    "entity": "iceandfire:deathworm",
+                    "nbt": {
+                        "Scale": 2,
+                        "CustomName": "{\"translate\":\"kubejs.challenge/paper_myth.name.deathworm\",\"color\":\"red\"}",
+                        "Variant": 1,
+                        "WormAge": 10
+                    }
+                }
+            ],
+            "max_wave_time": 1600,
+            "rewards": [],
+            "setup_time": 100,
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 3
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 2.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.15
+                }
+            ]
+        },
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 2,
+                    "entity": "iceandfire:sea_serpent",
+                    "nbt": {
+                        "Scale": 2,
+                        "CustomName": "{\"translate\":\"kubejs.challenge/paper_myth.name.sea_serpent\",\"color\":\"red\"}"
+                    }
+                }
+            ],
+            "max_wave_time": 1600,
+            "rewards": [],
+            "setup_time": 100
+        },
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 1,
+                    "entity": "iceandfire:cyclops",
+                    "nbt": {
+                        "CustomName": "{\"translate\":\"kubejs.challenge/paper_myth.name.cyclops\",\"color\":\"red\"}"
+                    }
+                }
+            ],
+            "max_wave_time": 1800,
+            "rewards": [],
+            "setup_time": 100
+        },
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 1,
+                    "entity": "iceandfire:hydra",
+                    "nbt": {
+                        "CustomName": "{\"translate\":\"kubejs.challenge/paper_myth.name.hydra\",\"color\":\"red\"}"
+                    }
+                }
+            ],
+            "max_wave_time": 2400,
+            "rewards": [],
+            "setup_time": 100
+        },
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 1,
+                    "entity": "iceandfire:lightning_dragon",
+                    "nbt": {
+                        "CustomName": "{\"translate\":\"kubejs.challenge/paper_myth.name.lightning_dragon\",\"color\":\"red\"}",
+                        "AgingDisabled": true,
+                        "AgeTicks": 1200000
+                    }
+                }
+            ],
+            "max_wave_time": 2600,
+            "rewards": [],
+            "setup_time": 100
+        }
+    ],
+    "spawn_algorithm": "gateways:inward_spiral",
+    "rules":{
+        "fail_on_out_of_bounds": false
+    }
+}

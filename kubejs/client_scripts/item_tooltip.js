@@ -11,6 +11,19 @@ ItemEvents.modifyTooltips((event) => {
     event.add("kubejs:dragon_flag", [
         Text.gray({ translate: "kubejs.tooltips.dragon_flag.1" }),
     ]);
+    event.add("kubejs:endless_undead_flag", [
+        Text.gray({ translate: "kubejs.tooltips.endless_undead_flag.1" }),
+    ]);
+    event.add("kubejs:endless_myth_flag", [
+        Text.gray({ translate: "kubejs.tooltips.endless_myth_flag.1" }),
+    ]);
+    event.add("kubejs:endless_titan_flag", [
+        Text.gray({ translate: "kubejs.tooltips.endless_titan_flag.1" }),
+    ]);
+    event.add("kubejs:endless_dragon_flag", [
+        Text.gray({ translate: "kubejs.tooltips.endless_dragon_flag.1" }),
+    ]);
+
     event.add("kubejs:tax_collector", [
         Text.gray({ translate: "kubejs.tooltips.tax_collector.1" }),
         Text.gray({ translate: "kubejs.tooltips.tax_collector.2" }),
@@ -23,6 +36,14 @@ ItemEvents.modifyTooltips((event) => {
     ]);
     event.add("kubejs:dry_sponge", [
         Text.gray({ translate: "kubejs.tooltips.dry_sponge.1" }),
+    ]);
+
+    event.add("kubejs:paper_dragon_fragment", [
+        Text.gray({ translate: "kubejs.tooltips.paper_dragon_fragment.1" }),
+    ]);
+
+    event.add("kubejs:paper_dragon_egg", [
+        Text.gray({ translate: "kubejs.tooltips.paper_dragon_egg.1" }),
     ]);
     // event.
     // event.modify('kubejs:dragon_conquest_trophy', tooltip => {

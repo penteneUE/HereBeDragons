@@ -1,0 +1,11 @@
+{
+    "music.scrybe_of_magicks": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "kubejs:records/scrybe_of_magicks",
+                "stream": true
+            }
+        ]
+    }
+}

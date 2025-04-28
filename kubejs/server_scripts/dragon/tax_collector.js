@@ -15,15 +15,15 @@ const tagCountAsBlock = [
  * @returns {$Map_<string, number>}
  */
 function rollRewardItems(/**@type {$Player_}*/ player, preferredItem) {
-    const { dragonConquerRecords } = player.persistentData;
+    let { dragonConquerRecords } = player.persistentData;
 
-    const { STRUCTURE_DATA } = global;
+    let { STRUCTURE_DATA } = global;
 
     if (!dragonConquerRecords) {
         return;
     }
 
-    const result = Utils.newMap();
+    let result = Utils.newMap();
 
     let rewardsContainsPreferredItem = false;
     let preferredItemId = "";
@@ -152,9 +152,10 @@ function weaveMessage_Records(dragonConquerRecords) {
  */
 function sendItemsToPlayer(items, player) {
     items.forEach((item, count) => {
-        let itemStack = Item.of(item);
-        itemStack.setCount(count);
-        player.give(itemStack);
+        // let itemStack = Item.of(item);
+        // itemStack.setCount(count);
+        // player.give(itemStack);
+        player.give(`${Utils.parseInt(count, 1)}x ${item}`);
     });
 }
 
@@ -164,7 +165,7 @@ function sendItemsToPlayer(items, player) {
  * @returns
  */
 function sendItemsToBlockInventory(items, block) {
-    const { inventory } = block;
+    let { inventory } = block;
     items.forEach((item, count) => {
         let itemStack = Item.of(item);
         itemStack.setCount(count);
@@ -205,9 +206,9 @@ function sendItemsToBlockInventory(items, block) {
  * @returns
  */
 function playerTick_TaxCollect(event) {
-    const { player } = event;
+    let { player } = event;
 
-    const { lastDay } = player.persistentData;
+    let { lastDay } = player.persistentData;
 
     if (!lastDay) {
         player.persistentData.putInt("lastDay", -1);
@@ -217,7 +218,7 @@ function playerTick_TaxCollect(event) {
     if (currentDay == lastDay) return;
     player.persistentData.putInt("lastDay", currentDay);
 
-    const { activeTaxCollector } = player.persistentData;
+    let { activeTaxCollector } = player.persistentData;
 
     if (!activeTaxCollector) return;
 
@@ -308,8 +309,8 @@ function playerTick_TaxCollect(event) {
  * @param {$BlockPlacedKubeEvent_} event
  * @returns
  */
-function blockPlaced_TaxCollect(event) {
-    const { block, player } = event;
+function blockPlaced_taxCollect(event) {
+    let { block, player } = event;
     if (!player) return;
     if (block.id != "kubejs:tax_collector") return;
 
@@ -357,7 +358,7 @@ function blockPlaced_TaxCollect(event) {
  * @returns
  */
 function blockBroken_TaxCollect(event) {
-    const { block, server } = event;
+    let { block, server } = event;
     if (block.id != "kubejs:tax_collector") return;
 
     let blockOwner = server.getPlayer(
@@ -365,7 +366,7 @@ function blockBroken_TaxCollect(event) {
     );
 
     if (!blockOwner) return;
-    const { activeTaxCollector } = blockOwner.persistentData;
+    let { activeTaxCollector } = blockOwner.persistentData;
     if (!activeTaxCollector) return;
     if (
         activeTaxCollector.getString("dimension") !=

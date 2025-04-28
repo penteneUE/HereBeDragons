@@ -4,6 +4,9 @@
 	filename: "2"
 	group: ""
 	hide_quest_details_until_startable: true
+	icon: {
+		id: "irons_spellbooks:chained_book"
+	}
 	id: "1E283E445F4D2ED1"
 	images: [{
 		height: 20.0d
@@ -19,6 +22,11 @@
 		{
 			id: "23AF0BA2CFF8572C"
 			invisible: true
+			rewards: [{
+				id: "3159EC5200DA6B29"
+				type: "xp"
+				xp: 20
+			}]
 			tasks: [{
 				advancement: "minecraft:story/enter_the_end"
 				criterion: ""
@@ -31,6 +39,11 @@
 		{
 			id: "31DC355F5D46AE7F"
 			invisible: true
+			rewards: [{
+				id: "4C7A1D36BC9CD1DE"
+				type: "xp"
+				xp: 20
+			}]
 			tasks: [{
 				icon: {
 					id: "irons_spellbooks:dragonskin"
@@ -45,9 +58,29 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["31DC355F5D46AE7F"]
+			dependencies: ["23AF0BA2CFF8572C"]
 			hide_until_deps_visible: true
 			id: "255FDC0FA11B8262"
+			invisible: true
+			rewards: [
+				{
+					id: "306DCEF480A74530"
+					item: {
+						count: 1
+						id: "dragonsurvival:elder_dragon_heart"
+					}
+					type: "item"
+				}
+				{
+					id: "22E9ABBDC523CA85"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "06EC8CC1D7428073"
+					type: "custom"
+				}
+			]
 			tasks: [
 				{
 					advancement: "minecraft:end/kill_dragon"
@@ -68,16 +101,21 @@
 			y: -8.0d
 		}
 		{
-			dependencies: ["23AF0BA2CFF8572C"]
+			dependencies: ["255FDC0FA11B8262"]
 			id: "5D9019A625D83B8C"
+			rewards: [{
+				id: "34E4B0962E7D6F1E"
+				type: "xp"
+				xp: 20
+			}]
 			tasks: [{
 				advancement: "dragonsurvival:find_end_structures"
 				criterion: ""
 				id: "4B41712B0D58E7FE"
 				type: "advancement"
 			}]
-			x: 1.5d
-			y: -6.5d
+			x: 1.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["31DC355F5D46AE7F"]
@@ -98,6 +136,7 @@
 				type: "xp"
 				xp: 2
 			}]
+			shape: "rsquare"
 			tasks: [{
 				advancement: "minecraft:story/enter_the_nether"
 				criterion: ""
@@ -433,6 +472,14 @@
 			dependencies: ["2719E15494771733"]
 			id: "26ABF38D15542AA7"
 			invisible: true
+			rewards: [{
+				id: "6CBF474F401A8AB5"
+				item: {
+					count: 1
+					id: "dragonsurvival:weak_dragon_heart"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				advancement: "minecraft:story/follow_ender_eye"
 				criterion: ""
@@ -611,24 +658,14 @@
 				id: "minecraft:cut_copper"
 			}
 			id: "7B9F4B7957E5BABA"
-			rewards: [
-				{
-					id: "5AF73C8CCC3CB897"
-					item: {
-						count: 1
-						id: "dragonsurvival:weak_dragon_heart"
-					}
-					type: "item"
+			rewards: [{
+				id: "4088F045B56563C1"
+				item: {
+					count: 1
+					id: "dragonsurvival:heart_element"
 				}
-				{
-					id: "4088F045B56563C1"
-					item: {
-						count: 1
-						id: "dragonsurvival:heart_element"
-					}
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			tasks: [{
 				id: "42B5FE2C54BD497B"
 				structure: "minecraft:trial_chambers"
@@ -711,6 +748,79 @@
 			}]
 			x: -3.0d
 			y: -2.5d
+		}
+		{
+			dependencies: ["5D9019A625D83B8C"]
+			id: "31D760D71B6DE650"
+			rewards: [{
+				id: "17B6FC2C3C2155EC"
+				item: {
+					count: 1
+					id: "dragonsurvival:elder_dragon_heart"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3E8AB7552C438860"
+				item: { count: 1, id: "dragonsurvival:spin_grant" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["5D9019A625D83B8C"]
+			id: "11A603EE821FCE7A"
+			rewards: [{
+				id: "331102A842C01ECE"
+				item: {
+					count: 1
+					id: "dragonsurvival:elder_dragon_heart"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "65E603F82A2F6B94"
+				item: { count: 1, id: "dragonsurvival:dragon_soul" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["255FDC0FA11B8262"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:dragon_egg"
+			}
+			id: "7408B42F36A27FB1"
+			rewards: [{
+				id: "62F0F105CF5A509C"
+				item: {
+					count: 1
+					id: "dragonsurvival:elder_dragon_heart"
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "516FBBF474CCF276"
+					item: { count: 1, id: "minecraft:dragon_egg" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					advancement: "minecraft:end/dragon_egg"
+					criterion: ""
+					id: "47C8293AD7D62743"
+					optional_task: true
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: -9.75d
 		}
 	]
 }

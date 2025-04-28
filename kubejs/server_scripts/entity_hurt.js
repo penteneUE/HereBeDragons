@@ -1,36 +1,43 @@
 //const checkList = new Set(["minecraft:villager", "minecraft:iron_golem", "guardvillagers:guard"])
 
-const commonVillageMob = 
-{
-    "minecraft:villager":true,
-    "minecraft:iron_golem":true,
-    "guardvillagers:guard":true
-}
+const commonVillageMob = {
+    "minecraft:villager": true,
+    "minecraft:iron_golem": true,
+    "guardvillagers:guard": true,
+};
 
-EntityEvents.beforeHurt(event => {
+EntityEvents.beforeHurt((event) => {
     if (!event.source.player) return;
 
-    const { source: { player }, entity } = event;
+    const {
+        source: { player },
+        entity,
+    } = event;
 
     if (!commonVillageMob[entity.type]) return;
 
-    const { structure, structure_id } = whichStructureAmI(entity.blockPosition(), event.getLevel())
-    console.log(structure.getBoundingBox())
+    const { structure, structure_id } = whichStructureAmI(
+        entity.blockPosition(),
+        event.getLevel()
+    );
+    if (!structure || !structure_id) return;
 
-    console.log(matchDragonConquerRecord_withBbox(player, structure.getBoundingBox(), structure_id))
-    
-    if (!matchDragonConquerRecord_withBbox(player, structure.getBoundingBox(), structure_id)) return;
-    console.log(player.hasEffect("dragonsurvival:hunter_omen"))
+    if (
+        !matchDragonConquerRecord_withBbox(
+            player,
+            structure.getBoundingBox(),
+            structure_id
+        )
+    )
+        return;
 
     if (!player.hasEffect("dragonsurvival:hunter_omen")) return;
-    if (player.potionEffects.getDuration("dragonsurvival:hunter_omen") > 601) return; //大于三十秒的不准撤消了
+    if (player.potionEffects.getDuration("dragonsurvival:hunter_omen") > 601)
+        return; //大于三十秒的不准撤消了
 
-    player.removeEffect("dragonsurvival:hunter_omen")
-    console.log("111")
+    player.removeEffect("dragonsurvival:hunter_omen");
     // const { dragonConquerRecords } = player.persistentData
 
     // if (!dragonConquerRecords) return;
     // if (!dragonConquerRecords[structure_id]) return;
-
-
-})
+});

@@ -16,7 +16,7 @@
 		x: 5.0d
 		y: 1.0d
 	}]
-	order_index: 6
+	order_index: 7
 	quest_links: [ ]
 	quests: [
 		{
@@ -1183,41 +1183,10 @@
 					type: "item"
 				}
 			]
-			tasks: [
-				{
-					icon: {
-						id: "iceandfire:dragon_skull_fire"
-					}
-					id: "1E24DA4EE79C6222"
-					observe_type: 5
-					optional_task: true
-					timer: 0L
-					to_observe: "iceandfire:fire_dragon"
-					type: "observation"
-				}
-				{
-					icon: {
-						id: "iceandfire:dragon_skull_ice"
-					}
-					id: "03957DFB722086BF"
-					observe_type: 5
-					optional_task: true
-					timer: 0L
-					to_observe: "iceandfire:ice_dragon"
-					type: "observation"
-				}
-				{
-					icon: {
-						id: "iceandfire:dragon_skull_lightning"
-					}
-					id: "2BCE21315E8D2BBB"
-					observe_type: 5
-					optional_task: true
-					timer: 0L
-					to_observe: "iceandfire:lightning_dragon"
-					type: "observation"
-				}
-			]
+			tasks: [{
+				id: "22F20E0CECE025DD"
+				type: "checkmark"
+			}]
 			x: 5.5d
 			y: 4.0d
 		}
@@ -1395,21 +1364,14 @@
 				id: "iceandfire:dread_shard"
 			}
 			id: "6594B36E75D501E0"
-			rewards: [
-				{
-					auto: "enabled"
-					id: "4AEACD6587DD6F9C"
-					type: "custom"
+			rewards: [{
+				id: "5DB808C38BC9C6CE"
+				item: {
+					count: 1
+					id: "dragonsurvival:weak_dragon_heart"
 				}
-				{
-					id: "5DB808C38BC9C6CE"
-					item: {
-						count: 1
-						id: "dragonsurvival:weak_dragon_heart"
-					}
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			tasks: [{
 				id: "2C27EFD151B86A17"
 				type: "checkmark"

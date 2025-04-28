@@ -1,0 +1,12 @@
+type = slideshow
+
+slideshow-meta {
+   name = paper_dragons
+   width = 478
+   height = 341
+   x = 0
+   y = 0
+   duration = 5.0
+   fadespeed = 6.0
+   randomize = false
+}

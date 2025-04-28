@@ -456,7 +456,7 @@
 
 [ender_dragon]
 	#If enabled, the ender dragon will curse you with an effect that prevents you from using some of your abilities when killed.
-	ender_dragon_curses_you = true
+	ender_dragon_curses_you = false
 
 [riding]
 	#Offset the riding position per entity type

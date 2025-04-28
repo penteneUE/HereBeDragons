@@ -23,4 +23,22 @@ StartupEvents.registry("item", (event) => {
         })
         .fireResistant(true);
     event.create("dry_sponge").texture("kubejs:item/dry_sponge");
+
+    event
+        .create("paper_dragon_fragment")
+        .texture("kubejs:item/paper_dragon_fragment")
+        .fireResistant(true)
+        .maxStackSize(1);
+    event
+        .create("paper_dragon_egg")
+        .texture("kubejs:item/paper_dragon_egg")
+        .fireResistant(true)
+        .maxStackSize(1);
+
+    event
+        .create("kubejs:magic_disc")
+        .texture("kubejs:item/magic_disc")
+        .jukeboxPlayable("kubejs:music.scrybe_of_magicks", true)
+        .maxStackSize(1)
+        .fireResistant(true);
 });

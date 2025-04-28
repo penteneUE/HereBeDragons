@@ -594,6 +594,49 @@ structureData.put("irons_spellbooks:ancient_battleground", {
     },
 });
 
+structureData.put("irons_spellbooks:catacombs", {
+    gateway: "kubejs:misc/catacombs",
+    name: "kubejs.recipeinfo.conquest.catacombs",
+    description: "kubejs.recipeinfo.conquest.catacombs.description",
+    mobs: netherMonsters,
+    product: {
+        item: weightedRandom()
+            .add("minecraft:rotten_flesh", 2)
+            .add("minecraft:bone", 4)
+            .add("minecraft:iron_ingot", 1)
+            .add("minecraft:gold_ingot", 1)
+            .add("minecraft:diamond", 1)
+            .add("irons_spellbooks:arcane_essence", 2)
+            .add("irons_spellbooks:common_ink", 0.5)
+            .add("irons_spellbooks:uncommon_ink", 0.2)
+            .add("irons_spellbooks:rare_ink", 0.1)
+            .add("dragonsurvival:elder_dragon_bone", 0.5)
+            .add("dragonsurvival:heart_element", 0.2)
+            .add("dragonsurvival:weak_dragon_heart", 0.1)
+            .add("dragonsurvival:elder_dragon_heart", 0.1),
+        count: 16,
+    },
+});
+
+structureData.put("minecraft:stronghold", {
+    gateway: "kubejs:misc/stronghold",
+    name: "kubejs.recipeinfo.conquest.stronghold",
+    description: "kubejs.recipeinfo.conquest.stronghold.description",
+    mobs: netherMonsters,
+    product: {
+        item: weightedRandom()
+            .add("minecraft:ender_pearl", 1)
+            .add("minecraft:iron_ingot", 2)
+            .add("minecraft:gold_ingot", 2)
+            .add("minecraft:experience_bottle", 1)
+            .add("dragonsurvival:elder_dragon_bone", 0.5)
+            .add("dragonsurvival:heart_element", 0.2)
+            .add("dragonsurvival:weak_dragon_heart", 0.1)
+            .add("dragonsurvival:elder_dragon_heart", 0.1),
+        count: 24,
+    },
+});
+
 global.STRUCTURE_DATA = structureData;
 
 //initStructureData();

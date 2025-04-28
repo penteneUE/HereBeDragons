@@ -4,7 +4,7 @@
  * @returns
  */
 function playerTick_Sponge(event) {
-    const {
+    let {
         player,
         player: { inventory },
     } = event;
@@ -22,6 +22,66 @@ function playerTick_Sponge(event) {
     );
 }
 
+const dragonEggs = global.UTILS.weightedRandom();
+dragonEggs.add("iceandfire:dragonegg_amethyst", 1);
+dragonEggs.add("iceandfire:dragonegg_black", 1);
+dragonEggs.add("iceandfire:dragonegg_blue", 1);
+dragonEggs.add("iceandfire:dragonegg_bronze", 1);
+dragonEggs.add("iceandfire:dragonegg_copper", 1);
+dragonEggs.add("iceandfire:dragonegg_electric", 1);
+dragonEggs.add("iceandfire:dragonegg_gray", 1);
+dragonEggs.add("iceandfire:dragonegg_green", 1);
+dragonEggs.add("iceandfire:dragonegg_red", 1);
+dragonEggs.add("iceandfire:dragonegg_sapphire", 1);
+dragonEggs.add("iceandfire:dragonegg_silver", 1);
+dragonEggs.add("iceandfire:dragonegg_white", 1);
+
+/**
+ *
+ * @param {$SimplePlayerKubeEvent_} event
+ * @returns
+ */
+function playerTick_PaperDragonEgg(event) {
+    let { player } = event;
+
+    let hasPaperEgg = false;
+    let offHand = false;
+    if (
+        player.mainHandItem &&
+        player.mainHandItem.id == "kubejs:paper_dragon_egg"
+    ) {
+        hasPaperEgg = true;
+    }
+    if (
+        player.offHandItem &&
+        player.offHandItem.id == "kubejs:paper_dragon_egg"
+    ) {
+        hasPaperEgg = true;
+        offHand = true;
+    }
+
+    if (!hasPaperEgg) return;
+
+    //if (false) {
+    if (!player.stages.has("endless_challenger")) return;
+    // } else {
+    //     let k = 40;
+    //     let oAABB = player.getBoundingBox().inflate(k);
+
+    //     event.level.getEntitiesWithin(oAABB).forEach((entity) => {
+    //         if (replacePaperEgg) return;
+    //         if (entity.id == "gateways:endless_gateway") replacePaperEgg = true;
+    //     });
+    // }
+
+    let newItem = Item.of(dragonEggs.getItem());
+    if (offHand) {
+        player.offHandItem = newItem;
+    } else {
+        player.mainHandItem = newItem;
+    }
+}
+
 /**
  *
  * @param {$SimplePlayerKubeEvent_} event
@@ -33,7 +93,7 @@ function playerTick_RepFrenzy(event) {
 
     const { boundingBox } = player;
     //spawnParticles(ParticleOptions options, boolean overrideLimiter, double x, double y, double z, double vx, double vy, double vz, int count, double speed)
-    let location = Utils.newList();
+    //let location = Utils.newList();
     for (let i = boundingBox.minX; i < boundingBox.maxX; i += 0.5) {
         for (let j = boundingBox.minY; j < boundingBox.maxY; j += 0.5) {
             for (let k = boundingBox.minZ; k < boundingBox.maxZ; k += 0.5) {
@@ -42,7 +102,7 @@ function playerTick_RepFrenzy(event) {
                     true,
                     i,
                     j,
-                    player.z,
+                    k,
                     0,
                     0.3,
                     0,
@@ -52,6 +112,55 @@ function playerTick_RepFrenzy(event) {
             }
         }
     }
+
+    let k = 1;
+    let oAABB = player.getBoundingBox().inflate(k);
+
+    /** @type {$LivingEntity_} */
+    let matingDragon = null;
+    event.level.getEntitiesWithin(oAABB).forEach((entity) => {
+        if (matingDragon) return;
+        if (
+            entity.type == "iceandfire:ice_dragon" ||
+            entity.type == "iceandfire:fire_dragon" ||
+            entity.type == "iceandfire:lightning_dragon"
+        )
+            matingDragon = entity;
+    });
+    //console.log(matingDragon);
+
+    if (!matingDragon) return;
+
+    let inLove = matingDragon.nbt.getInt("InLove");
+    if (inLove == 0) return;
+    //console.log(inLove);
+    if (Math.floor(Math.random() * 50) != 0) return;
+
+    let male = matingDragon.nbt.getBoolean("Gender");
+    let variant = matingDragon.nbt.getString("Variant");
+    let eggTag = new $CompoundTag();
+    eggTag.putString("Color", variant);
+
+    let egg = event.level.createEntity("iceandfire:dragon_egg");
+    egg.mergeNbt(eggTag);
+    //console.log(egg);
+
+    if (male) {
+        egg.x = player.x;
+        egg.y = player.y;
+        egg.z = player.z;
+    } else {
+        egg.x = matingDragon.x;
+        egg.y = matingDragon.y;
+        egg.z = matingDragon.z;
+    }
+    egg.spawn();
+
+    event.server.runCommandSilent(
+        `/playsound minecraft:entity.chicken.egg player ${player.username.toString()} ${
+            egg.x
+        } ${egg.y} ${egg.z}`
+    );
 }
 
 /**

@@ -27,29 +27,29 @@ const DRAGONS = [
     "dragonsurvival:forest_dragon",
 ];
 
-/**
- *
- * @param {$Player_} player
- */
-function isDragon(player) {
-    let handler = $DragonStateProvider.getData(player);
+// /**
+//  *
+//  * @param {$Player_} player
+//  */
+// function isDragon(player) {
+//     let handler = $DragonStateProvider.getData(player);
 
-    return handler.isDragon();
-}
-global.UTILS.isDragon = isDragon;
+//     return handler.isDragon();
+// }
+// //global.UTILS.isDragon = isDragon;
 
-/**
- *
- * @param {$Player_} player
- */
-function dragonGrowth(player) {
-    let handler = $DragonStateProvider.getData(player);
+// /**
+//  *
+//  * @param {$Player_} player
+//  */
+// function dragonGrowth(player) {
+//     let handler = $DragonStateProvider.getData(player);
 
-    if (!handler.isDragon()) return -1;
+//     if (!handler.isDragon()) return -1;
 
-    return handler.getGrowth();
-}
-global.UTILS.dragonGrowth = dragonGrowth;
+//     return handler.getGrowth();
+// }
+//global.UTILS.dragonGrowth = dragonGrowth;
 
 function playerTick_DragonState(/**@type {$SimplePlayerKubeEvent_}*/ event) {
     const { player } = event;

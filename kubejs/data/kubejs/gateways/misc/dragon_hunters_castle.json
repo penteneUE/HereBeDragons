@@ -109,6 +109,7 @@
     ],
     "spawn_algorithm": "gateways:inward_spiral",
     "rules":{
-        "fail_on_out_of_bounds": false
+        "fail_on_out_of_bounds": false,
+        "remove_mobs_on_failure": false
     }
 }

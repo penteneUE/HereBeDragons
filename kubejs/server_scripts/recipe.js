@@ -18,6 +18,34 @@ ServerEvents.recipes((event) => {
 
     event
         .shapeless(
+            Item.of("kubejs:endless_undead_flag", 1), // arg 1: output
+            ["minecraft:bone_block", "kubejs:paper_dragon_fragment"]
+        )
+        .keepIngredient("kubejs:paper_dragon_fragment");
+
+    event
+        .shapeless(
+            Item.of("kubejs:endless_myth_flag", 1), // arg 1: output
+            ["#minecraft:logs", "kubejs:paper_dragon_fragment"]
+        )
+        .keepIngredient("kubejs:paper_dragon_fragment");
+
+    event
+        .shapeless(
+            Item.of("kubejs:endless_titan_flag", 1), // arg 1: output
+            ["#c:cobblestones", "kubejs:paper_dragon_fragment"]
+        )
+        .keepIngredient("kubejs:paper_dragon_fragment");
+
+    event
+        .shapeless(
+            Item.of("kubejs:endless_dragon_flag", 1), // arg 1: output
+            ["iceandfire:dragon_bone_block", "kubejs:paper_dragon_fragment"]
+        )
+        .keepIngredient("kubejs:paper_dragon_fragment");
+
+    event
+        .shapeless(
             Item.of("kubejs:wet_sponge", 1), // arg 1: output
             ["kubejs:dry_sponge", "minecraft:water_bucket"]
         )
@@ -45,6 +73,20 @@ ServerEvents.recipes((event) => {
             A: "minecraft:glass",
             B: "dragonsurvival:elder_dragon_dust", //arg 3: the mapping object
             C: "minecraft:emerald",
+        }
+    );
+
+    event.shaped(
+        Item.of("kubejs:paper_dragon_egg", 1), // arg 1: output
+        [
+            "ABA",
+            "BCB", // arg 2: the shape (array of strings)
+            "ABA",
+        ],
+        {
+            A: "minecraft:paper",
+            B: "kubejs:paper_dragon_fragment", //arg 3: the mapping object
+            C: "minecraft:nether_star",
         }
     );
 });

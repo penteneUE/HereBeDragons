@@ -15,7 +15,7 @@
         {
             "type": "gateways:stack",
             "stack": {
-                "id": "kubejs:ancient_city",
+                "id": "kubejs:dragon_conquest_trophy",
                 "count": 1,
                 "components": {
                     "minecraft:custom_data": {
