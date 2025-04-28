@@ -7,7 +7,7 @@
 	chapter.54D2F7918CB21461.title: "征服：龙之宝库"
 	chapter.5F32B23A5FDD7059.title: "1：表象"
 	chapter.640F3009EE40B4BE.title: "介绍 \\& 新手教程"
-	chapter.6A6E5899E359238B.title: "尾声：叙事的言语"
+	chapter.6A6E5899E359238B.title: "尾声：叙事的呓语"
 	chapter.7920A08C436F0663.title: "调试选项"
 	quest.0144FE00B19FCBC7.quest_desc: [
 		"由于整合包仍是&c开发中版本&r，可能会遭遇恶性bug！（卡死一种玩法的那种，真的特别恶性！）"
@@ -38,6 +38,14 @@
 	quest.06398A1A4B38AEB3.title: "诡异森林"
 	quest.063BF9E1684BB19B.quest_desc: ["不知是幸运还是不幸，据你的观察，这头家伙的行为和先人手记上的描述分毫不差。"]
 	quest.063BF9E1684BB19B.title: "食人妖"
+	quest.06FC5550EC4AB636.quest_desc: [
+		"群号：868098586"
+		""
+		"另外容我介绍背景的两个家伙，我们的——亚鲁大伯托和麦克海恩。"
+		""
+		"再次感谢你的游玩！"
+	]
+	quest.06FC5550EC4AB636.quest_subtitle: "可以加入作者的粉丝群"
 	quest.07A61974F4ED437D.quest_desc: ["陆上的海洋龙会&c因身体逐渐干燥而受到伤害&r。为保障在陆地的体验，这里提供了一些海绵来打湿自己。在飞行中也能用！"]
 	quest.0ACD08382118A6CE.quest_subtitle: "幽灵黑工"
 	quest.0ACD08382118A6CE.title: "占领：古战场"
@@ -120,6 +128,8 @@
 		""
 		"使用罗盘时，部分结构会是英文，请留意。"
 	]
+	quest.1D43F77FD948BD09.quest_subtitle: "请点这里，那个打勾"
+	quest.1D43F77FD948BD09.title: "苏醒"
 	quest.1DCBEE9D1F41A334.quest_desc: ["海中的沉船里不缺鱼与海带。"]
 	quest.1DCBEE9D1F41A334.quest_subtitle: "永不空军"
 	quest.1DCBEE9D1F41A334.title: "占领：沉船"
@@ -225,6 +235,14 @@
 	quest.282D6DA8CBDD27E1.quest_subtitle: "传说中的……"
 	quest.282D6DA8CBDD27E1.title: "聚落的征服"
 	quest.286F08AEB6428C82.quest_subtitle: "尸体派对"
+	quest.28A49E5085B3F218.quest_desc: [
+		"整合包内置了局域网选项拓展，可以配置更多的项目。"
+		""
+		"按下默认&eM&r打开地图——注意，请先将FTB区块的键位解绑！"
+		""
+		"如果设置无误的话，你将在地图上看见你的朋友。"
+	]
+	quest.28A49E5085B3F218.quest_subtitle: "我说龙是群居生物你二多龙吗？"
 	quest.28ED1E8BF3D0BE69.quest_desc: ["整合包中添加了更多旗帜图案，用它们装点你的龙旗吧！"]
 	quest.28ED1E8BF3D0BE69.title: "旗帜图案：龙"
 	quest.2A2B27F05BF4FC4F.quest_desc: ["中型村庄相比小型村庄，将有机会掉落龙心碎片与附魔书。（经验修补，耐久，锋利，效率）"]
@@ -232,9 +250,9 @@
 	quest.2A53602F5DD6482A.quest_desc: [
 		"恭喜，你毕业了本整合包！"
 		""
-		"现在，可以继续挑战无尽的回合数，亦或是前去和那缠魂幽堡的主人碰一碰。"
+		"现在，可以继续挑战无尽的回合数，繁育更多的龙占领世界，亦或是前去和那缠魂幽堡的主人碰一碰。"
 		""
-		"或者……来听一听我的话？"
+		"或者……来听一听叙事的话？"
 	]
 	quest.2A53602F5DD6482A.quest_subtitle: "成为龙上龙吧"
 	quest.2BAB54C68CA03FC4.quest_desc: ["在下界击杀疣猪兽获得，用于合成更高级的法术书。"]
@@ -387,7 +405,6 @@
 	quest.3EA80CB5C49D2C0D.quest_subtitle: "占领了高位唤魔者城堡的你，已是名正言顺的领主了"
 	quest.3EA80CB5C49D2C0D.title: "高位唤魔者套装"
 	quest.3EF34E6718CFE991.quest_subtitle: "龙在此……龙真的在此"
-	quest.406250F12A758B76.quest_subtitle: "龙王肚里能撑船"
 	quest.4111BB6653AFE691.quest_subtitle: "尽情去杀坏人吧"
 	quest.41A41BD24597BEC0.title: "幽灵"
 	quest.4218B7B59B0F0F74.title: "合成瓶中税收官"
@@ -428,10 +445,26 @@
 	quest.49AB9C5400682AA6.quest_subtitle: "不要把它放进岩浆！"
 	quest.49AB9C5400682AA6.title: "诅咒巫毒娃娃"
 	quest.4AD4A8B95FFE0E2E.quest_subtitle: "方便来往于领地之间"
-	quest.4AF56908F7A20C1C.quest_desc: [""]
+	quest.4AF56908F7A20C1C.quest_desc: [
+		"知识的收集，本身就是一门很高深的学问。是否存在一个地方，包含了所有的知识与信息？"
+		""
+		"你觉得是没有的。"
+	]
 	quest.4AF56908F7A20C1C.title: "引言"
 	quest.4B25854E1B58F6D2.quest_subtitle: "兴许这要塞也算是古代王国的一部分？"
 	quest.4B25854E1B58F6D2.title: "占领：下界要塞"
+	quest.4B9C677237382D2B.quest_desc: [
+		"希望你能在这里收获快乐，享受龙和龙相关的一切。"
+		""
+		"当然，如果可以的话，希望你能将体验反馈出来，帮助我完善这个整合包。"
+		"{@pagebreak}"
+		"贡献者名单："
+		""
+		"&dJesterRomut (@嘉登糖尿病)&r - 主创、主开发者"
+		"&eRobinEvals - 标题界面的龙贴图&r（未实装）"
+		"&bskbgok (@萨卡班盖欧卡)&r - Alpha测试员"
+	]
+	quest.4B9C677237382D2B.quest_subtitle: "没人会去看开发者名单"
 	quest.4BA87BE14387EE62.title: "装饰你的箱子"
 	quest.4BF0F72FA3E16483.quest_subtitle: "拯救一切迷途羔羊"
 	quest.4BF0F72FA3E16483.title: "牧师套装"
@@ -450,14 +483,14 @@
 		"{image:kubejs:textures/task/tutorial1.png width:97 height:79 align:center}"
 		""
 		"{@pagebreak}"
-		""
 		"1：龙的爪牙槽，存放在里的工具将保持生效。"
 		"2：背包、技能、种族、外观、动作。"
 		"3：成长进度"
-		"4：合成栏（相当于自带工作台）"
+		"4：合成栏"
 		"5：切换原版背包（用于穿脱饰品及外观装备等）、配置、整理"
 		"6：副手栏。"
 	]
+	quest.4E2F120762511B25.quest_subtitle: "自带工作台"
 	quest.4E3DD58B4F778C34.quest_subtitle: "猪灵公主"
 	quest.4E3DD58B4F778C34.title: "占领：堡垒遗迹"
 	quest.4E6ED770D83C4AFF.quest_desc: ["是时候该给自己建造一个窝了。华丽的装点也好，精致的内饰也罢。总归要有一个地方，放置你在冒险中收集的，满满的宝物。"]
@@ -537,11 +570,11 @@
 		"{@pagebreak}"
 		"“基金会之死”，作者 Huskar_CN，来自 SCP-CN 维基。原文链接：https://scp-wiki-cn.wikidot.com/foundation-s-death。遵循 CC-BY-SA 协议。"
 	]
-	quest.589DB3933D7ADA89.quest_subtitle: "整合包遵守CC-BY-SA协议"
+	quest.589DB3933D7ADA89.quest_subtitle: "CC-BY-SA与不可言说的网页"
 	quest.59880F400A213994.quest_desc: [
 		"想要成为一个强大的法师，装备是必不可少的。其中又包含魔法书、防具、法杖、饰品等。"
 		""
-		"善用JEI进行查找吧！"
+		"善用JEI进行查找。"
 	]
 	quest.5A815B9B714CDA2B.quest_desc: ["把这根滚烫的家伙拿在手上，你惊奇地发现——它飘零的粉末，与末影学派的物件有一种耦合性。"]
 	quest.5A815B9B714CDA2B.title: "烈焰"
@@ -619,6 +652,18 @@
 	]
 	quest.6175DF4BFDCFC5EA.quest_subtitle: "<日期与作者均不可辨别>"
 	quest.61A7E0594C10D4CA.quest_desc: ["掉落自唤魔者和高位唤魔者。"]
+	quest.61D03B762B3D7DB3.quest_desc: [
+		"{image:kubejs:textures/task/tutorial_skill.png width:68 height:28 align:center}"
+		""
+		"这是龙的技能条，取决于你的龙种。你需要快捷键才能释放技能。"
+		""
+		"整合包默认没有绑定键位。请在“&eESC→选项→按键控制→按键绑定&r”处，更改键位为你所想要的。这样子，你也更了解自己所绑下的键位。"
+		"{@pagebreak}"
+		"{image:kubejs:textures/task/tutorial_keybind.png width:178 height:96 align:center}"
+		""
+		"法术的键位也是同理。活学活用吧！"
+	]
+	quest.61D03B762B3D7DB3.quest_subtitle: "谁给我改键位了？"
 	quest.622866C257178852.quest_subtitle: "龙用龙皮书，太恐怖了……"
 	quest.626951C87CA6FF5C.quest_desc: [
 		"来自下界的、更强悍的材料。但需要一点锻造工艺，才能将它们安在你的爪牙上。"
@@ -694,12 +739,13 @@
 	quest.6D8BE1493A9030C1.quest_desc: ["……是因为你对世界的认识，龙的数量除以龙的认知水平吗？"]
 	quest.6D8BE1493A9030C1.title: "世界的崩解：第三阶段"
 	quest.6DE4F13231CC69B6.quest_desc: [
-		"感谢你玩到这里。无以复加。"
+		"感谢你玩到这里。"
 		""
 		"到了这个地步，任务也没有什么可作为完成奖励了。"
 		""
 		"来听听音乐吧。这是我唯一能拿得出手的了。"
 	]
+	quest.6DE4F13231CC69B6.quest_subtitle: "作为一个旁白"
 	quest.6E24DAAE54A4354F.quest_desc: ["有了法术书和卷轴，下一步就是将它们联系起来，把卷轴放进书里。你也不想自己珍贵的卷轴使用一下就消失，对吧？"]
 	quest.6E57F7CF05BF6FBC.quest_desc: [
 		"恭喜！你学会了使用与管理法术！"
@@ -726,6 +772,22 @@
 	quest.716C0EC962DF0E89.quest_subtitle: "龙会不会藏在下界？"
 	quest.716C0EC962DF0E89.title: "前往下界"
 	quest.7181E0EE4CF3A23D.quest_subtitle: "在十份以上的财宝堆里睡觉"
+	quest.719FEDF459AA1F90.quest_desc: [
+		"在物品栏中按下默认&eCtrl+F&r，将光标聚焦到下方的搜索栏上。"
+		""
+		"输入&e@+模组英文名（例如龙之生存→@dragonsurvival，铁魔法→@irons_spellbooks）&r，可以快捷搜索模组里加入的物品。"
+		""
+		"双击搜索栏，它会将背包/箱子里的物品按搜索结果&e高亮显示&r。"
+		""
+		"搜索结果中出来的物品，按下左键调出配方查询，按下右键调出配方中使用的查询。"
+		""
+		"如果是背包格子里的物品，按下默认&eR&r调出配方查询，按下默认&eU&r调出配方中使用的查询。"
+		"{@pagebreak}"
+		"{image:kubejs:textures/task/tutorial_recipe_browser.png width:190 height:85 align:center}"
+		""
+		"这里的“&e填充配方&r”可以快速将配方填入当前的工作台等方块，省去手动放置。"
+	]
+	quest.719FEDF459AA1F90.quest_subtitle: "知识树与智慧树与配方树"
 	quest.7219D2B812F4F537.quest_desc: [
 		"瓶中税收官每日为你的领地收税，并把物资送进物品栏。如果收税瓶被放在储物容器上，会把物资放进容器里。"
 		""
@@ -758,7 +820,7 @@
 		""
 		"这三种龙，你一种都没看见，而它们的描述也跟你自己现在的状态不符。因此你决定另开新篇，自己实地观察并记录下其余的魔法生物。"
 		""
-		"它们掉下的材料可以合成各种装备。"
+		"这些生物掉下的材料可以合成各种装备。"
 	]
 	quest.7408B42F36A27FB1.quest_desc: [
 		"没想到，那个家伙在死后给你留下了一颗蛋。"
@@ -845,6 +907,7 @@
 	task.0019B05811BD85A4.title: "笔记：远古龙"
 	task.0579C0FC39DF6F2C.title: "笔记：挽救的方法？"
 	task.0741D2CC2C85660E.title: "龙种的分别"
+	task.0762D5A4B4C103A6.title: "清除当前的挑战状态"
 	task.0C5D7ACA2643B662.title: "WIP：言灵：饕餮寓言"
 	task.0C88B4341C81B301.title: "异种共生：自由探索"
 	task.0CFE2752F709E5B0.title: "键位"
@@ -852,13 +915,13 @@
 	task.0DD3E5FE7390ECDF.title: "魔法生物"
 	task.0F4406652E6AD348.title: "食性的兼容"
 	task.111434795FEA746A.title: "中断当前的占领状态"
-	task.15834E2B7F280132.title: "苏醒"
+	task.15834E2B7F280132.title: "&e点我！"
 	task.15D0A15E24885187.title: "笔记：无尽挑战"
 	task.172E32CF4795659A.title: "生肉"
 	task.176774A86A7260FF.title: "启程"
 	task.199401EA6963724C.title: "铁锭"
 	task.1BADB32C84B71823.title: "WIP：龙的护甲外观"
-	task.1C31D71C2E7F973F.title: "JEI检索"
+	task.1C31D71C2E7F973F.title: "EMI - 配方查找"
 	task.1DF5CFFB5E7B50BE.title: "魔法装备"
 	task.2123AE028011AFF2.title: "WIP：添加可抓走的公主\\&王子"
 	task.2219B15B63FB50BA.title: "迫近的黑影"
@@ -869,14 +932,15 @@
 	task.2822EAC9B59C30DF.title: "笔记：异种杂交"
 	task.284A614488FC432D.title: "整合包之死"
 	task.291A150DF26B46E0.title: "笔记：狂龙病毒"
-	task.2C56F358AECA93D8.title: "龙的背包"
+	task.2C56F358AECA93D8.title: "龙的物品栏"
 	task.2CFB640AF692D8A7.title: "引言"
 	task.2D4D7ADEEA90E71F.title: "龙食产出点"
 	task.2D5F1E4E7A256624.title: "重新选择"
-	task.2DA64836A75052CD.title: "WIP：龙的技能"
+	task.2DA64836A75052CD.title: "龙的技能"
 	task.2FF2B40CD3492F3D.title: "法术：自由探索"
 	task.307998BBA6E21031.title: "木材"
 	task.35DEAD714FD1D813.title: "龙曾在此"
+	task.377E939FF8C6B271.title: "与朋友一起玩"
 	task.38298B7AF0996BA1.title: "调试选项"
 	task.3A5D0235D619652F.title: "感谢你玩到这里"
 	task.3BE42A84B83BD558.title: "焦炭食物"
@@ -897,10 +961,12 @@
 	task.4ECE5592CF67640A.title: "笔记：龙旗"
 	task.50D341C769A7D0FC.title: "任意法术卷轴"
 	task.5303FD0E886EE427.title: "无尽的亡灵挑战"
+	task.536E90C5A3833F79.title: "希望你玩得开心"
 	task.5467971C7B220C64.title: "任意龙之门"
 	task.56DAD45D20F6947D.title: "巢穴的建造"
 	task.56ECDCEA429A59B3.title: "刌庄"
 	task.598BF8CA11E630E8.title: "解锁调试选项……"
+	task.5E33750567CF8ECB.title: "想联系作者的话……"
 	task.5F1EB74BCE3C153D.title: "无尽的龙挑战"
 	task.603F5014859431C5.title: "龙与魔法"
 	task.622691708BF35089.title: "村庄"
@@ -919,5 +985,5 @@
 	task.79F6CA6974D8BA26.title: "蘑菇"
 	task.7B545A627225A8E4.title: "龙的言灵术"
 	task.7BDA4177A939D658.title: "无尽的巨人挑战"
-	task.7F2A6D0DBA026AB8.title: "CC-BY-SA协议"
+	task.7F2A6D0DBA026AB8.title: "借物表与授权协议"
 }

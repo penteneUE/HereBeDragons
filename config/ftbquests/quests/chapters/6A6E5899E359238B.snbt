@@ -3,24 +3,67 @@
 	default_quest_shape: ""
 	filename: "6A6E5899E359238B"
 	group: ""
+	icon: {
+		components: {
+			"irons_spellbooks:spell_container": {
+				data: [ ]
+				maxSpells: 8
+				mustEquip: 1b
+				spellWheel: 1b
+			}
+		}
+		id: "irons_spellbooks:rotten_spell_book"
+	}
 	id: "6A6E5899E359238B"
+	images: [{
+		height: 12.0d
+		image: "kubejs:textures/task/thankyou.png"
+		rotation: 0.0d
+		width: 12.0d
+		x: 0.0d
+		y: -2.0d
+	}]
 	order_index: 6
 	quest_links: [ ]
-	quests: [{
-		id: "6DE4F13231CC69B6"
-		rewards: [{
-			id: "164356E7BA996488"
-			item: {
-				count: 1
-				id: "kubejs:magic_disc"
-			}
-			type: "item"
-		}]
-		tasks: [{
-			id: "3A5D0235D619652F"
-			type: "checkmark"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["2A53602F5DD6482A"]
+			hide_until_deps_complete: true
+			id: "6DE4F13231CC69B6"
+			rewards: [{
+				id: "164356E7BA996488"
+				item: {
+					count: 1
+					id: "kubejs:magic_disc"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3A5D0235D619652F"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4B9C677237382D2B"]
+			id: "06FC5550EC4AB636"
+			tasks: [{
+				id: "5E33750567CF8ECB"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6DE4F13231CC69B6"]
+			id: "4B9C677237382D2B"
+			tasks: [{
+				id: "536E90C5A3833F79"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+	]
 }

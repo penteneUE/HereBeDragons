@@ -48,5 +48,27 @@
 			x: -2.5d
 			y: -0.5d
 		}
+		{
+			can_repeat: true
+			dependencies: ["0B3291EA305685A9"]
+			disable_recipe_mod: true
+			id: "41FFF1078228367B"
+			optional: true
+			rewards: [{
+				auto: "enabled"
+				command: "/whredragonswent clear-challenger @p"
+				exclude_from_claim_all: true
+				id: "103C4B2E8E2D398D"
+				permission_level: 2
+				team_reward: false
+				type: "command"
+			}]
+			tasks: [{
+				id: "0762D5A4B4C103A6"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
 	]
 }
