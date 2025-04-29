@@ -960,6 +960,7 @@
 		}
 		{
 			dependencies: ["2BAB54C68CA03FC4"]
+			hide_until_deps_complete: true
 			id: "02AF4CB5FD884344"
 			rewards: [{
 				id: "1F9431420348518E"
@@ -979,6 +980,7 @@
 		}
 		{
 			dependencies: ["2BAB54C68CA03FC4"]
+			hide_until_deps_complete: true
 			id: "6CE81F1229A56DE8"
 			rewards: [{
 				id: "4E5B0ECBAAF19257"
@@ -1116,6 +1118,7 @@
 		}
 		{
 			dependencies: ["2BAB54C68CA03FC4"]
+			hide_until_deps_complete: true
 			id: "04ADC1D9D22CB85C"
 			tasks: [{
 				id: "6E1E48556F83922E"

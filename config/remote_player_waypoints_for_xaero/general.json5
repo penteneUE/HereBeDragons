@@ -1,7 +1,15 @@
 {
 	"enabled": true,
 	"updateDelay": 2000,
-	"serverEntries": [],
+	"serverEntries": [
+		{
+			"maptype": "Bluemap",
+			"ip": "localhost",
+			"link": "",
+			"markerVisibilityMode": "Auto",
+			"markerLayers": []
+		}
+	],
 	"defaultY": 64,
 	"minimapWaypointsRenderBelow": "WHEN_PLAYER_LIST_SHOWN",
 	"enablePlayerWaypoints": true,

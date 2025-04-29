@@ -78,6 +78,13 @@
 					permission_level: 2
 					type: "command"
 				}
+				{
+					auto: "invisible"
+					exclude_from_claim_all: true
+					id: "2C7459759B08ABB6"
+					table_id: 4107946099378255491L
+					type: "all_table"
+				}
 			]
 			tasks: [{
 				id: "417C6101F274068A"
@@ -154,7 +161,6 @@
 				}
 				id: "4AAB5E4ED34EA19A"
 				permission_level: 4
-				team_reward: false
 				type: "command"
 			}]
 			tasks: [{

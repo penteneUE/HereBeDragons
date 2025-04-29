@@ -1,0 +1,28 @@
+{
+	id: "39025B3669E47683"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{
+			command: "/effect give @p dragonsurvival:sea_peace 120 1 true"
+			id: "1202ADEAC22A3DB3"
+			permission_level: 2
+			silent: true
+			type: "command"
+		}
+		{
+			command: "/effect give @p dragonsurvival:forest_magic 120 1 true"
+			id: "4096D10808A96B12"
+			permission_level: 2
+			silent: true
+			type: "command"
+		}
+		{
+			command: "/effect give @p dragonsurvival:cave_fire 120 1 true"
+			id: "2487710EEA9C7D47"
+			permission_level: 2
+			silent: true
+			type: "command"
+		}
+	]
+}
