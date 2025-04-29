@@ -48,7 +48,6 @@
 		{
 			dependencies: ["1D43F77FD948BD09"]
 			hide_details_until_startable: true
-			hide_text_until_complete: true
 			icon: {
 				id: "iceandfire:dragon_skull_fire"
 			}

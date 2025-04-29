@@ -117,6 +117,7 @@
 				"79C4B032A9B1F772"
 				"3C2422EE5831C05E"
 			]
+			hide_until_deps_complete: true
 			id: "05F9D9DD6B1919D6"
 			shape: "diamond"
 			tasks: [{
@@ -127,7 +128,9 @@
 			y: -15.0d
 		}
 		{
+			dependencies: ["255FDC0FA11B8262"]
 			hide_text_until_complete: true
+			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:grass_block"
 			}

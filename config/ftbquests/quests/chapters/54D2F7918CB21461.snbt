@@ -93,10 +93,7 @@
 			y: 0.5d
 		}
 		{
-			dependencies: [
-				"616FEA8BA81A4AF1"
-				"1A1EEED3B3FB70E6"
-			]
+			dependencies: ["616FEA8BA81A4AF1"]
 			id: "282D6DA8CBDD27E1"
 			rewards: [{
 				id: "123AFFCD4B873CC5"
@@ -251,6 +248,7 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["282D6DA8CBDD27E1"]
 			hide_dependency_lines: true
 			id: "1F2854EDFE5FA100"
 			rewards: [

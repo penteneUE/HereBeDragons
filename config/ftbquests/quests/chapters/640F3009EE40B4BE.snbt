@@ -36,10 +36,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"209A1F902BE74FC3"
-				"0E0A7316F2302130"
-			]
+			dependencies: ["0E0A7316F2302130"]
 			id: "4E2F120762511B25"
 			rewards: [{
 				id: "574D794B8A7AA210"

@@ -133,51 +133,51 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
+			"minecraft:cow": true
 			"minecraft:drowned": true
+			"minecraft:enderman": true
+			"minecraft:pufferfish": false
+			"minecraft:zombie_villager": true
+			"minecraft:villager": true
+			"iceandfire:hippocampus": true
+			"iceandfire:myrmex_soldier": true
+			"minecraft:iron_golem": true
+			"minecraft:trader_llama": true
+			"iceandfire:myrmex_worker": true
+			"iceandfire:hippogryph": true
+			"aquaculture:brown_trout": false
+			"minecraft:strider": true
+			"minecraft:rabbit": true
+			"minecraft:wolf": true
+			"minecraft:creeper": true
+			"minecraft:bee": true
+			"iceandfire:myrmex_queen": true
+			"irons_spellbooks:necromancer": true
+			"minecraft:tropical_fish": false
+			"iceandfire:cockatrice": true
+			"aquaculture:bluegill": false
+			"minecraft:spider": true
+			"aquaculture:gar": false
+			"minecraft:bat": true
+			"aquaculture:perch": false
+			"minecraft:zombified_piglin": true
+			"minecraft:piglin": true
+			"minecraft:squid": true
+			"minecraft:wandering_trader": true
+			"aquaculture:smallmouth_bass": false
+			"minecraft:sheep": true
+			"minecraft:ghast": true
+			"minecraft:glow_squid": true
+			"irons_spellbooks:cursed_armor_stand": true
+			"aquaculture:carp": false
+			"minecraft:chicken": true
+			"aquaculture:muskellunge": false
+			"minecraft:skeleton": true
 			"minecraft:pig": true
 			"minecraft:phantom": true
-			"iceandfire:myrmex_worker": true
-			"minecraft:rabbit": true
-			"iceandfire:myrmex_queen": true
-			"minecraft:tropical_fish": false
-			"minecraft:zombie": true
-			"aquaculture:carp": false
-			"iceandfire:cockatrice": true
-			"irons_spellbooks:cursed_armor_stand": true
-			"minecraft:cow": true
-			"minecraft:bee": true
-			"aquaculture:muskellunge": false
-			"minecraft:piglin": true
 			"aquaculture:minnow": false
-			"aquaculture:bluegill": false
-			"minecraft:ghast": true
-			"minecraft:strider": true
-			"minecraft:villager": true
-			"aquaculture:perch": false
-			"minecraft:skeleton": true
-			"minecraft:squid": true
-			"iceandfire:hippogryph": true
-			"minecraft:creeper": true
-			"minecraft:glow_squid": true
-			"minecraft:bat": true
-			"iceandfire:hippocampus": true
-			"minecraft:zombified_piglin": true
-			"minecraft:trader_llama": true
-			"minecraft:iron_golem": true
-			"minecraft:chicken": true
-			"minecraft:wandering_trader": true
-			"aquaculture:gar": false
-			"aquaculture:smallmouth_bass": false
-			"minecraft:zombie_villager": true
-			"minecraft:spider": true
 			"minecraft:witch": true
-			"minecraft:enderman": true
-			"iceandfire:myrmex_soldier": true
-			"minecraft:sheep": true
-			"minecraft:wolf": true
-			"aquaculture:brown_trout": false
-			"irons_spellbooks:necromancer": true
-			"minecraft:pufferfish": false
+			"minecraft:zombie": true
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)
