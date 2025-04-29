@@ -62,17 +62,23 @@ function playerTick_PaperDragonEgg(event) {
 
     if (!hasPaperEgg) return;
 
-    //if (false) {
-    if (!player.stages.has("endless_challenger")) return;
-    // } else {
-    //     let k = 40;
-    //     let oAABB = player.getBoundingBox().inflate(k);
+    let replacePaperEgg = false;
 
-    //     event.level.getEntitiesWithin(oAABB).forEach((entity) => {
-    //         if (replacePaperEgg) return;
-    //         if (entity.id == "gateways:endless_gateway") replacePaperEgg = true;
-    //     });
-    // }
+    //if (false) {
+    // if (!player.stages.has("endless_challenger")) return;
+    if (player.stages.has("endless_challenger")) {
+        replacePaperEgg = true;
+    } else {
+        let k = 30;
+        let oAABB = player.getBoundingBox().inflate(k);
+
+        event.level.getEntitiesWithin(oAABB).forEach((entity) => {
+            if (replacePaperEgg) return;
+            if (entity.type == "gateways:endless_gateway")
+                replacePaperEgg = true;
+        });
+    }
+    if (!replacePaperEgg) return;
 
     let newItem = Item.of(dragonEggs.getItem());
     if (offHand) {

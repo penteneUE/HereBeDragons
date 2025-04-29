@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "3"
 	group: ""
+	hide_quest_details_until_startable: true
 	icon: {
 		components: {
 			"irons_spellbooks:affinity_data": {
@@ -90,10 +91,20 @@
 			dependencies: ["79C4B032A9B1F772"]
 			hide_dependency_lines: true
 			id: "2A53602F5DD6482A"
-			rewards: [{
-				id: "7AEFEB77882D9FD9"
-				type: "custom"
-			}]
+			rewards: [
+				{
+					id: "7AEFEB77882D9FD9"
+					type: "custom"
+				}
+				{
+					id: "2D547A7116F94EE2"
+					item: {
+						count: 1
+						id: "kubejs:magic_disc"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "0C88B4341C81B301"
 				type: "checkmark"

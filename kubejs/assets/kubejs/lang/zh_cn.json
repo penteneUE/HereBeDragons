@@ -38,7 +38,7 @@
     "item.kubejs.paper_dragon_fragment": "失活的纸龙",
     "kubejs.tooltips.paper_dragon_fragment.1": "它再也不会动了……",
     "item.kubejs.paper_dragon_egg": "纸扎的龙蛋",
-    "kubejs.tooltips.paper_dragon_egg.1": "充满了魔力的纸壳。手持时，如果周围有被自己召唤的无尽挑战传送门，将交换到一颗真正的龙蛋。",
+    "kubejs.tooltips.paper_dragon_egg.1": "充满了魔力的纸壳。手持时，如果周围有无尽挑战传送门，将交换到一颗真正的龙蛋。",
 
     "item.kubejs.dragon_conquest_trophy": "占领奖杯",
     "kubejs.tooltips.dragon_conquest_trophy.1": "用于提交任务或收藏用途。",

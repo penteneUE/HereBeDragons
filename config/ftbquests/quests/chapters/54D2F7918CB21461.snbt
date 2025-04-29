@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "54D2F7918CB21461"
 	group: ""
+	hide_quest_details_until_startable: true
 	icon: {
 		id: "dragonsurvival:elder_dragon_bone"
 	}

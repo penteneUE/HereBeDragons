@@ -30,14 +30,6 @@
 			dependencies: ["2A53602F5DD6482A"]
 			hide_until_deps_complete: true
 			id: "6DE4F13231CC69B6"
-			rewards: [{
-				id: "164356E7BA996488"
-				item: {
-					count: 1
-					id: "kubejs:magic_disc"
-				}
-				type: "item"
-			}]
 			tasks: [{
 				id: "3A5D0235D619652F"
 				type: "checkmark"
