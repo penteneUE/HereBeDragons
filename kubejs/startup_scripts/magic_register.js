@@ -37,7 +37,7 @@ StartupEvents.registry("irons_spellbooks:spells", (event) => {
         .create("taotie_fabel")
         .setCastTime(10)
         .setBaseManaCost(2)
-        .setCooldownSeconds(2) // Spell cooldown in seconds
+        .setCooldownSeconds(1) // Spell cooldown in seconds
         .setManaCostPerLevel(10) // How much additional mana is needed per level
         .setCastType("instant") // Cast type can be "continuous", "long", "instant", or "none"
         .setSchool("kubejs:dragon") // The school type. This is the ID of the school you want to use

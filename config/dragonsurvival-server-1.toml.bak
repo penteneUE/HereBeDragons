@@ -303,11 +303,11 @@
 	# Default: 0.03
 	# Range: 0.0 ~ 1.0
 	dragon_heart_shard_chance = 0.03
-	#Should the entity type tag 'drops_weak_dragon_heart' be treated as a whitelist instead of a blacklist?
+	#If enabled the entity list for weak dragon hearts acts as a whitelist - if disabled it acts as a blacklist
 	weak_dragon_heart_white_list = false
-	#Should the entity type tag 'drops_dragon_heart_shard' be treated as a whitelist instead of a blacklist?
+	#If enabled the entity list for dragon hearts acts as a whitelist - if disabled it acts as a blacklist
 	dragon_heart_white_list = false
-	#Should the entity type tag 'drops_elder_dragon_heart' be treated as a whitelist instead of a blacklist?
+	#If enabled the entity list for elder dragon hearts acts as a whitelist - if disabled it acts as a blacklist
 	elder_dragon_heart_white_list = false
 	#Determines the chance (in %) of elder dragon hearts dropping from entities with a maximum health above 50
 	# Default: 0.01

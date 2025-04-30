@@ -1,14 +1,44 @@
 let $Mob = Java.loadClass("net.minecraft.world.entity.Mob");
 
 /**
- *
- * @param {$Vec3_} eyePos
- * @param {$Vec3_} lookVec
+ * @param {$Entity_} entity
+ * @param {$ServerLevel_} level
+ * @param {number} reach
+ * @returns {$BlockHitResult_}
+ */
+function sightReachedBlock(entity, level, reach) {
+    let eyePos = entity.getEyePosition(1.0);
+    let lookVec = entity.getLookAngle();
+    let end = eyePos.add(
+        lookVec.x() * reach,
+        lookVec.y() * reach,
+        lookVec.z() * reach
+    );
+    let blockHit = level.clip(
+        new ClipContext(
+            eyePos,
+            end,
+            ClipContext.Block.OUTLINE,
+            ClipContext.Fluid.NONE,
+            entity
+        )
+    );
+    // if (blockHit.getType() != HitResultType.MISS) {
+    //     end = blockHit.getLocation();
+    // }
+    return blockHit;
+}
+
+/**
+ * @param {$Entity_} entity
  * @param {$ServerLevel_} level
  * @param {number} reach
  * @returns {$Entity_}
  */
-function sightReachedEntity(entity, eyePos, lookVec, level, reach) {
+function sightReachedEntity(entity, level, reach) {
+    let eyePos = entity.getEyePosition(1.0);
+    let lookVec = entity.getLookAngle();
+
     let end = eyePos.add(
         lookVec.x() * reach,
         lookVec.y() * reach,
@@ -134,10 +164,10 @@ function anantaRemanta_preCast(event) {
     let player = event.entity;
     let level = event.level;
     if (!player.isPlayer()) return;
-    let eyePos = player.getEyePosition(1.0);
-    let lookVec = player.getLookAngle();
+    // let eyePos = player.getEyePosition(1.0);
+    // let lookVec = player.getLookAngle();
 
-    let target = sightReachedEntity(player, eyePos, lookVec, level, 40);
+    let target = sightReachedEntity(player, level, 40);
 
     if (!target) {
         player.statusMessage = Text.translate(

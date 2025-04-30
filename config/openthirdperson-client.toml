@@ -1,0 +1,31 @@
+[General]
+	#Choose which camera to use
+	#VANILLA - Normal Minecraft 3rd person
+	#LOCKED_FREE - Move the camera freely when pressing a keybind
+	#CARDINAL - Move the camera freely all the time and only move in cardinal directions
+	#Allowed Values: VANILLA, LOCKED_FREE, CARDINAL
+	camera = "CARDINAL"
+	#Choose which camera to use for vehicles
+	#VANILLA - Normal Minecraft 3rd person
+	#LOCKED_FREE - Move the camera freely when pressing a keybind
+	#CARDINAL - Move the camera freely all the time and only move in cardinal directions
+	#Allowed Values: VANILLA, LOCKED_FREE, CARDINAL
+	ride_camera = "VANILLA"
+	#Smoothly transitions between camera and ride_camera
+	smooth_transition = true
+	#How far away the third person camera should be
+	# Default: 4.0
+	# Range: -64.0 ~ 64.0
+	cam_dist = 4.0
+	#Sensitivity of the camera
+	# Default: 1.0
+	# Range: 0.0 ~ 64.0
+	cam_sens = 1.0
+
+[Cardinal]
+	#True - Up will always send the player north, etc
+	#False - Up will always send you the direction you're facing, etc
+	cardinal_global = false
+	#True - Left and right clicks will rotate you to the direction your camera is looking
+	#False - Only the bound camera button will rotate you (default middle mouse)
+	cardinal_auto_look = true

@@ -15,16 +15,28 @@ function taotieFabel_onCast(event) {
     //let maxSpace = Math.pow(event.spellLevel, 1.5);
     let infinite = event.spellLevel > 10;
 
+    let k = event.spellLevel * 8;
+
     if (player.shiftKeyDown) {
         if (!player.persistentData.consumedEntity) return;
 
+        let blockHit = sightReachedBlock(player, event.level, k);
         let count = 0;
+        let { x, y, z } = player;
+
+        if (blockHit.getType() != HitResultType.MISS) {
+            let loc = blockHit.getLocation();
+            x = loc.x();
+            y = loc.y();
+            z = loc.z();
+        }
+
         player.persistentData.consumedEntity.forEach((tag) => {
             let newEntity = event.level.createEntity(tag.getString("type"));
             newEntity.mergeNbt(tag.nbt);
-            newEntity.x = player.x;
-            newEntity.y = player.y;
-            newEntity.z = player.z;
+            newEntity.x = x;
+            newEntity.y = y;
+            newEntity.z = z;
             //newEntity.setPosition(player.x, player.y, player.z);
             newEntity.spawn();
 
@@ -55,7 +67,6 @@ function taotieFabel_onCast(event) {
     }
 
     //event.entity.tell("i love you");
-    let k = event.spellLevel * 8;
     let oAABB = player.getBoundingBox().inflate(k);
 
     if (!player.persistentData.consumedEntity) {
@@ -103,7 +114,7 @@ function taotieFabel_onCast(event) {
             player.persistentData.getDouble("consumedSpace") +
                 entity.boundingBox.getSize()
         );
-        console.log(entity.boundingBox.getSize());
+        //console.log(entity.boundingBox.getSize());
 
         entity.discard();
         count++;
