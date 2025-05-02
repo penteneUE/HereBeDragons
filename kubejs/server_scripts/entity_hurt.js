@@ -6,7 +6,7 @@ const commonVillageMob = {
     "guardvillagers:guard": true,
 };
 
-EntityEvents.beforeHurt((event) => {
+EntityEvents.afterHurt((event) => {
     if (!event.source.player) return;
 
     const {

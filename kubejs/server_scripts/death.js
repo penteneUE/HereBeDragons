@@ -51,9 +51,12 @@ ItemEvents.rightClicked("gravestone:obituary", (event) => {
     if (player.getUuid().toString() != playerId.toString()) {
         return;
     }
+    //console.log(player);
 
     if (!player.stages.has("deathteleport")) return;
+    //console.log(player);
     if (!player.shiftKeyDown) return;
+    //console.log(player);
 
     let deathId = deathData.getDeathId();
     /**@type {$Death_} */

@@ -69,7 +69,7 @@ function rollRewardItems(/**@type {$Player_}*/ player, preferredItem) {
 
     //console.log(rewardsContainsPreferredItem)
     if (rewardsContainsPreferredItem) {
-        let replaceCount = Math.floor(Math.random() * (totalItemCount / 6));
+        let replaceCount = Math.ceil(Math.random() * (totalItemCount / 6));
 
         // let weightedRandom = global.UTILS.weightedRandom()
 
@@ -237,6 +237,8 @@ function playerTick_TaxCollect(event) {
     )
         return;
 
+    if (!player.persistentData.dragonConquerRecords) return;
+    if (player.persistentData.dragonConquerRecords.isEmpty()) return;
     let muted = false;
     let items = Utils.emptyMap();
 

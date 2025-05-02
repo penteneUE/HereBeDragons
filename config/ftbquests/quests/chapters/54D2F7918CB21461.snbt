@@ -17,6 +17,7 @@
 		y: -1.0d
 	}]
 	order_index: 8
+	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
 		{
@@ -275,8 +276,8 @@
 				}
 			]
 			tasks: [{
-				id: "01BE4FC6D059D479"
-				item: { components: { "minecraft:custom_data": { structure_id: "village/sky_village" } }, count: 1, id: "kubejs:dragon_conquest_trophy" }
+				id: "4F498F4A67B0C7AE"
+				item: { components: { "minecraft:custom_data": { gateway: "village/sky_village" } }, count: 1, id: "kubejs:dragon_conquest_trophy" }
 				match_components: "fuzzy"
 				type: "item"
 			}]

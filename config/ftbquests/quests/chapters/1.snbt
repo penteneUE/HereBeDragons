@@ -636,10 +636,14 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["7F1FD96CDF8CD2B8"]
+			dependencies: [
+				"2129326F3111C29B"
+				"4218B7B59B0F0F74"
+			]
+			dependency_requirement: "one_completed"
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "2EF159E57EAAA0B9"
-			invisible: true
 			rewards: [{
 				id: "7B41A67713E3FECD"
 				type: "xp"
@@ -785,8 +789,8 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "0DE5F78610A6E754"
-				item: { components: { "minecraft:custom_data": { structure_id: "village/sky_village" } }, count: 1, id: "kubejs:dragon_conquest_trophy" }
+				id: "07F1A52CABDCFDF6"
+				item: { components: { "minecraft:custom_data": { gateway: "village/sky_village" } }, count: 1, id: "kubejs:dragon_conquest_trophy" }
 				match_components: "fuzzy"
 				type: "item"
 			}]

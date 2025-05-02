@@ -192,28 +192,18 @@ ServerEvents.commandRegistry((event) => {
 
                                 //const structure_id = player.persistentData.getString("dragonConquerCurrentId")
                                 finishDragonConquest(player);
-                                clearDragonConquerCurrent(player);
 
-                                if (
-                                    player.stages.has(
-                                        "dragon_conquest_challenger"
-                                    )
-                                ) {
-                                    player.stages.remove(
-                                        "dragon_conquest_challenger"
-                                    );
-                                }
+                                // if (
+                                //     player.stages.has(
+                                //         "dragon_conquest_challenger"
+                                //     )
+                                // ) {
+                                //     player.stages.remove(
+                                //         "dragon_conquest_challenger"
+                                //     );
+                                // }
 
                                 //ctx.source.server.runCommand(`/effect clear ${player.name.toString()} dragonsurvival:hunter_omen`)
-                                if (
-                                    player.hasEffect(
-                                        "dragonsurvival:hunter_omen"
-                                    )
-                                ) {
-                                    player.removeEffect(
-                                        "dragonsurvival:hunter_omen"
-                                    );
-                                }
 
                                 ctx.source.server.runCommandSilent(
                                     `/playsound minecraft:entity.player.levelup player ${player.username.toString()} ${
@@ -221,7 +211,7 @@ ServerEvents.commandRegistry((event) => {
                                     } ${player.y} ${player.z}`
                                 );
                                 ctx.source.server.runCommandSilent(
-                                    `/playsound minecraft:entity.firework_rocket.launch ${player.username.toString()} ${
+                                    `/playsound minecraft:entity.firework_rocket.launch player ${player.username.toString()} ${
                                         player.x
                                     } ${player.y} ${player.z}`
                                 );
@@ -243,15 +233,15 @@ ServerEvents.commandRegistry((event) => {
 
                                 clearDragonConquerCurrent(player);
 
-                                if (
-                                    player.stages.has(
-                                        "dragon_conquest_challenger"
-                                    )
-                                ) {
-                                    player.stages.remove(
-                                        "dragon_conquest_challenger"
-                                    );
-                                }
+                                // if (
+                                //     player.stages.has(
+                                //         "dragon_conquest_challenger"
+                                //     )
+                                // ) {
+                                //     player.stages.remove(
+                                //         "dragon_conquest_challenger"
+                                //     );
+                                // }
                                 return 1;
                             })
                         )

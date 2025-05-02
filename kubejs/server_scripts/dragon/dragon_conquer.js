@@ -1,11 +1,8 @@
-let $OrderedCompoundTag = Java.loadClass(
-    "dev.latvian.mods.kubejs.util.OrderedCompoundTag"
-);
 let $ChunkPos = Java.loadClass("net.minecraft.world.level.ChunkPos");
 let $ListTag = Java.loadClass("net.minecraft.nbt.ListTag");
 
 function clearDragonConquerRecord(player) {
-    player.persistentData.dragonConquerRecords = new $OrderedCompoundTag();
+    player.persistentData.remove("dragonConquerRecords");
 }
 
 function clearDragonConquerStructure(player, structure_id) {
@@ -18,7 +15,7 @@ function clearDragonConquerCurrent(player) {
 }
 
 function conquerStatus(minX, maxX, minY, maxY, minZ, maxZ) {
-    let result = new $OrderedCompoundTag();
+    let result = new $CompoundTag();
 
     result.putInt("minX", minX);
     result.putInt("maxX", maxX);
@@ -54,14 +51,25 @@ function addDragonConquerRecord_withConquerStatus(
 ) {
     let { dragonConquerRecords } = player.persistentData;
 
+    //console.log(dragonConquerRecords);
+
     //let recordsOfSameTypeStructure = dragonConquerRecords.get(structure_id)
 
-    if (!dragonConquerRecords) clearDragonConquerRecord(player);
-
-    if (dragonConquerRecords[structure_id] == undefined) {
-        dragonConquerRecords[structure_id] = [];
+    if (!dragonConquerRecords || dragonConquerRecords.isEmpty()) {
+        player.persistentData.dragonConquerRecords = new $CompoundTag();
+        player.persistentData.dragonConquerRecords[structure_id] = [];
+        //console.log(111);
     }
-    dragonConquerRecords[structure_id].push(conquerStatus);
+
+    //console.log(player.persistentData.dragonConquerRecords[structure_id]);
+
+    if (!player.persistentData.dragonConquerRecords[structure_id]) {
+        player.persistentData.dragonConquerRecords[structure_id] = [];
+    }
+    //console.log(111);
+    player.persistentData.dragonConquerRecords[structure_id].push(
+        conquerStatus
+    );
 }
 
 function matchDragonConquerRecord_withBbox(player, bbox, structure_id) {
@@ -127,11 +135,14 @@ function matchDragonConquerRecord(
 function finishDragonConquest(player) {
     let { dragonConquerCurrent } = player.persistentData;
     //const { STRUCTURE_DATA } = global;
+    //console.log(111);
 
     if (dragonConquerCurrent == undefined) return;
+    //console.log(111);
 
     let currentId = player.persistentData.getString("dragonConquerCurrentId");
     if (currentId == undefined) return;
+    //console.log(111);
 
     // console.log(STRUCTURE_DATA[currentId].gateway);
 
@@ -148,6 +159,8 @@ function finishDragonConquest(player) {
         dragonConquerCurrent,
         currentId
     );
+    clearDragonConquerCurrent(player);
+
     player.tell(Text.translate("kubejs.conquest.success").color(textColor));
 
     // const trophy = Item.of("kubejs:dragon_conquest_trophy")
