@@ -119,6 +119,11 @@
 			]
 			hide_until_deps_complete: true
 			id: "05F9D9DD6B1919D6"
+			rewards: [{
+				id: "70A523E9973D6C54"
+				type: "xp"
+				xp: 2
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "2822EAC9B59C30DF"
@@ -267,6 +272,11 @@
 			dependencies: ["6D8BE1493A9030C1"]
 			hide_until_deps_complete: true
 			id: "57A21C4ECAA059D4"
+			rewards: [{
+				id: "090DB894181EBA85"
+				type: "xp"
+				xp: 2
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "0579C0FC39DF6F2C"
@@ -324,6 +334,11 @@
 		{
 			dependencies: ["5F84B310BEC46BE3"]
 			id: "65D5340683B3C513"
+			rewards: [{
+				id: "6CAABAA274ADC11E"
+				type: "xp"
+				xp: 2
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "15D0A15E24885187"

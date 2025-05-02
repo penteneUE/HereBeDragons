@@ -133,11 +133,17 @@
 				"1EDAFB9BDFDF1353"
 				"2D1AFBBB018E0821"
 				"7734AB04EBA3A5E8"
+				"755A36D1D7404B2B"
 			]
 			dependency_requirement: "one_completed"
 			disable_toast: true
 			hide_until_deps_complete: true
 			id: "4FDE40DA03D8CE4B"
+			rewards: [{
+				id: "6B95DF96D4E4B269"
+				type: "xp"
+				xp: 2
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "0741D2CC2C85660E"

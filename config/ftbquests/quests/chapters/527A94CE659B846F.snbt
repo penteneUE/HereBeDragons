@@ -152,6 +152,11 @@
 			dependency_requirement: "one_completed"
 			hide_until_deps_complete: true
 			id: "4AF56908F7A20C1C"
+			rewards: [{
+				id: "338A78AD69EDDA71"
+				type: "xp"
+				xp: 2
+			}]
 			tasks: [{
 				id: "2CFB640AF692D8A7"
 				type: "checkmark"
@@ -166,6 +171,11 @@
 				id: "iceandfire:bestiary"
 			}
 			id: "73BBF0E51641A8EB"
+			rewards: [{
+				id: "0F3ACFE3EEE71F6E"
+				type: "xp"
+				xp: 2
+			}]
 			tasks: [{
 				id: "0DD3E5FE7390ECDF"
 				type: "checkmark"
@@ -275,6 +285,11 @@
 				id: "irons_spellbooks:iron_spell_book"
 			}
 			id: "59880F400A213994"
+			rewards: [{
+				id: "3D29C2E9BDF44846"
+				type: "xp"
+				xp: 2
+			}]
 			tasks: [{
 				id: "1DF5CFFB5E7B50BE"
 				type: "checkmark"

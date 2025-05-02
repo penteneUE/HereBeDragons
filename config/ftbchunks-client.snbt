@@ -133,51 +133,56 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"minecraft:tropical_fish": false
-			"minecraft:zombified_piglin": true
-			"minecraft:chicken": true
-			"minecraft:enderman": true
-			"minecraft:wolf": true
-			"irons_spellbooks:cursed_armor_stand": true
-			"minecraft:pig": true
-			"minecraft:zombie_villager": true
-			"minecraft:piglin": true
-			"minecraft:bat": true
-			"iceandfire:myrmex_worker": true
-			"minecraft:villager": true
+			"minecraft:glow_squid": true
 			"minecraft:drowned": true
+			"iceandfire:hippogryph": true
+			"minecraft:iron_golem": true
+			"minecraft:zombie_villager": true
+			"minecraft:rabbit": true
+			"aquaculture:minnow": false
+			"minecraft:enderman": true
+			"aquaculture:catfish": false
+			"aquaculture:bluegill": false
+			"minecraft:ghast": true
+			"minecraft:villager": true
+			"minecraft:wolf": true
+			"minecraft:sheep": true
+			"aquaculture:muskellunge": false
+			"iceandfire:myrmex_worker": true
+			"minecraft:vindicator": true
+			"minecraft:bat": true
+			"irons_spellbooks:necromancer": true
+			"minecraft:tropical_fish": false
+			"iceandfire:myrmex_soldier": true
+			"minecraft:axolotl": true
+			"minecraft:bee": true
+			"minecraft:pig": true
+			"minecraft:trader_llama": true
+			"minecraft:wandering_trader": true
+			"minecraft:squid": true
 			"aquaculture:gar": false
+			"aquaculture:carp": false
+			"minecraft:spider": true
+			"minecraft:witch": true
+			"minecraft:zombified_piglin": true
+			"minecraft:pufferfish": false
+			"minecraft:piglin": true
+			"minecraft:vex": true
+			"minecraft:cave_spider": true
+			"minecraft:chicken": true
+			"aquaculture:perch": false
+			"minecraft:creeper": true
+			"iceandfire:cockatrice": true
+			"minecraft:strider": true
+			"minecraft:skeleton": true
+			"irons_spellbooks:cursed_armor_stand": true
+			"iceandfire:hippocampus": true
+			"minecraft:phantom": true
 			"iceandfire:myrmex_queen": true
 			"aquaculture:smallmouth_bass": false
-			"minecraft:pufferfish": false
-			"minecraft:sheep": true
-			"minecraft:skeleton": true
-			"minecraft:strider": true
 			"aquaculture:brown_trout": false
 			"minecraft:zombie": true
-			"aquaculture:minnow": false
-			"minecraft:creeper": true
-			"minecraft:squid": true
-			"minecraft:ghast": true
-			"minecraft:bee": true
-			"irons_spellbooks:necromancer": true
-			"aquaculture:muskellunge": false
-			"minecraft:phantom": true
-			"minecraft:trader_llama": true
-			"iceandfire:myrmex_soldier": true
-			"aquaculture:carp": false
-			"minecraft:witch": true
-			"aquaculture:perch": false
-			"iceandfire:hippogryph": true
-			"iceandfire:cockatrice": true
-			"minecraft:wandering_trader": true
-			"aquaculture:bluegill": false
-			"minecraft:spider": true
 			"minecraft:cow": true
-			"iceandfire:hippocampus": true
-			"minecraft:iron_golem": true
-			"minecraft:rabbit": true
-			"minecraft:glow_squid": true
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)
@@ -297,7 +302,7 @@
 		
 		# Enables creation of death waypoints
 		# Default: true
-		death_waypoints: true
+		death_waypoints: false
 		
 		# Show waypoints in world
 		# Default: true

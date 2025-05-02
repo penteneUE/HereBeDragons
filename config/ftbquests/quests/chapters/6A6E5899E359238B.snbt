@@ -30,6 +30,11 @@
 			dependencies: ["2A53602F5DD6482A"]
 			hide_until_deps_complete: true
 			id: "6DE4F13231CC69B6"
+			rewards: [{
+				id: "108FB75CF729F401"
+				type: "xp"
+				xp: 2
+			}]
 			tasks: [{
 				id: "3A5D0235D619652F"
 				type: "checkmark"
@@ -40,6 +45,11 @@
 		{
 			dependencies: ["4B9C677237382D2B"]
 			id: "06FC5550EC4AB636"
+			rewards: [{
+				id: "1B97C964B56C95B6"
+				type: "xp"
+				xp: 2
+			}]
 			tasks: [{
 				id: "5E33750567CF8ECB"
 				type: "checkmark"
@@ -50,6 +60,11 @@
 		{
 			dependencies: ["6DE4F13231CC69B6"]
 			id: "4B9C677237382D2B"
+			rewards: [{
+				id: "31CEB8E1DD1BA553"
+				type: "xp"
+				xp: 2
+			}]
 			tasks: [{
 				id: "536E90C5A3833F79"
 				type: "checkmark"

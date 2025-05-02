@@ -1436,5 +1436,24 @@
 			x: 10.5d
 			y: 4.0d
 		}
+		{
+			dependencies: ["4E6ED770D83C4AFF"]
+			id: "5C620CF48FE5DC36"
+			rewards: [{
+				id: "576289CA80605673"
+				item: {
+					count: 1
+					id: "dragonsurvival:elder_dragon_heart"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2FF791CAD684D605"
+				item: { count: 1, id: "dragonsurvival:dragon_beacon" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.0d
+		}
 	]
 }

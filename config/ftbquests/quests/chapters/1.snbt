@@ -181,7 +181,8 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["54E3D369788106E6"]
+			dependencies: ["3DCEA15CB8E9D815"]
+			hide_dependency_lines: true
 			id: "29A543442CC621C3"
 			rewards: [{
 				id: "33B932CF57AA1AFB"
@@ -257,8 +258,8 @@
 				xp: 2
 			}]
 			tasks: [{
-				id: "6190673C16836BFE"
-				item: { count: 1, id: "waystones:waystone" }
+				id: "4B1153C7D1DDEC52"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(waystones:waystones)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -4.0d
@@ -283,6 +284,11 @@
 		{
 			dependencies: ["20807B9CA5CDB81A"]
 			id: "6175DF4BFDCFC5EA"
+			rewards: [{
+				id: "4D450EE870F9A7C8"
+				type: "xp"
+				xp: 2
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "6E2DEDD7DD141BD6"
@@ -674,6 +680,11 @@
 		{
 			dependencies: ["2EF159E57EAAA0B9"]
 			id: "7219D2B812F4F537"
+			rewards: [{
+				id: "7D5FF429C53AE2EE"
+				type: "xp"
+				xp: 2
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "236C214EA9DD8114"
@@ -685,6 +696,11 @@
 		{
 			dependencies: ["7F1FD96CDF8CD2B8"]
 			id: "36478C9680EBEFD6"
+			rewards: [{
+				id: "39F6FEC5FD508CF5"
+				type: "xp"
+				xp: 2
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "4ECE5592CF67640A"
@@ -880,15 +896,20 @@
 			y: -8.5d
 		}
 		{
-			dependencies: ["2129326F3111C29B"]
+			dependencies: ["2EF159E57EAAA0B9"]
 			id: "32C6FE7AA5BBDB4B"
+			rewards: [{
+				id: "121ACDCFA88AE8E0"
+				type: "xp"
+				xp: 2
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "0D28446AF7523EC4"
 				type: "checkmark"
 			}]
-			x: -5.0d
-			y: -4.5d
+			x: -6.5d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -967,11 +988,21 @@
 			dependencies: ["681EBB7384D4F881"]
 			hide_dependency_lines: true
 			id: "667C340CF868A4BA"
-			rewards: [{
-				id: "4FD5C278DB4A6F8A"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4FD5C278DB4A6F8A"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "11588AC8E5252F28"
+					item: {
+						count: 1
+						id: "dragonsurvival:heart_element"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "76B28B59E3A5C413"
 				item: { count: 1, id: "minecraft:brush" }
@@ -997,7 +1028,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["54E3D369788106E6"]
+			dependencies: ["29A543442CC621C3"]
 			id: "211D17C4B64A1C3A"
 			rewards: [
 				{
@@ -1049,11 +1080,21 @@
 			dependencies: ["681EBB7384D4F881"]
 			hide_dependency_lines: true
 			id: "13E1BB906F96CCE8"
-			rewards: [{
-				id: "227BD350678B1458"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "227BD350678B1458"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "458DD514C8573FF6"
+					item: {
+						count: 1
+						id: "dragonsurvival:heart_element"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "561A644968128942"
 				item: { count: 1, id: "aquaculture:tackle_box" }

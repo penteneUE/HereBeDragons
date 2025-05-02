@@ -1,0 +1,45 @@
+{
+	id: "2AF1057DB0E5AE56"
+	loot_size: 1
+	order_index: 3
+	rewards: [
+		{
+			command: "/kubejs stages add @p deathteleport"
+			feedback_message: "三兄弟将目光移向了你！"
+			icon: {
+				components: {
+					"gravestone:death": {
+						DeathID: [I;
+							-699109598
+							-1735244410
+							-1743888428
+							-1549985589
+						]
+						PlayerUUID: [I;
+							1973847486
+							733037292
+							-1322211130
+							1889544902
+						]
+					}
+				}
+				id: "gravestone:obituary"
+			}
+			id: "54C99D0EF5431004"
+			permission_level: 3
+			silent: true
+			type: "command"
+		}
+		{
+			command: "/kubejs stages remove @p deathteleport"
+			feedback_message: "三兄弟不再看着你了。"
+			icon: {
+				id: "minecraft:paper"
+			}
+			id: "4BAF19E6996E9479"
+			permission_level: 3
+			silent: true
+			type: "command"
+		}
+	]
+}
