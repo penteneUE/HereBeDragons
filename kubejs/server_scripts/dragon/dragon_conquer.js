@@ -430,7 +430,7 @@ function blockPlaced_dragonConquer(event) {
         structure_id
     );
 
-    event.player.stages.add("dragon_conquest_challenger");
+    //event.player.stages.add("dragon_conquest_challenger");
 
     // console.log(event.player.persistentData.dragonConquerCurrent)
 

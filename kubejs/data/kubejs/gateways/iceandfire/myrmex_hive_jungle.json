@@ -4,7 +4,7 @@
     "rewards": [
         {
             "type": "gateways:command",
-            "command": "/whredragonswent conquest finish @p[tag=dragon_conquest_challenger]",
+            "command": "/whredragonswent conquest finish <summoner>",
             "desc": "占领成功"
         },
         {
@@ -28,7 +28,7 @@
     "failures": [
         {
             "type": "gateways:command",
-            "command": "/whredragonswent conquest failure @p[tag=dragon_conquest_challenger]",
+            "command": "/whredragonswent conquest failure <summoner>",
             "desc": "占领失败"
         }
     ],

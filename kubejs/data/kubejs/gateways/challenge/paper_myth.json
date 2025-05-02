@@ -16,21 +16,11 @@
         },
         {
             "type": "gateways:command",
-            "command": "/whredragonswent clear-world-ender @p[tag=paper_myth_challenger]",
+            "command": "/whredragonswent clear-world-ender <summoner>",
             "desc": "只能打一次"
-        },
-        {
-            "type": "gateways:command",
-            "command": "/kubejs stages remove @p[tag=paper_myth_challenger] paper_myth_challenger",
-            "desc": "五五五五五"
         }
     ],
     "failures": [
-        {
-            "type": "gateways:command",
-            "command": "/kubejs stages remove @p[tag=paper_myth_challenger] paper_myth_challenger",
-            "desc": "还能再挑战"
-        }
     ],
     "size": "large",
     "waves": [

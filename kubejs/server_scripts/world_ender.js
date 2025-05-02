@@ -208,14 +208,14 @@ PlayerEvents.inventoryClosed(
         if (!taxCollectorItem) return;
         if (taxCollectorItem.id != "minecraft:dragon_egg") return;
 
-        if (player.stages.has("paper_myth_challenger")) {
-            player.tell(
-                Text.translate("kubejs.challenge.has_current_challenge").color(
-                    textColor
-                )
-            );
-            return;
-        }
+        // if (player.stages.has("paper_myth_challenger")) {
+        //     player.tell(
+        //         Text.translate("kubejs.challenge.has_current_challenge").color(
+        //             textColor
+        //         )
+        //     );
+        //     return;
+        // }
 
         /**@type {$BlockContainerJS_} */
         let block = placedAgainstMap[event.player.uuid].block;
