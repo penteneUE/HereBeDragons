@@ -17,18 +17,6 @@
             "experience": 200,
             "orb_size": 25,
             "type": "gateways:experience"
-        },
-        {
-            "stack": {
-                "components": {
-                    "minecraft:custom_data": {
-                        "gateway": "nether/ancient_battleground"
-                    }
-                },
-                "count": 1,
-                "id": "kubejs:dragon_conquest_trophy"
-            },
-            "type": "gateways:stack"
         }
     ],
     "rules": {

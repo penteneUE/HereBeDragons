@@ -800,6 +800,11 @@
 	]
 	quest.702C933A24B5AFBD.quest_subtitle: "令说服术精进一步"
 	quest.702C933A24B5AFBD.title: "炽焰术士套装"
+	quest.7075A8D529E3F074.quest_desc: [
+		"将生物放入下有营火的炼药锅中，锅里的生物就会被熬制出鲜血。"
+		""
+		"用玻璃瓶装可得猩红精华。"
+	]
 	quest.7075A8D529E3F074.title: "鲜血学派"
 	quest.714192565B0351CF.quest_subtitle: "火之高兴"
 	quest.71666C947F590F11.quest_desc: ["可恶的布莱克奥瑞斯把公主王子删了，结果wiki还保留信息，好想抢公主啊"]

@@ -150,6 +150,21 @@ ServerEvents.commandRegistry((event) => {
                         )
                     )
                     .then(
+                        Commands.literal("clear-here").then(
+                            Commands.argument(
+                                "player",
+                                Arguments.PLAYER.create(event)
+                            ).executes((ctx) => {
+                                //addDragonConquerRecord(player, bbox.minX(), bbox.maxX(), bbox.minY(), bbox.maxY(), bbox.minZ(), bbox.maxZ(), structure_id)
+                                let player = ctx.source.server.getPlayer(
+                                    Arguments.PLAYER.getResult(ctx, "player")
+                                );
+                                clearDragonConquerHere(player);
+                                return 1;
+                            })
+                        )
+                    )
+                    .then(
                         Commands.literal("view").then(
                             Commands.argument(
                                 "player",

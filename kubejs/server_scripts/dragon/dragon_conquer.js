@@ -6,12 +6,53 @@ function clearDragonConquerRecord(player) {
 }
 
 function clearDragonConquerStructure(player, structure_id) {
+    if (!player.persistentData.dragonConquerRecords) return;
     player.persistentData.dragonConquerRecords.remove(structure_id);
 }
 
 function clearDragonConquerCurrent(player) {
     player.persistentData.remove("dragonConquerCurrent");
     player.persistentData.remove("dragonConquerCurrentId");
+}
+
+/**
+ *
+ * @param {$Player_} player
+ */
+function clearDragonConquerHere(player) {
+    let { structure_id, structure } = whichStructureAmI(
+        player.blockPosition(),
+        player.level
+    );
+    if (!player.persistentData.dragonConquerRecords) return;
+    if (!player.persistentData.dragonConquerRecords[structure_id]) return;
+
+    let index = 0;
+    let found = false;
+    /**@type {$ListTag_} */
+    let list = player.persistentData.dragonConquerRecords[structure_id];
+    let bbox = structure.getBoundingBox();
+
+    let length = list.size();
+    while (index < length) {
+        let record = list[index];
+        if (
+            bbox.minX() == record.getInt("minX") &&
+            bbox.maxX() == record.getInt("maxX") &&
+            bbox.minY() == record.getInt("minY") &&
+            bbox.maxY() == record.getInt("maxY") &&
+            bbox.minZ() == record.getInt("minZ") &&
+            bbox.maxZ() == record.getInt("maxZ")
+        ) {
+            found = true;
+            break;
+        }
+        index++;
+    }
+
+    if (!found) return;
+
+    player.persistentData.dragonConquerRecords[structure_id].remove(index);
 }
 
 function conquerStatus(minX, maxX, minY, maxY, minZ, maxZ) {
@@ -58,18 +99,20 @@ function addDragonConquerRecord_withConquerStatus(
     if (!dragonConquerRecords || dragonConquerRecords.isEmpty()) {
         player.persistentData.dragonConquerRecords = new $CompoundTag();
         player.persistentData.dragonConquerRecords[structure_id] = [];
-        //console.log(111);
+        console.log(111);
     }
 
-    //console.log(player.persistentData.dragonConquerRecords[structure_id]);
+    console.log(player.persistentData.dragonConquerRecords[structure_id]);
 
     if (!player.persistentData.dragonConquerRecords[structure_id]) {
         player.persistentData.dragonConquerRecords[structure_id] = [];
+        console.log(player.persistentData.dragonConquerRecords[structure_id]);
     }
-    //console.log(111);
+    console.log(111);
     player.persistentData.dragonConquerRecords[structure_id].push(
         conquerStatus
     );
+    console.log(111);
 }
 
 function matchDragonConquerRecord_withBbox(player, bbox, structure_id) {
@@ -120,7 +163,7 @@ function matchDragonConquerRecord(
                 result = true;
             }
 
-            return;
+            if (result) return;
         });
     }
 
@@ -134,7 +177,7 @@ function matchDragonConquerRecord(
  */
 function finishDragonConquest(player) {
     let { dragonConquerCurrent } = player.persistentData;
-    //const { STRUCTURE_DATA } = global;
+    const { STRUCTURE_DATA } = global;
     //console.log(111);
 
     if (dragonConquerCurrent == undefined) return;
@@ -163,9 +206,18 @@ function finishDragonConquest(player) {
 
     player.tell(Text.translate("kubejs.conquest.success").color(textColor));
 
+    if (player.hasEffect("dragonsurvival:hunter_omen")) {
+        player.removeEffect("dragonsurvival:hunter_omen");
+    }
     // const trophy = Item.of("kubejs:dragon_conquest_trophy")
     // trophy.setCustomData("structure_id", structure_id)
-    // player.give(trophy)
+    player.give(
+        Item.of(
+            `kubejs:dragon_conquest_trophy[custom_data={gateway:"${STRUCTURE_DATA[
+                currentId
+            ].gateway.replace("kubejs:", "")}"}]`
+        )
+    );
 }
 
 // function givesTrophyIfFirstTime(server, player, structure_id) {

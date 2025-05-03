@@ -11,18 +11,6 @@
             "type": "gateways:experience",
             "experience": 50,
             "orb_size": 25
-        },
-        {
-            "type": "gateways:stack",
-            "stack": {
-                "id": "kubejs:dragon_conquest_trophy",
-                "count": 1,
-                "components": {
-                    "minecraft:custom_data": {
-                        "gateway": "iceandfire/pixie_village"
-                    }
-                }
-            }
         }
     ],
     "failures": [
