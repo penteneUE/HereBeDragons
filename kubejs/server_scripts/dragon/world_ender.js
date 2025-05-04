@@ -256,7 +256,7 @@ PlayerEvents.inventoryClosed(
             let result = summonGateway(
                 player,
                 block.getPos(),
-                targetGateway,
+                "kubejs:challenge/paper_myth",
                 event.level
             );
             if (result == -1) {

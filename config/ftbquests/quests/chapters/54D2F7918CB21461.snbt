@@ -1091,7 +1091,10 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["282D6DA8CBDD27E1"]
+			dependencies: [
+				"282D6DA8CBDD27E1"
+				"38FA1D29507FECC7"
+			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "4E3DD58B4F778C34"
@@ -1128,7 +1131,10 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["282D6DA8CBDD27E1"]
+			dependencies: [
+				"282D6DA8CBDD27E1"
+				"38FA1D29507FECC7"
+			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "0ACD08382118A6CE"
@@ -1186,6 +1192,7 @@
 				"5297FBC92A1D485C"
 				"37955FCBCE41EE76"
 				"4F6679C09ABEE547"
+				"12180AD2969CFBCC"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -1285,7 +1292,7 @@
 				match_components: "fuzzy"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 9.5d
 			y: 4.0d
 		}
 		{
@@ -1315,7 +1322,7 @@
 				stage: "quest/endless_titan_completed"
 				type: "gamestage"
 			}]
-			x: 10.5d
+			x: 10.0d
 			y: 2.5d
 		}
 		{
@@ -1345,7 +1352,7 @@
 				stage: "quest/endless_myth_completed"
 				type: "gamestage"
 			}]
-			x: 10.5d
+			x: 10.0d
 			y: 1.5d
 		}
 		{
@@ -1407,11 +1414,11 @@
 				stage: "quest/endless_undead_completed"
 				type: "gamestage"
 			}]
-			x: 10.5d
+			x: 10.0d
 			y: 0.5d
 		}
 		{
-			dependencies: ["5F84B310BEC46BE3"]
+			dependencies: ["79C4B032A9B1F772"]
 			hide_until_deps_complete: true
 			id: "3EF34E6718CFE991"
 			rewards: [
@@ -1437,8 +1444,8 @@
 				stage: "quest/endless_dragon_completed"
 				type: "gamestage"
 			}]
-			x: 10.5d
-			y: 4.0d
+			x: 11.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["4E6ED770D83C4AFF"]
@@ -1458,6 +1465,46 @@
 			}]
 			x: 10.0d
 			y: -1.0d
+		}
+		{
+			dependencies: [
+				"282D6DA8CBDD27E1"
+				"255FDC0FA11B8262"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "12180AD2969CFBCC"
+			rewards: [
+				{
+					id: "11477D1EA1F85914"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "118EC3AB6DA63E45"
+					item: {
+						count: 1
+						id: "dragonsurvival:elder_dragon_heart"
+					}
+					type: "item"
+				}
+				{
+					id: "18323C34B368E6DB"
+					item: {
+						count: 1
+						id: "waystones:end_stone_waystone"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2174BD5C8FCB12F0"
+				item: { components: { "minecraft:custom_data": { gateway: "misc/end_city" } }, count: 1, id: "kubejs:dragon_conquest_trophy" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 4.0d
 		}
 	]
 }

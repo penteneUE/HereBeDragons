@@ -1,0 +1,142 @@
+{
+    "type": "gateways:normal",
+    "color": "#9154b6",
+    "rewards": [
+        {
+            "type": "gateways:experience",
+            "experience": 300,
+            "orb_size": 25
+        }
+    ],
+    "failures": [
+    ],
+    "size": "small",
+    "waves": [
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 12,
+                    "entity": "minecraft:enderman"
+                }
+            ],
+            "max_wave_time": 1600,
+            "rewards": [],
+            "setup_time": 100
+        },
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 8,
+                    "entity": "minecraft:enderman"
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 4,
+                    "entity": "minecraft:shulker"
+                }
+            ],
+            "max_wave_time": 1600,
+            "rewards": [],
+            "setup_time": 100,
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.2
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 2.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.15
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.knockback_resistance",
+                    "operation": "add_value",
+                    "value": 0.05
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": 0.05
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:projectile_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.2
+                }
+            ]
+        },
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 6,
+                    "entity": "minecraft:enderman"
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 6,
+                    "entity": "minecraft:shulker"
+                }
+            ],
+            "max_wave_time": 1600,
+            "rewards": [],
+            "setup_time": 100,
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.4
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 2.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.15
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.knockback_resistance",
+                    "operation": "add_value",
+                    "value": 0.05
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": 0.05
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:projectile_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.8
+                }
+            ]
+        }
+    ],
+    "spawn_algorithm": "gateways:inward_spiral",
+    "rules":{
+        "fail_on_out_of_bounds": false
+    }
+}

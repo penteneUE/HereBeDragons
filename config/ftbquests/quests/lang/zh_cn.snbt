@@ -53,7 +53,7 @@
 	]
 	quest.06FC5550EC4AB636.quest_subtitle: "可以加入作者的粉丝群"
 	quest.07A61974F4ED437D.quest_desc: ["陆上的海洋龙会&c因身体逐渐干燥而受到伤害&r。为保障在陆地的体验，这里提供了一些海绵来打湿自己。在飞行中也能用！"]
-	quest.0ACD08382118A6CE.quest_subtitle: "幽灵黑工"
+	quest.0ACD08382118A6CE.quest_subtitle: "装甲黑工"
 	quest.0ACD08382118A6CE.title: "占领：古战场"
 	quest.0C526E83701415D6.quest_desc: [
 		"击败凋零可获得下界之星，一种用在许多高级配方里的材料。"
@@ -99,6 +99,8 @@
 		"你明白——但你不明白，为什么只有&o自己&r被留了下来？"
 	]
 	quest.11E2340A98F4A0BE.quest_subtitle: "那些龙永远地离开了。"
+	quest.12180AD2969CFBCC.quest_subtitle: "世界尽头的城市"
+	quest.12180AD2969CFBCC.title: "占领：末地城"
 	quest.13ADEABE197E2013.quest_desc: ["用于多种法师配方。"]
 	quest.13ADEABE197E2013.quest_subtitle: "做一套法师的服装吧！"
 	quest.13E1BB906F96CCE8.quest_desc: ["制作钓具盒，以存放与穿脱钓鱼装备。"]

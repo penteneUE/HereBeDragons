@@ -645,6 +645,28 @@ structureData.put("minecraft:stronghold", {
     },
 });
 
+structureData.put("minecraft:end_city", {
+    gateway: "kubejs:misc/end_city",
+    name: "kubejs.recipeinfo.conquest.end_city",
+    description: "kubejs.recipeinfo.conquest.end_city.description",
+    mobs: ["minecraft:enderman"],
+    product: {
+        item: weightedRandom()
+            .add("minecraft:ender_pearl", 4)
+            .add("minecraft:chorus_fruit", 3)
+            .add("minecraft:iron_ingot", 0.7)
+            .add("minecraft:gold_ingot", 0.7)
+            .add("minecraft:lapis_lazuli", 0.7)
+            .add("minecraft:diamond", 0.7)
+            .add("minecraft:experience_bottle", 1)
+            .add("dragonsurvival:elder_dragon_bone", 0.5)
+            .add("dragonsurvival:heart_element", 0.2)
+            .add("dragonsurvival:weak_dragon_heart", 0.1)
+            .add("dragonsurvival:elder_dragon_heart", 0.1),
+        count: 32,
+    },
+});
+
 global.STRUCTURE_DATA = structureData;
 
 //initStructureData();

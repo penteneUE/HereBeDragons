@@ -32,7 +32,8 @@ function blockPlaced_endlessChallenge(event) {
     //if (!(block instanceof $BlockContainerJS)) return;
     if (!endlessChallengeMap[block.id]) return;
 
-    if (player.stages.has("endless_challenger")) {
+    let endless = player.persistentData.getString("endlessChallengeId");
+    if (endless) {
         player.tell(
             Text.translate("kubejs.challenge.has_current_challenge").color(
                 textColor

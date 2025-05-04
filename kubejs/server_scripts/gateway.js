@@ -16,6 +16,7 @@ const gatewayMap = Utils.newMap();
  */
 function summonGateway(player, pos, type, level) {
     let { entity, code } = _summonGateway(player, pos, type, level);
+    if (!entity) return -1;
     if (code == -1) return code;
 
     let entityUUID = entity.uuid.toString();
@@ -32,7 +33,7 @@ function summonGateway(player, pos, type, level) {
  * @param {$ResourceLocation_} type
  * @param {$ServerLevel_} level
  *
- * @returns {entity: $Entity_, code: integer}
+ * @returns {{entity: $Entity_ | null, code: integer}}
  */
 function _summonGateway(player, pos, type, level) {
     try {
@@ -109,6 +110,7 @@ global.MISC.gateCompleted = (event) => {
     handleGateEnd(
         event,
         (player) => {
+            player.give(Item.of("4x kubejs:paper_dragon_fragment"));
             clearWorldEnder(player);
         },
         (player, endless) => {

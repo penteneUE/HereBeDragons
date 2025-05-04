@@ -6,13 +6,6 @@
             "type": "gateways:experience",
             "experience": 300,
             "orb_size": 25
-        },
-        {
-            "type": "gateways:stack",
-            "stack": {
-                "id": "kubejs:paper_dragon_fragment",
-                "count": 4
-            }
         }
     ],
     "failures": [
@@ -156,7 +149,7 @@
                     "count": 1,
                     "entity": "iceandfire:lightning_dragon",
                     "nbt": {
-                        "CustomName": "{\"translate\":\"kubejs.challenge/paper_myth.name.lightning_dragon\",\"color\":\"red\"}",
+                        "CustomName": "{\"translate\":\"kubejs.challenge/paper_myth.name.dragon\",\"color\":\"red\"}",
                         "AgingDisabled": true,
                         "AgeTicks": 1200000
                     }
@@ -170,6 +163,7 @@
     "spawn_algorithm": "gateways:inward_spiral",
     "rules":{
         "fail_on_out_of_bounds": false,
-        "player_damage_only": true
+        "player_damage_only": true,
+        "allow_discarding": true
     }
 }

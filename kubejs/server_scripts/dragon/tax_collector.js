@@ -325,6 +325,12 @@ function blockPlaced_taxCollect(event) {
     player.persistentData.put("activeTaxCollector", data);
 
     //player.tell(Text.translate("kubejs.taxcollector.placed").color(textColor))
+    if (!player.persistentData.dragonConquerRecords) {
+        player.tell(
+            Text.translate("kubejs.taxcollector.bind.nothing").color(textColor)
+        );
+        return;
+    }
 
     let recordText = weaveMessage_Records(
         player.persistentData.dragonConquerRecords
