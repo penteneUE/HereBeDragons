@@ -77,6 +77,7 @@ netherMonsters.addAll([
     "minecraft:piglin",
     "minecraft:piglin_brute",
     "minecraft:blaze",
+    "minecraft:skeleton",
     "minecraft:wither_skeleton",
     "minecraft:zombified_piglin",
 ]);
@@ -113,6 +114,7 @@ const smallVillageData = {
             .add("minecraft:emerald", 2)
             .add("minecraft:iron_ingot", 2)
             .add("minecraft:gold_ingot", 2)
+            .add("minecraft:lapis_lazuli", 2)
             .add("minecraft:diamond", 1)
             .add("dragonsurvival:elder_dragon_bone", 0.5),
         count: 6,
@@ -134,6 +136,7 @@ const mediumVillageData = {
             .add("minecraft:emerald", 2)
             .add("minecraft:iron_ingot", 2)
             .add("minecraft:gold_ingot", 2)
+            .add("minecraft:lapis_lazuli", 2)
             .add("minecraft:diamond", 1)
             .add("dragonsurvival:elder_dragon_bone", 0.5)
             .add("dragonsurvival:heart_element", 0.2)
@@ -172,6 +175,7 @@ const largeVillageData = {
             .add("minecraft:emerald", 2)
             .add("minecraft:iron_ingot", 2)
             .add("minecraft:gold_ingot", 2)
+            .add("minecraft:lapis_lazuli", 2)
             .add("minecraft:diamond", 1)
             .add("dragonsurvival:elder_dragon_bone", 0.4)
             .add("dragonsurvival:heart_element", 0.2)
@@ -366,12 +370,13 @@ const pillagerOutpostData = {
         //每日结算
         item: weightedRandom()
             .add("minecraft:emerald", 3)
+            .add("minecraft:lapis_lazuli", 1)
             .add("minecraft:gold_ingot", 1)
             .add("minecraft:diamond", 1)
             .add("minecraft:experience_bottle", 1)
             .add("dragonsurvival:elder_dragon_bone", 0.3)
             .add("dragonsurvival:heart_element", 0.1),
-        count: 6,
+        count: 8,
     },
 };
 
@@ -404,6 +409,7 @@ structureData.put("irons_spellbooks:evoker_fort", {
         item: weightedRandom()
             .add("minecraft:emerald", 3)
             .add("irons_spellbooks:arcane_essence", 1)
+            .add("minecraft:lapis_lazuli", 1)
             .add("minecraft:diamond", 1)
             .add("minecraft:experience_bottle", 1)
             .add("irons_spellbooks:common_ink", 0.75)
@@ -425,13 +431,14 @@ structureData.put("minecraft:mansion", {
         item: weightedRandom()
             .add("minecraft:emerald", 3)
             .add("minecraft:gold_ingot", 1)
+            .add("minecraft:lapis_lazuli", 1)
             .add("minecraft:diamond", 1)
             .add("minecraft:experience_bottle", 1)
             .add("dragonsurvival:elder_dragon_bone", 0.2)
             .add("dragonsurvival:heart_element", 0.1)
             .add("dragonsurvival:weak_dragon_heart", 0.05)
             .add("minecraft:totem_of_undying", 0.1),
-        count: 16,
+        count: 24,
     },
 });
 
@@ -480,11 +487,12 @@ structureData.put("minecraft:monument", {
             .add("minecraft:cod", 3)
             .add("minecraft:pufferfish", 2)
             .add("minecraft:prismarine_crystals", 2)
+            .add("minecraft:lapis_lazuli", 2)
             .add("minecraft:turtle_egg", 1)
             .add("minecraft:sponge", 0.2)
             .add("dragonsurvival:elder_dragon_bone", 0.5)
             .add("dragonsurvival:heart_element", 0.2),
-        count: 12,
+        count: 16,
     },
 });
 

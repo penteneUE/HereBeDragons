@@ -84,7 +84,9 @@ global.UTILS = {
 };
 
 global.MISC = {
-    // dimensionChanged: (event) => {},
+    dimensionChanged: (event) => {},
+    gateCompleted: (event) => {},
+    gateFailed: (event) => {},
     // spongeUsed: (itemStack, level, entity) => {
     //     return itemStack;
     // },

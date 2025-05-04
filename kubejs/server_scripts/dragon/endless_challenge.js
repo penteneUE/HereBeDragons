@@ -1,21 +1,26 @@
 const endlessChallengeMap = Utils.newMap();
-endlessChallengeMap.put(
-    "kubejs:endless_undead_flag",
-    "kubejs:endless/undead_challenge"
-);
-endlessChallengeMap.put(
-    "kubejs:endless_myth_flag",
-    "kubejs:endless/myth_challenge"
-);
-endlessChallengeMap.put(
-    "kubejs:endless_titan_flag",
-    "kubejs:endless/titan_challenge"
-);
-endlessChallengeMap.put(
-    "kubejs:endless_dragon_flag",
-    "kubejs:endless/dragon_challenge"
-);
+endlessChallengeMap.put("kubejs:endless_undead_flag", {
+    gateway: "kubejs:endless/undead_challenge",
+    quest: "quest/endless_undead_completed",
+});
+endlessChallengeMap.put("kubejs:endless_myth_flag", {
+    gateway: "kubejs:endless/myth_challenge",
+    quest: "quest/endless_myth_completed",
+});
+endlessChallengeMap.put("kubejs:endless_titan_flag", {
+    gateway: "kubejs:endless/titan_challenge",
+    quest: "quest/endless_titan_completed",
+});
+endlessChallengeMap.put("kubejs:endless_dragon_flag", {
+    gateway: "kubejs:endless/dragon_challenge",
+    quest: "quest/endless_dragon_completed",
+});
 
+/**
+ *
+ * @param {$BlockPlacedKubeEvent_} event
+ * @returns
+ */
 function blockPlaced_endlessChallenge(event) {
     let { player } = event;
 
@@ -36,12 +41,24 @@ function blockPlaced_endlessChallenge(event) {
         return;
     }
 
-    let targetGateway = endlessChallengeMap[block.id];
-    console.log(targetGateway);
+    let targetGateway = endlessChallengeMap[block.id].gateway;
 
-    event.server.runCommandSilent(
-        `/open_gateway ${block.getX()} ${block.getY()} ${block.getZ()} ${targetGateway}`
+    let result = summonGateway(
+        player,
+        block.getPos(),
+        targetGateway,
+        event.level
     );
-    player.stages.add("endless_challenger");
+    if (result == -1) {
+        player.tell(Text.translate("kubejs.conquest.error").color(textColor));
+        return;
+    }
+
+    // event.server.runCommandSilent(
+    //     `/open_gateway ${player.username.toString()} ${targetGateway}`
+    // );
+    //player.stages.add("endless_challenger");
+    player.persistentData.putString("endlessChallengeId", block.id);
+
     block.set("kubejs:dragon_flag");
 }

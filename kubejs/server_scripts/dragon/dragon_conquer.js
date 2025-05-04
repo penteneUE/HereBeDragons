@@ -175,6 +175,15 @@ function matchDragonConquerRecord(
  * @param {$ServerPlayer_} player
  * @returns
  */
+function failDragonConquest(player) {
+    clearDragonConquerCurrent(player);
+}
+
+/**
+ *
+ * @param {$ServerPlayer_} player
+ * @returns
+ */
 function finishDragonConquest(player) {
     let { dragonConquerCurrent } = player.persistentData;
     const { STRUCTURE_DATA } = global;
@@ -478,6 +487,19 @@ function blockPlaced_dragonConquer(event) {
         );
         return;
     }
+    // /**@type {$BlockContainerJS_} */
+    // let b;
+
+    let result = summonGateway(
+        player,
+        block.getPos(),
+        targetGateway,
+        event.level
+    );
+    if (result == -1) {
+        player.tell(Text.translate("kubejs.conquest.error").color(textColor));
+        return;
+    }
 
     event.player.persistentData.put(
         "dragonConquerCurrent",
@@ -495,11 +517,18 @@ function blockPlaced_dragonConquer(event) {
         structure_id
     );
 
+    // console.log(targetGateway);
+    // console.log(player.username);
+    // console.log(player.username.toString());
+    // console.log(`/open_gateway ${player.username} ${targetGateway}`);
+
     //event.player.stages.add("dragon_conquest_challenger");
 
     // console.log(event.player.persistentData.dragonConquerCurrent)
 
-    event.server.runCommandSilent(
-        `/open_gateway ${block.getX()} ${block.getY()} ${block.getZ()} ${targetGateway}`
-    );
+    // event.server.runCommand(
+    //     `/open_gateway ${player.username} ${targetGateway}`
+    // );
+
+    // console.log(111);
 }

@@ -253,12 +253,25 @@ PlayerEvents.inventoryClosed(
         );
 
         event.server.scheduleInTicks(20, () => {
-            event.server.runCommandSilent(
-                `/open_gateway ${block.getX()} ${block.getY()} ${block.getZ()} kubejs:challenge/paper_myth`
+            let result = summonGateway(
+                player,
+                block.getPos(),
+                targetGateway,
+                event.level
             );
+            if (result == -1) {
+                player.tell(
+                    Text.translate("kubejs.conquest.error").color(textColor)
+                );
+                player.stages.remove("paper_myth_challenger");
+                return;
+            }
+            // event.server.runCommandSilent(
+            //     `/open_gateway ${player.username.toString()} kubejs:challenge/paper_myth`
+            // );
         });
 
-        clearWorldEnder(player);
+        //clearWorldEnder(player);
     }
 );
 

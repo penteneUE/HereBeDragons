@@ -2,16 +2,6 @@
     "type": "gateways:endless",
     "color": "#33AE53",
     "failures": [
-        {
-            "type": "gateways:command",
-            "command": "/kubejs stages add @p[tag=endless_challenger] \"quest/endless_titan_completed\"",
-            "desc": "已完成"
-        },
-        {
-            "type": "gateways:command",
-            "command": "/kubejs stages remove @p[tag=endless_challenger] endless_challenger",
-            "desc": "还能再挑战"
-        }
     ],
     "size": "medium",
     "base_wave": 

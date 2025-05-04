@@ -190,7 +190,7 @@ global.MISC.spongeUsed = (itemStack, level, entity) => {
         player.give("kubejs:dry_sponge");
         player.potionEffects.add(
             "dragonsurvival:sea_peace",
-            30,
+            60,
             1,
             false,
             true

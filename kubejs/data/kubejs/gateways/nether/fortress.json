@@ -1,18 +1,8 @@
 {
     "color": "#b04343",
     "failures": [
-        {
-            "command": "/whredragonswent conquest failure <summoner>",
-            "desc": "占领失败",
-            "type": "gateways:command"
-        }
     ],
     "rewards": [
-        {
-            "command": "/whredragonswent conquest finish <summoner>",
-            "desc": "占领成功",
-            "type": "gateways:command"
-        },
         {
             "experience": 200,
             "orb_size": 25,
@@ -102,7 +92,7 @@
                     "value": 0.05
                 }
             ],
-            "max_wave_time": 800,
+            "max_wave_time": 1600,
             "rewards": [],
             "setup_time": 100
         }

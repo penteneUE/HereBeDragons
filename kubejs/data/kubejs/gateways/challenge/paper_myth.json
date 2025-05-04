@@ -13,11 +13,6 @@
                 "id": "kubejs:paper_dragon_fragment",
                 "count": 4
             }
-        },
-        {
-            "type": "gateways:command",
-            "command": "/whredragonswent clear-world-ender <summoner>",
-            "desc": "只能打一次"
         }
     ],
     "failures": [
@@ -174,6 +169,7 @@
     ],
     "spawn_algorithm": "gateways:inward_spiral",
     "rules":{
-        "fail_on_out_of_bounds": false
+        "fail_on_out_of_bounds": false,
+        "player_damage_only": true
     }
 }

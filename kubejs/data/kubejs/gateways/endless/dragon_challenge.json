@@ -28,16 +28,6 @@
     
     "color": "#33AE53",
     "failures": [
-        {
-            "command": "/kubejs stages add @p[tag=endless_challenger] \"quest/endless_dragon_completed\"",
-            "desc": "已完成",
-            "type": "gateways:command"
-        },
-        {
-            "command": "/kubejs stages remove @p[tag=endless_challenger] endless_challenger",
-            "desc": "还能再挑战",
-            "type": "gateways:command"
-        }
     ],
     "modifiers": [
         {

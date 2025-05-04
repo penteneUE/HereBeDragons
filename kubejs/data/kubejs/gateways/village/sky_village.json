@@ -3,22 +3,12 @@
     "color": "#33AE53",
     "rewards": [
         {
-            "type": "gateways:command",
-            "command": "/whredragonswent conquest finish <summoner>",
-            "desc": "占领成功"
-        },
-        {
             "type": "gateways:experience",
             "experience": 50,
             "orb_size": 25
         }
     ],
     "failures": [
-        {
-            "type": "gateways:command",
-            "command": "/whredragonswent conquest failure <summoner>",
-            "desc": "占领失败"
-        }
     ],
     "size": "small",
     "waves": [

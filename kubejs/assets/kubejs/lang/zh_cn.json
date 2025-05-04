@@ -76,6 +76,7 @@
     "kubejs.conquest.structure_not_available": "此结构无法占领。",
     "kubejs.conquest.has_current_conquest": "请先完成当前的占领任务！",
     "kubejs.conquest.conquest_already_completed": "这里已经被占领了。",
+    "kubejs.conquest.error": "发生错误！",
 
     "kubejs.conquest.info.structure": "这是一个%s。",
     "kubejs.conquest.info.ask": "占领这里？",
