@@ -1,4 +1,6 @@
 > 此整合包因无人测试而暂停开发。如有扣1复活意向请联系作者，或在Release页面下载整合包进行测试后反馈给作者。
+>
+> 招魂群：1037352971（扣1复活）
 
 宣传视频（Bilibili）：
 [![宣传视频](https://i1.hdslb.com/bfs/archive/22396dc0e5fe0a9a62bc0e90a67233dfb460000b.jpg)](https://b23.tv/OxcL0Vg)
