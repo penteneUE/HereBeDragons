@@ -1061,6 +1061,7 @@
 			dependencies: ["3C2422EE5831C05E"]
 			id: "2F94C6E3FCCB38FD"
 			invisible: true
+			progression_mode: "flexible"
 			rewards: [{
 				id: "472804FFE5A3123E"
 				item: {

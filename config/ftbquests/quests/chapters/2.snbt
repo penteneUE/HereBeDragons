@@ -109,9 +109,9 @@
 				xp: 20
 			}]
 			tasks: [{
-				advancement: "dragonsurvival:find_end_structures"
+				advancement: "minecraft:end/enter_end_gateway"
 				criterion: ""
-				id: "4B41712B0D58E7FE"
+				id: "08DB28E1F6BD1C31"
 				type: "advancement"
 			}]
 			x: 1.0d
@@ -771,8 +771,8 @@
 				item: { count: 1, id: "dragonsurvival:spin_grant" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: -8.5d
+			x: 2.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["5D9019A625D83B8C"]
@@ -790,8 +790,8 @@
 				item: { count: 1, id: "dragonsurvival:dragon_soul" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: -7.5d
+			x: 3.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["255FDC0FA11B8262"]

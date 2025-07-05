@@ -249,14 +249,23 @@
 				id: "minecraft:dead_fire_coral_block"
 			}
 			id: "6D8BE1493A9030C1"
-			rewards: [{
-				id: "1AB7C88CA3EBDAC0"
-				item: {
-					count: 1
-					id: "dragonsurvival:elder_dragon_heart"
+			rewards: [
+				{
+					id: "1AB7C88CA3EBDAC0"
+					item: {
+						count: 1
+						id: "dragonsurvival:elder_dragon_heart"
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					auto: "invisible"
+					id: "714848C1C8447FE5"
+					ignore_reward_blocking: true
+					stage: "quest/world_ender_stage_completed"
+					type: "gamestage"
+				}
+			]
 			tasks: [{
 				icon: {
 					id: "minecraft:campfire"

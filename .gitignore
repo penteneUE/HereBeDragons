@@ -13,4 +13,6 @@
 !kubejs/**/*
 !mods/**/*
 !resourcepacks/**/*
+!screenshots/**/*
+
 .probe

@@ -33,7 +33,7 @@
                     "type": "gateways:standard"
                 },
                 {
-                    "count": 2,
+                    "count": 4,
                     "entity": "minecraft:piglin",
                     "nbt": {
                         "HandItems": [
@@ -114,7 +114,7 @@
         {
             "entities": [
                 {
-                    "count": 3,
+                    "count": 6,
                     "entity": "minecraft:piglin_brute",
                     "nbt": {
                         "equipment": {

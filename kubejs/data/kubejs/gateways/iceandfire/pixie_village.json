@@ -1,6 +1,6 @@
 {
     "type": "gateways:normal",
-    "color": "#33AE53",
+    "color": "#ff9de8",
     "rewards": [
         {
             "type": "gateways:experience",
@@ -40,6 +40,7 @@
     ],
     "spawn_algorithm": "gateways:inward_spiral",
     "rules":{
-        "fail_on_out_of_bounds": false
+        "fail_on_out_of_bounds": false,
+        "allow_discarding": true
     }
 }

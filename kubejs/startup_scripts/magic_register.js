@@ -37,7 +37,7 @@ StartupEvents.registry("irons_spellbooks:spells", (event) => {
         .create("taotie_fabel")
         .setCastTime(10)
         .setBaseManaCost(2)
-        .setCooldownSeconds(1) // Spell cooldown in seconds
+        .setCooldownSeconds(0) // Spell cooldown in seconds
         .setManaCostPerLevel(10) // How much additional mana is needed per level
         .setCastType("instant") // Cast type can be "continuous", "long", "instant", or "none"
         .setSchool("kubejs:dragon") // The school type. This is the ID of the school you want to use
@@ -66,7 +66,7 @@ StartupEvents.registry("irons_spellbooks:spells", (event) => {
             return [
                 // You need to return an array of components for this method. They can be any text you want.
                 Text.translate("kubejs.spell.taotie_fabel.uniqueinfo.1", [
-                    spellLevel * 8,
+                    spellLevel * 4,
                 ]),
                 Text.translate("kubejs.spell.taotie_fabel.uniqueinfo.2", [
                     spellLevel >= 10 ? "∞" : maxSpace.toFixed(1),
@@ -80,7 +80,7 @@ StartupEvents.registry("irons_spellbooks:spells", (event) => {
         .setCastTime(120)
         .setBaseManaCost(2)
         .setMaxLevel(6)
-        .setCooldownSeconds(30) // Spell cooldown in seconds
+        .setCooldownSeconds(15) // Spell cooldown in seconds
         .setManaCostPerLevel(2) // How much additional mana is needed per level
         .setCastType("continuous") // Cast type can be "continuous", "long", "instant", or "none"
         .setSchool("kubejs:dragon") // The school type. This is the ID of the school you want to use

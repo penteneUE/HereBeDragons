@@ -1,3 +1,7 @@
+> 此整合包因无人测试而暂停开发。
+
+![宣传视频](screenshots/HereBeDragons1_6.mp4)
+
 # 龙曾在此 - Here Were Dragons
 
 ![HereWereDragons](kubejs/assets/kubejs/textures/task/here_were_dragons.png)

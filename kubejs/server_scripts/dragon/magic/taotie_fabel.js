@@ -15,7 +15,7 @@ function taotieFabel_onCast(event) {
     //let maxSpace = Math.pow(event.spellLevel, 1.5);
     let infinite = event.spellLevel > 10;
 
-    let k = event.spellLevel * 8;
+    let k = event.spellLevel * 4;
 
     if (player.shiftKeyDown) {
         if (!player.persistentData.consumedEntity) return;
@@ -81,6 +81,7 @@ function taotieFabel_onCast(event) {
     event.level.getEntitiesWithin(oAABB).forEach((entity) => {
         if (isMax) return;
         if (!entity.persistentData.OwnerName) return;
+        if (entity.persistentData.OwnerName != player.uuid.toString()) return;
 
         if (!infinite) {
             if (player.persistentData.getDouble("consumedSpace") >= maxSpace) {

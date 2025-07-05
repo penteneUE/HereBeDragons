@@ -201,12 +201,22 @@ PlayerEvents.inventoryClosed(
     (event) => {
         let { player, level } = event;
         if (!player) return;
+        console.log(player);
         if (!player.stages.has("quest/world_ender_stage_completed")) return;
 
-        let taxCollectorItem = event.inventoryContainer.getItems().last;
+        console.log(player);
+
+        /**@type {$BlockContainerJS_} */
+        let block = placedAgainstMap[event.player.uuid].block;
+
+        let taxCollectorItem = block.getInventory().allItems.first;
+
+        console.log(taxCollectorItem);
 
         if (!taxCollectorItem) return;
         if (taxCollectorItem.id != "minecraft:dragon_egg") return;
+
+        console.log(player);
 
         // if (player.stages.has("paper_myth_challenger")) {
         //     player.tell(
@@ -217,18 +227,16 @@ PlayerEvents.inventoryClosed(
         //     return;
         // }
 
-        /**@type {$BlockContainerJS_} */
-        let block = placedAgainstMap[event.player.uuid].block;
-
         let { x, y, z } = block;
         player.give("minecraft:dragon_egg");
+
+        block.spawnLightning();
+        block.set("minecraft:air");
+
         let explosion = level.createExplosion(x, y, z);
         explosion.strength(3);
         explosion.explosionMode("mob");
         explosion.explode();
-
-        block.spawnLightning();
-        block.set("minecraft:air");
 
         level.spawnParticles(
             "minecraft:explosion",
