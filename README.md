@@ -1,12 +1,13 @@
-> 此整合包因无人测试而暂停开发。
+> 此整合包因无人测试而暂停开发。如有扣1复活意向请联系作者，或在Release页面下载整合包进行测试后反馈给作者。
 
-![宣传视频](screenshots/HereBeDragons1_6.mp4)
+宣传视频（Bilibili）：
+[![宣传视频](https://i1.hdslb.com/bfs/archive/22396dc0e5fe0a9a62bc0e90a67233dfb460000b.jpg)](https://b23.tv/OxcL0Vg)
 
 # 龙曾在此 - Here Were Dragons
 
 ![HereWereDragons](kubejs/assets/kubejs/textures/task/here_were_dragons.png)
 
-> *（1.21 龙之生存+冰与火整合包）*
+> *（1.21 龙之生存+冰与火+铁魔法整合包/有魔改）*
 > 在一个没有龙的世界当恶龙，会是什么体验？
 
 你从纸壳中醒来，身上只有一个罗盘。
