@@ -41,19 +41,19 @@
 重要提示：
 
 所有对本整合包的使用都必须严格遵守 Minecraft 最终用户许可协议 (EULA) 和 Mojang 的商业使用指南。严禁将本整合包用于任何形式的直接商业销售。
-本整合包中使用的部分文本内容来源于 赛库鲁康泰普罗泰克方德雷什及其中文分部 的创作，并遵循 Creative Commons Attribution-ShareAlike 3.0 International License (http://creativecommons.org/licenses/by-sa/3.0/)。我们对原作者表示感谢。
+本整合包中使用的部分文本内容来源于 赛库鲁康泰普罗泰克方德雷什及其中文分部 的创作，并遵循 Creative Commons Attribution-ShareAlike 3.0 International License (http://creativecommons.org/licenses/by-sa/3.0/ )。我们对原作者表示感谢。
 
 内容版权归属各条目原作者及创作者社区，完整贡献者列表参见： 
- 
+
 - https://scp-wiki.wikidot.com/system:members
 - https://scp-wiki-cn.wikidot.com/system:members
 
 明确引用段落/或再创作的条目：
 
-- “SCP-1762”，作者 Ouroboros，来自 SCP 维基。原文链接：https://scp-wiki.wikidot.com/scp-1762。译者 ashausesall，来自 SCP-CN 维基。译文链接：http://scp-wiki-cn.wikidot.com/scp-1762。遵循 CC-BY-SA 协议。
-- “SCP-CN-1245”，作者 ShineShadowD，来自 SCP-CN 维基。原文链接：https://scp-wiki-cn.wikidot.com/scp-cn-1245。遵循 CC-BY-SA 协议。
-- “SCP-CN-2845”，作者 Re_spectators，Enflowerz，Etinjat，来自 SCP-CN 维基。原文链接：https://scp-wiki-cn.wikidot.com/scp-cn-2845。遵循 CC-BY-SA 协议。
-- “基金会之死”，作者 Huskar_CN，来自 SCP-CN 维基。原文链接：https://scp-wiki-cn.wikidot.com/foundation-s-death。遵循 CC-BY-SA 协议。
+- “SCP-1762”，作者 Ouroboros，来自 SCP 维基。原文链接：https://scp-wiki.wikidot.com/scp-1762 。译者 ashausesall，来自 SCP-CN 维基。译文链接：http://scp-wiki-cn.wikidot.com/scp-1762 。遵循 CC-BY-SA 协议。
+- “SCP-CN-1245”，作者 ShineShadowD，来自 SCP-CN 维基。原文链接：https://scp-wiki-cn.wikidot.com/scp-cn-1245 。遵循 CC-BY-SA 协议。
+- “SCP-CN-2845”，作者 Re_spectators，Enflowerz，Etinjat，来自 SCP-CN 维基。原文链接：https://scp-wiki-cn.wikidot.com/scp-cn-2845 。遵循 CC-BY-SA 协议。
+- “基金会之死”，作者 Huskar_CN，来自 SCP-CN 维基。原文链接：https://scp-wiki-cn.wikidot.com/foundation-s-death 。遵循 CC-BY-SA 协议。
 
 本整合包为非官方作品，与赛库鲁康泰普罗泰克方德雷什及其关联组织无关。
 
