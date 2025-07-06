@@ -1,6 +1,8 @@
-> 此整合包因无人测试而暂停开发。如有扣1复活意向请联系作者，或在Release页面下载整合包进行测试后反馈给作者。
+> 此整合包因无人测试而暂停开发。扣1复活方案：
+> - 联系作者/加入招魂群。魂兮归来……魂兮归来……
+> - 在Release页面下载整合包进行测试后，通过GitHub Issue等反馈给作者。
 >
-> 招魂群：1037352971（扣1复活）
+> 招魂群：1037352971（进入万魂幡，是兄弟就来联机测试包）
 
 宣传视频（Bilibili）：
 [![宣传视频](https://i1.hdslb.com/bfs/archive/22396dc0e5fe0a9a62bc0e90a67233dfb460000b.jpg)](https://b23.tv/OxcL0Vg)
@@ -30,3 +32,30 @@
 链接2: [扣1下载](https://github.com/JesterRomut/HereBeDragons/releases/latest)
 
 <!-- https://github.com/JesterRomut/HereBeDragons/releases/latest -->
+
+<details>
+<summary>许可证与声明 (License and Disclaimers)</summary>
+
+本整合包整体遵循 GNU General Public License v3.0 (LICENSE) 发布。这是因为整合包内包含了部分使用GPLv3协议的Mod，根据其规定，整个衍生作品需采用相同协议。
+
+重要提示：
+
+所有对本整合包的使用都必须严格遵守 Minecraft 最终用户许可协议 (EULA) 和 Mojang 的商业使用指南。严禁将本整合包用于任何形式的直接商业销售。
+本整合包中使用的部分文本内容来源于 赛库鲁康泰普罗泰克方德雷什及其中文分部 的创作，并遵循 Creative Commons Attribution-ShareAlike 3.0 International License (http://creativecommons.org/licenses/by-sa/3.0/)。我们对原作者表示感谢。
+
+内容版权归属各条目原作者及创作者社区，完整贡献者列表参见： 
+ 
+- https://scp-wiki.wikidot.com/system:members
+- https://scp-wiki-cn.wikidot.com/system:members
+
+明确引用段落/或再创作的条目：
+
+- “SCP-1762”，作者 Ouroboros，来自 SCP 维基。原文链接：https://scp-wiki.wikidot.com/scp-1762。译者 ashausesall，来自 SCP-CN 维基。译文链接：http://scp-wiki-cn.wikidot.com/scp-1762。遵循 CC-BY-SA 协议。
+- “SCP-CN-1245”，作者 ShineShadowD，来自 SCP-CN 维基。原文链接：https://scp-wiki-cn.wikidot.com/scp-cn-1245。遵循 CC-BY-SA 协议。
+- “SCP-CN-2845”，作者 Re_spectators，Enflowerz，Etinjat，来自 SCP-CN 维基。原文链接：https://scp-wiki-cn.wikidot.com/scp-cn-2845。遵循 CC-BY-SA 协议。
+- “基金会之死”，作者 Huskar_CN，来自 SCP-CN 维基。原文链接：https://scp-wiki-cn.wikidot.com/foundation-s-death。遵循 CC-BY-SA 协议。
+
+本整合包为非官方作品，与赛库鲁康泰普罗泰克方德雷什及其关联组织无关。
+
+整合包内各Mod的独立版权归其原作者所有。
+</details>

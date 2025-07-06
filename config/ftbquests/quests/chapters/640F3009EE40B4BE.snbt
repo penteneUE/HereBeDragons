@@ -79,7 +79,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["61D03B762B3D7DB3"]
+			dependencies: ["1EDFAD2A84D98812"]
 			id: "719FEDF459AA1F90"
 			rewards: [{
 				id: "775A034A0708D86D"
@@ -90,7 +90,7 @@
 				id: "1C31D71C2E7F973F"
 				type: "checkmark"
 			}]
-			x: 0.0d
+			x: -1.0d
 			y: 5.0d
 		}
 		{
@@ -122,6 +122,21 @@
 			}]
 			x: -1.5d
 			y: 3.5d
+		}
+		{
+			dependencies: ["61D03B762B3D7DB3"]
+			id: "1EDFAD2A84D98812"
+			rewards: [{
+				id: "08207220DCC39DDB"
+				type: "xp"
+				xp: 2
+			}]
+			tasks: [{
+				id: "2AE973BA6FF84903"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 5.0d
 		}
 	]
 }

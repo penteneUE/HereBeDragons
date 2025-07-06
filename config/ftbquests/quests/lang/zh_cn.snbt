@@ -146,6 +146,19 @@
 	quest.1EDD652A5A099001.quest_desc: ["目之所视，全都是散落的下界合金盔甲。你本想挖走一块下来给自己穿，可它们却活了过来！"]
 	quest.1EDD652A5A099001.quest_subtitle: "遍地的残甲"
 	quest.1EDD652A5A099001.title: "古战场"
+	quest.1EDFAD2A84D98812.quest_desc: [
+		"{image:kubejs:textures/task/tutorial_allskills.png width:118 height:85 align:center}"
+		"打开龙的物品栏 → 技能。可以查看主动技能、被动技能、种族技能的状况。"
+		"{@pagebreak}"
+		"1：装备中的主动技能"
+		"2：所有主动技能，可以拖放至1中进行装备。用鼠标滚轮可滚动。"
+		"3：被动技能（详见下一页）"
+		"4：种族技能"
+		"{@pagebreak}"
+		"{image:kubejs:textures/task/tutorial_passiveskill.png width:43 height:79 align:center}"
+		"被动技能可以用经验进行强化（加点）。点击这些箭头即可..."
+	]
+	quest.1EDFAD2A84D98812.quest_subtitle: "因为怕痛，所以全点防御力"
 	quest.1F2854EDFE5FA100.quest_desc: [""]
 	quest.1F2854EDFE5FA100.quest_subtitle: "恶龙的新手村"
 	quest.1F2854EDFE5FA100.title: "占领：浮空村庄"
@@ -589,14 +602,14 @@
 	]
 	quest.585D1B2950AA4607.quest_desc: ["猎杀公会骑士掉落。"]
 	quest.589DB3933D7ADA89.quest_desc: [
-		"整合包的部分内容基于赛库鲁康泰普罗泰克方德雷什（scp-wiki.wikidot.com）及其中文分部（scp-wiki-cn.wikidot.com）的创作，遵循CC-BY-SA 3.0协议。  "
+		"整合包的部分内容基于赛库鲁康泰普罗泰克方德雷什及其中文分部的创作，这些部分遵循&eCC-BY-SA&r 3.0协议。"
 		""
 		"内容版权归属各条目原作者及创作者社区，完整贡献者列表参见：  "
 		"https://scp-wiki.wikidot.com/system:members"
 		"https://scp-wiki-cn.wikidot.com/system:members"
 		""
-		"协议详情：https://creativecommons.org/licenses/by-sa/3.0/  "
-		"本整合包为非官方作品，与赛库鲁康泰普罗泰克方德雷什及其关联组织（GOC、地平线、&mUIU&r）无关。"
+		"协议详情：&ehttps://creativecommons.org/licenses/by-sa/3.0/&r"
+		"本整合包为非官方作品，与赛库鲁康泰普罗泰克方德雷什及其关联组织（季欧吸、地平线、&m优爱优&r）无关。"
 		"{@pagebreak}"
 		"明确引用段落/或再创作的条目："
 		""
@@ -703,6 +716,10 @@
 		"{image:kubejs:textures/task/tutorial_keybind.png width:178 height:96 align:center}"
 		""
 		"法术的键位也是同理。活学活用吧！"
+		"{@pagebreak}"
+		"这些技能在&e龙的物品栏 → 2:技能&r中可以查看等级。主动技能的等级绑定于经验等级。"
+		""
+		"下一教程项将会进行更多讲解。"
 	]
 	quest.61D03B762B3D7DB3.quest_subtitle: "谁给我改键位了？"
 	quest.622866C257178852.quest_subtitle: "龙用龙皮书，太恐怖了……"
@@ -1007,11 +1024,12 @@
 	task.2822EAC9B59C30DF.title: "笔记：异种杂交"
 	task.284A614488FC432D.title: "整合包之死"
 	task.291A150DF26B46E0.title: "笔记：狂龙病毒"
+	task.2AE973BA6FF84903.title: "龙的被动技能"
 	task.2C56F358AECA93D8.title: "龙的物品栏"
 	task.2CFB640AF692D8A7.title: "引言"
 	task.2D4D7ADEEA90E71F.title: "龙食产出点"
 	task.2D5F1E4E7A256624.title: "重新选择"
-	task.2DA64836A75052CD.title: "龙的技能"
+	task.2DA64836A75052CD.title: "龙的主动技能"
 	task.2FF2B40CD3492F3D.title: "法术：自由探索"
 	task.307998BBA6E21031.title: "木材"
 	task.35DEAD714FD1D813.title: "龙曾在此"

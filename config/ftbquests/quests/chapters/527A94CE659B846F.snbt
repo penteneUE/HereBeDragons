@@ -662,7 +662,7 @@
 			}]
 			tasks: [{
 				id: "402138F279BB813E"
-				item: { components: { "irons_spellbooks:affinity_data": { bonuses: { "irons_spellbooks:acupuncture": 1, "irons_spellbooks:blood_needles": 1 } }, "irons_spellbooks:spell_container": { data: [ ], maxSpells: 10, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:cursed_doll_spell_book" }
+				item: { components: { "irons_spellbooks:affinity_data": { bonuses: { "irons_spellbooks:blood_slash": 1, "irons_spellbooks:blood_step": 1 } }, "irons_spellbooks:spell_container": { data: [ ], maxSpells: 10, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:cursed_doll_spell_book" }
 				type: "item"
 			}]
 			x: 10.0d
