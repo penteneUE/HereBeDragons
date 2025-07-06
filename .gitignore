@@ -8,6 +8,7 @@
 !HereBeDragons.jar
 !HereBeDragons.json
 !HereBeDragons.code-workspace
+!.roo/**/*
 
 # whitelist everything in ./config/
 !config/**/*

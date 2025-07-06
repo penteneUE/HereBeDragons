@@ -133,69 +133,69 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"aquaculture:atlantic_halibut": false
-			"iceandfire:hippogryph": true
-			"aquaculture:catfish": false
-			"minecraft:cave_spider": true
-			"minecraft:chicken": true
-			"minecraft:tropical_fish": false
-			"minecraft:cod": false
-			"minecraft:iron_golem": true
-			"minecraft:pig": true
-			"minecraft:rabbit": true
-			"dragonsurvival:hunter_leader": true
-			"minecraft:glow_squid": true
-			"irons_spellbooks:priest": true
-			"minecraft:vindicator": true
-			"minecraft:bee": true
 			"minecraft:trader_llama": true
-			"minecraft:phantom": true
-			"aquaculture:gar": false
-			"minecraft:ghast": true
-			"minecraft:squid": true
-			"minecraft:zombified_piglin": true
-			"aquaculture:brown_trout": false
-			"minecraft:wolf": true
-			"aquaculture:atlantic_herring": false
-			"minecraft:enderman": true
-			"dragonsurvival:hunter_knight": true
-			"minecraft:sheep": true
-			"dragonsurvival:hunter_spearman": true
-			"minecraft:villager": true
-			"aquaculture:perch": false
-			"minecraft:zombie_villager": true
-			"minecraft:strider": true
-			"irons_spellbooks:necromancer": true
-			"aquaculture:minnow": false
-			"aquaculture:muskellunge": false
-			"minecraft:witch": true
-			"iceandfire:myrmex_worker": true
-			"aquaculture:jellyfish": false
-			"minecraft:dolphin": true
-			"aquaculture:carp": false
-			"aquaculture:bluegill": false
-			"minecraft:vex": true
-			"irons_spellbooks:cursed_armor_stand": true
-			"minecraft:bat": true
 			"iceandfire:pixie": true
-			"minecraft:zombie": true
-			"minecraft:turtle": true
-			"minecraft:skeleton": true
-			"aquaculture:smallmouth_bass": false
+			"minecraft:cod": false
 			"minecraft:axolotl": true
-			"minecraft:pufferfish": false
-			"minecraft:cow": true
-			"dragonsurvival:hunter_hound": true
-			"iceandfire:myrmex_soldier": true
-			"iceandfire:cockatrice": true
-			"iceandfire:hippocampus": true
-			"minecraft:drowned": true
+			"minecraft:ghast": true
+			"minecraft:zombie": true
+			"irons_spellbooks:cursed_armor_stand": true
+			"irons_spellbooks:priest": true
+			"minecraft:spider": true
+			"minecraft:villager": true
+			"minecraft:cave_spider": true
+			"aquaculture:carp": false
+			"minecraft:skeleton": true
+			"minecraft:zombie_villager": true
 			"aquaculture:red_grouper": false
 			"minecraft:piglin": true
-			"minecraft:wandering_trader": true
-			"minecraft:creeper": true
-			"minecraft:spider": true
+			"minecraft:sheep": true
+			"aquaculture:muskellunge": false
+			"iceandfire:hippogryph": true
+			"minecraft:turtle": true
+			"dragonsurvival:hunter_spearman": true
+			"minecraft:glow_squid": true
+			"dragonsurvival:hunter_leader": true
 			"iceandfire:myrmex_queen": true
+			"iceandfire:cockatrice": true
+			"aquaculture:atlantic_halibut": false
+			"minecraft:phantom": true
+			"minecraft:creeper": true
+			"minecraft:drowned": true
+			"minecraft:wolf": true
+			"aquaculture:perch": false
+			"minecraft:bat": true
+			"minecraft:wandering_trader": true
+			"minecraft:vindicator": true
+			"dragonsurvival:hunter_hound": true
+			"minecraft:vex": true
+			"aquaculture:smallmouth_bass": false
+			"aquaculture:atlantic_herring": false
+			"dragonsurvival:hunter_knight": true
+			"minecraft:squid": true
+			"minecraft:tropical_fish": false
+			"minecraft:bee": true
+			"minecraft:chicken": true
+			"minecraft:iron_golem": true
+			"aquaculture:catfish": false
+			"minecraft:enderman": true
+			"minecraft:zombified_piglin": true
+			"aquaculture:brown_trout": false
+			"aquaculture:bluegill": false
+			"minecraft:rabbit": true
+			"minecraft:strider": true
+			"aquaculture:jellyfish": false
+			"aquaculture:minnow": false
+			"minecraft:cow": true
+			"minecraft:pig": true
+			"minecraft:witch": true
+			"iceandfire:myrmex_soldier": true
+			"minecraft:dolphin": true
+			"aquaculture:gar": false
+			"iceandfire:hippocampus": true
+			"iceandfire:myrmex_worker": true
+			"minecraft:pufferfish": false
+			"irons_spellbooks:necromancer": true
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)
