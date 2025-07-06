@@ -133,69 +133,69 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"minecraft:skeleton": true
-			"aquaculture:brown_trout": false
-			"minecraft:vex": true
-			"minecraft:wandering_trader": true
-			"minecraft:glow_squid": true
-			"minecraft:pufferfish": false
-			"aquaculture:carp": false
-			"minecraft:bat": true
-			"minecraft:villager": true
-			"minecraft:pig": true
-			"iceandfire:hippocampus": true
-			"iceandfire:hippogryph": true
-			"minecraft:dolphin": true
-			"irons_spellbooks:cursed_armor_stand": true
-			"minecraft:zombie": true
-			"aquaculture:atlantic_herring": false
-			"aquaculture:gar": false
-			"minecraft:piglin": true
-			"aquaculture:perch": false
-			"aquaculture:bluegill": false
-			"minecraft:phantom": true
-			"iceandfire:pixie": true
-			"minecraft:tropical_fish": false
-			"dragonsurvival:hunter_spearman": true
-			"minecraft:witch": true
-			"minecraft:iron_golem": true
 			"minecraft:bee": true
-			"minecraft:squid": true
-			"minecraft:ghast": true
-			"iceandfire:myrmex_queen": true
-			"minecraft:zombie_villager": true
+			"minecraft:vex": true
+			"dragonsurvival:hunter_spearman": true
 			"minecraft:enderman": true
-			"minecraft:cow": true
-			"minecraft:wolf": true
-			"dragonsurvival:hunter_leader": true
-			"minecraft:spider": true
-			"irons_spellbooks:necromancer": true
-			"minecraft:cod": false
-			"minecraft:vindicator": true
-			"aquaculture:atlantic_halibut": false
-			"minecraft:sheep": true
-			"aquaculture:catfish": false
-			"minecraft:chicken": true
 			"minecraft:drowned": true
-			"minecraft:zombified_piglin": true
-			"aquaculture:red_grouper": false
-			"minecraft:trader_llama": true
-			"aquaculture:minnow": false
-			"minecraft:cave_spider": true
-			"aquaculture:muskellunge": false
-			"aquaculture:smallmouth_bass": false
-			"iceandfire:myrmex_worker": true
-			"minecraft:rabbit": true
-			"dragonsurvival:hunter_hound": true
-			"dragonsurvival:hunter_knight": true
-			"minecraft:strider": true
-			"iceandfire:myrmex_soldier": true
-			"minecraft:turtle": true
-			"irons_spellbooks:priest": true
+			"irons_spellbooks:necromancer": true
+			"minecraft:sheep": true
+			"minecraft:piglin": true
 			"minecraft:creeper": true
-			"aquaculture:jellyfish": false
+			"minecraft:cod": false
 			"iceandfire:cockatrice": true
+			"minecraft:pufferfish": false
+			"minecraft:glow_squid": true
+			"minecraft:squid": true
+			"minecraft:cave_spider": true
+			"iceandfire:hippogryph": true
+			"minecraft:skeleton": true
+			"iceandfire:pixie": true
+			"aquaculture:gar": false
+			"aquaculture:muskellunge": false
+			"minecraft:chicken": true
+			"minecraft:pig": true
+			"minecraft:dolphin": true
+			"minecraft:zombie": true
+			"irons_spellbooks:cursed_armor_stand": true
+			"aquaculture:jellyfish": false
+			"minecraft:wandering_trader": true
+			"iceandfire:myrmex_worker": true
+			"minecraft:turtle": true
+			"aquaculture:atlantic_halibut": false
+			"dragonsurvival:hunter_knight": true
+			"minecraft:cow": true
+			"minecraft:witch": true
+			"irons_spellbooks:priest": true
+			"iceandfire:hippocampus": true
+			"minecraft:zombie_villager": true
+			"minecraft:ghast": true
+			"aquaculture:minnow": false
+			"dragonsurvival:hunter_hound": true
+			"minecraft:zombified_piglin": true
 			"minecraft:axolotl": true
+			"iceandfire:myrmex_soldier": true
+			"aquaculture:carp": false
+			"dragonsurvival:hunter_leader": true
+			"minecraft:iron_golem": true
+			"aquaculture:catfish": false
+			"minecraft:wolf": true
+			"aquaculture:bluegill": false
+			"aquaculture:perch": false
+			"aquaculture:red_grouper": false
+			"aquaculture:atlantic_herring": false
+			"minecraft:bat": true
+			"aquaculture:smallmouth_bass": false
+			"aquaculture:brown_trout": false
+			"minecraft:spider": true
+			"minecraft:rabbit": true
+			"minecraft:phantom": true
+			"minecraft:vindicator": true
+			"minecraft:strider": true
+			"minecraft:tropical_fish": false
+			"iceandfire:myrmex_queen": true
+			"minecraft:trader_llama": true
+			"minecraft:villager": true
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)
