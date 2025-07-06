@@ -9,7 +9,9 @@
 
 ![HereWereDragons](kubejs/assets/kubejs/textures/task/here_were_dragons.png)
 
-> *（1.21 龙之生存+冰与火+铁魔法整合包/有魔改）*
+## 介绍
+
+> *（1.21 龙之生存+冰与火+铁魔法整合包/有原创魔改玩法）*
 > 在一个没有龙的世界当恶龙，会是什么体验？
 
 你从纸壳中醒来，身上只有一个罗盘。
@@ -21,3 +23,10 @@
 
 混沌的大脑清醒三分，你发觉自己的身体有些不对。
 啊——恶龙竟是我自己。
+
+## 下载
+链接1: [扣1下载](releases/latest)
+
+链接2: [扣1下载](https://github.com/JesterRomut/HereBeDragons/releases/latest)
+
+<!-- https://github.com/JesterRomut/HereBeDragons/releases/latest -->
