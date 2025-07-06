@@ -156,7 +156,7 @@
 		"4：种族技能"
 		"{@pagebreak}"
 		"{image:kubejs:textures/task/tutorial_passiveskill.png width:43 height:79 align:center}"
-		"被动技能可以用经验进行强化（加点）。点击这些箭头即可..."
+		"被动技能可以用经验进行强化（加点）。&c点这些箭头！不要点击图标，没有用！&r"
 	]
 	quest.1EDFAD2A84D98812.quest_subtitle: "因为怕痛，所以全点防御力"
 	quest.1F2854EDFE5FA100.quest_desc: [""]
@@ -377,7 +377,7 @@
 	quest.36478C9680EBEFD6.quest_desc: [
 		"龙旗玩法是整合包原创的玩法。玩家可以在建筑上插上龙旗，触发攻城战。成功占领后，即成为玩家的领地，获得大量资源。"
 		""
-		"要激活龙旗，在龙旗基座上插上旗帜即可。占领成功后，奖杯会自关闭的传送门中掉落。"
+		"&e要激活龙旗，把龙旗基座放置在需占领的结构中，在龙旗基座上插上旗帜即可。&r占领成功后，奖杯会自关闭的传送门中掉落。"
 		""
 		"目前没有做玩家与NPC/他人争夺领地的内容，也就是说，一个建筑可以被多个玩家占领并收取物资。（才不是因为没有朋友帮作者测试）"
 	]
@@ -860,7 +860,7 @@
 		""
 		"如果是背包格子里的物品，按下默认&eR&r调出配方查询，按下默认&eU&r调出配方中使用的查询。"
 		""
-		"EMI的键位修改区位于背包界面左下角“EMI设置”。"
+		"&e注意，EMI的键位修改区位于背包界面左下角“EMI设置”。&r"
 		"{@pagebreak}"
 		"{image:kubejs:textures/task/tutorial_recipe_browser.png width:190 height:85 align:center}"
 		""

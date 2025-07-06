@@ -779,6 +779,7 @@
 		}
 		{
 			dependencies: ["27D23F919BAA1EB4"]
+			hide_text_until_complete: true
 			id: "2129326F3111C29B"
 			rewards: [{
 				id: "2B937AAD235BB273"
@@ -815,7 +816,7 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["3DCEA15CB8E9D815"]
+			dependencies: ["20807B9CA5CDB81A"]
 			hide_dependency_lines: true
 			id: "2D2C98446CE4035C"
 			rewards: [{
