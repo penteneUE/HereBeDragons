@@ -34,9 +34,8 @@
 - mod（例如龙生存-铁魔法-冰与火）之间的适配……
 
 ## 下载
-链接1: [扣1下载](releases/latest)
 
-链接2: [扣1下载](https://github.com/JesterRomut/HereBeDragons/releases/latest)
+Github Release: [扣1下载](https://github.com/JesterRomut/HereBeDragons/releases/latest)
 
 <!-- https://github.com/JesterRomut/HereBeDragons/releases/latest -->
 
