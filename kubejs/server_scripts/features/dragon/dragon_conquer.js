@@ -1,60 +1,6 @@
 let $ChunkPos = Java.loadClass("net.minecraft.world.level.ChunkPos");
 let $ListTag = Java.loadClass("net.minecraft.nbt.ListTag");
 
-function clearDragonConquerRecord(player) {
-    player.persistentData.remove("dragonConquerRecords");
-}
-
-function clearDragonConquerStructure(player, structure_id) {
-    if (!player.persistentData.dragonConquerRecords) return;
-    player.persistentData.dragonConquerRecords.remove(structure_id);
-}
-
-function clearDragonConquerCurrent(player) {
-    player.persistentData.remove("dragonConquerCurrent");
-    player.persistentData.remove("dragonConquerCurrentId");
-}
-
-/**
- *
- * @param {$Player_} player
- */
-function clearDragonConquerHere(player) {
-    let { structure_id, structure } = whichStructureAmI(
-        player.blockPosition(),
-        player.level
-    );
-    if (!player.persistentData.dragonConquerRecords) return;
-    if (!player.persistentData.dragonConquerRecords[structure_id]) return;
-
-    let index = 0;
-    let found = false;
-    /**@type {$ListTag_} */
-    let list = player.persistentData.dragonConquerRecords[structure_id];
-    let bbox = structure.getBoundingBox();
-
-    let length = list.size();
-    while (index < length) {
-        let record = list[index];
-        if (
-            bbox.minX() == record.getInt("minX") &&
-            bbox.maxX() == record.getInt("maxX") &&
-            bbox.minY() == record.getInt("minY") &&
-            bbox.maxY() == record.getInt("maxY") &&
-            bbox.minZ() == record.getInt("minZ") &&
-            bbox.maxZ() == record.getInt("maxZ")
-        ) {
-            found = true;
-            break;
-        }
-        index++;
-    }
-
-    if (!found) return;
-
-    player.persistentData.dragonConquerRecords[structure_id].remove(index);
-}
-
 function conquerStatus(minX, maxX, minY, maxY, minZ, maxZ) {
     let result = new $CompoundTag();
 
@@ -99,75 +45,20 @@ function addDragonConquerRecord_withConquerStatus(
     if (!dragonConquerRecords || dragonConquerRecords.isEmpty()) {
         player.persistentData.dragonConquerRecords = new $CompoundTag();
         player.persistentData.dragonConquerRecords[structure_id] = [];
-        console.log(111);
+        //console.log(111);
     }
 
-    console.log(player.persistentData.dragonConquerRecords[structure_id]);
+    //console.log(player.persistentData.dragonConquerRecords[structure_id]);
 
     if (!player.persistentData.dragonConquerRecords[structure_id]) {
         player.persistentData.dragonConquerRecords[structure_id] = [];
         console.log(player.persistentData.dragonConquerRecords[structure_id]);
     }
-    console.log(111);
+    //console.log(111);
     player.persistentData.dragonConquerRecords[structure_id].push(
         conquerStatus
     );
-    console.log(111);
-}
-
-function matchDragonConquerRecord_withBbox(player, bbox, structure_id) {
-    return matchDragonConquerRecord(
-        player,
-        bbox.minX(),
-        bbox.maxX(),
-        bbox.minY(),
-        bbox.maxY(),
-        bbox.minZ(),
-        bbox.maxZ(),
-        structure_id
-    );
-}
-
-function matchDragonConquerRecord(
-    player,
-    minX,
-    maxX,
-    minY,
-    maxY,
-    minZ,
-    maxZ,
-    structure_id
-) {
-    let { dragonConquerRecords } = player.persistentData;
-    let result = false;
-
-    if (!structure_id) return;
-
-    if (dragonConquerRecords == undefined) {
-        return;
-        //clearDragonConquerRecord(player)
-    } else {
-        if (dragonConquerRecords[structure_id] == undefined) {
-            //dragonConquerRecords[structure_id] = []
-            return;
-        }
-        dragonConquerRecords[structure_id].forEach((record) => {
-            if (
-                minX == record.getInt("minX") &&
-                maxX == record.getInt("maxX") &&
-                minY == record.getInt("minY") &&
-                maxY == record.getInt("maxY") &&
-                minZ == record.getInt("minZ") &&
-                maxZ == record.getInt("maxZ")
-            ) {
-                result = true;
-            }
-
-            if (result) return;
-        });
-    }
-
-    return result;
+    //console.log(111);
 }
 
 /**
@@ -277,37 +168,6 @@ function finishDragonConquest(player) {
 //     return false;
 
 // }
-
-/**
- *
- * @param {$BlockPos_} blockPosition
- * @param {$ServerLevel_} level
- * @returns {{structure: $StructureStart_, structure_id: string}}
- */
-function whichStructureAmI(blockPosition, level) {
-    let structure;
-    let structure_id = "";
-    level
-        .structureManager()
-        .startsForStructure($ChunkPos(blockPosition), () => true)
-        .stream()
-        .forEach((ss) => {
-            if (ss.getBoundingBox().isInside(blockPosition)) {
-                structure_id = Registry.of("worldgen/structure")
-                    .getKey(ss.getStructure())
-                    .location();
-                structure = ss;
-
-                return;
-            }
-        });
-    // if (structure_id == "minecraft:mansion") {
-    //     console.log(blockPosition);
-    // }
-    return { structure: structure, structure_id: structure_id };
-}
-
-global.UTILS.whichStructureAmI = whichStructureAmI;
 
 /**
  *
@@ -532,3 +392,7 @@ function blockPlaced_dragonConquer(event) {
 
     // console.log(111);
 }
+
+BlockEvents.placed((event) => {
+    blockPlaced_dragonConquer(event);
+});

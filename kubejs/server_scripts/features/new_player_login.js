@@ -1,31 +1,6 @@
 PlayerEvents.loggedIn((event) => {
     let player = event.player;
 
-    const { activeTaxCollector } = player.persistentData;
-
-    if (activeTaxCollector) {
-        let taxCollector = event.server
-            .getLevel(activeTaxCollector.getString("dimension"))
-            .getBlock(
-                activeTaxCollector.getInt("x"),
-                activeTaxCollector.getInt("y"),
-                activeTaxCollector.getInt("z")
-            );
-        if (taxCollector.id == "kubejs:tax_collector") return;
-        if (!taxCollector.getEntityData()) return;
-        if (
-            taxCollector.getEntityData().getString("ownerID") ==
-            player.getUuid().toString()
-        )
-            return;
-        //console.log(player.getUuid().toString())
-
-        player.persistentData.remove("activeTaxCollector");
-        player.tell(
-            Text.translate("kubejs.taxcollector.broken").color(0xd77a61)
-        );
-    }
-
     event.server.scheduleInTicks(20, (callback) => {
         if (!player.stages.has("firstjoined")) {
             //player.inventory.clear()
@@ -50,3 +25,8 @@ PlayerEvents.loggedIn((event) => {
         }
     });
 });
+
+//let $Death = Java.loadClass("de.maxhenkel.gravestone.corelib.death.Death");
+// let $DeathManager = Java.loadClass(
+//     "de.maxhenkel.gravestone.corelib.death.DeathManager"
+// );

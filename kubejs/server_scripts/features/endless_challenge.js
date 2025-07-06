@@ -63,3 +63,8 @@ function blockPlaced_endlessChallenge(event) {
 
     block.set("kubejs:dragon_flag");
 }
+
+BlockEvents.placed((event) => {
+    //blockPlaced_taxCollect(event);
+    blockPlaced_endlessChallenge(event);
+});

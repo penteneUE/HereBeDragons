@@ -4,7 +4,7 @@
  */
 global.MISC.dimensionChanged = (event) => {
     const { entity, dimension } = event;
-    console.log(111);
+    //console.log(111);
 
     try {
         switch (dimension.location().toString()) {
@@ -34,7 +34,7 @@ global.MISC.dimensionChanged = (event) => {
                      * @type {$CompoundTag_} - 判断是否为玩家，通过后重申entity的类型
                      */
                     let { dragonConquerRecords } = player.persistentData;
-                    console.log(player.persistentData);
+                    //console.log(player.persistentData);
 
                     if (
                         dragonConquerRecords &&

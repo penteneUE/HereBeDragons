@@ -1,8 +1,3 @@
-//let $Death = Java.loadClass("de.maxhenkel.gravestone.corelib.death.Death");
-// let $DeathManager = Java.loadClass(
-//     "de.maxhenkel.gravestone.corelib.death.DeathManager"
-// );
-
 let $DeathManager = Java.loadClass(
     "de.maxhenkel.gravestone.corelib.death.DeathManager"
 );

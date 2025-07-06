@@ -10,12 +10,6 @@ BlockEvents.rightClicked((event) => {
     };
 });
 
-BlockEvents.placed((event) => {
-    blockPlaced_dragonConquer(event);
-    blockPlaced_taxCollect(event);
-    blockPlaced_endlessChallenge(event);
-});
-
-BlockEvents.broken((event) => {
-    blockBroken_TaxCollect(event);
-});
+// BlockEvents.broken((event) => {
+//     blockBroken_TaxCollect(event);
+// });

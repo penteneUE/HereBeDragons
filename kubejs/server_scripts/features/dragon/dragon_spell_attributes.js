@@ -117,3 +117,8 @@ function playerTick_DragonState(/**@type {$SimplePlayerKubeEvent_}*/ event) {
         ); //Operation
     });
 }
+
+PlayerEvents.tick((event) => {
+    if (event.player.tickCount % 20 != 0) return;
+    playerTick_DragonState(event);
+});

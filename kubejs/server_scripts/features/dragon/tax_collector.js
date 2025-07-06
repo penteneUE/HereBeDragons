@@ -311,7 +311,7 @@ function playerTick_TaxCollect(event) {
  * @param {$BlockPlacedKubeEvent_} event
  * @returns
  */
-function blockPlaced_taxCollect(event) {
+function blockPlaced_TaxCollect(event) {
     let { block, player } = event;
     if (!player) return;
     if (block.id != "kubejs:tax_collector") return;
@@ -399,3 +399,46 @@ function blockBroken_TaxCollect(event) {
         if (item) block.popItem(item);
     });
 }
+
+PlayerEvents.tick((event) => {
+    if (event.player.tickCount % 20 != 0) return;
+    playerTick_TaxCollect(event);
+});
+
+BlockEvents.placed((event) => {
+    blockPlaced_TaxCollect(event);
+    // blockPlaced_endlessChallenge(event);
+});
+
+BlockEvents.broken((event) => {
+    blockBroken_TaxCollect(event);
+});
+
+PlayerEvents.loggedIn((event) => {
+    let player = event.player;
+
+    const { activeTaxCollector } = player.persistentData;
+
+    if (activeTaxCollector) {
+        let taxCollector = event.server
+            .getLevel(activeTaxCollector.getString("dimension"))
+            .getBlock(
+                activeTaxCollector.getInt("x"),
+                activeTaxCollector.getInt("y"),
+                activeTaxCollector.getInt("z")
+            );
+        if (taxCollector.id == "kubejs:tax_collector") return;
+        if (!taxCollector.getEntityData()) return;
+        if (
+            taxCollector.getEntityData().getString("ownerID") ==
+            player.getUuid().toString()
+        )
+            return;
+        //console.log(player.getUuid().toString())
+
+        player.persistentData.remove("activeTaxCollector");
+        player.tell(
+            Text.translate("kubejs.taxcollector.broken").color(0xd77a61)
+        );
+    }
+});

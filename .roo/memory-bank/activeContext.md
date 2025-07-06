@@ -1,16 +1,20 @@
-# 当前情境 (Active Context)
+# 当前工作上下文 (Active Context)
 
-## 当前工作焦点
+## 当前工作重点
 
-**分析阶段已完成。** 我们已经对整合包的现有玩法、系统架构和主线任务流程有了全面而深入的理解。记忆库已更新，可以作为后续所有开发工作的坚实基础。
+当前的主要任务是对 KubeJS 脚本进行重构，以提高代码的模块化和可维护性。重点是将多个脚本中共享的通用函数提取到 `kubejs/server_scripts/lib/` 目录中，并使用 `//priority` 注释来确保它们被优先加载。
 
-当前的工作焦点是**基于现有分析，规划下一阶段的开发工作**。
+## 最近的更改
 
-## 后续步骤
+- **函数提取:**
+    - 从 `kubejs/server_scripts/features/spell/ananta_remanta.js` 中提取了以下函数：
+        - `randomUUID()` -> `kubejs/server_scripts/lib/random_uuid.js`
+        - `lerpColor()` -> `kubejs/server_scripts/lib/color.js`
+        - `sightReachedBlock()` 和 `sightReachedEntity()` -> `kubejs/server_scripts/lib/ray_trace.js`
+    - 从 `kubejs/server_scripts/features/dragon/dragon_conquer.js` 中提取了以下函数：
+        - `clearDragonConquerRecord()`, `clearDragonConquerStructure()`, `clearDragonConquerHere()`, `matchDragonConquerRecord_withBbox()`, `matchDragonConquerRecord()` -> `kubejs/server_scripts/lib/dragon_conquer_records.js`
 
-- 与项目所有者沟通，展示我们对整合包的分析结果。
-- 共同商定下一步的开发重点，可能包括：
-    - **内容扩展:** 添加新的征服目标、任务或魔法。
-    - **系统优化:** 调整现有玩法的平衡性。
-    - **叙事润色:** 优化任务描述和游戏内文本。
-    - **Bug修复:** 进行全面的测试和问题修复。
+## 下一步
+
+- 继续审查 `kubejs/server_scripts`、`kubejs/client_scripts` 和 `kubejs/startup_scripts` 中的其余脚本，以识别更多可以提取的通用函数。
+- 在完成所有函数提取后，对项目进行全面测试，以确保所有功能仍然正常工作。
