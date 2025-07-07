@@ -35,7 +35,14 @@
 
 ## 下载
 
-Github Release: [扣1下载](https://github.com/JesterRomut/HereBeDragons/releases/latest)
+Github Release: [点此链接进入Releases后，选择最新版本，选择下方Assets展开，选择（通常是）第一项的HereBeDragons...zip。](https://github.com/JesterRomut/HereBeDragons/releases/latest)
+
+## 待办事项
+- [ ] 修改FTB任务的终局叙事。不那么碰瓷（为什么三个月前的自己这么喜欢碰瓷？？）。用脚本增加更多的压迫感。
+- [ ] 添加更多有关沉浸式占领/掠夺的玩法。比如说去抓公主！
+- [ ] 重画FTB任务的背景图片。
+- [ ] 为龙增加铁魔法盔甲的贴图适配。
+- [ ] ... （加入万魂幡投稿更多）
 
 <!-- https://github.com/JesterRomut/HereBeDragons/releases/latest -->
 
