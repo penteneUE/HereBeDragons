@@ -34,6 +34,7 @@
     "iceandfire.dragon.dragonFlightSpeedMod": 1.0,
     "iceandfire.dragon.maxTamedDragonAge": 128,
     "iceandfire.dragon.maxBreathTimeMul": 2.0,
+    "iceandfire.dragon.neutralToPlayer": false,
     "iceandfire.dragon.loot.skull": true,
     "iceandfire.dragon.loot.heart": true,
     "iceandfire.dragon.loot.blood": true

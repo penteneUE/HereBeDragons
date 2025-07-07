@@ -133,69 +133,69 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"minecraft:axolotl": true
-			"minecraft:zombified_piglin": true
-			"minecraft:bee": true
-			"minecraft:villager": true
-			"iceandfire:hippogryph": true
-			"minecraft:sheep": true
-			"minecraft:piglin": true
-			"aquaculture:red_grouper": false
-			"minecraft:enderman": true
-			"minecraft:zombie": true
-			"iceandfire:myrmex_soldier": true
 			"iceandfire:myrmex_queen": true
-			"aquaculture:gar": false
-			"minecraft:spider": true
-			"minecraft:rabbit": true
-			"minecraft:tropical_fish": false
-			"aquaculture:jellyfish": false
-			"minecraft:cod": false
-			"dragonsurvival:hunter_hound": true
-			"iceandfire:myrmex_worker": true
-			"aquaculture:minnow": false
-			"minecraft:bat": true
-			"minecraft:trader_llama": true
-			"dragonsurvival:hunter_knight": true
-			"dragonsurvival:hunter_leader": true
-			"iceandfire:hippocampus": true
-			"irons_spellbooks:priest": true
-			"irons_spellbooks:cursed_armor_stand": true
-			"aquaculture:smallmouth_bass": false
-			"minecraft:vex": true
-			"aquaculture:catfish": false
-			"iceandfire:pixie": true
-			"minecraft:pufferfish": false
 			"minecraft:ghast": true
-			"minecraft:cow": true
-			"minecraft:skeleton": true
-			"aquaculture:carp": false
-			"minecraft:strider": true
-			"minecraft:chicken": true
-			"minecraft:wolf": true
+			"aquaculture:smallmouth_bass": false
+			"minecraft:piglin": true
 			"aquaculture:perch": false
-			"minecraft:vindicator": true
-			"aquaculture:atlantic_halibut": false
-			"iceandfire:cockatrice": true
-			"minecraft:pig": true
-			"minecraft:zombie_villager": true
+			"minecraft:bee": true
+			"minecraft:cod": false
+			"minecraft:wandering_trader": true
+			"minecraft:strider": true
+			"minecraft:skeleton": true
+			"minecraft:vex": true
+			"minecraft:wolf": true
+			"aquaculture:bluegill": false
+			"minecraft:zombie": true
+			"irons_spellbooks:priest": true
+			"iceandfire:myrmex_soldier": true
+			"dragonsurvival:hunter_hound": true
+			"iceandfire:hippocampus": true
+			"minecraft:squid": true
+			"iceandfire:hippogryph": true
+			"minecraft:zombified_piglin": true
+			"minecraft:phantom": true
+			"minecraft:enderman": true
+			"aquaculture:brown_trout": false
+			"minecraft:bat": true
 			"minecraft:cave_spider": true
-			"dragonsurvival:hunter_spearman": true
+			"minecraft:axolotl": true
+			"minecraft:spider": true
+			"aquaculture:muskellunge": false
+			"minecraft:glow_squid": true
+			"minecraft:creeper": true
+			"aquaculture:jellyfish": false
+			"minecraft:pig": true
+			"minecraft:drowned": true
+			"minecraft:villager": true
+			"minecraft:sheep": true
+			"minecraft:cow": true
+			"dragonsurvival:hunter_leader": true
+			"minecraft:vindicator": true
+			"irons_spellbooks:necromancer": true
+			"minecraft:rabbit": true
+			"minecraft:trader_llama": true
+			"irons_spellbooks:cursed_armor_stand": true
+			"minecraft:zombie_villager": true
+			"aquaculture:red_grouper": false
+			"aquaculture:minnow": false
+			"aquaculture:atlantic_halibut": false
+			"aquaculture:catfish": false
+			"minecraft:dolphin": true
+			"iceandfire:myrmex_worker": true
+			"aquaculture:gar": false
+			"iceandfire:pixie": true
+			"minecraft:witch": true
 			"minecraft:iron_golem": true
 			"minecraft:turtle": true
-			"aquaculture:muskellunge": false
-			"minecraft:squid": true
-			"minecraft:witch": true
-			"aquaculture:brown_trout": false
-			"minecraft:wandering_trader": true
-			"minecraft:creeper": true
-			"minecraft:dolphin": true
-			"minecraft:glow_squid": true
-			"minecraft:drowned": true
-			"aquaculture:bluegill": false
+			"dragonsurvival:hunter_knight": true
+			"minecraft:pufferfish": false
+			"iceandfire:cockatrice": true
+			"minecraft:chicken": true
 			"aquaculture:atlantic_herring": false
-			"irons_spellbooks:necromancer": true
-			"minecraft:phantom": true
+			"dragonsurvival:hunter_spearman": true
+			"aquaculture:carp": false
+			"minecraft:tropical_fish": false
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)
