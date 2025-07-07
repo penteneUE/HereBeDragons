@@ -62,7 +62,7 @@ PB --> TC[techContext.md]
 
 ### Additional Context
 
-Create additional files/folders within memory-bank/ when they help organize:
+Create additional files/folders within `.roo/memory-bank/` when they help organize:
 
 - Complex feature documentation
 - Integration specifications
@@ -71,6 +71,10 @@ Create additional files/folders within memory-bank/ when they help organize:
 - Deployment procedures
 
 ## Core Workflows
+
+**Before every work, I MUST read memory bank first. Make it part of the workflow.**
+
+Here are examples:
 
 ### Planning (Architecture, etc)
 

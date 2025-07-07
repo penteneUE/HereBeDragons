@@ -26,3 +26,11 @@
         - **绝对不要**将 `startup_scripts` 中定义的变量或函数移动到 `server_scripts/lib` 中，反之亦然。
         - `startup_scripts` 中定义的 `global` 变量（如 `global.UTILS`）通常是作为**占位符**存在的，目的是为了让客户端能够访问而不会报错。这些占位符的实际功能会在 `server_scripts` 中被**覆盖 (override)** 以提供完整的功能。
         - 错误地移动这些脚本会破坏这种设计模式，并可能导致客户端或服务端出现严重的功能性问题。
+    
+    ### 代码风格与规范 (Code Style & Conventions)
+    
+    - **JSDoc 类型标注**: 在为 KubeJS 脚本编写 JSDoc 时，对于 KubeJS 提供的 Java 类型包装器，应使用 `$` 前缀和 `_` 后缀的格式。
+      - **正确示例**: `/** @param {$Player_} player */`
+      - **错误示例**: `/** @param {Internal.Player} player */`
+    - **控制台输出 (Console Output)**: KubeJS 的 `console` 对象仅支持 `console.log()` 方法。**严禁使用** `console.error()`, `console.warn()`, `console.info()` 等其他方法，否则会导致KubeJS使用的Rhino引擎崩溃、游戏崩溃。
+    - **变量声明 (Variable Declaration)**: 由于 KubeJS (Rhino) 的作用域和变量提升机制，**必须优先使用 `let` 进行变量声明**。避免使用 `const`，以防止在事件监听器或循环等复杂作用域中出现 `redeclaration` 错误。

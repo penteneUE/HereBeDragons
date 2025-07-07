@@ -3,18 +3,15 @@ let $NearestAttackableTargetGoal = Java.loadClass(
     "net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal"
 );
 
-let $DefendVillageTargetGoal = Java.loadClass(
-    "net.minecraft.world.entity.ai.goal.target.DefendVillageTargetGoal"
-);
+// let $DefendVillageTargetGoal = Java.loadClass(
+//     "net.minecraft.world.entity.ai.goal.target.DefendVillageTargetGoal"
+// );
 let $HurtByTargetGoal = Java.loadClass(
     "net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal"
 );
 // let SpiderTargetGoal = Java.loadClass(
 //     "net.minecraft.world.entity.monster.Spider$SpiderTargetGoal"
 // );
-let HurtByTargetGoal = Java.loadClass(
-    "net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal"
-);
 let MeleeAttackGoal = Java.loadClass(
     "net.minecraft.world.entity.ai.goal.MeleeAttackGoal"
 );
@@ -32,7 +29,7 @@ let $RangedCrossbowAttackGoal = Java.loadClass(
 let PathfinderMob = Java.loadClass("net.minecraft.world.entity.PathfinderMob");
 //let IronGolem = Java.loadClass("net.minecraft.world.entity.animal.IronGolem");
 let LivingEntity = Java.loadClass("net.minecraft.world.entity.LivingEntity");
-let CustomGoal = Java.loadClass("net.liopyu.entityjs.util.ai.CustomGoal");
+let $CustomGoal = Java.loadClass("net.liopyu.entityjs.util.ai.CustomGoal");
 let Player = Java.loadClass("net.minecraft.world.entity.player.Player");
 //let FlyingMob = Java.loadClass("net.minecraft.world.entity.FlyingMob");
 //let TamableAnimal = Java.loadClass("net.minecraft.world.entity.TamableAnimal");
@@ -73,95 +70,130 @@ function tameCreature(player, target) {
     reviseTamedPetGoals(target);
 }
 
-function tamedCreatureLogic(mob, t) {
+/**
+ * Gets the owner of a mob from its persistent data.
+ * @param {$Mob_} mob The mob entity.
+ * @returns {$Player_ | null} The owner player entity, or null if not found.
+ */
+function getOwner(mob) {
+    if (!mob.persistentData.OwnerName) return null;
     try {
-        if (mob.persistentData.OwnerName) {
-            let owner;
-            // let owner = mob
-            //     .getLevel()
-            //     ?.getPlayerByUUID(
-            //         UUID.fromString(
-            //             mob.persistentData.OwnerName
-            //         )
-            //     );
-            let playerList = mob.getServer().playerList.getPlayers().iterator();
-            while (playerList.hasNext()) {
-                let player = playerList.next();
-                if (
-                    player.getUuid().toString() == mob.persistentData.OwnerName
-                ) {
-                    owner = player;
-                }
-            }
+        //let ownerUUID = UUID.fromString(mob.persistentData.OwnerName);
+        let owner;
 
-            //console.log(mob.getServer().getPlayers().filter([(value) => {}]));
-            if (owner) {
-                let lastAttackedId = owner.persistentData.lastAttackedMobId;
-                let lastAttackedMeId = owner.persistentData.lastMobToAttackMe;
-                if (lastAttackedId) {
-                    let entityRef = mob.level
-                        .getEntities()
-                        .filter(
-                            (e) => e.getUuid().toString() == lastAttackedId
-                        )[0];
-                    //console.log(entityRef);
-                    if (entityRef) {
-                        if (
-                            entityRef.persistentData.OwnerName ==
-                                owner.getUuid().toString() ||
-                            (t instanceof $TamableAnimal && t.isOwnedBy(owner))
-                        ) {
-                            owner.persistentData.remove("lastMobToAttackMe");
-                            return false;
-                        }
-                        if (entityRef.distanceToEntity(mob) <= 60) {
-                            return (
-                                entityRef.getUuid().toString() ==
-                                t.getUuid().toString()
-                            );
-                        } else {
-                            owner.persistentData.remove("lastAttackedMobId");
-                        }
-                    } else {
-                        owner.persistentData.remove("lastAttackedMobId");
-                    }
-                }
-                if (lastAttackedMeId) {
-                    let entityRef = mob.level
-                        .getEntities()
-                        .filter(
-                            (e) => e.getUuid().toString() == lastAttackedMeId
-                        )[0];
-                    //console.log(entityRef);
-                    if (entityRef) {
-                        if (
-                            entityRef.persistentData.OwnerName ==
-                                owner.getUuid().toString() ||
-                            (t instanceof $TamableAnimal && t.isOwnedBy(owner))
-                        ) {
-                            owner.persistentData.remove("lastMobToAttackMe");
-                            return false;
-                        }
-                        if (entityRef.distanceToEntity(mob) <= 60) {
-                            return (
-                                entityRef.getUuid().toString() ==
-                                t.getUuid().toString()
-                            );
-                        } else {
-                            owner.persistentData.remove("lastMobToAttackMe");
-                        }
-                    } else {
-                        owner.persistentData.remove("lastMobToAttackMe");
-                    }
-                }
+        let playerList = mob.getServer().playerList.getPlayers().iterator();
+        while (playerList.hasNext()) {
+            let player = playerList.next();
+            if (player.getUuid().toString() == mob.persistentData.OwnerName) {
+                owner = player;
             }
         }
-        let fallback =
-            t instanceof Player &&
-            mob.persistentData.OwnerName != t.getUuid().toString();
-        return fallback;
+        return owner;
     } catch (e) {
-        console.log(e);
+        return null;
+    }
+}
+
+/**
+ * 
+ * @param {$Mob_} mob 
+ * @returns {string | null}
+ */
+// function getOwnerNameOrNull(mob) {
+//         if (!mob.persistentData.OwnerName) return null;
+//         return mob.persistentData.OwnerName;
+//     }
+
+/**
+ * Checks if an entity is a pet of a given player.
+ * @param {$LivingEntity_} entity The potential pet entity.
+ * @param {$Player_} owner The potential owner.
+ * @returns {boolean} True if the entity is a pet of the owner, false otherwise.
+ */
+function isPetOf(entity, owner) {
+    if (!entity || !owner) return false;
+    if (
+        entity.persistentData.OwnerName &&
+        entity.persistentData.OwnerName == owner.getUuid().toString()
+    ) {
+        return true;
+    }
+    if (entity instanceof $TamableAnimal && entity.isOwnedBy(owner)) {
+        return true;
+    }
+    return false;
+}
+
+/**
+ *
+ * @param {$LivingEntity_} mob
+ * @param {$LivingEntity_} target
+ * @returns {boolean}
+ */
+function tamedCreatureSelfDefend(mob, target) {
+    if (!target || !target.isAlive()) return false;
+    let owner = getOwner(mob);
+    if (target.getUuid() == owner.getUuid() || isPetOf(target, owner))
+        return false;
+    return true;
+ }
+
+/**
+ *
+ * @param {$LivingEntity_} mob
+ * @param {$LivingEntity_} target
+ * @returns {boolean}
+ */
+function tamedCreatureLogic(mob, target) {
+    try {
+        if (!target || !target.isAlive()) return false;
+        let owner = getOwner(mob)
+        if ((target.getUuid() == owner.getUuid()) || isPetOf(target, owner))
+            return false;
+        // 我他妈就搞不懂你就这么喜欢const？？？
+        let ownerData = owner.persistentData;
+        let lastAttackedId = ownerData.lastAttackedMobId;
+        let lastAttackedMeId = ownerData.lastMobToAttackMe;
+        let targetId = target.getUuid().toString();
+
+        // console.log(
+        //     `[Pet AI] Pet: ${mob.type}, Target: ${target.type}, Owner: ${owner.displayName.string}`
+        // );
+        // console.log(`[Pet AI] Owner's lastAttacked: ${lastAttackedId}`);
+        // console.log(`[Pet AI] Owner's lastAttackedBy: ${lastAttackedMeId}`);
+        // console.log(`[Pet AI] Current Target ID: ${targetId}`);
+
+        if (lastAttackedId && lastAttackedId == targetId) {
+            let entityRef = mob.level.getEntity(target.id);
+            if (
+                entityRef &&
+                entityRef.isAlive() &&
+                entityRef.distanceToEntity(owner) < 60
+            ) {
+                // console.log(`[Pet AI] DECISION: Attacking target of owner.`);
+                return true;
+            } else {
+                ownerData.remove("lastAttackedMobId");
+            }
+        }
+
+        if (lastAttackedMeId && lastAttackedMeId == targetId) {
+            let entityRef = mob.level.getEntity(target.id);
+            if (
+                entityRef &&
+                entityRef.isAlive() &&
+                entityRef.distanceToEntity(owner) < 60
+            ) {
+                // console.log(`[Pet AI] DECISION: Attacking threat to owner.`);
+                return true;
+            } else {
+                ownerData.remove("lastMobToAttackMe");
+            }
+        }
+
+        return false;
+    } catch (e) {
+        // console.log("Error in tamedCreatureLogic: " + e);
         return false;
     }
 }
@@ -184,96 +216,133 @@ function reviseTamedPetGoals(mob) {
             if (!goal.running) return;
             goal.stop();
         });
-        //mob.targetSelector.getRunningGoals().forEach((goal) => goal.stop());
         // here we remove all nearest attackable target goals so it doesnt attack us or other mobs on sight
         // the entity goal to remove will vary depending on the mob tamed, so you may need to add more cases for other mobs
+        // mob.targetSelector.removeAllGoals(
+        //     (goal) =>
+        //         goal instanceof $NearestAttackableTargetGoal ||
+        //         goal.goal instanceof $NearestAttackableTargetGoal
+        // );
+        // mob.targetSelector.removeAllGoals(
+        //     (goal) =>
+        //         goal instanceof $HurtByTargetGoal ||
+        //         goal.goal instanceof $HurtByTargetGoal
+        // );
         mob.targetSelector.removeAllGoals(
-            (goal) => goal instanceof $NearestAttackableTargetGoal
+            (goal) => true
         );
-        if (
-            mob.goalSelector.availableGoals.some(
-                (goal) => goal.goal instanceof $DefendVillageTargetGoal
-            )
-        ) {
-            mob.targetSelector.removeAllGoals(
-                (goal) => goal instanceof $DefendVillageTargetGoal
+
+        // if (
+        //     mob.goalSelector.availableGoals.some(
+        //         (goal) => goal.goal instanceof MeleeAttackGoal
+        //     ) ||
+        //     mob.goalSelector.availableGoals.some(
+        //         (goal) => goal.goal instanceof $RangedAttackGoal
+        //     ) ||
+        //     mob.goalSelector.availableGoals.some(
+        //         (goal) => goal.goal instanceof $RangedBowAttackGoal
+        //     )
+        // ) {
+        // re-add the NearestAttackableTargetGoal & HurtByTargetGoal to make it only attack the last entity the player attacked
+        mob.server.scheduleInTicks(1, () => {
+
+            mob.targetSelector.addGoal(
+                0,
+                new $NearestAttackableTargetGoal(
+                    mob,
+                    LivingEntity,
+                    1,
+                    true,
+                    false,
+                    (t) => tamedCreatureLogic(mob, t)
+                )
             );
-            mob.server.scheduleInTicks(1, () => {
-                mob.targetSelector.addGoal(
-                    1,
-                    new $DefendVillageTargetGoal(
-                        mob,
-                        LivingEntity,
-                        1,
-                        true,
-                        false,
-                        (t) => {
-                            return tamedCreatureLogic(mob, t);
-                        }
-                    )
-                );
-            });
-            return;
-        }
-        if (
-            mob.goalSelector.availableGoals.some(
-                (goal) => goal.goal instanceof $RangedCrossbowAttackGoal
-            )
-        ) {
-            mob.server.scheduleInTicks(1, () => {
-                mob.targetSelector.addGoal(
-                    1,
-                    new $HurtByTargetGoal(
-                        mob,
-                        LivingEntity,
-                        1,
-                        true,
-                        false,
-                        (t) => {
-                            return tamedCreatureLogic(mob, t);
-                        }
-                    )
-                );
-            });
-        }
-        if (
-            mob.goalSelector.availableGoals.some(
-                (goal) => goal.goal instanceof MeleeAttackGoal
-            ) ||
-            mob.goalSelector.availableGoals.some(
-                (goal) => goal.goal instanceof $RangedAttackGoal
-            ) ||
-            mob.goalSelector.availableGoals.some(
-                (goal) => goal.goal instanceof $RangedBowAttackGoal
-            )
-        ) {
-            // re-add the NearestAttackableTargetGoal & HurtByTargetGoal to make it only attack the last entity the player attacked
-            mob.server.scheduleInTicks(1, () => {
-                mob.targetSelector.addGoal(
-                    1,
-                    new $NearestAttackableTargetGoal(
-                        mob,
-                        LivingEntity,
-                        1,
-                        true,
-                        false,
-                        (t) => {
-                            return tamedCreatureLogic(mob, t);
-                        }
-                    )
-                );
-            });
-        }
+
+            mob.targetSelector.addGoal(
+                1,
+                new $HurtByTargetGoal(
+                    mob,
+                    Player
+                )
+            );
+
+            mob.goalSelector.addGoal(
+                3,
+                new $CustomGoal(
+                    "follow_owner_dragon",
+                    mob,
+                    (mob) => {
+                        // 使用随机数降低检查频率
+                        return mob.getRandom().nextInt(100) < 5;
+                    },
+                    (mob) => true,
+                    true,
+                    (mob) => {},
+                    (mob) => mob.getNavigation().stop(),
+                    true,
+                    /** @param {$Mob_} mob */(mob) => {
+                        //if (mob.tickCount % 60 != 0) return;
+                        let mobAABB = mob.boundingBox.inflate(5);
+                        mob.level
+                            .getEntitiesWithin(mobAABB)
+                            .forEach((entity) => {
+                                if (entity == null) return;
+                                if (
+                                    entity.player &&
+                                    isPetOf(mob, entity) &&
+                                    entity.distanceToEntity(mob) < 20
+                                ) {
+                                    mob.getNavigation().moveTo(
+                                        entity.block.x,
+                                        entity.y,
+                                        entity.z,
+                                        1.0
+                                    );
+                                }
+                            });
+                    }
+                )
+            );
+            // console.log(`[Pet AI] Pet: ${mob.type}, Revised Pet Goals`);
+        });
+        //}
     }
 }
+
+// function debugEntityGoals(entity) {
+//     // console.log("=== Goal Selector ===");
+//     entity.goalSelector.getAvailableGoals().forEach(goalWrapper => {
+//         const goal = goalWrapper.getGoal();
+//         const priority = goalWrapper.getPriority();
+//         const isRunning = goalWrapper.isRunning();
+//         // console.log(`Priority ${priority}: ${goal} (${isRunning ? "运行中" : "未激活"})`);
+//     });
+    
+//     // console.log("=== Target Selector ===");
+//     entity.targetSelector.getAvailableGoals().forEach(goalWrapper => {
+//         const goal = goalWrapper.getGoal();
+//         const priority = goalWrapper.getPriority();
+//         const isRunning = goalWrapper.isRunning();
+//         // console.log(`Priority ${priority}: ${goal} (${isRunning ? "运行中" : "未激活"})`);
+//     });
+// }
+
+// // 在游戏中使用调试命令
+// ItemEvents.entityInteracted(event => {
+//     const { target: entity, player, hand } = event;
+//     if (hand === "MAIN_HAND" && player.getMainHandItem().id === "minecraft:stick") {
+//         debugEntityGoals(entity);
+//     }
+// });
+
 EntityEvents.spawned((event) => {
-    const { entity } = event;
+    let { entity } = event;
     //let tamingItem = tameableMobs[entity.type];
     if (entity.persistentData.OwnerName) reviseTamedPetGoals(entity);
     else {
         if (Math.floor(Math.random() * 6) != 0) return;
-        const { STRUCTURE_DATA } = global;
-        const { structure, structure_id } = whichStructureAmI(
+        let { STRUCTURE_DATA } = global;
+        let { structure, structure_id } = whichStructureAmI(
             entity.blockPosition(),
             event.level
         );
@@ -298,13 +367,7 @@ EntityEvents.spawned((event) => {
     }
 });
 /**
- * Handles taming, saddling, and sitting for custom tameable mobs.
- *
- * - Right-click with the taming item: 50% chance to tame if unowned.
- * - Right-click with saddle (if owner): equips the mob with a saddle.
- * - Shift-right-click (if owner): toggles sitting state.
- *
- * Consumes items as needed and cancels default interaction behavior where appropriate.
+ * Tame any mob with felyne_recall
  */
 ItemEvents.entityInteracted((event) => {
     let {
@@ -372,42 +435,52 @@ ItemEvents.entityInteracted((event) => {
     // }
 });
 
+
 /**
- * Tracks combat interactions to support retaliatory targeting by tamed mobs.
- *
- * - Sets `lastAttackedMobId` on the attacking player when they damage a mob,
- *   unless the mob is their own tamed pet.
- *
- * - Sets `lastMobToAttackMe` on the player when they are attacked,
- *   unless the attacker is their own tamed pet.
- *
- * These values can be used in a `NearestAttackableTargetGoal` to let
- * tamed mobs automatically retaliate when their owner is hurt or when
- * the owner attacks something.
+ * 
+ * @param {$Mob_} mob 
+ */
+function stopAttacking(mob) {
+    if (!(mob instanceof PathfinderMob)) return;
+    // mob.targetSelector.getAvailableGoals().forEach((goal) => {
+    //     if (!goal.running) return;
+    //     goal.stop();
+    // });
+    
+    mob.setTarget(null);
+}
+
+/**
+ * Handles all combat logic for tamed pets:
+ * 1. Prevents friendly fire between pets and their owner, or pets of the same owner.
+ * 2. Records who the owner is attacking.
+ * 3. Records who is attacking the owner.
+ * This data is used by the pet's AI goal (`tamedCreatureLogic`) to determine targets.
  */
 EntityEvents.beforeHurt((event) => {
     let { entity, source } = event;
     let attacker = source.actual;
     if (!attacker) return;
     if (attacker.isPlayer()) {
-        //console.log(attacker);
+        //// console.log(attacker);
         if (entity instanceof $TamableAnimal && entity.isOwnedBy(attacker))
             return;
-        //console.log(attacker);
+        //// console.log(attacker);
         source.actual.persistentData.lastAttackedMobId = entity
             .getUuid()
             .toString();
-        //console.log(source.actual.persistentData.lastAttackedMobId);
+        //// console.log(source.actual.persistentData.lastAttackedMobId);
     }
     if (entity.isPlayer()) {
         if (
             attacker.persistentData.OwnerName &&
             attacker.persistentData.OwnerName == entity.getUuid().toString()
         ) {
-            attacker.targetSelector.getAvailableGoals().forEach((goal) => {
-                if (!goal.running) return;
-                goal.stop();
-            });
+            // attacker.targetSelector.getAvailableGoals().forEach((goal) => {
+            //     if (!goal.running) return;
+            //     goal.stop();
+            // });
+            stopAttacking(attacker);
             event.cancel();
         }
         if (!(attacker instanceof $TamableAnimal && attacker.isOwnedBy(entity)))
@@ -437,26 +510,15 @@ EntityEvents.beforeHurt((event) => {
             attacker.owner &&
             attacker.owner.getUuid().toString() == ownerUuid;
         if (isSameOwner || isTamedPet) {
-            if (attacker instanceof PathfinderMob) {
-                attacker.targetSelector.getAvailableGoals().forEach((goal) => {
-                    if (!goal.running) return;
-                    goal.stop();
-                });
-            }
+            stopAttacking(attacker);
             event.cancel();
         }
-        entity.persistentData.Sitting = 0;
     } else if (
         entity instanceof $TamableAnimal &&
         entity.owner &&
         attacker.persistentData.OwnerName == entity.owner.getUuid().toString()
     ) {
-        if (attacker instanceof PathfinderMob) {
-            attacker.targetSelector.getAvailableGoals().forEach((goal) => {
-                if (!goal.running) return;
-                goal.stop();
-            });
-        }
+        stopAttacking(attacker);
         event.cancel();
     }
 });
