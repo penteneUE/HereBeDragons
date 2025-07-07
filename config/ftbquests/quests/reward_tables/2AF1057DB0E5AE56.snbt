@@ -26,7 +26,7 @@
 				id: "gravestone:obituary"
 			}
 			id: "54C99D0EF5431004"
-			permission_level: 3
+			permission_level: 4
 			silent: true
 			type: "command"
 		}
@@ -37,7 +37,7 @@
 				id: "minecraft:paper"
 			}
 			id: "4BAF19E6996E9479"
-			permission_level: 3
+			permission_level: 4
 			silent: true
 			type: "command"
 		}

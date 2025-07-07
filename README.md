@@ -30,21 +30,38 @@
 - 通过插旗子触发战斗，来占领村庄、掠夺塔、海底神殿……等结构。
 - 占领的结构会每日爆金币与其它资源。
 - 占领的结构里会刷新对玩家友好（拜龙）的生物，会为玩家而战。（仇恨系统初步修改完毕，不会攻击玩家并会攻击玩家的目标）
-- 两种原创魔改魔法控制那些拜龙生物。
-- mod（例如龙生存-铁魔法-冰与火）之间的适配……
+- 两种原创魔改法术（言灵！）控制那些拜龙生物。
+- Mod（例如龙生存-铁魔法-冰与火）之间的适配……
+  
+**生活质量（QoL）修改：**
+- 为海洋龙添加了魔法海绵以满足其潮湿度需求。FTB任务书赠送。
+- 任务书可选择开启保留经验，与潜行右键传送至死亡地点（墓碑Mod联动）。
+- ...
 
 ## 下载
 
 Github Release: [点此链接进入Releases后，选择最新版本，选择下方Assets展开，选择（通常是）第一项的HereBeDragons...zip。](https://github.com/JesterRomut/HereBeDragons/releases/latest)
 
+- 如果电脑配置不高，需要删除或禁用[遥远地平线](mods/DistantHorizons-neoforge-fabric-2.3.2-b-1.21.1.jar)模组。
+- 开局是通过任务书选龙的！！一进存档时不是龙很正常。
+- 如果进入后标题界面为MINECRAFT而非HERE WERE DRAGONS，说明Mod/Mod启动器没有加载！请重试。
+
 ## 待办事项
 - [ ] 修改FTB任务的终局叙事。不那么碰瓷（为什么三个月前的自己这么喜欢碰瓷？？）。用脚本增加更多的压迫感。
 - [ ] 添加更多有关沉浸式占领/掠夺的玩法。比如说去抓公主！
+- [ ] 添加大大大城堡以占领！！！
 - [ ] 重画FTB任务的背景图片。
 - [ ] 为龙增加铁魔法盔甲的贴图适配。
 - [ ] ... （加入万魂幡投稿更多）
+- [ ] 已知BUG：多人联机中无权限的玩家无法开启保留经验和死亡传送，系任务书命令的权限等级错误（为0）导致。已通过提升任务书命令权限解决。
+- [ ] 已知BUG：测试两个档均未从村庄掉落中找到冰与火手稿，推测是只存在原版村庄中，尝试通过添加兼容mod解决
+- [ ] 已知BUG：一些沉船由于结构生成原因可能被卡掉或提示无法占领。
+- [ ] 可能BUG：征服任务奖杯无法触发FTB任务完成提示，除非被丢来丢去
+- [ ] 由于龙生存Mod在我不在的三个月来暗改了很多东西（包括龙成长速度、龙心合成配方等，严厉谴责毛子作者！！），可能会有脱节之处。
 
-<!-- https://github.com/JesterRomut/HereBeDragons/releases/latest -->
+## 失败事项
+- [x] 尝试添加缩小龙体型的药水。失败。Pehkui改变了龙的显示大小，没能改变碰撞箱。（如果有更好的体型前置Mod/Lib请务必联系我）
+
 
 <details>
 <summary>许可证与声明 (License and Disclaimers)</summary>
@@ -54,21 +71,23 @@ Github Release: [点此链接进入Releases后，选择最新版本，选择下�
 重要提示：
 
 所有对本整合包的使用都必须严格遵守 Minecraft 最终用户许可协议 (EULA) 和 Mojang 的商业使用指南。严禁将本整合包用于任何形式的直接商业销售。
-本整合包中使用的部分文本内容来源于 赛库鲁康泰普罗泰克方德雷什及其中文分部 的创作，并遵循 Creative Commons Attribution-ShareAlike 3.0 International License (http://creativecommons.org/licenses/by-sa/3.0/ )。我们对原作者表示感谢。
+本整合包中使用的部分文本内容来源于*セキュア·コンテイン·プロテクト·ファンデーション*及其中文分部的创作，并遵循 Creative Commons Attribution-ShareAlike 3.0 International License (http://creativecommons.org/licenses/by-sa/3.0/ )。我们对原作者表示感谢。
 
 内容版权归属各条目原作者及创作者社区，完整贡献者列表参见： 
 
-- https://scp-wiki.wikidot.com/system:members
-- https://scp-wiki-cn.wikidot.com/system:members
+- (1): https://scp-wiki.wikidot.com/system:members
+- (2): https://scp-wiki-cn.wikidot.com/system:members
 
 明确引用段落/或再创作的条目：
 
-- “SCP-1762”，作者 Ouroboros，来自 SCP 维基。原文链接：https://scp-wiki.wikidot.com/scp-1762 。译者 ashausesall，来自 SCP-CN 维基。译文链接：http://scp-wiki-cn.wikidot.com/scp-1762 。遵循 CC-BY-SA 协议。
-- “SCP-CN-1245”，作者 ShineShadowD，来自 SCP-CN 维基。原文链接：https://scp-wiki-cn.wikidot.com/scp-cn-1245 。遵循 CC-BY-SA 协议。
-- “SCP-CN-2845”，作者 Re_spectators，Enflowerz，Etinjat，来自 SCP-CN 维基。原文链接：https://scp-wiki-cn.wikidot.com/scp-cn-2845 。遵循 CC-BY-SA 协议。
-- “基金会之死”，作者 Huskar_CN，来自 SCP-CN 维基。原文链接：https://scp-wiki-cn.wikidot.com/foundation-s-death 。遵循 CC-BY-SA 协议。
+- “SCP-1762”，作者 Ouroboros，来自 (1)。原文链接：https://scp-wiki.wikidot.com/scp-1762 。译者 ashausesall，来自 SCP-CN 维基。译文链接：http://scp-wiki-cn.wikidot.com/scp-1762 。遵循 CC-BY-SA 协议。
+- “SCP-CN-1245”，作者 ShineShadowD，来自 (2)。原文链接：https://scp-wiki-cn.wikidot.com/scp-cn-1245 。遵循 CC-BY-SA 协议。
+- “SCP-CN-2845”，作者 Re_spectators，Enflowerz，Etinjat，来自 (2)。原文链接：https://scp-wiki-cn.wikidot.com/scp-cn-2845 。遵循 CC-BY-SA 协议。
+- “基金会之死”，作者 Huskar_CN，来自 (2)。原文链接：https://scp-wiki-cn.wikidot.com/foundation-s-death 。遵循 CC-BY-SA 协议。
 
-本整合包为非官方作品，与赛库鲁康泰普罗泰克方德雷什及其关联组织无关。
+本整合包为非官方作品，与*セキュア·コンテイン·プロテクト·ファンデーション*及其关联组织无关。
 
 整合包内各Mod的独立版权归其原作者所有。
+
+为什么不敢直接写名字？因为我感觉自己连带着这个包会分分钟被追星长矛↓↓爆。
 </details>

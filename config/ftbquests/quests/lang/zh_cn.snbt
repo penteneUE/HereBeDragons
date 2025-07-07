@@ -140,7 +140,11 @@
 	]
 	quest.1D43F77FD948BD09.quest_subtitle: "请点这里，那个打勾"
 	quest.1D43F77FD948BD09.title: "苏醒"
-	quest.1DCBEE9D1F41A334.quest_desc: ["海中的沉船里不缺鱼与海带。"]
+	quest.1DCBEE9D1F41A334.quest_desc: [
+		"海中的沉船里不缺鱼与海带。"
+		""
+		"一些沉船可能因结构生成原因无法占领，寻找其它即可。"
+	]
 	quest.1DCBEE9D1F41A334.quest_subtitle: "永不空军"
 	quest.1DCBEE9D1F41A334.title: "占领：沉船"
 	quest.1EDD652A5A099001.quest_desc: ["目之所视，全都是散落的下界合金盔甲。你本想挖走一块下来给自己穿，可它们却活了过来！"]
@@ -158,7 +162,7 @@
 		"{image:kubejs:textures/task/tutorial_passiveskill.png width:43 height:79 align:center}"
 		"被动技能可以用经验进行强化（加点）。&c点这些箭头！不要点击图标，没有用！&r"
 	]
-	quest.1EDFAD2A84D98812.quest_subtitle: "因为怕痛，所以全点防御力"
+	quest.1EDFAD2A84D98812.quest_subtitle: "怕痛就全点防御力了"
 	quest.1F2854EDFE5FA100.quest_desc: [""]
 	quest.1F2854EDFE5FA100.quest_subtitle: "恶龙的新手村"
 	quest.1F2854EDFE5FA100.title: "占领：浮空村庄"

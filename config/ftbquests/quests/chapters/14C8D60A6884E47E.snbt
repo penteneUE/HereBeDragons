@@ -160,13 +160,15 @@
 			id: "482E83E9FB669B98"
 			optional: true
 			rewards: [{
-				auto: "enabled"
+				auto: "disabled"
 				command: "/dragon-altar"
+				exclude_from_claim_all: true
 				icon: {
 					id: "dragonsurvival:stone_dragon_altar"
 				}
 				id: "4AAB5E4ED34EA19A"
 				permission_level: 4
+				team_reward: false
 				type: "command"
 			}]
 			tasks: [{

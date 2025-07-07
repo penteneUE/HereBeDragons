@@ -26,6 +26,7 @@ function whichStructureAmI(blockPosition, level) {
     // if (structure_id == "minecraft:mansion") {
     //     console.log(blockPosition);
     // }
+    //console.log(blockPosition, structure_id)
     return { structure: structure, structure_id: structure_id };
 }
 

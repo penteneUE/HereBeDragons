@@ -12,6 +12,7 @@
 				id: "minecraft:experience_bottle"
 			}
 			id: "7B0C5D724443AA6D"
+			permission_level: 4
 			team_reward: false
 			type: "command"
 		}
@@ -24,6 +25,7 @@
 				id: "minecraft:glass_bottle"
 			}
 			id: "192792F0996186F3"
+			permission_level: 4
 			team_reward: false
 			type: "command"
 		}

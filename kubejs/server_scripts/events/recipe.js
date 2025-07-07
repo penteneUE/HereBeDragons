@@ -16,6 +16,34 @@ ServerEvents.recipes((event) => {
         ["#minecraft:logs", "dragonsurvival:elder_dragon_dust"]
     );
 
+    
+    event.remove({
+        output: "dragonsurvival:weak_dragon_heart",
+        mod: "dragonsurvival",
+    });
+
+    event.shapeless(
+        Item.of("dragonsurvival:weak_dragon_heart", 1), // arg 1: output
+        [
+            "dragonsurvival:heart_element",
+            "dragonsurvival:heart_element",
+            "dragonsurvival:heart_element",
+            "dragonsurvival:heart_element",
+            "dragonsurvival:heart_element",
+            "dragonsurvival:heart_element",
+            "dragonsurvival:heart_element",
+            "dragonsurvival:heart_element",
+            "dragonsurvival:heart_element",
+        ]
+    );
+
+    event.shapeless(
+        Item.of("dragonsurvival:weak_dragon_heart", 2), // arg 1: output
+        [
+            "dragonsurvival:elder_dragon_heart",
+        ]
+    );
+
     event
         .shapeless(
             Item.of("kubejs:endless_undead_flag", 1), // arg 1: output

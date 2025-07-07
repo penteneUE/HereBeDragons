@@ -94,7 +94,7 @@
 	# Range: 0.0 ~ 32.0
 	flat_dragon_camera_offset = 2.0
 	#If enabled name tags will be shown for dragons
-	dragon_name_tags = false
+	dragon_name_tags = true
 	#Lower values prevent x-ray through blocks when using a small entity scale
 	#A value that is too low may cause issues when rendering chunks when certain (unknown) mods are present
 	# Default: 0.019999999552965164
