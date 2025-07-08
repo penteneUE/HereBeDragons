@@ -202,12 +202,6 @@ const largeVillageData = {
 
 //小型村庄
 Array.of(
-    //原版村庄
-    "minecraft:village_desert",
-    "minecraft:village_plains",
-    "minecraft:village_savanna",
-    "minecraft:village_snowy",
-    "minecraft:village_taiga",
     //ctov小型村庄
     "ctov:small/village_beach",
     "ctov:small/village_christmas",
@@ -234,6 +228,7 @@ Array.of(
     structureData.put(structure, smallVillageData);
 });
 
+//中型村庄
 Array.of(
     //原版村庄
     "minecraft:village_desert",
@@ -268,12 +263,6 @@ Array.of(
 });
 
 Array.of(
-    //原版村庄
-    "minecraft:village_desert",
-    "minecraft:village_plains",
-    "minecraft:village_savanna",
-    "minecraft:village_snowy",
-    "minecraft:village_taiga",
     //ctov大型村庄
     "ctov:large/village_beach",
     "ctov:large/village_christmas",
