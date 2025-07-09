@@ -63,6 +63,7 @@ Github Release: [点此链接进入Releases后，选择最新版本，选择下�
 - [ ] 配置Legendary Tooltips。
 - [ ] 添加关于JourneyMap与区块占领的引导。
 - [ ] 提升结构判定范围。（求求了有没有安慕希大佬帮我研究结构判定啊a）
+- [ ] 修复副手刷物品bug。
 
 
 ## 失败事项
