@@ -21,7 +21,7 @@
     "snow_start_offset": 128
   },
   "global_terrain": {
-    "increased_height": false,
+    "increased_height": true,
     "lava_tunnels": true,
     "vertical_scale": 1.125
   },

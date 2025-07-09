@@ -1,4 +1,10 @@
 {
-  "allowMovement": {},
+  "allowMovement": {
+    "dev.ftb.mods.ftblibrary.ui.ScreenWrapper": true,
+    "by.dragonsurvivalteam.dragonsurvival.client.gui.screens.DragonAltarScreen": true,
+    "xaero.map.gui.GuiMap": true,
+    "journeymap.client.ui.fullscreen.Fullscreen": true,
+    "games.alejandrocoria.mapfrontiers.client.gui.screen.FrontierInfo": true
+  },
   "hideBackground": {}
 }
