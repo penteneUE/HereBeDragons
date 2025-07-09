@@ -1,82 +1,131 @@
 {
-	"values": {
-		"dragonsurvival:cave_dragon": {
-			"replace": false,
-			"value": [
-				{
-					"items": "iceandfire:ambrosia",
-					"properties": {
-						"nutrition": 2,
-						"saturation": 4.0
-					}
-				},
-				{
-					"items": "iceandfire:fire_lily",
-					"properties": {
-						"nutrition": 1,
-						"saturation": 0
-					}
-				},
-				{
-					"items": "iceandfire:fire_stew",
-					"properties": {
-						"nutrition": 4,
-						"saturation": 4
-					}
-				}
-			]
-		},
-		"dragonsurvival:forest_dragon": {
-			"replace": false,
-			"value": [
-				{
-					"items": "iceandfire:ambrosia",
-					"properties": {
-						"nutrition": 2,
-						"saturation": 4.0
-					}
-				},
-				{
-					"items": "iceandfire:lightning_lily",
-					"properties": {
-						"nutrition": 1,
-						"saturation": 0
-					}
-				},
-				{
-					"items": "iceandfire:lightning_stew",
-					"properties": {
-						"nutrition": 4,
-						"saturation": 4
-					}
-				}
-			]
-		},
-		"dragonsurvival:sea_dragon": {
-			"replace": false,
-			"value": [
-				{
-					"items": "iceandfire:ambrosia",
-					"properties": {
-						"nutrition": 2,
-						"saturation": 4.0
-					}
-				},
-				{
-					"items": "iceandfire:frost_lily",
-					"properties": {
-						"nutrition": 1,
-						"saturation": 0
-					}
-				},
-				{
-					"items": "iceandfire:frost_stew",
-					"properties": {
-						"nutrition": 4,
-						"saturation": 4
-					}
-				}
-			]
-		}
-	}
+    "values": {
+        "dragonsurvival:cave_dragon": {
+            "replace": false,
+            "value": [
+                {
+                    "items": "iceandfire:ambrosia",
+                    "properties": {
+                        "nutrition": 2,
+                        "saturation": 4.0
+                    }
+                },
+                {
+                    "items": "iceandfire:fire_lily",
+                    "properties": {
+                        "nutrition": 1,
+                        "saturation": 0
+                    }
+                },
+                {
+                    "items": "iceandfire:fire_stew",
+                    "properties": {
+                        "nutrition": 4,
+                        "saturation": 4
+                    }
+                },
+                {
+                    "items": "minecraft:enchanted_golden_apple",
+                    "properties": {
+                        "nutrition": 4,
+                        "saturation": 4
+                    }
+                }
+            ]
+        },
+        "dragonsurvival:forest_dragon": {
+            "replace": false,
+            "value": [
+                {
+                    "items": "iceandfire:ambrosia",
+                    "properties": {
+                        "nutrition": 2,
+                        "saturation": 4.0
+                    }
+                },
+                {
+                    "items": "iceandfire:lightning_lily",
+                    "properties": {
+                        "nutrition": 1,
+                        "saturation": 0
+                    }
+                },
+                {
+                    "items": "iceandfire:lightning_stew",
+                    "properties": {
+                        "nutrition": 4,
+                        "saturation": 4
+                    }
+                },
+                {
+                    "items": "minecraft:apple",
+                    "properties": {
+                        "nutrition": 2,
+                        "saturation": 2
+                    }
+                },
+                {
+                    "items": "minecraft:carrot",
+                    "properties": {
+                        "nutrition": 2,
+                        "saturation": 2
+                    }
+                },
+                {
+                    "items": "minecraft:golden_apple",
+                    "properties": {
+                        "nutrition": 4,
+                        "saturation": 2
+                    }
+                },
+                {
+                    "items": "minecraft:golden_carrot",
+                    "properties": {
+                        "nutrition": 4,
+                        "saturation": 2
+                    }
+                },
+                {
+                    "items": "minecraft:enchanted_golden_apple",
+                    "properties": {
+                        "nutrition": 4,
+                        "saturation": 4
+                    }
+                }
+            ]
+        },
+        "dragonsurvival:sea_dragon": {
+            "replace": false,
+            "value": [
+                {
+                    "items": "iceandfire:ambrosia",
+                    "properties": {
+                        "nutrition": 2,
+                        "saturation": 4.0
+                    }
+                },
+                {
+                    "items": "iceandfire:frost_lily",
+                    "properties": {
+                        "nutrition": 1,
+                        "saturation": 0
+                    }
+                },
+                {
+                    "items": "iceandfire:frost_stew",
+                    "properties": {
+                        "nutrition": 4,
+                        "saturation": 4
+                    }
+                },
+                {
+                    "items": "minecraft:enchanted_golden_apple",
+                    "properties": {
+                        "nutrition": 4,
+                        "saturation": 4
+                    }
+                }
+            ]
+        }
+    }
 }

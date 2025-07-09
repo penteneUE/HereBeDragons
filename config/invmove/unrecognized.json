@@ -14,9 +14,10 @@
     "dev.emi.emi.screen.RecipeScreen": false,
     "net.p3pp3rf1y.sophisticatedbackpacks.client.gui.BackpackScreen": false,
     "journeymap.client.ui.component.screens.ScrollPaneScreen": false,
-    "com.chaosthedude.explorerscompass.gui.ExplorersCompassScreen": false
+    "com.chaosthedude.explorerscompass.gui.ExplorersCompassScreen": false,
+    "dev.emi.emi.screen.BoMScreen": false
   },
   "hideBackground": {
-    "dev.ftb.mods.ftblibrary.ui.ScreenWrapper": false
+    "dev.ftb.mods.ftblibrary.ui.ScreenWrapper": true
   }
 }
