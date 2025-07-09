@@ -6,6 +6,6 @@
 	],
 	"settings": {
 		"typescript.tsserver.maxTsServerMemory": 4096,
-		"editor.formatOnSave": false
+		"editor.formatOnSave": true
 	}
 }

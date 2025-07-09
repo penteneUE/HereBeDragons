@@ -42,7 +42,8 @@
 
 Github Release: [点此链接进入Releases后，选择最新版本，选择下方Assets展开，选择（通常是）第一项的HereBeDragons...zip。](https://github.com/JesterRomut/HereBeDragons/releases/latest)
 
-- 如果电脑配置不高，需要删除或禁用[遥远地平线](mods/DistantHorizons-neoforge-fabric-2.3.2-b-1.21.1.jar)模组。
+- 如果电脑配置不高，需要删除或禁用[遥远地平线 (Distant Horizon)](mods/DistantHorizons-neoforge-fabric-2.3.2-b-1.21.1.jar)模组。
+- 如果有晕3D症状，需要删除或禁用[相机大改 (Camera Overhaul)](mods/CameraOverhaul-v2.0.4-neoforge+mc[1.21.0-1.21.1].jar)模组。
 - 开局是通过任务书选龙的！！一进存档时不是龙很正常。
 - 如果进入后标题界面为MINECRAFT而非HERE WERE DRAGONS，说明Mod/Mod启动器没有加载！请重试。
 
@@ -59,6 +60,9 @@ Github Release: [点此链接进入Releases后，选择最新版本，选择下�
 - [ ] 已知BUG：一些沉船由于结构生成原因可能被卡掉或提示无法占领。
 - [ ] 可能BUG：征服任务奖杯无法触发FTB任务完成提示，除非被丢来丢去
 - [ ] 由于龙生存Mod在我不在的三个月来暗改了很多东西（包括龙成长速度、龙心合成配方等，严厉谴责毛子作者！！），可能会有脱节之处。
+- [ ] 配置Legendary Tooltips。
+- [ ] 添加关于JourneyMap与区块占领的引导。
+- [ ] 提升结构判定范围。（求求了有没有安慕希大佬帮我研究结构判定啊a）
 
 
 ## 失败事项

@@ -766,6 +766,14 @@
 	quest.667220165003BC3B.quest_desc: ["不知是幸运还是不幸，据你的观察，这条家伙的行为和先人手记上的描述分毫不差。"]
 	quest.667220165003BC3B.title: "九头蛇"
 	quest.667C340CF868A4BA.title: "考古"
+	quest.67098E355E73EB2C.quest_desc: [
+		"将床与旗帜合成可以得到装饰后的床，支持Mod旗帜图案（比如冰与火）！"
+		""
+		"{image:kubejs:textures/task/tutorial_bedspread.png width:71 height:46 align:center}"
+		""
+		"将装饰后的床放入合成栏，会返还旗帜。"
+	]
+	quest.67098E355E73EB2C.title: "用旗帜装饰床！"
 	quest.6749719575273054.quest_desc: ["你是在自己的床上醒过来的。这是一场梦吗？"]
 	quest.6749719575273054.quest_subtitle: "候鸟归巢时"
 	quest.6749719575273054.title: "阅读终末之诗"
@@ -1007,6 +1015,7 @@
 	task.0579C0FC39DF6F2C.title: "笔记：挽救的方法？"
 	task.0741D2CC2C85660E.title: "龙种的分别"
 	task.0762D5A4B4C103A6.title: "清除当前的挑战状态"
+	task.09C4CF4A5AD08363.title: "任意装饰过的床"
 	task.0C5D7ACA2643B662.title: "WIP：言灵：饕餮寓言"
 	task.0C88B4341C81B301.title: "异种共生：自由探索"
 	task.0CFE2752F709E5B0.title: "键位"
@@ -1080,6 +1089,7 @@
 	task.69C1EC6E477AFEF8.title: "回到主世界"
 	task.6A653AA27FDFEF6A.title: "任意龙祭坛"
 	task.6AEA76D166CE2ABB.title: "引言"
+	task.6B81EE069253157B.title: "用旗帜装饰床！"
 	task.6D35F0D45F1C7708.title: "通用"
 	task.6E2DEDD7DD141BD6.title: "笔记：龙与魔法学派"
 	task.7046D4359B2C80F7.title: "WIP：龙的言灵术"

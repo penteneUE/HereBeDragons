@@ -1,5 +1,7 @@
 //priority: 3
 
+const STRUCTURE_EXTEND_RAD = 8;
+
 /**
  *
  * @param {$BlockPos_} blockPosition
@@ -14,7 +16,12 @@ function whichStructureAmI(blockPosition, level) {
         .startsForStructure($ChunkPos(blockPosition), () => true)
         .stream()
         .forEach((ss) => {
-            if (ss.getBoundingBox().isInside(blockPosition)) {
+            if (
+                ss
+                    .getBoundingBox()
+                    .inflatedBy(STRUCTURE_EXTEND_RAD)
+                    .isInside(blockPosition)
+            ) {
                 structure_id = Registry.of("worldgen/structure")
                     .getKey(ss.getStructure())
                     .location();

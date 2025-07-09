@@ -9,12 +9,15 @@
     "sneak": "Maintain",
     "dismount": false,
     "textFieldDisables": true,
-    "unrecognizedScreenDefault": true
+    "unrecognizedScreenDefault": false
   },
   "background": {
-    "enable": true,
+    "enable": false,
     "hideOnPause": "Show",
-    "unrecognizedScreenDefault": true
+    "unrecognizedScreenDefault": false
   },
-  "allowedKeysOverrides": {}
+  "allowedKeysOverrides": {
+    "dragonsurvival.keybind.toggle_flight": true,
+    "dragonsurvival.keybind.spin_ability": true
+  }
 }

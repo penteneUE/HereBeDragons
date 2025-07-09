@@ -95,8 +95,8 @@ function getOwner(mob) {
 }
 
 /**
- * 
- * @param {$Mob_} mob 
+ *
+ * @param {$Mob_} mob
  * @returns {string | null}
  */
 // function getOwnerNameOrNull(mob) {
@@ -136,7 +136,7 @@ function tamedCreatureSelfDefend(mob, target) {
     if (target.getUuid() == owner.getUuid() || isPetOf(target, owner))
         return false;
     return true;
- }
+}
 
 /**
  *
@@ -147,8 +147,8 @@ function tamedCreatureSelfDefend(mob, target) {
 function tamedCreatureLogic(mob, target) {
     try {
         if (!target || !target.isAlive()) return false;
-        let owner = getOwner(mob)
-        if ((target.getUuid() == owner.getUuid()) || isPetOf(target, owner))
+        let owner = getOwner(mob);
+        if (target.getUuid() == owner.getUuid() || isPetOf(target, owner))
             return false;
         // 我他妈就搞不懂你就这么喜欢const？？？
         let ownerData = owner.persistentData;
@@ -228,9 +228,7 @@ function reviseTamedPetGoals(mob) {
         //         goal instanceof $HurtByTargetGoal ||
         //         goal.goal instanceof $HurtByTargetGoal
         // );
-        mob.targetSelector.removeAllGoals(
-            (goal) => true
-        );
+        mob.targetSelector.removeAllGoals((goal) => true);
 
         // if (
         //     mob.goalSelector.availableGoals.some(
@@ -245,7 +243,6 @@ function reviseTamedPetGoals(mob) {
         // ) {
         // re-add the NearestAttackableTargetGoal & HurtByTargetGoal to make it only attack the last entity the player attacked
         mob.server.scheduleInTicks(1, () => {
-
             mob.targetSelector.addGoal(
                 0,
                 new $NearestAttackableTargetGoal(
@@ -258,13 +255,7 @@ function reviseTamedPetGoals(mob) {
                 )
             );
 
-            mob.targetSelector.addGoal(
-                1,
-                new $HurtByTargetGoal(
-                    mob,
-                    Player
-                )
-            );
+            mob.targetSelector.addGoal(1, new $HurtByTargetGoal(mob, Player));
 
             mob.goalSelector.addGoal(
                 3,
@@ -280,7 +271,7 @@ function reviseTamedPetGoals(mob) {
                     (mob) => {},
                     (mob) => mob.getNavigation().stop(),
                     true,
-                    /** @param {$Mob_} mob */(mob) => {
+                    /** @param {$Mob_} mob */ (mob) => {
                         //if (mob.tickCount % 60 != 0) return;
                         let mobAABB = mob.boundingBox.inflate(5);
                         mob.level
@@ -317,7 +308,7 @@ function reviseTamedPetGoals(mob) {
 //         const isRunning = goalWrapper.isRunning();
 //         // console.log(`Priority ${priority}: ${goal} (${isRunning ? "运行中" : "未激活"})`);
 //     });
-    
+
 //     // console.log("=== Target Selector ===");
 //     entity.targetSelector.getAvailableGoals().forEach(goalWrapper => {
 //         const goal = goalWrapper.getGoal();
@@ -338,33 +329,35 @@ function reviseTamedPetGoals(mob) {
 EntityEvents.spawned((event) => {
     let { entity } = event;
     //let tamingItem = tameableMobs[entity.type];
-    if (entity.persistentData.OwnerName) reviseTamedPetGoals(entity);
-    else {
-        if (Math.floor(Math.random() * 6) != 0) return;
-        let { STRUCTURE_DATA } = global;
-        let { structure, structure_id } = whichStructureAmI(
-            entity.blockPosition(),
-            event.level
-        );
-        if (!structure_id) return;
-        if (!STRUCTURE_DATA[structure_id]) return;
-        if (!STRUCTURE_DATA[structure_id].mobs) return;
-        if (!STRUCTURE_DATA[structure_id].mobs.contains(entity.type)) return;
-
-        let nearestPlayer = event.level.getNearestPlayer(entity, 8000);
-        if (!nearestPlayer) return;
-
-        if (
-            !matchDragonConquerRecord_withBbox(
-                nearestPlayer,
-                structure.getBoundingBox(),
-                structure_id
-            )
-        )
-            return;
-
-        tameCreature(nearestPlayer, entity);
+    if (entity.persistentData.OwnerName) {
+        reviseTamedPetGoals(entity);
+        return;
     }
+
+    if (entity.getRandom().nextInt(100) < 80) return;
+    let { STRUCTURE_DATA } = global;
+    let { structure, structure_id } = whichStructureAmI(
+        entity.blockPosition(),
+        event.level
+    );
+    if (!structure_id) return;
+    if (!STRUCTURE_DATA[structure_id]) return;
+    if (!STRUCTURE_DATA[structure_id].mobs) return;
+    if (!STRUCTURE_DATA[structure_id].mobs.contains(entity.type)) return;
+
+    let nearestPlayer = event.level.getNearestPlayer(entity, 8000);
+    if (!nearestPlayer) return;
+
+    if (
+        !matchDragonConquerRecord_withBbox(
+            nearestPlayer,
+            structure.getBoundingBox(),
+            structure_id
+        )
+    )
+        return;
+
+    tameCreature(nearestPlayer, entity);
 });
 /**
  * Tame any mob with felyne_recall
@@ -435,10 +428,9 @@ ItemEvents.entityInteracted((event) => {
     // }
 });
 
-
 /**
- * 
- * @param {$Mob_} mob 
+ *
+ * @param {$Mob_} mob
  */
 function stopAttacking(mob) {
     if (!(mob instanceof PathfinderMob)) return;
@@ -446,7 +438,7 @@ function stopAttacking(mob) {
     //     if (!goal.running) return;
     //     goal.stop();
     // });
-    
+
     mob.setTarget(null);
 }
 

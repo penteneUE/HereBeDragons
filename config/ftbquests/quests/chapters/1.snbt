@@ -1135,5 +1135,22 @@
 			x: 1.0d
 			y: -9.0d
 		}
+		{
+			dependencies: ["7F1FD96CDF8CD2B8"]
+			hide_dependency_lines: true
+			id: "67098E355E73EB2C"
+			rewards: [{
+				id: "7EDAAB5A58ADBDFE"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "09C4CF4A5AD08363"
+				item: { components: { "bedspreads:decorated_bed": { banner: { components: { "minecraft:banner_patterns": [{ color: "black", pattern: "supplementaries:dragon" }] }, count: 1, id: "minecraft:white_banner" }, bed: { count: 1, id: "minecraft:white_bed" } } }, count: 1, id: "bedspreads:decorated_bed" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -6.0d
+		}
 	]
 }
