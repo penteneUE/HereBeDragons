@@ -222,6 +222,19 @@
 	quest.249E652D8444575D.title: "四季"
 	quest.24C35FEEDB08DF0E.quest_desc: ["不知是幸运还是不幸，据你的观察，这些动物的行为和先人手记上的描述分毫不差。"]
 	quest.24C35FEEDB08DF0E.title: "铜羽泽鹗"
+	quest.25007C40BB9D9417.quest_desc: [
+		"按下默认&eJ&r打开地图——整合包作者习惯先将FTB区块地图的键位解绑，再绑定&eM&r为地图。"
+		""
+		"本包自v0.1.0后使用JourneyMap（原为Xaero）。因为划领地这一块真的很棒。"
+		""
+		"如果介意JourneyMap闭源，请随意替换为你喜欢的地图Mod。"
+		""
+		"{@pagebreak}"
+		"{image:kubejs:textures/task/tutorial_land_n_chunks.png width:40 height:74 align:center}"
+		""
+		"{@pagebreak}"
+		"{image:kubejs:textures/task/tutorial_frontier_n_chunk.png width:82 height:64 align:center}"
+	]
 	quest.255FDC0FA11B8262.quest_subtitle: "因为龙就在那里。"
 	quest.255FDC0FA11B8262.title: "龙之归宿"
 	quest.25AF565CBB467648.quest_desc: [
@@ -275,9 +288,7 @@
 	quest.282D6DA8CBDD27E1.title: "聚落的征服"
 	quest.286F08AEB6428C82.quest_subtitle: "尸体派对"
 	quest.28A49E5085B3F218.quest_desc: [
-		"整合包内置了局域网选项拓展，可以配置更多的项目。"
-		""
-		"按下默认&eM&r打开地图——注意，请先将FTB区块的键位解绑！"
+		"整合包内置了局域网选项拓展（McWifiPnP），可以配置更多的项目（如端口、正版验证等）。"
 		""
 		"在物品栏左上角“&eFTB队伍&r”处创建队伍，再邀请朋友加入。如果设置无误的话，你将在地图上看见你的朋友。"
 	]
@@ -1025,6 +1036,7 @@
 	task.111434795FEA746A.title: "中断当前的占领状态"
 	task.15834E2B7F280132.title: "&e点我！"
 	task.15D0A15E24885187.title: "笔记：无尽挑战"
+	task.15F7C3F29A4FCA6E.title: "地图 - 领地与区块声明"
 	task.172E32CF4795659A.title: "生肉"
 	task.176774A86A7260FF.title: "启程"
 	task.18B31D29CE181BD4.title: "任意鱼"

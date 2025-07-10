@@ -47,7 +47,7 @@ Github Release: [点此链接进入Releases后，选择最新版本，选择下�
 - 开局是通过任务书选龙的！！一进存档时不是龙很正常。
 - 如果进入后标题界面为MINECRAFT而非HERE WERE DRAGONS，说明Mod/Mod启动器没有加载！请重试。
 
-## 待办事项
+### 待办事项
 - [x] 添加从村庄、图书馆、法师塔等结构的箱子里获得冰与火手稿的能力。
 - [x] 已知BUG：多人联机中无权限的玩家无法开启保留经验和死亡传送，系任务书命令的权限等级错误（为0）导致。已通过提升任务书命令权限解决。
 - [ ] 修改FTB任务的终局叙事。不那么碰瓷（为什么三个月前的自己这么喜欢碰瓷？？）。用脚本增加更多的压迫感。
@@ -67,19 +67,24 @@ Github Release: [点此链接进入Releases后，选择最新版本，选择下�
 - [x] 修复Larion World Generation未能正常将最低高度降低至-128的问题。（已完成，等待实装）
 
 
-## 失败事项
+### 失败事项
 - [x] 尝试添加缩小龙体型的药水。失败。Pehkui改变了龙的显示大小，没能改变碰撞箱。（如果有更好的体型前置Mod/Lib请务必联系我）
 - [x] 已知BUG：测试两个档均未从村庄掉落中找到冰与火手稿，~~推测是只存在原版村庄中~~，尝试通过添加兼容mod解决（失败。将会添加其它获取途径）
 
 
-<details>
-<summary>许可证与声明 (License and Disclaimers)</summary>
 
-本整合包整体遵循 GNU General Public License v3.0 (LICENSE) 发布。这是因为整合包内包含了部分使用GPLv3协议的Mod，根据其规定，整个衍生作品需采用相同协议。
+## 许可证与声明 (License and Disclaimers)
 
-重要提示：
+本整合包整体遵循 GNU General Public License v3.0 ([LICENSE](LICENSE)) 发布。这是因为整合包内包含了部分使用GPLv3协议的Mod，根据其规定，整个衍生作品需采用相同协议。
+
+### 重要提示：
+
+**严禁下载本仓库`mods/`文件夹中的一切`.jar`文件，必须转至Mod的对应官方下载途径或链接（如CurseForge、Modrinth），否则后果自负。**
+
+**这些`.jar`文件作为占位符被上传以显示本整合包公开透明的Mod变动，本包的所有Release均不包含Mod文件。**
 
 所有对本整合包的使用都必须严格遵守 Minecraft 最终用户许可协议 (EULA) 和 Mojang 的商业使用指南。严禁将本整合包用于任何形式的直接商业销售。
+
 本整合包中使用的部分文本内容来源于*セキュア·コンテイン·プロテクト·ファンデーション*及其中文分部的创作，并遵循 Creative Commons Attribution-ShareAlike 3.0 International License (http://creativecommons.org/licenses/by-sa/3.0/ )。我们对原作者表示感谢。
 
 内容版权归属各条目原作者及创作者社区，完整贡献者列表参见： 
@@ -98,5 +103,3 @@ Github Release: [点此链接进入Releases后，选择最新版本，选择下�
 
 整合包内各Mod的独立版权归其原作者所有。
 
-为什么不敢直接写名字？因为我感觉自己连带着这个包会分分钟被追星长矛↓↓爆。
-</details>

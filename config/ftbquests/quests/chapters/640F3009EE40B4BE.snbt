@@ -138,5 +138,20 @@
 			x: 1.0d
 			y: 5.0d
 		}
+		{
+			dependencies: ["719FEDF459AA1F90"]
+			id: "25007C40BB9D9417"
+			rewards: [{
+				id: "644FDD970D15AE96"
+				type: "xp"
+				xp: 2
+			}]
+			tasks: [{
+				id: "15F7C3F29A4FCA6E"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 3.5d
+		}
 	]
 }
