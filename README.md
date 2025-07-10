@@ -9,7 +9,7 @@
 
 # 龙曾在此 - Here Were Dragons
 
-![HereWereDragons](kubejs/assets/kubejs/textures/task/here_were_dragons.png)
+![HereWereDragons](PCL/Logo.png)
 
 ## 介绍
 
