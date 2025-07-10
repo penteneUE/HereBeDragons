@@ -15,7 +15,9 @@
 !kubejs/**/*
 !mods/**/*
 !resourcepacks/**/*
+!shaderpacks/**/*
 !screenshots/**/*
 
 .probe
 resourcepacks/Minecraft-Mod-Language-Modpack-Converted-1.21.1.zip
+shaderpacks/ComplementaryReimagined_r5.5.1 + EuphoriaPatches_1.6.5/**/*
