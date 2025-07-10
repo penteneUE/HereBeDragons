@@ -3,21 +3,34 @@
 
 # track this file
 !.gitignore
+
+!export_config.txt
 !README.md
 !LICENSE
 !HereBeDragons.jar
 !HereBeDragons.json
 !HereBeDragons.code-workspace
 !.roo/**/*
+!options.txt
 
 # whitelist everything in ./config/
 !config/**/*
+!defaultconfigs/**/*
 !kubejs/**/*
 !mods/**/*
 !resourcepacks/**/*
 !shaderpacks/**/*
 !screenshots/**/*
 
+!journeymap/config/**/*
+!journeymap/server/**/*
+
 .probe
 resourcepacks/Minecraft-Mod-Language-Modpack-Converted-1.21.1.zip
 shaderpacks/ComplementaryReimagined_r5.5.1 + EuphoriaPatches_1.6.5/**/*
+
+config/inventoryprofilesnext
+
+!config/inventoryprofilesnext/inventoryprofiles.json
+!config/inventoryprofilesnext/integrationHints
+!config/inventoryprofilesnext/integrationHints/**/*

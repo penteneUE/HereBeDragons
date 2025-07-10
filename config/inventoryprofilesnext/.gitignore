@@ -1,9 +1,0 @@
-*
-!*/
-
-# track this file
-!.gitignore
-
-!inventoryprofiles.json
-!integrationHints
-!integrationHints/**/*
