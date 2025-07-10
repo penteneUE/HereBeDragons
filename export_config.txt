@@ -113,6 +113,8 @@ resourcepacks/
 
 shaderpacks/
 !shaderpacks/ComplementaryReimagined_r5.5.1 + EuphoriaPatches_1.6.5/**/*
+!shaderpacks/ComplementaryReimagined_r5.5.1 + EuphoriaPatches_1.6.5
+!shaderpacks/ComplementaryReimagined_r5.5.1 + EuphoriaPatches_1.6.5/
 
 # 排除的文件
 !*.log
