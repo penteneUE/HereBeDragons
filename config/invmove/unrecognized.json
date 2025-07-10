@@ -1,31 +1,35 @@
 {
-    "allowMovement": {
-        "dev.ftb.mods.ftblibrary.ui.ScreenWrapper": false,
-        "by.dragonsurvivalteam.dragonsurvival.client.gui.screens.DragonAltarScreen": false,
-        "xaero.map.gui.GuiMap": true,
-        "journeymap.client.ui.fullscreen.Fullscreen": true,
-        "games.alejandrocoria.mapfrontiers.client.gui.screen.FrontierInfo": true,
-        "org.anti_ad.mc.common.gui.screen.ConfigScreenBase": true,
-        "org.anti_ad.mc.ipnext.gui.GUIDEEditorScreen": true,
-        "by.dragonsurvivalteam.dragonsurvival.client.gui.screens.DragonInventoryScreen": true,
-        "by.dragonsurvivalteam.dragonsurvival.client.gui.screens.DragonEmoteScreen": true,
-        "by.dragonsurvivalteam.dragonsurvival.client.gui.screens.DragonAbilityScreen": true,
-        "by.dragonsurvivalteam.dragonsurvival.client.gui.screens.DragonSpeciesScreen": true,
-        "dev.emi.emi.screen.RecipeScreen": false,
-        "net.p3pp3rf1y.sophisticatedbackpacks.client.gui.BackpackScreen": false,
-        "journeymap.client.ui.component.screens.ScrollPaneScreen": false,
-        "com.chaosthedude.explorerscompass.gui.ExplorersCompassScreen": false,
-        "dev.emi.emi.screen.BoMScreen": false,
-        "top.theillusivec4.curios.client.gui.CuriosScreen": false,
-        "net.minecraft.client.gui.screens.PauseScreen": false,
-        "lain.mods.cos.impl.client.gui.GuiCosArmorInventory": false,
-        "net.neoforged.neoforge.client.gui.ConfigurationScreen": false,
-        "net.neoforged.neoforge.client.gui.ConfigurationScreen$ConfigurationSectionScreen": false,
-        "games.alejandrocoria.mapfrontiers.client.gui.screen.FrontierList": false,
-        "net.minecraft.client.gui.screens.ConfirmScreen": false
-    },
-    "hideBackground": {
-        "dev.ftb.mods.ftblibrary.ui.ScreenWrapper": true,
-        "org.anti_ad.mc.ipnext.gui.GUIDEEditorScreen": false
-    }
+  "allowMovement": {
+    "dev.ftb.mods.ftblibrary.ui.ScreenWrapper": false,
+    "by.dragonsurvivalteam.dragonsurvival.client.gui.screens.DragonAltarScreen": false,
+    "xaero.map.gui.GuiMap": true,
+    "journeymap.client.ui.fullscreen.Fullscreen": true,
+    "games.alejandrocoria.mapfrontiers.client.gui.screen.FrontierInfo": true,
+    "org.anti_ad.mc.common.gui.screen.ConfigScreenBase": true,
+    "org.anti_ad.mc.ipnext.gui.GUIDEEditorScreen": true,
+    "by.dragonsurvivalteam.dragonsurvival.client.gui.screens.DragonInventoryScreen": true,
+    "by.dragonsurvivalteam.dragonsurvival.client.gui.screens.DragonEmoteScreen": true,
+    "by.dragonsurvivalteam.dragonsurvival.client.gui.screens.DragonAbilityScreen": true,
+    "by.dragonsurvivalteam.dragonsurvival.client.gui.screens.DragonSpeciesScreen": true,
+    "dev.emi.emi.screen.RecipeScreen": false,
+    "net.p3pp3rf1y.sophisticatedbackpacks.client.gui.BackpackScreen": true,
+    "journeymap.client.ui.component.screens.ScrollPaneScreen": false,
+    "com.chaosthedude.explorerscompass.gui.ExplorersCompassScreen": true,
+    "dev.emi.emi.screen.BoMScreen": false,
+    "top.theillusivec4.curios.client.gui.CuriosScreen": true,
+    "net.minecraft.client.gui.screens.PauseScreen": false,
+    "lain.mods.cos.impl.client.gui.GuiCosArmorInventory": false,
+    "net.neoforged.neoforge.client.gui.ConfigurationScreen": false,
+    "net.neoforged.neoforge.client.gui.ConfigurationScreen$ConfigurationSectionScreen": false,
+    "games.alejandrocoria.mapfrontiers.client.gui.screen.FrontierList": false,
+    "net.minecraft.client.gui.screens.ConfirmScreen": false,
+    "fr.frinn.custommachinery.client.screen.CustomMachineScreen": false,
+    "net.minecraft.client.gui.screens.options.OptionsScreen": false,
+    "net.neoforged.neoforge.client.gui.ModListScreen": false,
+    "me.shedaniel.clothconfig2.gui.ClothConfigScreen": false
+  },
+  "hideBackground": {
+    "dev.ftb.mods.ftblibrary.ui.ScreenWrapper": true,
+    "org.anti_ad.mc.ipnext.gui.GUIDEEditorScreen": false
+  }
 }

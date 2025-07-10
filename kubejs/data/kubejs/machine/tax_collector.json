@@ -1,73 +1,73 @@
 {
-  "name": {
-    "text": "machine.kubejs.tax_collector.name"
-  },
-  "appearance": {
-    "custommachinery:block": "irons_spellbooks:firefly_jar",
-    "custommachinery:interaction_sound": {
-      "step": "minecraft:block.metal.step",
-      "place": "minecraft:block.amethyst_block.place",
-      "hit": "minecraft:block.metal.hit",
-      "fall": "minecraft:block.metal.fall",
-      "break": "minecraft:block.glass.break"
-    },
-    "custommachinery:item": "aquaculture:message_in_a_bottle",
-    "custommachinery:keep_inventory": true,
-    "custommachinery:light": 5,
-    "custommachinery:mining_level": "minecraft:needs_stone_tool",
-    "custommachinery:tool_type": [
-      "minecraft:mineable/pickaxe",
-      "minecraft:mineable/axe",
-      "minecraft:mineable/shovel"
-    ]
-  },
-  "components": [
-    {
-      "type": "custommachinery:item",
-      "config": {
-        "TOP": "INPUT",
-        "BOTTOM": "INPUT",
-        "FRONT": "INPUT",
-        "RIGHT": "INPUT",
-        "BACK": "INPUT",
-        "LEFT": "INPUT"
-      },
-      "id": "preferred_item",
-      "capacity": 1
-    }
-  ],
-  "gui": [
-    {
-      "type": "custommachinery:background",
-      "width": 192,
-      "height": 192
-    },
-    {
-      "type": "custommachinery:text",
-      "x": 11,
-      "y": 11,
-      "text": {
+    "name": {
         "text": "machine.kubejs.tax_collector.name"
-      }
     },
-    {
-      "type": "custommachinery:player_inventory",
-      "x": 15,
-      "y": 102
+    "appearance": {
+        "custommachinery:block": "irons_spellbooks:firefly_jar",
+        "custommachinery:interaction_sound": {
+            "step": "minecraft:block.metal.step",
+            "place": "minecraft:block.amethyst_block.place",
+            "hit": "minecraft:block.metal.hit",
+            "fall": "minecraft:block.metal.fall",
+            "break": "minecraft:block.glass.break"
+        },
+        "custommachinery:item": "aquaculture:message_in_a_bottle",
+        "custommachinery:keep_inventory": true,
+        "custommachinery:light": 5,
+        "custommachinery:mining_level": "minecraft:needs_stone_tool",
+        "custommachinery:tool_type": [
+            "minecraft:mineable/pickaxe",
+            "minecraft:mineable/axe",
+            "minecraft:mineable/shovel"
+        ]
     },
-    {
-      "type": "custommachinery:slot",
-      "id": "preferred_item",
-      "x": 87,
-      "y": 55,
-      "ghost": {
-        "items": {
-          "item": "dragonsurvival:elder_dragon_dust"
+    "components": [
+        {
+            "type": "custommachinery:item",
+            "config": {
+                "TOP": "INPUT",
+                "BOTTOM": "INPUT",
+                "FRONT": "INPUT",
+                "RIGHT": "INPUT",
+                "BACK": "INPUT",
+                "LEFT": "INPUT"
+            },
+            "id": "preferred_item",
+            "capacity": 1
         }
-      }
+    ],
+    "gui": [
+        {
+            "type": "custommachinery:background",
+            "width": 192,
+            "height": 192
+        },
+        {
+            "type": "custommachinery:text",
+            "x": 11,
+            "y": 11,
+            "text": {
+                "text": "machine.kubejs.tax_collector.name"
+            }
+        },
+        {
+            "type": "custommachinery:player_inventory",
+            "x": 15,
+            "y": 102
+        },
+        {
+            "type": "custommachinery:slot",
+            "id": "preferred_item",
+            "x": 87,
+            "y": 55,
+            "ghost": {
+                "items": {
+                    "item": "dragonsurvival:elder_dragon_dust"
+                }
+            }
+        }
+    ],
+    "processor": {
+        "type": "custommachinery:machine"
     }
-  ],
-  "processor": {
-    "type": "custommachinery:craft"
-  }
 }
