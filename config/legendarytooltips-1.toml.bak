@@ -70,15 +70,15 @@
 	#    Negation - ~ followed by any selector above.  This selector will be negated, matching every item that does NOT match the selector.  Examples: "~minecraft:stick", "~!uncommon", "~@minecraft"
 	#    Combining selectors - Any number of selectors can be combined by separating them with a plus sign.  Examples: "minecraft:diamond_sword+&enchantments", "minecraft:stick+~!common+&damage>100"
 	[client.definitions]
-		level0_entries = ["!epic", "dragonsurvival:elder_dragon_heart"]
-		level1_entries = ["!rare", "dragonsurvival:heart_element", "dragonsurvival:weak_dragon_heart"]
-		level2_entries = ["!uncommon", "dragonsurvival:elder_dragon_dust", "dragonsurvival:elder_dragon_bone"]
-		level3_entries = ["$dragonsurvival:cave_dragon_food"]
-		level4_entries = ["$dragonsurvival:sea_dragon_food", "kubejs:dry_sponge", "kubejs:wet_sponge"]
-		level5_entries = ["$dragonsurvival:forest_dragon_food"]
-		level6_entries = ["dragonsurvival:star_bone", "dragonsurvival:star_heart", "kubejs:dragon_conquest_trophy"]
+		level0_entries = ["!epic"]
+		level1_entries = ["!rare"]
+		level2_entries = ["!uncommon"]
+		level3_entries = []
+		level4_entries = []
+		level5_entries = []
+		level6_entries = []
 		level7_entries = []
-		level8_entries = ["$kubejs:dragon_flags","$kubejs:dragon_eggs","$kubejs:dragon_taming_items","kubejs:magic_disc", "kubejs:paper_dragon_fragment", "kubejs:paper_dragon_egg", "kubejs:tax_collector"]
+		level8_entries = ["kubejs:magic_disc"]
 		level9_entries = []
 		level10_entries = []
 		level11_entries = []
@@ -88,6 +88,16 @@
 		level15_entries = []
 		# Enter blacklist selectors here using the same format as above. Any items that match these selectors will NOT show a border.
 		blacklist = []
+	# 0.  Gold frame
+	# 1.  Silver frame
+	# 2.  Copper frame
+	# 3.  Smoke and flames
+	# 4.  Water / Ice
+	# 5.  Rose and vines
+	# 6.  Bones / death
+	# 7.  Iron plating / machinery
+	# 8.  Purple geometric motif
+	# 9.  Holy (halo / wings)
 
 	# Set border priorities here.  This should be a list of numbers that correspond to border levels, with numbers coming first being higher priority.
 	# Optionally, -1 can be inserted to indicate relative priority of data and api-defined borders.  If you don't know what that means, you don't need to worry about it.

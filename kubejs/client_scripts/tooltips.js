@@ -3,6 +3,26 @@ ItemEvents.modifyTooltips((event) => {
         Text.gray({ translate: "kubejs.tooltips.ambrosia.1" }),
     ]);
 
+    event.add("#kubejs:dragon_eggs", [
+        Text.gray({ translate: "kubejs.tooltips.dragon_eggs.1" }),
+    ]);
+
+    event.add("iceandfire:dragon_meal", [
+        Text.gray({ translate: "kubejs.tooltips.dragon_meal.1" }),
+    ]);
+
+    event.add("iceandfire:sickly_dragon_meal", [
+        Text.gray({ translate: "kubejs.tooltips.sickly_dragon_meal.1" }),
+    ]);
+
+    event.add("#kubejs:dragon_summoning_crystals", [
+        Text.gray({ translate: "kubejs.tooltips.dragon_summoning_crystals.1" }),
+    ]);
+
+    event.add("#kubejs:dragon_taming_items", [
+        Text.gray({ translate: "kubejs.tooltips.dragon_taming_items.1" }),
+    ]);
+
     event.add("#kubejs:dragon_reproduction_item", [
         Text.gray({ translate: "kubejs.tooltips.dragon_reproduction_item.1" }),
     ]);

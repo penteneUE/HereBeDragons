@@ -108,26 +108,11 @@ local/client/xencraft.cfg
 liteloader.properties
 default_reference.xml
 
-# aquaculture_fished_up.zip
-resourcepacks/aquaculture_fished_up.zip
+resourcepacks/
+!resourcepacks/Minecraft-Mod-Language-Modpack-Converted-1.21.1.zip
 
-# BetterVanillaBuildingV3.5.zip
-resourcepacks/BetterVanillaBuildingV3.5.zip
-
-# Medieval_Style_Lootr.zip
-resourcepacks/Medieval_Style_Lootr.zip
-
-# Torchmaster Remaster.zip
-resourcepacks/Torchmaster Remaster.zip
-
-# UniqueDark 1.20.2-1.21.x (free).zip
-resourcepacks/UniqueDark 1.20.2-1.21.x (free).zip
-
-# waystones_1.21.1.zip
-resourcepacks/waystones_1.21.1.zip
-
-# ComplementaryReimagined_r5.5.1.zip
-shaderpacks/ComplementaryReimagined_r5.5.1.zip
+shaderpacks/
+!shaderpacks/ComplementaryReimagined_r5.5.1 + EuphoriaPatches_1.6.5/**/*
 
 # 排除的文件
 !*.log

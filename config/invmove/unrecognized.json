@@ -26,7 +26,14 @@
     "fr.frinn.custommachinery.client.screen.CustomMachineScreen": false,
     "net.minecraft.client.gui.screens.options.OptionsScreen": false,
     "net.neoforged.neoforge.client.gui.ModListScreen": false,
-    "me.shedaniel.clothconfig2.gui.ClothConfigScreen": false
+    "me.shedaniel.clothconfig2.gui.ClothConfigScreen": false,
+    "net.minecraft.client.gui.screens.ConfirmLinkScreen": false,
+    "journeymap.client.ui.waypointmanager.WaypointManager": false,
+    "journeymap.client.ui.option.ClientOptionsManager": false,
+    "net.minecraft.client.gui.screens.packs.PackSelectionScreen": false,
+    "dev.ftb.mods.ftbfiltersystem.client.gui.FilterScreen": false,
+    "dev.ftb.mods.ftbfiltersystem.client.gui.ComponentConfigScreen": false,
+    "dev.ftb.mods.ftbfiltersystem.client.gui.ItemTagConfigScreen": false
   },
   "hideBackground": {
     "dev.ftb.mods.ftblibrary.ui.ScreenWrapper": true,

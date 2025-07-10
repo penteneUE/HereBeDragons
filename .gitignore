@@ -33,5 +33,8 @@ shaderpacks/ComplementaryReimagined_r5.5.1 + EuphoriaPatches_1.6.5/**/*
 
 config/inventoryprofilesnext
 
+config/spark/
+!config/spark/config.json
+
 !config/inventoryprofilesnext/integrationHints
 !config/inventoryprofilesnext/integrationHints/**/*

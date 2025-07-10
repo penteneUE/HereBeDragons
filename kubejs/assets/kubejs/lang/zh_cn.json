@@ -3,6 +3,13 @@
     "effect.kubejs.reproduction_frenzy.desc": "等等，什么？！",
     "kubejs.tooltips.dragon_reproduction_item.1": "未成年龙不可食用。",
 
+    "kubejs.tooltips.ambrosia.1": "当心——神肴中富含的妖精元素会对食用的龙造成伤害！",
+    "kubejs.tooltips.dragon_eggs.1": "灵魂诞生？",
+    "kubejs.tooltips.dragon_meal.1": "简直像狗粮一样……",
+    "kubejs.tooltips.dragon_summoning_crystals.1": "只对手记中的火龙、冰龙、电龙有效。",
+    "kubejs.tooltips.sickly_dragon_meal.1": "旧时代的森林龙可以轻松消化它们。尚未知这个配方为何会抑制火龙、冰龙、电龙的成长。",
+    "kubejs.tooltips.dragon_taming_items.1": "新时代的龙没有自我意识，它们听从棍棒、号角与长笛的指挥。",
+
     "school.kubejs.dragon": "言灵",
 
     "spell.kubejs.taotie_fabel": "饕餮寓言",
@@ -30,8 +37,6 @@
 
     "kubejs.dimensiontravel.failed.dread_land": "这是一个世界的破洞，你若是进去这里，会造成不可估量的后果……（MOD本身这个维度还没做完）",
     "kubejs.dimensiontravel.failed.the_end": "在没有彻底占领这里之前，就这么进去的话，你总觉得不放心。毕竟，那很可能是个有去无回的地方。",
-
-    "kubejs.tooltips.ambrosia.1": "当心——神肴中富含的妖精元素会对食用的龙造成伤害！",
 
     "item.kubejs.felyne_recall": "猫车",
 
@@ -64,7 +69,6 @@
 
     "kubejs.conquest.success": "你成功占领了这里！",
 
-
     "block.kubejs.endless_undead_flag": "亡灵基座",
     "kubejs.tooltips.endless_undead_flag.1": "放置后在顶部插上旗帜即可触发无尽亡灵挑战。",
 
@@ -77,14 +81,13 @@
     "block.kubejs.endless_dragon_flag": "无尽龙基座",
     "kubejs.tooltips.endless_dragon_flag.1": "放置后在顶部插上旗帜即可触发无尽龙挑战。",
 
-
     "block.kubejs.tax_collector": "瓶中税收官",
     "machine.kubejs.tax_collector.name": "瓶中税收官",
     "kubejs.tooltips.tax_collector.comment": "“圆榫不入方卯。”",
     "kubejs.tooltips.tax_collector.1": "每日为你的领地收税。如果放在储物容器上，将把物资存入其中，否则发送至物品栏。",
     "kubejs.tooltips.tax_collector.2": "税收官在征税时会优先寻找瓶里放入的物品，提升其出现的概率。",
     "kubejs.tooltips.tax_collector.3": "若是放入任意方块，则会关闭其收税结算的消息。",
-    
+
     "kubejs.taxcollector.daypass": "新的一天到了。你的领地为你献上如下物品：",
     "kubejs.taxcollector.daypass.much": "新的一天到了。领地的大量产出已然送达。",
     "kubejs.taxcollector.daypass.withstorage": "这些物品已被放入储物容器。",
@@ -189,13 +192,13 @@
 
     "kubejs.challenge/paper_myth.name.deathworm": "憎恨的",
     "kubejs.challenge/paper_myth.name.sea_serpent": "欢喜的",
-    
+
     "kubejs.challenge/paper_myth.name.cyclops": "统治的",
     "kubejs.challenge/paper_myth.name.ghost": "创造的",
 
     "kubejs.challenge/paper_myth.name.hydra": "忽视的",
     "kubejs.challenge/paper_myth.name.dragon": "遗忘的",
-    
+
     "kubejs.endless/undead_challenge": "无尽的亡灵挑战",
     "kubejs.endless/myth_challenge": "无尽的幻象挑战",
     "kubejs.endless/titan_challenge": "无尽的巨人挑战",
@@ -206,5 +209,4 @@
     "item.kubejs.magic_disc": "魔法唱片",
     "jukebox_song.kubejs.music.scrybe_of_magicks": "Scrybe of the Magicks - INSCRYPTION",
     "sound.kubejs.music.scrybe_of_magicks": "魔法的音乐"
-
 }
