@@ -55,5 +55,20 @@
                 "bottom": -189
             }
         }
+    },
+    "lain.mods.cos.impl.client.gui.GuiCosArmorInventory": {
+        "buttonHints": {
+            "MOVE_TO_CONTAINER": {
+                "bottom": 24
+            },
+            "SHOW_EDITOR": {
+                "horizontalOffset": 127,
+                "top": 34
+            },
+            "SETTINGS": {
+                "horizontalOffset": 127,
+                "top": 33
+            }
+        }
     }
 }

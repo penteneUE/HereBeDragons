@@ -64,7 +64,7 @@ Github Release: [点此链接进入Releases后，选择最新版本，选择下�
 - [ ] 添加关于JourneyMap与区块占领的引导。
 - [ ] 修正结构判定范围。（求求了有没有安慕希大佬帮我研究结构判定啊a）
 - [ ] 修复副手bug。
-- [ ] 修复Larion World Generation未能正常将最低高度降低至-128的问题。（已完成，等待实装）
+- [x] 修复Larion World Generation未能正常将最低高度降低至-128的问题。（已完成，等待实装）
 
 
 ## 失败事项

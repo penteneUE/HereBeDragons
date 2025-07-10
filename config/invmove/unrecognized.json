@@ -15,9 +15,15 @@
     "net.p3pp3rf1y.sophisticatedbackpacks.client.gui.BackpackScreen": false,
     "journeymap.client.ui.component.screens.ScrollPaneScreen": false,
     "com.chaosthedude.explorerscompass.gui.ExplorersCompassScreen": false,
-    "dev.emi.emi.screen.BoMScreen": false
+    "dev.emi.emi.screen.BoMScreen": false,
+    "top.theillusivec4.curios.client.gui.CuriosScreen": false,
+    "net.minecraft.client.gui.screens.PauseScreen": false,
+    "lain.mods.cos.impl.client.gui.GuiCosArmorInventory": false,
+    "net.neoforged.neoforge.client.gui.ConfigurationScreen": false,
+    "net.neoforged.neoforge.client.gui.ConfigurationScreen$ConfigurationSectionScreen": false
   },
   "hideBackground": {
-    "dev.ftb.mods.ftblibrary.ui.ScreenWrapper": true
+    "dev.ftb.mods.ftblibrary.ui.ScreenWrapper": true,
+    "org.anti_ad.mc.ipnext.gui.GUIDEEditorScreen": false
   }
 }
