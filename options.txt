@@ -22,7 +22,7 @@ narrator:0
 particles:0
 reducedDebugInfo:false
 renderClouds:"false"
-renderDistance:2
+renderDistance:4
 simulationDistance:5
 screenEffectScale:1.0
 soundDevice:""
@@ -128,8 +128,6 @@ key_iris.keybind.shaderPackSelection:key.keyboard.unknown
 key_iris.keybind.wireframe:key.keyboard.unknown
 key_supplementaries.keybind.quiver:key.keyboard.unknown
 key_key.curios.open.desc:key.keyboard.unknown
-key_key.dynamic_fps.toggle_forced:key.keyboard.unknown
-key_key.dynamic_fps.toggle_disabled:key.keyboard.unknown
 key_key.jei.toggleOverlay:key.keyboard.o:CONTROL
 key_key.jei.focusSearch:key.keyboard.f:CONTROL
 key_key.jei.previousPage:key.keyboard.unknown
@@ -169,10 +167,10 @@ key_keybind.sophisticatedbackpacks.inventory_interaction:key.keyboard.c
 key_keybind.sophisticatedbackpacks.tool_swap:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.sort:key.mouse.middle
 key_keybind.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
-key_keybind.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
-key_keybind.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
-key_keybind.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.x:ALT
 key_keybind.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.unknown
+key_keybind.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.x:ALT
+key_keybind.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
+key_keybind.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
 key_mapfrontiers.key.open_settings:key.keyboard.f8
 key_key.ftbteams.open_gui:key.keyboard.unknown
 key_key.ftbchunks.map:key.keyboard.unknown

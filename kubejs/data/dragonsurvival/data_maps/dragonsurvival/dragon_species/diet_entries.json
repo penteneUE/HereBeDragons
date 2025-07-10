@@ -30,6 +30,13 @@
                         "nutrition": 4,
                         "saturation": 4
                     }
+                },
+                {
+                    "items": "iceandfire:fire_dragon_flesh",
+                    "properties": {
+                        "nutrition": 8,
+                        "saturation": 8
+                    }
                 }
             ]
         },
@@ -106,6 +113,13 @@
                         "nutrition": 36,
                         "saturation": 60
                     }
+                },
+                {
+                    "items": "iceandfire:lightning_dragon_flesh",
+                    "properties": {
+                        "nutrition": 8,
+                        "saturation": 8
+                    }
                 }
             ]
         },
@@ -138,6 +152,13 @@
                     "properties": {
                         "nutrition": 4,
                         "saturation": 4
+                    }
+                },
+                {
+                    "items": "iceandfire:ice_dragon_flesh",
+                    "properties": {
+                        "nutrition": 8,
+                        "saturation": 8
                     }
                 }
             ]

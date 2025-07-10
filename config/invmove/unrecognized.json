@@ -33,7 +33,10 @@
     "net.minecraft.client.gui.screens.packs.PackSelectionScreen": false,
     "dev.ftb.mods.ftbfiltersystem.client.gui.FilterScreen": false,
     "dev.ftb.mods.ftbfiltersystem.client.gui.ComponentConfigScreen": false,
-    "dev.ftb.mods.ftbfiltersystem.client.gui.ItemTagConfigScreen": false
+    "dev.ftb.mods.ftbfiltersystem.client.gui.ItemTagConfigScreen": false,
+    "dev.latvian.mods.kubejs.client.KubeJSErrorScreen": false,
+    "by.dragonsurvivalteam.dragonsurvival.client.gui.screens.DragonSkinsScreen": false,
+    "by.dragonsurvivalteam.dragonsurvival.client.gui.screens.dragon_editor.DragonEditorScreen": false
   },
   "hideBackground": {
     "dev.ftb.mods.ftblibrary.ui.ScreenWrapper": true,

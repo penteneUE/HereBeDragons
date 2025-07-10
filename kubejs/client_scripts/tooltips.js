@@ -27,6 +27,14 @@ ItemEvents.modifyTooltips((event) => {
         Text.gray({ translate: "kubejs.tooltips.dragon_reproduction_item.1" }),
     ]);
 
+    event.add("#iceandfire:dragon_armors", [
+        Text.gray({ translate: "kubejs.tooltips.dragon_armors.1" }),
+    ]);
+
+    event.add("#kubejs:dragon_flesh", [
+        Text.gray({ translate: "kubejs.tooltips.dragon_flesh.1" }),
+    ]);
+
     // Add tooltip to all of these items
     event.add("kubejs:dragon_flag", [
         Text.gray({ translate: "kubejs.tooltips.dragon_flag.1" }),

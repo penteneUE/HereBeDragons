@@ -48,5 +48,11 @@ ServerEvents.tags("item", (event) => {
         "iceandfire:summoning_crystal_lightning",
     ]);
 
+    event.add("kubejs:dragon_flesh", [
+        "iceandfire:fire_dragon_flesh",
+        "iceandfire:ice_dragon_flesh",
+        "iceandfire:lightning_dragon_flesh",
+    ]);
+
     // event.add("kubejs:fire_dragon_related_stuff")
 });

@@ -1,6 +1,9 @@
 {
     "effect.kubejs.reproduction_frenzy": "繁衍狂热",
     "effect.kubejs.reproduction_frenzy.desc": "等等，什么？！",
+    "effect.kubejs.prion_curse": "血脉退变",
+    "effect.kubejs.prion_curse.desc": "龙类相食的行为会导致血脉衰变，诞生退化的后代！",
+
     "kubejs.tooltips.dragon_reproduction_item.1": "未成年龙不可食用。",
 
     "kubejs.tooltips.ambrosia.1": "当心——神肴中富含的妖精元素会对食用的龙造成伤害！",
@@ -9,6 +12,8 @@
     "kubejs.tooltips.dragon_summoning_crystals.1": "只对手记中的火龙、冰龙、电龙有效。",
     "kubejs.tooltips.sickly_dragon_meal.1": "旧时代的森林龙可以轻松消化它们。尚未知这个配方为何会抑制火龙、冰龙、电龙的成长。",
     "kubejs.tooltips.dragon_taming_items.1": "新时代的龙没有自我意识，它们听从棍棒、号角与长笛的指挥。",
+    "kubejs.tooltips.dragon_armors.1": "由于解剖结构的差异，你无法穿上它们。",
+    "kubejs.tooltips.dragon_flesh.1": "等等，不要……",
 
     "school.kubejs.dragon": "言灵",
 

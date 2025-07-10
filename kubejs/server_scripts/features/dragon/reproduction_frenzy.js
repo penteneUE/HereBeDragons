@@ -29,7 +29,7 @@ function playerTick_RepFrenzy(event) {
         }
     }
 
-    let k = 1;
+    let k = 2;
     let oAABB = player.getBoundingBox().inflate(k);
 
     /** @type {$LivingEntity_} */
@@ -50,16 +50,12 @@ function playerTick_RepFrenzy(event) {
     let inLove = matingDragon.nbt.getInt("InLove");
     if (inLove == 0) return;
     //console.log(inLove);
-    if (Math.floor(Math.random() * 50) != 0) return;
+    if (player.getRandom().nextInt(100) < 90) return;
 
     let male = matingDragon.nbt.getBoolean("Gender");
-    let variant = matingDragon.nbt.getString("Variant");
-    let eggTag = new $CompoundTag();
-    eggTag.putString("Color", variant);
 
-    let egg = event.level.createEntity("iceandfire:dragon_egg");
-    egg.mergeNbt(eggTag);
     //console.log(egg);
+    let egg = bornChild(player, matingDragon);
 
     if (male) {
         egg.x = player.x;
@@ -79,6 +75,63 @@ function playerTick_RepFrenzy(event) {
     );
 }
 
+/**
+ * @returns {"AMPHITHERE" | "HYDRA" | "COCKATRICE" | "SEA_SERPENT"}
+ */
+function rollCurse() {
+    let rand = global.UTILS.weightedRandom()
+        .add("AMPHITHERE", 2)
+        .add("HYDRA", 1)
+        .add("COCKATRICE", 2)
+        .add("SEA_SERPENT", 1);
+    return rand.getItem();
+}
+
+/**
+ * @param {$Player_} player
+ * @param {$LivingEntity_} matingDragon
+ * @returns {$Entity_}
+ */
+function bornChild(player, matingDragon) {
+    if (player.hasEffect("kubejs:prion_curse")) {
+        let curse = rollCurse();
+        /**
+         * @type {$Entity_}
+         */ let child;
+        switch (curse) {
+            case "AMPHITHERE":
+                child = player.level.createEntity("iceandfire:amphithere");
+                break;
+            case "COCKATRICE":
+                child = player.level.createEntity("iceandfire:cockatrice");
+
+                break;
+            case "HYDRA":
+                child = player.level.createEntity("iceandfire:hydra");
+                break;
+            case "SEA_SERPENT":
+                child = player.level.createEntity("iceandfire:sea_serpent");
+                break;
+        }
+        let childTag = new $CompoundTag();
+        childTag.putString("Age", 0);
+
+        child.mergeNbt(childTag);
+
+        if (child instanceof $TamableAnimal) {
+            child.tame(player);
+        }
+        return child;
+    }
+    let variant = matingDragon.nbt.getString("Variant");
+    let eggTag = new $CompoundTag();
+    eggTag.putString("Color", variant);
+
+    let egg = player.level.createEntity("iceandfire:dragon_egg");
+    egg.mergeNbt(eggTag);
+    return egg;
+}
+
 PlayerEvents.tick((event) => {
     if (event.player.tickCount % 20 != 0) return;
     // playerTick_Sponge(event);
@@ -92,10 +145,15 @@ ItemEvents.foodEaten((event) => {
 
     if (item.hasTag("kubejs:dragon_reproduction_item")) {
         if (!global.UTILS.isDragon(player)) return;
-        //console.log(dragonGrowth(player));
         if (global.UTILS.dragonGrowth(player) < 40) return;
         player.potionEffects.add("kubejs:reproduction_frenzy", 600);
         player.stages.add("quest/wait_what");
+        return;
+    }
+
+    if (item.hasTag("kubejs:dragon_flesh")) {
+        if (!global.UTILS.isDragon(player)) return;
+        player.potionEffects.add("kubejs:prion_curse", 6000);
         return;
     }
 });
