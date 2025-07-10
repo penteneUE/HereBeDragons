@@ -88,7 +88,6 @@ journeymap/server/
 # 屏蔽inventory profile next
 !config/inventoryprofilesnext/
 
-config/inventoryprofilesnext/inventoryprofiles.json
 config/inventoryprofilesnext/integrationHints/
 
 TrashSlotSaveState.json
