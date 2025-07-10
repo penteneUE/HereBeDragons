@@ -1,5 +1,5 @@
 Name:
-Version:0.1.1
+Version:
 
 # 是否打包正式版 PCL，以便没有启动器的玩家安装整合包。
 IncludeLauncher:True
