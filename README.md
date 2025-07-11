@@ -41,6 +41,7 @@
 ## 下载
 
 Github Release: [点此链接进入Releases后，选择最新版本，选择下方Assets展开，选择（通常是）第一项的HereBeDragons...zip。](https://github.com/JesterRomut/HereBeDragons/releases/latest)
+夸克网盘（推荐）：https://pan.quark.cn/s/bfe456656b1c
 
 - 如果电脑配置不高，需要删除或禁用[遥远地平线 (Distant Horizon)](mods/DistantHorizons-neoforge-fabric-2.3.2-b-1.21.1.jar)模组。
 - 如果有晕3D症状，需要删除或禁用[相机大改 (Camera Overhaul)](mods/CameraOverhaul-v2.0.4-neoforge+mc[1.21.0-1.21.1].jar)模组。
