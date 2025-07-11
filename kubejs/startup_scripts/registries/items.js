@@ -1,3 +1,7 @@
+let $GrowthItem = Java.loadClass(
+    "by.dragonsurvivalteam.dragonsurvival.common.codecs.GrowthItem"
+);
+
 StartupEvents.registry("item", (event) => {
     event
         .create("felyne_recall")
@@ -41,4 +45,21 @@ StartupEvents.registry("item", (event) => {
         .jukeboxPlayable("kubejs:music.scrybe_of_magicks", true)
         .maxStackSize(1)
         .fireResistant(true);
+
+    event
+        .create("kubejs:cave_dragon_heart")
+        .texture("kubejs:item/cave_dragon_heart")
+        .tag("kubejs:oldgen_dragon_hearts");
+    event
+        .create("kubejs:forest_dragon_heart")
+        .texture("kubejs:item/forest_dragon_heart")
+        .tag("kubejs:oldgen_dragon_hearts");
+    event
+        .create("kubejs:sea_dragon_heart")
+        .texture("kubejs:item/sea_dragon_heart")
+        .tag("kubejs:oldgen_dragon_hearts");
+
+    // $GrowthItem.create(12000, caveHeart.get());
+    // $GrowthItem.create(12000, "kubejs:forest_dragon_heart");
+    // $GrowthItem.create(12000, "kubejs:sea_dragon_heart");
 });

@@ -14,6 +14,7 @@
     "kubejs.tooltips.dragon_taming_items.1": "新时代的龙没有自我意识，它们听从棍棒、号角与长笛的指挥。",
     "kubejs.tooltips.dragon_armors.1": "由于解剖结构的差异，你无法穿上它们。",
     "kubejs.tooltips.dragon_flesh.1": "等等，不要……",
+    "kubejs.tooltips.oldgen_dragon_hearts.1": "被人类猎人杀死时掉落。虽然看上去像血肉，但其实是矿石构成的。",
 
     "school.kubejs.dragon": "言灵",
 
@@ -44,6 +45,10 @@
     "kubejs.dimensiontravel.failed.the_end": "在没有彻底占领这里之前，就这么进去的话，你总觉得不放心。毕竟，那很可能是个有去无回的地方。",
 
     "item.kubejs.felyne_recall": "猫车",
+
+    "item.kubejs.cave_dragon_heart": "洞穴龙心脏",
+    "item.kubejs.forest_dragon_heart": "森林龙心脏",
+    "item.kubejs.sea_dragon_heart": "海洋龙心脏",
 
     "item.kubejs.paper_dragon_fragment": "失活的纸龙",
     "kubejs.tooltips.paper_dragon_fragment.1": "它再也不会动了……",

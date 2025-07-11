@@ -71,7 +71,7 @@
 	#    Combining selectors - Any number of selectors can be combined by separating them with a plus sign.  Examples: "minecraft:diamond_sword+&enchantments", "minecraft:stick+~!common+&damage>100"
 	[client.definitions]
 		level0_entries = ["!epic", "dragonsurvival:elder_dragon_heart"]
-		level1_entries = ["!rare", "dragonsurvival:heart_element", "dragonsurvival:weak_dragon_heart", "$kubejs:dragon_summoning_crystals","$kubejs:dragon_taming_items"]
+		level1_entries = ["!rare", "dragonsurvival:heart_element", "dragonsurvival:weak_dragon_heart", "$kubejs:dragon_summoning_crystals","$kubejs:dragon_taming_items","$kubejs:oldgen_dragon_hearts"]
 		level2_entries = ["!uncommon", "dragonsurvival:elder_dragon_dust", "dragonsurvival:elder_dragon_bone", "$kubejs:dragon_flesh"]
 		level3_entries = ["$dragonsurvival:cave_dragon_food"]
 		level4_entries = ["$dragonsurvival:sea_dragon_food", "kubejs:dry_sponge", "kubejs:wet_sponge"]

@@ -35,6 +35,10 @@ ItemEvents.modifyTooltips((event) => {
         Text.gray({ translate: "kubejs.tooltips.dragon_flesh.1" }),
     ]);
 
+    event.add("#kubejs:oldgen_dragon_hearts", [
+        Text.gray({ translate: "kubejs.tooltips.oldgen_dragon_hearts.1" }),
+    ]);
+
     // Add tooltip to all of these items
     event.add("kubejs:dragon_flag", [
         Text.gray({ translate: "kubejs.tooltips.dragon_flag.1" }),

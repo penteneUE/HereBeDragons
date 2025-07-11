@@ -16,7 +16,6 @@ ServerEvents.recipes((event) => {
         ["#minecraft:logs", "dragonsurvival:elder_dragon_dust"]
     );
 
-    
     event.remove({
         output: "dragonsurvival:weak_dragon_heart",
         mod: "dragonsurvival",
@@ -39,9 +38,40 @@ ServerEvents.recipes((event) => {
 
     event.shapeless(
         Item.of("dragonsurvival:weak_dragon_heart", 2), // arg 1: output
-        [
-            "dragonsurvival:elder_dragon_heart",
-        ]
+        ["dragonsurvival:elder_dragon_heart"]
+    );
+
+    event.smelting(
+        "2x dragonsurvival:heart_element" /* 输出物品 */,
+        "kubejs:cave_dragon_heart" /* 输入物品 */,
+        10
+    );
+    event.blasting(
+        "2x dragonsurvival:heart_element" /* 输出物品 */,
+        "kubejs:cave_dragon_heart" /* 输入物品 */,
+        10
+    );
+
+    event.smelting(
+        "2x dragonsurvival:heart_element" /* 输出物品 */,
+        "kubejs:forest_dragon_heart" /* 输入物品 */,
+        10
+    );
+    event.blasting(
+        "2x dragonsurvival:heart_element" /* 输出物品 */,
+        "kubejs:forest_dragon_heart" /* 输入物品 */,
+        10
+    );
+
+    event.smelting(
+        "2x dragonsurvival:heart_element" /* 输出物品 */,
+        "kubejs:sea_dragon_heart" /* 输入物品 */,
+        10
+    );
+    event.blasting(
+        "2x dragonsurvival:heart_element" /* 输出物品 */,
+        "kubejs:sea_dragon_heart" /* 输入物品 */,
+        10
     );
 
     event
