@@ -152,8 +152,7 @@ ServerEvents.recipes((event) => {
     event.shaped(
         Item.of("kubejs:fire_dragon_stew", 1),
         [
-            "   ", // 空气测试
-            "ABC",
+            "ABC", //不加空行看看
             " D ",
         ],
         {
@@ -167,8 +166,7 @@ ServerEvents.recipes((event) => {
     event.shaped(
         Item.of("kubejs:ice_dragon_stew", 1),
         [
-            "   ", // 空气测试
-            "ABC",
+            "ABC", //不加空行看看
             " D ",
         ],
         {
@@ -182,8 +180,7 @@ ServerEvents.recipes((event) => {
     event.shaped(
         Item.of("kubejs:lightning_dragon_stew", 1),
         [
-            "   ", // 空气测试
-            "ABC",
+            "ABC", //不加空行看看
             " D ",
         ],
         {
