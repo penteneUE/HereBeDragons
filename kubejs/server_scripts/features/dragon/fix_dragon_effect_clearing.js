@@ -6,6 +6,7 @@ const effectsToPreserveWithMilk = [
     "dragonsurvival:forest_magic",
     "dragonsurvival:hunter",
     "dragonsurvival:sea_peace",
+    "kubejs:reproduction_frenzy", // 繁衍狂热
 ];
 NativeEvents.onEvent(
     "net.neoforged.neoforge.event.entity.living.MobEffectEvent$Applicable",
