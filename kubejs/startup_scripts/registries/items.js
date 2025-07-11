@@ -63,21 +63,21 @@ StartupEvents.registry("item", (event) => {
         .create("kubejs:fire_dragon_stew")
         .tag("kubejs:dragon_stews")
         .food((food) => {
-            food.alwaysEdible(true).nutrition(24).saturation(32);
+            food.nutrition(24).saturation(32);
         });
 
     event
         .create("kubejs:ice_dragon_stew")
         .tag("kubejs:dragon_stews")
         .food((food) => {
-            food.alwaysEdible(true).nutrition(24).saturation(32);
+            food.nutrition(24).saturation(32);
         });
 
     event
         .create("kubejs:lightning_dragon_stew")
         .tag("kubejs:dragon_stews")
         .food((food) => {
-            food.alwaysEdible(true).nutrition(24).saturation(32);
+            food.nutrition(24).saturation(32);
         });
 
     // $GrowthItem.create(12000, caveHeart.get());

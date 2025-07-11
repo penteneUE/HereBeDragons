@@ -8,7 +8,7 @@ function playerTick_RepFrenzy(event) {
     const REPRODUCTION_FRENZY = "kubejs:reproduction_frenzy";
     if (!player.hasEffect(REPRODUCTION_FRENZY)) return;
 
-    let superFrenzy = player.getEffect(REPRODUCTION_FRENZY).amplifier > 1;
+    let superFrenzy = player.getEffect(REPRODUCTION_FRENZY).amplifier > 0;
 
     const { boundingBox } = player;
     //spawnParticles(ParticleOptions options, boolean overrideLimiter, double x, double y, double z, double vx, double vy, double vz, int count, double speed)
@@ -53,7 +53,7 @@ function playerTick_RepFrenzy(event) {
     let inLove = matingDragon.nbt.getInt("InLove");
     if (inLove == 0) return;
     //console.log(inLove);
-    if (player.getRandom().nextInt(100) < 90) return;
+    if (player.getRandom().nextInt(100) < 80) return;
 
     let male = matingDragon.nbt.getBoolean("Gender");
 
@@ -92,10 +92,10 @@ function playerTick_RepFrenzy(event) {
  */
 function rollCurse() {
     let rand = global.UTILS.weightedRandom()
-        .add("AMPHITHERE", 2)
+        .add("AMPHITHERE", 4)
         .add("HYDRA", 1)
-        .add("COCKATRICE", 2)
-        .add("SEA_SERPENT", 1);
+        .add("COCKATRICE", 4)
+        .add("SEA_SERPENT", 2);
     return rand.getItem();
 }
 
@@ -126,7 +126,7 @@ function bornChild(player, matingDragon) {
                 break;
         }
         let childTag = new $CompoundTag();
-        childTag.putInt("Age", 0);
+        childTag.putInt("Age", -23470);
 
         child.mergeNbt(childTag);
 
@@ -177,7 +177,7 @@ ItemEvents.foodEaten((event) => {
         player.potionEffects.add("kubejs:prion_curse", 12000);
 
         if (global.UTILS.dragonGrowth(player) < 40) return;
-        player.potionEffects.add("kubejs:reproduction_frenzy", 6000, 2);
+        player.potionEffects.add("kubejs:reproduction_frenzy", 6000, 1);
         player.stages.add("quest/wait_what");
         return;
     }
