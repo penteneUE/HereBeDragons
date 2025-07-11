@@ -17,7 +17,9 @@ NativeEvents.onEvent(
             "net.neoforged.neoforge.common.EffectCures"
         );
 
-        const { effectInstance } = event;
+        const { effectInstance, entity } = event;
+        if (!entity.isPlayer()) return;
+        if (!isDragon(entity)) return;
         if (!effectsToPreserveWithMilk.some((id) => effectInstance.is(id)))
             return;
         effectInstance.cures.remove($EffectCures.MILK);

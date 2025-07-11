@@ -1,6 +1,6 @@
 EntityEvents.beforeHurt("minecraft:player", (event) => {
     let { player, source } = event;
-    if (!global.UTILS.isDragon(player)) return;
+    if (!isDragon(player)) return;
 
     //console.log(source.getType());
     let type = source.getType();

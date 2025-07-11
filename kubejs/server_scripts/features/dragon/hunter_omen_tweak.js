@@ -8,6 +8,7 @@ const commonVillageMob = {
 
 EntityEvents.afterHurt((event) => {
     if (!event.source.player) return;
+    if (!event.source.actual.isPlayer()) return;
 
     const {
         source: { player },

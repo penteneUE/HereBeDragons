@@ -80,6 +80,20 @@ StartupEvents.registry("item", (event) => {
             food.nutrition(24).saturation(32);
         });
 
+    event
+        .create("kubejs:gene_splicer")
+        .tag("kubejs:dragon_taming_items")
+        .useAnimation("bow")
+        .useDuration((itemStack) => 10)
+        .use((level, player, hand) => {
+            return true;
+        })
+        .finishUsing((itemStack, level, entity) => {
+            if (level.isClientSide()) return itemStack;
+            return global.MISC.geneSplicerUsed(itemStack, level, entity);
+        })
+        .fireResistant(true);
+
     // $GrowthItem.create(12000, caveHeart.get());
     // $GrowthItem.create(12000, "kubejs:forest_dragon_heart");
     // $GrowthItem.create(12000, "kubejs:sea_dragon_heart");

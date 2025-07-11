@@ -54,7 +54,7 @@ EntityEvents.death("minecraft:player", (event) => {
     } = event;
     //console.log(111);
     if (!actual) return;
-    if (!global.UTILS.isDragon(player)) return;
+    if (!isDragon(player)) return;
     //console.log(actual);
     if (actual.isPlayer()) {
         if (global.UTILS.isDragon(actual)) return;

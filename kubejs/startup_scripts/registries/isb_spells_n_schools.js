@@ -50,7 +50,7 @@ StartupEvents.registry("irons_spellbooks:spells", (event) => {
         .setAllowLooting(false) // Setting this to false will disallow looting the spell from mobs or chests
         .needsLearning(false) // Usually this one is used for Eldritch spells
         .canBeCraftedBy((player) => {
-            return global.UTILS.isDragon(player);
+            return isDragon(player);
         })
         .setUniqueInfo((spellLevel, caster) => {
             let growth = -1;
@@ -93,7 +93,7 @@ StartupEvents.registry("irons_spellbooks:spells", (event) => {
         .setAllowLooting(false) // Setting this to false will disallow looting the spell from mobs or chests
         .needsLearning(false) // Usually this one is used for Eldritch spells
         .canBeCraftedBy((player) => {
-            return global.UTILS.isDragon(player);
+            return isDragon(player);
         })
         .setUniqueInfo((spellLevel, caster) => {
             try {

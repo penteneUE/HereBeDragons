@@ -39,12 +39,7 @@ function playerTick_RepFrenzy(event) {
     let matingDragon = null;
     event.level.getEntitiesWithin(oAABB).forEach((entity) => {
         if (matingDragon) return;
-        if (
-            entity.type == "iceandfire:ice_dragon" ||
-            entity.type == "iceandfire:fire_dragon" ||
-            entity.type == "iceandfire:lightning_dragon"
-        )
-            matingDragon = entity;
+        if (isIAFDragon(entity)) matingDragon = entity;
     });
     //console.log(matingDragon);
 
@@ -156,7 +151,7 @@ ItemEvents.foodEaten((event) => {
     if (!player) return;
 
     if (item.hasTag("kubejs:dragon_reproduction_item")) {
-        if (!global.UTILS.isDragon(player)) return;
+        if (!isDragon(player)) return;
         if (global.UTILS.dragonGrowth(player) < 40) return;
         player.potionEffects.add("kubejs:reproduction_frenzy", 600);
         player.stages.add("quest/wait_what");
@@ -167,13 +162,13 @@ ItemEvents.foodEaten((event) => {
         item.hasTag("kubejs:dragon_flesh") ||
         item.hasTag("kubejs:newgen_dragon_hearts")
     ) {
-        if (!global.UTILS.isDragon(player)) return;
+        if (!isDragon(player)) return;
         player.potionEffects.add("kubejs:prion_curse", 6000);
         return;
     }
 
     if (item.hasTag("kubejs:dragon_stews")) {
-        if (!global.UTILS.isDragon(player)) return;
+        if (!isDragon(player)) return;
         player.potionEffects.add("kubejs:prion_curse", 12000);
 
         if (global.UTILS.dragonGrowth(player) < 40) return;
