@@ -54,5 +54,11 @@ ServerEvents.tags("item", (event) => {
         "iceandfire:lightning_dragon_flesh",
     ]);
 
+    event.add("kubejs:newgen_dragon_hearts", [
+        "iceandfire:fire_dragon_heart",
+        "iceandfire:ice_dragon_heart",
+        "iceandfire:lightning_dragon_heart",
+    ]);
+
     // event.add("kubejs:fire_dragon_related_stuff")
 });

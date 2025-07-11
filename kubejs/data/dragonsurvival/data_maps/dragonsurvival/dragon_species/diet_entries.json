@@ -6,6 +6,7 @@
                 {
                     "items": "iceandfire:ambrosia",
                     "properties": {
+                        "can_always_eat": true,
                         "nutrition": 2,
                         "saturation": 4.0
                     }
@@ -20,6 +21,7 @@
                 {
                     "items": "iceandfire:fire_stew",
                     "properties": {
+                        "can_always_eat": true,
                         "nutrition": 4,
                         "saturation": 4
                     }
@@ -27,15 +29,33 @@
                 {
                     "items": "minecraft:enchanted_golden_apple",
                     "properties": {
+                        "can_always_eat": true,
                         "nutrition": 4,
                         "saturation": 4
                     }
                 },
                 {
-                    "items": "iceandfire:fire_dragon_flesh",
+                    "items": "#kubejs:dragon_flesh",
                     "properties": {
+                        "can_always_eat": true,
                         "nutrition": 8,
                         "saturation": 8
+                    }
+                },
+                {
+                    "items": "#kubejs:newgen_dragon_hearts",
+                    "properties": {
+                        "can_always_eat": true,
+                        "nutrition": 10,
+                        "saturation": 12
+                    }
+                },
+                {
+                    "items": "#kubejs:dragon_stews",
+                    "properties": {
+                        "can_always_eat": true,
+                        "nutrition": 16,
+                        "saturation": 24
                     }
                 }
             ]
@@ -46,6 +66,7 @@
                 {
                     "items": "iceandfire:ambrosia",
                     "properties": {
+                        "can_always_eat": true,
                         "nutrition": 2,
                         "saturation": 4.0
                     }
@@ -60,6 +81,7 @@
                 {
                     "items": "iceandfire:lightning_stew",
                     "properties": {
+                        "can_always_eat": true,
                         "nutrition": 4,
                         "saturation": 4
                     }
@@ -81,6 +103,7 @@
                 {
                     "items": "minecraft:golden_apple",
                     "properties": {
+                        "can_always_eat": true,
                         "nutrition": 4,
                         "saturation": 2
                     }
@@ -95,6 +118,7 @@
                 {
                     "items": "minecraft:enchanted_golden_apple",
                     "properties": {
+                        "can_always_eat": true,
                         "nutrition": 4,
                         "saturation": 4
                     }
@@ -115,10 +139,27 @@
                     }
                 },
                 {
-                    "items": "iceandfire:lightning_dragon_flesh",
+                    "items": "#kubejs:dragon_flesh",
                     "properties": {
+                        "can_always_eat": true,
                         "nutrition": 8,
                         "saturation": 8
+                    }
+                },
+                {
+                    "items": "#kubejs:newgen_dragon_hearts",
+                    "properties": {
+                        "can_always_eat": true,
+                        "nutrition": 10,
+                        "saturation": 12
+                    }
+                },
+                {
+                    "items": "#kubejs:dragon_stews",
+                    "properties": {
+                        "can_always_eat": true,
+                        "nutrition": 16,
+                        "saturation": 24
                     }
                 }
             ]
@@ -129,6 +170,7 @@
                 {
                     "items": "iceandfire:ambrosia",
                     "properties": {
+                        "can_always_eat": true,
                         "nutrition": 2,
                         "saturation": 4.0
                     }
@@ -143,6 +185,7 @@
                 {
                     "items": "iceandfire:frost_stew",
                     "properties": {
+                        "can_always_eat": true,
                         "nutrition": 4,
                         "saturation": 4
                     }
@@ -150,15 +193,33 @@
                 {
                     "items": "minecraft:enchanted_golden_apple",
                     "properties": {
+                        "can_always_eat": true,
                         "nutrition": 4,
                         "saturation": 4
                     }
                 },
                 {
-                    "items": "iceandfire:ice_dragon_flesh",
+                    "items": "#kubejs:dragon_flesh",
                     "properties": {
+                        "can_always_eat": true,
                         "nutrition": 8,
                         "saturation": 8
+                    }
+                },
+                {
+                    "items": "#kubejs:newgen_dragon_hearts",
+                    "properties": {
+                        "can_always_eat": true,
+                        "nutrition": 10,
+                        "saturation": 12
+                    }
+                },
+                {
+                    "items": "#kubejs:dragon_stews",
+                    "properties": {
+                        "can_always_eat": true,
+                        "nutrition": 16,
+                        "saturation": 24
                     }
                 }
             ]

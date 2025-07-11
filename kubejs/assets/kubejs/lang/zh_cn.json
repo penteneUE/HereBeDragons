@@ -15,6 +15,8 @@
     "kubejs.tooltips.dragon_armors.1": "由于解剖结构的差异，你无法穿上它们。",
     "kubejs.tooltips.dragon_flesh.1": "等等，不要……",
     "kubejs.tooltips.oldgen_dragon_hearts.1": "被人类猎人杀死时掉落。虽然看上去像血肉，但其实是矿石构成的。",
+    "kubejs.tooltips.dragon_stews.comment": "“如何烧烤一条火龙？”",
+    "kubejs.tooltips.dragon_stews.1": "在致幻植物汤中加入龙血、龙心、龙肉得到。服用后可以一直繁育。",
 
     "school.kubejs.dragon": "言灵",
 
@@ -49,6 +51,10 @@
     "item.kubejs.cave_dragon_heart": "洞穴龙心脏",
     "item.kubejs.forest_dragon_heart": "森林龙心脏",
     "item.kubejs.sea_dragon_heart": "海洋龙心脏",
+
+    "item.kubejs.fire_dragon_stew": "炙烤龙心大餐",
+    "item.kubejs.ice_dragon_stew": "盐渍龙心大餐",
+    "item.kubejs.lightning_dragon_stew": "电浆龙心大餐",
 
     "item.kubejs.paper_dragon_fragment": "失活的纸龙",
     "kubejs.tooltips.paper_dragon_fragment.1": "它再也不会动了……",

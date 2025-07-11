@@ -5,7 +5,10 @@
  */
 function playerTick_RepFrenzy(event) {
     const { player } = event;
-    if (!player.hasEffect("kubejs:reproduction_frenzy")) return;
+    const REPRODUCTION_FRENZY = "kubejs:reproduction_frenzy";
+    if (!player.hasEffect(REPRODUCTION_FRENZY)) return;
+
+    let superFrenzy = player.getEffect(REPRODUCTION_FRENZY).amplifier > 1;
 
     const { boundingBox } = player;
     //spawnParticles(ParticleOptions options, boolean overrideLimiter, double x, double y, double z, double vx, double vy, double vz, int count, double speed)
@@ -29,7 +32,7 @@ function playerTick_RepFrenzy(event) {
         }
     }
 
-    let k = 2;
+    let k = 1;
     let oAABB = player.getBoundingBox().inflate(k);
 
     /** @type {$LivingEntity_} */
@@ -67,6 +70,15 @@ function playerTick_RepFrenzy(event) {
         egg.z = matingDragon.z;
     }
     egg.spawn();
+
+    if (!superFrenzy) {
+        let newTag = new $CompoundTag();
+        newTag.putInt("InLove", 0);
+
+        matingDragon.mergeNbt(newTag);
+
+        player.removeEffect(REPRODUCTION_FRENZY);
+    }
 
     event.server.runCommandSilent(
         `/playsound minecraft:entity.chicken.egg player ${player.username.toString()} ${
@@ -114,7 +126,7 @@ function bornChild(player, matingDragon) {
                 break;
         }
         let childTag = new $CompoundTag();
-        childTag.putString("Age", 0);
+        childTag.putInt("Age", 0);
 
         child.mergeNbt(childTag);
 
@@ -151,9 +163,22 @@ ItemEvents.foodEaten((event) => {
         return;
     }
 
-    if (item.hasTag("kubejs:dragon_flesh")) {
+    if (
+        item.hasTag("kubejs:dragon_flesh") ||
+        item.hasTag("kubejs:newgen_dragon_hearts")
+    ) {
         if (!global.UTILS.isDragon(player)) return;
         player.potionEffects.add("kubejs:prion_curse", 6000);
+        return;
+    }
+
+    if (item.hasTag("kubejs:dragon_stews")) {
+        if (!global.UTILS.isDragon(player)) return;
+        player.potionEffects.add("kubejs:prion_curse", 12000);
+
+        if (global.UTILS.dragonGrowth(player) < 40) return;
+        player.potionEffects.add("kubejs:reproduction_frenzy", 6000, 2);
+        player.stages.add("quest/wait_what");
         return;
     }
 });

@@ -35,8 +35,17 @@ ItemEvents.modifyTooltips((event) => {
         Text.gray({ translate: "kubejs.tooltips.dragon_flesh.1" }),
     ]);
 
+    event.add("#kubejs:newgen_dragon_hearts", [
+        Text.gray({ translate: "kubejs.tooltips.dragon_flesh.1" }),
+    ]);
+
     event.add("#kubejs:oldgen_dragon_hearts", [
         Text.gray({ translate: "kubejs.tooltips.oldgen_dragon_hearts.1" }),
+    ]);
+
+    event.add("#kubejs:dragon_stews", [
+        Text.gray({ translate: "kubejs.tooltips.dragon_stews.1" }),
+        Text.darkGray({ translate: "kubejs.tooltips.dragon_stews.comment" }),
     ]);
 
     // Add tooltip to all of these items

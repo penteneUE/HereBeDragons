@@ -113,6 +113,7 @@ ServerEvents.recipes((event) => {
         Item.of("kubejs:dry_sponge", 16), // arg 1: output
         ["minecraft:sponge", "dragonsurvival:elder_dragon_dust"]
     );
+
     // event.shapeless(
     //     Item.of('supplementaries:dragon_banner_pattern', 1), // arg 1: output
     //     [
@@ -145,6 +146,51 @@ ServerEvents.recipes((event) => {
             A: "minecraft:paper",
             B: "kubejs:paper_dragon_fragment", //arg 3: the mapping object
             C: "minecraft:nether_star",
+        }
+    );
+
+    event.shaped(
+        Item.of("kubejs:fire_dragon_stew", 1),
+        [
+            "   ", // 空气测试
+            "ABC",
+            " D ",
+        ],
+        {
+            A: "iceandfire:fire_dragon_flesh",
+            B: "iceandfire:fire_dragon_heart",
+            C: "iceandfire:fire_dragon_blood",
+            D: "iceandfire:fire_stew",
+        }
+    );
+
+    event.shaped(
+        Item.of("kubejs:ice_dragon_stew", 1),
+        [
+            "   ", // 空气测试
+            "ABC",
+            " D ",
+        ],
+        {
+            A: "iceandfire:ice_dragon_flesh",
+            B: "iceandfire:ice_dragon_heart",
+            C: "iceandfire:ice_dragon_blood",
+            D: "iceandfire:frost_stew",
+        }
+    );
+
+    event.shaped(
+        Item.of("kubejs:lightning_dragon_stew", 1),
+        [
+            "   ", // 空气测试
+            "ABC",
+            " D ",
+        ],
+        {
+            A: "iceandfire:lightning_dragon_flesh",
+            B: "iceandfire:lightning_dragon_heart",
+            C: "iceandfire:lightning_dragon_blood",
+            D: "iceandfire:lightning_stew",
         }
     );
 });
