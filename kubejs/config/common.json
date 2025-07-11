@@ -12,5 +12,7 @@
   "remove_slot_limit": false,
   "default_max_stack_size": 0,
   "creative_mode_tab_icon": {},
-  "creative_mode_tab_name": null
+  "creative_mode_tab_name": null,
+  "disableClassFilter": true,
+  "disable_class_filter": true
 }

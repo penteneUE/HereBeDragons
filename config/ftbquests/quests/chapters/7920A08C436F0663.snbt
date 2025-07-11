@@ -37,7 +37,6 @@
 				command: "/whredragonswent conquest failure @p"
 				exclude_from_claim_all: true
 				id: "02E3890CAEF5EDE9"
-				permission_level: 2
 				team_reward: false
 				type: "command"
 			}]
@@ -59,7 +58,6 @@
 				command: "/whredragonswent clear-challenger @p"
 				exclude_from_claim_all: true
 				id: "103C4B2E8E2D398D"
-				permission_level: 2
 				team_reward: false
 				type: "command"
 			}]

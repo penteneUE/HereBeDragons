@@ -56,6 +56,9 @@
     "item.kubejs.ice_dragon_stew": "盐渍龙心大餐",
     "item.kubejs.lightning_dragon_stew": "电浆龙心大餐",
 
+    "item.kubejs.gene_splicer": "基因拼接器",
+    "kubejs.tooltips.gene_splicer.1": "测试1",
+
     "item.kubejs.paper_dragon_fragment": "失活的纸龙",
     "kubejs.tooltips.paper_dragon_fragment.1": "它再也不会动了……",
     "item.kubejs.paper_dragon_egg": "纸扎的龙蛋",

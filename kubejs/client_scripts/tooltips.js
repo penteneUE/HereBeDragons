@@ -86,6 +86,11 @@ ItemEvents.modifyTooltips((event) => {
     event.add("kubejs:paper_dragon_egg", [
         Text.gray({ translate: "kubejs.tooltips.paper_dragon_egg.1" }),
     ]);
+
+    event.add("kubejs:gene_splicer", [
+        Text.gray({ translate: "kubejs.tooltips.gene_splicer.1" }),
+    ]);
+
     // event.
     // event.modify('kubejs:dragon_conquest_trophy', tooltip => {
     //     tooltip.dynamic()

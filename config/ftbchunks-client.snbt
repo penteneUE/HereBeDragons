@@ -133,69 +133,69 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"minecraft:villager": true
-			"irons_spellbooks:priest": true
-			"minecraft:skeleton": true
-			"irons_spellbooks:cursed_armor_stand": true
-			"minecraft:pig": true
-			"aquaculture:gar": false
-			"minecraft:zombified_piglin": true
-			"irons_spellbooks:necromancer": true
-			"iceandfire:cockatrice": true
-			"minecraft:vindicator": true
 			"minecraft:vex": true
+			"aquaculture:catfish": false
 			"minecraft:zombie": true
-			"aquaculture:jellyfish": false
-			"minecraft:iron_golem": true
-			"aquaculture:perch": false
+			"iceandfire:myrmex_worker": true
 			"minecraft:ghast": true
 			"minecraft:dolphin": true
-			"minecraft:cow": true
-			"minecraft:phantom": true
-			"aquaculture:red_grouper": false
-			"minecraft:tropical_fish": false
-			"minecraft:chicken": true
-			"iceandfire:hippogryph": true
-			"minecraft:trader_llama": true
-			"dragonsurvival:hunter_spearman": true
-			"minecraft:pufferfish": false
-			"dragonsurvival:hunter_leader": true
-			"minecraft:wandering_trader": true
-			"aquaculture:atlantic_herring": false
-			"iceandfire:hippocampus": true
-			"minecraft:bee": true
-			"minecraft:zombie_villager": true
-			"minecraft:witch": true
-			"minecraft:strider": true
-			"minecraft:wolf": true
-			"aquaculture:minnow": false
-			"minecraft:rabbit": true
-			"minecraft:axolotl": true
-			"dragonsurvival:hunter_knight": true
-			"minecraft:sheep": true
-			"dragonsurvival:hunter_hound": true
-			"aquaculture:smallmouth_bass": false
-			"iceandfire:myrmex_soldier": true
-			"minecraft:piglin": true
-			"aquaculture:brown_trout": false
-			"minecraft:squid": true
-			"minecraft:turtle": true
-			"iceandfire:myrmex_queen": true
-			"minecraft:spider": true
-			"minecraft:cave_spider": true
-			"minecraft:bat": true
-			"minecraft:glow_squid": true
-			"aquaculture:atlantic_halibut": false
-			"aquaculture:catfish": false
-			"minecraft:cod": false
-			"iceandfire:myrmex_worker": true
-			"aquaculture:muskellunge": false
-			"minecraft:enderman": true
-			"aquaculture:carp": false
-			"minecraft:creeper": true
 			"aquaculture:bluegill": false
+			"minecraft:trader_llama": true
+			"minecraft:wolf": true
+			"iceandfire:hippocampus": true
+			"minecraft:cave_spider": true
+			"minecraft:spider": true
+			"aquaculture:brown_trout": false
+			"minecraft:villager": true
+			"minecraft:pufferfish": false
+			"minecraft:cow": true
+			"minecraft:pig": true
+			"minecraft:creeper": true
+			"minecraft:piglin": true
+			"minecraft:zombie_villager": true
+			"irons_spellbooks:priest": true
+			"minecraft:skeleton": true
+			"minecraft:wandering_trader": true
+			"iceandfire:hippogryph": true
+			"minecraft:glow_squid": true
+			"minecraft:zombified_piglin": true
+			"dragonsurvival:hunter_spearman": true
+			"minecraft:enderman": true
+			"minecraft:cod": false
+			"aquaculture:smallmouth_bass": false
+			"minecraft:strider": true
+			"minecraft:phantom": true
+			"aquaculture:muskellunge": false
+			"dragonsurvival:hunter_hound": true
+			"iceandfire:myrmex_soldier": true
+			"irons_spellbooks:cursed_armor_stand": true
+			"aquaculture:jellyfish": false
+			"aquaculture:perch": false
 			"minecraft:drowned": true
+			"aquaculture:carp": false
+			"irons_spellbooks:necromancer": true
+			"aquaculture:atlantic_herring": false
+			"minecraft:tropical_fish": false
+			"aquaculture:gar": false
+			"minecraft:squid": true
+			"iceandfire:myrmex_queen": true
+			"minecraft:vindicator": true
+			"aquaculture:red_grouper": false
+			"minecraft:bee": true
+			"dragonsurvival:hunter_leader": true
 			"iceandfire:pixie": true
+			"minecraft:axolotl": true
+			"aquaculture:atlantic_halibut": false
+			"aquaculture:minnow": false
+			"dragonsurvival:hunter_knight": true
+			"minecraft:rabbit": true
+			"minecraft:sheep": true
+			"minecraft:bat": true
+			"iceandfire:cockatrice": true
+			"minecraft:witch": true
+			"minecraft:iron_golem": true
+			"minecraft:turtle": true
+			"minecraft:chicken": true
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)

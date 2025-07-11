@@ -1,6 +1,6 @@
-let $GrowthItem = Java.loadClass(
-    "by.dragonsurvivalteam.dragonsurvival.common.codecs.GrowthItem"
-);
+// let $GrowthItem = Java.loadClass(
+//     "by.dragonsurvivalteam.dragonsurvival.common.codecs.GrowthItem"
+// );
 
 StartupEvents.registry("item", (event) => {
     event
@@ -82,7 +82,6 @@ StartupEvents.registry("item", (event) => {
 
     event
         .create("kubejs:gene_splicer")
-        .tag("kubejs:dragon_taming_items")
         .useAnimation("bow")
         .useDuration((itemStack) => 10)
         .use((level, player, hand) => {
@@ -92,7 +91,9 @@ StartupEvents.registry("item", (event) => {
             if (level.isClientSide()) return itemStack;
             return global.MISC.geneSplicerUsed(itemStack, level, entity);
         })
-        .fireResistant(true);
+        .fireResistant(true)
+        .maxStackSize(1)
+        .unstackable();
 
     // $GrowthItem.create(12000, caveHeart.get());
     // $GrowthItem.create(12000, "kubejs:forest_dragon_heart");
