@@ -99,9 +99,9 @@ ItemEvents.modifyTooltips((event) => {
         builder.dynamic("kubejs:dragon_conquest_trophy");
     });
 
-    event.modify("#kubejs:dragon_eggs", (builder) => {
-        builder.dynamic("#kubejs:dragon_eggs");
-    });
+    // event.modify("#kubejs:dragon_eggs", (builder) => {
+    //     builder.dynamic("#kubejs:dragon_eggs");
+    // });
 
     event.modify("iceandfire:dragon_horn", (builder) => {
         builder.dynamic("iceandfire:dragon_horn");
@@ -184,13 +184,13 @@ function showBreedData(event, breedData) {
     );
 }
 
-ItemEvents.dynamicTooltips("#kubejs:dragon_eggs", (event) => {
-    const { item } = event;
+// ItemEvents.dynamicTooltips("#kubejs:dragon_eggs", (event) => {
+//     const { item } = event;
 
-    let breedData = item.getCustomData();
-    showBreedData(event, breedData);
-    // traits.size()
-});
+//     let breedData = item.getCustomData();
+//     showBreedData(event, breedData);
+//     // traits.size()
+// });
 
 ItemEvents.dynamicTooltips("iceandfire:dragon_horn", (event) => {
     const { item } = event;

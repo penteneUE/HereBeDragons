@@ -133,6 +133,7 @@ function bornChild(player, matingDragon) {
     let variant = matingDragon.nbt.getString("Variant");
     let eggTag = new $CompoundTag();
     eggTag.putString("Color", variant);
+    eggTag.putString("OwnerUUID", player.getUuid().toString());
 
     let egg = player.level.createEntity("iceandfire:dragon_egg");
     egg.mergeNbt(eggTag);

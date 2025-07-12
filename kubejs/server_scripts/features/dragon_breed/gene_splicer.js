@@ -34,20 +34,43 @@ function tellBreedData(player, entity, breedData) {
         ]).gray()
     );
 
-    // if (!traits.empty) {
-    //     for (const key in traits) {
-    //         player.tell(key);
-    //         player.tell(
-    //             Text.gold({
-    //                 translate: `enchantment.level.${traits.getInt(key)}`,
-    //             })
-    //         );
-    //         // if (Object.prototype.hasOwnProperty.call(object, key)) {
-    //         //     const element = object[key];
+    if (!traits.empty) {
+        for (const key in traits) {
+            let lvl = traits.getInt(key);
+            let mapEntry = breedTraitMap[key];
+            if (lvl <= 0) {
+                player.tell(
+                    Text.translate("kubejs.breed.info.trait.recessive", [
+                        Text.of({ translate: mapEntry.name }),
+                        Text.of({ translate: mapEntry.desc }),
+                    ])
+                        .hover(Text.of({ translate: mapEntry.fullDesc }))
+                        .darkGray()
+                );
+            } else {
+                let lvlKey = `enchantment.level.${lvl}`;
+                player.tell(
+                    mapEntry.color(
+                        Text.translate("kubejs.breed.info.trait.recessive", [
+                            Text.of({ translate: mapEntry.name }),
+                            Text.of({ translate: lvlKey }),
+                            Text.of({ translate: mapEntry.desc }),
+                        ]).hover(Text.of({ translate: mapEntry.fullDesc }))
+                    )
+                );
+            }
+            // player.tell(key);
+            // player.tell(
+            //     Text.gold({
+            //         translate: `enchantment.level.${traits.getInt(key)}`,
+            //     })
+            // );
+            // if (Object.prototype.hasOwnProperty.call(object, key)) {
+            //     const element = object[key];
 
-    //         // }
-    //     }
-    // }
+            // }
+        }
+    }
 
     player.tell(Text.empty());
 }

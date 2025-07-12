@@ -1,11 +1,29 @@
 {
     "kubejs.breed.info.title": "-- %s 的繁育信息 --",
     "kubejs.breed.info.attributes": "力量: %s | 体质: %s | 敏捷: %s",
+    "kubejs.breed.info.trait.recessive": "(未激活) %s - %s",
+    "kubejs.breed.info.trait.active": "%s %s - %s",
     "kubejs.breed.tooltip.strength": "力量 - %s",
     "kubejs.breed.tooltip.constitution": "体质 - %s",
     "kubejs.breed.tooltip.dexterity": "敏捷 - %s",
     "kubejs.breed.tooltip.traits": "%s 个特性...",
     "kubejs.breed.tooltip.traits.active": "%s 个特性，%s 个活跃特性...",
+
+    "kubejs.breed.traits.tough_claws.name": "硬爪",
+    "kubejs.breed.traits.tough_claws.desc": "爪牙异常地坚硬，能够更好地撕碎东西。",
+    "kubejs.breed.traits.tough_claws.desc.full": "近战伤害提升10/20/40%，不包括龙息等远程伤害。",
+
+    "kubejs.breed.traits.multiscale.name": "多鳞",
+    "kubejs.breed.traits.multiscale.desc": "皮下生长出了一层额外的鳞片，在完好时能抵御更多伤害。",
+    "kubejs.breed.traits.multiscale.desc.full": "生命值全满时，受到伤害减少30/50/70%",
+
+    "kubejs.breed.traits.regenerator.name": "再生力",
+    "kubejs.breed.traits.regenerator.desc": "源于古老祖龙的血脉，血肉在无干扰时可以瞬间快速生长。",
+    "kubejs.breed.traits.regenerator.desc.full": "收入龙吟号角后回复4%/10%/20%生命值。如果玩家得到此特性，在受伤后三秒没受伤害时回复10/20/40%生命。",
+
+    "kubejs.breed.traits.stopouch.name": "大胃袋",
+    "kubejs.breed.traits.stopouch.desc": "拥有一个大胃袋，可以存储一个生物。",
+    "kubejs.breed.traits.stopouch.desc.full": "可以在腹中携带一个小/中/任意生物，先用拴绳拴住目标生物，再右键该个体。如果玩家得到此特性，“饕餮寓言”的存储容量会提升。",
 
     "effect.kubejs.reproduction_frenzy": "繁衍狂热",
     "effect.kubejs.reproduction_frenzy.desc": "等等，什么？！",
