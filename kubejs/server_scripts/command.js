@@ -279,5 +279,47 @@ ServerEvents.commandRegistry((event) => {
                     })
                 )
             )
+            .then(
+                Commands.literal("breed").then(
+                    Commands.literal("random-egg").then(
+                        Commands.argument(
+                            "player",
+                            Arguments.PLAYER.create(event)
+                        ).executes((ctx) => {
+                            let player = ctx.source.server.getPlayer(
+                                Arguments.PLAYER.getResult(ctx, "player")
+                            );
+                            giveRandomEgg(player);
+                            //player.persistentData.putInt("lastDay", -1);
+                            return 1;
+                        })
+                    )
+                )
+            )
     );
 });
+
+/**
+ *
+ * @param {$ServerPlayer_} player
+ */
+function giveRandomEgg(player) {
+    let egg = Item.of("iceandfire:dragonegg_black");
+    egg.setCustomData(randomBreedData(player.random));
+    //player.give(egg);
+    player.block.popItem(egg);
+}
+
+// ItemEvents.rightClicked("stick", (event) => {
+//     let { player } = event;
+//     giveRandomEgg(event.player);
+//     player.tell("111");
+//     let egg = Item.of("iceandfire:dragonegg_black");
+//     player.tell("111");
+//     console.log(randomBreedData(player.random));
+//     egg.setCustomData(randomBreedData(player.random));
+//     player.tell("111");
+//     //player.give(egg);
+//     player.block.popItem(egg);
+//     player.tell("111");
+// });

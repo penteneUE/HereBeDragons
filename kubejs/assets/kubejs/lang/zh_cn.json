@@ -1,4 +1,12 @@
 {
+    "kubejs.breed.info.title": "-- %s 的繁育信息 --",
+    "kubejs.breed.info.attributes": "力量: %s | 体质: %s | 敏捷: %s",
+    "kubejs.breed.tooltip.strength": "力量 - %s",
+    "kubejs.breed.tooltip.constitution": "体质 - %s",
+    "kubejs.breed.tooltip.dexterity": "敏捷 - %s",
+    "kubejs.breed.tooltip.traits": "%s 个特性...",
+    "kubejs.breed.tooltip.traits.active": "%s 个特性，%s 个活跃特性...",
+
     "effect.kubejs.reproduction_frenzy": "繁衍狂热",
     "effect.kubejs.reproduction_frenzy.desc": "等等，什么？！",
     "effect.kubejs.prion_curse": "血脉退变",

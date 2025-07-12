@@ -3,13 +3,16 @@
 //let $ItemEntity = Java.loadClass("net.minecraft.world.entity.item.ItemEntity");
 
 //let $Set = Java.loadClass("java.util.HashSet");
+// STR: Strength;
+// DEX: Dexterity;
+// CON: Constitution;
 /**
  * @type {$HashMap_<$UUID_, {customData: $CompoundTag_}>}
  */
 const placedEggMap = Utils.newMap();
 
 /**
- * @type {$HashMap_<$UUID_, {ownerUUID: $UUID_, live: boolean, customData: $CompoundTag_, block: $BlockContainerJS_}>} 龙蛋UUID对应玩家UUID、存活状态与data
+ * @type {$HashMap_<$UUID_, {live: boolean, customData: $CompoundTag_, block: $BlockContainerJS_, variant: string}>} 龙蛋UUID对应玩家UUID、存活状态与data
  */
 const eggDataMap = Utils.newMap();
 
@@ -30,15 +33,19 @@ BlockEvents.rightClicked((event) => {
 
     let { item } = event;
     if (!item.hasTag("kubejs:dragon_eggs")) return;
-    let testTag = new $CompoundTag();
-    testTag.putString("hello", "world");
-    item.setCustomData(testTag);
+    // let testTag = new $CompoundTag();
+    // testTag.putString("hello", "world");
+    // item.setCustomData(testTag);
     //item.setCustomName("HelloWorld");
     //console.log(item.customData);
+    //console.log(item.id.match(/(?<=iceandfire:dragonegg_)[a-zA-Z]*/gm)[0]);
+    // let tag = new $CompoundTag();
+    // tag.put(BREED_DATA_KEY, item.customData);
     placedEggMap[event.player.uuid] = {
         customData: item.customData,
         live: true,
         block: event.block,
+        //variant: item.id.match(/(?<=iceandfire:dragonegg_)[a-zA-Z]*/gm)[0],
         // ownerUUID:
     };
 });
@@ -56,7 +63,7 @@ function onDragonEggSpawn(event) {
 
     let placedEggData = placedEggMap.getOrDefault(ownerUUID, null);
     if (!placedEggData) return;
-    entity.persistentData.put("breed_data", placedEggData.customData);
+    entity.persistentData.put(BREED_DATA_KEY, placedEggData.customData);
     placedEggMap.remove(ownerUUID);
     //entity.persistentData = placedEggData.customData;
 }
@@ -74,7 +81,7 @@ function onDragonEggSpawn(event) {
 //     // if (!ownerUUID) return;
 //     entity.server.tell("111");
 //     console.log(111);
-//     console.log(entity.persistentData.get("breed_data"));
+//     console.log(entity.persistentData.get(BREED_DATA_KEY));
 //     //entity.persistentData = placedEggData.customData;
 // }
 
@@ -98,7 +105,12 @@ function onDragonSpawn(event) {
 
     if (!egg) return;
 
-    //entity.persistentData.putBoolean("hello_world", true);
+    entity.persistentData.put(
+        BREED_DATA_KEY,
+        egg.persistentData.get(BREED_DATA_KEY)
+    );
+
+    eggDataMap.remove(egg.getUuid().toString());
 }
 
 EntityEvents.spawned("iceandfire:fire_dragon", onDragonSpawn);
@@ -162,19 +174,30 @@ EntityEvents.spawned("minecraft:item", (event) => {
 
     if (!itemEntity.item.hasTag("kubejs:dragon_eggs")) return;
     //console.log(111);
-    /**
-     * @type {{ownerUUID: $UUID_, live: boolean, customData: $CompoundTag_, block: $BlockContainerJS_} | null}
-     */
-    let found = null;
-    eggDataMap.forEach((key, value) => {
-        if (value.live) return;
-        if (!value.block.pos.closerThan(entity.block.pos, 5)) return;
-        if (!itemEntity.item.is(`iceandfire:dragonegg_${value.variant}`))
-            return;
-        found = value;
+    event.server.scheduleInTicks(2, () => {
+        /**
+         * @type {{ownerUUID: $UUID_, live: boolean, customData: $CompoundTag_, block: $BlockContainerJS_} | null}
+         */
+        let found = null;
+        let eggUUID = "";
+        eggDataMap.forEach((key, value) => {
+            if (value.live) return;
+            if (!value.block.pos.closerThan(entity.block.pos, 8)) return;
+            if (!itemEntity.item.is(`iceandfire:dragonegg_${value.variant}`))
+                return;
+            found = value;
+            eggUUID = key;
+        });
+        if (!found) return;
+        //entity.server.tell(found);
+        //console.log(found);
+        itemEntity.item.setCustomData(found.customData.get(BREED_DATA_KEY));
+
+        //console.log(itemEntity.item.getCustomData());
+
+        eggDataMap.remove(eggUUID);
     });
-    if (!found) return;
-    entity.server.tell(found);
+
     // console.log(found.variant);
     // console.log();
     // console.log(entity.block.pos);
@@ -183,20 +206,34 @@ EntityEvents.spawned("minecraft:item", (event) => {
 });
 
 // PlayerEvents.inventoryChanged((event) => {
-//     let { item, player } = event;
+//     let { item, player, entity } = event;
 
 //     if (!item.hasTag("kubejs:dragon_eggs")) return;
-//     entity.server.tell(playerEggIDMap);
-//     entity.server.tell(eggDataMap);
+//     //entity.server.tell(playerEggIDMap);
+//     //entity.server.tell(eggDataMap);
 
 //     //if (!playerEggIDMap.containsKey(player.getUuid().toString())) return;
-//     if (!eggDataMap.containsKey(playerEggIDMap[player.getUuid().toString()]))
-//         return;
+//     // if (!eggDataMap.containsKey(playerEggIDMap[player.getUuid().toString()]))
+//     //     return;
 
+//     /**
+//      * @type {{ownerUUID: $UUID_, live: boolean, customData: $CompoundTag_, block: $BlockContainerJS_} | null}
+//      */
+//     let found = null;
+//     let eggUUID = "";
+//     eggDataMap.forEach((key, value) => {
+//         if (value.live) return;
+//         if (!value.block.pos.closerThan(player.block.pos, 16)) return;
+//         if (!item.is(`iceandfire:dragonegg_${value.variant}`)) return;
+//         found = value;
+//         eggUUID = key;
+//     });
+//     if (!found) return;
+//     //entity.server.tell(found);
+//     console.log(found);
+//     item.setCustomData(found.customData.get(BREED_DATA_KEY));
+//     console.log(item.getCustomData());
+
+//     eggDataMap.remove(eggUUID);
 //     //event.server.tell("111");
-// });
-// EntityEvents.drops((event) => {
-//     let { entity } = event;
-//     entity.server.tell("111");
-//     console.log(entity);
 // });

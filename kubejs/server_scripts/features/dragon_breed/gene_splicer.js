@@ -1,11 +1,86 @@
 /**
  *
+ * @param {number} x0
+ * @param {number} x1
+ * @param {number} y0
+ * @param {number} y1
+ * @param {number} x
+ * @returns
+ */
+function lerp(x0, x1, y0, y1, x) {
+    return y0 + ((y1 - y0) / (x1 - x0)) * (x - x0);
+}
+
+/**
+ *
+ * @param {$Player_} player
+ * @param {$LivingEntity_} entity
+ * @param {DragonBreedData} breedData
+ */
+function tellBreedData(player, entity, breedData) {
+    player.tell(
+        Text.translate("kubejs.breed.info.title", [
+            Text.darkAqua(entity.displayName),
+        ]).gray()
+    );
+
+    let { strength, constitution, dexterity, traits } = breedData;
+
+    player.tell(
+        Text.translate("kubejs.breed.info.attributes", [
+            Text.darkAqua(strength),
+            Text.darkAqua(constitution),
+            Text.darkAqua(dexterity),
+        ]).gray()
+    );
+
+    // if (!traits.empty) {
+    //     for (const key in traits) {
+    //         player.tell(key);
+    //         player.tell(
+    //             Text.gold({
+    //                 translate: `enchantment.level.${traits.getInt(key)}`,
+    //             })
+    //         );
+    //         // if (Object.prototype.hasOwnProperty.call(object, key)) {
+    //         //     const element = object[key];
+
+    //         // }
+    //     }
+    // }
+
+    player.tell(Text.empty());
+}
+
+/**
+ *
  * @param {$Player_} player
  * @param {$LivingEntity_} entity
  */
 function geneSplicerLogic(player, entity) {
-    player.tell(entity.displayName);
-    player.tell(entity.persistentData);
+    //player.tell(entity.displayName);
+    //player.tell(entity.persistentData);
+    /**
+     * @type {DragonBreedData}
+     */
+    let breedData = entity.persistentData.get(BREED_DATA_KEY);
+    if (!breedData) return;
+    breedData = deserializeBreedData(breedData);
+
+    tellBreedData(player, entity, breedData);
+
+    let avgAttr =
+        (breedData.strength + breedData.constitution + breedData.dexterity) / 3;
+    if (avgAttr > 256) avgAttr = 256;
+
+    let commonSound = "minecraft:block.note_block.pling";
+    player.server.runCommandSilent(
+        `/playsound ${commonSound} player ${player.username.toString()} ${
+            player.x
+        } ${player.y} ${player.z} 10 ${lerp(0, 255, 0, 2, avgAttr)}`
+    );
+
+    //player.tell(entity.nbt);
 }
 
 // ItemEvents.entityInteracted((event) => {
