@@ -81,12 +81,13 @@ function tellBreedData(player, entity, breedData) {
  * @param {$LivingEntity_} entity
  */
 function geneSplicerLogic(player, entity) {
+    if (!isIAFDragon(entity)) return;
     //player.tell(entity.displayName);
     //player.tell(entity.persistentData);
     /**
      * @type {DragonBreedData}
      */
-    let breedData = entity.persistentData.get(BREED_DATA_KEY);
+    let breedData = getBreedDataFromDragon(entity);
     if (!breedData) return;
     breedData = deserializeBreedData(breedData);
 
@@ -136,6 +137,21 @@ ItemEvents.rightClicked((event) => {
     if (!reachedEntity) return;
 
     geneSplicerLogic(player, reachedEntity);
+    event.cancel();
+});
+
+ItemEvents.entityInteracted((event) => {
+    const { player, hand, target } = event;
+    if (
+        !(
+            hand == "main_hand" &&
+            player.getMainHandItem().id === "kubejs:gene_splicer"
+        )
+    )
+        return;
+
+    //geneSplicerLogic(player, target);
+    //event.exit();
     event.cancel();
 });
 

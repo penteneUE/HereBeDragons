@@ -264,9 +264,11 @@
 		}
 		{
 			dependencies: ["73BBF0E51641A8EB"]
-			hide_text_until_complete: true
 			icon: {
-				id: "iceandfire:spawn_egg_myrmex_queen"
+				components: {
+					"ftbquests:missing_item": "iceandfire:spawn_egg_myrmex_queen"
+				}
+				id: "ftbquests:missing_item"
 			}
 			id: "7365EF3A1CAED952"
 			rewards: [{
@@ -274,22 +276,12 @@
 				type: "xp"
 				xp: 10
 			}]
-			tasks: [
-				{
-					id: "18A65D8999D32273"
-					item: { count: 1, id: "iceandfire:myrmex_desert_resin" }
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "3EC594E1E7194E5C"
-					item: { count: 1, id: "iceandfire:myrmex_jungle_resin" }
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: 4.0d
-			y: 2.5d
+			tasks: [{
+				id: "7DCB329FCD246397"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["73BBF0E51641A8EB"]

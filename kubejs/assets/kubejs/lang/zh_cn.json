@@ -55,7 +55,7 @@
     "kubejs.spell.taotie_fabel.status.max": "空间已满",
     "kubejs.spell.taotie_fabel.status.free_space": "空间：%s/%s",
 
-    "spell.kubejs.ananta_remanta": "缢王颂",
+    "spell.kubejs.ananta_remanta": "群鸦灿笑",
     "spell.kubejs.ananta_remanta.guide": "强行将选定的生物变为自己的奉龙者。",
     "kubejs.spell.ananta_remanta.uniqueinfo.1": "最高剩余生命值：%s%% （成长加成：%s）",
     "kubejs.spell.ananta_remanta.uniqueinfo.2": "失败率：%s%% （成长扣除：%s）",
@@ -87,6 +87,7 @@
 
     "item.kubejs.gene_holder": "基因容器",
     "kubejs.tooltips.gene_holder.1": "右键一条繁衍狂热中的冰龙、火龙或电龙以收集其繁育信息。",
+    "kubejs.status.gene_holder.not_in_love": "不在繁育期间",
 
     "item.kubejs.paper_dragon_fragment": "失活的纸龙",
     "kubejs.tooltips.paper_dragon_fragment.1": "它再也不会动了……",

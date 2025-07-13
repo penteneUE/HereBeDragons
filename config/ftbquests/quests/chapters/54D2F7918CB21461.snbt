@@ -1036,22 +1036,10 @@
 					type: "item"
 				}
 			]
-			tasks: [
-				{
-					id: "1169F842C04CE47E"
-					item: { components: { "minecraft:custom_data": { gateway: "iceandfire/myrmex_hive_desert" } }, count: 1, id: "kubejs:dragon_conquest_trophy" }
-					match_components: "fuzzy"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "54667A0A4B8761CD"
-					item: { components: { "minecraft:custom_data": { gateway: "iceandfire/myrmex_hive_jungle" } }, count: 1, id: "kubejs:dragon_conquest_trophy" }
-					match_components: "fuzzy"
-					optional_task: true
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "33FB2E314961EB36"
+				type: "checkmark"
+			}]
 			x: 2.5d
 			y: 4.0d
 		}

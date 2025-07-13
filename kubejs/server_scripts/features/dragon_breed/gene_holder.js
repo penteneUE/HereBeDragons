@@ -1,0 +1,84 @@
+ItemEvents.entityInteracted((event) => {
+    const { player, hand, target } = event;
+    if (
+        !(
+            hand == "main_hand" &&
+            player.getMainHandItem().id === "kubejs:gene_holder"
+        )
+    )
+        return;
+    if (!isIAFDragon(target)) return;
+    if (player.mainHandItem.getCustomData().getString("holding")) return;
+    //if (!(target instanceof $Mob)) return;
+
+    let inLove = target.nbt.getInt("InLove");
+    if (inLove == 0) {
+        player.statusMessage = Text.red({
+            translate: "kubejs.status.gene_holder.not_in_love",
+        });
+
+        event.server.runCommandSilent(
+            `/playsound minecraft:block.note_block.snare player ${player.username.toString()} ${
+                player.x
+            } ${player.y} ${player.z} 10 0.5`
+        );
+        return;
+    }
+    //player.tell(target.displayName);
+
+    let breedData = getBreedDataFromDragon(target);
+    if (!breedData) return;
+
+    let holderDataTag = new $CompoundTag();
+    holderDataTag.put(BREED_DATA_KEY, breedData);
+
+    player.swing("main_hand");
+    switch (target.type) {
+        case "iceandfire:fire_dragon":
+            player.mainHandItem.setCustomModelData(666);
+            holderDataTag.putString("holding", "FIRE");
+            break;
+        case "iceandfire:ice_dragon":
+            player.mainHandItem.setCustomModelData(777);
+            holderDataTag.putString("holding", "ICE");
+            break;
+        case "iceandfire:lightning_dragon":
+            player.mainHandItem.setCustomModelData(888);
+            holderDataTag.putString("holding", "LIGHTNING");
+            break;
+        default:
+            return;
+    }
+
+    player.mainHandItem.setCustomData(holderDataTag);
+
+    let updateDragonTag = new $CompoundTag();
+    updateDragonTag.putInt("InLove", 0);
+    target.mergeNbt(updateDragonTag);
+
+    target.level.spawnParticles(
+        "minecraft:campfire_cosy_smoke",
+        true,
+        target.x + 0.5,
+        target.y + 1.05,
+        target.z + 0.5,
+        0,
+        0.3,
+        0,
+        2,
+        0.1
+    );
+    // /damage 54a49189-e34d-4496-984b-4ba4b2322d21 1 minecraft:sting by Jester_Romut
+
+    event.server.runCommandSilent(
+        `/damage ${target
+            .getUuid()
+            .toString()} 1 minecraft:sting by ${player.username.toString()} from ${player.username.toString()}`
+    );
+
+    event.server.runCommandSilent(
+        `/playsound minecraft:item.honey_bottle.drink player ${player.username.toString()} ${
+            player.x
+        } ${player.y} ${player.z}`
+    );
+});

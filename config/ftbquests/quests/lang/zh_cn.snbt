@@ -88,7 +88,11 @@
 	quest.11A603EE821FCE7A.quest_desc: ["在刷新龙魂的建筑里，可以找到激活的返回主世界的传送门。"]
 	quest.11A603EE821FCE7A.quest_subtitle: "龙的存档位……返回主世界？"
 	quest.11A603EE821FCE7A.title: "龙魂"
-	quest.11AA79B86FA1BF15.quest_desc: ["（传送门召唤出来的恐蚁女王有bug，会把地形搞得一团糟……因此删掉了。）"]
+	quest.11AA79B86FA1BF15.quest_desc: [
+		"最新消息：恐蚁由于BUG成山而不幸被冰火传说社区版删除。将在以后进行重写。"
+		""
+		"此任务的奖励免费提供。"
+	]
 	quest.11AA79B86FA1BF15.quest_subtitle: "连蚂蚁窝都不放过？！"
 	quest.11AA79B86FA1BF15.title: "占领：恐蚁巢穴"
 	quest.11E2340A98F4A0BE.quest_desc: [
@@ -787,6 +791,8 @@
 	]
 	quest.667220165003BC3B.quest_desc: ["不知是幸运还是不幸，据你的观察，这条家伙的行为和先人手记上的描述分毫不差。"]
 	quest.667220165003BC3B.title: "九头蛇"
+	quest.667C340CF868A4BA.quest_desc: ["（将在之后实装）"]
+	quest.667C340CF868A4BA.quest_subtitle: "可以用来刷下龙鳞？"
 	quest.667C340CF868A4BA.title: "考古"
 	quest.67098E355E73EB2C.quest_desc: [
 		"将床与旗帜合成可以得到装饰后的床，支持Mod旗帜图案（比如冰与火）！"
@@ -927,8 +933,11 @@
 	quest.723B1D23AE2C2203.quest_desc: ["这里是烈焰人和凋零骷髅的老窝。烈焰人的烈焰棒是炽焰学派的重要之物，那凋零骷髅呢？"]
 	quest.723B1D23AE2C2203.quest_subtitle: "阴森的架桥"
 	quest.723B1D23AE2C2203.title: "下界要塞"
-	quest.7365EF3A1CAED952.quest_desc: ["不知是幸运还是不幸，据你的观察，这些家伙的行为和先人手记上的描述分毫不差。"]
-	quest.7365EF3A1CAED952.title: "恐蚁"
+	quest.7365EF3A1CAED952.quest_desc: [
+		"恐蚁因BUG成山而不幸被冰火传说社区版暂时删除。"
+		""
+		"以后会进行重写。"
+	]
 	quest.7396BFF63787B5CF.quest_desc: ["先人的手记没有记载这个绿绿的小东西，但你觉得把它记录在这里是可行的。"]
 	quest.7396BFF63787B5CF.title: "哥布林商人"
 	quest.73BBF0E51641A8EB.quest_desc: [
@@ -1072,6 +1081,7 @@
 	task.2DA64836A75052CD.title: "龙的主动技能"
 	task.2FF2B40CD3492F3D.title: "法术：自由探索"
 	task.307998BBA6E21031.title: "木材"
+	task.33FB2E314961EB36.title: "恐蚁被删除了！"
 	task.35DEAD714FD1D813.title: "龙曾在此"
 	task.377E939FF8C6B271.title: "多人 - 与朋友一起玩"
 	task.38298B7AF0996BA1.title: "调试选项"
@@ -1124,5 +1134,6 @@
 	task.7B545A627225A8E4.title: "龙的言灵术"
 	task.7BDA4177A939D658.title: "无尽的巨人挑战"
 	task.7D4B0D6AB1970D4A.title: "饕餮寓言"
+	task.7DCB329FCD246397.title: "恐蚁被删除了！"
 	task.7F2A6D0DBA026AB8.title: "借物表与授权协议"
 }

@@ -22,16 +22,28 @@ let $ArrayList = Java.loadClass("java.util.ArrayList");
  * @returns {$CompoundTag_}
  */
 function getBreedDataFromItem(item) {
-    if (item.is("iceandfire:dragon_horn")) {
-        let comp = item.getComponentMap().get("iceandfire:dragon_horn");
+    switch (item.id) {
+        case "iceandfire:dragon_horn":
+            let comp = item.getComponentMap().get("iceandfire:dragon_horn");
 
-        let breedData = comp
-            .entityData()
-            .get("KubeJSPersistentData")
-            .get(BREED_DATA_KEY);
-        return breedData;
+            let breedData = comp
+                .entityData()
+                .get("KubeJSPersistentData")
+                .get(BREED_DATA_KEY);
+            return breedData;
+        case "kubejs:gene_holder":
+            return item.getCustomData().get(BREED_DATA_KEY);
+        default:
+            return item.getCustomData();
     }
-    return item.getCustomData();
+}
+
+/**
+ * @param {$EntityDragonBase_} dragon
+ * @returns {$CompoundTag_}
+ */
+function getBreedDataFromDragon(dragon) {
+    return dragon.persistentData.get(BREED_DATA_KEY);
 }
 
 /**

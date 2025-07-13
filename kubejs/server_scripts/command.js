@@ -292,15 +292,20 @@ ServerEvents.commandRegistry((event) => {
                                 );
                                 if (
                                     !mainHandItem.hasTag(
-                                        "kubejs:dragon_eggs"
+                                        "kubejs:items_with_breed_data"
                                     ) ||
-                                    !offHandItem.hasTag("kubejs:dragon_eggs")
+                                    !offHandItem.hasTag(
+                                        "kubejs:items_with_breed_data"
+                                    )
                                 ) {
-                                    player.tell("主手和副手必须拿着龙蛋");
+                                    player.tell(
+                                        "主手和副手必须拿着龙蛋、龙号角或基因容器"
+                                    );
                                     return;
                                 }
-                                let parent1 = mainHandItem.getCustomData();
-                                let parent2 = offHandItem.getCustomData();
+                                let parent1 =
+                                    getBreedDataFromItem(mainHandItem);
+                                let parent2 = getBreedDataFromItem(offHandItem);
                                 // console.log(player.mainHandItem);
                                 // console.log(player.offHandItem);
                                 player.tell(

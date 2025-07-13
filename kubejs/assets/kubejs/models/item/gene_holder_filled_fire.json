@@ -1,6 +1,6 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "kubejs:item/gene_holder_filled"
-  }
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "kubejs:item/gene_holder_filled_fire"
+    }
 }

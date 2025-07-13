@@ -137,8 +137,8 @@ const $LivingEvent$LivingTickEvent = Java.loadClass(
 NativeEvents.onEvent($LivingEvent$LivingTickEvent, (event) => {
     let { entity } = event;
 
-    if (entity.level.isClientSide()) return;
     if (entity.type != "iceandfire:dragon_egg") return;
+    if (entity.level.isClientSide()) return;
 
     if (!entity.alive) return;
     //entity.server.tell(eggDataMap);

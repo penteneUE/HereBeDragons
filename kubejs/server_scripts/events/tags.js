@@ -63,6 +63,7 @@ ServerEvents.tags("item", (event) => {
     event.add("kubejs:items_with_breed_data", [
         "#kubejs:dragon_eggs",
         "iceandfire:dragon_horn",
+        "kubejs:gene_holder",
     ]);
 
     // event.add("kubejs:fire_dragon_related_stuff")

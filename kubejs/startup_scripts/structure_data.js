@@ -431,27 +431,28 @@ structureData.put("minecraft:mansion", {
     },
 });
 
-structureData.put("iceandfire:myrmex_hive_desert", {
-    gateway: "kubejs:iceandfire/myrmex_hive_desert",
-    name: "kubejs.recipeinfo.conquest.myrmex_hive_desert",
-    description: "kubejs.recipeinfo.conquest.myrmex_hive_desert.description",
-    product: {
-        //每日结算
-        item: weightedRandom().add("iceandfire:myrmex_desert_resin", 1),
-        count: 3,
-    },
-});
+// 冰与火社区版暂时删除了恐蚁，将在未来重写
+// structureData.put("iceandfire:myrmex_hive_desert", {
+//     gateway: "kubejs:iceandfire/myrmex_hive_desert",
+//     name: "kubejs.recipeinfo.conquest.myrmex_hive_desert",
+//     description: "kubejs.recipeinfo.conquest.myrmex_hive_desert.description",
+//     product: {
+//         //每日结算
+//         item: weightedRandom().add("iceandfire:myrmex_desert_resin", 1),
+//         count: 3,
+//     },
+// });
 
-structureData.put("iceandfire:myrmex_hive_jungle", {
-    gateway: "kubejs:iceandfire/myrmex_hive_jungle",
-    name: "kubejs.recipeinfo.conquest.myrmex_hive_jungle",
-    description: "kubejs.recipeinfo.conquest.myrmex_hive_jungle.description",
-    product: {
-        //每日结算
-        item: weightedRandom().add("iceandfire:myrmex_jungle_resin", 1),
-        count: 3,
-    },
-});
+// structureData.put("iceandfire:myrmex_hive_jungle", {
+//     gateway: "kubejs:iceandfire/myrmex_hive_jungle",
+//     name: "kubejs.recipeinfo.conquest.myrmex_hive_jungle",
+//     description: "kubejs.recipeinfo.conquest.myrmex_hive_jungle.description",
+//     product: {
+//         //每日结算
+//         item: weightedRandom().add("iceandfire:myrmex_jungle_resin", 1),
+//         count: 3,
+//     },
+// });
 
 structureData.put("iceandfire:pixie_village", {
     gateway: "kubejs:iceandfire/pixie_village",
