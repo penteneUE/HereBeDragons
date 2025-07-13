@@ -65,7 +65,7 @@ function playerTick_DragonState(/**@type {$SimplePlayerKubeEvent_}*/ event) {
         }
     }
 
-    const attrTable = new Map();
+    let attrTable = new Map();
 
     if (handler.isDragon()) {
         switch (handler.speciesId()) {

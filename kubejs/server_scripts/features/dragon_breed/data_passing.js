@@ -222,7 +222,10 @@ function onDragonSpawn(event) {
     let { entity } = event;
     if (entity.level.isClientSide()) return;
     if (!isIAFDragon(entity)) return;
-    if (entity.persistentData[BREED_DATA_KEY]) return;
+    if (entity.persistentData[BREED_DATA_KEY]) {
+        updateBreedAttributes(entity, entity.persistentData[BREED_DATA_KEY]);
+        return;
+    }
 
     if (entity.type == "iceandfire:ice_dragon") {
         let data = popFrozenEggData(entity.server, entity);
