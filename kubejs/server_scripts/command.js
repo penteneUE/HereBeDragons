@@ -105,21 +105,6 @@ ServerEvents.commandRegistry((event) => {
                             })
                         )
                     )
-                    // .then(
-                    //     Commands.literal("clear-current").then(
-                    //         Commands.argument(
-                    //             "player",
-                    //             Arguments.PLAYER.create(event)
-                    //         ).executes((ctx) => {
-                    //             //addDragonConquerRecord(player, bbox.minX(), bbox.maxX(), bbox.minY(), bbox.maxY(), bbox.minZ(), bbox.maxZ(), structure_id)
-                    //             let player = ctx.source.server.getPlayer(
-                    //                 Arguments.PLAYER.getResult(ctx, "player")
-                    //             );
-                    //             clearDragonConquerCurrent(player);
-                    //             return 1;
-                    //         })
-                    //     )
-                    // )
                     .then(
                         Commands.literal("clear-structure-type").then(
                             Commands.argument(
@@ -280,21 +265,58 @@ ServerEvents.commandRegistry((event) => {
                 )
             )
             .then(
-                Commands.literal("breed").then(
-                    Commands.literal("random-egg").then(
-                        Commands.argument(
-                            "player",
-                            Arguments.PLAYER.create(event)
-                        ).executes((ctx) => {
-                            let player = ctx.source.server.getPlayer(
-                                Arguments.PLAYER.getResult(ctx, "player")
-                            );
-                            giveRandomEgg(player);
-                            //player.persistentData.putInt("lastDay", -1);
-                            return 1;
-                        })
+                Commands.literal("breed")
+                    .then(
+                        Commands.literal("random-egg").then(
+                            Commands.argument(
+                                "player",
+                                Arguments.PLAYER.create(event)
+                            ).executes((ctx) => {
+                                let player = ctx.source.server.getPlayer(
+                                    Arguments.PLAYER.getResult(ctx, "player")
+                                );
+                                giveRandomEgg(player);
+                                //player.persistentData.putInt("lastDay", -1);
+                                return 1;
+                            })
+                        )
                     )
-                )
+                    .then(
+                        Commands.literal("simulate-breed").then(
+                            Commands.argument(
+                                "player",
+                                Arguments.PLAYER.create(event)
+                            ).executes((ctx) => {
+                                let player = ctx.source.server.getPlayer(
+                                    Arguments.PLAYER.getResult(ctx, "player")
+                                );
+                                if (
+                                    !mainHandItem.hasTag(
+                                        "kubejs:dragon_eggs"
+                                    ) ||
+                                    !offHandItem.hasTag("kubejs:dragon_eggs")
+                                ) {
+                                    player.tell("主手和副手必须拿着龙蛋");
+                                    return;
+                                }
+                                let parent1 = mainHandItem.getCustomData();
+                                let parent2 = offHandItem.getCustomData();
+                                // console.log(player.mainHandItem);
+                                // console.log(player.offHandItem);
+                                player.tell(
+                                    serializeBreedData(
+                                        getChildBreedData(
+                                            player.getRandom(),
+                                            parent1,
+                                            parent2
+                                        )
+                                    )
+                                );
+                                //player.persistentData.putInt("lastDay", -1);
+                                return 1;
+                            })
+                        )
+                    )
             )
     );
 });

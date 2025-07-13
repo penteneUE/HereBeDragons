@@ -95,6 +95,8 @@ StartupEvents.registry("item", (event) => {
         .maxStackSize(1)
         .unstackable();
 
+    event.create("kubejs:gene_holder").maxStackSize(1).unstackable();
+
     // $GrowthItem.create(12000, caveHeart.get());
     // $GrowthItem.create(12000, "kubejs:forest_dragon_heart");
     // $GrowthItem.create(12000, "kubejs:sea_dragon_heart");

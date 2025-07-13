@@ -17,6 +17,24 @@ let $ArrayList = Java.loadClass("java.util.ArrayList");
 //let $List = Java.loadClass("java.util.List");
 
 /**
+ *
+ * @param {ReturnType<Item.of>} item
+ * @returns {$CompoundTag_}
+ */
+function getBreedDataFromItem(item) {
+    if (item.is("iceandfire:dragon_horn")) {
+        let comp = item.getComponentMap().get("iceandfire:dragon_horn");
+
+        let breedData = comp
+            .entityData()
+            .get("KubeJSPersistentData")
+            .get(BREED_DATA_KEY);
+        return breedData;
+    }
+    return item.getCustomData();
+}
+
+/**
  * @param {DragonBreedData} obj
  * @returns {$CompoundTag_}
  */
