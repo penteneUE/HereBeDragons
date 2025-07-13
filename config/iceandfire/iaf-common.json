@@ -1,7 +1,7 @@
 {
   "dragon": {
     "iceandfire.dragon.maxHealth": 400.0,
-    "iceandfire.dragon.eggBornTime": 100,
+    "iceandfire.dragon.eggBornTime": 7200,
     "iceandfire.dragon.maxPathingNodes": 5000,
     "iceandfire.dragon.villagersFear": true,
     "iceandfire.dragon.animalsFear": true,

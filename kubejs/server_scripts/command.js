@@ -305,7 +305,26 @@ ServerEvents.commandRegistry((event) => {
  * @param {$ServerPlayer_} player
  */
 function giveRandomEgg(player) {
-    let egg = Item.of("iceandfire:dragonegg_black");
+    let eggColors = [
+        "red",
+        "green",
+        "bronze",
+        "gray",
+        "sapphire",
+        "white",
+        "blue",
+        "silver",
+        "electric",
+        "amethyst",
+        "copper",
+        "black",
+    ];
+
+    let egg = Item.of(
+        `iceandfire:dragonegg_${
+            eggColors[player.random.nextInt(eggColors.length)]
+        }`
+    );
     egg.setCustomData(randomBreedData(player.random));
     //player.give(egg);
     player.block.popItem(egg);

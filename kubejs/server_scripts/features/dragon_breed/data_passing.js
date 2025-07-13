@@ -67,8 +67,10 @@ BlockEvents.rightClicked((event) => {
     //console.log(item.id.match(/(?<=iceandfire:dragonegg_)[a-zA-Z]*/gm)[0]);
     // let tag = new $CompoundTag();
     // tag.put(BREED_DATA_KEY, item.customData);
+    if (item.getCustomData().empty)
+        item.setCustomData(randomBreedData(event.entity.random));
     placedEggMap[event.player.uuid] = {
-        customData: item.customData,
+        customData: item.getCustomData(),
         live: true,
         block: event.block,
         //variant: item.id.match(/(?<=iceandfire:dragonegg_)[a-zA-Z]*/gm)[0],
@@ -191,14 +193,17 @@ function onDragonSpawn(event) {
         if (e.type == "iceandfire:dragon_egg") egg = e;
     });
 
-    if (!egg) return;
+    if (egg) {
+        entity.persistentData.put(
+            BREED_DATA_KEY,
+            egg.persistentData.get(BREED_DATA_KEY)
+        );
 
-    entity.persistentData.put(
-        BREED_DATA_KEY,
-        egg.persistentData.get(BREED_DATA_KEY)
-    );
+        eggDataMap.remove(egg.getUuid().toString());
+        return;
+    }
 
-    eggDataMap.remove(egg.getUuid().toString());
+    entity.persistentData.put(BREED_DATA_KEY, randomBreedData());
 }
 
 EntityEvents.spawned("iceandfire:fire_dragon", onDragonSpawn);
