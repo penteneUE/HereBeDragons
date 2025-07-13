@@ -290,33 +290,7 @@ ServerEvents.commandRegistry((event) => {
                                 let player = ctx.source.server.getPlayer(
                                     Arguments.PLAYER.getResult(ctx, "player")
                                 );
-                                if (
-                                    !mainHandItem.hasTag(
-                                        "kubejs:items_with_breed_data"
-                                    ) ||
-                                    !offHandItem.hasTag(
-                                        "kubejs:items_with_breed_data"
-                                    )
-                                ) {
-                                    player.tell(
-                                        "主手和副手必须拿着龙蛋、龙号角或基因容器"
-                                    );
-                                    return;
-                                }
-                                let parent1 =
-                                    getBreedDataFromItem(mainHandItem);
-                                let parent2 = getBreedDataFromItem(offHandItem);
-                                // console.log(player.mainHandItem);
-                                // console.log(player.offHandItem);
-                                player.tell(
-                                    serializeBreedData(
-                                        getChildBreedData(
-                                            player.getRandom(),
-                                            parent1,
-                                            parent2
-                                        )
-                                    )
-                                );
+                                simulateBreed(player);
                                 //player.persistentData.putInt("lastDay", -1);
                                 return 1;
                             })
@@ -335,6 +309,30 @@ function giveRandomEgg(player) {
     egg.setCustomData(randomBreedData(player.random));
     //player.give(egg);
     player.block.popItem(egg);
+}
+
+/**
+ *
+ * @param {$ServerPlayer_} player
+ */
+function simulateBreed(player) {
+    let { mainHandItem, offHandItem } = player;
+    if (
+        !mainHandItem.hasTag("kubejs:items_with_breed_data") ||
+        !offHandItem.hasTag("kubejs:items_with_breed_data")
+    ) {
+        player.tell("主手和副手必须拿着龙蛋、龙号角或基因容器");
+        return 1;
+    }
+    let parent1 = getBreedDataFromItem(mainHandItem);
+    let parent2 = getBreedDataFromItem(offHandItem);
+    // console.log(player.mainHandItem);
+    // console.log(player.offHandItem);
+    player.tell(
+        serializeBreedData(
+            getChildBreedData(player.getRandom(), parent1, parent2)
+        )
+    );
 }
 
 // ItemEvents.rightClicked("stick", (event) => {

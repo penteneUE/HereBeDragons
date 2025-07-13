@@ -4,7 +4,10 @@ function clearWorldEnder(player) {
         .removeIf((str) => str.startsWith("quest/world_ender_stage_"));
 }
 
-let scpHeads = global.UTILS.weightedRandom();
+/**
+ * @type {WeightedRandom<string>}
+ */
+let scpHeads = weightedRandom();
 // 035
 scpHeads.add(
     'profile={id:[I;2135143191,-622504004,-1550185850,-329157343],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmE0ZWNiMzRjMGUyY2ViYzg1YmRjYTkxN2YyZDU0NDk2M2Q2MjYwNzA3OTUwMTUyNjY2NWRiM2Q0ZjNjMTAzOSJ9fX0="}]}',

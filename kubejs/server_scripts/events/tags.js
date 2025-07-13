@@ -66,5 +66,12 @@ ServerEvents.tags("item", (event) => {
         "kubejs:gene_holder",
     ]);
 
+    event.add("kubejs:holdable_skulls", [
+        "#minecraft:skulls",
+        "#c:skulls",
+        "#iceandfire:mob_skulls",
+        "#iceandfire:dragon_skulls",
+    ]);
+
     // event.add("kubejs:fire_dragon_related_stuff")
 });

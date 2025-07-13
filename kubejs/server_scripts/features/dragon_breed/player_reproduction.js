@@ -32,6 +32,8 @@ function playerTick_RepFrenzy(event) {
         }
     }
 
+    if (!isDragon(player)) return;
+
     let k = 1;
     let oAABB = player.getBoundingBox().inflate(k);
 
@@ -86,7 +88,7 @@ function playerTick_RepFrenzy(event) {
  * @returns {"AMPHITHERE" | "HYDRA" | "COCKATRICE" | "SEA_SERPENT"}
  */
 function rollCurse() {
-    let rand = global.UTILS.weightedRandom()
+    let rand = weightedRandom()
         .add("AMPHITHERE", 4)
         .add("HYDRA", 1)
         .add("COCKATRICE", 4)
@@ -130,14 +132,66 @@ function bornChild(player, matingDragon) {
         }
         return child;
     }
-    let variant = matingDragon.nbt.getString("Variant");
+    //let variant = matingDragon.nbt.getString("Variant");
     let eggTag = new $CompoundTag();
-    eggTag.putString("Color", variant);
+
+    let handler = $DragonStateProvider.getData(player);
+    let availableVariants = hybridEggVariants(
+        handler.speciesId(),
+        matingDragon.type
+    );
+
+    eggTag.putString(
+        "Color",
+        availableVariants[player.random.nextInt(availableVariants.length)]
+    );
     eggTag.putString("OwnerUUID", player.getUuid().toString());
 
     let egg = player.level.createEntity("iceandfire:dragon_egg");
+    egg.persistentData.put(
+        BREED_DATA_KEY,
+        getBreedDataFromDragon(matingDragon)
+    );
+
     egg.mergeNbt(eggTag);
     return egg;
+}
+
+/**
+ *
+ * @param {"dragonsurvival:forest_dragon" | "dragonsurvival:cave_dragon" | "dragonsurvival:sea_dragon"} dsDragonType
+ * @param {"iceandfire:fire_dragon" | "iceandfire:ice_dragon" | "iceandfire:lightning_dragon"} iafDragonType
+ */
+function hybridEggVariants(dsDragonType, iafDragonType) {
+    switch (dsDragonType) {
+        case "dragonsurvival:forest_dragon":
+            switch (iafDragonType) {
+                case "iceandfire:fire_dragon":
+                    return ["bronze", "green", "copper", "gray"];
+                case "iceandfire:ice_dragon":
+                    return ["silver", "green", "sapphire", "white"];
+                case "iceandfire:lightning_dragon":
+                    return ["black", "green", "bronze", "blue"];
+            }
+        case "dragonsurvival:cave_dragon":
+            switch (iafDragonType) {
+                case "iceandfire:fire_dragon":
+                    return ["red", "bronze", "copper", "gray"];
+                case "iceandfire:ice_dragon":
+                    return ["silver", "sapphire", "copper", "amethyst"];
+                case "iceandfire:lightning_dragon":
+                    return ["amethyst", "copper", "gray", "black"];
+            }
+        case "dragonsurvival:sea_dragon":
+            switch (iafDragonType) {
+                case "iceandfire:fire_dragon":
+                    return ["amethyst", "green", "gray", "silver"];
+                case "iceandfire:ice_dragon":
+                    return ["electric", "white", "blue", "sapphire"];
+                case "iceandfire:lightning_dragon":
+                    return ["electric", "blue", "amethyst", "white"];
+            }
+    }
 }
 
 PlayerEvents.tick((event) => {

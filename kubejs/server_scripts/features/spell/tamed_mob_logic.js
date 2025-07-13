@@ -514,3 +514,18 @@ EntityEvents.beforeHurt((event) => {
         event.cancel();
     }
 });
+
+let $LivingChangeTargetEvent = Java.loadClass(
+    "net.neoforged.neoforge.event.entity.living.LivingChangeTargetEvent"
+);
+
+NativeEvents.onEvent($LivingChangeTargetEvent, (event) => {
+    let { entity } = event;
+
+    if (entity.level.isClientSide()) return;
+    //if (!entity.persistentData.OwnerName) return;
+
+    if (!isPetOf(entity, event.getNewAboutToBeSetTarget())) return;
+
+    event.setCanceled(true);
+});

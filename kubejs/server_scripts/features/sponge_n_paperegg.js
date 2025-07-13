@@ -22,7 +22,10 @@ function playerTick_Sponge(event) {
     );
 }
 
-const dragonEggs = global.UTILS.weightedRandom();
+/**
+ * @type {WeightedRandom<string>}
+ */
+const dragonEggs = weightedRandom();
 dragonEggs.add("iceandfire:dragonegg_amethyst", 1);
 dragonEggs.add("iceandfire:dragonegg_black", 1);
 dragonEggs.add("iceandfire:dragonegg_blue", 1);

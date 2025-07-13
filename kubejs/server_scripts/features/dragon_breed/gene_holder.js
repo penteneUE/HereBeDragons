@@ -33,24 +33,38 @@ ItemEvents.entityInteracted((event) => {
     holderDataTag.put(BREED_DATA_KEY, breedData);
 
     player.swing("main_hand");
+
+    let newItem = Item.of("kubejs:gene_holder");
+
     switch (target.type) {
         case "iceandfire:fire_dragon":
-            player.mainHandItem.setCustomModelData(666);
+            newItem.setCustomModelData(666);
             holderDataTag.putString("holding", "FIRE");
             break;
         case "iceandfire:ice_dragon":
-            player.mainHandItem.setCustomModelData(777);
+            newItem.setCustomModelData(777);
             holderDataTag.putString("holding", "ICE");
             break;
         case "iceandfire:lightning_dragon":
-            player.mainHandItem.setCustomModelData(888);
+            newItem.setCustomModelData(888);
             holderDataTag.putString("holding", "LIGHTNING");
             break;
         default:
             return;
     }
 
-    player.mainHandItem.setCustomData(holderDataTag);
+    newItem.setCustomData(holderDataTag);
+
+    if (target.hasCustomName()) {
+        newItem.setCustomName(
+            Text.translate("item.kubejs.gene_holder.named", [
+                Text.of(target.customName).italic(),
+            ])
+        );
+    }
+
+    player.mainHandItem.shrink(1);
+    player.giveInHand(newItem);
 
     let updateDragonTag = new $CompoundTag();
     updateDragonTag.putInt("InLove", 0);

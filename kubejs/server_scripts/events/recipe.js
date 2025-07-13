@@ -190,4 +190,10 @@ ServerEvents.recipes((event) => {
             D: "iceandfire:lightning_stew",
         }
     );
+
+    event.shaped(Item.of("kubejs:gene_holder"), ["ABA", "ACA", "ABA"], {
+        A: "#minecraft:meat",
+        B: "dragonsurvival:elder_dragon_bone",
+        C: "#kubejs:holdable_skulls",
+    });
 });

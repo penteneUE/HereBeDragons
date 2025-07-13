@@ -44,6 +44,7 @@ function weightedRandom() {
 
     return builder;
 }
+
 global.UTILS.weightedRandom = weightedRandom;
 
 const structureData = Utils.newMap();

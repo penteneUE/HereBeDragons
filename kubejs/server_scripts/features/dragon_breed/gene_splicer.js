@@ -51,7 +51,7 @@ function tellBreedData(player, entity, breedData) {
                 let lvlKey = `enchantment.level.${lvl}`;
                 player.tell(
                     mapEntry.color(
-                        Text.translate("kubejs.breed.info.trait.recessive", [
+                        Text.translate("kubejs.breed.info.trait.active", [
                             Text.of({ translate: mapEntry.name }),
                             Text.of({ translate: lvlKey }),
                             Text.of({ translate: mapEntry.desc }),

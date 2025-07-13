@@ -36,10 +36,13 @@
     "dev.ftb.mods.ftbfiltersystem.client.gui.ItemTagConfigScreen": false,
     "dev.latvian.mods.kubejs.client.KubeJSErrorScreen": false,
     "by.dragonsurvivalteam.dragonsurvival.client.gui.screens.DragonSkinsScreen": false,
-    "by.dragonsurvivalteam.dragonsurvival.client.gui.screens.dragon_editor.DragonEditorScreen": false
+    "by.dragonsurvivalteam.dragonsurvival.client.gui.screens.dragon_editor.DragonEditorScreen": false,
+    "vazkii.patchouli.client.book.gui.GuiBookLanding": false,
+    "vazkii.patchouli.client.book.gui.GuiBookEntry": false
   },
   "hideBackground": {
     "dev.ftb.mods.ftblibrary.ui.ScreenWrapper": true,
-    "org.anti_ad.mc.ipnext.gui.GUIDEEditorScreen": false
+    "org.anti_ad.mc.ipnext.gui.GUIDEEditorScreen": false,
+    "fuzs.easyanvils.client.gui.screens.inventory.NameTagEditScreen": false
   }
 }

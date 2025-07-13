@@ -33,7 +33,7 @@ function rollRewardItems(/**@type {$Player_}*/ player, preferredItem) {
     }
 
     let totalItemCount = 0;
-    let weightedRandom = global.UTILS.weightedRandom();
+    let wRandomList = weightedRandom();
 
     dragonConquerRecords.getAllKeys().forEach((structure_type) => {
         let count =
@@ -57,10 +57,10 @@ function rollRewardItems(/**@type {$Player_}*/ player, preferredItem) {
 
             if (!result.containsKey(item)) {
                 result[item] = 1;
-                weightedRandom.add(item, 1);
+                wRandomList.add(item, 1);
             } else {
                 result[item]++;
-                weightedRandom.items[item]++;
+                wRandomList.items[item]++;
             }
 
             totalItemCount++;
@@ -77,7 +77,7 @@ function rollRewardItems(/**@type {$Player_}*/ player, preferredItem) {
         //     weightedRandom.add()
         // })
         for (let _ = 0; _ < replaceCount; _++) {
-            let itemToRemove = weightedRandom.getItem();
+            let itemToRemove = wRandomList.getItem();
             if (result[itemToRemove] <= 1) {
                 result.remove(itemToRemove);
             } else {

@@ -1,3 +1,5 @@
+let $HashSet = Java.loadClass("java.util.HashSet");
+
 /**
  * @typedef {object} DragonBreedData
  * @property {integer} strength aka. STR
@@ -39,7 +41,7 @@ function getBreedDataFromItem(item) {
 }
 
 /**
- * @param {$EntityDragonBase_} dragon
+ * @param {$EntityDragonBase_ | $EntityDragonEgg_} dragon Dragon or Egg
  * @returns {$CompoundTag_}
  */
 function getBreedDataFromDragon(dragon) {
@@ -125,7 +127,7 @@ function randomPositiveOrNegative(random, num) {
  * @param {$RandomSource_} random
  * @param {number} n1
  * @param {number} n2
- * @returns {number}
+ * @returns {number} 0-256
  */
 function generateChildAttr(random, n1, n2) {
     let pickN1 = random.nextBoolean();
@@ -145,6 +147,56 @@ function generateChildAttr(random, n1, n2) {
 }
 
 /**
+ *
+ * @param {$RandomSource_} random
+ * @param {$CompoundTag_} fatherTraits
+ * @param {$CompoundTag_} motherTraits
+ * @returns {$CompoundTag_}
+ */
+function generateChildTraits(random, fatherTraits, motherTraits) {
+    //let allTraitsSet = traitsA.getAllKeys().addAll(traitsB.getAllKeys());
+    let tag = new $CompoundTag();
+
+    /**
+     * @type {import("java.util.Set").$Set}
+     */
+    let traits = new $HashSet();
+
+    traits.addAll(fatherTraits.getAllKeys());
+    traits.addAll(motherTraits.getAllKeys());
+
+    for (const trait of traits) {
+        let levelF = Utils.parseInt(
+            fatherTraits.contains(trait) ? fatherTraits.getInt(trait) : -1,
+            -1
+        );
+        let levelM = Utils.parseInt(
+            motherTraits.contains(trait) ? motherTraits.getInt(trait) : -1,
+            -1
+        );
+
+        if (levelF > -1 && levelF < 2) {
+            levelF = random.nextBoolean() ? levelF : levelF - 1;
+        }
+        if (levelM > -1 && levelM < 2) {
+            levelM = random.nextBoolean() ? levelM : levelM - 1;
+        }
+        let levelChild =
+            levelF == levelM ? levelF + levelM : Math.max(levelF, levelM);
+
+        if (levelChild > 4) levelChild = 4;
+
+        if (levelChild > -1) {
+            tag.putInt(trait, levelChild);
+        }
+    }
+    // traits.addAll(traitsA.getAllKeys().addAll(traitsB.getAllKeys()));
+    // console.log(traits);
+    // tag.put("aa", traits);
+    return tag;
+}
+
+/**
  * @param {$RandomSource_} random
  * @param {DragonBreedData} male
  * @param {DragonBreedData} female
@@ -159,25 +211,25 @@ function getChildBreedData(random, male, female) {
         strength: Math.floor(str),
         constitution: Math.floor(con),
         dexterity: Math.floor(dex),
-        traits: {},
+        traits: generateChildTraits(random, male.traits, female.traits),
     };
 }
 
-// ItemEvents.rightClicked("iceandfire:dragonegg_black", (event) => {
+// ItemEvents.rightClicked((event) => {
 //     let {
 //         player,
 //         player: { mainHandItem, offHandItem },
 //     } = event;
 
 //     if (
-//         !mainHandItem.hasTag("kubejs:dragon_eggs") ||
-//         !offHandItem.hasTag("kubejs:dragon_eggs")
+//         !mainHandItem.hasTag("kubejs:items_with_breed_data") ||
+//         !offHandItem.hasTag("kubejs:items_with_breed_data")
 //     ) {
-//         player.tell("主手和副手必须拿着龙蛋");
+//         player.tell("主手和副手必须拿着龙蛋、龙号角或基因容器");
 //         return;
 //     }
-//     let parent1 = mainHandItem.getCustomData();
-//     let parent2 = offHandItem.getCustomData();
+//     let parent1 = getBreedDataFromItem(mainHandItem);
+//     let parent2 = getBreedDataFromItem(offHandItem);
 //     // console.log(player.mainHandItem);
 //     // console.log(player.offHandItem);
 //     player.tell(

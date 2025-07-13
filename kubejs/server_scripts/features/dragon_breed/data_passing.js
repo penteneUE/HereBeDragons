@@ -6,6 +6,32 @@
 // STR: Strength;
 // DEX: Dexterity;
 // CON: Constitution;
+
+/**
+ *
+ * @param {string} color
+ */
+function eggColorToDragonType(color) {
+    let col = color.toLowerCase();
+    switch (col) {
+        case "red":
+        case "green":
+        case "bronze":
+        case "gray":
+            return "iceandfire:fire_dragon";
+        case "sapphire":
+        case "white":
+        case "blue":
+        case "silver":
+            return "iceandfire:ice_dragon";
+        case "electric":
+        case "amethyst":
+        case "copper":
+        case "black":
+            return "iceandfire:lightning_dragon";
+    }
+}
+
 /**
  * @type {$HashMap_<$UUID_, {customData: $CompoundTag_}>}
  */
@@ -52,20 +78,81 @@ BlockEvents.rightClicked((event) => {
 
 /**
  *
- * @param {$EntitySpawnedKubeEvent_} event
+ * @param {$EntitySpawnedKubeEvent_ & {entity: $EntityDragonEgg_}} event
  */
 function onDragonEggSpawn(event) {
     let { entity } = event;
     if (entity.level.isClientSide()) return;
+    if (entity.persistentData[BREED_DATA_KEY]) return;
 
+    // let $EntityDragonBase = Java.loadClass(
+    //     "com.iafenvoy.iceandfire.entity.EntityDragonBase"
+    // );
     let ownerUUID = entity.nbt.getString("OwnerUUID");
-    if (!ownerUUID) return;
 
     let placedEggData = placedEggMap.getOrDefault(ownerUUID, null);
-    if (!placedEggData) return;
-    entity.persistentData.put(BREED_DATA_KEY, placedEggData.customData);
-    placedEggMap.remove(ownerUUID);
-    //entity.persistentData = placedEggData.customData;
+    if (placedEggData != null) {
+        entity.persistentData.put(BREED_DATA_KEY, placedEggData.customData);
+        placedEggMap.remove(ownerUUID);
+        return;
+    }
+
+    let oAABB = entity.getBoundingBox().inflate(8);
+
+    /** @type {$EntityDragonBase_ | null} */
+    let father = null;
+
+    /** @type {$EntityDragonBase_ | null} */
+    let mother = null;
+
+    let color = entity.nbt.getString("Color");
+    //console.log(color);
+
+    entity.level.getEntitiesWithin(oAABB).forEach((e) => {
+        //if (!(e instanceof $EntityDragonBase)) return;
+        if (e.type != eggColorToDragonType(color)) return;
+        if (e.nbt.getBoolean("Gender")) {
+            if (!father) father = e;
+        } else {
+            if (!mother) mother = e;
+        }
+    });
+
+    //console.log(father);
+    //console.log(mother);
+
+    if (!father || !mother) {
+        let $Entity$RemovalReason = Java.loadClass(
+            "net.minecraft.world.entity.Entity$RemovalReason"
+        );
+        event.server.tell(
+            "龙蛋繁殖失败 - 无法找到父母！请截图报告开发者，附上此刻情况。"
+        );
+        entity.remove($Entity$RemovalReason.DISCARDED);
+    }
+
+    entity.persistentData.put(
+        BREED_DATA_KEY,
+        getChildBreedData(
+            entity.random,
+            getBreedDataFromDragon(father),
+            getBreedDataFromDragon(mother)
+        )
+    );
+
+    // let eggTag = new $CompoundTag();
+    // eggTag.putString(
+    //     "OwnerUUID",
+    //     mother.nbt.get("Owner") ?? father.nbt.get("Owner")
+    // );
+
+    entity.setOwnerId(
+        mother.nbt.getUUID("Owner") ?? father.nbt.getUUID("Owner")
+    );
+
+    // event.server.scheduleInTicks(1, () => {
+    //     entity.mergeNbt(eggTag);
+    // });
 }
 
 // /**
@@ -93,6 +180,7 @@ function onDragonSpawn(event) {
     let { entity } = event;
     if (entity.level.isClientSide()) return;
     if (!isIAFDragon(entity)) return;
+    if (entity.persistentData[BREED_DATA_KEY]) return;
 
     let oAABB = entity.getBoundingBox().inflate(0, 2, 0);
 
@@ -137,8 +225,8 @@ const $LivingEvent$LivingTickEvent = Java.loadClass(
 NativeEvents.onEvent($LivingEvent$LivingTickEvent, (event) => {
     let { entity } = event;
 
-    if (entity.type != "iceandfire:dragon_egg") return;
     if (entity.level.isClientSide()) return;
+    if (entity.type != "iceandfire:dragon_egg") return;
 
     if (!entity.alive) return;
     //entity.server.tell(eggDataMap);
@@ -204,6 +292,15 @@ EntityEvents.spawned("minecraft:item", (event) => {
     // console.log(found.block.pos == entity.block.pos);
     // console.log();
 });
+
+// const $BabyEntitySpawnEvent = Java.loadClass(
+//     "net.neoforged.neoforge.event.entity.living.BabyEntitySpawnEvent"
+// );
+
+// NativeEvents.onEvent($BabyEntitySpawnEvent, (event) => {
+//     console.log(event.getParentA());
+//     console.log(event.getParentB());
+// });
 
 // PlayerEvents.inventoryChanged((event) => {
 //     let { item, player, entity } = event;
