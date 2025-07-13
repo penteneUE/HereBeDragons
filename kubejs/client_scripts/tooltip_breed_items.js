@@ -3,6 +3,10 @@ ItemEvents.modifyTooltips((event) => {
         builder.dynamic("iceandfire:dragon_horn");
     });
 
+    event.modify("#kubejs:dragon_eggs", (builder) => {
+        builder.dynamic("#kubejs:dragon_eggs");
+    });
+
     event.modify("kubejs:gene_holder", (builder) => {
         builder.dynamic("kubejs:gene_holder");
     });
@@ -70,13 +74,16 @@ function showBreedData(event, breedData) {
     );
 }
 
-// ItemEvents.dynamicTooltips("#kubejs:dragon_eggs", (event) => {
-//     const { item } = event;
+ItemEvents.dynamicTooltips("#kubejs:dragon_eggs", (event) => {
+    const { item } = event;
 
-//     let breedData = item.getCustomData();
-//     showBreedData(event, breedData);
-//     // traits.size()
-// });
+    let breedData = item.getCustomData();
+    if (!breedData || breedData.empty) {
+        event.add(Text.darkRed({ translate: "kubejs.breed.tooltip.empty" }));
+        return;
+    }
+    // showBreedData(event, breedData);
+});
 
 ItemEvents.dynamicTooltips("iceandfire:dragon_horn", (event) => {
     const { item } = event;

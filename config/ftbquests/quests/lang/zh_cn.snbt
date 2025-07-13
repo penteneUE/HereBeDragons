@@ -969,6 +969,7 @@
 	quest.755A36D1D7404B2B.quest_subtitle: "——恶龙竟是我自己。"
 	quest.755A36D1D7404B2B.title: "自我"
 	quest.75E7855E13406190.quest_desc: [""]
+	quest.76C1B861F1C40925.quest_desc: ["当前包括：冰龙龙蛋孵化信息"]
 	quest.79C4B032A9B1F772.quest_desc: [
 		"这是一颗真真切切的、&e与先人手记中描述分毫不差&r的龙蛋。"
 		""
@@ -1064,6 +1065,7 @@
 	task.1BADB32C84B71823.title: "WIP：龙的护甲外观"
 	task.1C31D71C2E7F973F.title: "EMI - 配方查找"
 	task.1DF5CFFB5E7B50BE.title: "魔法装备"
+	task.1F3B5D2673AB3AF3.title: "清除全局信息"
 	task.2123AE028011AFF2.title: "WIP：添加可抓走的公主\\&王子"
 	task.2219B15B63FB50BA.title: "迫近的黑影"
 	task.2267D61C4668E8DD.title: "三种龙之宝库"

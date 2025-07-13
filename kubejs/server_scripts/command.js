@@ -297,6 +297,31 @@ ServerEvents.commandRegistry((event) => {
                         )
                     )
             )
+            .then(
+                Commands.literal("global-data")
+                    .then(
+                        Commands.literal("view").executes((ctx) => {
+                            ctx.source.server.tell(
+                                ctx.source.server.persistentData
+                            );
+                            //player.persistentData.putInt("lastDay", -1);
+                            return 1;
+                        })
+                    )
+                    .then(
+                        Commands.literal("clear").executes((ctx) => {
+                            ctx.source.server.persistentData.remove(
+                                FROZEN_EGG_DATA_KEY
+                            );
+
+                            ctx.source.server.tell(
+                                ctx.source.server.persistentData
+                            );
+                            //player.persistentData.putInt("lastDay", -1);
+                            return 1;
+                        })
+                    )
+            )
     );
 });
 

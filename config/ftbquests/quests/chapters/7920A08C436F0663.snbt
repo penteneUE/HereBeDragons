@@ -68,5 +68,26 @@
 			x: -1.5d
 			y: -0.5d
 		}
+		{
+			can_repeat: true
+			dependencies: ["0B3291EA305685A9"]
+			disable_recipe_mod: true
+			id: "76C1B861F1C40925"
+			optional: true
+			rewards: [{
+				auto: "enabled"
+				command: "/whredragonswent global-data clear"
+				exclude_from_claim_all: true
+				id: "352DDF0D8395B8E2"
+				team_reward: false
+				type: "command"
+			}]
+			tasks: [{
+				id: "1F3B5D2673AB3AF3"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
 	]
 }

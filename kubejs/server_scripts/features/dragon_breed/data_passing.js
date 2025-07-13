@@ -10,6 +10,7 @@
 /**
  *
  * @param {string} color
+ * @returns {"iceandfire:fire_dragon" | "iceandfire:ice_dragon" | "iceandfire:lightning_dragon"}
  */
 function eggColorToDragonType(color) {
     let col = color.toLowerCase();
@@ -33,14 +34,38 @@ function eggColorToDragonType(color) {
 }
 
 /**
+ *
+ * @param {$EntityDragonEgg_} entity
+ */
+function isIceDragonEgg(entity) {
+    return (
+        eggColorToDragonType(entity.getEggType().name()) ==
+        "iceandfire:ice_dragon"
+    );
+}
+
+/**
  * @type {$HashMap_<$UUID_, {customData: $CompoundTag_}>}
+ */
+const eggPlacingMap = Utils.newMap();
+
+/**
+ * @typedef {object} PlacedEggData
+ * @property {boolean} live
+ * @property {$CompoundTag_} customData
+ * @property {$BlockContainerJS_} block
+ * @property {string} variant
+ */
+
+/**
+ * @type {$HashMap_<$UUID_, PlacedEggData>} 龙蛋UUID对应玩家UUID、存活状态与data
  */
 const placedEggMap = Utils.newMap();
 
-/**
- * @type {$HashMap_<$UUID_, {live: boolean, customData: $CompoundTag_, block: $BlockContainerJS_, variant: string}>} 龙蛋UUID对应玩家UUID、存活状态与data
- */
-const eggDataMap = Utils.newMap();
+// /**
+//  * @type {$HashMap_<$UUID_, {live: boolean, customData: $CompoundTag_, block: $BlockContainerJS_, variant: string}>} 龙蛋UUID对应玩家UUID、存活状态与data
+//  */
+// const placedIceEggMap = Utils.newMap();
 
 // /**
 //  * @type {$HashMap_<$UUID_, Set<$UUID_>>} 玩家UUID对应多个龙蛋UUID
@@ -69,7 +94,7 @@ BlockEvents.rightClicked((event) => {
     // tag.put(BREED_DATA_KEY, item.customData);
     if (item.getCustomData().empty)
         item.setCustomData(randomBreedData(event.entity.random));
-    placedEggMap[event.player.uuid] = {
+    eggPlacingMap[event.player.uuid] = {
         customData: item.getCustomData(),
         live: true,
         block: event.block,
@@ -92,11 +117,25 @@ function onDragonEggSpawn(event) {
     // );
     let ownerUUID = entity.nbt.getString("OwnerUUID");
 
-    let placedEggData = placedEggMap.getOrDefault(ownerUUID, null);
+    let placedEggData = eggPlacingMap.getOrDefault(ownerUUID, null);
     if (placedEggData != null) {
         entity.persistentData.put(BREED_DATA_KEY, placedEggData.customData);
-        placedEggMap.remove(ownerUUID);
+        eggPlacingMap.remove(ownerUUID);
         return;
+    }
+
+    if (isIceDragonEgg(entity)) {
+        let data = popFrozenEggData(entity.server, entity);
+        if (data) {
+            entity.persistentData.put(BREED_DATA_KEY, data.get(BREED_DATA_KEY));
+            placedEggMap.putIfAbsent(entity.getUuid().toString(), {
+                live: true,
+                customData: entity.persistentData,
+                block: entity.block,
+                variant: entity.nbt.getString("Color"),
+            });
+            return;
+        }
     }
 
     let oAABB = entity.getBoundingBox().inflate(8);
@@ -131,6 +170,7 @@ function onDragonEggSpawn(event) {
             "龙蛋繁殖失败 - 无法找到父母！请截图报告开发者，附上此刻情况。"
         );
         entity.remove($Entity$RemovalReason.DISCARDED);
+        return;
     }
 
     entity.persistentData.put(
@@ -176,7 +216,7 @@ function onDragonEggSpawn(event) {
 
 /**
  *
- * @param {$EntitySpawnedKubeEvent_} event
+ * @param {$EntitySpawnedKubeEvent_ & {entity: $EntityDragonBase_}} event
  */
 function onDragonSpawn(event) {
     let { entity } = event;
@@ -184,13 +224,23 @@ function onDragonSpawn(event) {
     if (!isIAFDragon(entity)) return;
     if (entity.persistentData[BREED_DATA_KEY]) return;
 
+    if (entity.type == "iceandfire:ice_dragon") {
+        let data = popFrozenEggData(entity.server, entity);
+        if (data) {
+            entity.persistentData.put(BREED_DATA_KEY, data.get(BREED_DATA_KEY));
+            return;
+        }
+    }
+
     let oAABB = entity.getBoundingBox().inflate(0, 2, 0);
 
     /** @type {$Entity_ | null} */
     let egg = null;
     entity.level.getEntitiesWithin(oAABB).forEach((e) => {
         if (egg) return;
-        if (e.type == "iceandfire:dragon_egg") egg = e;
+        if (e.type != "iceandfire:dragon_egg") return;
+        if (e.getEggType().name() != entity.getVariant()) return;
+        egg = e;
     });
 
     if (egg) {
@@ -199,7 +249,7 @@ function onDragonSpawn(event) {
             egg.persistentData.get(BREED_DATA_KEY)
         );
 
-        eggDataMap.remove(egg.getUuid().toString());
+        placedEggMap.remove(egg.getUuid().toString());
         return;
     }
 
@@ -218,7 +268,7 @@ EntityEvents.spawned("iceandfire:dragon_egg", onDragonEggSpawn);
 // const $LivingDamageEvent$Post = Java.loadClass(
 //     "net.neoforged.neoforge.event.entity.living.LivingDamageEvent$Post"
 // );
-const $LivingEvent$LivingTickEvent = Java.loadClass(
+const $LivingBreatheEvent = Java.loadClass(
     "net.neoforged.neoforge.event.entity.living.LivingBreatheEvent"
 );
 
@@ -226,36 +276,192 @@ const $LivingEvent$LivingTickEvent = Java.loadClass(
 // // EntityEvents.beforeHurt(onDragonEggDeath);
 // // EntityEvents.afterHurt(onDragonEggDeath);
 
-// NativeEvents.onEvent($LivingDamageEvent$Post, onDragonEggDeath);
-NativeEvents.onEvent($LivingEvent$LivingTickEvent, (event) => {
+/**
+ *
+ * @param {$LivingBreatheEvent_} event
+ */
+function dragonEggTick(event) {
     let { entity } = event;
-
-    if (entity.level.isClientSide()) return;
-    if (entity.type != "iceandfire:dragon_egg") return;
-
     if (!entity.alive) return;
     //entity.server.tell(eggDataMap);
-    eggDataMap.putIfAbsent(entity.getUuid().toString(), {
+    placedEggMap.putIfAbsent(entity.getUuid().toString(), {
         live: true,
         //ownerUUID: entity.nbt.getString("OwnerUUID"),
         customData: entity.persistentData,
         block: entity.block,
         variant: entity.nbt.getString("Color"),
     });
-    eggDataMap[entity.getUuid().toString()].live = true;
+    placedEggMap[entity.getUuid().toString()].live = true;
+}
 
+// NativeEvents.onEvent($LivingDamageEvent$Post, onDragonEggDeath);
+NativeEvents.onEvent($LivingBreatheEvent, (event) => {
+    let { entity } = event;
+
+    if (!entity) return;
+    if (entity.level.isClientSide()) return;
+    if (entity.type != "iceandfire:dragon_egg") return;
+
+    dragonEggTick(event);
     // playerEggIDMap.putIfAbsent(ownerUUID, new $Set());
 
     // playerEggIDMap[ownerUUID].add(entity.getUuid().toString());
 });
 
 ServerEvents.tick((event) => {
-    if (event.server.tickCount % 2 != 0) return;
-
-    eggDataMap.forEach((key, value) => {
-        value.live = false;
-    });
+    if (event.server.tickCount % 20 == 0) {
+        /**
+         * @type {import("java.util.List").$List<string>}
+         */
+        let keyListToRemove = Utils.newList();
+        placedEggMap.forEach((key, value) => {
+            if (value.live) return;
+            if (eggColorToDragonType(value.variant) != "iceandfire:ice_dragon")
+                return;
+            if (
+                value.block.id != "minecraft:water" &&
+                value.block.id != "iceandfire:egginice"
+            )
+                return;
+            if (
+                value.block.level.getBlock(value.block.pos) !=
+                "iceandfire:egginice"
+            )
+                return;
+            freezeEggIntoPersistentData(event.server, value);
+            keyListToRemove.add(key);
+            //placedEggMap.remove(key);
+        });
+        if (!keyListToRemove.empty) {
+            for (const key of keyListToRemove) {
+                placedEggMap.remove(key);
+            }
+        }
+        // DEBUG event.server.tell(event.server.persistentData);
+        return;
+    }
+    if (event.server.tickCount % 2 == 0) {
+        placedEggMap.forEach((key, value) => {
+            value.live = false;
+            // event.server.tell(value.block.id);
+        });
+        return;
+    }
 });
+
+const FROZEN_EGG_DATA_KEY = "frozenDragonEggs";
+
+/**
+ * @param {PlacedEggData} data
+ * @returns {$CompoundTag_}
+ */
+function freezeEggData(data) {
+    let {
+        block,
+        block: {
+            pos,
+            pos: { x, y, z },
+            dimension,
+        },
+        variant,
+        customData,
+    } = data;
+    let tag = new $CompoundTag();
+
+    tag.putInt("x", x);
+    tag.putInt("y", y);
+    tag.putInt("z", z);
+    tag.putString("dimension", dimension);
+    tag.putString("variant", variant);
+    tag.put(BREED_DATA_KEY, customData.get(BREED_DATA_KEY));
+    return tag;
+}
+
+/**
+ *
+ * @param {{persistentData: $CompoundTag_}} provider
+ * @param {PlacedEggData} eggData
+ */
+function freezeEggIntoPersistentData(provider, eggData) {
+    let { persistentData } = provider;
+
+    if (persistentData.contains(FROZEN_EGG_DATA_KEY)) {
+        persistentData[FROZEN_EGG_DATA_KEY].addLast(freezeEggData(eggData));
+        return;
+    }
+    /**
+     * @type {$ListTag_}
+     */
+    let tag = new $ListTag();
+
+    tag.addLast(freezeEggData(eggData));
+    persistentData.put(FROZEN_EGG_DATA_KEY, tag);
+}
+
+/**
+ *
+ * @param {{persistentData: $CompoundTag_}} provider
+ * @param {$EntityDragonEgg_ | $EntityDragonBase_} entity
+ * @returns {$CompoundTag_ | null}
+ */
+function popFrozenEggData(provider, entity) {
+    let $EntityDragonBase = Java.loadClass(
+        "com.iafenvoy.iceandfire.entity.EntityDragonBase"
+    );
+    let { persistentData } = provider;
+    let {
+        blockX,
+        blockY,
+        blockZ,
+        block,
+        block: { dimension },
+    } = entity;
+    if (
+        !persistentData[FROZEN_EGG_DATA_KEY] ||
+        persistentData[FROZEN_EGG_DATA_KEY].empty
+    ) {
+        return null;
+    }
+    /**
+     * @type {$ListTag_ & $CompoundTag_[]}
+     */
+    let frozenDataList = persistentData.get(FROZEN_EGG_DATA_KEY).copy();
+
+    //let oAABB = entity.getBoundingBox().inflate(8);
+    /**
+     * @type {$CompoundTag_}
+     */
+    let foundTag = null;
+    let foundKey = -1;
+
+    for (const key in frozenDataList) {
+        let tag = frozenDataList[key];
+        // console.log(tag);
+        if (
+            tag.getString("variant") !=
+            (entity instanceof $EntityDragonBase
+                ? entity.getVariant()
+                : entity.getEggType().name())
+        )
+            continue;
+        if (tag.getString("dimension") != dimension.toString()) continue;
+        // oAABB.contains(tag.getInt("x")
+        if (tag.getInt("x") != blockX) continue;
+        if (tag.getInt("z") != blockZ) continue;
+        if (!tag.getInt("y") || JavaMath.abs(tag.getInt("y") - blockY) > 2)
+            continue;
+        foundKey = key;
+        foundTag = tag;
+        break;
+    }
+    if (foundKey != -1) {
+        frozenDataList.remove(parseInt(foundKey));
+        // provider.persistentData.frozenDragonEggs.remove(foundKey);
+        // provider.persistentData.remove(FROZEN_EGG_DATA_KEY);
+        provider.persistentData.put(FROZEN_EGG_DATA_KEY, frozenDataList);
+    }
+    return foundTag;
+}
 
 EntityEvents.spawned("minecraft:item", (event) => {
     let { entity } = event;
@@ -273,7 +479,7 @@ EntityEvents.spawned("minecraft:item", (event) => {
          */
         let found = null;
         let eggUUID = "";
-        eggDataMap.forEach((key, value) => {
+        placedEggMap.forEach((key, value) => {
             if (value.live) return;
             if (!value.block.pos.closerThan(entity.block.pos, 8)) return;
             if (!itemEntity.item.is(`iceandfire:dragonegg_${value.variant}`))
@@ -288,7 +494,7 @@ EntityEvents.spawned("minecraft:item", (event) => {
 
         //console.log(itemEntity.item.getCustomData());
 
-        eggDataMap.remove(eggUUID);
+        placedEggMap.remove(eggUUID);
     });
 
     // console.log(found.variant);
@@ -297,6 +503,31 @@ EntityEvents.spawned("minecraft:item", (event) => {
     // console.log(found.block.pos == entity.block.pos);
     // console.log();
 });
+
+// let $BlockEntityEggInIce = Java.loadClass(
+//     "com.iafenvoy.iceandfire.entity.block.BlockEntityEggInIce"
+// );
+
+// function get_pivate_field(cls, field) {
+//     let cls_field = cls.class.getDeclaredField(field);
+//     cls_field.setAccessible(true);
+//     return cls_field.get(cls);
+// }
+// function set_pivate_field(cls, field, value) {
+//     let cls_field = cls.class.getDeclaredField(field);
+//     cls_field.setAccessible(true);
+//     cls_field.set(cls, value);
+// }
+
+// BlockEvents.blockEntityTick("iceandfire:egginice", (event) => {
+//     console.log(event.block.pos);
+//     event.server.tell(event.block.pos);
+// });
+
+// BlockEvents.randomTick("iceandfire:egginice", (event) => {
+//     console.log(event.block.pos);
+//     event.server.tell(event.block.pos);
+// });
 
 // const $BabyEntitySpawnEvent = Java.loadClass(
 //     "net.neoforged.neoforge.event.entity.living.BabyEntitySpawnEvent"

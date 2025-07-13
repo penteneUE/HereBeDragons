@@ -3,6 +3,7 @@
     "kubejs.breed.info.attributes": "力量: %s | 体质: %s | 敏捷: %s",
     "kubejs.breed.info.trait.recessive": "(未激活) %s - %s",
     "kubejs.breed.info.trait.active": "%s %s - %s",
+    "kubejs.breed.tooltip.empty": "无繁育信息",
     "kubejs.breed.tooltip.strength": "力量 - %s",
     "kubejs.breed.tooltip.constitution": "体质 - %s",
     "kubejs.breed.tooltip.dexterity": "敏捷 - %s",

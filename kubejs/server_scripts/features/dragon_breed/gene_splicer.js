@@ -88,7 +88,10 @@ function geneSplicerLogic(player, entity) {
      * @type {DragonBreedData}
      */
     let breedData = getBreedDataFromDragon(entity);
-    if (!breedData) return;
+    if (!breedData) {
+        player.tell(Text.darkRed({ translate: "kubejs.breed.tooltip.empty" }));
+        return;
+    }
     breedData = deserializeBreedData(breedData);
 
     tellBreedData(player, entity, breedData);
