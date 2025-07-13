@@ -474,6 +474,7 @@ EntityEvents.beforeHurt((event) => {
             // });
             stopAttacking(attacker);
             event.cancel();
+            return;
         }
         if (!(attacker instanceof $TamableAnimal && attacker.isOwnedBy(entity)))
             entity.persistentData.lastMobToAttackMe = attacker

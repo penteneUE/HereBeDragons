@@ -177,8 +177,8 @@ function onDragonEggSpawn(event) {
         BREED_DATA_KEY,
         getChildBreedData(
             entity.random,
-            getBreedDataFromDragon(father),
-            getBreedDataFromDragon(mother)
+            getBreedDataFromEntity(father),
+            getBreedDataFromEntity(mother)
         )
     );
 

@@ -26,7 +26,7 @@ ItemEvents.entityInteracted((event) => {
     }
     //player.tell(target.displayName);
 
-    let breedData = getBreedDataFromDragon(target);
+    let breedData = getBreedDataFromEntity(target);
     if (!breedData) return;
 
     let holderDataTag = new $CompoundTag();

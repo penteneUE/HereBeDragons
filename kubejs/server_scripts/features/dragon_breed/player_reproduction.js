@@ -148,12 +148,14 @@ function bornChild(player, matingDragon) {
     eggTag.putString("OwnerUUID", player.getUuid().toString());
 
     let egg = player.level.createEntity("iceandfire:dragon_egg");
-    egg.persistentData.put(
-        BREED_DATA_KEY,
-        getBreedDataFromDragon(matingDragon)
-    );
 
     egg.mergeNbt(eggTag);
+
+    egg.persistentData.put(
+        BREED_DATA_KEY,
+        getBreedDataFromEntity(matingDragon)
+    );
+
     return egg;
 }
 
