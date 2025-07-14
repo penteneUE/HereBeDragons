@@ -13,7 +13,6 @@ function updateBreedAttributes(entity, breedData) {
      * @type {Map<$Attribute_, number>}
      */
     let attrMap = new Map();
-
     attrMap.set(
         "generic.attack_damage",
         Utils.parseDouble(breedData.strength, 1) / 256 / 3

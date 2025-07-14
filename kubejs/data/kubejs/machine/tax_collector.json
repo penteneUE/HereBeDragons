@@ -12,7 +12,7 @@
             "break": "minecraft:block.glass.break"
         },
         "custommachinery:item": "aquaculture:message_in_a_bottle",
-        "custommachinery:keep_inventory": true,
+        "custommachinery:keep_inventory": false,
         "custommachinery:light": 5,
         "custommachinery:mining_level": "minecraft:needs_stone_tool",
         "custommachinery:tool_type": [

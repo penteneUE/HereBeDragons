@@ -91,6 +91,9 @@
     "kubejs.tooltips.gene_holder.1": "右键一条繁衍狂热中的冰龙、火龙或电龙以收集其繁育信息。",
     "kubejs.status.gene_holder.not_in_love": "不在繁育期间",
 
+    "item.kubejs.lilliput_cloak": "小人斗篷",
+    "item.kubejs.brobdingnag_cloak": "巨人斗篷",
+
     "item.kubejs.paper_dragon_fragment": "失活的纸龙",
     "kubejs.tooltips.paper_dragon_fragment.1": "它再也不会动了……",
     "item.kubejs.paper_dragon_egg": "纸扎的龙蛋",
