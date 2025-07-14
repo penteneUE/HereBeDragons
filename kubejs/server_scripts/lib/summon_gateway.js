@@ -39,7 +39,7 @@ function _summonGateway(player, pos, type, level) {
         let gate = $GatewayRegistry.INSTANCE.holder(type);
 
         if (!gate.isBound()) {
-            console.log("Unknown Gateway");
+            console.log(`Unknown Gateway: ${type}`);
             return { entity: null, code: -1 };
         }
 

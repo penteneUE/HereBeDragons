@@ -19,7 +19,7 @@
     "kubejs.breed.traits.multiscale.desc.full": "生命值全满时，受到伤害减少30/50/70%",
 
     "kubejs.breed.traits.regenerator.name": "再生力",
-    "kubejs.breed.traits.regenerator.desc": "源于古老祖龙的血脉，血肉在无干扰时可以瞬间快速生长。",
+    "kubejs.breed.traits.regenerator.desc": "源于古老祖龙的血脉，血肉在无干扰时可以瞬时快速生长。",
     "kubejs.breed.traits.regenerator.desc.full": "收入龙吟号角后回复4%/10%/20%生命值。如果玩家得到此特性，在受伤后三秒没受伤害时回复10/20/40%生命。",
 
     "kubejs.breed.traits.stopouch.name": "大胃袋",
@@ -30,6 +30,8 @@
     "effect.kubejs.reproduction_frenzy.desc": "等等，什么？！",
     "effect.kubejs.prion_curse": "血脉退变",
     "effect.kubejs.prion_curse.desc": "龙类相食的行为会导致血脉衰变，诞生退化的后代！",
+    "effect.kubejs.regenerator": "再生力",
+    "effect.kubejs.regenerator.desc": "源于古老祖龙的血脉，血肉在无干扰时可以瞬时快速生长。",
 
     "kubejs.tooltips.dragon_reproduction_item.1": "未成年龙不可食用。",
 
