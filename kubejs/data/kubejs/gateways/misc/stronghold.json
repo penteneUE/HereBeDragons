@@ -8,8 +8,7 @@
             "orb_size": 25
         }
     ],
-    "failures": [
-    ],
+    "failures": [],
     "size": "small",
     "waves": [
         {
@@ -59,7 +58,7 @@
                 {
                     "type": "gateways:standard",
                     "count": 2,
-                    "entity": "minecraft:witch"
+                    "entity": "minecraft:creeper"
                 }
             ],
             "max_wave_time": 1600,
@@ -112,9 +111,9 @@
         }
     ],
     "spawn_algorithm": "gateways:inward_spiral",
-    "rules":{
+    "rules": {
         "fail_on_out_of_bounds": false,
-        "allow_discarding": true,   
+        "allow_discarding": true,
         "allow_dim_change": true,
         "remove_mobs_on_failure": false
     }

@@ -110,6 +110,7 @@ StartupEvents.registry("item", (event) => {
                         newStack
                     );
                 })
+                .canEquipFromUse((s, i) => false)
                 .modifyAttributesTooltip((tooltips, stack) => [])
         )
         .fireResistant(true)

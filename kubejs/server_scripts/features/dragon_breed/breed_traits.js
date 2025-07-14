@@ -3,9 +3,10 @@
  */
 function multiscaleBeforeHurt(event) {
     let { entity } = event;
+    // console.log(getTraitFromEntity(entity, "multiscale"));
     if (getTraitFromEntity(entity, "multiscale") < 1) return;
-    console.log(entity.health);
-    console.log(entity.maxHealth);
+    // console.log(entity.health);
+    // console.log(entity.maxHealth);
     if (entity.health < entity.maxHealth) return;
     switch (getTraitFromEntity(entity, "multiscale")) {
         case 1:

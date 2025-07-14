@@ -76,7 +76,7 @@ function getDragonTypeFromItem(item) {
 }
 
 /**
- * @param {$EntityDragonBase_ | $EntityDragonEgg_} entity Dragon or Egg
+ * @param {$EntityDragonBase_ | $EntityDragonEgg_ | $Player_} entity Dragon or Egg
  * @returns {$CompoundTag_}
  */
 function getBreedDataFromEntity(entity) {
@@ -258,7 +258,8 @@ function getChildBreedData(random, male, female) {
  * @returns {integer}
  */
 function getTraitLvl(traits, key) {
-    return traits?.getInt(key) ?? -1;
+    if (!traits) return -1;
+    return traits.getInt(key) ?? -1;
 }
 
 /**
@@ -268,7 +269,9 @@ function getTraitLvl(traits, key) {
  * @returns {integer}
  */
 function getTraitFromEntity(entity, key) {
-    return getTraitLvl(getBreedDataFromEntity(entity)?.get("traits"), key);
+    let breedData = getBreedDataFromEntity(entity);
+    if (!breedData) return -1;
+    return getTraitLvl(breedData.get("traits"), key);
 }
 
 // ItemEvents.rightClicked((event) => {

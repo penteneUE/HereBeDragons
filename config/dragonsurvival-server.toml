@@ -283,7 +283,7 @@
 
 	[effects.hunter]
 		#If enabled other players will be fully invisible at maximum hunter stacks
-		hunter_full_invisibility = false
+		hunter_full_invisibility = true
 		#Determines the damage bonus (0.5 -> 50%) per level of the effect
 		#The damage bonus scales with the current stacks, max. amount being reached at max. stacks
 		# Default: 0.75

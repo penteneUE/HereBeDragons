@@ -52,7 +52,7 @@ function showBreedData(event, breedData) {
     let count = traits.size();
     let activeCount = 0;
     traits.getAllKeys().forEach((key) => {
-        if (traits.getInt(key) > 1) activeCount++;
+        if (traits.getInt(key) > 0) activeCount++;
     });
 
     if (activeCount <= 0) {
@@ -70,7 +70,7 @@ function showBreedData(event, breedData) {
     event.add(
         Text.translate("kubejs.breed.tooltip.traits.active", [
             Text.darkAqua(count),
-            Text.gold(activeCount),
+            Text.gold(Utils.parseInt(activeCount, 0)),
         ]).gray()
         // Text.gray({ translate: "kubejs.breed.tooltip.traits" }).append(
         //     Text.darkAqua(breedData.get("traits").size())

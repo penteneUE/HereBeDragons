@@ -6,6 +6,10 @@ const BREED_ATTR_UUID = "f6e10a4f-552b-42cc-8c32-823155873eb5";
  * @param {DragonBreedData} breedData
  */
 function updateBreedAttributes(entity, breedData) {
+    if (!breedData) {
+        return;
+    }
+
     // /**
     //  * @type {$HashMap_<$Attribute_, number>}
     //  */
@@ -61,4 +65,28 @@ function updateBreedAttributes(entity, breedData) {
             "add_multiplied_base"
         ); //Operation
     });
+}
+
+/**
+ *
+ * @param {$LivingEntity_} entity
+ */
+function removeBreedAttributes(entity) {
+    for (const key of [
+        "generic.attack_damage", //哎呀
+        "dragonsurvival:dragon_ability_damage",
+        "dragonsurvival:dragon_breath_range",
+        "generic.max_health",
+        "generic.movement_speed",
+        "generic.jump_strength",
+        "dragonsurvival:flight_speed",
+        "dragonsurvival:flight_stamina",
+    ]) {
+        entity.modifyAttribute(
+            key, //Select max_health attribute
+            BREED_ATTR_UUID, //Identifier (UUID)
+            0,
+            "add_multiplied_base"
+        );
+    }
 }
