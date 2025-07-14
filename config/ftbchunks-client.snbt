@@ -133,69 +133,69 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"aquaculture:gar": false
-			"minecraft:tropical_fish": false
-			"minecraft:enderman": true
-			"iceandfire:myrmex_worker": true
-			"aquaculture:carp": false
-			"aquaculture:bluegill": false
+			"minecraft:creeper": true
+			"iceandfire:myrmex_soldier": true
+			"aquaculture:red_grouper": false
 			"minecraft:cod": false
-			"aquaculture:atlantic_halibut": false
-			"minecraft:pig": true
-			"minecraft:trader_llama": true
-			"aquaculture:perch": false
+			"irons_spellbooks:necromancer": true
 			"minecraft:skeleton": true
-			"dragonsurvival:hunter_leader": true
-			"iceandfire:pixie": true
-			"irons_spellbooks:cursed_armor_stand": true
-			"minecraft:zombified_piglin": true
-			"minecraft:dolphin": true
-			"aquaculture:minnow": false
-			"minecraft:vindicator": true
-			"minecraft:squid": true
-			"dragonsurvival:hunter_knight": true
-			"minecraft:vex": true
-			"minecraft:zombie_villager": true
-			"minecraft:spider": true
-			"minecraft:cow": true
-			"iceandfire:hippogryph": true
-			"aquaculture:catfish": false
-			"minecraft:villager": true
-			"aquaculture:muskellunge": false
-			"dragonsurvival:hunter_spearman": true
-			"minecraft:zombie": true
-			"minecraft:iron_golem": true
-			"minecraft:piglin": true
-			"minecraft:witch": true
-			"aquaculture:atlantic_herring": false
 			"minecraft:bee": true
-			"minecraft:strider": true
+			"minecraft:pufferfish": false
+			"minecraft:axolotl": true
+			"minecraft:chicken": true
+			"minecraft:witch": true
+			"iceandfire:pixie": true
+			"iceandfire:hippogryph": true
+			"minecraft:dolphin": true
+			"dragonsurvival:hunter_spearman": true
+			"aquaculture:muskellunge": false
+			"minecraft:cave_spider": true
+			"minecraft:turtle": true
+			"minecraft:ghast": true
+			"aquaculture:catfish": false
+			"aquaculture:minnow": false
+			"minecraft:iron_golem": true
+			"aquaculture:atlantic_halibut": false
+			"minecraft:vindicator": true
+			"minecraft:spider": true
+			"minecraft:bat": true
+			"iceandfire:myrmex_queen": true
+			"aquaculture:carp": false
+			"minecraft:rabbit": true
+			"minecraft:phantom": true
+			"aquaculture:bluegill": false
+			"minecraft:pig": true
+			"aquaculture:jellyfish": false
+			"aquaculture:brown_trout": false
+			"minecraft:villager": true
+			"aquaculture:smallmouth_bass": false
 			"minecraft:wandering_trader": true
+			"minecraft:drowned": true
+			"minecraft:trader_llama": true
+			"minecraft:enderman": true
+			"minecraft:piglin": true
+			"aquaculture:atlantic_herring": false
+			"dragonsurvival:hunter_hound": true
 			"irons_spellbooks:priest": true
 			"iceandfire:hippocampus": true
-			"minecraft:chicken": true
-			"minecraft:ghast": true
-			"minecraft:bat": true
-			"minecraft:pufferfish": false
-			"minecraft:drowned": true
-			"aquaculture:red_grouper": false
-			"aquaculture:brown_trout": false
-			"minecraft:cave_spider": true
-			"minecraft:phantom": true
-			"aquaculture:smallmouth_bass": false
-			"minecraft:creeper": true
-			"minecraft:glow_squid": true
-			"minecraft:wolf": true
-			"minecraft:rabbit": true
-			"iceandfire:cockatrice": true
-			"iceandfire:myrmex_queen": true
-			"irons_spellbooks:necromancer": true
-			"aquaculture:jellyfish": false
-			"minecraft:turtle": true
-			"minecraft:axolotl": true
-			"dragonsurvival:hunter_hound": true
+			"dragonsurvival:hunter_knight": true
+			"minecraft:strider": true
+			"minecraft:zombified_piglin": true
+			"aquaculture:gar": false
+			"minecraft:zombie": true
+			"irons_spellbooks:cursed_armor_stand": true
 			"minecraft:sheep": true
-			"iceandfire:myrmex_soldier": true
+			"minecraft:glow_squid": true
+			"minecraft:squid": true
+			"aquaculture:perch": false
+			"iceandfire:myrmex_worker": true
+			"dragonsurvival:hunter_leader": true
+			"minecraft:tropical_fish": false
+			"minecraft:vex": true
+			"minecraft:wolf": true
+			"iceandfire:cockatrice": true
+			"minecraft:cow": true
+			"minecraft:zombie_villager": true
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)
