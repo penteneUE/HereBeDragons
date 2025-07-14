@@ -51,7 +51,7 @@ function getDragonTypeFromItem(item) {
         case "iceandfire:dragon_horn":
             let comp = item.getComponentMap().get("iceandfire:dragon_horn");
             let type = comp.entityType();
-            console.log(type);
+            //console.log(type);
             return type;
         case "kubejs:gene_holder":
             return item.getCustomData().get("holding");

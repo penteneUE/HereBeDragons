@@ -84,6 +84,7 @@ ServerEvents.commandRegistry((event) => {
                             player.stages.remove("paper_myth_challenger");
                         if (player.stages.has("endless_challenger"))
                             player.stages.remove("endless_challenger");
+                        player.persistentData.remove("endlessChallengeId");
                         return 1;
                     })
                 )

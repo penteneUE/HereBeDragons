@@ -5,7 +5,7 @@ ItemEvents.foodEaten("iceandfire:ambrosia", (event) => {
     if (!isDragon(player)) return;
 
     //player.potionEffects.add("minecraft:wither", 120);
-    player.potionEffects.add("minecraft:instant_damage", 10, 1);
+    player.potionEffects.add("minecraft:instant_damage", 1, 1);
     //return;
     //}
     // if (item.hasTag("kubejs:dragon_reproduction_item")) {

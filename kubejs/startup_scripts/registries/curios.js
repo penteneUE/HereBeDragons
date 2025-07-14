@@ -116,6 +116,5 @@ StartupEvents.registry("item", (event) => {
         .fireResistant(true)
         .maxStackSize(1)
         .unstackable()
-        .tag("kubejs:gene_viewer")
         .tag("curios:gene");
 });

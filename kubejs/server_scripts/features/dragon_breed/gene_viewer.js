@@ -80,7 +80,7 @@ function tellBreedData(player, entity, breedData) {
  * @param {$Player_} player
  * @param {$LivingEntity_} entity
  */
-function geneSplicerLogic(player, entity) {
+function geneSeekerLogic(player, entity) {
     if (!isIAFDragon(entity)) return;
     //player.tell(entity.displayName);
     //player.tell(entity.persistentData);
@@ -127,7 +127,7 @@ function geneSplicerLogic(player, entity) {
 // });
 
 ItemEvents.rightClicked((event) => {
-    const { player, hand } = event;
+    let { player, hand } = event;
     if (
         !(
             hand == "main_hand" &&
@@ -139,12 +139,12 @@ ItemEvents.rightClicked((event) => {
     let reachedEntity = sightReachedEntity(player, event.level, 20);
     if (!reachedEntity) return;
 
-    geneSplicerLogic(player, reachedEntity);
+    geneSeekerLogic(player, reachedEntity);
     event.cancel();
 });
 
 ItemEvents.entityInteracted((event) => {
-    const { player, hand, target } = event;
+    let { player, hand, target } = event;
     if (
         !(
             hand == "main_hand" &&
@@ -153,7 +153,7 @@ ItemEvents.entityInteracted((event) => {
     )
         return;
 
-    //geneSplicerLogic(player, target);
+    geneSeekerLogic(player, target);
     //event.exit();
     event.cancel();
 });
@@ -165,12 +165,12 @@ ItemEvents.entityInteracted((event) => {
  */
 function geneSplicerUsed(itemStack, level, entity) {
     //console.log("Hello Gene Splicer");
+
+    if (!entity.player) return itemStack;
     let reachedEntity = sightReachedEntity(entity, level, 20);
     if (!reachedEntity) return itemStack;
 
-    if (!entity.player) return itemStack;
-
-    geneSplicerLogic(entity, reachedEntity);
+    // geneSeekerLogic(entity, reachedEntity);
 
     entity.addItemCooldown(itemStack, 20);
     return itemStack;

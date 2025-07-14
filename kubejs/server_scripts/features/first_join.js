@@ -1,7 +1,7 @@
 PlayerEvents.loggedIn((event) => {
     let player = event.player;
 
-    event.server.scheduleInTicks(20, (callback) => {
+    event.server.scheduleInTicks(6, (callback) => {
         if (!player.stages.has("firstjoined")) {
             //player.inventory.clear()
 

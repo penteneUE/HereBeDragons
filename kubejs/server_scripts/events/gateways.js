@@ -63,3 +63,28 @@ global.MISC.gateCompleted = (event) => {
 global.MISC.gateFailed = (event) => {
     handleGateEnd(event);
 };
+
+PlayerEvents.loggedIn((event) => {
+    let player = event.player;
+
+    event.server.scheduleInTicks(6, (callback) => {
+        if (player.stages.has("paper_myth_challenger")) {
+            //paper
+            player.stages.remove("paper_myth_challenger");
+        }
+
+        let endless = player.persistentData.getString("endlessChallengeId");
+        if (endless) {
+            //endless
+            player.persistentData.remove("endlessChallengeId");
+            return;
+        }
+
+        let currentId = player.persistentData.getString(
+            "dragonConquerCurrentId"
+        );
+        if (currentId == undefined) return;
+
+        failDragonConquest(player);
+    });
+});

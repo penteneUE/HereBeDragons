@@ -93,8 +93,7 @@ StartupEvents.registry("item", (event) => {
         })
         .fireResistant(true)
         .maxStackSize(1)
-        .unstackable()
-        .tag("kubejs:gene_viewer");
+        .unstackable();
 
     event.create("kubejs:gene_holder").maxStackSize(16);
     //.maxStackSize(1).unstackable();

@@ -6,6 +6,9 @@ StartupEvents.registry("mob_effect", (event) => {
     event
         .create("prion_curse") // Create the effect under "kubejs:custom_effect"
         .color(0x663544); // Sets the color of the Effect's Particles.
+    event
+        .create("regenerator") // Create the effect under "kubejs:custom_effect"
+        .color(0xaa9933); // Sets the color of the Effect's Particles.
 
     // .effectTick((entity, lvl) => {
     //     // This useful for reoccurring logic while the entity is under the effect.

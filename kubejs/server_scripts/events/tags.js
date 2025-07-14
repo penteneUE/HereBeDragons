@@ -74,5 +74,10 @@ ServerEvents.tags("item", (event) => {
         "#iceandfire:dragon_skulls",
     ]);
 
+    event.add("kubejs:gene_viewer", [
+        "kubejs:gene_seeker",
+        "kubejs:gene_splicer",
+    ]);
+
     // event.add("kubejs:fire_dragon_related_stuff")
 });
