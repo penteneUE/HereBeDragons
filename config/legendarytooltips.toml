@@ -78,7 +78,7 @@
 		level5_entries = ["$dragonsurvival:forest_dragon_food"]
 		level6_entries = ["dragonsurvival:star_bone", "dragonsurvival:star_heart", "kubejs:dragon_conquest_trophy"]
 		level7_entries = []
-		level8_entries = ["$kubejs:dragon_flags","$kubejs:dragon_eggs","kubejs:magic_disc", "kubejs:paper_dragon_fragment", "kubejs:paper_dragon_egg", "kubejs:tax_collector", "kubejs:gene_splicer"]
+		level8_entries = ["$kubejs:dragon_flags","$kubejs:dragon_eggs","kubejs:magic_disc", "kubejs:paper_dragon_fragment", "kubejs:paper_dragon_egg", "kubejs:tax_collector", "$kubejs:gene_viewer"]
 		level9_entries = []
 		level10_entries = []
 		level11_entries = []

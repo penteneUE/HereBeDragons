@@ -81,7 +81,7 @@ StartupEvents.registry("item", (event) => {
         });
 
     event
-        .create("kubejs:gene_splicer")
+        .create("kubejs:gene_seeker")
         .useAnimation("bow")
         .useDuration((itemStack) => 10)
         .use((level, player, hand) => {
@@ -93,7 +93,8 @@ StartupEvents.registry("item", (event) => {
         })
         .fireResistant(true)
         .maxStackSize(1)
-        .unstackable();
+        .unstackable()
+        .tag("kubejs:gene_viewer");
 
     event.create("kubejs:gene_holder");
     //.maxStackSize(1).unstackable();

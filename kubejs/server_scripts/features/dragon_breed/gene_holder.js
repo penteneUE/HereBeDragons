@@ -1,3 +1,37 @@
+/**
+ *
+ * @param {"iceandfire:fire_dragon" | "iceandfire:ice_dragon" | "iceandfire:lightning_dragon"} type
+ * @param {$CompoundTag_} breedData
+ * @returns {$ItemStack_}
+ */
+function createGeneHolder(type, breedData) {
+    let holderDataTag = new $CompoundTag();
+    holderDataTag.put(BREED_DATA_KEY, breedData);
+
+    let newItem = Item.of("kubejs:gene_holder");
+
+    switch (type) {
+        case "iceandfire:fire_dragon":
+            newItem.setCustomModelData(666);
+            //holderDataTag.putString("holding", "FIRE");
+            holderDataTag.putString("holding", type);
+            break;
+        case "iceandfire:ice_dragon":
+            newItem.setCustomModelData(777);
+            holderDataTag.putString("holding", type);
+            break;
+        case "iceandfire:lightning_dragon":
+            newItem.setCustomModelData(888);
+            holderDataTag.putString("holding", type);
+            break;
+        default:
+            return;
+    }
+
+    newItem.setCustomData(holderDataTag);
+    return newItem;
+}
+
 ItemEvents.entityInteracted((event) => {
     const { player, hand, target } = event;
     if (
@@ -29,31 +63,7 @@ ItemEvents.entityInteracted((event) => {
     let breedData = getBreedDataFromEntity(target);
     if (!breedData) return;
 
-    let holderDataTag = new $CompoundTag();
-    holderDataTag.put(BREED_DATA_KEY, breedData);
-
-    player.swing("main_hand");
-
-    let newItem = Item.of("kubejs:gene_holder");
-
-    switch (target.type) {
-        case "iceandfire:fire_dragon":
-            newItem.setCustomModelData(666);
-            holderDataTag.putString("holding", "FIRE");
-            break;
-        case "iceandfire:ice_dragon":
-            newItem.setCustomModelData(777);
-            holderDataTag.putString("holding", "ICE");
-            break;
-        case "iceandfire:lightning_dragon":
-            newItem.setCustomModelData(888);
-            holderDataTag.putString("holding", "LIGHTNING");
-            break;
-        default:
-            return;
-    }
-
-    newItem.setCustomData(holderDataTag);
+    let newItem = createGeneHolder(target.type, breedData);
 
     if (target.hasCustomName()) {
         newItem.setCustomName(
@@ -65,6 +75,8 @@ ItemEvents.entityInteracted((event) => {
 
     player.mainHandItem.shrink(1);
     player.giveInHand(newItem);
+
+    player.swing("main_hand");
 
     let updateDragonTag = new $CompoundTag();
     updateDragonTag.putInt("InLove", 0);

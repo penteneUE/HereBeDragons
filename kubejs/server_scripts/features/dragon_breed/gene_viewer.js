@@ -131,7 +131,7 @@ ItemEvents.rightClicked((event) => {
     if (
         !(
             hand == "main_hand" &&
-            player.getMainHandItem().id === "kubejs:gene_splicer"
+            player.getMainHandItem().hasTag("kubejs:gene_viewer")
         )
     )
         return;
@@ -148,7 +148,7 @@ ItemEvents.entityInteracted((event) => {
     if (
         !(
             hand == "main_hand" &&
-            player.getMainHandItem().id === "kubejs:gene_splicer"
+            player.getMainHandItem().hasTag("kubejs:gene_viewer")
         )
     )
         return;

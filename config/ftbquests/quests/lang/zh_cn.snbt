@@ -322,7 +322,7 @@
 		"最后的选项……来听一听叙事的话？"
 	]
 	quest.2A53602F5DD6482A.quest_subtitle: "成为龙上龙"
-	quest.2BAB54C68CA03FC4.quest_desc: ["在下界击杀疣猪兽获得，用于合成更高级的法术书。"]
+	quest.2BAB54C68CA03FC4.quest_desc: ["在下界击杀疣猪兽获得，用于合成更高级的法术书。以及巨人斗篷等重要物品。"]
 	quest.2BE232CDDBA5862A.quest_desc: [
 		"现在的当务之急就是，世界的死亡早已是进行时。你在终末里看着这个世界从繁荣走向退败，仅仅用了&c7&r分钟。"
 		""
@@ -676,6 +676,7 @@
 	]
 	quest.5BBEC08E7893B0EF.quest_subtitle: "成王败寇"
 	quest.5BBEC08E7893B0EF.title: "被通缉了！"
+	quest.5BFEACB4EB076B5C.quest_desc: ["现在，你可以制作小人斗篷以缩小自己的体型了。"]
 	quest.5C620CF48FE5DC36.quest_desc: ["激活后，在范围内可以免疫各龙种对环境的弱点。"]
 	quest.5C620CF48FE5DC36.quest_subtitle: "上天入地"
 	quest.5C84AADD309AED26.quest_desc: ["不知是幸运还是不幸，据你的观察，这些动物的行为和先人手记上的描述分毫不差。"]

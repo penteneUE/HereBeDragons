@@ -196,4 +196,71 @@ ServerEvents.recipes((event) => {
         B: "dragonsurvival:elder_dragon_bone",
         C: "#kubejs:holdable_skulls",
     });
+
+    event.shaped(Item.of("kubejs:lilliput_cloak"), ["AAA", "ABA", "C C"], {
+        A: "minecraft:rabbit_hide",
+        B: "iceandfire:ectoplasm",
+        C: "dragonsurvival:elder_dragon_dust",
+    });
+
+    event.shaped(Item.of("kubejs:brobdingnag_cloak"), ["AAA", "ABA", "C C"], {
+        A: "irons_spellbooks:hogskin",
+        B: "iceandfire:cyclops_eye",
+        C: "dragonsurvival:elder_dragon_bone",
+    });
+
+    event.shaped(
+        Item.of("kubejs:gene_seeker"),
+        [
+            " AB",
+            " CA",
+            "A  ", // 111
+        ],
+        {
+            A: "iceandfire:silver_ingot",
+            B: "dragonsurvival:elder_dragon_heart",
+            C: "#kubejs:holdable_skulls",
+        }
+    );
+    event.shaped(
+        Item.of("kubejs:gene_splicer"),
+        [
+            "  A",
+            "BC ",
+            "DE ", // 111
+        ],
+        {
+            A: "irons_spellbooks:heavy_chain_necklace",
+            B: "iceandfire:summoning_crystal_fire",
+            C: "kubejs:gene_seeker",
+            D: "iceandfire:summoning_crystal_lightning",
+            E: "iceandfire:summoning_crystal_ice",
+        }
+    );
+    event
+        .shapeless(
+            Item.of("kubejs:gene_splicer", 1), // arg 1: output
+            [
+                Ingredient.of("kubejs:gene_splicer"),
+                Ingredient.of("kubejs:gene_holder"),
+            ]
+        )
+        .modifyResult("kubejs/gene_splicer_fill");
+});
+
+ServerEvents.modifyRecipeResult("kubejs/gene_splicer_fill", (event) => {
+    let { grid, item } = event;
+
+    let output = grid.find(Ingredient.of("kubejs:gene_splicer"));
+    let holder = grid.find(Ingredient.of("kubejs:gene_holder"));
+
+    if (!holder.customData || holder.customData.empty) {
+        event.cancel();
+        return Item.of("minecraft:air");
+    }
+
+    output.setCustomData(getBreedDataFromItem(holder));
+
+    event.success();
+    return output;
 });

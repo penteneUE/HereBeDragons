@@ -35,6 +35,41 @@ function getBreedDataFromItem(item) {
             return breedData;
         case "kubejs:gene_holder":
             return item.getCustomData().get(BREED_DATA_KEY);
+        case "kubejs:gene_splicer":
+        default:
+            return item.getCustomData();
+    }
+}
+
+/**
+ *
+ * @param {ReturnType<Item.of>} item
+ * @returns {"iceandfire:fire_dragon" | "iceandfire:ice_dragon" | "iceandfire:lightning_dragon"}
+ */
+function getDragonTypeFromItem(item) {
+    switch (item.id) {
+        case "iceandfire:dragon_horn":
+            let comp = item.getComponentMap().get("iceandfire:dragon_horn");
+            let type = comp.entityType();
+            console.log(type);
+            return type;
+        case "kubejs:gene_holder":
+            return item.getCustomData().get("holding");
+        case "iceandfire:dragonegg_red":
+        case "iceandfire:dragonegg_green":
+        case "iceandfire:dragonegg_bronze":
+        case "iceandfire:dragonegg_gray":
+            return "iceandfire:fire_dragon";
+        case "iceandfire:dragonegg_sapphire":
+        case "iceandfire:dragonegg_white":
+        case "iceandfire:dragonegg_blue":
+        case "iceandfire:dragonegg_silver":
+            return "iceandfire:ice_dragon";
+        case "iceandfire:dragonegg_electric":
+        case "iceandfire:dragonegg_amethyst":
+        case "iceandfire:dragonegg_copper":
+        case "iceandfire:dragonegg_black":
+            return "iceandfire:lightning_dragon";
         default:
             return item.getCustomData();
     }
@@ -181,8 +216,9 @@ function generateChildTraits(random, fatherTraits, motherTraits) {
         if (levelM > -1 && levelM < 2) {
             levelM = random.nextBoolean() ? levelM : levelM - 1;
         }
+        let sum = levelF + levelM;
         let levelChild =
-            levelF == levelM ? levelF + levelM : Math.max(levelF, levelM);
+            levelF == levelM ? (sum == 0 ? 1 : sum) : Math.max(levelF, levelM);
 
         if (levelChild > 3) levelChild = 3;
 

@@ -395,9 +395,9 @@ function blockBroken_TaxCollect(event) {
 
     blockOwner.persistentData.remove("activeTaxCollector");
 
-    block.getInventory().allItems.forEach((item) => {
-        if (item) block.popItem(item);
-    });
+    // block.getInventory().allItems.forEach((item) => {
+    //     if (item) block.popItem(item);
+    // });
 }
 
 PlayerEvents.tick((event) => {

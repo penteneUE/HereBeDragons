@@ -83,8 +83,10 @@
     "item.kubejs.ice_dragon_stew": "盐渍龙心大餐",
     "item.kubejs.lightning_dragon_stew": "电浆龙心大餐",
 
-    "item.kubejs.gene_splicer": "基因拼接器",
-    "kubejs.tooltips.gene_splicer.1": "测试1",
+    "item.kubejs.gene_seeker": "基因透镜",
+    "item.kubejs.gene_splicer": "基因链钉",
+    "kubejs.tooltips.gene_seeker.1": "右键一条冰龙、火龙或电龙以查看其繁育信息。",
+    "kubejs.tooltips.gene_splicer.1": "与携带繁育信息的基因容器合成后，可将血统的力量转移至所有者身上。",
 
     "item.kubejs.gene_holder": "基因容器",
     "item.kubejs.gene_holder.named": "基因容器：%s",
@@ -93,6 +95,11 @@
 
     "item.kubejs.lilliput_cloak": "小人斗篷",
     "item.kubejs.brobdingnag_cloak": "巨人斗篷",
+    "kubejs.tooltips.lilliput_cloak.1": "我们变小了，还是你们变大了？房间之间应该一直是稳定的。请遵守诺言……",
+    "kubejs.tooltips.lilliput_cloak.attributes.1": "缩小装备者的尺寸",
+    "kubejs.tooltips.brobdingnag_cloak.1": "那一天，巨人们想起了被巨龙所支配的恐惧。",
+    "kubejs.tooltips.brobdingnag_cloak.attributes.1": "放大装备者的尺寸",
+    "kubejs.tooltips.brobdingnag_cloak.attributes.2": "提升相应的龙族能力（如飞行速度、吐息范围等）",
 
     "item.kubejs.paper_dragon_fragment": "失活的纸龙",
     "kubejs.tooltips.paper_dragon_fragment.1": "它再也不会动了……",
@@ -262,5 +269,7 @@
 
     "item.kubejs.magic_disc": "魔法唱片",
     "jukebox_song.kubejs.music.scrybe_of_magicks": "Scrybe of the Magicks - INSCRYPTION",
-    "sound.kubejs.music.scrybe_of_magicks": "魔法的音乐"
+    "sound.kubejs.music.scrybe_of_magicks": "魔法的音乐",
+
+    "curios.identifier.gene": "龙楔"
 }

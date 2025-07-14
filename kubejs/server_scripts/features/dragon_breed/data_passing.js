@@ -82,7 +82,7 @@ BlockEvents.rightClicked((event) => {
     // //console.log($EntityDragonEgg.prototype.onDamageTaken);
     // console.log($EntityDragonEgg.)
 
-    let { item } = event;
+    let { item, player } = event;
     if (!item.hasTag("kubejs:dragon_eggs")) return;
     // let testTag = new $CompoundTag();
     // testTag.putString("hello", "world");
@@ -93,7 +93,7 @@ BlockEvents.rightClicked((event) => {
     // let tag = new $CompoundTag();
     // tag.put(BREED_DATA_KEY, item.customData);
     if (item.getCustomData().empty)
-        item.setCustomData(randomBreedData(event.entity.random));
+        item.setCustomData(randomBreedData(player.random));
     eggPlacingMap[event.player.uuid] = {
         customData: item.getCustomData(),
         live: true,

@@ -370,25 +370,21 @@ function simulateBreed(player) {
     }
     let parent1 = getBreedDataFromItem(mainHandItem);
     let parent2 = getBreedDataFromItem(offHandItem);
+    let child = getChildBreedData(player.getRandom(), parent1, parent2);
     // console.log(player.mainHandItem);
     // console.log(player.offHandItem);
-    player.tell(
-        serializeBreedData(
-            getChildBreedData(player.getRandom(), parent1, parent2)
-        )
+    player.tell(serializeBreedData(child));
+    console.log(getDragonTypeFromItem(mainHandItem));
+    let holder = createGeneHolder(
+        getDragonTypeFromItem(
+            player.random.nextBoolean() ? mainHandItem : offHandItem
+        ),
+        serializeBreedData(child)
     );
+    player.block.popItem(holder);
 }
 
-// ItemEvents.rightClicked("stick", (event) => {
+// ItemEvents.rightClicked((event) => {
 //     let { player } = event;
-//     giveRandomEgg(event.player);
-//     player.tell("111");
-//     let egg = Item.of("iceandfire:dragonegg_black");
-//     player.tell("111");
-//     console.log(randomBreedData(player.random));
-//     egg.setCustomData(randomBreedData(player.random));
-//     player.tell("111");
-//     //player.give(egg);
-//     player.block.popItem(egg);
-//     player.tell("111");
+//     simulateBreed(player);
 // });

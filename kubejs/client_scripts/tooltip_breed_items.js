@@ -10,6 +10,10 @@ ItemEvents.modifyTooltips((event) => {
     event.modify("kubejs:gene_holder", (builder) => {
         builder.dynamic("kubejs:gene_holder");
     });
+
+    event.modify("kubejs:gene_splicer", (builder) => {
+        builder.dynamic("kubejs:gene_splicer");
+    });
 });
 
 const BREED_DATA_KEY = "breedData";
@@ -75,6 +79,17 @@ function showBreedData(event, breedData) {
 }
 
 ItemEvents.dynamicTooltips("#kubejs:dragon_eggs", (event) => {
+    const { item } = event;
+
+    let breedData = item.getCustomData();
+    if (!breedData || breedData.empty) {
+        event.add(Text.darkRed({ translate: "kubejs.breed.tooltip.empty" }));
+        return;
+    }
+    // showBreedData(event, breedData);
+});
+
+ItemEvents.dynamicTooltips("#kubejs:gene_splicer", (event) => {
     const { item } = event;
 
     let breedData = item.getCustomData();

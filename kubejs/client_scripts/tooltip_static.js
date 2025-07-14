@@ -87,8 +87,30 @@ ItemEvents.modifyTooltips((event) => {
         Text.gray({ translate: "kubejs.tooltips.paper_dragon_egg.1" }),
     ]);
 
+    event.add("kubejs:gene_seeker", [
+        Text.gray({ translate: "kubejs.tooltips.gene_seeker.1" }),
+        // Text.gray({ translate: "kubejs.tooltips.gene_splicer.1" }),
+    ]);
     event.add("kubejs:gene_splicer", [
+        Text.gray({ translate: "kubejs.tooltips.gene_seeker.1" }),
         Text.gray({ translate: "kubejs.tooltips.gene_splicer.1" }),
+    ]);
+
+    event.add("kubejs:lilliput_cloak", [
+        Text.gray({ translate: "kubejs.tooltips.lilliput_cloak.1" }),
+        Text.gold({
+            translate: "kubejs.tooltips.lilliput_cloak.attributes.1",
+        }),
+    ]);
+
+    event.add("kubejs:brobdingnag_cloak", [
+        Text.gray({ translate: "kubejs.tooltips.brobdingnag_cloak.1" }),
+        Text.gold({
+            translate: "kubejs.tooltips.brobdingnag_cloak.attributes.1",
+        }),
+        Text.gold({
+            translate: "kubejs.tooltips.brobdingnag_cloak.attributes.2",
+        }),
     ]);
 
     // event.
