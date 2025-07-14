@@ -89,15 +89,16 @@ ItemEvents.dynamicTooltips("#kubejs:dragon_eggs", (event) => {
     // showBreedData(event, breedData);
 });
 
-ItemEvents.dynamicTooltips("#kubejs:gene_splicer", (event) => {
+ItemEvents.dynamicTooltips("kubejs:gene_splicer", (event) => {
     const { item } = event;
 
     let breedData = item.getCustomData();
     if (!breedData || breedData.empty) {
         event.add(Text.darkRed({ translate: "kubejs.breed.tooltip.empty" }));
+        event.add(Text.gray({ translate: "kubejs.tooltips.gene_splicer.1" }));
         return;
     }
-    // showBreedData(event, breedData);
+    showBreedData(event, breedData);
 });
 
 ItemEvents.dynamicTooltips("iceandfire:dragon_horn", (event) => {

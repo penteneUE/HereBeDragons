@@ -93,7 +93,6 @@ ItemEvents.modifyTooltips((event) => {
     ]);
     event.add("kubejs:gene_splicer", [
         Text.gray({ translate: "kubejs.tooltips.gene_seeker.1" }),
-        Text.gray({ translate: "kubejs.tooltips.gene_splicer.1" }),
     ]);
 
     event.add("kubejs:lilliput_cloak", [

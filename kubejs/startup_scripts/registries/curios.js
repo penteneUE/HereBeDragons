@@ -96,60 +96,20 @@ StartupEvents.registry("item", (event) => {
         })
         .attachCuriosCapability(
             CuriosJSCapabilityBuilder.create()
-                .addAttribute(
-                    "minecraft:generic.scale",
-                    CLOAK_UUID,
-                    0.4,
-                    "add_multiplied_base"
-                )
-                .addAttribute(
-                    "generic.attack_damage",
-                    CLOAK_UUID,
-                    0.1,
-                    "add_multiplied_base"
-                )
-                .addAttribute(
-                    "generic.movement_speed",
-                    CLOAK_UUID,
-                    0.2,
-                    "add_multiplied_base"
-                )
-                .addAttribute(
-                    "dragonsurvival:dragon_ability_damage",
-                    CLOAK_UUID,
-                    0.3,
-                    "add_multiplied_base"
-                )
-                .addAttribute(
-                    "dragonsurvival:dragon_breath_range",
-                    CLOAK_UUID,
-                    0.6,
-                    "add_multiplied_base"
-                )
-                .addAttribute(
-                    "dragonsurvival:flight_speed",
-                    CLOAK_UUID,
-                    0.5,
-                    "add_multiplied_base"
-                )
-                .addAttribute(
-                    "dragonsurvival:flight_stamina",
-                    CLOAK_UUID,
-                    0.2,
-                    "add_multiplied_base"
-                )
-                .addAttribute(
-                    "dragonsurvival:mana",
-                    CLOAK_UUID,
-                    0.2,
-                    "add_multiplied_base"
-                )
-                .addAttribute(
-                    "dragonsurvival:mana_regeneration",
-                    CLOAK_UUID,
-                    0.2,
-                    "add_multiplied_base"
-                )
+                .onEquip((slotContext, oldStack, newStack) => {
+                    global.MISC.geneSplicerOnEquip(
+                        slotContext,
+                        oldStack,
+                        newStack
+                    );
+                })
+                .onUnequip((slotContext, oldStack, newStack) => {
+                    global.MISC.geneSplicerOnUnequip(
+                        slotContext,
+                        oldStack,
+                        newStack
+                    );
+                })
                 .modifyAttributesTooltip((tooltips, stack) => [])
         )
         .fireResistant(true)

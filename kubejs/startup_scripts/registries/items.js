@@ -96,7 +96,7 @@ StartupEvents.registry("item", (event) => {
         .unstackable()
         .tag("kubejs:gene_viewer");
 
-    event.create("kubejs:gene_holder");
+    event.create("kubejs:gene_holder").maxStackSize(16);
     //.maxStackSize(1).unstackable();
 
     // $GrowthItem.create(12000, caveHeart.get());

@@ -256,7 +256,7 @@ function onDragonSpawn(event) {
         return;
     }
 
-    entity.persistentData.put(BREED_DATA_KEY, randomBreedData());
+    entity.persistentData.put(BREED_DATA_KEY, randomBreedData(entity.random));
 }
 
 EntityEvents.spawned("iceandfire:fire_dragon", onDragonSpawn);

@@ -237,9 +237,12 @@ ServerEvents.recipes((event) => {
             E: "iceandfire:summoning_crystal_ice",
         }
     );
+
     event
         .shapeless(
-            Item.of("kubejs:gene_splicer", 1), // arg 1: output
+            Item.of("wooden_axe", 1).withCustomName(
+                Text.lightPurple({ translate: "kubejs.recipe.imbue_gene" })
+            ), // arg 1: output
             [
                 Ingredient.of("kubejs:gene_splicer"),
                 Ingredient.of("kubejs:gene_holder"),
@@ -255,12 +258,15 @@ ServerEvents.modifyRecipeResult("kubejs/gene_splicer_fill", (event) => {
     let holder = grid.find(Ingredient.of("kubejs:gene_holder"));
 
     if (!holder.customData || holder.customData.empty) {
+        // console.log("111");
+        item.setCount(0);
         event.cancel();
+        event.exit();
         return Item.of("minecraft:air");
     }
-
+    item = output;
     output.setCustomData(getBreedDataFromItem(holder));
 
-    event.success();
+    event.success(output);
     return output;
 });

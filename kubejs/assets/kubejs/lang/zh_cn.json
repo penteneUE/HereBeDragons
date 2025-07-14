@@ -271,5 +271,7 @@
     "jukebox_song.kubejs.music.scrybe_of_magicks": "Scrybe of the Magicks - INSCRYPTION",
     "sound.kubejs.music.scrybe_of_magicks": "魔法的音乐",
 
-    "curios.identifier.gene": "龙楔"
+    "curios.identifier.gene": "龙楔",
+
+    "kubejs.recipe.imbue_gene": "为基因链钉注入信息"
 }
