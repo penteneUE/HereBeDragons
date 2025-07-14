@@ -1,39 +1,37 @@
 {
-    "base_wave": 
-        {
-            "entities": [
-                {
+    "base_wave": {
+        "entities": [
+            {
+                "count": 1,
+                "entity": "minecraft:chicken",
+                "type": "gateways:standard"
+            }
+        ],
+        "max_wave_time": 2400,
+        "rewards": [
+            {
+                "experience": 100,
+                "orb_size": 25,
+                "type": "gateways:experience"
+            },
+            {
+                "stack": {
                     "count": 1,
-                    "entity": "minecraft:chicken",
-                    "type": "gateways:standard"
-                }
-            ],
-            "max_wave_time": 2400,
-            "rewards": [
-                {
-                    "experience": 100,
-                    "orb_size": 25,
-                    "type": "gateways:experience"
+                    "id": "dragonsurvival:elder_dragon_heart"
                 },
-                {
-                    "stack": {
-                        "count": 1,
-                        "id": "dragonsurvival:elder_dragon_heart"
-                    },
-                    "type": "gateways:stack"
-                }
-            ],
-            "setup_time": 100
-        },
-    
+                "type": "gateways:stack"
+            }
+        ],
+        "setup_time": 100
+    },
+
     "color": "#33AE53",
-    "failures": [
-    ],
+    "failures": [],
     "modifiers": [
         {
             "application_mode": {
                 "type": "gateways:only_on_wave",
-                "waves": 1
+                "wave": 1
             },
             "entities": [
                 {
@@ -49,7 +47,7 @@
         {
             "application_mode": {
                 "type": "gateways:only_on_wave",
-                "waves": 2
+                "wave": 2
             },
             "entities": [
                 {
@@ -65,7 +63,7 @@
         {
             "application_mode": {
                 "type": "gateways:only_on_wave",
-                "waves": 3
+                "wave": 3
             },
             "entities": [
                 {
@@ -81,7 +79,7 @@
         {
             "application_mode": {
                 "type": "gateways:only_on_wave",
-                "waves": 4
+                "wave": 4
             },
             "entities": [
                 {
@@ -97,7 +95,7 @@
         {
             "application_mode": {
                 "type": "gateways:only_on_wave",
-                "waves": 5
+                "wave": 5
             },
             "entities": [
                 {
@@ -113,7 +111,7 @@
         {
             "application_mode": {
                 "type": "gateways:only_on_wave",
-                "waves": 6
+                "wave": 6
             },
             "entities": [
                 {
@@ -129,7 +127,7 @@
         {
             "application_mode": {
                 "type": "gateways:after_wave",
-                "waves": 7
+                "wave": 7
             },
             "entities": [
                 {
