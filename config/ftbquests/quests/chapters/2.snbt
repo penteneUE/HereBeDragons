@@ -799,6 +799,7 @@
 			icon: {
 				id: "minecraft:dragon_egg"
 			}
+			icon_scale: 0.75d
 			id: "7408B42F36A27FB1"
 			rewards: [{
 				id: "62F0F105CF5A509C"

@@ -525,7 +525,7 @@
 					type: "item"
 				}
 			]
-			x: 9.5d
+			x: 12.0d
 			y: -1.0d
 		}
 		{
@@ -1456,7 +1456,7 @@
 				item: { count: 1, id: "dragonsurvival:dragon_beacon" }
 				type: "item"
 			}]
-			x: 10.5d
+			x: 13.0d
 			y: -1.0d
 		}
 		{
@@ -1573,6 +1573,16 @@
 			}]
 			x: 1.5d
 			y: -4.5d
+		}
+		{
+			dependencies: ["4E6ED770D83C4AFF"]
+			id: "4C558A8987578F7B"
+			tasks: [{
+				id: "41D29A7E2CC299AB"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: -1.0d
 		}
 	]
 }

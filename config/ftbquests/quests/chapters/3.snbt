@@ -129,7 +129,7 @@
 				id: "2822EAC9B59C30DF"
 				type: "checkmark"
 			}]
-			x: -1.0d
+			x: -1.5d
 			y: -15.0d
 		}
 		{
@@ -353,11 +353,12 @@
 				id: "15D0A15E24885187"
 				type: "checkmark"
 			}]
-			x: -1.0d
+			x: -1.5d
 			y: -12.0d
 		}
 		{
 			dependencies: ["6A2D99CF2DF2A360"]
+			icon_scale: 0.75d
 			id: "79C4B032A9B1F772"
 			rewards: [
 				{
@@ -374,6 +375,8 @@
 					xp: 10
 				}
 			]
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				advancement: "iceandfire:iceandfire/dragon_egg"
 				criterion: ""
@@ -382,6 +385,82 @@
 			}]
 			x: 0.0d
 			y: -15.0d
+		}
+		{
+			dependencies: ["79C4B032A9B1F772"]
+			id: "7CDB045282E65572"
+			rewards: [{
+				id: "7CEAA25D40FEC5E0"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2176570F64948F66"
+				item: { count: 1, id: "kubejs:gene_seeker" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -15.0d
+		}
+		{
+			dependencies: [
+				"2F94C6E3FCCB38FD"
+				"7CDB045282E65572"
+			]
+			hide_until_deps_complete: true
+			id: "71E120336B2847FC"
+			rewards: [{
+				id: "401CECF2717F21EB"
+				type: "xp"
+				xp: 2
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "01DEFE83BAF10191"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: -16.0d
+		}
+		{
+			dependencies: ["7CDB045282E65572"]
+			icon: {
+				id: "minecraft:ghast_tear"
+			}
+			id: "792EEE317BF6BE9A"
+			rewards: [
+				{
+					id: "32BC635F3F7C3286"
+					item: {
+						count: 1
+						id: "dragonsurvival:elder_dragon_heart"
+					}
+					type: "item"
+				}
+				{
+					id: "51C46F65BBADC173"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "72BB28EDFD14F31A"
+				stage: "quest/breed.regenerator"
+				type: "gamestage"
+			}]
+			x: 4.5d
+			y: -15.0d
+		}
+		{
+			dependencies: ["7CDB045282E65572"]
+			id: "3B20762F7E6C05B2"
+			tasks: [{
+				id: "18D434572EEDD39D"
+				item: { count: 1, id: "kubejs:gene_holder" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -14.0d
 		}
 	]
 }

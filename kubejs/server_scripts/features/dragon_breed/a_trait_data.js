@@ -3,6 +3,7 @@
  * @property {string} name 是TranslationKey
  * @property {string} desc
  * @property {string} fullDesc
+ * @property {string | null} stage
  * @property {(text: ReturnType<typeof Text.of>) => $MutableComponent_} color
  */
 
@@ -21,6 +22,7 @@ function _registerTrait(id, color) {
         name: `kubejs.breed.traits.${id}.name`,
         desc: `kubejs.breed.traits.${id}.desc`,
         fullDesc: `kubejs.breed.traits.${id}.desc.full`,
+        stage: `quest/breed.${id}`,
         color: color ?? ((text) => text.gold()),
     });
 }

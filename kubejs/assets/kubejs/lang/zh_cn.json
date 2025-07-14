@@ -43,7 +43,6 @@
     "kubejs.tooltips.dragon_taming_items.1": "新时代的龙没有自我意识，它们听从棍棒、号角与长笛的指挥。",
     "kubejs.tooltips.dragon_armors.1": "由于解剖结构的差异，你无法穿上它们。",
     "kubejs.tooltips.dragon_flesh.1": "等等，不要……",
-    "kubejs.tooltips.oldgen_dragon_hearts.1": "被人类猎人杀死时掉落。虽然看上去像血肉，但其实是矿石构成的。",
     "kubejs.tooltips.dragon_stews.comment": "“如何烧烤一条火龙？”",
     "kubejs.tooltips.dragon_stews.1": "在致幻植物汤中加入龙血、龙心、龙肉得到。服用后可以一直繁育。",
 
@@ -77,9 +76,11 @@
 
     "item.kubejs.felyne_recall": "猫车",
 
-    "item.kubejs.cave_dragon_heart": "洞穴龙心脏",
-    "item.kubejs.forest_dragon_heart": "森林龙心脏",
-    "item.kubejs.sea_dragon_heart": "海洋龙心脏",
+    "item.kubejs.cave_dragon_heart": "红色纸扎龙心",
+    "item.kubejs.forest_dragon_heart": "绿色纸扎龙心",
+    "item.kubejs.sea_dragon_heart": "蓝色纸扎龙心",
+    "kubejs.tooltips.oldgen_dragon_hearts.comment": "“人类不感谢你们。”",
+    "kubejs.tooltips.oldgen_dragon_hearts.1": "被人类猎人杀死时掉落。自己胸腔中跳动的心脏，真的是真实的吗？",
 
     "item.kubejs.fire_dragon_stew": "炙烤龙心大餐",
     "item.kubejs.ice_dragon_stew": "盐渍龙心大餐",

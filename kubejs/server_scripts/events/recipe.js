@@ -3,6 +3,7 @@ ServerEvents.recipes((event) => {
     event.remove({ output: "iceandfire:gold_pile" });
     event.remove({ output: "iceandfire:silver_pile" });
     event.remove({ output: "iceandfire:copper_pile" });
+    event.remove({ output: "ftbfiltersystem:smart_filter" });
     //event.remove({ output: 'supplementaries:dragon_banner_pattern' })
 
     event.replaceInput(

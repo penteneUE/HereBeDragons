@@ -31,9 +31,11 @@
 	]
 	quest.05546B1D86F62F95.quest_subtitle: "精神永存"
 	quest.05F9D9DD6B1919D6.quest_desc: [
-		"如果龙玩家吃下致幻植物或汤，再贴近一条同样吃下致幻汤的冰龙、火龙或电龙，将有几率获得龙蛋。"
+		"如果龙玩家吃下致幻植物或汤，再贴近一条同样吃下致幻汤的冰龙、火龙或电龙，将进行杂交并得到龙蛋。"
 		""
-		"&c警告：如此异种杂交很可能生出有缺陷的后代！&r"
+		"&c&m警告：如此异种杂交很可能生出有缺陷的后代！&r&r"
+		""
+		"&e后代完全继承龙的所有属性与特性，但可能会生出不同种类的龙。（如海洋龙与冰龙繁殖出电龙）&r"
 	]
 	quest.05F9D9DD6B1919D6.quest_subtitle: "不是，哥们？"
 	quest.06398A1A4B38AEB3.quest_desc: ["这里时常会出现那些黑瘦的、看一眼就会尖叫着冲过来的家伙。不过，按它们来无影、去无踪的样子，同时出现在主世界和这里，似乎也很正常。"]
@@ -45,13 +47,13 @@
 	]
 	quest.063BF9E1684BB19B.title: "食人妖"
 	quest.06FC5550EC4AB636.quest_desc: [
-		"群号：868098586"
+		"群号：1037352971"
 		""
 		"另外容我介绍背景的两个家伙，我们的——亚鲁大伯托和麦克海恩。"
 		""
 		"再次感谢你的游玩！"
 	]
-	quest.06FC5550EC4AB636.quest_subtitle: "可以加入作者的粉丝群"
+	quest.06FC5550EC4AB636.quest_subtitle: "可以加入作者的万魂幡"
 	quest.07A61974F4ED437D.quest_desc: ["陆上的海洋龙会&c因身体逐渐干燥而受到伤害&r。为保障在陆地的体验，这里提供了一些海绵来打湿自己。在飞行中也能用！"]
 	quest.0ACD08382118A6CE.quest_subtitle: "装甲黑工"
 	quest.0ACD08382118A6CE.title: "占领：古战场"
@@ -77,10 +79,12 @@
 	quest.0D7987699A0F2C47.title: "战斗法师套装"
 	quest.0D91CAE028F0F87C.title: "炽焰学派"
 	quest.0E0A7316F2302130.quest_desc: [
-		"如标题所示，这是一款以龙生存为主题的整合包。"
-		"龙癌作者找不到好玩的龙整合包，索性自己动手做一个。（希望它好玩）"
+		"如标题所示，这是一款以龙为主题的整合包。"
+		"龙杂（奢批）作者找不到好玩的龙整合包，索性自己动手做一个。（希望它好玩）"
 		""
 		"&e整合包仍是开发中版本，独自开发真的很困难，不求各位技术大佬帮我攻克难题，只求能把bug反馈出来，就已经是帮大忙了！&r"
+		""
+		"当前的末地后主线为轻量化版本，旨在快速解锁龙育种玩法。后续会为主线添加新维度及硫碳磷内容。"
 	]
 	quest.0E0A7316F2302130.quest_subtitle: "在一个没有龙的世界当恶龙，会是什么体验？"
 	quest.0E0A7316F2302130.title: "整合包介绍"
@@ -273,7 +277,7 @@
 		""
 		"一个未开启的传送门就静静地躺在这个房间的中间……据说从主世界进去那里的存在，从来没有回来过。"
 		""
-		"做好万全准备再试着进去吧。"
+		"&e做好万全准备，将其占领&r再试着进去吧。"
 	]
 	quest.26DAC736FC87EFA1.quest_desc: ["先人的手记没有记载这个橙橙的小东西，但你觉得把它记录在这里是可行的。"]
 	quest.26DAC736FC87EFA1.title: "矿脉哥布林商人"
@@ -450,6 +454,8 @@
 	quest.3A20327A765A5F0D.quest_desc: ["恭喜，你占领了所有可占领的建筑！"]
 	quest.3A20327A765A5F0D.quest_subtitle: "原来有限的，重归平常"
 	quest.3AAEADB2CD2BA908.quest_subtitle: "成年龙"
+	quest.3B20762F7E6C05B2.quest_desc: [""]
+	quest.3B20762F7E6C05B2.quest_subtitle: "颅献颅座"
 	quest.3BD438085B5F7C2B.quest_desc: [
 		"为什么不将龙天生的能力与法术相结合呢？这确实是一种可行的方案——把一颗龙心放进卷轴撰写台试试吧。"
 		"{@pagebreak}"
@@ -910,6 +916,24 @@
 		"这里的“&e填充配方&r”可以快速将配方填入当前的工作台等方块，省去手动放置。"
 	]
 	quest.719FEDF459AA1F90.quest_subtitle: "知识树与智慧树与配方树"
+	quest.71E120336B2847FC.quest_desc: [
+		"你将它们量化并总结为三种&e属性&r："
+		""
+		"&c力量&r：影响攻击力。"
+		"&b体质&r：影响生命力。"
+		"&a敏捷&r：影响移动速度与飞行速度。"
+		""
+		"没有与智力相关的属性。"
+		"{@pagebreak}"
+		"除属性外，每条龙都会携带&e特性&r。"
+		""
+		"&e大多数的特性都是未激活，也就是隐性的。需要让两个同时携带该特性的个体繁殖，得到激活特性的后代。&r"
+		""
+		"继续用激活特性的个体繁殖，会将特性纯化以提高等级。"
+		""
+		"需要注意的是，并非所有特性都是正面的。"
+	]
+	quest.71E120336B2847FC.quest_subtitle: "益龙观察"
 	quest.7219D2B812F4F537.quest_desc: [
 		"瓶中税收官每日为你的领地收税，并把物资送进物品栏。如果收税瓶被放在储物容器上，会把物资放进容器里。"
 		""
@@ -971,6 +995,7 @@
 	quest.755A36D1D7404B2B.title: "自我"
 	quest.75E7855E13406190.quest_desc: [""]
 	quest.76C1B861F1C40925.quest_desc: ["当前包括：冰龙龙蛋孵化信息"]
+	quest.792EEE317BF6BE9A.quest_subtitle: "皮下成骨综合征"
 	quest.79C4B032A9B1F772.quest_desc: [
 		"这是一颗真真切切的、&e与先人手记中描述分毫不差&r的龙蛋。"
 		""
@@ -1013,6 +1038,15 @@
 	quest.7B7E7AAC1B004988.title: "食物 - 海洋龙"
 	quest.7B9F4B7957E5BABA.title: "试炼密室"
 	quest.7C33BAEA5E7B816E.title: "雷电学派"
+	quest.7CDB045282E65572.quest_desc: [
+		"你最终发现，每一条新时代的冰龙、火龙、电龙都有其独特的个体信息。"
+		""
+		"并且，它们可以被遗传给后代。"
+		""
+		"通过给&b一雌一雄&r服下&e致幻植物熬成的浓汤&r，它们就会因此繁殖……"
+	]
+	quest.7CDB045282E65572.quest_subtitle: "龙之祖"
+	quest.7CDB045282E65572.title: "繁育之路"
 	quest.7D5CFE6DB014B46C.quest_subtitle: "是谁住在深海的大菠萝里？"
 	quest.7D5CFE6DB014B46C.title: "占领：海底神殿"
 	quest.7EAD63371F1F66D6.quest_desc: ["身为一条龙，寻找适合自身的环境是一件重要的事。"]
@@ -1045,6 +1079,7 @@
 	reward_table.2AF1057DB0E5AE56.title: "死亡地点传送"
 	reward_table.39025B3669E47683.title: "三色龙信标"
 	task.0019B05811BD85A4.title: "笔记：远古龙"
+	task.01DEFE83BAF10191.title: "笔记：繁育属性与特性"
 	task.0579C0FC39DF6F2C.title: "笔记：挽救的方法？"
 	task.0741D2CC2C85660E.title: "龙种的分别"
 	task.0762D5A4B4C103A6.title: "清除当前的挑战状态"
@@ -1095,6 +1130,7 @@
 	task.3F305F1A7732BE81.title: "营火烧炼物品时炼出一颗&c人头"
 	task.3F7CDCB946929F7D.title: "龙旗：自由探索"
 	task.417C6101F274068A.title: "龙曾在此"
+	task.41D29A7E2CC299AB.title: "龙宴"
 	task.422BB0D0FE11BBD4.title: "圆石"
 	task.4280C86E6C876B8F.title: "身为成年龙吃下迷幻植物"
 	task.4284B0A0F1EE600A.title: "缺水的海龙"
@@ -1129,6 +1165,7 @@
 	task.6D35F0D45F1C7708.title: "通用"
 	task.6E2DEDD7DD141BD6.title: "笔记：龙与魔法学派"
 	task.7046D4359B2C80F7.title: "WIP：龙的言灵术"
+	task.72BB28EDFD14F31A.title: "多鳞"
 	task.7519ED2CAF4B9CEC.title: "边狱"
 	task.76F26CEE5902DE59.title: "保留经验？"
 	task.770C77948080C013.title: "寻找强力的敌人"

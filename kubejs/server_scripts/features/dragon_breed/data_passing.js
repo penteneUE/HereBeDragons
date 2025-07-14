@@ -216,6 +216,22 @@ function onDragonEggSpawn(event) {
 
 /**
  *
+ * @param {$EntityDragonBase_} entity
+ * @param {$CompoundTag_} breedData
+ */
+function addPlayerQuestTag(entity, breedData) {
+    let owner = entity.getOwner();
+    if (!owner) return;
+    if (!owner.isPlayer()) return;
+    let traits = breedData.get("traits");
+    for (const key in traits) {
+        if (traits[key] > 0) owner.stages.add(breedTraitMap[key].stage);
+    }
+    //mother.nbt.getUUID("Owner");
+}
+
+/**
+ *
  * @param {$EntitySpawnedKubeEvent_ & {entity: $EntityDragonBase_}} event
  */
 function onDragonSpawn(event) {
@@ -231,6 +247,10 @@ function onDragonSpawn(event) {
         let data = popFrozenEggData(entity.server, entity);
         if (data) {
             entity.persistentData.put(BREED_DATA_KEY, data.get(BREED_DATA_KEY));
+
+            event.server.scheduleInTicks(1, () => {
+                addPlayerQuestTag(entity, data);
+            });
             return;
         }
     }
@@ -247,12 +267,15 @@ function onDragonSpawn(event) {
     });
 
     if (egg) {
-        entity.persistentData.put(
-            BREED_DATA_KEY,
-            egg.persistentData.get(BREED_DATA_KEY)
-        );
+        let data = egg.persistentData.get(BREED_DATA_KEY);
+
+        entity.persistentData.put(BREED_DATA_KEY, data);
 
         placedEggMap.remove(egg.getUuid().toString());
+
+        event.server.scheduleInTicks(1, () => {
+            addPlayerQuestTag(entity, data);
+        });
         return;
     }
 

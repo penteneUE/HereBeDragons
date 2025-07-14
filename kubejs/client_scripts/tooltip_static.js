@@ -41,6 +41,9 @@ ItemEvents.modifyTooltips((event) => {
 
     event.add("#kubejs:oldgen_dragon_hearts", [
         Text.gray({ translate: "kubejs.tooltips.oldgen_dragon_hearts.1" }),
+        Text.darkGray({
+            translate: "kubejs.tooltips.oldgen_dragon_hearts.comment",
+        }),
     ]);
 
     event.add("#kubejs:dragon_stews", [
