@@ -55,7 +55,7 @@ function playerTick_RepFrenzy(event) {
     let male = matingDragon.nbt.getBoolean("Gender");
 
     //console.log(egg);
-    let egg = bornChild(player, matingDragon);
+    let egg = bornChild(player, matingDragon, male);
 
     if (male) {
         egg.x = player.x;
@@ -99,9 +99,10 @@ function rollCurse() {
 /**
  * @param {$Player_} player
  * @param {$LivingEntity_} matingDragon
+ * @param {boolean} isMaleDragon
  * @returns {$Entity_}
  */
-function bornChild(player, matingDragon) {
+function bornChild(player, matingDragon, isMaleDragon) {
     if (player.hasEffect("kubejs:prion_curse")) {
         let curse = rollCurse();
         /**
@@ -151,11 +152,62 @@ function bornChild(player, matingDragon) {
 
     egg.mergeNbt(eggTag);
 
-    egg.persistentData.put(
-        BREED_DATA_KEY,
+    let parentBreedData = deserializeBreedData(
         getBreedDataFromEntity(matingDragon)
     );
+    // BREED DATA
+    if (!player.persistentData[BREED_DATA_KEY]) {
+        let hybridPenaltyTraits = new $CompoundTag();
+        hybridPenaltyTraits.putInt("down", 0);
+        hybridPenaltyTraits.putInt("no_flesh", 0); // TODO修改
+        /**
+         * @type {DragonBreedData}
+         */
+        let defaultHybridBreedData = {
+            strength: player.random.nextIntBetweenInclusive(10, 20),
+            constitution: player.random.nextIntBetweenInclusive(10, 20),
+            dexterity: player.random.nextIntBetweenInclusive(10, 20),
+            traits: hybridPenaltyTraits,
+        };
+        egg.persistentData.put(
+            BREED_DATA_KEY,
+            serializeBreedData(
+                isMaleDragon
+                    ? getChildBreedData(
+                          player.random,
+                          parentBreedData,
+                          defaultHybridBreedData
+                      )
+                    : getChildBreedData(
+                          player.random,
+                          defaultHybridBreedData,
+                          parentBreedData
+                      )
+            )
+        );
 
+        return egg;
+    }
+
+    let playerBreedData = deserializeBreedData(
+        player.persistentData.get(BREED_DATA_KEY)
+    );
+    egg.persistentData.put(
+        BREED_DATA_KEY,
+        serializeBreedData(
+            isMaleDragon
+                ? getChildBreedData(
+                      player.random,
+                      parentBreedData,
+                      playerBreedData
+                  )
+                : getChildBreedData(
+                      player.random,
+                      playerBreedData,
+                      parentBreedData
+                  )
+        )
+    );
     return egg;
 }
 
