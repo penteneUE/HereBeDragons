@@ -19,5 +19,26 @@ function geneSplicerOnUnequip(slotContext, oldStack, newStack) {
     removeBreedAttributes(slotContext.entity());
 }
 
+const CASTER_DATA_KEY = "geneCaster";
+
+/**
+ * @type {$CapabilityCurios$EquipConsumer_}
+ */
+function geneCasterOnEquip(slotContext, oldStack, newStack) {
+    slotContext.entity().persistentData.putBoolean(CASTER_DATA_KEY, true);
+    geneSplicerOnEquip(slotContext, oldStack, newStack);
+}
+
+/**
+ * @type {$CapabilityCurios$EquipConsumer_}
+ */
+function geneCasterOnUnequip(slotContext, oldStack, newStack) {
+    slotContext.entity().persistentData.remove(CASTER_DATA_KEY);
+    geneSplicerOnUnequip(slotContext, oldStack, newStack);
+}
+
 global.MISC.geneSplicerOnEquip = geneSplicerOnEquip;
 global.MISC.geneSplicerOnUnequip = geneSplicerOnUnequip;
+
+global.MISC.geneCasterOnEquip = geneCasterOnEquip;
+global.MISC.geneCasterOnUnequip = geneCasterOnUnequip;

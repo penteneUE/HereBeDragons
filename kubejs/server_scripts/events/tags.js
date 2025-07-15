@@ -77,6 +77,12 @@ ServerEvents.tags("item", (event) => {
     event.add("kubejs:gene_viewer", [
         "kubejs:gene_seeker",
         "kubejs:gene_splicer",
+        "kubejs:gene_caster",
+    ]);
+
+    event.add("kubejs:gene_imbueable", [
+        "kubejs:gene_splicer",
+        "kubejs:gene_caster",
     ]);
 
     // event.add("kubejs:fire_dragon_related_stuff")

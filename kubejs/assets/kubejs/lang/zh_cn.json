@@ -91,9 +91,11 @@
     "item.kubejs.lightning_dragon_stew": "电浆龙心大餐",
 
     "item.kubejs.gene_seeker": "基因透镜",
-    "item.kubejs.gene_splicer": "基因链钉",
+    "item.kubejs.gene_splicer": "血脉链钉",
+    "item.kubejs.gene_caster": "龙脉链钉",
     "kubejs.tooltips.gene_seeker.1": "右键一条冰龙、火龙或电龙以查看其繁育信息。",
     "kubejs.tooltips.gene_splicer.1": "与携带繁育信息的基因容器合成后，可将血统的力量转移至所有者身上。",
+    "kubejs.tooltips.gene_caster.1": "与携带繁育信息的基因容器合成后，可将血统的力量转移至所有者及其奉龙者身上。",
 
     "item.kubejs.gene_holder": "基因容器",
     "item.kubejs.gene_holder.named": "基因容器：%s",
@@ -280,5 +282,5 @@
 
     "curios.identifier.gene": "龙楔",
 
-    "kubejs.recipe.imbue_gene": "为基因链钉注入信息"
+    "kubejs.recipe.imbue_gene": "为血脉链钉注入信息"
 }

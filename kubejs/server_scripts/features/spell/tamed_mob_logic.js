@@ -210,100 +210,103 @@ function tamedCreatureLogic(mob, target) {
  * Also called on entity spawn to restore tame behavior.
  */
 function reviseTamedPetGoals(mob) {
-    if (mob instanceof PathfinderMob) {
-        // simply stop all goals to reset aggro
-        mob.targetSelector.getAvailableGoals().forEach((goal) => {
-            if (!goal.running) return;
-            goal.stop();
-        });
-        // here we remove all nearest attackable target goals so it doesnt attack us or other mobs on sight
-        // the entity goal to remove will vary depending on the mob tamed, so you may need to add more cases for other mobs
-        // mob.targetSelector.removeAllGoals(
-        //     (goal) =>
-        //         goal instanceof $NearestAttackableTargetGoal ||
-        //         goal.goal instanceof $NearestAttackableTargetGoal
-        // );
-        // mob.targetSelector.removeAllGoals(
-        //     (goal) =>
-        //         goal instanceof $HurtByTargetGoal ||
-        //         goal.goal instanceof $HurtByTargetGoal
-        // );
-        mob.targetSelector.removeAllGoals((goal) => true);
-
-        // if (
-        //     mob.goalSelector.availableGoals.some(
-        //         (goal) => goal.goal instanceof MeleeAttackGoal
-        //     ) ||
-        //     mob.goalSelector.availableGoals.some(
-        //         (goal) => goal.goal instanceof $RangedAttackGoal
-        //     ) ||
-        //     mob.goalSelector.availableGoals.some(
-        //         (goal) => goal.goal instanceof $RangedBowAttackGoal
-        //     )
-        // ) {
-        // re-add the NearestAttackableTargetGoal & HurtByTargetGoal to make it only attack the last entity the player attacked
-        mob.server.scheduleInTicks(1, () => {
-            mob.targetSelector.addGoal(
-                0,
-                new $NearestAttackableTargetGoal(
-                    mob,
-                    LivingEntity,
-                    1,
-                    true,
-                    false,
-                    (t) => tamedCreatureLogic(mob, t)
-                )
-            );
-
-            mob.targetSelector.addGoal(1, new $HurtByTargetGoal(mob, Player));
-
-            mob.goalSelector.addGoal(
-                3,
-                new $CustomGoal(
-                    "follow_owner_dragon",
-                    mob,
-                    (mob) => {
-                        // 使用随机数降低检查频率
-                        return mob.getRandom().nextInt(100) < 5;
-                    },
-                    (mob) => true,
-                    true,
-                    (mob) => {},
-                    (mob) => mob.getNavigation().stop(),
-                    true,
-                    /** @param {$Mob_} mob */ (mob) => {
-                        if (
-                            !getOwner(mob).persistentData.getBoolean(
-                                TOGGLE_PET_FOLLOWING_KEY
-                            )
-                        )
-                            return;
-                        //if (mob.tickCount % 60 != 0) return;
-                        let mobAABB = mob.boundingBox.inflate(5);
-                        mob.level
-                            .getEntitiesWithin(mobAABB)
-                            .forEach((entity) => {
-                                if (entity == null) return;
-                                if (
-                                    entity.player &&
-                                    isPetOf(mob, entity) &&
-                                    entity.distanceToEntity(mob) < 20
-                                ) {
-                                    mob.getNavigation().moveTo(
-                                        entity.block.x,
-                                        entity.y,
-                                        entity.z,
-                                        1.0
-                                    );
-                                }
-                            });
-                    }
-                )
-            );
-            // console.log(`[Pet AI] Pet: ${mob.type}, Revised Pet Goals`);
-        });
-        //}
+    let owner = getOwner(mob);
+    if (owner && owner.persistentData.getBoolean(CASTER_DATA_KEY)) {
+        updateBreedAttributes(mob, owner.persistentData[BREED_DATA_KEY]);
     }
+
+    if (!(mob instanceof PathfinderMob)) return;
+
+    // simply stop all goals to reset aggro
+    mob.targetSelector.getAvailableGoals().forEach((goal) => {
+        if (!goal.running) return;
+        goal.stop();
+    });
+    // here we remove all nearest attackable target goals so it doesnt attack us or other mobs on sight
+    // the entity goal to remove will vary depending on the mob tamed, so you may need to add more cases for other mobs
+    // mob.targetSelector.removeAllGoals(
+    //     (goal) =>
+    //         goal instanceof $NearestAttackableTargetGoal ||
+    //         goal.goal instanceof $NearestAttackableTargetGoal
+    // );
+    // mob.targetSelector.removeAllGoals(
+    //     (goal) =>
+    //         goal instanceof $HurtByTargetGoal ||
+    //         goal.goal instanceof $HurtByTargetGoal
+    // );
+    mob.targetSelector.removeAllGoals((goal) => true);
+
+    // if (
+    //     mob.goalSelector.availableGoals.some(
+    //         (goal) => goal.goal instanceof MeleeAttackGoal
+    //     ) ||
+    //     mob.goalSelector.availableGoals.some(
+    //         (goal) => goal.goal instanceof $RangedAttackGoal
+    //     ) ||
+    //     mob.goalSelector.availableGoals.some(
+    //         (goal) => goal.goal instanceof $RangedBowAttackGoal
+    //     )
+    // ) {
+    // re-add the NearestAttackableTargetGoal & HurtByTargetGoal to make it only attack the last entity the player attacked
+    mob.server.scheduleInTicks(1, () => {
+        mob.targetSelector.addGoal(
+            0,
+            new $NearestAttackableTargetGoal(
+                mob,
+                LivingEntity,
+                1,
+                true,
+                false,
+                (t) => tamedCreatureLogic(mob, t)
+            )
+        );
+
+        mob.targetSelector.addGoal(1, new $HurtByTargetGoal(mob, Player));
+
+        mob.goalSelector.addGoal(
+            3,
+            new $CustomGoal(
+                "follow_owner_dragon",
+                mob,
+                (mob) => {
+                    // 使用随机数降低检查频率
+                    return mob.getRandom().nextInt(100) < 5;
+                },
+                (mob) => true,
+                true,
+                (mob) => {},
+                (mob) => mob.getNavigation().stop(),
+                true,
+                /** @param {$Mob_} mob */ (mob) => {
+                    if (
+                        !getOwner(mob).persistentData.getBoolean(
+                            TOGGLE_PET_FOLLOWING_KEY
+                        )
+                    )
+                        return;
+                    //if (mob.tickCount % 60 != 0) return;
+                    let mobAABB = mob.boundingBox.inflate(5);
+                    mob.level.getEntitiesWithin(mobAABB).forEach((entity) => {
+                        if (entity == null) return;
+                        if (
+                            entity.player &&
+                            isPetOf(mob, entity) &&
+                            entity.distanceToEntity(mob) < 20
+                        ) {
+                            mob.getNavigation().moveTo(
+                                entity.block.x,
+                                entity.y,
+                                entity.z,
+                                1.0
+                            );
+                        }
+                    });
+                }
+            )
+        );
+        // console.log(`[Pet AI] Pet: ${mob.type}, Revised Pet Goals`);
+    });
+    //}
 }
 
 // function debugEntityGoals(entity) {

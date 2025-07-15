@@ -93,5 +93,7 @@ global.MISC = {
     // reproductionFrenzyTick: (entity, lvl) => {},
     geneSplicerOnEquip: (slotContext, oldStack, newStack) => {},
     geneSplicerOnUnequip: (slotContext, oldStack, newStack) => {},
+    geneCasterOnEquip: (slotContext, oldStack, newStack) => {},
+    geneCasterOnUnequip: (slotContext, oldStack, newStack) => {},
 };
 Platform.mods.kubejs.name = "Here Were Dragons";

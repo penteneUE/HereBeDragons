@@ -117,4 +117,40 @@ StartupEvents.registry("item", (event) => {
         .maxStackSize(1)
         .unstackable()
         .tag("curios:gene");
+
+    event
+        .create("kubejs:gene_caster")
+        .useAnimation("bow")
+        .useDuration((itemStack) => 10)
+        .use((level, player, hand) => {
+            return true;
+        })
+        .finishUsing((itemStack, level, entity) => {
+            if (level.isClientSide()) return itemStack;
+            return global.MISC.geneSplicerUsed(itemStack, level, entity);
+        })
+        .attachCuriosCapability(
+            CuriosJSCapabilityBuilder.create()
+                .onEquip((slotContext, oldStack, newStack) => {
+                    global.MISC.geneCasterOnEquip(
+                        slotContext,
+                        oldStack,
+                        newStack
+                    );
+                })
+                .onUnequip((slotContext, oldStack, newStack) => {
+                    global.MISC.geneCasterOnUnequip(
+                        slotContext,
+                        oldStack,
+                        newStack
+                    );
+                })
+                .canEquipFromUse((s, i) => false)
+                .modifyAttributesTooltip((tooltips, stack) => [])
+        )
+        .fireResistant(true)
+        .maxStackSize(1)
+        .unstackable()
+        .tag("curios:gene")
+        .glow(true);
 });

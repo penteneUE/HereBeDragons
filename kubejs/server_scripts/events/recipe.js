@@ -245,7 +245,7 @@ ServerEvents.recipes((event) => {
                 Text.lightPurple({ translate: "kubejs.recipe.imbue_gene" })
             ), // arg 1: output
             [
-                Ingredient.of("kubejs:gene_splicer"),
+                Ingredient.of("#kubejs:gene_imbueable"),
                 Ingredient.of("kubejs:gene_holder"),
             ]
         )
@@ -255,7 +255,7 @@ ServerEvents.recipes((event) => {
 ServerEvents.modifyRecipeResult("kubejs/gene_splicer_fill", (event) => {
     let { grid, item } = event;
 
-    let output = grid.find(Ingredient.of("kubejs:gene_splicer"));
+    let output = grid.find(Ingredient.of("#kubejs:gene_imbueable"));
     let holder = grid.find(Ingredient.of("kubejs:gene_holder"));
 
     if (!holder.customData || holder.customData.empty) {
