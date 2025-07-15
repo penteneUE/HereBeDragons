@@ -32,8 +32,9 @@ function taotieFabel_onCast(event) {
         }
 
         player.persistentData.consumedEntity.forEach((tag) => {
-            let newEntity = event.level.createEntity(tag.getString("type"));
-            newEntity.mergeNbt(tag.nbt);
+            // let newEntity = event.level.createEntity(tag.getString("type"));
+            // newEntity.mergeNbt(tag.nbt);
+            let newEntity = recoverConsumedEntity(tag);
             newEntity.x = x;
             newEntity.y = y;
             newEntity.z = z;
@@ -92,9 +93,6 @@ function taotieFabel_onCast(event) {
             // console.log(entity.boundingBox.getSize());
         }
         //entity.setPosition(player.x, player.y, player.z);
-        let tag = new $CompoundTag();
-        tag.type = entity.type;
-        tag.nbt = entity.nbt;
 
         event.level.spawnParticles(
             "minecraft:campfire_cosy_smoke",
@@ -109,7 +107,9 @@ function taotieFabel_onCast(event) {
             0.1
         );
 
-        player.persistentData.consumedEntity.addLast(tag);
+        player.persistentData.consumedEntity.addLast(
+            createConsumedEntityTag(entity)
+        );
         player.persistentData.putDouble(
             "consumedSpace",
             player.persistentData.getDouble("consumedSpace") +

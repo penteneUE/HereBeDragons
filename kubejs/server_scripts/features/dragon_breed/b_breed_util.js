@@ -274,6 +274,43 @@ function getTraitFromEntity(entity, key) {
     return getTraitLvl(breedData.get("traits"), key);
 }
 
+/**
+ *
+ * @param {string} color
+ * @returns {"iceandfire:fire_dragon" | "iceandfire:ice_dragon" | "iceandfire:lightning_dragon"}
+ */
+function eggColorToDragonType(color) {
+    let col = color.toLowerCase();
+    switch (col) {
+        case "red":
+        case "green":
+        case "bronze":
+        case "gray":
+            return "iceandfire:fire_dragon";
+        case "sapphire":
+        case "white":
+        case "blue":
+        case "silver":
+            return "iceandfire:ice_dragon";
+        case "electric":
+        case "amethyst":
+        case "copper":
+        case "black":
+            return "iceandfire:lightning_dragon";
+    }
+}
+
+/**
+ *
+ * @param {$EntityDragonEgg_} entity
+ */
+function isIceDragonEgg(entity) {
+    return (
+        eggColorToDragonType(entity.getEggType().name()) ==
+        "iceandfire:ice_dragon"
+    );
+}
+
 // ItemEvents.rightClicked((event) => {
 //     let {
 //         player,

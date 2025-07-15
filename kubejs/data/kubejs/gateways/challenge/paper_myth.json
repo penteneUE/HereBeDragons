@@ -6,10 +6,16 @@
             "type": "gateways:experience",
             "experience": 300,
             "orb_size": 25
+        },
+        {
+            "stack": {
+                "count": 3,
+                "id": "kubejs:paper_dragon_fragment"
+            },
+            "type": "gateways:stack"
         }
     ],
-    "failures": [
-    ],
+    "failures": [],
     "size": "large",
     "waves": [
         {
@@ -27,7 +33,7 @@
             "rewards": [],
             "setup_time": 100
         },
-        
+
         {
             "entities": [
                 {
@@ -161,7 +167,7 @@
         }
     ],
     "spawn_algorithm": "gateways:inward_spiral",
-    "rules":{
+    "rules": {
         "fail_on_out_of_bounds": false,
         "player_damage_only": true,
         "allow_discarding": true

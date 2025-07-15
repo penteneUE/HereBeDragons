@@ -116,6 +116,8 @@ shaderpacks/
 !shaderpacks/ComplementaryReimagined_r5.5.1 + EuphoriaPatches_1.6.5
 !shaderpacks/ComplementaryReimagined_r5.5.1 + EuphoriaPatches_1.6.5/
 
+vaultpatcher_asm/
+
 # 排除的文件
 !*.log
 !*.dat_old

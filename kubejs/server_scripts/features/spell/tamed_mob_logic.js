@@ -272,6 +272,12 @@ function reviseTamedPetGoals(mob) {
                     (mob) => mob.getNavigation().stop(),
                     true,
                     /** @param {$Mob_} mob */ (mob) => {
+                        if (
+                            !getOwner(mob).persistentData[
+                                TOGGLE_PET_FOLLOWING_KEY
+                            ]
+                        )
+                            return;
                         //if (mob.tickCount % 60 != 0) return;
                         let mobAABB = mob.boundingBox.inflate(5);
                         mob.level
@@ -529,4 +535,34 @@ NativeEvents.onEvent($LivingChangeTargetEvent, (event) => {
     if (!isPetOf(entity, event.getNewAboutToBeSetTarget())) return;
 
     event.setCanceled(true);
+});
+
+const TOGGLE_PET_FOLLOWING_KEY = "toggleFollowing";
+
+ItemEvents.entityInteracted((event) => {
+    let {
+        target,
+        player,
+        player: { mainHandItem },
+    } = event;
+    if (!mainHandItem.isEmpty()) return;
+    //let randomChancetoFail = Math.random();
+    if (!target.persistentData.OwnerName) return;
+    if (!isPetOf(target, player)) return;
+    if (!player.persistentData.contains(TOGGLE_PET_FOLLOWING_KEY)) {
+        player.persistentData.putBoolean(TOGGLE_PET_FOLLOWING_KEY, false);
+    }
+    if (player.persistentData[TOGGLE_PET_FOLLOWING_KEY]) {
+        player.statusMessage = Text.white({
+            translate: "kubejs.status.minion.toggle_follow.off",
+        });
+    } else {
+        player.statusMessage = Text.white({
+            translate: "kubejs.status.minion.toggle_follow.on",
+        });
+    }
+    player.persistentData.putBoolean(
+        TOGGLE_PET_FOLLOWING_KEY,
+        !player.persistentData[TOGGLE_PET_FOLLOWING_KEY]
+    );
 });

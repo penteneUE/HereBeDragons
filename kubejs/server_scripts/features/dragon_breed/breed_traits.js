@@ -1,7 +1,7 @@
 /**
  *
  * @param {$LivingEntity_} entity
- * @returns {boolean}
+ * @returns {entity is $Player_ | entity is $EntityDragonBase_}
  */
 function isTraitedEntity(entity) {
     return entity.isPlayer() || isIAFDragon(entity);
@@ -90,7 +90,7 @@ function regeneratorDragonInteracted(event) {
             healAmount = (target.maxHealth * 4) / 10;
             break;
     }
-    console.log(healAmount);
+    //console.log(healAmount);
     target.heal(healAmount);
 }
 
@@ -140,13 +140,89 @@ function regeneratorPlayerAfterHurt(event) {
     entity.potionEffects.add("kubejs:regenerator", 60, 1, false, true);
 }
 
+/**
+ * @type {$HashMap_<$UUID_, $UUID_>} 玩家UUID对实体UUID
+ */
+const stopouchInteractMap = Utils.newMap();
+
+/**
+ *
+ * @param {$ItemEntityInteractedKubeEvent_ & {target: $LivingEntity_}} event
+ * @returns
+ */
+function stopouchLeadEntityInteracted(event) {
+    let { entity, target } = event;
+    if (!entity.isPlayer()) return;
+    if (isIAFDragon(target)) {
+        if (getTraitFromEntity(target, "regenerator") < 1) return;
+        if (entity.shiftKeyDown) {
+            if (!target.persistentData.consumedEntity) return;
+            target.persistentData.consumedEntity.forEach((tag) => {
+                // let newEntity = event.level.createEntity(tag.getString("type"));
+                // newEntity.mergeNbt(tag.nbt);
+                let newEntity = recoverConsumedEntity(tag);
+                newEntity.x = x;
+                newEntity.y = y;
+                newEntity.z = z;
+                //newEntity.setPosition(player.x, player.y, player.z);
+                newEntity.spawn();
+
+                event.level.spawnParticles(
+                    "minecraft:campfire_cosy_smoke",
+                    true,
+                    newEntity.x + 0.5,
+                    newEntity.y + 1.05,
+                    newEntity.z + 0.5,
+                    0,
+                    0.3,
+                    0,
+                    2,
+                    0.1
+                );
+                count++;
+            });
+            target.persistentData.remove("consumedEntity");
+            return;
+        }
+        console.log(stopouchInteractMap);
+        if (!stopouchInteractMap.containsKey(entity.uuid)) return;
+        let foundEntity = event.level.getEntityByUUID(
+            stopouchInteractMap[entity.uuid]
+        );
+        console.log(foundEntity);
+        if (!foundEntity) return;
+        if (target.distanceToEntity(foundEntity) > 20) return;
+
+        if (!target.persistentData.consumedEntity) {
+            target.persistentData.consumedEntity = new $ListTag();
+        }
+
+        target.persistentData.consumedEntity.addLast(
+            createConsumedEntityTag(foundEntity)
+        );
+
+        foundEntity.discard();
+
+        event.server.runCommandSilent(
+            `/playsound minecraft:item.honey_bottle.drink player ${target.uuid.toString()} ${
+                target.x
+            } ${target.y} ${target.z}`
+        );
+        return;
+    }
+    stopouchInteractMap[entity.uuid] = target.uuid;
+}
+
+// 多鳞
 EntityEvents.beforeHurt("minecraft:player", multiscaleBeforeHurt);
 EntityEvents.beforeHurt("iceandfire:fire_dragon", multiscaleBeforeHurt);
 EntityEvents.beforeHurt("iceandfire:ice_dragon", multiscaleBeforeHurt);
 EntityEvents.beforeHurt("iceandfire:lightning_dragon", multiscaleBeforeHurt);
 
+// 硬爪
 EntityEvents.beforeHurt(toughClawsBeforeHurt);
 
+// 再生
 ItemEvents.entityInteracted(
     "iceandfire:dragon_horn",
     regeneratorDragonInteracted
@@ -154,3 +230,6 @@ ItemEvents.entityInteracted(
 NativeEvents.onEvent($MobEffectEvent$Remove, regeneratorPlayerHeal);
 NativeEvents.onEvent($MobEffectEvent$Expired, regeneratorPlayerHeal);
 EntityEvents.afterHurt("minecraft:player", regeneratorPlayerAfterHurt);
+
+// 胃袋
+ItemEvents.entityInteracted("minecraft:lead", stopouchLeadEntityInteracted);

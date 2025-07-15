@@ -22,6 +22,8 @@
 !shaderpacks/**/*
 !screenshots/**/*
 
+!vaultpatcher_asm/**/*
+
 !journeymap/config/**/*
 !journeymap/server/**/*
 

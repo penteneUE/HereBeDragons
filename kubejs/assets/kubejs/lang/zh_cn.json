@@ -70,6 +70,8 @@
     "kubejs.spell.ananta_remanta.status.success": "成功！",
 
     "kubejs.entity.minion": "%s的奉龙者",
+    "kubejs.status.minion.toggle_follow.on": "所有奉龙者将会跟随你",
+    "kubejs.status.minion.toggle_follow.off": "所有奉龙者将停止跟随你",
 
     "kubejs.dimensiontravel.failed.dread_land": "这是一个世界的破洞，你若是进去这里，会造成不可估量的后果……（MOD本身这个维度还没做完）",
     "kubejs.dimensiontravel.failed.the_end": "在没有彻底占领这里之前，就这么进去的话，你总觉得不放心。毕竟，那很可能是个有去无回的地方。",

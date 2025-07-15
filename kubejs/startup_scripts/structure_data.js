@@ -302,7 +302,8 @@ const shipwreckData = {
             .add("minecraft:cod", 2)
             .add("minecraft:salmon", 2)
             .add("minecraft:kelp", 1)
-            .add("minecraft:ink_sac", 1),
+            .add("minecraft:ink_sac", 1)
+            .add("dragonsurvival:golden_turtle_egg", 1),
         count: 4,
     },
 };
@@ -345,7 +346,8 @@ structureData.put("minecraft:jungle_pyramid", {
             .add("minecraft:rotten_flesh", 2)
             .add("minecraft:glow_berries", 2)
             .add("minecraft:red_mushroom", 1)
-            .add("minecraft:brown_mushroom", 1),
+            .add("minecraft:brown_mushroom", 1)
+            .add("dragonsurvival:smelly_meat_porridge", 0.5),
         //.add('minecraft:enchanted_book[stored_enchantments={levels:{"minecraft:mending":1}}]', 1),
         count: 4,
     },
@@ -540,7 +542,7 @@ structureData.put("minecraft:bastion_remnant", {
             .add("minecraft:gold_ingot", 4)
             .add("minecraft:gold_block", 1)
             .add("minecraft:diamond", 3)
-            .add("dragonsurvival:charged_coal", 2)
+            .add("dragonsurvival:charged_coal", 1)
             .add("minecraft:netherite_scrap", 1)
             .add("dragonsurvival:elder_dragon_bone", 0.5)
             .add("dragonsurvival:heart_element", 0.2)
@@ -561,7 +563,7 @@ structureData.put("minecraft:fortress", {
             .add("minecraft:gold_ingot", 4)
             .add("minecraft:blaze_rod", 2)
             .add("minecraft:coal", 2)
-            .add("dragonsurvival:charged_coal", 2)
+            .add("dragonsurvival:charged_coal", 1)
             .add("minecraft:netherite_scrap", 1)
             .add("minecraft:wither_skeleton_skull", 0.1)
             .add("dragonsurvival:elder_dragon_bone", 0.5)

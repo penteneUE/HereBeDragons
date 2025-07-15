@@ -1,3 +1,4 @@
+let $ItemEntity = Java.loadClass("net.minecraft.world.entity.item.ItemEntity");
 let $Vec3 = Java.loadClass("net.minecraft.world.phys.Vec3");
 let $GatewayRegistry = Java.loadClass(
     "dev.shadowsoffire.gateways.gate.GatewayRegistry"
@@ -47,7 +48,15 @@ global.MISC.gateCompleted = (event) => {
     handleGateEnd(
         event,
         (player) => {
-            player.give(Item.of("4x kubejs:paper_dragon_fragment"));
+            let itemEntity = new $ItemEntity();
+            itemEntity.setItem(Item.of("3x kubejs:paper_dragon_fragment"));
+            let tag = new $CompoundTag();
+            tag.putBoolean("Glowing", true);
+            itemEntity.mergeNbt(tag);
+            itemEntity.setPosition(player.block);
+            itemEntity.spawn();
+            //player.give(Item.of("2x kubejs:paper_dragon_fragment"));
+            //player.block.popItem(Item.of("4x kubejs:paper_dragon_fragment"));
             clearWorldEnder(player);
         },
         (player, endless) => {

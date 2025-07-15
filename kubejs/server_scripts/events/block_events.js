@@ -1,5 +1,5 @@
 /**
- * @type {$Map_<$UUID_, {block: $BlockContainerJS_, facing: $Direction_}>}
+ * @type {$HashMap_<$UUID_, {block: $BlockContainerJS_, facing: $Direction_}>}
  */
 const placedAgainstMap = Utils.newMap();
 

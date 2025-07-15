@@ -83,12 +83,12 @@ function playerTick_DragonState(/**@type {$SimplePlayerKubeEvent_}*/ event) {
                 attrTable.set(FIRE_SPELL_RESIST, 0.9);
                 break;
             case "dragonsurvival:sea_dragon":
-                attrTable.set(LIGHTNING_SPELL_POWER, 0.4);
-                attrTable.set(ICE_SPELL_POWER, 0.4);
+                attrTable.set(LIGHTNING_SPELL_POWER, 0.6);
+                attrTable.set(ICE_SPELL_POWER, 0.6);
                 attrTable.set(FIRE_SPELL_POWER, -0.8);
 
-                attrTable.set(LIGHTNING_SPELL_RESIST, 0.45);
-                attrTable.set(ICE_SPELL_RESIST, 0.45);
+                attrTable.set(LIGHTNING_SPELL_RESIST, 0.7);
+                attrTable.set(ICE_SPELL_RESIST, 0.7);
                 break;
         }
 

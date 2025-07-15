@@ -4,6 +4,8 @@
 >
 > 招魂群：1037352971（进入万魂幡，是兄弟就来联机测试包）
 
+“造主很累很累，他闭上了眼睛。”没有Mixin的坐牢体验何时结束？
+
 宣传视频（Bilibili）：
 [![宣传视频](https://i1.hdslb.com/bfs/archive/22396dc0e5fe0a9a62bc0e90a67233dfb460000b.jpg)](https://b23.tv/OxcL0Vg)
 
