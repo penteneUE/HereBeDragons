@@ -273,9 +273,9 @@ function reviseTamedPetGoals(mob) {
                     true,
                     /** @param {$Mob_} mob */ (mob) => {
                         if (
-                            !getOwner(mob).persistentData[
+                            !getOwner(mob).persistentData.getBoolean(
                                 TOGGLE_PET_FOLLOWING_KEY
-                            ]
+                            )
                         )
                             return;
                         //if (mob.tickCount % 60 != 0) return;
@@ -541,6 +541,7 @@ const TOGGLE_PET_FOLLOWING_KEY = "toggleFollowing";
 
 ItemEvents.entityInteracted((event) => {
     let {
+        entity,
         target,
         player,
         player: { mainHandItem },
@@ -549,20 +550,29 @@ ItemEvents.entityInteracted((event) => {
     //let randomChancetoFail = Math.random();
     if (!target.persistentData.OwnerName) return;
     if (!isPetOf(target, player)) return;
-    if (!player.persistentData.contains(TOGGLE_PET_FOLLOWING_KEY)) {
-        player.persistentData.putBoolean(TOGGLE_PET_FOLLOWING_KEY, false);
-    }
-    if (player.persistentData[TOGGLE_PET_FOLLOWING_KEY]) {
-        player.statusMessage = Text.white({
-            translate: "kubejs.status.minion.toggle_follow.off",
-        });
-    } else {
+    // if (!player.persistentData.contains(TOGGLE_PET_FOLLOWING_KEY)) {
+    //     player.persistentData.putBoolean(TOGGLE_PET_FOLLOWING_KEY, false);
+    // }
+    let val =
+        player.persistentData.getBoolean(TOGGLE_PET_FOLLOWING_KEY) ?? false;
+    //console.log(player.persistentData.getBoolean(TOGGLE_PET_FOLLOWING_KEY));
+    //console.log(val);
+    if (val == false) {
+        //console.log(val);
         player.statusMessage = Text.white({
             translate: "kubejs.status.minion.toggle_follow.on",
         });
+
+        //entity.persistentData[TOGGLE_PET_FOLLOWING_KEY] = true;
+    } else {
+        player.statusMessage = Text.white({
+            translate: "kubejs.status.minion.toggle_follow.off",
+        });
     }
-    player.persistentData.putBoolean(
-        TOGGLE_PET_FOLLOWING_KEY,
-        !player.persistentData[TOGGLE_PET_FOLLOWING_KEY]
-    );
+    console.log(111);
+    event.server.scheduleInTicks(1, () => {
+        console.log(val);
+        player.persistentData.putBoolean(TOGGLE_PET_FOLLOWING_KEY, !val);
+        // entity.persistentData.put(TOGGLE_PET_FOLLOWING_KEY, !val);
+    });
 });

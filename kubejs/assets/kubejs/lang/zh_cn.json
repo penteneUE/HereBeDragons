@@ -25,6 +25,8 @@
     "kubejs.breed.traits.stopouch.name": "大胃袋",
     "kubejs.breed.traits.stopouch.desc": "拥有一个大胃袋，可以存储一个生物。",
     "kubejs.breed.traits.stopouch.desc.full": "可以在腹中携带一个小/中/任意生物，先用拴绳拴住目标生物，再右键该个体。如果玩家得到此特性，“饕餮寓言”的存储容量会提升。",
+    "kubejs.status.traits.stopouch.in": "%s胃袋：吞入了 %s",
+    "kubejs.status.traits.stopouch.out": "%s胃袋：吐出了 %s",
 
     "effect.kubejs.reproduction_frenzy": "繁衍狂热",
     "effect.kubejs.reproduction_frenzy.desc": "等等，什么？！",

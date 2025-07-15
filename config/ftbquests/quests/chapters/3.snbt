@@ -399,7 +399,7 @@
 				item: { count: 1, id: "kubejs:gene_seeker" }
 				type: "item"
 			}]
-			x: 2.5d
+			x: 2.0d
 			y: -15.0d
 		}
 		{
@@ -419,11 +419,12 @@
 				id: "01DEFE83BAF10191"
 				type: "checkmark"
 			}]
-			x: 2.5d
-			y: -16.0d
+			x: 3.0d
+			y: -15.0d
 		}
 		{
 			dependencies: ["7CDB045282E65572"]
+			hide_dependency_lines: true
 			icon: {
 				id: "minecraft:ghast_tear"
 			}
@@ -445,7 +446,7 @@
 			]
 			tasks: [{
 				id: "72BB28EDFD14F31A"
-				stage: "quest/breed.regenerator"
+				stage: "quest/breed.multiscale"
 				type: "gamestage"
 			}]
 			x: 4.5d
@@ -454,13 +455,124 @@
 		{
 			dependencies: ["7CDB045282E65572"]
 			id: "3B20762F7E6C05B2"
+			rewards: [{
+				id: "3493884CD552E182"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "18D434572EEDD39D"
 				item: { count: 1, id: "kubejs:gene_holder" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: -14.0d
+			x: 2.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["7CDB045282E65572"]
+			hide_dependency_lines: true
+			icon: {
+				id: "minecraft:ghast_tear"
+			}
+			id: "25988B2D0CBAFDFC"
+			rewards: [
+				{
+					id: "5260B3ACC25C9B30"
+					item: {
+						count: 1
+						id: "dragonsurvival:elder_dragon_heart"
+					}
+					type: "item"
+				}
+				{
+					id: "264F113A59271C68"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "53DC74A98A7635AD"
+				stage: "quest/breed.regenerator"
+				type: "gamestage"
+			}]
+			x: 4.5d
+			y: -16.0d
+		}
+		{
+			dependencies: ["7CDB045282E65572"]
+			hide_dependency_lines: true
+			icon: {
+				id: "minecraft:ghast_tear"
+			}
+			id: "067E78CA72DFEC4E"
+			rewards: [
+				{
+					id: "3361116BAAEF3D44"
+					item: {
+						count: 1
+						id: "dragonsurvival:elder_dragon_heart"
+					}
+					type: "item"
+				}
+				{
+					id: "45F66ED9D2AE5BFE"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "0A521C1697674EEA"
+				stage: "quest/breed.tough_claws"
+				type: "gamestage"
+			}]
+			x: 5.5d
+			y: -16.0d
+		}
+		{
+			dependencies: ["7CDB045282E65572"]
+			hide_dependency_lines: true
+			icon: {
+				id: "minecraft:ghast_tear"
+			}
+			id: "6F57BD70E7CADA3A"
+			rewards: [
+				{
+					id: "49E41DB2E3D04B17"
+					item: {
+						count: 1
+						id: "dragonsurvival:elder_dragon_heart"
+					}
+					type: "item"
+				}
+				{
+					id: "320E4CB918FE4F69"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "0F532E566A30FD7A"
+				stage: "quest/breed.stopouch"
+				type: "gamestage"
+			}]
+			x: 5.5d
+			y: -15.0d
+		}
+		{
+			dependencies: ["7CDB045282E65572"]
+			id: "4285DC7D03D4020B"
+			rewards: [{
+				id: "056F29D3E50B8E7D"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "34DEF8945D3DC0E4"
+				item: { count: 1, id: "kubejs:gene_splicer" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -17.0d
 		}
 	]
 }

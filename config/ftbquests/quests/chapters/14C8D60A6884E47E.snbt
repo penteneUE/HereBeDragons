@@ -97,11 +97,17 @@
 			dependencies: ["209A1F902BE74FC3"]
 			hide_until_deps_complete: true
 			id: "755A36D1D7404B2B"
-			rewards: [{
-				id: "473D4B4B13838894"
-				type: "xp"
-				xp: 2
-			}]
+			rewards: [
+				{
+					id: "473D4B4B13838894"
+					type: "xp"
+					xp: 2
+				}
+				{
+					id: "3F539A25E52AA636"
+					type: "custom"
+				}
+			]
 			tasks: [
 				{
 					advancement: "dragonsurvival:cave/be_dragon"

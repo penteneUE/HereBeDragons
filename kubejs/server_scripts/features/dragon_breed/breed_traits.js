@@ -151,20 +151,22 @@ const stopouchInteractMap = Utils.newMap();
  * @returns
  */
 function stopouchLeadEntityInteracted(event) {
-    let { entity, target } = event;
-    if (!entity.isPlayer()) return;
+    let { entity, target, player } = event;
+    // if (!player.isPlayer()) return;
     if (isIAFDragon(target)) {
-        if (getTraitFromEntity(target, "regenerator") < 1) return;
-        if (entity.shiftKeyDown) {
+        if (getTraitFromEntity(target, "stopouch") < 1) return;
+        if (player.shiftKeyDown) {
+            //console.log(target);
             if (!target.persistentData.consumedEntity) return;
+            let { x, y, z } = target;
             target.persistentData.consumedEntity.forEach((tag) => {
-                // let newEntity = event.level.createEntity(tag.getString("type"));
-                // newEntity.mergeNbt(tag.nbt);
-                let newEntity = recoverConsumedEntity(tag);
+                // let newplayer = event.level.createplayer(tag.getString("type"));
+                // newplayer.mergeNbt(tag.nbt);
+                let newEntity = recoverConsumedEntity(event.level, tag);
                 newEntity.x = x;
                 newEntity.y = y;
                 newEntity.z = z;
-                //newEntity.setPosition(player.x, player.y, player.z);
+                //newplayer.setPosition(player.x, player.y, player.z);
                 newEntity.spawn();
 
                 event.level.spawnParticles(
@@ -179,18 +181,28 @@ function stopouchLeadEntityInteracted(event) {
                     2,
                     0.1
                 );
-                count++;
+
+                /**
+                 * @type {$Player_}
+                 */
+                let owner = target.getOwner();
+                if (owner)
+                    owner.statusMessage = Text.translate(
+                        "kubejs.status.traits.stopouch.out",
+                        [target.displayName, newEntity.displayName]
+                    );
             });
             target.persistentData.remove("consumedEntity");
+            event.cancel();
             return;
         }
-        console.log(stopouchInteractMap);
-        if (!stopouchInteractMap.containsKey(entity.uuid)) return;
+        // console.log(stopouchInteractMap);
+        if (!stopouchInteractMap.containsKey(player.uuid.toString())) return;
         let foundEntity = event.level.getEntityByUUID(
-            stopouchInteractMap[entity.uuid]
+            stopouchInteractMap[player.uuid]
         );
-        console.log(foundEntity);
-        if (!foundEntity) return;
+        // console.log(foundEntity);
+        if (!foundEntity || !foundEntity.alive) return;
         if (target.distanceToEntity(foundEntity) > 20) return;
 
         if (!target.persistentData.consumedEntity) {
@@ -201,16 +213,28 @@ function stopouchLeadEntityInteracted(event) {
             createConsumedEntityTag(foundEntity)
         );
 
+        /**
+         * @type {$Player_}
+         */
+        let owner = target.getOwner();
+        if (owner)
+            owner.statusMessage = Text.translate(
+                "kubejs.status.traits.stopouch.in",
+                [target.displayName, foundEntity.displayName]
+            );
+
         foundEntity.discard();
 
         event.server.runCommandSilent(
-            `/playsound minecraft:item.honey_bottle.drink player ${target.uuid.toString()} ${
+            `/playsound minecraft:item.honey_bottle.drink player ${owner.username.toString()} ${
                 target.x
             } ${target.y} ${target.z}`
         );
+        stopouchInteractMap.remove(player.uuid);
+        event.cancel();
         return;
     }
-    stopouchInteractMap[entity.uuid] = target.uuid;
+    if (target.isLiving()) stopouchInteractMap[player.uuid] = target.uuid;
 }
 
 // 多鳞

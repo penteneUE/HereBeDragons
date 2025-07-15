@@ -38,7 +38,8 @@
     "by.dragonsurvivalteam.dragonsurvival.client.gui.screens.DragonSkinsScreen": false,
     "by.dragonsurvivalteam.dragonsurvival.client.gui.screens.dragon_editor.DragonEditorScreen": false,
     "vazkii.patchouli.client.book.gui.GuiBookLanding": false,
-    "vazkii.patchouli.client.book.gui.GuiBookEntry": false
+    "vazkii.patchouli.client.book.gui.GuiBookEntry": false,
+    "io.redspace.ironsspellbooks.gui.inscription_table.InscriptionTableScreen": false
   },
   "hideBackground": {
     "dev.ftb.mods.ftblibrary.ui.ScreenWrapper": true,

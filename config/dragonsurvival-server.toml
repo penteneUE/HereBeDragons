@@ -370,7 +370,7 @@
 	#Cooldown (in seconds) after using an altar
 	# Default: 0
 	# Range: > 0
-	altar_cooldown = 30
+	altar_cooldown = 3
 	#Enables the transformation of certain blocks into dragon altars when using an elder dragon bone item on them
 	transform_altar = true
 	#If enabled players that have not yet chosen a dragon species will be able to do so from the vanilla inventory
@@ -476,7 +476,7 @@
 		#Cooldown (in ticks) (20 ticks = 1 second) that occurs after using the dragon soul
 		# Default: 1200
 		# Range: > 0
-		dragon_soul_cooldown = 1200
+		dragon_soul_cooldown = 60
 
 [debug]
 	#If enabled vaults will immediately update their state

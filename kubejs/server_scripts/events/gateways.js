@@ -48,15 +48,18 @@ global.MISC.gateCompleted = (event) => {
     handleGateEnd(
         event,
         (player) => {
-            let itemEntity = new $ItemEntity();
-            itemEntity.setItem(Item.of("3x kubejs:paper_dragon_fragment"));
+            let itemEntity = new $ItemEntity(
+                player.level,
+                player.x,
+                player.y,
+                player.z,
+                Item.of("3x kubejs:paper_dragon_fragment")
+            );
+            //itemEntity.setItem();
             let tag = new $CompoundTag();
             tag.putBoolean("Glowing", true);
             itemEntity.mergeNbt(tag);
-            itemEntity.setPosition(player.block);
             itemEntity.spawn();
-            //player.give(Item.of("2x kubejs:paper_dragon_fragment"));
-            //player.block.popItem(Item.of("4x kubejs:paper_dragon_fragment"));
             clearWorldEnder(player);
         },
         (player, endless) => {

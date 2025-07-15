@@ -2,11 +2,12 @@
 
 /**
  *
+ * @param {$ServerLevel_} level
  * @param {$CompoundTag_ & {type: string, nbt: $CompoundTag_}} tag
  * @returns {$Entity_}
  */
-function recoverConsumedEntity(tag) {
-    let newEntity = event.level.createEntity(tag.getString("type"));
+function recoverConsumedEntity(level, tag) {
+    let newEntity = level.createEntity(tag.getString("type"));
     newEntity.mergeNbt(tag.nbt);
     return newEntity;
 }

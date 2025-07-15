@@ -46,6 +46,11 @@
 		"&o传说中在人类文明崛起之前，世界就被夜晚活动的大脚怪统治着。&r"
 	]
 	quest.063BF9E1684BB19B.title: "食人妖"
+	quest.067E78CA72DFEC4E.quest_desc: [
+		"个体的爪牙异常地坚硬，能够更好地撕碎东西。"
+		""
+		"近战伤害提升&e10/20/40%&r，不包括龙息等远程伤害。"
+	]
 	quest.06FC5550EC4AB636.quest_desc: [
 		"群号：1037352971"
 		""
@@ -256,6 +261,12 @@
 	quest.25007C40BB9D9417.quest_subtitle: "普天之下莫非王土"
 	quest.255FDC0FA11B8262.quest_subtitle: "因为龙就在那里。"
 	quest.255FDC0FA11B8262.title: "龙之归宿"
+	quest.25988B2D0CBAFDFC.quest_desc: [
+		"个体的血肉在无干扰时可以瞬时快速生长。"
+		""
+		"收入龙吟号角后回复&e4%/10%/20%&r生命值。如果玩家得到此特性，在受伤后三秒没受伤害时回复&e10/20/40%&r生命。"
+	]
+	quest.25988B2D0CBAFDFC.quest_subtitle: "被爱就会疯狂长出血肉"
 	quest.25AF565CBB467648.quest_desc: [
 		"恭喜！你已经学会了占领建筑与收税！"
 		""
@@ -378,6 +389,8 @@
 		""
 		"多多巡视领地吧！"
 		""
+		"&e空手对任意奉龙者右键，可以命令它们跟随/停止跟随自己。&r"
+		""
 		"&c注意：整合包中生物多种多样，可能会有生物AI不兼容的情况，生物可能不会帮你攻击同类生物（例如卫道士与卫道士）！"
 	]
 	quest.32C6FE7AA5BBDB4B.quest_subtitle: "虔信"
@@ -448,7 +461,7 @@
 		""
 		"把它们收集起来，或许是寻找&d龙蛋&r踪迹的好方法。"
 		""
-		"&e注意：本整合包使用的是冰与火社区版，可能无法正常在村庄中生成手稿房！可以通过独眼巨人等生物的战利品获得手稿。&r"
+		"&e注意：本整合包使用的是冰与火社区版，可能无法正常在村庄中生成手稿房！可以通过独眼巨人等生物的结构战利品获得手稿。在铁魔法的法师塔中也添加了获取手稿的途径。&r"
 	]
 	quest.3A18D1CA4A2260B2.quest_subtitle: "昔人已乘黄鹤去"
 	quest.3A20327A765A5F0D.quest_desc: ["恭喜，你占领了所有可占领的建筑！"]
@@ -457,9 +470,9 @@
 	quest.3B20762F7E6C05B2.quest_desc: [""]
 	quest.3B20762F7E6C05B2.quest_subtitle: "颅献颅座"
 	quest.3BD438085B5F7C2B.quest_desc: [
-		"为什么不将龙天生的能力与法术相结合呢？这确实是一种可行的方案——把一颗龙心放进卷轴撰写台试试吧。"
-		"{@pagebreak}"
-		"言灵术还在开发中，以后可能加入更多种类的言灵。"
+		"为什么不将龙天生的能力与法术相结合呢？这确实是一种可行的方案——把一颗龙心（脆弱龙心或远古龙心）放进卷轴撰写台试试吧。"
+		""
+		"言灵术还在开发中，以后会加入更多种类的言灵。"
 	]
 	quest.3BD438085B5F7C2B.quest_subtitle: "你萌生了一种想法"
 	quest.3C2422EE5831C05E.quest_subtitle: "你敢吃吗？我不敢。"
@@ -492,12 +505,14 @@
 	quest.427E539B8D939D7B.quest_desc: ["财宝堆相当于龙的休息处，睡在上面，可以提供生命恢复。"]
 	quest.427E539B8D939D7B.quest_subtitle: "一条龙怎么能没有财宝堆？"
 	quest.427E539B8D939D7B.title: "龙的财宝堆"
+	quest.4285DC7D03D4020B.quest_subtitle: "血源契约"
+	quest.4285DC7D03D4020B.title: "基因之楔"
 	quest.42DB3CD67CF3ACDD.quest_desc: ["不知是幸运还是不幸，据你的观察，这些家伙的行为和先人手记上的描述分毫不差。"]
 	quest.42DB3CD67CF3ACDD.title: "小精灵"
 	quest.42EE16FFAECD0B69.quest_desc: ["现在，你可以整备一番。是直接前往地图上的地点？还是去寻找强大的敌人，或三种龙之宝库？一切由你决定。"]
 	quest.42EE16FFAECD0B69.title: "自由探索"
 	quest.453877F6BFEAC469.quest_desc: [
-		"饕餮寓言可以把领地中刷新的奉龙者生物吞入，并在需要的时候吐出以对敌。"
+		"饕餮寓言可以把领地中刷新的奉龙者生物吞入，并在需要的时候，&e按下潜行键施法吐出&r以对敌。"
 		""
 		"吞入的半径取决于法术卷轴的等级。最大可吞入的空间取决于法术卷轴的等级与龙的成长进度。"
 	]
@@ -873,6 +888,15 @@
 		""
 		"精进你的法术吧！"
 	]
+	quest.6F57BD70E7CADA3A.quest_desc: [
+		"个体拥有一个大胃袋，可以存储一个生物。"
+		""
+		"可以在腹中携带一个小/中/任意生物。"
+		""
+		"&e手持拴绳右键目标生物，再右键该个体的身体部分。&r如果离得够近，个体就会吞入该生物。"
+		""
+		"如果玩家得到此特性，“饕餮寓言”的存储容量会提升。"
+	]
 	quest.6F9B4AA268975B8D.quest_desc: [
 		"可以用来酿造强力的高等药水，以及墨水。"
 		""
@@ -995,6 +1019,11 @@
 	quest.755A36D1D7404B2B.title: "自我"
 	quest.75E7855E13406190.quest_desc: [""]
 	quest.76C1B861F1C40925.quest_desc: ["当前包括：冰龙龙蛋孵化信息"]
+	quest.792EEE317BF6BE9A.quest_desc: [
+		"个体的皮下生长出了一层额外的鳞片，在完好时能抵御更多伤害。"
+		""
+		"生命值全满时，受到伤害减少&e30/50/70%&r。玩家有效。"
+	]
 	quest.792EEE317BF6BE9A.quest_subtitle: "皮下成骨综合征"
 	quest.79C4B032A9B1F772.quest_desc: [
 		"这是一颗真真切切的、&e与先人手记中描述分毫不差&r的龙蛋。"
@@ -1058,18 +1087,22 @@
 	]
 	quest.7F1FD96CDF8CD2B8.quest_subtitle: "征服之道"
 	quest.7F1FD96CDF8CD2B8.title: "龙旗介绍"
-	reward.06EC8CC1D7428073.title: "解锁章节“冰山之底”"
+	reward.06EC8CC1D7428073.title: "解锁章节“3：冰山之底”"
 	reward.0D6D3ABA77C4840A.title: "你终于可以变回人类了。"
 	reward.192792F0996186F3.title: "不保留经验"
 	reward.224D81A702B661BB.title: "复明"
+	reward.336533BFDFBE2BF2.title: "龙的言灵术：1/2"
+	reward.3DE5AF9BEC492DC0.title: "解锁章节“识之图录”"
+	reward.3F539A25E52AA636.title: "解锁章节“1：表象”"
 	reward.4005FB15027A26C2.title: "死亡地点传送"
 	reward.443C624B5907E06E.title: "开启"
 	reward.45F82CD87CE7EA6A.title: "解锁章节“识之图录”"
 	reward.4AAB5E4ED34EA19A.title: "重新选择"
 	reward.4BAF19E6996E9479.title: "关闭死亡地点传送"
+	reward.4BF9B7A7E1EFE509.title: "龙的言灵术：1/2"
 	reward.505BA78C826D04CC.title: "关闭"
 	reward.54C99D0EF5431004.title: "开启死亡地点传送"
-	reward.607F7D40A5D8C297.title: "解锁章节“在边狱下”"
+	reward.607F7D40A5D8C297.title: "解锁章节“2：在边狱下”"
 	reward.6ED035171AF72DE7.title: "解锁章节“龙之宝库”"
 	reward.7AEFEB77882D9FD9.title: "解锁章节“尾声”"
 	reward.7B0C5D724443AA6D.title: "保留经验"
@@ -1084,12 +1117,14 @@
 	task.0741D2CC2C85660E.title: "龙种的分别"
 	task.0762D5A4B4C103A6.title: "清除当前的挑战状态"
 	task.09C4CF4A5AD08363.title: "任意装饰过的床"
+	task.0A521C1697674EEA.title: "硬爪"
 	task.0C5D7ACA2643B662.title: "WIP：言灵：饕餮寓言"
 	task.0C88B4341C81B301.title: "异种共生：自由探索"
 	task.0CFE2752F709E5B0.title: "键位"
 	task.0D28446AF7523EC4.title: "笔记：奉龙者"
 	task.0DD3E5FE7390ECDF.title: "魔法生物"
 	task.0F4406652E6AD348.title: "食性的兼容"
+	task.0F532E566A30FD7A.title: "大胃袋"
 	task.111434795FEA746A.title: "中断当前的占领状态"
 	task.15834E2B7F280132.title: "&e点我！"
 	task.15D0A15E24885187.title: "笔记：无尽挑战"
@@ -1146,6 +1181,7 @@
 	task.51D59C77C6425435.title: "缢王悲歌"
 	task.5303FD0E886EE427.title: "无尽的亡灵挑战"
 	task.536E90C5A3833F79.title: "希望你玩得开心"
+	task.53DC74A98A7635AD.title: "再生力"
 	task.5467971C7B220C64.title: "任意龙之门"
 	task.56DAD45D20F6947D.title: "巢穴的建造"
 	task.56ECDCEA429A59B3.title: "刌庄"

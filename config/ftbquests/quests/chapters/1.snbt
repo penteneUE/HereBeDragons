@@ -67,6 +67,17 @@
 		{
 			dependencies: ["681EBB7384D4F881"]
 			id: "3A18D1CA4A2260B2"
+			rewards: [
+				{
+					id: "438BA470B6A36DA3"
+					type: "xp"
+					xp: 2
+				}
+				{
+					id: "3DE5AF9BEC492DC0"
+					type: "custom"
+				}
+			]
 			tasks: [{
 				id: "5B9F35C1298E79D0"
 				item: { count: 1, id: "iceandfire:manuscript" }
@@ -456,14 +467,20 @@
 		{
 			dependencies: ["360ED3ED5B00CC20"]
 			id: "52DC397C5ADB7DCC"
-			rewards: [{
-				id: "0482927A1498E67D"
-				item: {
-					count: 1
-					id: "dragonsurvival:heart_element"
+			rewards: [
+				{
+					id: "0482927A1498E67D"
+					item: {
+						count: 1
+						id: "dragonsurvival:heart_element"
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "4BF9B7A7E1EFE509"
+					type: "custom"
+				}
+			]
 			tasks: [{
 				id: "15B80E70C7E9CD00"
 				item: { count: 1, id: "irons_spellbooks:scroll_forge" }
@@ -644,11 +661,17 @@
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "2EF159E57EAAA0B9"
-			rewards: [{
-				id: "7B41A67713E3FECD"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "7B41A67713E3FECD"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "336533BFDFBE2BF2"
+					type: "custom"
+				}
+			]
 			tasks: [{
 				id: "6E629705DA4201AF"
 				item: { count: 1, id: "kubejs:tax_collector" }
@@ -918,8 +941,8 @@
 		}
 		{
 			dependencies: [
-				"2129326F3111C29B"
 				"52DC397C5ADB7DCC"
+				"2EF159E57EAAA0B9"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true

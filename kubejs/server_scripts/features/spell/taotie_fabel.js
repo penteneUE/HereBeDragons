@@ -12,6 +12,7 @@ function taotieFabel_onCast(event) {
 
     let maxSpace =
         growth == -1 ? 1 : (Math.pow(event.spellLevel, 1.5) * growth) / 10;
+    if (getTraitFromEntity(player, "stopouch") > 1) maxSpace *= 1.5;
     //let maxSpace = Math.pow(event.spellLevel, 1.5);
     let infinite = event.spellLevel > 10;
 
@@ -34,7 +35,7 @@ function taotieFabel_onCast(event) {
         player.persistentData.consumedEntity.forEach((tag) => {
             // let newEntity = event.level.createEntity(tag.getString("type"));
             // newEntity.mergeNbt(tag.nbt);
-            let newEntity = recoverConsumedEntity(tag);
+            let newEntity = recoverConsumedEntity(event.level, tag);
             newEntity.x = x;
             newEntity.y = y;
             newEntity.z = z;

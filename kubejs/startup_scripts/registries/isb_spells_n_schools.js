@@ -79,7 +79,7 @@ StartupEvents.registry("irons_spellbooks:spells", (event) => {
         .create("ananta_remanta")
         .setCastTime(120)
         .setBaseManaCost(2)
-        .setMaxLevel(6)
+        // .setMaxLevel(6)
         .setCooldownSeconds(15) // Spell cooldown in seconds
         .setManaCostPerLevel(2) // How much additional mana is needed per level
         .setCastType("continuous") // Cast type can be "continuous", "long", "instant", or "none"
