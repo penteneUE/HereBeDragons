@@ -22,22 +22,22 @@ function playerTick_Sponge(event) {
     );
 }
 
-/**
- * @type {WeightedRandom<string>}
- */
-const dragonEggs = weightedRandom();
-dragonEggs.add("iceandfire:dragonegg_amethyst", 1);
-dragonEggs.add("iceandfire:dragonegg_black", 1);
-dragonEggs.add("iceandfire:dragonegg_blue", 1);
-dragonEggs.add("iceandfire:dragonegg_bronze", 1);
-dragonEggs.add("iceandfire:dragonegg_copper", 1);
-dragonEggs.add("iceandfire:dragonegg_electric", 1);
-dragonEggs.add("iceandfire:dragonegg_gray", 1);
-dragonEggs.add("iceandfire:dragonegg_green", 1);
-dragonEggs.add("iceandfire:dragonegg_red", 1);
-dragonEggs.add("iceandfire:dragonegg_sapphire", 1);
-dragonEggs.add("iceandfire:dragonegg_silver", 1);
-dragonEggs.add("iceandfire:dragonegg_white", 1);
+// /**
+//  * @type {WeightedRandom<string>}
+//  */
+// const dragonEggs = weightedRandom();
+// dragonEggs.add("iceandfire:dragonegg_amethyst", 1);
+// dragonEggs.add("iceandfire:dragonegg_black", 1);
+// dragonEggs.add("iceandfire:dragonegg_blue", 1);
+// dragonEggs.add("iceandfire:dragonegg_bronze", 1);
+// dragonEggs.add("iceandfire:dragonegg_copper", 1);
+// dragonEggs.add("iceandfire:dragonegg_electric", 1);
+// dragonEggs.add("iceandfire:dragonegg_gray", 1);
+// dragonEggs.add("iceandfire:dragonegg_green", 1);
+// dragonEggs.add("iceandfire:dragonegg_red", 1);
+// dragonEggs.add("iceandfire:dragonegg_sapphire", 1);
+// dragonEggs.add("iceandfire:dragonegg_silver", 1);
+// dragonEggs.add("iceandfire:dragonegg_white", 1);
 
 /**
  *
@@ -83,7 +83,27 @@ function playerTick_PaperDragonEgg(event) {
     }
     if (!replacePaperEgg) return;
 
-    let newItem = Item.of(dragonEggs.getItem());
+    let eggColors = [
+        "red",
+        "green",
+        "bronze",
+        "gray",
+        "sapphire",
+        "white",
+        "blue",
+        "silver",
+        "electric",
+        "amethyst",
+        "copper",
+        "black",
+    ];
+
+    let newItem = Item.of(
+        `iceandfire:dragonegg_${
+            eggColors[player.random.nextInt(eggColors.length)]
+        }`
+    );
+    newItem.setCustomData(randomBreedData(player.random));
     if (offHand) {
         player.offHandItem = newItem;
     } else {

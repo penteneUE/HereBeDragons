@@ -125,7 +125,7 @@ function randomTraits(random) {
         let selectedTrait = traits[random.nextInt(traits.length)];
         tag.putInt(selectedTrait, 0);
     }
-    if (random.nextInt(101) < 11) {
+    if (random.nextInt(101) < 6) {
         let gotTraits = new $ArrayList();
         gotTraits.addAll(tag.getAllKeys());
         tag.putInt(gotTraits[random.nextInt(gotTraits.size())], 1);

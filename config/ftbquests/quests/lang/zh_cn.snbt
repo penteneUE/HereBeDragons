@@ -52,6 +52,12 @@
 		"近战伤害提升&e10/20/40%&r，不包括龙息等远程伤害。"
 	]
 	quest.067E78CA72DFEC4E.quest_subtitle: "肢端骨化综合征"
+	quest.06837AE330994B21.quest_desc: [
+		"由于本包没有Mixin导致龙蛋属性靠坐标传递，可能会导致属性传递出错！！"
+		""
+		"当然，这不会影响已孵化完成的龙。"
+	]
+	quest.06837AE330994B21.quest_subtitle: "一定要把龙蛋分开放置！！"
 	quest.06FC5550EC4AB636.quest_desc: [
 		"群号：1037352971"
 		""
@@ -317,6 +323,11 @@
 	]
 	quest.282D6DA8CBDD27E1.quest_subtitle: "传说中的……"
 	quest.282D6DA8CBDD27E1.title: "聚落的征服"
+	quest.2843AB6152785242.quest_desc: [
+		"个体骨骼脆弱。容易受伤。坠落时会摔跤受伤。"
+		""
+		"受到伤害提升&e20/40/60%&r。坠落时会摔跤受伤，得到最大生命值&e10/20/40%&r的伤害。"
+	]
 	quest.2843AB6152785242.quest_subtitle: "胸无成物"
 	quest.286F08AEB6428C82.quest_subtitle: "尸体派对"
 	quest.28A49E5085B3F218.quest_desc: [
@@ -1156,6 +1167,7 @@
 	task.0F4406652E6AD348.title: "食性的兼容"
 	task.0F532E566A30FD7A.title: "大胃袋"
 	task.111434795FEA746A.title: "中断当前的占领状态"
+	task.1411F970860C5FBF.title: "开发版本注意"
 	task.15834E2B7F280132.title: "&e点我！"
 	task.15D0A15E24885187.title: "笔记：无尽挑战"
 	task.15F7C3F29A4FCA6E.title: "地图 - 领地与区块声明"
@@ -1240,7 +1252,7 @@
 	task.79F6CA6974D8BA26.title: "蘑菇"
 	task.7B545A627225A8E4.title: "龙的言灵术"
 	task.7BDA4177A939D658.title: "无尽的巨人挑战"
-	task.7CE7E60AA5846F03.title: "脆骨症"
+	task.7CE7E60AA5846F03.title: "脆骨"
 	task.7D4B0D6AB1970D4A.title: "饕餮寓言"
 	task.7DCB329FCD246397.title: "恐蚁被删除了！"
 	task.7F2A6D0DBA026AB8.title: "借物表与授权协议"

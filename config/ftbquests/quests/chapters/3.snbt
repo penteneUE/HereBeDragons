@@ -661,5 +661,25 @@
 			x: 5.5d
 			y: -13.5d
 		}
+		{
+			dependencies: [
+				"2F94C6E3FCCB38FD"
+				"7CDB045282E65572"
+			]
+			hide_until_deps_complete: true
+			id: "06837AE330994B21"
+			rewards: [{
+				id: "246BBF9CCAF62EEE"
+				type: "xp"
+				xp: 2
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "1411F970860C5FBF"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -14.0d
+		}
 	]
 }

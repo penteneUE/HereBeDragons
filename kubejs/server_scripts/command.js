@@ -351,7 +351,9 @@ function giveRandomEgg(player) {
             eggColors[player.random.nextInt(eggColors.length)]
         }`
     );
-    egg.setCustomData(randomBreedData(player.random));
+    let data = randomBreedData(player.random);
+    player.tell(data);
+    egg.setCustomData(data);
     //player.give(egg);
     player.block.popItem(egg);
 }

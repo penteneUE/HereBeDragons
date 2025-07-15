@@ -239,6 +239,9 @@ function downEntitySpawned(event) {
     let { entity } = event;
     if (getTraitFromEntity(entity, "down") < 1) return;
     entity.setNoAi(true);
+    let tag = new $CompoundTag();
+    tag.putBoolean("NoAI", true);
+    entity.mergeNbt(tag);
 }
 
 /**
@@ -270,10 +273,14 @@ function nofleshBeforeHurt(event) {
 function nofleshEntityFall(event) {
     let { entity } = event;
     if (entity.level.isClientSide()) return;
+
+    // console.log(entity);
     if (!isTraitedEntity(entity)) return;
-    if (getTraitFromEntity(entity, "noflesh") < 1) return;
+    // console.log(entity);
+    if (getTraitFromEntity(entity, "no_flesh") < 1) return;
+    // console.log(entity);
     let damageAmount = 0;
-    switch (getTraitFromEntity(entity, "noflesh")) {
+    switch (getTraitFromEntity(entity, "no_flesh")) {
         case 1:
             damageAmount = (entity.maxHealth * 1) / 10;
             break;
@@ -287,11 +294,21 @@ function nofleshEntityFall(event) {
             damageAmount = (entity.maxHealth * 8) / 10;
             break;
     }
+    // console.log(damageAmount);
+    // console.log(
+    //     `/damage ${entity
+    //         .getUuid()
+    //         .toString()} ${damageAmount} irons_spellbooks:heartstop at ${
+    //         entity.x
+    //     } ${entity.y} ${entity.z}`
+    // );
 
-    event.server.runCommandSilent(
+    entity.server.runCommandSilent(
         `/damage ${entity
             .getUuid()
-            .toString()} ${damageAmount} minecraft:sting by ${entity.username.toString()} from ${entity.username.toString()}`
+            .toString()} ${damageAmount} irons_spellbooks:heartstop at ${
+            entity.x
+        } ${entity.y} ${entity.z}`
     );
 }
 
