@@ -14,7 +14,7 @@ function taotieFabel_onCast(event) {
         growth == -1 ? 1 : (Math.pow(event.spellLevel, 1.5) * growth) / 10;
     if (getTraitFromEntity(player, "stopouch") > 1) maxSpace *= 1.5;
     //let maxSpace = Math.pow(event.spellLevel, 1.5);
-    let infinite = event.spellLevel > 10;
+    let infinite = event.spellLevel >= 10;
 
     let k = event.spellLevel * 4;
 

@@ -28,6 +28,14 @@
     "kubejs.status.traits.stopouch.in": "%s胃袋：吞入了 %s",
     "kubejs.status.traits.stopouch.out": "%s胃袋：吐出了 %s",
 
+    "kubejs.breed.traits.down.name": "痴愚",
+    "kubejs.breed.traits.down.desc": "智商极度低下，不会行走，不会飞行。",
+    "kubejs.breed.traits.down.desc.full": "实体无AI。",
+
+    "kubejs.breed.traits.no_flesh.name": "脆骨",
+    "kubejs.breed.traits.no_flesh.desc": "个体骨骼脆弱。容易受伤。坠落时会摔跤受伤。",
+    "kubejs.breed.traits.no_flesh.desc.full": "受到伤害提升20/40/60%。坠落时会摔跤受伤，得到最大生命值10/20/40%的伤害。",
+
     "effect.kubejs.reproduction_frenzy": "繁衍狂热",
     "effect.kubejs.reproduction_frenzy.desc": "等等，什么？！",
     "effect.kubejs.prion_curse": "血脉退变",

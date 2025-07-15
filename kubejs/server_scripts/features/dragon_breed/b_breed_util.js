@@ -120,10 +120,15 @@ function randomTraits(random) {
 
     let traits = new $ArrayList();
     traits.addAll(breedTraitMap.keySet());
-    let traitCount = random.nextIntBetweenInclusive(1, 2);
+    let traitCount = random.nextIntBetweenInclusive(1, 3);
     for (let i = 0; i < traitCount; i++) {
         let selectedTrait = traits[random.nextInt(traits.length)];
-        tag.putInt(selectedTrait, random.nextInt(2));
+        tag.putInt(selectedTrait, 0);
+    }
+    if (random.nextInt(101) < 11) {
+        let gotTraits = new $ArrayList();
+        gotTraits.addAll(tag.getAllKeys());
+        tag.putInt(gotTraits[random.nextInt(gotTraits.size())], 1);
     }
 
     return tag;

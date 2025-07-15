@@ -133,69 +133,69 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"iceandfire:hippogryph": true
-			"minecraft:glow_squid": true
-			"minecraft:villager": true
-			"minecraft:zombie_villager": true
-			"minecraft:zombie": true
-			"minecraft:cow": true
-			"minecraft:squid": true
 			"minecraft:pufferfish": false
-			"minecraft:pig": true
-			"aquaculture:muskellunge": false
-			"minecraft:zombified_piglin": true
-			"iceandfire:cockatrice": true
-			"aquaculture:smallmouth_bass": false
-			"iceandfire:pixie": true
-			"minecraft:trader_llama": true
-			"aquaculture:atlantic_halibut": false
-			"minecraft:strider": true
-			"aquaculture:atlantic_herring": false
-			"aquaculture:jellyfish": false
-			"minecraft:cave_spider": true
-			"minecraft:vex": true
-			"minecraft:bat": true
-			"dragonsurvival:hunter_knight": true
-			"minecraft:turtle": true
-			"minecraft:piglin": true
-			"irons_spellbooks:cursed_armor_stand": true
-			"minecraft:axolotl": true
-			"aquaculture:bluegill": false
-			"aquaculture:perch": false
-			"aquaculture:carp": false
-			"minecraft:phantom": true
-			"dragonsurvival:hunter_hound": true
-			"minecraft:cod": false
-			"minecraft:spider": true
-			"minecraft:tropical_fish": false
 			"irons_spellbooks:priest": true
-			"aquaculture:brown_trout": false
-			"aquaculture:red_grouper": false
-			"minecraft:wandering_trader": true
-			"minecraft:wolf": true
-			"minecraft:iron_golem": true
-			"iceandfire:myrmex_soldier": true
-			"irons_spellbooks:necromancer": true
-			"minecraft:enderman": true
-			"minecraft:dolphin": true
-			"iceandfire:myrmex_queen": true
+			"minecraft:bat": true
+			"minecraft:zombie_villager": true
+			"minecraft:turtle": true
+			"minecraft:zombie": true
+			"minecraft:pig": true
+			"minecraft:villager": true
 			"minecraft:vindicator": true
-			"minecraft:rabbit": true
-			"minecraft:witch": true
-			"minecraft:drowned": true
-			"aquaculture:gar": false
-			"minecraft:bee": true
-			"aquaculture:catfish": false
-			"iceandfire:hippocampus": true
-			"minecraft:ghast": true
-			"dragonsurvival:hunter_leader": true
 			"aquaculture:minnow": false
-			"iceandfire:myrmex_worker": true
-			"minecraft:skeleton": true
+			"aquaculture:gar": false
+			"aquaculture:smallmouth_bass": false
+			"iceandfire:cockatrice": true
+			"aquaculture:atlantic_halibut": false
+			"minecraft:cave_spider": true
+			"minecraft:glow_squid": true
 			"minecraft:creeper": true
-			"minecraft:sheep": true
+			"aquaculture:carp": false
+			"dragonsurvival:hunter_knight": true
+			"iceandfire:myrmex_worker": true
+			"aquaculture:jellyfish": false
+			"minecraft:dolphin": true
+			"minecraft:trader_llama": true
+			"minecraft:ghast": true
+			"iceandfire:hippogryph": true
+			"irons_spellbooks:necromancer": true
+			"aquaculture:muskellunge": false
+			"minecraft:enderman": true
+			"dragonsurvival:hunter_hound": true
+			"minecraft:iron_golem": true
+			"aquaculture:brown_trout": false
+			"minecraft:piglin": true
+			"iceandfire:myrmex_queen": true
+			"minecraft:wandering_trader": true
+			"minecraft:axolotl": true
+			"minecraft:wolf": true
+			"minecraft:phantom": true
+			"iceandfire:hippocampus": true
+			"minecraft:spider": true
+			"minecraft:zombified_piglin": true
+			"aquaculture:atlantic_herring": false
+			"aquaculture:catfish": false
+			"minecraft:cod": false
+			"minecraft:tropical_fish": false
+			"minecraft:skeleton": true
+			"aquaculture:red_grouper": false
+			"aquaculture:bluegill": false
 			"dragonsurvival:hunter_spearman": true
+			"minecraft:vex": true
+			"minecraft:bee": true
+			"minecraft:rabbit": true
+			"minecraft:squid": true
+			"minecraft:witch": true
+			"minecraft:cow": true
 			"minecraft:chicken": true
+			"aquaculture:perch": false
+			"irons_spellbooks:cursed_armor_stand": true
+			"minecraft:sheep": true
+			"iceandfire:myrmex_soldier": true
+			"dragonsurvival:hunter_leader": true
+			"minecraft:drowned": true
+			"minecraft:strider": true
+			"iceandfire:pixie": true
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)

@@ -11,8 +11,8 @@ ItemEvents.modifyTooltips((event) => {
         builder.dynamic("kubejs:gene_holder");
     });
 
-    event.modify("kubejs:gene_splicer", (builder) => {
-        builder.dynamic("kubejs:gene_splicer");
+    event.modify("#kubejs:gene_imbueable", (builder) => {
+        builder.dynamic("#kubejs:gene_imbueable");
     });
 });
 
@@ -89,13 +89,12 @@ ItemEvents.dynamicTooltips("#kubejs:dragon_eggs", (event) => {
     // showBreedData(event, breedData);
 });
 
-ItemEvents.dynamicTooltips("kubejs:gene_splicer", (event) => {
+ItemEvents.dynamicTooltips("#kubejs:gene_imbueable", (event) => {
     const { item } = event;
 
     let breedData = item.getCustomData();
     if (!breedData || breedData.empty) {
         event.add(Text.darkRed({ translate: "kubejs.breed.tooltip.empty" }));
-        event.add(Text.gray({ translate: "kubejs.tooltips.gene_splicer.1" }));
         return;
     }
     showBreedData(event, breedData);

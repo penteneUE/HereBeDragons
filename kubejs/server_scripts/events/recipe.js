@@ -239,6 +239,21 @@ ServerEvents.recipes((event) => {
         }
     );
 
+    event.shaped(
+        Item.of("kubejs:gene_caster"),
+        [
+            "  A",
+            "BC ",
+            "DB ", // 111
+        ],
+        {
+            A: "irons_spellbooks:divine_soulshard",
+            B: "irons_spellbooks:dragonskin",
+            C: "kubejs:gene_splicer",
+            D: "minecraft:nether_star",
+        }
+    );
+
     event
         .shapeless(
             Item.of("wooden_axe", 1).withCustomName(

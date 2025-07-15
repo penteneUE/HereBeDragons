@@ -65,6 +65,7 @@ ServerEvents.tags("item", (event) => {
         "iceandfire:dragon_horn",
         "kubejs:gene_holder",
         "kubejs:gene_splicer",
+        "kubejs:gene_caster",
     ]);
 
     event.add("kubejs:holdable_skulls", [

@@ -94,13 +94,6 @@ function regeneratorDragonInteracted(event) {
     target.heal(healAmount);
 }
 
-const $MobEffectEvent$Remove = Java.loadClass(
-    "net.neoforged.neoforge.event.entity.living.MobEffectEvent$Remove"
-);
-const $MobEffectEvent$Expired = Java.loadClass(
-    "net.neoforged.neoforge.event.entity.living.MobEffectEvent$Expired"
-);
-
 /**
  *
  * @param {$MobEffectEvent$Remove_ | $MobEffectEvent$Expired_} event
@@ -237,6 +230,82 @@ function stopouchLeadEntityInteracted(event) {
     if (target.isLiving()) stopouchInteractMap[player.uuid] = target.uuid;
 }
 
+/**
+ *
+ * @param {$EntitySpawnedKubeEvent_ & {entity: $EntityDragonBase_}} event
+ * @returns
+ */
+function downEntitySpawned(event) {
+    let { entity } = event;
+    if (getTraitFromEntity(entity, "down") < 1) return;
+    entity.setNoAi(true);
+}
+
+/**
+ * @param {$BeforeLivingEntityHurtKubeEvent_ & {entity: $LivingEntity_}} event
+ */
+function nofleshBeforeHurt(event) {
+    let { entity } = event;
+    if (getTraitFromEntity(entity, "noflesh") < 1) return;
+
+    switch (getTraitFromEntity(entity, "noflesh")) {
+        case 1:
+            event.setDamage((event.damage * 12) / 10);
+            return;
+        case 2:
+            event.setDamage((event.damage * 14) / 10);
+            return;
+        case 3:
+            event.setDamage((event.damage * 16) / 10);
+            return;
+        case 4:
+            event.setDamage((event.damage * 18) / 10);
+            return;
+    }
+}
+/**
+ *
+ * @param {$LivingFallEvent_} event
+ */
+function nofleshEntityFall(event) {
+    let { entity } = event;
+    if (entity.level.isClientSide()) return;
+    if (!isTraitedEntity(entity)) return;
+    if (getTraitFromEntity(entity, "noflesh") < 1) return;
+    let damageAmount = 0;
+    switch (getTraitFromEntity(entity, "noflesh")) {
+        case 1:
+            damageAmount = (entity.maxHealth * 1) / 10;
+            break;
+        case 2:
+            damageAmount = (entity.maxHealth * 2) / 10;
+            break;
+        case 3:
+            damageAmount = (entity.maxHealth * 4) / 10;
+            break;
+        case 4:
+            damageAmount = (entity.maxHealth * 8) / 10;
+            break;
+    }
+
+    event.server.runCommandSilent(
+        `/damage ${entity
+            .getUuid()
+            .toString()} ${damageAmount} minecraft:sting by ${entity.username.toString()} from ${entity.username.toString()}`
+    );
+}
+
+const $MobEffectEvent$Remove = Java.loadClass(
+    "net.neoforged.neoforge.event.entity.living.MobEffectEvent$Remove"
+);
+const $MobEffectEvent$Expired = Java.loadClass(
+    "net.neoforged.neoforge.event.entity.living.MobEffectEvent$Expired"
+);
+
+const $LivingFallEvent = Java.loadClass(
+    "net.neoforged.neoforge.event.entity.living.LivingFallEvent"
+);
+
 // 多鳞
 EntityEvents.beforeHurt("minecraft:player", multiscaleBeforeHurt);
 EntityEvents.beforeHurt("iceandfire:fire_dragon", multiscaleBeforeHurt);
@@ -257,3 +326,15 @@ EntityEvents.afterHurt("minecraft:player", regeneratorPlayerAfterHurt);
 
 // 胃袋
 ItemEvents.entityInteracted("minecraft:lead", stopouchLeadEntityInteracted);
+
+// 痴愚（唐氏）
+EntityEvents.spawned("iceandfire:fire_dragon", downEntitySpawned);
+EntityEvents.spawned("iceandfire:ice_dragon", downEntitySpawned);
+EntityEvents.spawned("iceandfire:lightning_dragon", downEntitySpawned);
+
+// 脆骨
+EntityEvents.beforeHurt("minecraft:player", nofleshBeforeHurt);
+EntityEvents.beforeHurt("iceandfire:fire_dragon", nofleshBeforeHurt);
+EntityEvents.beforeHurt("iceandfire:ice_dragon", nofleshBeforeHurt);
+EntityEvents.beforeHurt("iceandfire:lightning_dragon", nofleshBeforeHurt);
+NativeEvents.onEvent($LivingFallEvent, nofleshEntityFall);
