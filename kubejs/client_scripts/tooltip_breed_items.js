@@ -24,7 +24,7 @@ const BREED_DATA_KEY = "breedData";
  * @param {$CompoundTag_} breedData
  * @returns
  */
-function showBreedData(event, breedData) {
+function showBreedAttributes(event, breedData) {
     event.add(
         Text.translate("kubejs.breed.tooltip.strength", [
             Text.darkAqua(breedData.getInt("strength")),
@@ -43,6 +43,16 @@ function showBreedData(event, breedData) {
             Text.darkAqua(breedData.getInt("dexterity")),
         ]).gray()
     );
+}
+
+/**
+ *
+ * @param {$DynamicItemTooltipsKubeEvent_} event
+ * @param {$CompoundTag_} breedData
+ * @returns
+ */
+function showBreedData(event, breedData) {
+    showBreedAttributes(event, breedData);
     /**
      * @type {$CompoundTag_}
      */
@@ -78,6 +88,49 @@ function showBreedData(event, breedData) {
     );
 }
 
+/**
+ *
+ * @param {$DynamicItemTooltipsKubeEvent_} event
+ * @param {$CompoundTag_} breedData
+ * @returns
+ */
+function showBreedDataNTraits(event, breedData) {
+    let $ArrayList = Java.loadClass("java.util.ArrayList");
+
+    showBreedAttributes(event, breedData);
+    /**
+     * @type {$CompoundTag_}
+     */
+    let traits = breedData.get("traits");
+    if (traits.empty) return;
+    let array = new $ArrayList();
+    array.addAll(traits.getAllKeys());
+    for (let key of array) {
+        let lvl = traits[key];
+
+        let mapEntry = global.BREED_TRAIT_DATA[key];
+        if (lvl <= 0) {
+            event.add(
+                Text.translate("kubejs.breed.tooltip.trait.full.recessive", [
+                    Text.of({ translate: mapEntry.name }),
+                ])
+                    .hover(Text.of({ translate: mapEntry.fullDesc }))
+                    .darkGray()
+            );
+        } else {
+            let lvlKey = `enchantment.level.${lvl}`;
+            event.add(
+                mapEntry.color(
+                    Text.translate("kubejs.breed.tooltip.trait.full.active", [
+                        Text.of({ translate: mapEntry.name }),
+                        Text.of({ translate: lvlKey }),
+                    ]).hover(Text.of({ translate: mapEntry.fullDesc }))
+                )
+            );
+        }
+    }
+}
+
 ItemEvents.dynamicTooltips("#kubejs:dragon_eggs", (event) => {
     const { item } = event;
 
@@ -97,7 +150,7 @@ ItemEvents.dynamicTooltips("#kubejs:gene_imbueable", (event) => {
         event.add(Text.darkRed({ translate: "kubejs.breed.tooltip.empty" }));
         return;
     }
-    showBreedData(event, breedData);
+    showBreedDataNTraits(event, breedData);
 });
 
 ItemEvents.dynamicTooltips("iceandfire:dragon_horn", (event) => {

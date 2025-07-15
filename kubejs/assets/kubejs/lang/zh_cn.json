@@ -9,6 +9,8 @@
     "kubejs.breed.tooltip.dexterity": "敏捷 - %s",
     "kubejs.breed.tooltip.traits": "%s 个特性...",
     "kubejs.breed.tooltip.traits.active": "%s 个特性，%s 个活跃特性...",
+    "kubejs.breed.tooltip.trait.full.recessive": "(未激活) %s",
+    "kubejs.breed.tooltip.trait.full.active": "%s %s",
 
     "kubejs.breed.traits.tough_claws.name": "硬爪",
     "kubejs.breed.traits.tough_claws.desc": "爪牙异常地坚硬，能够更好地撕碎东西。",

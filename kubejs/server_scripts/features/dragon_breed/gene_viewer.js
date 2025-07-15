@@ -37,7 +37,7 @@ function tellBreedData(player, entity, breedData) {
     if (!traits.empty) {
         for (const key in traits) {
             let lvl = traits.getInt(key);
-            let mapEntry = breedTraitMap[key];
+            let mapEntry = getGlobalBreedTraitData()[key];
             if (lvl <= 0) {
                 player.tell(
                     Text.translate("kubejs.breed.info.trait.recessive", [

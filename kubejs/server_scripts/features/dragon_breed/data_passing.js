@@ -188,7 +188,8 @@ function addPlayerQuestTag(entity, breedData) {
     if (!owner.isPlayer()) return;
     let traits = breedData.get("traits");
     for (const key in traits) {
-        if (traits[key] > 0) owner.stages.add(breedTraitMap[key].stage);
+        if (traits[key] > 0)
+            owner.stages.add(getGlobalBreedTraitData()[key].stage);
     }
     //mother.nbt.getUUID("Owner");
 }

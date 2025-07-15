@@ -119,7 +119,7 @@ function randomTraits(random) {
     let tag = new $CompoundTag();
 
     let traits = new $ArrayList();
-    traits.addAll(breedTraitMap.keySet());
+    traits.addAll(getGlobalBreedTraitData().keySet());
     let traitCount = random.nextIntBetweenInclusive(1, 3);
     for (let i = 0; i < traitCount; i++) {
         let selectedTrait = traits[random.nextInt(traits.length)];
