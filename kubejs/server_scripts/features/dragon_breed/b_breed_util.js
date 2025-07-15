@@ -111,6 +111,17 @@ function deserializeBreedData(tag) {
     };
 }
 
+// /**
+//  * @param {$RandomSource_} random
+//  * @returns {WeightedRandom}
+//  */
+// function weightedRandomTraitFromGlobalData(random) {
+//     let wRand = weightedRandom()
+
+//     let traits = new $ArrayList();
+//     traits.addAll(getGlobalBreedTraitData().keySet());
+//  }
+
 /**
  * @param {$RandomSource_} random
  * @returns {$CompoundTag_}
@@ -118,11 +129,12 @@ function deserializeBreedData(tag) {
 function randomTraits(random) {
     let tag = new $CompoundTag();
 
-    let traits = new $ArrayList();
-    traits.addAll(getGlobalBreedTraitData().keySet());
+    //let traits = new $ArrayList();
+    //traits.addAll(getGlobalBreedTraitData().keySet());
     let traitCount = random.nextIntBetweenInclusive(1, 3);
     for (let i = 0; i < traitCount; i++) {
-        let selectedTrait = traits[random.nextInt(traits.length)];
+        let selectedTrait = wildRandomTraits.getItem();
+        //let selectedTrait = traits[random.nextInt(traits.length)];
         tag.putInt(selectedTrait, 0);
     }
     if (random.nextInt(101) < 6) {

@@ -534,9 +534,11 @@ NativeEvents.onEvent($LivingChangeTargetEvent, (event) => {
 
     if (entity.level.isClientSide()) return;
     //if (!entity.persistentData.OwnerName) return;
+    let target = event.getNewAboutToBeSetTarget();
 
-    if (!isPetOf(entity, event.getNewAboutToBeSetTarget())) return;
-
+    if (!isPetOf(entity, target)) return;
+    if (!isTraitedEntity(target)) return;
+    if (getTraitFromEntity(target, "antimemetic") < 1) return;
     event.setCanceled(true);
 });
 

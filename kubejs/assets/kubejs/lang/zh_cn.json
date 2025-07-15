@@ -38,6 +38,10 @@
     "kubejs.breed.traits.no_flesh.desc": "个体骨骼脆弱。容易受伤。坠落时会摔跤受伤。",
     "kubejs.breed.traits.no_flesh.desc.full": "受到伤害提升20/40/60%。坠落时会摔跤受伤，得到最大生命值10/20/40%的伤害。",
 
+    "kubejs.breed.traits.antimemetic.name": "逆模因",
+    "kubejs.breed.traits.antimemetic.desc": "像路边的小石子一样难以被记住。就算被看见了也不会注意。",
+    "kubejs.breed.traits.antimemetic.desc.full": "生物不会将其视为攻击目标。二级时永久隐身。三级时永久真实隐身。玩家得到此特性时，不会得到隐身效果。",
+
     "effect.kubejs.reproduction_frenzy": "繁衍狂热",
     "effect.kubejs.reproduction_frenzy.desc": "等等，什么？！",
     "effect.kubejs.prion_curse": "血脉退变",

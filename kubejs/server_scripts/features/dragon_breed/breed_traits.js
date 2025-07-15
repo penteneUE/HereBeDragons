@@ -312,6 +312,36 @@ function nofleshEntityFall(event) {
     );
 }
 
+/**
+ *
+ * @param {$EntitySpawnedKubeEvent_ & {entity: $EntityDragonBase_}} event
+ * @returns
+ */
+function antimemeticSpawned(event) {
+    let { entity } = event;
+    if (getTraitFromEntity(entity, "antimemetic") < 2) return;
+
+    switch (getTraitFromEntity(entity, "antimemetic")) {
+        case 2:
+            entity.potionEffects.add(
+                "minecraft:invisibility",
+                2147463647,
+                255,
+                true,
+                true
+            );
+        case 3:
+        default:
+            entity.potionEffects.add(
+                "irons_spellbooks:true_invisibility",
+                2147463647,
+                255,
+                true,
+                true
+            );
+    }
+}
+
 const $MobEffectEvent$Remove = Java.loadClass(
     "net.neoforged.neoforge.event.entity.living.MobEffectEvent$Remove"
 );
@@ -323,11 +353,23 @@ const $LivingFallEvent = Java.loadClass(
     "net.neoforged.neoforge.event.entity.living.LivingFallEvent"
 );
 
+/**
+ * @template {typeof EntityEvents.beforeHurt | typeof EntityEvents.spawned} T
+ * @param {T} event
+ * @param {Parameters<T>[0]} handler
+ */
+function applyToIAFDragons(event, handler) {
+    event("iceandfire:fire_dragon", handler);
+    event("iceandfire:ice_dragon", handler);
+    event("iceandfire:lightning_dragon", handler);
+}
+
 // 多鳞
 EntityEvents.beforeHurt("minecraft:player", multiscaleBeforeHurt);
-EntityEvents.beforeHurt("iceandfire:fire_dragon", multiscaleBeforeHurt);
-EntityEvents.beforeHurt("iceandfire:ice_dragon", multiscaleBeforeHurt);
-EntityEvents.beforeHurt("iceandfire:lightning_dragon", multiscaleBeforeHurt);
+applyToIAFDragons(EntityEvents.beforeHurt, multiscaleBeforeHurt);
+// EntityEvents.beforeHurt("iceandfire:fire_dragon", multiscaleBeforeHurt);
+// EntityEvents.beforeHurt("iceandfire:ice_dragon", multiscaleBeforeHurt);
+// EntityEvents.beforeHurt("iceandfire:lightning_dragon", multiscaleBeforeHurt);
 
 // 硬爪
 EntityEvents.beforeHurt(toughClawsBeforeHurt);
@@ -345,13 +387,12 @@ EntityEvents.afterHurt("minecraft:player", regeneratorPlayerAfterHurt);
 ItemEvents.entityInteracted("minecraft:lead", stopouchLeadEntityInteracted);
 
 // 痴愚（唐氏）
-EntityEvents.spawned("iceandfire:fire_dragon", downEntitySpawned);
-EntityEvents.spawned("iceandfire:ice_dragon", downEntitySpawned);
-EntityEvents.spawned("iceandfire:lightning_dragon", downEntitySpawned);
+applyToIAFDragons(EntityEvents.spawned, downEntitySpawned);
 
 // 脆骨
 EntityEvents.beforeHurt("minecraft:player", nofleshBeforeHurt);
-EntityEvents.beforeHurt("iceandfire:fire_dragon", nofleshBeforeHurt);
-EntityEvents.beforeHurt("iceandfire:ice_dragon", nofleshBeforeHurt);
-EntityEvents.beforeHurt("iceandfire:lightning_dragon", nofleshBeforeHurt);
+applyToIAFDragons(EntityEvents.beforeHurt, nofleshBeforeHurt);
 NativeEvents.onEvent($LivingFallEvent, nofleshEntityFall);
+
+// 逆模因
+applyToIAFDragons(EntityEvents.spawned, antimemeticSpawned);
