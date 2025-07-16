@@ -8,9 +8,8 @@
             "orb_size": 25
         }
     ],
-    "failures": [
-    ],
-    "size": "small",
+    "failures": [],
+    "size": "medium",
     "waves": [
         {
             "entities": [
@@ -86,7 +85,7 @@
         }
     ],
     "spawn_algorithm": "gateways:inward_spiral",
-    "rules":{
+    "rules": {
         "fail_on_out_of_bounds": false,
         "remove_mobs_on_failure": false
     }

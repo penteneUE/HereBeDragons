@@ -1,6 +1,6 @@
 {
     "type": "gateways:normal",
-    "color": "#167a62",
+    "color": "#221100",
     "rewards": [
         {
             "type": "gateways:experience",
@@ -16,7 +16,7 @@
                 {
                     "type": "gateways:standard",
                     "count": 1,
-                    "entity": "minecraft:warden"
+                    "entity": "irons_spellbooks:fire_boss"
                 }
             ],
             "max_wave_time": 3600,
@@ -27,13 +27,7 @@
                     "type": "gateways:attribute",
                     "attribute": "minecraft:generic.max_health",
                     "operation": "add_multiplied_total",
-                    "value": 0.2
-                },
-                {
-                    "type": "gateways:attribute",
-                    "attribute": "minecraft:generic.armor",
-                    "operation": "add_value",
-                    "value": 2.0
+                    "value": -0.2
                 },
                 {
                     "type": "gateways:attribute",

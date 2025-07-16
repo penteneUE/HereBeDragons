@@ -26,3 +26,11 @@ const wildRandomTraits = weightedRandom()
     .add("down", 1)
     .add("no_flesh", 1)
     .add("antimemetic", 0.2);
+
+/**
+ * @type {WeightedRandom<string>}
+ */
+const hybridRandomTraits = weightedRandom()
+    .add("down", 1)
+    .add("no_flesh", 1)
+    .add("antimemetic", 1);

@@ -1,11 +1,12 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"settings": {
-		"typescript.tsserver.maxTsServerMemory": 4096,
-		"editor.formatOnSave": true
-	}
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "typescript.tsserver.maxTsServerMemory": 4096,
+        "editor.formatOnSave": true,
+        "chat.agent.enabled": false
+    }
 }

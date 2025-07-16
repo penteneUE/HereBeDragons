@@ -97,6 +97,48 @@ function rollCurse() {
 }
 
 /**
+ *
+ * @param {$RandomSource_} random
+ * @returns {DragonBreedData}
+ */
+function randomHybridData(random) {
+    let hybridTraits = new $CompoundTag();
+
+    /**
+     * @type {import("java.util.Set").$Set<string>}
+     */
+    let gotTraits = new $HashSet();
+    let traitCount = random.nextIntBetweenInclusive(2, 4);
+    for (let i = 0; i < traitCount; i++) {
+        let selectedTrait = hybridRandomTraits.getItem();
+        hybridTraits.putInt(selectedTrait, 0);
+        gotTraits.add(selectedTrait);
+    }
+    //gotTraits.addAll(hybridTraits.getAllKeys());
+    hybridTraits.putInt(
+        gotTraits.toArray()[random.nextInt(gotTraits.size())],
+        1
+    );
+
+    /**
+     * @type {DragonBreedData}
+     */
+    let playerBreedData = {
+        strength: random.nextIntBetweenInclusive(10, 20),
+        constitution: random.nextIntBetweenInclusive(10, 20),
+        dexterity: random.nextIntBetweenInclusive(10, 20),
+        traits: hybridTraits,
+    };
+
+    return playerBreedData;
+}
+
+// ItemEvents.rightClicked((event) => {
+//     let { player } = event;
+//     player.tell(randomHybridData(player.random));
+// });
+
+/**
  * @param {$Player_} player
  * @param {$LivingEntity_} matingDragon
  * @param {boolean} isMaleDragon
@@ -157,18 +199,7 @@ function bornChild(player, matingDragon, isMaleDragon) {
     );
     // BREED DATA
     if (!player.persistentData[BREED_DATA_KEY]) {
-        let hybridPenaltyTraits = new $CompoundTag();
-        hybridPenaltyTraits.putInt("down", 0);
-        hybridPenaltyTraits.putInt("no_flesh", 0); // TODO修改
-        /**
-         * @type {DragonBreedData}
-         */
-        let defaultHybridBreedData = {
-            strength: player.random.nextIntBetweenInclusive(10, 20),
-            constitution: player.random.nextIntBetweenInclusive(10, 20),
-            dexterity: player.random.nextIntBetweenInclusive(10, 20),
-            traits: hybridPenaltyTraits,
-        };
+        let playerBreedData = randomHybridData(player.random);
         egg.persistentData.put(
             BREED_DATA_KEY,
             serializeBreedData(
@@ -176,11 +207,11 @@ function bornChild(player, matingDragon, isMaleDragon) {
                     ? getChildBreedData(
                           player.random,
                           parentBreedData,
-                          defaultHybridBreedData
+                          playerBreedData
                       )
                     : getChildBreedData(
                           player.random,
-                          defaultHybridBreedData,
+                          playerBreedData,
                           parentBreedData
                       )
             )

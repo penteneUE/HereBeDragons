@@ -179,21 +179,21 @@ ItemEvents.dynamicTooltips("kubejs:gene_holder", (event) => {
     }
     //let breedData = item.getCustomData();
     switch (dragonType) {
-        case "FIRE":
+        case "iceandfire:fire_dragon":
             event.add(
                 Text.darkRed({
                     translate: "entity.iceandfire.fire_dragon",
                 })
             );
             break;
-        case "ICE":
+        case "iceandfire:ice_dragon":
             event.add(
                 Text.darkAqua({
                     translate: "entity.iceandfire.ice_dragon",
                 })
             );
             break;
-        case "LIGHTNING":
+        case "iceandfire:lightning_dragon":
             event.add(
                 Text.darkPurple({
                     translate: "entity.iceandfire.lightning_dragon",

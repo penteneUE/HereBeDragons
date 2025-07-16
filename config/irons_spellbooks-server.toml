@@ -1206,7 +1206,7 @@
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 1.0
 		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 10.0
+		CooldownInSeconds = 0.0
 		AllowCrafting = true
 
 	[Spells."kubejs:ananta_remanta"]
@@ -1214,10 +1214,10 @@
 		School = "kubejs:dragon"
 		MaxLevel = 10
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "EPIC"
+		MinRarity = "UNCOMMON"
 		ManaCostMultiplier = 1.0
 		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 60.0
+		CooldownInSeconds = 30.0
 		AllowCrafting = true
 
 	[Spells."irons_spellbooks:ice_tomb"]

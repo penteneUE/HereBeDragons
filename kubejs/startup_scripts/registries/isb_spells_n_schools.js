@@ -37,11 +37,11 @@ StartupEvents.registry("irons_spellbooks:spells", (event) => {
         .create("taotie_fabel")
         .setCastTime(10)
         .setBaseManaCost(2)
-        .setCooldownSeconds(0) // Spell cooldown in seconds
+        // .setCooldownSeconds(0) // Spell cooldown in seconds
         .setManaCostPerLevel(10) // How much additional mana is needed per level
         .setCastType("instant") // Cast type can be "continuous", "long", "instant", or "none"
         .setSchool("kubejs:dragon") // The school type. This is the ID of the school you want to use
-        .setMinRarity("common") // The minimum rarity of the spell. Can be "common", "uncommon", "rare", "epic", or "legendary"
+        // .setMinRarity("common") // The minimum rarity of the spell. Can be "common", "uncommon", "rare", "epic", or "legendary"
         .setStartSound("item.honey_bottle.drink") // The sound to be played when you start casting the spell. Used for long spells
         .setFinishSound("item.honey_bottle.drink") // Plays when the spell has finished casting
         // .onCast((ctx) => {
@@ -50,7 +50,7 @@ StartupEvents.registry("irons_spellbooks:spells", (event) => {
         .setAllowLooting(false) // Setting this to false will disallow looting the spell from mobs or chests
         .needsLearning(false) // Usually this one is used for Eldritch spells
         .canBeCraftedBy((player) => {
-            return isDragon(player);
+            return global.UTILS.isDragon(player);
         })
         .setUniqueInfo((spellLevel, caster) => {
             let growth = -1;
@@ -79,12 +79,11 @@ StartupEvents.registry("irons_spellbooks:spells", (event) => {
         .create("ananta_remanta")
         .setCastTime(120)
         .setBaseManaCost(2)
-        // .setMaxLevel(6)
-        .setCooldownSeconds(15) // Spell cooldown in seconds
+        // .setCooldownSeconds(15) // Spell cooldown in seconds
         .setManaCostPerLevel(2) // How much additional mana is needed per level
         .setCastType("continuous") // Cast type can be "continuous", "long", "instant", or "none"
         .setSchool("kubejs:dragon") // The school type. This is the ID of the school you want to use
-        .setMinRarity("common") // The minimum rarity of the spell. Can be "common", "uncommon", "rare", "epic", or "legendary"
+        // .setMinRarity("common") // The minimum rarity of the spell. Can be "common", "uncommon", "rare", "epic", or "legendary"
         .setStartSound("irons_spellbooks:cast.generic.holy") // The sound to be played when you start casting the spell. Used for long spells
         .setFinishSound("irons_spellbooks:cast.generic.holy") // Plays when the spell has finished casting
         // .onCast((ctx) => {
@@ -93,39 +92,12 @@ StartupEvents.registry("irons_spellbooks:spells", (event) => {
         .setAllowLooting(false) // Setting this to false will disallow looting the spell from mobs or chests
         .needsLearning(false) // Usually this one is used for Eldritch spells
         .canBeCraftedBy((player) => {
-            return isDragon(player);
+            return global.UTILS.isDragon(player);
         })
         .setUniqueInfo((spellLevel, caster) => {
             try {
                 let { captureHealth, failureRate, growth } =
                     global.DRAGON_MAGIC.anantaRemanta_info(spellLevel, caster);
-                // let growth = -1;
-                // if (caster) {
-                //     if (caster.isPlayer()) {
-                //         growth = global.UTILS.dragonGrowth(caster);
-                //     }
-                // }
-
-                // let minHealth = 1;
-                // let maxHealth = 20;
-
-                // let captureHealth =
-                //     growth == -1
-                //         ? minHealth
-                //         : ((maxHealth - 12) / 10) * spellLevel + growth / 10;
-
-                // if (captureHealth < minHealth) captureHealth = minHealth;
-
-                // let minFail = 0;
-                // let maxFail = 50;
-
-                // let failureRate =
-                //     growth == -1
-                //         ? maxFail
-                //         : ((maxFail + 12) * (10 - spellLevel)) / 10 -
-                //           growth / 10;
-                // if (failureRate < minFail) failureRate = minFail;
-                // Caster refers to the player
                 return [
                     // You need to return an array of components for this method. They can be any text you want.
                     Text.translatable(
@@ -144,30 +116,4 @@ StartupEvents.registry("irons_spellbooks:spells", (event) => {
             }
             //global.DRAGON_MAGIC.anantaRemantaInfo(spellLevel, caster)
         });
-    // .checkPreCastConditions((ctx) => {
-    //     // You can use this for targeting spells, like how the Slow spell works. preCastTargetHelper returns true or false based on the target conditions.
-    //     // The parameters of this method include the level, entity, the player's magic data, the spell, the range, and the aim assist.
-    //     try {
-    //         return ISSUtils.preCastTargetHelper(
-    //             ctx.level,
-    //             ctx.entity,
-    //             ctx.playerMagicData,
-    //             ctx.spell,
-    //             48,
-    //             0.35
-    //         );
-    //     } catch (e) {
-    //         console.log(e);
-    //         return false;
-    //     }
-    // })
-    // .onCast((ctx) => {
-    //     console.log(ctx.level);
-    //     console.log(ctx.spellLevel);
-    //     console.log(ctx.entity);
-    //     console.log(ctx.castSource);
-    //     console.log(ctx.playerMagicData);
-    //     console.log("From onCast With Context");
-    //     ctx.entity.heal(1);
-    // });
 });

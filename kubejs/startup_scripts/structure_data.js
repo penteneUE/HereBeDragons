@@ -662,6 +662,32 @@ structureData.put("minecraft:end_city", {
     },
 });
 
+const citadelMobs = Utils.newList();
+citadelMobs.addAll(netherMonsters);
+citadelMobs.add("irons_spellbooks:citadel_keeper");
+
+structureData.put("irons_spellbooks:citadel", {
+    gateway: "kubejs:misc/citadel",
+    name: "kubejs.recipeinfo.conquest.citadel",
+    description: "kubejs.recipeinfo.conquest.citadel.description",
+    mobs: citadelMobs,
+    product: {
+        item: weightedRandom()
+            .add("minecraft:netherite_scrap", 2)
+            .add("irons_spellbooks:arcane_essence", 2)
+            .add("irons_spellbooks:cinder_essence", 1)
+            .add("irons_spellbooks:common_ink", 0.5)
+            .add("irons_spellbooks:uncommon_ink", 0.3)
+            .add("irons_spellbooks:rare_ink", 0.2)
+            .add("irons_spellbooks:epic_ink", 0.05)
+            .add("dragonsurvival:elder_dragon_bone", 0.5)
+            .add("dragonsurvival:heart_element", 0.2)
+            .add("dragonsurvival:weak_dragon_heart", 0.1)
+            .add("dragonsurvival:elder_dragon_heart", 0.1),
+        count: 32,
+    },
+});
+
 global.STRUCTURE_DATA = structureData;
 
 //initStructureData();

@@ -270,6 +270,10 @@
     "kubejs.recipeinfo.conquest.end_city": "末地城",
     "kubejs.recipeinfo.conquest.end_city.description": "资源：末影珍珠、紫颂果、矿物、宝石、经验瓶、古龙心。守备：末影人、强化的末影人、潜影贝。",
 
+    "kubejs.misc/citadel": "缠魂幽堡",
+    "kubejs.recipeinfo.conquest.citadel": "缠魂幽堡",
+    "kubejs.recipeinfo.conquest.citadel.description": "资源：下界合金碎片、奥术源质、灰烬源质、魔法墨水、古龙心。守备：受火者及其随从。",
+
     "kubejs.challenge/paper_myth": "折纸幻象",
     "kubejs.challenge/paper_myth.name.siren": "怀孕的",
     "kubejs.challenge/paper_myth.name.cockatrice": "夭折的",
