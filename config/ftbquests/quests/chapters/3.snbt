@@ -429,6 +429,7 @@
 				id: "minecraft:ghast_tear"
 			}
 			id: "792EEE317BF6BE9A"
+			invisible: true
 			rewards: [
 				{
 					id: "32BC635F3F7C3286"
@@ -476,6 +477,7 @@
 				id: "minecraft:ghast_tear"
 			}
 			id: "25988B2D0CBAFDFC"
+			invisible: true
 			rewards: [
 				{
 					id: "5260B3ACC25C9B30"
@@ -506,6 +508,7 @@
 				id: "minecraft:ghast_tear"
 			}
 			id: "067E78CA72DFEC4E"
+			invisible: true
 			rewards: [
 				{
 					id: "3361116BAAEF3D44"
@@ -536,6 +539,7 @@
 				id: "minecraft:ghast_tear"
 			}
 			id: "6F57BD70E7CADA3A"
+			invisible: true
 			rewards: [
 				{
 					id: "49E41DB2E3D04B17"
@@ -608,6 +612,7 @@
 				id: "minecraft:ghast_tear"
 			}
 			id: "30EE5C964B4334B3"
+			invisible: true
 			rewards: [
 				{
 					id: "7B9135019CB7EC35"
@@ -638,6 +643,7 @@
 				id: "minecraft:ghast_tear"
 			}
 			id: "2843AB6152785242"
+			invisible: true
 			rewards: [
 				{
 					id: "7A8C9E9C93887005"
@@ -680,6 +686,37 @@
 			}]
 			x: 3.0d
 			y: -14.0d
+		}
+		{
+			dependencies: ["7CDB045282E65572"]
+			hide_dependency_lines: true
+			icon: {
+				id: "minecraft:ghast_tear"
+			}
+			id: "1AD0D9E649454B78"
+			invisible: true
+			rewards: [
+				{
+					id: "1317938D7FE746C9"
+					item: {
+						count: 1
+						id: "dragonsurvival:elder_dragon_heart"
+					}
+					type: "item"
+				}
+				{
+					id: "16241E51072D5BF9"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "5FD501106BE86280"
+				stage: "quest/breed.antimemetic"
+				type: "gamestage"
+			}]
+			x: 6.5d
+			y: -13.5d
 		}
 	]
 }

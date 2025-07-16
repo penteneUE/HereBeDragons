@@ -25,7 +25,7 @@ const wildRandomTraits = weightedRandom()
     .add("stopouch", 1)
     .add("down", 1)
     .add("no_flesh", 1)
-    .add("antimemetic", 0.2);
+    .add("antimemetic", 0.1);
 
 /**
  * @type {WeightedRandom<string>}

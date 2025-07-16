@@ -33,9 +33,11 @@
 	quest.05F9D9DD6B1919D6.quest_desc: [
 		"如果龙玩家吃下致幻植物或汤，再贴近一条同样吃下致幻汤的冰龙、火龙或电龙，将进行杂交并得到龙蛋。"
 		""
-		"&c警告：如此异种杂交很可能生出有缺陷的后代！（除非装配基因链钉）&r"
+		"&c警告：除非装配基因链钉，否则如此异种杂交很可能生出有缺陷的后代！&r"
 		""
-		"&e后代可能会生出不同种类的龙。（如海洋龙与冰龙繁殖出电龙）&r"
+		"&m当然，也可能出现野生个体不会出现的特性。&r"
+		""
+		"&e后代可能会生出不同种类的龙。如海洋龙与冰龙繁殖出电龙。&r"
 	]
 	quest.05F9D9DD6B1919D6.quest_subtitle: "不是，哥们？"
 	quest.06398A1A4B38AEB3.quest_desc: ["这里时常会出现那些黑瘦的、看一眼就会尖叫着冲过来的家伙。不过，按它们来无影、去无踪的样子，同时出现在主世界和这里，似乎也很正常。"]
@@ -147,6 +149,14 @@
 	quest.19F305E43043E0BC.title: "占领：小精灵聚落"
 	quest.1A1EEED3B3FB70E6.quest_subtitle: "想致富，先撸树"
 	quest.1A1EEED3B3FB70E6.title: "材料 - 木材"
+	quest.1AD0D9E649454B78.quest_desc: [
+		"个体像路边的小石子一样难以被记住。就算被看见了也不会注意。"
+		""
+		"生物不会将其个体为攻击目标。二级时永久隐身。三级时永久真实隐身。&e玩家得到此特性时，不会得到隐身效果。&r"
+		""
+		"新世代龙极低概率携带此特性。不携带基因链钉杂交时，出现概率提高。"
+	]
+	quest.1AD0D9E649454B78.quest_subtitle: "自我保守的秘密"
 	quest.1C16CBEB46D46117.title: "末影学派"
 	quest.1D43F77FD948BD09.quest_desc: [
 		"你自纸壳中苏醒……思绪一片空白。"
@@ -524,7 +534,7 @@
 	quest.3DCEA15CB8E9D815.title: "材料 - 钢铁"
 	quest.3EA80CB5C49D2C0D.quest_subtitle: "占领了高位唤魔者城堡的你，已是名正言顺的领主了"
 	quest.3EA80CB5C49D2C0D.title: "高位唤魔者套装"
-	quest.3EF34E6718CFE991.quest_subtitle: "龙在此……龙真的在此"
+	quest.3EF34E6718CFE991.quest_subtitle: "龙在此"
 	quest.4111BB6653AFE691.quest_subtitle: "尽情去杀坏人吧"
 	quest.41A41BD24597BEC0.title: "幽灵"
 	quest.4218B7B59B0F0F74.title: "合成瓶中税收官"
@@ -600,6 +610,7 @@
 	quest.4BA87BE14387EE62.title: "装饰你的箱子"
 	quest.4BF0F72FA3E16483.quest_subtitle: "拯救一切迷途羔羊"
 	quest.4BF0F72FA3E16483.title: "牧师套装"
+	quest.4C558A8987578F7B.quest_subtitle: "口腹之欲无止尽"
 	quest.4C758A8E88A6F894.quest_subtitle: "冰封的囚笼"
 	quest.4C758A8E88A6F894.title: "冰霜术士套装"
 	quest.4CA95FF688990836.quest_desc: [
@@ -885,6 +896,8 @@
 	]
 	quest.6A2D99CF2DF2A360.quest_subtitle: "播种世界"
 	quest.6A2D99CF2DF2A360.title: "新的传说"
+	quest.6A834B7D3846EAF6.quest_subtitle: "CINDERLAMITAS"
+	quest.6A834B7D3846EAF6.title: "占领：缠魂幽堡"
 	quest.6B14C91E12B2D9A1.quest_desc: ["在雷暴天气中手持充能核心右键被放下的避雷针以取得。"]
 	quest.6B14C91E12B2D9A1.quest_subtitle: "大号引雷针"
 	quest.6B2D21F0295F993B.quest_desc: [
@@ -1234,6 +1247,7 @@
 	task.598BF8CA11E630E8.title: "解锁调试选项……"
 	task.5E33750567CF8ECB.title: "想联系作者的话……"
 	task.5F1EB74BCE3C153D.title: "无尽的龙挑战"
+	task.5FD501106BE86280.title: "逆模因"
 	task.603F5014859431C5.title: "龙与魔法"
 	task.622691708BF35089.title: "村庄"
 	task.6725FC782A9D3323.title: "阿拉卡达迷城"

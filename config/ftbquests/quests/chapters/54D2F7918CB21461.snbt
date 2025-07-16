@@ -1577,12 +1577,56 @@
 		{
 			dependencies: ["4E6ED770D83C4AFF"]
 			id: "4C558A8987578F7B"
+			rewards: [{
+				id: "0CE1907CF0BB677B"
+				type: "xp"
+				xp: 2
+			}]
 			tasks: [{
 				id: "41D29A7E2CC299AB"
 				type: "checkmark"
 			}]
 			x: 10.0d
 			y: -1.0d
+		}
+		{
+			dependencies: [
+				"282D6DA8CBDD27E1"
+				"38FA1D29507FECC7"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "6A834B7D3846EAF6"
+			rewards: [
+				{
+					id: "3CFD6323B6B2A7E5"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "218CF49B9EDFF47F"
+					item: {
+						count: 1
+						id: "dragonsurvival:elder_dragon_heart"
+					}
+					type: "item"
+				}
+				{
+					id: "2990376AE7A0CA8D"
+					item: {
+						count: 1
+						id: "waystones:blackstone_waystone"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "7D66D162F6575BC3"
+				item: { components: { "minecraft:custom_data": { gateway: "misc/citadel" } }, count: 1, id: "kubejs:dragon_conquest_trophy" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 4.0d
 		}
 	]
 }

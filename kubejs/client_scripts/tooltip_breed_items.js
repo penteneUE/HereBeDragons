@@ -157,6 +157,7 @@ ItemEvents.dynamicTooltips("iceandfire:dragon_horn", (event) => {
     const { item } = event;
 
     let comp = item.getComponentMap().get("iceandfire:dragon_horn");
+    if (!comp) return;
 
     let breedData = comp
         .entityData()
