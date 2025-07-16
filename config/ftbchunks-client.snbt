@@ -133,69 +133,69 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"aquaculture:perch": false
-			"dragonsurvival:hunter_hound": true
-			"minecraft:pufferfish": false
-			"minecraft:vex": true
-			"dragonsurvival:hunter_leader": true
-			"minecraft:iron_golem": true
-			"minecraft:zombie_villager": true
-			"aquaculture:catfish": false
-			"minecraft:phantom": true
-			"minecraft:cow": true
-			"minecraft:enderman": true
-			"aquaculture:atlantic_herring": false
-			"minecraft:trader_llama": true
-			"minecraft:axolotl": true
-			"iceandfire:hippogryph": true
-			"minecraft:wolf": true
-			"minecraft:piglin": true
-			"aquaculture:minnow": false
-			"aquaculture:carp": false
-			"minecraft:cave_spider": true
-			"minecraft:drowned": true
-			"minecraft:squid": true
-			"aquaculture:bluegill": false
-			"minecraft:zombie": true
 			"minecraft:bat": true
-			"aquaculture:brown_trout": false
-			"aquaculture:gar": false
-			"minecraft:turtle": true
-			"minecraft:witch": true
-			"minecraft:bee": true
-			"iceandfire:myrmex_worker": true
-			"dragonsurvival:hunter_spearman": true
-			"aquaculture:smallmouth_bass": false
-			"minecraft:chicken": true
-			"minecraft:tropical_fish": false
-			"minecraft:wandering_trader": true
-			"minecraft:sheep": true
-			"iceandfire:myrmex_soldier": true
+			"minecraft:villager": true
+			"dragonsurvival:hunter_knight": true
+			"minecraft:squid": true
 			"aquaculture:red_grouper": false
-			"irons_spellbooks:necromancer": true
-			"iceandfire:hippocampus": true
-			"irons_spellbooks:cursed_armor_stand": true
-			"irons_spellbooks:priest": true
-			"minecraft:pig": true
 			"minecraft:zombified_piglin": true
+			"iceandfire:myrmex_worker": true
+			"minecraft:tropical_fish": false
+			"aquaculture:perch": false
+			"minecraft:bee": true
+			"aquaculture:muskellunge": false
 			"minecraft:strider": true
 			"minecraft:rabbit": true
-			"minecraft:glow_squid": true
-			"aquaculture:muskellunge": false
-			"minecraft:spider": true
-			"minecraft:creeper": true
-			"dragonsurvival:hunter_knight": true
-			"minecraft:ghast": true
-			"minecraft:cod": false
-			"minecraft:skeleton": true
-			"aquaculture:jellyfish": false
+			"minecraft:pufferfish": false
+			"minecraft:cave_spider": true
 			"iceandfire:cockatrice": true
-			"iceandfire:myrmex_queen": true
-			"minecraft:villager": true
+			"aquaculture:gar": false
+			"aquaculture:minnow": false
+			"minecraft:cod": false
+			"iceandfire:hippocampus": true
+			"dragonsurvival:hunter_spearman": true
+			"minecraft:axolotl": true
 			"minecraft:vindicator": true
-			"minecraft:dolphin": true
-			"iceandfire:pixie": true
+			"aquaculture:atlantic_herring": false
+			"irons_spellbooks:priest": true
+			"aquaculture:jellyfish": false
+			"aquaculture:smallmouth_bass": false
+			"iceandfire:myrmex_queen": true
+			"aquaculture:carp": false
+			"iceandfire:hippogryph": true
+			"minecraft:sheep": true
+			"minecraft:drowned": true
+			"minecraft:piglin": true
+			"iceandfire:myrmex_soldier": true
+			"minecraft:ghast": true
+			"irons_spellbooks:cursed_armor_stand": true
+			"minecraft:wandering_trader": true
+			"minecraft:creeper": true
+			"aquaculture:catfish": false
+			"minecraft:pig": true
+			"minecraft:enderman": true
+			"minecraft:cow": true
+			"minecraft:zombie_villager": true
 			"aquaculture:atlantic_halibut": false
+			"irons_spellbooks:necromancer": true
+			"minecraft:chicken": true
+			"minecraft:phantom": true
+			"minecraft:turtle": true
+			"minecraft:skeleton": true
+			"minecraft:vex": true
+			"minecraft:wolf": true
+			"minecraft:witch": true
+			"dragonsurvival:hunter_leader": true
+			"iceandfire:pixie": true
+			"minecraft:trader_llama": true
+			"minecraft:dolphin": true
+			"minecraft:iron_golem": true
+			"minecraft:glow_squid": true
+			"minecraft:spider": true
+			"dragonsurvival:hunter_hound": true
+			"minecraft:zombie": true
+			"aquaculture:bluegill": false
+			"aquaculture:brown_trout": false
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)

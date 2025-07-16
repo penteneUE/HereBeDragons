@@ -64,6 +64,18 @@ StartupEvents.registry("item", (event) => {
                     "add_multiplied_base"
                 )
                 .addAttribute(
+                    "dragonsurvival:lava_swim_speed",
+                    CLOAK_UUID,
+                    0.4,
+                    "add_multiplied_base"
+                )
+                .addAttribute(
+                    "neoforge:swim_speed",
+                    CLOAK_UUID,
+                    0.4,
+                    "add_multiplied_base"
+                )
+                .addAttribute(
                     "dragonsurvival:mana",
                     CLOAK_UUID,
                     0.2,

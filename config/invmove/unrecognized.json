@@ -51,6 +51,8 @@
     "io.redspace.ironsspellbooks.gui.inscription_table.InscriptionTableScreen": false,
     "top.theillusivec4.curios.client.gui.CuriosScreen": false,
     "fr.frinn.custommachinery.client.screen.CustomMachineScreen": false,
-    "dev.emi.emi.screen.RecipeScreen": false
+    "dev.emi.emi.screen.RecipeScreen": false,
+    "lain.mods.cos.impl.client.gui.GuiCosArmorInventory": false,
+    "by.dragonsurvivalteam.dragonsurvival.client.gui.screens.DragonInventoryScreen": false
   }
 }
