@@ -7,8 +7,8 @@
                         {
                             "amount": {
                                 "type": "minecraft:linear",
-                                "base": 5.0,
-                                "per_level_above_first": 5.0
+                                "base": 4.0,
+                                "per_level_above_first": 4.0
                             },
                             "damage_type": "irons_spellbooks:fire_magic",
                             "effect_type": "dragonsurvival:damage"
