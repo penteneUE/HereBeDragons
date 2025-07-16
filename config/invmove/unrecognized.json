@@ -49,6 +49,8 @@
     "net.p3pp3rf1y.sophisticatedbackpacks.client.gui.BackpackScreen": false,
     "io.redspace.ironsspellbooks.gui.scroll_forge.ScrollForgeScreen": false,
     "io.redspace.ironsspellbooks.gui.inscription_table.InscriptionTableScreen": false,
-    "top.theillusivec4.curios.client.gui.CuriosScreen": false
+    "top.theillusivec4.curios.client.gui.CuriosScreen": false,
+    "fr.frinn.custommachinery.client.screen.CustomMachineScreen": false,
+    "dev.emi.emi.screen.RecipeScreen": false
   }
 }

@@ -572,8 +572,8 @@
 	]
 	quest.49189A639C5973BB.quest_subtitle: "你的公主在别的城堡里"
 	quest.49189A639C5973BB.title: "占领：唤魔者堡垒"
-	quest.49AB9C5400682AA6.quest_subtitle: "不要把它放进岩浆！"
-	quest.49AB9C5400682AA6.title: "诅咒巫毒娃娃"
+	quest.49AB9C5400682AA6.quest_subtitle: "对青少年的危害不可估量"
+	quest.49AB9C5400682AA6.title: "噬血邪典"
 	quest.4AD4A8B95FFE0E2E.quest_subtitle: "方便来往于领地之间"
 	quest.4AF56908F7A20C1C.quest_desc: [
 		"知识的收集，本身就是一门很高深的学问。是否存在一个地方，包含了所有的知识与信息？"
@@ -734,6 +734,7 @@
 	quest.5BBEC08E7893B0EF.quest_subtitle: "成王败寇"
 	quest.5BBEC08E7893B0EF.title: "被通缉了！"
 	quest.5BFEACB4EB076B5C.quest_desc: ["现在，你可以制作小人斗篷以缩小自己的体型了。"]
+	quest.5BFEACB4EB076B5C.quest_subtitle: "格列佛游记"
 	quest.5C620CF48FE5DC36.quest_desc: ["激活后，在范围内可以免疫各龙种对环境的弱点。"]
 	quest.5C620CF48FE5DC36.quest_subtitle: "上天入地"
 	quest.5C84AADD309AED26.quest_desc: ["不知是幸运还是不幸，据你的观察，这些动物的行为和先人手记上的描述分毫不差。"]

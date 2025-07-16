@@ -11,7 +11,7 @@
             "fall": "minecraft:block.metal.fall",
             "break": "minecraft:block.glass.break"
         },
-        "custommachinery:item": "aquaculture:message_in_a_bottle",
+        "custommachinery:item": "irons_spellbooks:firefly_jar",
         "custommachinery:keep_inventory": false,
         "custommachinery:light": 5,
         "custommachinery:mining_level": "minecraft:needs_stone_tool",
