@@ -104,7 +104,7 @@ function geneSeekerLogic(player, entity) {
     player.server.runCommandSilent(
         `/playsound ${commonSound} player ${player.username.toString()} ${
             player.x
-        } ${player.y} ${player.z} 10 ${lerp(0, 255, 0, 2, avgAttr)}`
+        } ${player.y} ${player.z} 10 ${lerp(0, 256, 0, 2, avgAttr > 256 ? 256 : avgAttr)}`
     );
 
     //player.tell(entity.nbt);
