@@ -41,7 +41,8 @@
     "vazkii.patchouli.client.book.gui.GuiBookEntry": false,
     "io.redspace.ironsspellbooks.gui.inscription_table.InscriptionTableScreen": false,
     "io.redspace.ironsspellbooks.gui.scroll_forge.ScrollForgeScreen": false,
-    "com.iafenvoy.iceandfire.screen.gui.DragonScreen": false
+    "com.iafenvoy.iceandfire.screen.gui.DragonScreen": false,
+    "io.redspace.ironsspellbooks.gui.arcane_anvil.ArcaneAnvilScreen": false
   },
   "hideBackground": {
     "dev.ftb.mods.ftblibrary.ui.ScreenWrapper": true,
@@ -55,6 +56,7 @@
     "dev.emi.emi.screen.RecipeScreen": false,
     "lain.mods.cos.impl.client.gui.GuiCosArmorInventory": false,
     "by.dragonsurvivalteam.dragonsurvival.client.gui.screens.DragonInventoryScreen": false,
-    "com.iafenvoy.iceandfire.screen.gui.DragonScreen": false
+    "com.iafenvoy.iceandfire.screen.gui.DragonScreen": false,
+    "io.redspace.ironsspellbooks.gui.arcane_anvil.ArcaneAnvilScreen": false
   }
 }

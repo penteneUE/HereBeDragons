@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "kubejs:item/dragon_flag"
+    "layer0": "kubejs:item/affinity_ring_dragon"
   }
 }
