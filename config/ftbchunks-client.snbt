@@ -133,69 +133,69 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"aquaculture:minnow": false
-			"minecraft:cod": false
-			"minecraft:vindicator": true
-			"minecraft:piglin": true
-			"aquaculture:muskellunge": false
-			"irons_spellbooks:cursed_armor_stand": true
-			"dragonsurvival:hunter_leader": true
-			"minecraft:enderman": true
-			"irons_spellbooks:necromancer": true
-			"iceandfire:cockatrice": true
-			"aquaculture:atlantic_halibut": false
-			"minecraft:zombified_piglin": true
+			"minecraft:axolotl": true
+			"aquaculture:brown_trout": false
+			"minecraft:cave_spider": true
+			"iceandfire:myrmex_worker": true
 			"minecraft:villager": true
-			"minecraft:bat": true
-			"minecraft:cow": true
-			"minecraft:squid": true
-			"minecraft:drowned": true
-			"minecraft:wolf": true
+			"iceandfire:pixie": true
+			"aquaculture:perch": false
+			"minecraft:iron_golem": true
+			"irons_spellbooks:cursed_armor_stand": true
+			"minecraft:cod": false
+			"minecraft:vex": true
+			"minecraft:phantom": true
+			"minecraft:dolphin": true
+			"minecraft:enderman": true
+			"minecraft:bee": true
+			"minecraft:pig": true
 			"minecraft:turtle": true
 			"aquaculture:gar": false
-			"dragonsurvival:hunter_hound": true
-			"minecraft:iron_golem": true
-			"aquaculture:perch": false
-			"iceandfire:myrmex_soldier": true
-			"minecraft:cave_spider": true
-			"minecraft:ghast": true
-			"aquaculture:brown_trout": false
-			"iceandfire:myrmex_worker": true
-			"minecraft:strider": true
-			"irons_spellbooks:priest": true
-			"minecraft:axolotl": true
-			"minecraft:sheep": true
-			"dragonsurvival:hunter_spearman": true
-			"iceandfire:hippogryph": true
-			"minecraft:pig": true
-			"minecraft:phantom": true
-			"minecraft:tropical_fish": false
-			"iceandfire:pixie": true
-			"aquaculture:catfish": false
-			"minecraft:vex": true
-			"minecraft:dolphin": true
-			"minecraft:bee": true
-			"minecraft:wandering_trader": true
-			"minecraft:creeper": true
-			"minecraft:witch": true
-			"minecraft:trader_llama": true
-			"dragonsurvival:hunter_knight": true
-			"iceandfire:myrmex_queen": true
-			"iceandfire:hippocampus": true
-			"minecraft:rabbit": true
-			"aquaculture:atlantic_herring": false
-			"aquaculture:red_grouper": false
-			"minecraft:zombie": true
 			"aquaculture:smallmouth_bass": false
-			"minecraft:chicken": true
-			"aquaculture:jellyfish": false
-			"minecraft:spider": true
-			"aquaculture:bluegill": false
-			"aquaculture:carp": false
 			"minecraft:zombie_villager": true
-			"minecraft:skeleton": true
-			"minecraft:pufferfish": false
+			"minecraft:chicken": true
+			"minecraft:trader_llama": true
+			"minecraft:rabbit": true
+			"dragonsurvival:hunter_spearman": true
+			"minecraft:tropical_fish": false
+			"minecraft:squid": true
+			"minecraft:creeper": true
 			"minecraft:glow_squid": true
+			"aquaculture:atlantic_halibut": false
+			"dragonsurvival:hunter_leader": true
+			"minecraft:pufferfish": false
+			"iceandfire:hippocampus": true
+			"minecraft:strider": true
+			"minecraft:wolf": true
+			"iceandfire:hippogryph": true
+			"iceandfire:myrmex_soldier": true
+			"irons_spellbooks:necromancer": true
+			"minecraft:sheep": true
+			"minecraft:witch": true
+			"aquaculture:atlantic_herring": false
+			"minecraft:wandering_trader": true
+			"aquaculture:catfish": false
+			"minecraft:zombified_piglin": true
+			"minecraft:piglin": true
+			"iceandfire:cockatrice": true
+			"aquaculture:bluegill": false
+			"aquaculture:red_grouper": false
+			"iceandfire:myrmex_queen": true
+			"minecraft:cow": true
+			"aquaculture:muskellunge": false
+			"minecraft:skeleton": true
+			"aquaculture:minnow": false
+			"minecraft:zombie": true
+			"minecraft:spider": true
+			"minecraft:bat": true
+			"minecraft:drowned": true
+			"aquaculture:jellyfish": false
+			"irons_spellbooks:priest": true
+			"minecraft:vindicator": true
+			"aquaculture:carp": false
+			"dragonsurvival:hunter_hound": true
+			"minecraft:ghast": true
+			"dragonsurvival:hunter_knight": true
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)

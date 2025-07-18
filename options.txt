@@ -12,7 +12,7 @@ darknessEffectScale:1.0
 glintSpeed:0.5
 glintStrength:0.75
 prioritizeChunkUpdates:0
-fullscreen:true
+fullscreen:false
 gamma:0.5
 graphicsMode:1
 guiScale:0
@@ -128,6 +128,7 @@ key_iris.keybind.shaderPackSelection:key.keyboard.unknown
 key_iris.keybind.wireframe:key.keyboard.unknown
 key_supplementaries.keybind.quiver:key.keyboard.unknown
 key_key.curios.open.desc:key.keyboard.unknown
+key_key.kiwi.builders_button:key.mouse.4
 key_key.jei.toggleOverlay:key.keyboard.o:CONTROL
 key_key.jei.focusSearch:key.keyboard.f:CONTROL
 key_key.jei.previousPage:key.keyboard.unknown
@@ -176,10 +177,6 @@ key_keybind.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
 key_mapfrontiers.key.open_settings:key.keyboard.f8
 key_key.ftbteams.open_gui:key.keyboard.unknown
-key_key.dragon_fireAttack:key.keyboard.unknown
-key_key.dragon_strike:key.keyboard.unknown
-key_key.dragon_down:key.keyboard.x
-key_key.dragon_change_view:key.keyboard.f7
 key_key.ftbchunks.map:key.keyboard.unknown
 key_key.ftbchunks.toggle_minimap:key.keyboard.unknown
 key_key.ftbchunks.claim_manager:key.keyboard.unknown
@@ -187,6 +184,10 @@ key_key.ftbchunks.minimap.zoomIn:key.keyboard.equal
 key_key.ftbchunks.minimap.zoomOut:key.keyboard.minus
 key_key.ftbchunks.add_waypoint:key.keyboard.unknown
 key_key.ftbchunks.waypoint_manager:key.keyboard.unknown
+key_key.dragon_fireAttack:key.keyboard.unknown
+key_key.dragon_strike:key.keyboard.unknown
+key_key.dragon_down:key.keyboard.x
+key_key.dragon_change_view:key.keyboard.f7
 key_key.ftbquests.quests:key.keyboard.unknown
 key_dragonsurvival.keybind.toggle_flight:key.keyboard.g
 key_dragonsurvival.keybind.use_ability:key.keyboard.f

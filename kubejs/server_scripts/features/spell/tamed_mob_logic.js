@@ -278,15 +278,26 @@ function reviseTamedPetGoals(mob) {
                 (mob) => mob.getNavigation().stop(),
                 true,
                 /** @param {$Mob_} mob */ (mob) => {
+                    let owner = getOwner(mob);
+                    if (!owner) return;
                     if (
-                        !getOwner(mob).persistentData.getBoolean(
+                        !owner.persistentData.getBoolean(
                             TOGGLE_PET_FOLLOWING_KEY
                         )
                     )
                         return;
+					let dist = mob.distanceToEntity(owner)
+					if (dist > 24) return;
+					if (dist < 3) return;
                     //if (mob.tickCount % 60 != 0) return;
-                    let mobAABB = mob.boundingBox.inflate(5);
-                    mob.level.getEntitiesWithin(mobAABB).forEach((entity) => {
+                    //let mobAABB = mob.boundingBox.inflate(5);
+                    mob.getNavigation().moveTo(
+                        owner.block.x,
+                        owner.y,
+                        owner.z,
+                        1.0
+                    );
+/*                    mob.level.getEntitiesWithin(mobAABB).forEach((entity) => {
                         if (entity == null) return;
                         if (
                             entity.player &&
@@ -300,7 +311,7 @@ function reviseTamedPetGoals(mob) {
                                 1.0
                             );
                         }
-                    });
+                    });*/
                 }
             )
         );

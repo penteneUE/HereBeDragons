@@ -22,6 +22,8 @@
 !shaderpacks/**/*
 !screenshots/**/*
 
+!mod-sources/**/*
+
 !journeymap/config/**/*
 !journeymap/server/**/*
 

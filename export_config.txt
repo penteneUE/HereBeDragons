@@ -2,7 +2,7 @@ Name:
 Version:
 
 # 是否打包正式版 PCL，以便没有启动器的玩家安装整合包。
-IncludeLauncher:True
+IncludeLauncher:False
 
 # 是否打包 PCL 个性化内容，例如功能隐藏设置、主页、背景音乐和图片等。
 IncludeLauncherCustom:True
