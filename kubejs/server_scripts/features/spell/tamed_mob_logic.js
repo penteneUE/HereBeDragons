@@ -76,6 +76,7 @@ function tameCreature(player, target) {
  * @returns {$Player_ | null} The owner player entity, or null if not found.
  */
 function getOwner(mob) {
+    if (!mob.persistentData) return null;
     if (!mob.persistentData.OwnerName) return null;
     try {
         //let ownerUUID = UUID.fromString(mob.persistentData.OwnerName);
@@ -278,6 +279,8 @@ function reviseTamedPetGoals(mob) {
                 (mob) => mob.getNavigation().stop(),
                 true,
                 /** @param {$Mob_} mob */ (mob) => {
+                    if (!mob) return;
+                    if (!mob.persistentData) return;
                     let owner = getOwner(mob);
                     if (!owner) return;
                     if (
@@ -286,9 +289,9 @@ function reviseTamedPetGoals(mob) {
                         )
                     )
                         return;
-					let dist = mob.distanceToEntity(owner)
-					if (dist > 24) return;
-					if (dist < 3) return;
+                    let dist = mob.distanceToEntity(owner);
+                    if (dist > 24) return;
+                    if (dist < 3) return;
                     //if (mob.tickCount % 60 != 0) return;
                     //let mobAABB = mob.boundingBox.inflate(5);
                     mob.getNavigation().moveTo(
@@ -297,7 +300,7 @@ function reviseTamedPetGoals(mob) {
                         owner.z,
                         1.0
                     );
-/*                    mob.level.getEntitiesWithin(mobAABB).forEach((entity) => {
+                    /*                    mob.level.getEntitiesWithin(mobAABB).forEach((entity) => {
                         if (entity == null) return;
                         if (
                             entity.player &&

@@ -100,7 +100,9 @@ function regeneratorDragonInteracted(event) {
  */
 function regeneratorPlayerHeal(event) {
     let { effectInstance, entity } = event;
+    if (!entity) return;
     if (!entity.isPlayer()) return;
+    if (!effectInstance) return;
     if (!effectInstance.is("kubejs:regenerator")) return;
 
     let healAmount = 0;
