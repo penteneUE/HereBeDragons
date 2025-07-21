@@ -242,6 +242,12 @@
 	quest.234C49E792EC075C.quest_desc: ["不知是幸运还是不幸，据你的观察，这些动物的行为和先人手记上的描述分毫不差。"]
 	quest.234C49E792EC075C.quest_subtitle: "荒漠的灾虫"
 	quest.234C49E792EC075C.title: "死亡蠕虫"
+	quest.238D26538A3CB4C1.quest_desc: [
+		"通过绑定高级无限终端，你可以在任意区域访问你的存储。"
+		""
+		"建造4级原版信标后，可以跨维度访问！"
+	]
+	quest.238D26538A3CB4C1.quest_subtitle: "CREATIVE ON"
 	quest.23AF0BA2CFF8572C.quest_desc: [
 		"你掉到了一个黑曜石制的平台上，周围一无所有，只有远处能远远地能看见一个插满黑曜石柱的飞岛。怪不得，那些进去的生物都没有回来。"
 		""
@@ -305,7 +311,7 @@
 		""
 		"一个未开启的传送门就静静地躺在这个房间的中间……据说从主世界进去那里的存在，从来没有回来过。"
 		""
-		"&e做好万全准备，将其占领&r再试着进去吧。"
+		"&e做好万全准备，将其占领&r再试着进去吧。（详见：“占领：要塞”）"
 	]
 	quest.26DAC736FC87EFA1.quest_desc: ["先人的手记没有记载这个橙橙的小东西，但你觉得把它记录在这里是可行的。"]
 	quest.26DAC736FC87EFA1.title: "矿脉哥布林商人"
@@ -1033,6 +1039,8 @@
 	quest.723B1D23AE2C2203.quest_desc: ["这里是烈焰人和凋零骷髅的老窝。烈焰人的烈焰棒是炽焰学派的重要之物，那凋零骷髅呢？"]
 	quest.723B1D23AE2C2203.quest_subtitle: "阴森的架桥"
 	quest.723B1D23AE2C2203.title: "下界要塞"
+	quest.72B10ABE8CB89DDE.quest_desc: ["将合成终端放置在存储控制器上，可便捷地在多方块存储中取用物品。"]
+	quest.72B10ABE8CB89DDE.quest_subtitle: "注定伟大"
 	quest.7365EF3A1CAED952.quest_desc: [
 		"恐蚁因BUG成山而不幸被冰火传说社区版暂时删除。"
 		""
@@ -1089,8 +1097,12 @@
 	]
 	quest.79C4B032A9B1F772.quest_subtitle: "与心爱的你行至世界尽头"
 	quest.79C4B032A9B1F772.title: "一颗真正可孵化的龙蛋"
-	quest.7A0E48F86D8941E4.quest_desc: ["手持物品右键控制器，如果连接的容器里有同类物品，即将物品存入容器中。"]
-	quest.7A0E48F86D8941E4.quest_subtitle: "怎么有些鸡肋呢？"
+	quest.7A0E48F86D8941E4.quest_desc: [
+		"巢穴中的箱子一旦多了，搜索、取用都会很麻烦。"
+		""
+		"这时就需要把它们所有都连接起来。"
+	]
+	quest.7A0E48F86D8941E4.quest_subtitle: "不再鸡肋！"
 	quest.7A0E48F86D8941E4.title: "多方块存储"
 	quest.7A57CC44CDC9CE8F.quest_desc: [
 		"你有预感，自己的身体最终会长到两格以上的高度。届时，普通的门就无法让你通过了。"

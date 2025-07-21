@@ -417,20 +417,12 @@
 				}
 				type: "item"
 			}]
-			tasks: [
-				{
-					id: "5DDA8E93903CE445"
-					item: { count: 1, id: "sophisticatedstorage:controller" }
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "20B14864A18C08C9"
-					item: { count: 1, id: "sophisticatedstorage:storage_tool" }
-					type: "item"
-				}
-			]
-			x: 6.5d
+			tasks: [{
+				id: "523BA65EB4BCD7C3"
+				item: { count: 1, id: "toms_storage:inventory_connector" }
+				type: "item"
+			}]
+			x: 7.0d
 			y: -3.5d
 		}
 		{
@@ -456,8 +448,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: -3.5d
+			x: 8.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["015FCCE81D57405E"]
@@ -1627,6 +1619,61 @@
 			}]
 			x: 11.5d
 			y: 4.0d
+		}
+		{
+			dependencies: ["7A0E48F86D8941E4"]
+			id: "72B10ABE8CB89DDE"
+			rewards: [{
+				id: "13B5AC39B506F119"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2D3684D93093DDD1"
+				item: { count: 1, id: "toms_storage:storage_terminal" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["72B10ABE8CB89DDE"]
+			id: "2CF86CFD8EDE21DB"
+			rewards: [{
+				id: "5AEA6CE6C11C3857"
+				item: {
+					count: 1
+					id: "dragonsurvival:weak_dragon_heart"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "50195BC442CE708B"
+				item: { count: 1, id: "toms_storage:crafting_terminal" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["7A0E48F86D8941E4"]
+			hide_dependency_lines: true
+			id: "238D26538A3CB4C1"
+			rewards: [{
+				id: "053F89AF9ECFC2A2"
+				item: {
+					count: 1
+					id: "dragonsurvival:weak_dragon_heart"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7FA01EA8F66479EB"
+				item: { count: 1, id: "toms_storage:adv_wireless_terminal" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.5d
 		}
 	]
 }

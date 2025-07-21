@@ -103,6 +103,7 @@ function regeneratorPlayerHeal(event) {
     if (!entity) return;
     if (!entity.isPlayer()) return;
     if (!effectInstance) return;
+	if (!effectInstance.is) return;
     if (!effectInstance.is("kubejs:regenerator")) return;
 
     let healAmount = 0;

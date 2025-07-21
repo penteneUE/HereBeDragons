@@ -42,7 +42,10 @@
     "io.redspace.ironsspellbooks.gui.inscription_table.InscriptionTableScreen": false,
     "io.redspace.ironsspellbooks.gui.scroll_forge.ScrollForgeScreen": false,
     "com.iafenvoy.iceandfire.screen.gui.DragonScreen": false,
-    "io.redspace.ironsspellbooks.gui.arcane_anvil.ArcaneAnvilScreen": false
+    "io.redspace.ironsspellbooks.gui.arcane_anvil.ArcaneAnvilScreen": false,
+    "net.p3pp3rf1y.sophisticatedstorage.client.gui.StorageScreen": false,
+    "com.tom.storagemod.screen.StorageTerminalScreen": false,
+    "com.tom.storagemod.screen.CraftingTerminalScreen": false
   },
   "hideBackground": {
     "dev.ftb.mods.ftblibrary.ui.ScreenWrapper": true,
@@ -57,6 +60,9 @@
     "lain.mods.cos.impl.client.gui.GuiCosArmorInventory": false,
     "by.dragonsurvivalteam.dragonsurvival.client.gui.screens.DragonInventoryScreen": false,
     "com.iafenvoy.iceandfire.screen.gui.DragonScreen": false,
-    "io.redspace.ironsspellbooks.gui.arcane_anvil.ArcaneAnvilScreen": false
+    "io.redspace.ironsspellbooks.gui.arcane_anvil.ArcaneAnvilScreen": false,
+    "net.p3pp3rf1y.sophisticatedstorage.client.gui.StorageScreen": false,
+    "com.tom.storagemod.screen.StorageTerminalScreen": false,
+    "com.tom.storagemod.screen.CraftingTerminalScreen": false
   }
 }

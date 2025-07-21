@@ -4,6 +4,11 @@ ServerEvents.recipes((event) => {
     event.remove({ output: "iceandfire:silver_pile" });
     event.remove({ output: "iceandfire:copper_pile" });
     event.remove({ output: "ftbfiltersystem:smart_filter" });
+	event.remove({ output: "sophisticatedstorage:controller" });
+	event.remove({ output: "sophisticatedstorage:storage_link" });
+	event.remove({ output: "sophisticatedstorage:storage_io" });
+	event.remove({ output: "sophisticatedstorage:storage_input" });
+	event.remove({ output: "sophisticatedstorage:storage_output" });
     //event.remove({ output: 'supplementaries:dragon_banner_pattern' })
 
     event.replaceInput(

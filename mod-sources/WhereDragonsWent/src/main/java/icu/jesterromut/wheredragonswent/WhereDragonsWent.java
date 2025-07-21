@@ -85,6 +85,7 @@ public class WhereDragonsWent {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+
         // Some common setup code
         // LOGGER.info("HELLO FROM COMMON SETUP");
 
