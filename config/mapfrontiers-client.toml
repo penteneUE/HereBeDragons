@@ -167,6 +167,7 @@ filterFrontierType = "All"
 #Allowed Values: All, You, Others
 filterFrontierOwner = "All"
 filterFrontierDimension = "all"
+sendCommand = "msg"
 
 [hud]
 	#Show the HUD on screen.
@@ -194,3 +195,6 @@ filterFrontierDimension = "all"
 	xPosition = 0
 	#Range: > -2147483648
 	yPosition = 0
+	#Size of the HUD text.
+	#Range: 1 ~ 8
+	textSize = 1
