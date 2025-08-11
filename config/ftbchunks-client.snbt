@@ -133,72 +133,72 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"minecraft:cow": true
-			"minecraft:phantom": true
-			"minecraft:vindicator": true
-			"minecraft:villager": true
-			"irons_spellbooks:priest": true
-			"iceandfire:pixie": true
+			"minecraft:iron_golem": true
+			"minecraft:wolf": true
 			"minecraft:piglin": true
-			"iceandfire:myrmex_queen": true
-			"dragonsurvival:hunter_knight": true
+			"minecraft:turtle": true
+			"minecraft:rabbit": true
+			"minecraft:witch": true
+			"aquaculture:jellyfish": false
+			"minecraft:tropical_fish": false
+			"iceandfire:hippocampus": true
 			"minecraft:dolphin": true
+			"minecraft:cave_spider": true
+			"dragonsurvival:hunter_knight": true
+			"minecraft:bee": true
+			"aquaculture:atlantic_herring": false
+			"minecraft:sheep": true
+			"dragonsurvival:hunter_leader": true
+			"iceandfire:myrmex_soldier": true
+			"iceandfire:cockatrice": true
+			"minecraft:pig": true
+			"dragonsurvival:hunter_spearman": true
+			"minecraft:axolotl": true
 			"iceandfire:hippogryph": true
 			"aquaculture:perch": false
-			"minecraft:wandering_trader": true
-			"minecraft:spider": true
-			"minecraft:axolotl": true
-			"aquaculture:carp": false
-			"minecraft:ghast": true
 			"aquaculture:brown_trout": false
+			"irons_spellbooks:priest": true
 			"minecraft:pufferfish": false
-			"iceandfire:lightning_dragon": true
-			"minecraft:enderman": true
-			"minecraft:cod": false
-			"minecraft:strider": true
-			"minecraft:zombie": true
-			"aquaculture:muskellunge": false
-			"minecraft:pig": true
-			"minecraft:glow_squid": true
-			"minecraft:chicken": true
-			"iceandfire:myrmex_soldier": true
-			"minecraft:creeper": true
-			"minecraft:iron_golem": true
-			"minecraft:drowned": true
-			"minecraft:cave_spider": true
-			"aquaculture:minnow": false
-			"minecraft:sheep": true
-			"minecraft:vex": true
-			"minecraft:zombified_piglin": true
-			"minecraft:zombie_villager": true
-			"dragonsurvival:hunter_hound": true
-			"minecraft:trader_llama": true
-			"minecraft:skeleton": true
-			"dragonsurvival:hunter_spearman": true
-			"aquaculture:gar": false
-			"aquaculture:atlantic_herring": false
-			"irons_spellbooks:necromancer": true
-			"aquaculture:jellyfish": false
-			"aquaculture:red_grouper": false
-			"iceandfire:fire_dragon": true
-			"aquaculture:smallmouth_bass": false
-			"minecraft:bat": true
-			"minecraft:bee": true
-			"aquaculture:bluegill": false
-			"minecraft:wolf": true
-			"irons_spellbooks:cursed_armor_stand": true
-			"minecraft:turtle": true
-			"dragonsurvival:hunter_leader": true
-			"iceandfire:hippocampus": true
+			"minecraft:cow": true
 			"aquaculture:atlantic_halibut": false
-			"iceandfire:cockatrice": true
-			"minecraft:rabbit": true
-			"minecraft:tropical_fish": false
-			"minecraft:witch": true
-			"minecraft:squid": true
+			"aquaculture:minnow": false
+			"minecraft:drowned": true
+			"minecraft:strider": true
+			"minecraft:trader_llama": true
+			"minecraft:zombie_villager": true
+			"irons_spellbooks:cursed_armor_stand": true
+			"minecraft:chicken": true
 			"aquaculture:catfish": false
-			"minecraft:parrot": true
+			"minecraft:creeper": true
+			"aquaculture:carp": false
+			"aquaculture:bluegill": false
+			"minecraft:zombie": true
+			"aquaculture:gar": false
+			"minecraft:vindicator": true
+			"minecraft:wandering_trader": true
+			"iceandfire:myrmex_queen": true
+			"minecraft:spider": true
+			"dragonsurvival:hunter_hound": true
+			"aquaculture:smallmouth_bass": false
+			"minecraft:ghast": true
+			"minecraft:skeleton": true
+			"minecraft:enderman": true
+			"minecraft:villager": true
+			"aquaculture:red_grouper": false
+			"iceandfire:pixie": true
 			"iceandfire:myrmex_worker": true
+			"minecraft:cod": false
+			"minecraft:squid": true
+			"minecraft:zombified_piglin": true
+			"iceandfire:lightning_dragon": true
+			"minecraft:glow_squid": true
+			"irons_spellbooks:necromancer": true
+			"minecraft:phantom": true
+			"aquaculture:muskellunge": false
+			"minecraft:vex": true
+			"iceandfire:fire_dragon": true
+			"minecraft:bat": true
+			"minecraft:parrot": true
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)

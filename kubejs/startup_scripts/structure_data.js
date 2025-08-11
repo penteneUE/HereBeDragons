@@ -224,6 +224,7 @@ Array.of(
     "ctov:small/village_swamp",
     "ctov:small/village_swamp_fortified",
     "ctov:small/village_taiga",
+	"ctov:small/village_taiga_fortified",
     "ctov:small/village_underground"
 ).forEach((structure) => {
     structureData.put(structure, smallVillageData);
@@ -258,6 +259,7 @@ Array.of(
     "ctov:medium/village_swamp",
     "ctov:medium/village_swamp_fortified",
     "ctov:medium/village_taiga",
+    "ctov:medium/village_taiga_fortified",
     "ctov:medium/village_underground"
 ).forEach((structure) => {
     structureData.put(structure, mediumVillageData);
@@ -285,6 +287,7 @@ Array.of(
     "ctov:large/village_swamp",
     "ctov:large/village_swamp_fortified",
     "ctov:large/village_taiga",
+    "ctov:large/village_taiga_fortified",
     "ctov:large/village_underground"
 ).forEach((structure) => {
     structureData.put(structure, largeVillageData);

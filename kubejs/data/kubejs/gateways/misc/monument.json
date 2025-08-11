@@ -1,62 +1,61 @@
 {
-    "type": "gateways:normal",
-    "color": "#33AE53",
-    "rewards": [
-        {
-            "type": "gateways:experience",
-            "experience": 200,
-            "orb_size": 25
-        }
-    ],
-    "failures": [
-    ],
-    "size": "small",
-    "waves": [
-        {
-            "entities": [
-                {
-                    "type": "gateways:standard",
-                    "count": 4,
-                    "entity": "minecraft:guardian"
-                }
-            ],
-            "max_wave_time": 800,
-            "rewards": [],
-            "setup_time": 100
-        },
-        {
-            "entities": [
-                {
-                    "type": "gateways:standard",
-                    "count": 4,
-                    "entity": "minecraft:guardian"
-                }
-            ],
-            "max_wave_time": 800,
-            "rewards": [],
-            "setup_time": 100
-        },
-        {
-            "entities": [
-                {
-                    "type": "gateways:standard",
-                    "count": 3,
-                    "entity": "minecraft:guardian"
-                },
-                {
-                    "type": "gateways:standard",
-                    "count": 1,
-                    "entity": "minecraft:elder_guardian"
-                }
-            ],
-            "max_wave_time": 800,
-            "modifiers": [],
-            "rewards": [],
-            "setup_time": 150
-        }
-    ],
-    "spawn_algorithm": "gateways:inward_spiral",
-    "rules":{
-        "fail_on_out_of_bounds": false
-    }
+	"type": "gateways:normal",
+	"color": "#33AE53",
+	"rewards": [
+		{
+			"type": "gateways:experience",
+			"experience": 200,
+			"orb_size": 25
+		}
+	],
+	"failures": [],
+	"size": "small",
+	"waves": [
+		{
+			"entities": [
+				{
+					"type": "gateways:standard",
+					"count": 4,
+					"entity": "minecraft:guardian"
+				}
+			],
+			"max_wave_time": 1600,
+			"rewards": [],
+			"setup_time": 100
+		},
+		{
+			"entities": [
+				{
+					"type": "gateways:standard",
+					"count": 4,
+					"entity": "minecraft:guardian"
+				}
+			],
+			"max_wave_time": 1600,
+			"rewards": [],
+			"setup_time": 100
+		},
+		{
+			"entities": [
+				{
+					"type": "gateways:standard",
+					"count": 3,
+					"entity": "minecraft:guardian"
+				},
+				{
+					"type": "gateways:standard",
+					"count": 1,
+					"entity": "minecraft:elder_guardian"
+				}
+			],
+			"max_wave_time": 1600,
+			"modifiers": [],
+			"rewards": [],
+			"setup_time": 150
+		}
+	],
+	"spawn_algorithm": "gateways:inward_spiral",
+	"rules": {
+		"fail_on_out_of_bounds": false
+	}
 }
