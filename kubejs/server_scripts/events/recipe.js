@@ -248,6 +248,59 @@ ServerEvents.recipes((event) => {
 		"irons_spellbooks:nature_rune",
 	]);
 	//以上为装备合成表补充
+	//以下为新生魔艺相关合成表
+	event.remove({ output: 'ars_nouveau:novice_spell_book' });
+
+	event.shapeless(Item.of('ars_nouveau:novice_spell_book',1),[
+		'ars_nouveau:source_gem',
+		'minecraft:book',
+	]);
+
+	event.shaped(
+		Item.of('ars_additions:ritual_chunk_loading', 1),
+		[
+			"EAE", 
+			"BCB",
+			"EDE"
+		],
+		{
+			A: 'minecraft:nether_star',
+			B: 'dragonsurvival:elder_dragon_bone',
+			C: 'kubejs:paper_dragon_fragment',
+			D: 'dragonsurvival:elder_dragon_heart',
+			E: 'minecraft:netherite_scrap',
+		}
+	);
+
+
+	// 以下为新生魔艺禁用列表
+	event.remove({ output: 'ars_additions:advanced_dominion_wand' });
+
+	event.remove({ output: 'ars_nouveau:glyph_wind_burst' });
+
+	event.remove({ output: 'ars_nouveau:glyph_lightning' });
+
+	event.remove({ output: 'ars_nouveau:glyph_wind_shear' });
+
+	event.remove({ output: 'ars_nouveau:glyph_flare' });
+
+	event.remove({ output: 'ars_elemental:glyph_conflagrate' });
+
+	event.remove({ output: 'ars_elemental:glyph_spark' });
+
+	event.remove({ output: 'ars_elemental:glyph_discharge' });
+
+	event.remove({ output: 'ars_elemental:glyph_poison_spores' });
+
+	event.remove({ output: 'ars_elemental:glyph_watery_grave' });
+
+	event.remove({ output: 'ars_elemental:glyph_spike' });
+
+	event.remove({ output: 'ars_nouveau:glyph_fangs' });
+
+	event.remove({ output: 'ars_nouveau:glyph_cold_snap' });
+
+
 
 	event
 		.shapeless(
@@ -460,3 +513,5 @@ ServerEvents.modifyRecipeResult("kubejs/gene_splicer_fill", (event) => {
 	event.success(output);
 	return output;
 });
+
+
