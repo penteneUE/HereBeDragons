@@ -2,6 +2,7 @@
 	chapter.14C8D60A6884E47E.title: "初生"
 	chapter.1E283E445F4D2ED1.title: "2：在边狱下"
 	chapter.329D78102C6D9E0E.title: "难度选项"
+	chapter.3B371AD09E8ED1D0.title: "研究：法之本源"
 	chapter.48A57AF2FDDDF708.title: "3：冰山之底"
 	chapter.527A94CE659B846F.title: "收集：识之图录"
 	chapter.54D2F7918CB21461.title: "征服：龙之宝库"
@@ -24,6 +25,11 @@
 	quest.03573C57D4ECA6A9.title: "占领：大型村庄"
 	quest.037F76767B7B7B50.quest_desc: ["不知是幸运还是不幸，据你的观察，这头家伙的行为和先人手记上的描述分毫不差。"]
 	quest.037F76767B7B7B50.title: "蛇发女妖"
+	quest.03F51B56CC353ABF.quest_desc: [
+		"这是与高等透镜一起研发出的拓展道具，"
+		"安装到高等透镜上会产生奇妙的效果。"
+	]
+	quest.03F51B56CC353ABF.title: "镜子的镜子"
 	quest.05546B1D86F62F95.quest_desc: [
 		"本整合包中默认会保留饰品栏以及龙爪槽中物品。剩余的会存放在坟墓里。"
 		""
@@ -48,6 +54,12 @@
 		"&o传说中在人类文明崛起之前，世界就被夜晚活动的大脚怪统治着。&r"
 	]
 	quest.063BF9E1684BB19B.title: "食人妖"
+	quest.063DFAE78299A682.quest_desc: [
+		"野外经常可以见到的小型魔法生物，"
+		"平常看到你这些小动物会敬而远之，"
+		"直到你有一次不小心从身上掉下来一枚金粒......"
+	]
+	quest.063DFAE78299A682.title: "生物管道"
 	quest.067E78CA72DFEC4E.quest_desc: [
 		"个体的爪牙异常地坚硬，能够更好地撕碎东西。"
 		""
@@ -71,6 +83,7 @@
 	quest.07A61974F4ED437D.quest_desc: ["陆上的海洋龙会&c因身体逐渐干燥而受到伤害&r。为保障在陆地的体验，这里提供了一些海绵来打湿自己。在飞行中也能用！"]
 	quest.0ACD08382118A6CE.quest_subtitle: "装甲黑工"
 	quest.0ACD08382118A6CE.title: "占领：古战场"
+	quest.0AF9746B90A57B18.quest_desc: ["这种魔源收集装置通过吸收药水瓶中的药水来收集魔源。"]
 	quest.0B3291EA305685A9.quest_desc: ["详见`/whredragonswent`"]
 	quest.0C526E83701415D6.quest_desc: [
 		"击败凋零可获得下界之星，一种用在许多高级配方里的材料。"
@@ -78,6 +91,10 @@
 		"其中包含能让龙逆生长的扭曲星骨，给予龙增益的龙信标等。"
 	]
 	quest.0C526E83701415D6.title: "凋灵"
+	quest.0C6389293DB7BF13.quest_desc: [
+		"你以魔源宝石为基，"
+		"辅以荒野膜翼、羽毛和箭合成出了气之精华。"
+	]
 	quest.0C67D7B61346ADCF.quest_desc: ["不知是幸运还是不幸，据你的观察，这些动物的行为和先人手记上的描述分毫不差。"]
 	quest.0C67D7B61346ADCF.quest_subtitle: "流洪之海的放逐者"
 	quest.0C67D7B61346ADCF.title: "海蟒"
@@ -102,7 +119,36 @@
 	]
 	quest.0E0A7316F2302130.quest_subtitle: "在一个没有龙的世界当恶龙，会是什么体验？"
 	quest.0E0A7316F2302130.title: "整合包介绍"
+	quest.0FBFEFD47FB7EA1F.quest_desc: [
+		"你常常因为魔源不足而苦恼，"
+		"为此，你下定决心开发更节能的炮台。"
+		""
+		""
+		"（附魔法术炮台魔源消耗减半）"
+	]
+	quest.0FBFEFD47FB7EA1F.title: "更高利用率"
+	quest.10375EB5203DBF3D.quest_desc: [
+		"现在的魔源收集方式效率太底下了，"
+		"需要更快的收集方式。"
+		"为此，你决定先制造一个魔源储存器。"
+		"（将魔源罐放置到装置旁以收集/供给魔源）"
+	]
+	quest.10375EB5203DBF3D.title: "魔源的存储"
+	quest.10939066FFAF7AF9.quest_desc: [
+		"这些愿意服从你的女巫擅长各种工作，"
+		"有的时候你真的想知道她们是怎么会这么多东西的。"
+	]
+	quest.10939066FFAF7AF9.title: "我什么都会做的"
 	quest.110CB24495E83671.title: "监守者"
+	quest.116C454C7DCF490B.quest_desc: [
+		"你不满足于现有的手动施法。"
+		"为了更好更方便的使用法术，"
+		"你铸造了一个自动释放法术的炮台。"
+		""
+		""
+		"（用红石信号以激活）"
+	]
+	quest.116C454C7DCF490B.title: "自动法术释放"
 	quest.11A603EE821FCE7A.quest_desc: ["在刷新龙魂的建筑里，可以找到激活的返回主世界的传送门。"]
 	quest.11A603EE821FCE7A.quest_subtitle: "龙的存档位……返回主世界？"
 	quest.11A603EE821FCE7A.title: "龙魂"
@@ -113,6 +159,12 @@
 	]
 	quest.11AA79B86FA1BF15.quest_subtitle: "连蚂蚁窝都不放过？！"
 	quest.11AA79B86FA1BF15.title: "占领：恐蚁巢穴"
+	quest.11AF73B7413A84EA.quest_desc: [
+		"经过书龙的培训，"
+		"星宝石兽可以认得更多的东西了。"
+		"但是书龙们认为不应该这样就发学位证——谁家学位证只要认得方向就发啊！"
+	]
+	quest.11AF73B7413A84EA.title: "魔法生物也要考证？"
 	quest.11E2340A98F4A0BE.quest_desc: [
 		"本来这个世界拥有着绮丽的风景、繁盛的王国，和多彩的生物。但为了保护人类，它们——包括龙在内，永远地离开了。"
 		""
@@ -125,6 +177,10 @@
 	quest.11E2340A98F4A0BE.quest_subtitle: "那些龙永远地离开了。"
 	quest.12180AD2969CFBCC.quest_subtitle: "世界尽头的城市"
 	quest.12180AD2969CFBCC.title: "占领：末地城"
+	quest.12C7723CA2DBB0B5.quest_desc: [
+		"但是你发现，就目前而言，你好像没有任何途径进行实践。"
+		"或许你可以多收集一些素材？"
+	]
 	quest.13ADEABE197E2013.quest_desc: ["用于多种法师配方。"]
 	quest.13ADEABE197E2013.quest_subtitle: "做一套法师的服装吧！"
 	quest.13E1BB906F96CCE8.quest_desc: ["制作钓具盒，以存放与穿脱钓鱼装备。"]
@@ -138,8 +194,28 @@
 		"&o传说中，有一种██龙，自出生就会向██山迁移。它们没有双眼，散播出的病毒就是它们的感官，在无心中就会造成灾害。后来更是发现，这种生物是古龙███的幼体。&r[剩余部分已编辑]"
 	]
 	quest.147154AD758AD0C4.quest_subtitle: "<日期与作者均不可辨别>"
+	quest.14C4FC072A31F168.quest_desc: ["这种魔源收集装置通过吸收附近的食物来吸收魔源。"]
+	quest.162279D9483F2A18.quest_desc: [
+		"这是你研发的一种改进型中转器，"
+		"与基础版最大的不同是可以无视距离来输送魔源了，"
+		"不过有个缺点，当传输距离大于基础版时，会出现不稳定的情况，可能会在传输时造成部分魔源的流失。"
+	]
+	quest.162279D9483F2A18.title: "长途运输"
 	quest.17283D37B8C277E9.quest_desc: ["让一位村民绑定这个工坊，其就能掌握进入耀光宝库的方案。"]
+	quest.17DDC85C83064F0F.quest_desc: [
+		"当宝石放入后，发生了神奇的现象，宝石正逐渐变为另一种完全不同的模样。"
+		"你将这种宝石称为魔源宝石。"
+		"你迸发出了许多灵感。"
+	]
+	quest.17DDC85C83064F0F.title: "能量聚集体"
 	quest.181CA7A87320229C.title: "耀光套装"
+	quest.18472F7458CA01DE.quest_desc: [
+		"如果你将星宝石兽放在魔花垫上面，"
+		"它们就会赖在上面不走，"
+		"但是如果你让它们在上面运输东西它们还是很乐意的，"
+		"前提是不离开魔花垫。"
+	]
+	quest.18472F7458CA01DE.title: "躺着工作"
 	quest.19F305E43043E0BC.quest_desc: [
 		"小精灵是一种很讨厌的生物，会偷走你的东西，放进家里。请把她们的家给拆光吧。"
 		""
@@ -157,6 +233,18 @@
 		"新世代龙极低概率携带此特性。不携带基因链钉杂交时，出现概率提高。"
 	]
 	quest.1AD0D9E649454B78.quest_subtitle: "自我保守的秘密"
+	quest.1B09170812DF0B1B.quest_desc: [
+		"先前制作的法术书已经不足以支撑更高级的法则运行了，"
+		"必须要制作承载力更强的载体。"
+	]
+	quest.1B09170812DF0B1B.title: "更好的载体"
+	quest.1B21CF26084859D8.quest_desc: [
+		"这是你研发的一款改进型中转器，"
+		"为了更方便的存放魔源，这种中转器会自动将输入的魔源传输到周围5格内未连接的魔源罐中。"
+	]
+	quest.1B21CF26084859D8.title: "批量储存"
+	quest.1B7C01528FA4995B.quest_desc: ["偶然之间，你产生了对世界本源进行探究的想法，并试图付诸实践。"]
+	quest.1B7C01528FA4995B.title: "思想的萌芽"
 	quest.1C16CBEB46D46117.title: "末影学派"
 	quest.1D43F77FD948BD09.quest_desc: [
 		"你自纸壳中苏醒……思绪一片空白。"
@@ -219,6 +307,15 @@
 	]
 	quest.209A1F902BE74FC3.quest_subtitle: "龙曾在此。"
 	quest.209A1F902BE74FC3.title: "宛在"
+	quest.20F369FD34064C0D.quest_desc: [
+		"你结合魔源研发出了一种新的红石信号传输方式，"
+		"一端接收信号，三端输出信号，"
+		"链接之后你再也不用铺设大量的红石粉了。"
+		""
+		""
+		"（用权杖右击第一个中转器作为信号输入，右击第二个中转器作为信号输出）"
+	]
+	quest.20F369FD34064C0D.title: "无线传输"
 	quest.210F0DEC13494DB8.quest_desc: ["恭喜，你通过了所有可战斗的挑战！"]
 	quest.210F0DEC13494DB8.quest_subtitle: "原来无尽的，终于到底"
 	quest.210F0DEC13494DB8.title: "庭箱弑神"
@@ -230,6 +327,11 @@
 		"另外，在这个村庄里，你发现了一个闪闪发亮的瓶子……"
 	]
 	quest.2129326F3111C29B.title: "第一块领地"
+	quest.221D8C3BA8B41EE0.quest_desc: [
+		"这个世界有许多奇妙的小生物，"
+		"或许你可以试着让他们帮忙？"
+		"（编写中）"
+	]
 	quest.229E5BE2265ED680.quest_desc: [
 		"你犯了难。手记中的条目是如此的详细而精准，在除龙之外的生物也得到了验证。"
 		""
@@ -255,6 +357,40 @@
 	]
 	quest.23AF0BA2CFF8572C.quest_subtitle: "结束了？"
 	quest.23AF0BA2CFF8572C.title: "新的维度"
+	quest.2426BF89525F4FB3.quest_desc: [
+		"比起使用法术书来施法，"
+		"使用魔源聚合体有着更强大的效果，"
+		"你将这种方式称之为仪式。"
+		""
+		"“要是仪式能让我少消耗一点魔源就好了。”你如此不切实际的幻想着。"
+		""
+		""
+		"（将仪式木板右键仪式火盆，再次空手右键以激活。"
+		"部分仪式需要消耗魔源。）"
+		"（整合包主线完成后解锁隐藏任务）"
+	]
+	quest.2426BF89525F4FB3.title: "仪式，启动！"
+	quest.24481D6CE9ADE1FE.quest_desc: ["这种魔源收集装置通过吸收周围的可燃物来收集魔源。"]
+	quest.247382CBC2625B53.quest_desc: [
+		"你依照末影箱的原理制造出了末影魔源罐，"
+		"虽然可以制造出来成品，"
+		"但是和末影箱一样，你搞不明白这些魔源到底去了什么地方。"
+		""
+		""
+		"（效果类似与末影箱，存了一个其他的都可以用。）"
+	]
+	quest.247382CBC2625B53.title: "末影箱——魔源版"
+	quest.24848771A569871F.quest_desc: [
+		"你以魔源宝石为基，"
+		"辅以水、雪块和海带合成出了气之精华。"
+	]
+	quest.24984DC7731ACA1D.quest_desc: [
+		"1:本章节是有关新生魔艺的引导章节。"
+		""
+		"2：本整合包中新生魔艺相关内容经过部分修改，删除了大部分对实体伤害性法术的合成路径，剩余内容及引导导向整体为披着魔法皮的科技包，请当作科技包游玩。"
+		""
+		"3:本章节由整合包群群友编写，如有问题，请加入整合包群（1037352971）在群内公开发言提出意见。"
+	]
 	quest.249E652D8444575D.quest_subtitle: "月寒日暖，来煎人寿"
 	quest.249E652D8444575D.title: "四季"
 	quest.24C35FEEDB08DF0E.quest_desc: ["不知是幸运还是不幸，据你的观察，这些动物的行为和先人手记上的描述分毫不差。"]
@@ -326,6 +462,10 @@
 	quest.272E28D0A27D81DB.quest_desc: ["随机出现在建筑的箱子里。"]
 	quest.27654A3A89C4E334.quest_desc: ["没关系，整合包除了村庄，还提供了其它结构（如掠夺者前哨站）可供占领。尽情去杀坏人吧！"]
 	quest.27654A3A89C4E334.quest_subtitle: "跳过这个任务"
+	quest.278004A7D5857B23.quest_desc: [
+		"你以魔源宝石为基，"
+		"辅以荒野之角、星宝石兽信物和书合成出了召唤之精华。"
+	]
 	quest.27D23F919BAA1EB4.quest_desc: [
 		"浮空村庄由于其浮空的特性，再加上防守相对薄弱，是新生恶龙绝佳的第一块领地。"
 		""
@@ -374,6 +514,10 @@
 	]
 	quest.2BE232CDDBA5862A.quest_subtitle: "那个天才，最终在梦里与太阳背后时空的荒服对视的瞬间，成为了世间第一个参悟荒服真相的人。"
 	quest.2BE232CDDBA5862A.title: "世界的崩解：第一阶段"
+	quest.2C31B0308BA5AAE5.quest_desc: [
+		"“现在发展技术是为了将来更好的偷懒”"
+		" 你如是想。"
+	]
 	quest.2D2C98446CE4035C.quest_desc: ["它可以升级卷轴，强化法师装备，甚至把魔法附在你的武器上！"]
 	quest.2D2C98446CE4035C.quest_subtitle: "铸造之法则"
 	quest.2E90710BAC475BEA.title: "冰霜学派"
@@ -443,6 +587,8 @@
 	quest.33C52E568A4B08BE.quest_subtitle: "瞪谁谁就死"
 	quest.33E9CCB7EB00D0BA.quest_desc: ["林地府邸除了掠夺者前哨站有的东西，还有概率掉落虚龙之心和不死图腾。"]
 	quest.33E9CCB7EB00D0BA.title: "占领：林地府邸"
+	quest.34D7B3DC4A8D0C83.quest_desc: ["你在世界之中发现了一些奇怪的木材，或许这些木材会用的上"]
+	quest.34D7B3DC4A8D0C83.title: "素材"
 	quest.34E73949085FF4D7.quest_subtitle: "装点自己的龙铠吧！"
 	quest.34E73949085FF4D7.title: "锻造模板"
 	quest.359A9A3913E17DCA.quest_desc: [
@@ -488,6 +634,11 @@
 	quest.36FF8729940963B3.title: "唤魔学派"
 	quest.37955FCBCE41EE76.quest_subtitle: "异界的入口"
 	quest.37955FCBCE41EE76.title: "占领：要塞"
+	quest.3861E22D52CDE547.quest_desc: [
+		"魔源也可以以液体的形式存在吗？"
+		"你的回答是：“是的。”"
+	]
+	quest.3861E22D52CDE547.title: "液态魔源"
 	quest.38FA1D29507FECC7.quest_desc: [
 		"遗憾的是，罗盘显示下界完全没有龙的存在——至少主世界的指针仍模糊地提示龙曾在此。"
 		""
@@ -507,7 +658,25 @@
 	quest.3A18D1CA4A2260B2.quest_subtitle: "昔人已乘黄鹤去"
 	quest.3A20327A765A5F0D.quest_desc: ["恭喜，你占领了所有可占领的建筑！"]
 	quest.3A20327A765A5F0D.quest_subtitle: "原来有限的，重归平常"
+	quest.3A79BF9EE8DDC9FE.quest_desc: [
+		"现在的法术已经进入了瓶颈，"
+		"你偶然了解到荒野之灵的传说，"
+		"击败它，"
+		"然后彻底掌控魔源。"
+		""
+		""
+		"（向火盆内丢入荒野之角/尖刺/翼膜再激活仪式召唤boss）"
+	]
+	quest.3A79BF9EE8DDC9FE.title: "通往山巅的路"
 	quest.3AAEADB2CD2BA908.quest_subtitle: "成年龙"
+	quest.3B02C3C36A80B09C.quest_desc: [
+		"为了能让自己同时看到多个地点的画面，"
+		"你研发了一套魔法监控装置。"
+		""
+		""
+		"（放置预言师水晶在想要监控的位置，使用预言师卷轴右击绑定，将绑定的卷轴放置到预言师之眼旁边的台座上，右击台座选择卷轴对应的位置以监控）"
+	]
+	quest.3B02C3C36A80B09C.title: "我会永远视奸着你！永远！"
 	quest.3B20762F7E6C05B2.quest_desc: [
 		"将头颅、肉类和古老龙骨合成后，可以存储龙的繁育信息。"
 		""
@@ -544,6 +713,17 @@
 	quest.4111BB6653AFE691.quest_subtitle: "尽情去杀坏人吧"
 	quest.41A41BD24597BEC0.title: "幽灵"
 	quest.4218B7B59B0F0F74.title: "合成瓶中税收官"
+	quest.424BDD1BEB0E4CCF.quest_desc: [
+		"一直以来，"
+		"整理收集到的东西都是大麻烦，"
+		"你借助仪式以龙为原型创造了一种可爱的生物——书龙"
+		"这种生物可以帮助你整理东西。"
+		""
+		""
+		"（将书龙放到储存讲台上以绑定，使用权杖右击指定容器再右击储存讲台以绑定，一只书龙可以绑定10个容器，不限类型，可以储存讲台链接储存讲台。）"
+		"（这是轻量版ae2（确信））"
+	]
+	quest.424BDD1BEB0E4CCF.title: "仓库管理员"
 	quest.427D8294D27C7B4B.quest_desc: [""]
 	quest.427D8294D27C7B4B.quest_subtitle: "不要发出声音"
 	quest.427D8294D27C7B4B.title: "远古城市"
@@ -616,6 +796,7 @@
 	quest.4BA87BE14387EE62.title: "装饰你的箱子"
 	quest.4BF0F72FA3E16483.quest_subtitle: "拯救一切迷途羔羊"
 	quest.4BF0F72FA3E16483.title: "牧师套装"
+	quest.4C2DDC74E7265C21.quest_desc: ["这种魔源收集装置通过周边生物的死亡或繁殖来收集魔源。"]
 	quest.4C558A8987578F7B.quest_subtitle: "口腹之欲无止尽"
 	quest.4C758A8E88A6F894.quest_subtitle: "冰封的囚笼"
 	quest.4C758A8E88A6F894.title: "冰霜术士套装"
@@ -626,6 +807,7 @@
 	]
 	quest.4CA95FF688990836.quest_subtitle: "肉中的低语"
 	quest.4CA95FF688990836.title: "食物 - 森林龙"
+	quest.4CB0EC2F8D7C4963.quest_desc: ["这种魔源收集装置通过导入液体从而收集魔源。"]
 	quest.4CC5FEDA384F4FB5.quest_desc: [
 		"有&c什么东西&r藏在世界的条条规则中，随着你的认知变得愈发活跃。"
 		""
@@ -635,6 +817,13 @@
 	]
 	quest.4CC5FEDA384F4FB5.quest_subtitle: "他将自己的秘密隐藏在了传世的诗歌之中。三千世界中，每个可能世界的历史中，██都首先锻出了斩龙的宝剑。"
 	quest.4CC5FEDA384F4FB5.title: "世界的崩解：第二阶段"
+	quest.4E1DABB9F1D42B84.quest_desc: [
+		"你现在只掌握了极少数利用魔源的方法，"
+		"为了了解更多，你需要一个地方专门进行研究。"
+		"（手持法术书使用（不是铁魔法的！！！））"
+		"（材料放在给的箱子里）"
+	]
+	quest.4E1DABB9F1D42B84.title: "我们需要更多的法术"
 	quest.4E2F120762511B25.quest_desc: [
 		"{image:kubejs:textures/task/tutorial1.png width:97 height:79 align:center}"
 		""
@@ -669,6 +858,8 @@
 	]
 	quest.4FDE40DA03D8CE4B.quest_subtitle: "<日期与作者均不可辨别>"
 	quest.4FDE40DA03D8CE4B.title: "笔记：龙种的分别"
+	quest.525A2D60B58C0F99.quest_desc: ["你制作了特殊的基座来让灌注台吸收其他物质的能量"]
+	quest.525A2D60B58C0F99.title: "物质的基座"
 	quest.5297FBC92A1D485C.quest_desc: ["小型村庄相比于浮空村庄，会开始掉落钻石与远古龙骨。"]
 	quest.5297FBC92A1D485C.title: "占领：小型村庄"
 	quest.52DC397C5ADB7DCC.quest_desc: [
@@ -682,6 +873,10 @@
 	]
 	quest.5405512A263C9DDC.quest_desc: ["不知是幸运还是不幸，据你的观察，这些动物的行为和先人手记上的描述分毫不差。"]
 	quest.5405512A263C9DDC.title: "翼蚺"
+	quest.542E6637C3DCBFA4.quest_desc: [
+		"你以魔源宝石为基，"
+		"辅以铁锭、土和种子合成出了土之精华。"
+	]
 	quest.54C6AA8E0348FCC8.quest_desc: [
 		"在矿物与宝藏掉落中，时不时就会得到一些这样的尘埃。"
 		""
@@ -695,6 +890,14 @@
 	quest.54C6AA8E0348FCC8.title: "龙尘与龙心碎片"
 	quest.54E3D369788106E6.title: "背包的升级"
 	quest.5611D9A492180B3D.quest_subtitle: "青年龙"
+	quest.56A4B88875E5329C.quest_desc: [
+		"六个方向对于你来说还是不够，"
+		"你需要更加强大的偏转能力，以及更加强大的效果。"
+		""
+		""
+		"（使用方法同全向炮台）"
+	]
+	quest.56A4B88875E5329C.title: "“它转起来了”"
 	quest.57A21C4ECAA059D4.quest_desc: [
 		"地、水、火都出现异常，那最后的风还远吗？恐怕世界真的就要就此终结，没有存在得以逃脱。"
 		""
@@ -752,6 +955,11 @@
 	quest.5BBEC08E7893B0EF.title: "被通缉了！"
 	quest.5BFEACB4EB076B5C.quest_desc: ["现在，你可以制作小人斗篷以缩小自己的体型了。"]
 	quest.5BFEACB4EB076B5C.quest_subtitle: "格列佛游记"
+	quest.5C2E4DEDFD73A3B6.quest_desc: [
+		"你觉得应该制作一个容器用来储存液体了。"
+		"嗯.....为什么你之前没有想到呢？"
+	]
+	quest.5C2E4DEDFD73A3B6.title: "液体储存"
 	quest.5C620CF48FE5DC36.quest_desc: ["激活后，在范围内可以免疫各龙种对环境的弱点。"]
 	quest.5C620CF48FE5DC36.quest_subtitle: "上天入地"
 	quest.5C84AADD309AED26.quest_desc: ["不知是幸运还是不幸，据你的观察，这些动物的行为和先人手记上的描述分毫不差。"]
@@ -761,6 +969,15 @@
 	quest.5D9019A625D83B8C.quest_desc: ["末地外岛的龙宝藏透过折跃门，在呼唤着你……"]
 	quest.5D9019A625D83B8C.quest_subtitle: "学习冲钻的技巧……以及其它宝物。"
 	quest.5D9019A625D83B8C.title: "前往外围岛屿"
+	quest.5EDAE279220BFB3C.quest_desc: [
+		"这是你研发的一款改进型中转器，"
+		"它可以自动吸收周围5格内所有的魔源罐中的魔源进行输出。"
+	]
+	quest.5EDAE279220BFB3C.title: "“都是我的！”"
+	quest.5F05E08702AB2320.quest_desc: [
+		"你以魔源宝石为基，"
+		"辅以打火石、火把和火药合成出了火之精华。"
+	]
 	quest.5F84B310BEC46BE3.quest_desc: [
 		"你做到了。在战胜潮涌般前来的造物后，你从这个强大异界通道的遗骸中发现一些纸扎的龙。"
 		""
@@ -831,17 +1048,27 @@
 	]
 	quest.61D03B762B3D7DB3.quest_subtitle: "谁给我改键位了？"
 	quest.622866C257178852.quest_subtitle: "龙用龙皮书，太恐怖了……"
+	quest.6258CF0722C713B7.quest_desc: ["引导如果没有看明白的话可以看一下模组自带的教程"]
 	quest.626951C87CA6FF5C.quest_desc: [
 		"来自下界的、更强悍的材料。但需要一点锻造工艺，才能将它们安在你的爪牙上。"
 		""
 		"据说&c洞穴龙&r的身体就是此种金属构成的……谁知道呢？"
 	]
 	quest.626951C87CA6FF5C.quest_subtitle: "久闻下界合金的大名"
+	quest.62887F550EBC119B.quest_desc: [
+		"以前的灌注台对于魔源的感应能力有限，"
+		"想要更进一步必须要更好的能量聚集装置。"
+		""
+		""
+		"（附魔装置放在奥术核心上，台座放在核心距离3格以内即可使用）"
+	]
+	quest.62887F550EBC119B.title: "进一步研发"
 	quest.62998C38713A4E68.title: "材料 - 石材"
 	quest.63762FEF1984CADD.quest_subtitle: "编织风暴吧！"
 	quest.649A5301AF7976AA.quest_desc: [""]
 	quest.649A5301AF7976AA.quest_subtitle: "……其教徒实施仪式食人、人祭、肉体强化、奇术、以及……"
 	quest.649A5301AF7976AA.title: "猩红教徒套装"
+	quest.652099233FF840B9.quest_desc: ["这种魔源收集装置通过作物的自然生长来收集魔源。"]
 	quest.6594B36E75D501E0.quest_desc: [
 		"手记中关于悚怖亡灵的内容也没能得到验证。"
 		""
@@ -865,11 +1092,36 @@
 		"{@pagebreak}"
 		"&o古龙对生态的影响不可估量……走到哪里，哪里就会成为新的生态。简直就是移动的灾祸。就没有什么东西制止它们吗？&r"
 	]
+	quest.663B8977FE894B8E.quest_desc: [
+		"你不可能每次启动炮台都使用红石吧，"
+		"你将炮台进行了能够定时发射的升级。"
+		""
+		""
+		"（右键增大施法间隔，左键减小施法间隔，接受到红石信号时启动）"
+	]
+	quest.663B8977FE894B8E.title: "嘀嗒嘀嗒"
+	quest.665002C09E754419.quest_desc: [
+		"你发现魔源宝石拥有牵动世界本源的力量，"
+		"借此你研发出了一套全新的施法体系。"
+		"你将其命名为新生魔艺。"
+	]
+	quest.665002C09E754419.title: "基于世界底层架构的施法方式"
 	quest.667220165003BC3B.quest_desc: ["不知是幸运还是不幸，据你的观察，这条家伙的行为和先人手记上的描述分毫不差。"]
 	quest.667220165003BC3B.title: "九头蛇"
 	quest.667C340CF868A4BA.quest_desc: ["（将在之后实装）"]
 	quest.667C340CF868A4BA.quest_subtitle: "可以用来刷下龙鳞？"
 	quest.667C340CF868A4BA.title: "考古"
+	quest.6701EC671D45F05C.quest_desc: [
+		"将魔源罐到处搬来搬去太麻烦了，"
+		"你认为应该做一个装置用来传输魔源来解决这个问题。"
+		""
+		""
+		"（使用权杖右击魔源罐再右击中转器以抽取）"
+		"（使用权杖右击中转器再右击其他中转器或魔源罐以输出）"
+		"（使用权杖潜行并右击中转器断开所有链接）"
+		"（中转器传输距离为30格，速度为1000魔源/秒）"
+	]
+	quest.6701EC671D45F05C.title: "魔源输送"
 	quest.67098E355E73EB2C.quest_desc: [
 		"将床与旗帜合成可以得到装饰后的床，支持Mod旗帜图案（比如冰与火）！"
 		""
@@ -884,6 +1136,19 @@
 	quest.681EBB7384D4F881.quest_desc: ["在茫茫世界中寻找龙蛋可不是个简单的事情。得一步一步来。"]
 	quest.681EBB7384D4F881.quest_subtitle: "寻找龙蛋前的准备"
 	quest.681EBB7384D4F881.title: "启程"
+	quest.685CACE032349F0D.quest_desc: [
+		"世界回归了正常，"
+		"巨龙的族群重新与大地之上出现，"
+		"世界正变的越来越稳定。"
+		"但是以前究竟发生了什么？"
+		"你不得而知。"
+		"为了防止世界再度陷入此刻的危机，"
+		"你决定用自己的方式来锚定世界。"
+		""
+		""
+		"（该仪式激活后可以一直加载所在区块）"
+	]
+	quest.685CACE032349F0D.title: "锚定世界"
 	quest.6916566DB8E87641.title: "神圣学派"
 	quest.69400AAE99778064.quest_desc: [
 		"这就是锻造下界合金必要的材料……一切的工艺都蕴含在这片小小的石板中。"
@@ -904,6 +1169,24 @@
 	quest.6A2D99CF2DF2A360.title: "新的传说"
 	quest.6A834B7D3846EAF6.quest_subtitle: "CINDERLAMITAS"
 	quest.6A834B7D3846EAF6.title: "占领：缠魂幽堡"
+	quest.6AA5EE3D9A00AF49.quest_desc: [
+		"很难想象星宝石兽对于运输这一行为有这么大的热枕，"
+		"不论是什么东西它们都能够并且乐意运输。"
+	]
+	quest.6AA5EE3D9A00AF49.title: "更像是黄色的袋鼠"
+	quest.6AB8A417AC0155B7.quest_desc: [
+		"这是你研发的一种改进型中转器，"
+		"你将这种中转器的魔源传输效率强化为了原来的2.5倍，"
+		"但是于此同时，这种中转器会将魔源在输出时均分。"
+	]
+	quest.6AB8A417AC0155B7.title: "汇流，分流"
+	quest.6ABDBDD6CB2CE744.quest_desc: [
+		"野外游荡的女巫有很多，"
+		"通常都掌握熟练的合成技巧，"
+		"她们只尊敬实力强大的生物，"
+		"或许你可以让她们中的一些服从你？"
+	]
+	quest.6ABDBDD6CB2CE744.title: "工作大师"
 	quest.6B14C91E12B2D9A1.quest_desc: ["在雷暴天气中手持充能核心右键被放下的避雷针以取得。"]
 	quest.6B14C91E12B2D9A1.quest_subtitle: "大号引雷针"
 	quest.6B2D21F0295F993B.quest_desc: [
@@ -914,6 +1197,10 @@
 		"&b海洋龙&r：霜木瓜及其制品。"
 	]
 	quest.6B2D21F0295F993B.quest_subtitle: "挑食是个坏习惯"
+	quest.6BFEC712B47D62AB.quest_desc: [
+		"你以魔源宝石为基，"
+		"辅以发酵蛛眼、糖和牛奶合成出了防护之精华。"
+	]
 	quest.6C75FC1A4E012D5F.quest_desc: ["不知是幸运还是不幸，据你的观察，这些动物的行为和先人手记上的描述分毫不差。"]
 	quest.6C75FC1A4E012D5F.title: "海马"
 	quest.6C9B638743583835.title: "自然学派"
@@ -944,6 +1231,11 @@
 		""
 		"精进你的法术吧！"
 	]
+	quest.6F2CE18CFE31FB52.quest_desc: [
+		"你战胜了世界的规则化身，"
+		"世界从此刻完全向你开放。"
+	]
+	quest.6F2CE18CFE31FB52.title: "究极载体"
 	quest.6F57BD70E7CADA3A.quest_desc: [
 		"个体拥有一个大胃袋，可以存储一个生物。"
 		""
@@ -1015,6 +1307,11 @@
 		"需要注意的是，并非所有特性都是正面的。"
 	]
 	quest.71E120336B2847FC.quest_subtitle: "益龙观察"
+	quest.71EF033E42F2E7B8.quest_desc: [
+		"经过研究你发现先前收集的木材有着汇聚世界中某种不可见的能量的力量，你将其称之为魔源。"
+		"你打算依此制造一个装置来汇聚魔源，看看会发生什么。"
+	]
+	quest.71EF033E42F2E7B8.title: "能量聚集"
 	quest.7219D2B812F4F537.quest_desc: [
 		"瓶中税收官每日为你的领地收税，并把物资送进物品栏。如果收税瓶被放在储物容器上，会把物资放进容器里。"
 		""
@@ -1078,6 +1375,12 @@
 	quest.755A36D1D7404B2B.title: "自我"
 	quest.75E7855E13406190.quest_desc: [""]
 	quest.76C1B861F1C40925.quest_desc: ["当前包括：冰龙龙蛋孵化信息"]
+	quest.78119E9E7995CB06.quest_desc: [
+		"你需要东西来承载这种能量，"
+		"在对各种宝石进行研究后，"
+		"你发现天生具有强亲魔性的青金石和紫水晶是一种合适的选择。"
+	]
+	quest.78119E9E7995CB06.title: "底物"
 	quest.792EEE317BF6BE9A.quest_desc: [
 		"个体的皮下生长出了一层额外的鳞片，在完好时能抵御更多伤害。"
 		""
@@ -1111,6 +1414,14 @@
 	]
 	quest.7A57CC44CDC9CE8F.quest_subtitle: "毛多弱火，身高弱门"
 	quest.7A57CC44CDC9CE8F.title: "龙之门"
+	quest.7A5F70B8C91FE8DE.quest_desc: [
+		"将各种不同的法术聚集到同一个点上总是让你苦不堪言，"
+		"你研发出的法术棱镜帮你一劳永逸解决了这个问题。"
+		""
+		""
+		"（所有角度击中棱镜的法术都会从带有符文的面发出）"
+	]
+	quest.7A5F70B8C91FE8DE.title: "法术偏转"
 	quest.7A7262861AF0ACB3.quest_subtitle: "放心，这里没有武士刀和大剑"
 	quest.7A7262861AF0ACB3.title: "占领：猎龙人之堡"
 	quest.7AB8CB898B06CBF6.quest_desc: [
@@ -1143,6 +1454,18 @@
 	]
 	quest.7CDB045282E65572.quest_subtitle: "龙之祖"
 	quest.7CDB045282E65572.title: "繁育之路"
+	quest.7CE0C94CCCF087AB.quest_desc: [
+		"你以魔源宝石为基，"
+		"辅以石头按钮、红石粉和时钟合成出了操纵之精华。"
+	]
+	quest.7D35123C9657157E.quest_desc: [
+		"原先的炮台太死板了，"
+		"你认为需要一些东西来引导它们。"
+		""
+		""
+		"（基础炮台可以直接变为全向炮台，用权杖右击炮台再右击目标方块即可引导方向）"
+	]
+	quest.7D35123C9657157E.title: "链接！"
 	quest.7D5CFE6DB014B46C.quest_subtitle: "是谁住在深海的大菠萝里？"
 	quest.7D5CFE6DB014B46C.title: "占领：海底神殿"
 	quest.7EAD63371F1F66D6.quest_desc: ["身为一条龙，寻找适合自身的环境是一件重要的事。"]
@@ -1181,6 +1504,7 @@
 	task.0019B05811BD85A4.title: "笔记：远古龙"
 	task.01DEFE83BAF10191.title: "笔记：繁育属性与特性"
 	task.0579C0FC39DF6F2C.title: "笔记：挽救的方法？"
+	task.058CDD42DF781663.title: "编者的话"
 	task.0741D2CC2C85660E.title: "龙种的分别"
 	task.0762D5A4B4C103A6.title: "清除当前的挑战状态"
 	task.09C4CF4A5AD08363.title: "任意装饰过的床"
@@ -1203,6 +1527,7 @@
 	task.199401EA6963724C.title: "铁锭"
 	task.1BADB32C84B71823.title: "WIP：龙的护甲外观"
 	task.1C31D71C2E7F973F.title: "EMI - 配方查找"
+	task.1C726DECAD1D4224.title: "技术推进"
 	task.1DF5CFFB5E7B50BE.title: "魔法装备"
 	task.1F3B5D2673AB3AF3.title: "清除全局信息"
 	task.2123AE028011AFF2.title: "WIP：添加可抓走的公主\\&王子"
@@ -1211,16 +1536,20 @@
 	task.22F20E0CECE025DD.title: "火龙？冰龙？电龙？"
 	task.236C214EA9DD8114.title: "笔记：瓶中税收官"
 	task.23FC7E58ED23B6A6.title: "龙曾在此"
+	task.2458E073218106F0.title: "模组教程"
 	task.2822EAC9B59C30DF.title: "笔记：异种杂交"
 	task.284A614488FC432D.title: "整合包之死"
 	task.291A150DF26B46E0.title: "笔记：狂龙病毒"
 	task.2AE973BA6FF84903.title: "龙的被动技能"
+	task.2BE52BF1260D1622.title: "无能为力"
 	task.2C56F358AECA93D8.title: "龙的物品栏"
 	task.2CFB640AF692D8A7.title: "引言"
 	task.2D4D7ADEEA90E71F.title: "龙食产出点"
 	task.2D5F1E4E7A256624.title: "重新选择"
 	task.2DA64836A75052CD.title: "龙的主动技能"
+	task.2F51994FC094385F.title: "Any #ars_nouveau:spell_prism_lens"
 	task.2FF2B40CD3492F3D.title: "法术：自由探索"
+	task.3041B68E2ECB17D9.title: "束手无策"
 	task.307998BBA6E21031.title: "木材"
 	task.33FB2E314961EB36.title: "恐蚁被删除了！"
 	task.35DEAD714FD1D813.title: "龙曾在此"
@@ -1230,6 +1559,7 @@
 	task.3A5D0235D619652F.title: "感谢你玩到这里"
 	task.3BE42A84B83BD558.title: "焦炭食物"
 	task.3BE6DAE8BD2E8C65.title: "属性的耦合"
+	task.3CDA8F53BDFF0433.title: "Any #c:gems"
 	task.3DF94A1DF8C9F62B.title: "死亡地点传送？"
 	task.3F305F1A7732BE81.title: "营火烧炼物品时炼出一颗&c人头"
 	task.3F7CDCB946929F7D.title: "龙旗：自由探索"
@@ -1270,11 +1600,16 @@
 	task.6B81EE069253157B.title: "用旗帜装饰床！"
 	task.6D35F0D45F1C7708.title: "通用"
 	task.6E2DEDD7DD141BD6.title: "笔记：龙与魔法学派"
+	task.6FDAA0DFD41C751C.title: "小帮手"
 	task.7046D4359B2C80F7.title: "WIP：龙的言灵术"
+	task.72ACA53DDAFB89CA.title: "关于本章节"
 	task.72BB28EDFD14F31A.title: "多鳞"
 	task.7519ED2CAF4B9CEC.title: "边狱"
+	task.751BD20868889572.title: "思想的萌芽"
 	task.76F26CEE5902DE59.title: "保留经验？"
 	task.770C77948080C013.title: "寻找强力的敌人"
+	task.7826C29E6B889B11.title: "Any #ars_nouveau:summon_bed"
+	task.7907C5A0E23C1EA6.title: "Any #c:logs/archwood"
 	task.79D67BD548D2720C.title: "WIP：添加更多守军和攻城奖励"
 	task.79F6CA6974D8BA26.title: "蘑菇"
 	task.7B545A627225A8E4.title: "龙的言灵术"
